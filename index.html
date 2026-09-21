@@ -29,7 +29,6 @@
         .slide.active {
             opacity: 1;
         }
-        /* Custom scroll-to-top smooth behavior */
         html {
             scroll-behavior: smooth;
         }
@@ -39,14 +38,12 @@
 
     <header class="bg-white border-b border-neutral-200 sticky top-0 z-50 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <!-- Brand Logo -->
             <div class="flex items-center space-x-2">
                 <a href="#" class="text-3xl font-extrabold tracking-tight text-cyan-600 flex items-center gap-2">
                     <span class="text-neutral-900">Angkor</span><span class="text-cyan-600">Lens</span>
                 </a>
             </div>
 
-            <!-- Navigation Links (Desktop) -->
             <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-neutral-600">
                 <div class="relative group cursor-pointer hover:text-cyan-600 flex items-center gap-1 py-2">
                     <span>Angkor</span> <i class="fa-solid fa-chevron-down text-xs"></i>
@@ -64,19 +61,16 @@
                 <a href="#about" class="hover:text-cyan-600 transition">About</a>
             </nav>
 
-            <!-- Social / Action Icon & Mobile Menu Button -->
             <div class="flex items-center space-x-4">
                 <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center hover:bg-blue-700 transition shadow-sm">
                     <i class="fa-brands fa-facebook-f text-lg"></i>
                 </a>
-                <!-- Mobile hamburger trigger -->
                 <button id="mobile-menu-btn" class="md:hidden text-neutral-700 focus:outline-none p-2">
                     <i class="fa-solid fa-bars text-xl"></i>
                 </button>
             </div>
         </div>
 
-        <!-- Mobile Navigation Drawer -->
         <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-neutral-200 px-6 py-4 space-y-3">
             <a href="#" class="block text-neutral-700 font-medium hover:text-cyan-600">Angkor</a>
             <a href="#" class="block text-neutral-700 font-medium hover:text-cyan-600">Temple Groups</a>
@@ -88,202 +82,154 @@
     </header>
 
     <main class="flex-grow">
-        <section class="hero-banner relative py-24 md:py-32 flex flex-col items-center justify-center px-4 sm:px-6 shadow-inner bg-neutral-900">
-            <!-- Background Image Slideshow List -->
-            <img src="IMG_0712.JPG" class="slide active" alt="Temple Slide 1">
-            <img src="01000787.JPG" class="slide" alt="Temple Slide 2">
-            <img src="01012482.JPG" class="slide" alt="Temple Slide 3">
-            <img src="01000713 2.JPG" class="slide" alt="Temple Slide 4">
-            <img src="IMG_2307.JPG" class="slide" alt="Temple Slide 5">
-            <img src="IMG_2176.JPG" class="slide" alt="Temple Slide 6">
-            <img src="IMG_4691.JPG" class="slide" alt="Temple Slide 7">
-            <img src="01000713 5.jpg" class="slide" alt="Temple Slide 8">
-            <img src="IMG_7682.JPG" class="slide" alt="Temple Slide 9">
-            <img src="IMG_7729.JPG" class="slide" alt="Temple Slide 10">
-            <img src="IMG_0516.jpeg" class="slide" alt="Temple Slide 11">
-            <img src="IMG_9200.jpeg" class="slide" alt="Temple Slide 12">
-            <img src="IMG_9546.jpeg" class="slide" alt="Temple Slide 13">
-            <img src="IMG_4356.jpeg" class="slide" alt="Temple Slide 14">
-            <img src="IMG_2856.jpeg" class="slide" alt="Temple Slide 15">
-            <img src="IMG_2249.jpeg" class="slide" alt="Temple Slide 16">
-            <img src="IMG_0726.jpeg" class="slide" alt="Temple Slide 17">
-            <img src="IMG_0592.jpeg" class="slide" alt="Temple Slide 18">
-            <img src="IMG_0674.jpeg" class="slide" alt="Temple Slide 19">
-            <img src="IMG_0552.jpeg" class="slide" alt="Temple Slide 20">
-            <img src="IMG_0227.jpg" class="slide" alt="Temple Slide 21">
+        <!-- Hero Slideshow Section -->
+        <section class="hero-banner relative py-28 md:py-36 flex flex-col items-center justify-center px-4 sm:px-6 shadow-inner bg-neutral-900">
+            <img src="IMG_0712.JPG" class="slide active" alt="Slide 1">
+            <img src="01000787.JPG" class="slide" alt="Slide 2">
+            <img src="01012482.JPG" class="slide" alt="Slide 3">
+            <img src="IMG_2307.JPG" class="slide" alt="Slide 4">
+            <img src="IMG_2176.JPG" class="slide" alt="Slide 5">
+            <img src="IMG_4691.JPG" class="slide" alt="Slide 6">
 
-            <!-- Dark Overlay for readability -->
             <div class="absolute inset-0 bg-black/40 z-10"></div>
 
-            <div class="w-full max-w-4xl mx-auto text-center z-20">
-                <h1 class="text-white text-2xl sm:text-3xl md:text-4xl font-bold mb-6 drop-shadow-md">
+            <div class="w-full max-w-4xl mx-auto text-center z-25">
+                <h1 class="text-white text-3xl sm:text-4xl md:text-5xl font-bold mb-8 drop-shadow-lg">
                     Search Temples, Attractions & More
                 </h1>
                 
-                <!-- Search Box Container -->
-                <div class="bg-white/95 backdrop-blur rounded-xl p-3 shadow-2xl max-w-3xl mx-auto border border-white/20">
-                    <div class="flex flex-col sm:flex-row items-center gap-2">
+                <div class="bg-white/95 backdrop-blur-md rounded-2xl p-4 shadow-2xl max-w-3xl mx-auto border border-white/20">
+                    <div class="flex flex-col sm:flex-row items-center gap-2 mb-3">
                         <div class="relative flex-grow w-full">
                             <input 
                                 type="text" 
                                 id="searchInput"
                                 placeholder="Search temples, ruins, architecture..." 
-                                class="w-full px-4 py-3.5 bg-neutral-50 rounded-lg text-neutral-800 focus:outline-none focus:ring-2 focus:ring-cyan-600 text-base border border-neutral-200"
+                                class="w-full px-4 py-3.5 bg-neutral-50 rounded-xl text-neutral-800 focus:outline-none focus:ring-2 focus:ring-cyan-600 text-base border border-neutral-200"
                             >
                         </div>
                         <button 
                             onclick="handleSearch()"
-                            class="w-full sm:w-auto bg-neutral-800 hover:bg-neutral-900 text-white px-8 py-3.5 rounded-lg font-medium transition flex items-center justify-center gap-2 shadow"
+                            class="w-full sm:w-auto bg-neutral-900 hover:bg-neutral-800 text-white px-8 py-3.5 rounded-xl font-medium transition flex items-center justify-center gap-2 shadow-md"
                         >
                             <i class="fa-solid fa-magnifying-glass"></i>
                             <span>Search</span>
                         </button>
                     </div>
-                    
-                    <!-- Advanced search toggle -->
-                    <div class="text-left mt-3 px-1">
-                        <button onclick="toggleAdvancedSearch()" class="text-xs font-semibold text-neutral-600 hover:text-cyan-600 flex items-center gap-1.5 transition">
-                            <i id="adv-arrow" class="fa-solid fa-play text-[10px] transition-transform"></i>
-                            <span>Advanced search operators</span>
+                    <div class="text-left px-1">
+                        <button class="text-xs font-medium text-neutral-600 hover:text-cyan-600 flex items-center gap-1.5 transition">
+                            <i class="fa-solid fa-play text-[10px]"></i> Advanced search operators
                         </button>
-                        <div id="adv-box" class="hidden mt-2 p-3 bg-neutral-100 rounded-lg text-xs text-neutral-600 flex flex-wrap gap-2">
-                            <span class="bg-white px-2 py-1 rounded border border-neutral-200 cursor-pointer hover:bg-cyan-50" onclick="insertQuery('period:Angkor')">period:Angkor</span>
-                            <span class="bg-white px-2 py-1 rounded border border-neutral-200 cursor-pointer hover:bg-cyan-50" onclick="insertQuery('province:Siem Reap')">province:Siem Reap</span>
-                            <span class="bg-white px-2 py-1 rounded border border-neutral-200 cursor-pointer hover:bg-cyan-50" onclick="insertQuery('type:Bayon style')">type:Bayon style</span>
-                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
-            <!-- Separator divider line matching design -->
-            <div class="w-full h-px bg-neutral-300 mb-12"></div>
-
+        <!-- Cards Section -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                 
                 <!-- Card 1 -->
-                <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between">
+                <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4">
                     <div>
-                        <div class="overflow-hidden aspect-[4/3] bg-neutral-100 relative">
-                          <img 
-                           src="01000713 2.JPG" 
-                           alt="ប្រាសាទប្រាំ (ព្រំប្រទល់ខេត្តសៀមរាប-ព្រះវិហារ)" 
-                           class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
-                            >
-                 </div>
-                            >
-                            <div class="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition"></div>
+                        <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative">
+                            <img src="01000713 2.JPG" alt="ប្រាសាទប្រាំ" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         </div>
-                        <div class="p-5 text-center">
-                            <h3 class="font-semibold text-neutral-800 text-sm sm:text-base leading-snug group-hover:text-cyan-600 transition">
-                               Prasat Pram (Border Siem Reap-Preah Vihear)
+                        <div class="px-2 mb-4">
+                            <h3 class="font-bold text-neutral-800 text-base sm:text-lg leading-snug group-hover:text-cyan-600 transition mb-2">
+                                ប្រាសាទប្រាំ
                             </h3>
+                            <p class="text-xs text-neutral-500 leading-relaxed">
+                                ព្រំប្រទល់ខេត្តសៀមរាប-ព្រះវិហារ និងស្វែងយល់ពីប្រវត្តិសាស្ត្រ។
+                            </p>
                         </div>
                     </div>
-                    <div class="px-5 pb-5 pt-0 text-center">
-                        <button onclick="openModal(' Prasat Pram (Border Siem Reap-Preah Vihear)', 'Explore the majestic 20 must-see monuments across the vast archaeological park, including remote sanctuaries untouched by massive crowds.')" class="text-xs font-semibold uppercase tracking-wider text-cyan-600 hover:text-cyan-800">
-                            Explore Guide &rarr;
+                    <div class="px-2 pb-2 pt-0">
+                        <button onclick="openModal('ប្រាសាទប្រាំ', 'ព្រំប្រទល់ខេត្តសៀមរាប-ព្រះវិហារ')" class="text-xs font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800 transition">
+                            EXPLORE GUIDE &rarr;
                         </button>
                     </div>
                 </div>
 
                 <!-- Card 2 -->
-                <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between">
+                <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4">
                     <div>
-                        <div class="overflow-hidden aspect-[4/3] bg-neutral-100 relative">
-                            <img 
-                                src="01000787.JPG" 
-                                alt="ប្រាសាទប្រាំ (តំបន់កោះកេរ)" 
-                                class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
-                                onerror="this.src='https://placehold.co/600x450/e2e8f0/475569?text=Prasat Pram (Koh Ker)'"
-                            >
+                        <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative">
+                            <img src="01000787.JPG" alt="ប្រាសាទប្រាំ កោះកេរ" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         </div>
-                        <div class="p-5 text-center">
-                            <h3 class="font-semibold text-neutral-800 text-sm sm:text-base leading-snug group-hover:text-cyan-600 transition">
-                                Prasat Pram (Koh Ker)
+                        <div class="px-2 mb-4">
+                            <h3 class="font-bold text-neutral-800 text-base sm:text-lg leading-snug group-hover:text-cyan-600 transition mb-2">
+                                ប្រាសាទប្រាំ (កោះកេរ)
                             </h3>
+                            <p class="text-xs text-neutral-500 leading-relaxed">
+                                Siem Reap: Attractions & Things to Do in 2026.
+                            </p>
                         </div>
                     </div>
-                    <div class="px-5 pb-5 pt-0 text-center">
-                        <button onclick="openModal('Prasat Pram (Koh Ker), 'Discover cultural markets, ancient stone carvings, traditional apsara performances, and secret culinary gems around Siem Reap.')" class="text-xs font-semibold uppercase tracking-wider text-cyan-600 hover:text-cyan-800">
-                            Explore Guide &rarr;
+                    <div class="px-2 pb-2 pt-0">
+                        <button onclick="openModal('ប្រាសាទប្រាំ', 'តំបន់កោះកេរ')" class="text-xs font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800 transition">
+                            EXPLORE GUIDE &rarr;
                         </button>
                     </div>
                 </div>
 
                 <!-- Card 3 -->
-               <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between">
-    <div>
-        <div class="overflow-hidden aspect-[4/3] bg-neutral-100 relative">
-            <img src="01012482.JPG" alt="ប្រាសាទព្រះខ័នកំពង់ស្វាយ" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-        </div>
-        <div class="p-5 text-center">
-            <h3 class="font-semibold text-neutral-800 text-sm sm:text-base leading-snug group-hover:text-cyan-600 transition">
-                ប្រាសាទព្រះខ័នកំពង់ស្វាយ
-            </h3>
-        </div>
-    </div>
-    <div class="px-5 pb-5 pt-0 text-center">
-        <button onclick="openModal('ប្រាសាទព្រះខ័នកំពង់ស្វាយ', '12th Century - Preah Khan of Kampong Svay')" class="text-xs font-semibold uppercase tracking-wider text-cyan-600 hover:text-cyan-800">
-            Explore Guide &rarr;
-        </button>
-    </div>
-</div>
+                <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4">
+                    <div>
+                        <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative">
+                            <img src="01012482.JPG" alt="ប្រាសាទព្រះខ័នកំពង់ស្វាយ" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        </div>
+                        <div class="px-2 mb-4">
+                            <h3 class="font-bold text-neutral-800 text-base sm:text-lg leading-snug group-hover:text-cyan-600 transition mb-2">
+                                ប្រាសាទព្រះខ័នកំពង់ស្វាយ
+                            </h3>
+                            <p class="text-xs text-neutral-500 leading-relaxed">
+                                The Ancient Temples near Phnom Penh and architectural styles.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-2 pb-2 pt-0">
+                        <button onclick="openModal('ប្រាសាទព្រះខ័នកំពង់ស្វាយ', '12th Century - Preah Khan of Kampong Svay')" class="text-xs font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800 transition">
+                            EXPLORE GUIDE &rarr;
+                        </button>
+                    </div>
+                </div>
 
-              <!-- Card 4 -->
-<div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between">
-    <div>
-        <div class="overflow-hidden aspect-[4/3] bg-neutral-100 relative">
-            <img src="01000713 4.jpg" alt="ប្រាសាទពងទឹក" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-        </div>
-        <div class="p-5 text-center">
-            <h3 class="font-semibold text-neutral-800 text-sm sm:text-base leading-snug group-hover:text-cyan-600 transition">
-                ប្រាសាទពងទឹក
-            </h3>
-        </div>
-    </div>
-    <div class="px-5 pb-5 pt-0 text-center">
-        <button onclick="openModal('ប្រាសាទពងទឹក', '10th–11th Century - Pong Toek Temple')" class="text-xs font-semibold uppercase tracking-wider text-cyan-600 hover:text-cyan-800">
-            Explore Guide &rarr;
-        </button>
-    </div>
-</div>
-        </section>
+                <!-- Card 4 -->
+                <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4">
+                    <div>
+                        <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative">
+                            <img src="01000713 4.jpg" alt="ប្រាសាទពងទឹក" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        </div>
+                        <div class="px-2 mb-4">
+                            <h3 class="font-bold text-neutral-800 text-base sm:text-lg leading-snug group-hover:text-cyan-600 transition mb-2">
+                                ប្រាសាទពងទឹក
+                            </h3>
+                            <p class="text-xs text-neutral-500 leading-relaxed">
+                                Pagodas of Phnom Penh and cultural heritage discovery.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-2 pb-2 pt-0">
+                        <button onclick="openModal('ប្រាសាទពងទឹក', '10th–11th Century - Pong Toek Temple')" class="text-xs font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800 transition">
+                            EXPLORE GUIDE &rarr;
+                        </button>
+                    </div>
+                </div>
 
-        <!-- About Section for anchor navigation -->
-        <section id="about" class="max-w-4xl mx-auto px-4 py-16 text-center">
-            <h2 class="text-2xl font-bold mb-4">About AngkorLens</h2>
-            <p class="text-neutral-600 leading-relaxed">
-                AngkorLens is dedicated to preserving and exploring the rich architectural heritage, temples, and history of Cambodia through photography and detailed digital guides.
-            </p>
+            </div>
         </section>
     </main>
 
     <footer class="bg-white border-t border-neutral-200 py-8 mt-12 text-center text-sm text-neutral-500">
         <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
             <p>&copy; 2026 AngkorLens. Preserving heritage and architectural stories.</p>
-            <div class="flex space-x-6">
-                <a href="#" class="hover:text-cyan-600 transition">Privacy Policy</a>
-                <a href="#" class="hover:text-cyan-600 transition">Terms of Use</a>
-                <a href="#" class="hover:text-cyan-600 transition">Contact</a>
-            </div>
         </div>
     </footer>
 
-    <!-- Scroll to Top Fixed Button -->
-    <button 
-        onclick="scrollToTop()" 
-        id="scrollTopBtn" 
-        class="fixed bottom-6 right-6 bg-neutral-700 hover:bg-neutral-800 text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center transition opacity-90 hover:opacity-100 z-40 focus:outline-none"
-        title="Scroll to top"
-    >
-        <i class="fa-solid fa-chevron-up"></i>
-    </button>
-
-    <!-- Interactive Custom Message Box Modal -->
+    <!-- Modal Box -->
     <div id="infoModal" class="fixed inset-0 bg-black/50 backdrop-blur-sm hidden items-center justify-center z-50 p-4">
-        <div class="bg-white rounded-2xl max-w-md w-full p-6 shadow-2xl relative transform transition-all">
+        <div class="bg-white rounded-3xl max-w-md w-full p-6 shadow-2xl relative">
             <div class="flex justify-between items-center mb-4">
                 <h3 id="modalTitle" class="text-lg font-bold text-neutral-900"></h3>
                 <button onclick="closeModal()" class="text-neutral-400 hover:text-neutral-700 p-1">
@@ -292,7 +238,7 @@
             </div>
             <p id="modalDesc" class="text-neutral-600 text-sm leading-relaxed mb-6"></p>
             <div class="text-right">
-                <button onclick="closeModal()" class="bg-cyan-600 hover:bg-cyan-700 text-white px-5 py-2 rounded-lg text-sm font-medium transition">
+                <button onclick="closeModal()" class="bg-cyan-600 hover:bg-cyan-700 text-white px-5 py-2 rounded-xl text-sm font-medium transition">
                     Got it
                 </button>
             </div>
@@ -300,64 +246,23 @@
     </div>
 
     <script>
-        // Toggle Mobile Menu
         const menuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
-        menuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
+        menuBtn.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); });
 
-        // Advanced Search Toggle
-        let advOpen = false;
-        function toggleAdvancedSearch() {
-            const box = document.getElementById('adv-box');
-            const arrow = document.getElementById('adv-arrow');
-            advOpen = !advOpen;
-            if (advOpen) {
-                box.classList.remove('hidden');
-                arrow.style.transform = 'rotate(90deg)';
-            } else {
-                box.classList.add('hidden');
-                arrow.style.transform = 'rotate(0deg)';
-            }
-        }
-
-        function insertQuery(val) {
-            document.getElementById('searchInput').value = val;
-        }
-
-        // Search Action
-        function handleSearch() {
-            const query = document.getElementById('searchInput').value.trim();
-            if (query === '') {
-                openModal('Search Notice', 'Please enter a temple name, keyword, or architectural style to search.');
-            } else {
-                openModal('Search Results', 'Showing architectural records matching: "' + query + '". (Demo mode active for AngkorLens)');
-            }
-        }
-
-        // Modal Controls
         function openModal(title, desc) {
             document.getElementById('modalTitle').innerText = title;
             document.getElementById('modalDesc').innerText = desc;
             document.getElementById('infoModal').classList.remove('hidden');
             document.getElementById('infoModal').classList.add('flex');
         }
-
         function closeModal() {
             document.getElementById('infoModal').classList.remove('flex');
             document.getElementById('infoModal').classList.add('hidden');
         }
 
-        // Scroll to Top
-        function scrollToTop() {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-
-        // Background Slideshow Script
         let slides = document.querySelectorAll('.hero-banner .slide');
         let currentSlide = 0;
-
         function nextSlide() {
             if (slides.length > 0) {
                 slides[currentSlide].classList.remove('active');
@@ -365,11 +270,7 @@
                 slides[currentSlide].classList.add('active');
             }
         }
-
-        // Change slide every 4 seconds
-        if (slides.length > 1) {
-            setInterval(nextSlide, 4000);
-        }
+        if (slides.length > 1) { setInterval(nextSlide, 4000); }
     </script>
 </body>
 </html>
