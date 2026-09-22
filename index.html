@@ -45,6 +45,7 @@
                 </a>
             </div>
 
+            <!-- Desktop Nav -->
             <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-neutral-600">
                 <a href="#" class="hover:text-cyan-600 transition">Angkor</a>
                 <a href="#" class="hover:text-cyan-600 transition">Temple Groups</a>
@@ -53,15 +54,34 @@
             </nav>
 
             <div class="flex items-center space-x-3">
-                <a href="https://www.youtube.com/@Urbanwalkstudio" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-red-600 text-white flex items-center justify-center hover:bg-red-700 transition shadow-sm" title="YouTube: Urban walk studio">
-                    <i class="fa-brands fa-youtube text-sm"></i>
-                </a>
-                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-blue-600 text-white flex items-center justify-center hover:bg-blue-700 transition shadow-sm" title="Facebook Page: Urban Explorer 4K">
-                    <i class="fa-brands fa-facebook-f text-sm"></i>
-                </a>
-                <a href="https://www.instagram.com/samnang_2022" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-gradient-to-tr from-yellow-500 via-pink-600 to-purple-700 text-white flex items-center justify-center hover:opacity-90 transition shadow-sm" title="Instagram: samnang_2022">
-                    <i class="fa-brands fa-instagram text-sm"></i>
-                </a>
+                <div class="hidden sm:flex items-center space-x-3">
+                    <a href="https://www.youtube.com/@Urbanwalkstudio" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-red-600 text-white flex items-center justify-center hover:bg-red-700 transition shadow-sm" title="YouTube: Urban walk studio">
+                        <i class="fa-brands fa-youtube text-sm"></i>
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-blue-600 text-white flex items-center justify-center hover:bg-blue-700 transition shadow-sm" title="Facebook Page: Urban Explorer 4K">
+                        <i class="fa-brands fa-facebook-f text-sm"></i>
+                    </a>
+                    <a href="https://www.instagram.com/samnang_2022" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-gradient-to-tr from-yellow-500 via-pink-600 to-purple-700 text-white flex items-center justify-center hover:opacity-90 transition shadow-sm" title="Instagram: samnang_2022">
+                        <i class="fa-brands fa-instagram text-sm"></i>
+                    </a>
+                </div>
+                <!-- Mobile Menu Button -->
+                <button onclick="toggleMobileMenu()" class="md:hidden text-neutral-700 hover:text-cyan-600 text-xl p-2">
+                    <i class="fa-solid fa-bars" id="menuIcon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Nav Drawer -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-b border-neutral-200 px-4 pt-2 pb-4 space-y-3">
+            <a href="#" class="block text-neutral-600 hover:text-cyan-600 font-medium py-1">Angkor</a>
+            <a href="#" class="block text-neutral-600 hover:text-cyan-600 font-medium py-1">Temple Groups</a>
+            <a href="#" class="block text-neutral-600 hover:text-cyan-600 font-medium py-1">Creator</a>
+            <a href="#about" class="block text-neutral-600 hover:text-cyan-600 font-medium py-1">About</a>
+            <div class="flex items-center space-x-3 pt-2 border-t border-neutral-100">
+                <a href="https://www.youtube.com/@Urbanwalkstudio" target="_blank" class="w-8 h-8 rounded-full bg-red-600 text-white flex items-center justify-center"><i class="fa-brands fa-youtube text-xs"></i></a>
+                <a href="https://www.facebook.com" target="_blank" class="w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center"><i class="fa-brands fa-facebook-f text-xs"></i></a>
+                <a href="https://www.instagram.com/samnang_2022" target="_blank" class="w-8 h-8 rounded-full bg-gradient-to-tr from-yellow-500 via-pink-600 to-purple-700 text-white flex items-center justify-center"><i class="fa-brands fa-instagram text-xs"></i></a>
             </div>
         </div>
     </header>
@@ -95,7 +115,7 @@
             <div class="absolute inset-0 bg-black/40 z-10"></div>
 
             <div class="w-full max-w-4xl mx-auto text-center z-20 relative px-4">
-                <span class="inline-block py-1 px-4 rounded-full bg-white/20 backdrop-blur-md text-white text-xs font-medium tracking-wider uppercase mb-4 border border-white/30">
+                <span class="inline-block py-1 px-4 rounded-full bg-white/25 backdrop-blur-md text-white text-xs font-medium tracking-wider uppercase mb-4 border border-white/30">
                     CURATED BY SAMNANG (@samnang_2022)
                 </span>
                 <h1 class="text-white text-3xl sm:text-4xl md:text-5xl font-bold mb-8 drop-shadow-lg">
@@ -107,6 +127,7 @@
                         <input 
                             type="text" 
                             id="searchInput"
+                            onkeyup="handleLiveSearch(event)"
                             placeholder="Search temples, ruins, architecture..." 
                             class="w-full px-5 py-4 pr-32 bg-neutral-50 rounded-xl text-neutral-800 focus:outline-none focus:ring-2 focus:ring-neutral-900 text-base border border-neutral-200 shadow-inner"
                         >
@@ -124,10 +145,10 @@
 
         <!-- Main Temple Cards Grid -->
         <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div id="templeGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 
                 <!-- Card 1 -->
-                <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4">
+                <div class="temple-card group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4" data-title="1. Prasat Pram ប្រាសាទប្រាំ ព្រំប្រទល់ខេត្តសៀមរាប-ព្រះវិហារ 10th Century Koh Ker">
                     <div>
                         <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative cursor-pointer" onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ ដែលមានទីតាំងស្ថិតនៅក្នុងតំបន់រមណីយដ្ឋានបុរាណវិទ្យា កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។`)">
                             <img src="01000713 2.JPG" alt="Prasat Pram" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
@@ -149,7 +170,7 @@
                 </div>
 
                 <!-- Card 2 -->
-                <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4">
+                <div class="temple-card group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4" data-title="2. Prasat Pram (Koh Ker) ប្រាសាទប្រាំ តំបន់កោះកេរ 10th Century UNESCO ព្រះបាទជ័យវរ្ម័នទី៤">
                     <div>
                         <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative cursor-pointer" onclick="openModal('ប្រាសាទប្រាំ (កោះកេរ)', '10th Century - Koh Ker', ['01000787.JPG', '01000747.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ស្ថិតក្នុងតំបន់បេតិកភណ្ឌពិភពលោក UNESCO កោះកេរ សាងសង់ក្នុងសតវត្សរ៍ទី១០ ដោយព្រះបាទជ័យវរ្ម័នទី៤។`)">
                             <img src="01000787.JPG" alt="Koh Ker" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
@@ -171,7 +192,7 @@
                 </div>
 
                 <!-- Card 3 -->
-                <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4">
+                <div class="temple-card group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4" data-title="3. Preah Khan Kampong Svay ប្រាសាទព្រះខ័នកំពង់ស្វាយ 12th Century Military Citadel">
                     <div>
                         <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative cursor-pointer" onclick="openModal('ប្រាសាទព្រះខ័នកំពង់ស្វាយ', '12th Century - Preah Khan', ['01012482.JPG'], `<strong>សារៈសំខាន់យោធា៖</strong><br>ជាក្រុង និងជាមជ្ឈមណ្ឌលយោធាដ៏សំខាន់ក្នុងសម័យអង្គរ ដែលមានទំហំធំល្វឹងល្វើយ។`)">
                             <img src="01012482.JPG" alt="Preah Khan" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
@@ -193,7 +214,7 @@
                 </div>
 
                 <!-- Card 4 -->
-                <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4">
+                <div class="temple-card group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4" data-title="4. Pong Toek Temple ប្រាសាទពងទឹក 11th-12th Century Preah Vihear">
                     <div>
                         <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative cursor-pointer" onclick="openModal('ប្រាសាទពងទឹក', '11th-12th Century - Pong Toek', ['01000713 4.jpg'], `<strong>ភាពលាក់ខ្លួន៖</strong><br>ប្រាសាទបុរាណលាក់ខ្លួនក្នុងព្រៃធម្មជាតិ តំបន់ព្រះវិហារ ដែលពោរពេញដោយរឿងរ៉ាវប្រវត្តិសាស្ត្រ។`)">
                             <img src="01000713 4.jpg" alt="Pong Toek" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
@@ -213,860 +234,13 @@
                         </button>
                     </div>
                 </div>
-                 <!-- Card 1 -->
-                <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4">
-                    <div>
-                        <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative cursor-pointer" onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ ដែលមានទីតាំងស្ថិតនៅក្នុងតំបន់រមណីយដ្ឋានបុរាណវិទ្យា កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។`)">
-                            <img src="01000713 2.JPG" alt="Prasat Pram" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        </div>
-                        <div class="px-2 mb-4">
-                            <h3 class="font-bold text-neutral-800 text-base sm:text-lg leading-snug group-hover:text-cyan-600 transition mb-2">
-                                1. Prasat Pram <span class="text-sm font-normal text-neutral-500 block">ប្រាសាទប្រាំ (ព្រំប្រទល់ខេត្តសៀមរាប-ព្រះវិហារ)</span>
-                            </h3>
-                            <p class="text-xs text-neutral-500 leading-relaxed">
-                                <strong>ទីតាំង និងប្រវត្តិ៖</strong> ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃក្នុងតំបន់កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។
-                            </p>
-                        </div>
-                    </div>
-                    <div class="px-2 pb-2 pt-0">
-                        <button onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ...`)" class="text-xs font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800 transition cursor-pointer">
-                            EXPLORE GUIDE &rarr;
-                        </button>
-                    </div>
-                </div>
 
-                 <!-- Card 1 -->
-                <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4">
-                    <div>
-                        <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative cursor-pointer" onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ ដែលមានទីតាំងស្ថិតនៅក្នុងតំបន់រមណីយដ្ឋានបុរាណវិទ្យា កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។`)">
-                            <img src="01000713 2.JPG" alt="Prasat Pram" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        </div>
-                        <div class="px-2 mb-4">
-                            <h3 class="font-bold text-neutral-800 text-base sm:text-lg leading-snug group-hover:text-cyan-600 transition mb-2">
-                                1. Prasat Pram <span class="text-sm font-normal text-neutral-500 block">ប្រាសាទប្រាំ (ព្រំប្រទល់ខេត្តសៀមរាប-ព្រះវិហារ)</span>
-                            </h3>
-                            <p class="text-xs text-neutral-500 leading-relaxed">
-                                <strong>ទីតាំង និងប្រវត្តិ៖</strong> ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃក្នុងតំបន់កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។
-                            </p>
-                        </div>
-                    </div>
-                    <div class="px-2 pb-2 pt-0">
-                        <button onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ...`)" class="text-xs font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800 transition cursor-pointer">
-                            EXPLORE GUIDE &rarr;
-                        </button>
-                    </div>
-                </div>
+            </div>
 
-                 <!-- Card 1 -->
-                <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4">
-                    <div>
-                        <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative cursor-pointer" onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ ដែលមានទីតាំងស្ថិតនៅក្នុងតំបន់រមណីយដ្ឋានបុរាណវិទ្យា កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។`)">
-                            <img src="01000713 2.JPG" alt="Prasat Pram" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        </div>
-                        <div class="px-2 mb-4">
-                            <h3 class="font-bold text-neutral-800 text-base sm:text-lg leading-snug group-hover:text-cyan-600 transition mb-2">
-                                1. Prasat Pram <span class="text-sm font-normal text-neutral-500 block">ប្រាសាទប្រាំ (ព្រំប្រទល់ខេត្តសៀមរាប-ព្រះវិហារ)</span>
-                            </h3>
-                            <p class="text-xs text-neutral-500 leading-relaxed">
-                                <strong>ទីតាំង និងប្រវត្តិ៖</strong> ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃក្នុងតំបន់កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។
-                            </p>
-                        </div>
-                    </div>
-                    <div class="px-2 pb-2 pt-0">
-                        <button onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ...`)" class="text-xs font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800 transition cursor-pointer">
-                            EXPLORE GUIDE &rarr;
-                        </button>
-                    </div>
-                </div>
-
-                 <!-- Card 1 -->
-                <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4">
-                    <div>
-                        <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative cursor-pointer" onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ ដែលមានទីតាំងស្ថិតនៅក្នុងតំបន់រមណីយដ្ឋានបុរាណវិទ្យា កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។`)">
-                            <img src="01000713 2.JPG" alt="Prasat Pram" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        </div>
-                        <div class="px-2 mb-4">
-                            <h3 class="font-bold text-neutral-800 text-base sm:text-lg leading-snug group-hover:text-cyan-600 transition mb-2">
-                                1. Prasat Pram <span class="text-sm font-normal text-neutral-500 block">ប្រាសាទប្រាំ (ព្រំប្រទល់ខេត្តសៀមរាប-ព្រះវិហារ)</span>
-                            </h3>
-                            <p class="text-xs text-neutral-500 leading-relaxed">
-                                <strong>ទីតាំង និងប្រវត្តិ៖</strong> ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃក្នុងតំបន់កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។
-                            </p>
-                        </div>
-                    </div>
-                    <div class="px-2 pb-2 pt-0">
-                        <button onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ...`)" class="text-xs font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800 transition cursor-pointer">
-                            EXPLORE GUIDE &rarr;
-                        </button>
-                    </div>
-                </div>
-
-                 <!-- Card 1 -->
-                <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4">
-                    <div>
-                        <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative cursor-pointer" onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ ដែលមានទីតាំងស្ថិតនៅក្នុងតំបន់រមណីយដ្ឋានបុរាណវិទ្យា កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។`)">
-                            <img src="01000713 2.JPG" alt="Prasat Pram" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        </div>
-                        <div class="px-2 mb-4">
-                            <h3 class="font-bold text-neutral-800 text-base sm:text-lg leading-snug group-hover:text-cyan-600 transition mb-2">
-                                1. Prasat Pram <span class="text-sm font-normal text-neutral-500 block">ប្រាសាទប្រាំ (ព្រំប្រទល់ខេត្តសៀមរាប-ព្រះវិហារ)</span>
-                            </h3>
-                            <p class="text-xs text-neutral-500 leading-relaxed">
-                                <strong>ទីតាំង និងប្រវត្តិ៖</strong> ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃក្នុងតំបន់កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។
-                            </p>
-                        </div>
-                    </div>
-                    <div class="px-2 pb-2 pt-0">
-                        <button onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ...`)" class="text-xs font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800 transition cursor-pointer">
-                            EXPLORE GUIDE &rarr;
-                        </button>
-                    </div>
-                </div>
-
-                 <!-- Card 1 -->
-                <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4">
-                    <div>
-                        <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative cursor-pointer" onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ ដែលមានទីតាំងស្ថិតនៅក្នុងតំបន់រមណីយដ្ឋានបុរាណវិទ្យា កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។`)">
-                            <img src="01000713 2.JPG" alt="Prasat Pram" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        </div>
-                        <div class="px-2 mb-4">
-                            <h3 class="font-bold text-neutral-800 text-base sm:text-lg leading-snug group-hover:text-cyan-600 transition mb-2">
-                                1. Prasat Pram <span class="text-sm font-normal text-neutral-500 block">ប្រាសាទប្រាំ (ព្រំប្រទល់ខេត្តសៀមរាប-ព្រះវិហារ)</span>
-                            </h3>
-                            <p class="text-xs text-neutral-500 leading-relaxed">
-                                <strong>ទីតាំង និងប្រវត្តិ៖</strong> ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃក្នុងតំបន់កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។
-                            </p>
-                        </div>
-                    </div>
-                    <div class="px-2 pb-2 pt-0">
-                        <button onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ...`)" class="text-xs font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800 transition cursor-pointer">
-                            EXPLORE GUIDE &rarr;
-                        </button>
-                    </div>
-                </div>
-
-                 <!-- Card 1 -->
-                <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4">
-                    <div>
-                        <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative cursor-pointer" onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ ដែលមានទីតាំងស្ថិតនៅក្នុងតំបន់រមណីយដ្ឋានបុរាណវិទ្យា កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។`)">
-                            <img src="01000713 2.JPG" alt="Prasat Pram" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        </div>
-                        <div class="px-2 mb-4">
-                            <h3 class="font-bold text-neutral-800 text-base sm:text-lg leading-snug group-hover:text-cyan-600 transition mb-2">
-                                1. Prasat Pram <span class="text-sm font-normal text-neutral-500 block">ប្រាសាទប្រាំ (ព្រំប្រទល់ខេត្តសៀមរាប-ព្រះវិហារ)</span>
-                            </h3>
-                            <p class="text-xs text-neutral-500 leading-relaxed">
-                                <strong>ទីតាំង និងប្រវត្តិ៖</strong> ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃក្នុងតំបន់កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។
-                            </p>
-                        </div>
-                    </div>
-                    <div class="px-2 pb-2 pt-0">
-                        <button onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ...`)" class="text-xs font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800 transition cursor-pointer">
-                            EXPLORE GUIDE &rarr;
-                        </button>
-                    </div>
-                </div>
-
-                 <!-- Card 1 -->
-                <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4">
-                    <div>
-                        <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative cursor-pointer" onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ ដែលមានទីតាំងស្ថិតនៅក្នុងតំបន់រមណីយដ្ឋានបុរាណវិទ្យា កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។`)">
-                            <img src="01000713 2.JPG" alt="Prasat Pram" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        </div>
-                        <div class="px-2 mb-4">
-                            <h3 class="font-bold text-neutral-800 text-base sm:text-lg leading-snug group-hover:text-cyan-600 transition mb-2">
-                                1. Prasat Pram <span class="text-sm font-normal text-neutral-500 block">ប្រាសាទប្រាំ (ព្រំប្រទល់ខេត្តសៀមរាប-ព្រះវិហារ)</span>
-                            </h3>
-                            <p class="text-xs text-neutral-500 leading-relaxed">
-                                <strong>ទីតាំង និងប្រវត្តិ៖</strong> ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃក្នុងតំបន់កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។
-                            </p>
-                        </div>
-                    </div>
-                    <div class="px-2 pb-2 pt-0">
-                        <button onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ...`)" class="text-xs font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800 transition cursor-pointer">
-                            EXPLORE GUIDE &rarr;
-                        </button>
-                    </div>
-                </div>
-
-                 <!-- Card 1 -->
-                <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4">
-                    <div>
-                        <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative cursor-pointer" onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ ដែលមានទីតាំងស្ថិតនៅក្នុងតំបន់រមណីយដ្ឋានបុរាណវិទ្យា កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។`)">
-                            <img src="01000713 2.JPG" alt="Prasat Pram" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        </div>
-                        <div class="px-2 mb-4">
-                            <h3 class="font-bold text-neutral-800 text-base sm:text-lg leading-snug group-hover:text-cyan-600 transition mb-2">
-                                1. Prasat Pram <span class="text-sm font-normal text-neutral-500 block">ប្រាសាទប្រាំ (ព្រំប្រទល់ខេត្តសៀមរាប-ព្រះវិហារ)</span>
-                            </h3>
-                            <p class="text-xs text-neutral-500 leading-relaxed">
-                                <strong>ទីតាំង និងប្រវត្តិ៖</strong> ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃក្នុងតំបន់កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។
-                            </p>
-                        </div>
-                    </div>
-                    <div class="px-2 pb-2 pt-0">
-                        <button onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ...`)" class="text-xs font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800 transition cursor-pointer">
-                            EXPLORE GUIDE &rarr;
-                        </button>
-                    </div>
-                </div>
-
-                 <!-- Card 1 -->
-                <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4">
-                    <div>
-                        <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative cursor-pointer" onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ ដែលមានទីតាំងស្ថិតនៅក្នុងតំបន់រមណីយដ្ឋានបុរាណវិទ្យា កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។`)">
-                            <img src="01000713 2.JPG" alt="Prasat Pram" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        </div>
-                        <div class="px-2 mb-4">
-                            <h3 class="font-bold text-neutral-800 text-base sm:text-lg leading-snug group-hover:text-cyan-600 transition mb-2">
-                                1. Prasat Pram <span class="text-sm font-normal text-neutral-500 block">ប្រាសាទប្រាំ (ព្រំប្រទល់ខេត្តសៀមរាប-ព្រះវិហារ)</span>
-                            </h3>
-                            <p class="text-xs text-neutral-500 leading-relaxed">
-                                <strong>ទីតាំង និងប្រវត្តិ៖</strong> ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃក្នុងតំបន់កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។
-                            </p>
-                        </div>
-                    </div>
-                    <div class="px-2 pb-2 pt-0">
-                        <button onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ...`)" class="text-xs font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800 transition cursor-pointer">
-                            EXPLORE GUIDE &rarr;
-                        </button>
-                    </div>
-                </div>
-
-                 <!-- Card 1 -->
-                <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4">
-                    <div>
-                        <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative cursor-pointer" onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ ដែលមានទីតាំងស្ថិតនៅក្នុងតំបន់រមណីយដ្ឋានបុរាណវិទ្យា កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។`)">
-                            <img src="01000713 2.JPG" alt="Prasat Pram" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        </div>
-                        <div class="px-2 mb-4">
-                            <h3 class="font-bold text-neutral-800 text-base sm:text-lg leading-snug group-hover:text-cyan-600 transition mb-2">
-                                1. Prasat Pram <span class="text-sm font-normal text-neutral-500 block">ប្រាសាទប្រាំ (ព្រំប្រទល់ខេត្តសៀមរាប-ព្រះវិហារ)</span>
-                            </h3>
-                            <p class="text-xs text-neutral-500 leading-relaxed">
-                                <strong>ទីតាំង និងប្រវត្តិ៖</strong> ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃក្នុងតំបន់កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។
-                            </p>
-                        </div>
-                    </div>
-                    <div class="px-2 pb-2 pt-0">
-                        <button onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ...`)" class="text-xs font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800 transition cursor-pointer">
-                            EXPLORE GUIDE &rarr;
-                        </button>
-                    </div>
-                </div>
-
-                 <!-- Card 1 -->
-                <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4">
-                    <div>
-                        <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative cursor-pointer" onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ ដែលមានទីតាំងស្ថិតនៅក្នុងតំបន់រមណីយដ្ឋានបុរាណវិទ្យា កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។`)">
-                            <img src="01000713 2.JPG" alt="Prasat Pram" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        </div>
-                        <div class="px-2 mb-4">
-                            <h3 class="font-bold text-neutral-800 text-base sm:text-lg leading-snug group-hover:text-cyan-600 transition mb-2">
-                                1. Prasat Pram <span class="text-sm font-normal text-neutral-500 block">ប្រាសាទប្រាំ (ព្រំប្រទល់ខេត្តសៀមរាប-ព្រះវិហារ)</span>
-                            </h3>
-                            <p class="text-xs text-neutral-500 leading-relaxed">
-                                <strong>ទីតាំង និងប្រវត្តិ៖</strong> ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃក្នុងតំបន់កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។
-                            </p>
-                        </div>
-                    </div>
-                    <div class="px-2 pb-2 pt-0">
-                        <button onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ...`)" class="text-xs font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800 transition cursor-pointer">
-                            EXPLORE GUIDE &rarr;
-                        </button>
-                    </div>
-                </div>
-
-                 <!-- Card 1 -->
-                <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4">
-                    <div>
-                        <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative cursor-pointer" onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ ដែលមានទីតាំងស្ថិតនៅក្នុងតំបន់រមណីយដ្ឋានបុរាណវិទ្យា កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។`)">
-                            <img src="01000713 2.JPG" alt="Prasat Pram" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        </div>
-                        <div class="px-2 mb-4">
-                            <h3 class="font-bold text-neutral-800 text-base sm:text-lg leading-snug group-hover:text-cyan-600 transition mb-2">
-                                1. Prasat Pram <span class="text-sm font-normal text-neutral-500 block">ប្រាសាទប្រាំ (ព្រំប្រទល់ខេត្តសៀមរាប-ព្រះវិហារ)</span>
-                            </h3>
-                            <p class="text-xs text-neutral-500 leading-relaxed">
-                                <strong>ទីតាំង និងប្រវត្តិ៖</strong> ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃក្នុងតំបន់កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។
-                            </p>
-                        </div>
-                    </div>
-                    <div class="px-2 pb-2 pt-0">
-                        <button onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ...`)" class="text-xs font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800 transition cursor-pointer">
-                            EXPLORE GUIDE &rarr;
-                        </button>
-                    </div>
-                </div>
-
-                 <!-- Card 1 -->
-                <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4">
-                    <div>
-                        <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative cursor-pointer" onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ ដែលមានទីតាំងស្ថិតនៅក្នុងតំបន់រមណីយដ្ឋានបុរាណវិទ្យា កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។`)">
-                            <img src="01000713 2.JPG" alt="Prasat Pram" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        </div>
-                        <div class="px-2 mb-4">
-                            <h3 class="font-bold text-neutral-800 text-base sm:text-lg leading-snug group-hover:text-cyan-600 transition mb-2">
-                                1. Prasat Pram <span class="text-sm font-normal text-neutral-500 block">ប្រាសាទប្រាំ (ព្រំប្រទល់ខេត្តសៀមរាប-ព្រះវិហារ)</span>
-                            </h3>
-                            <p class="text-xs text-neutral-500 leading-relaxed">
-                                <strong>ទីតាំង និងប្រវត្តិ៖</strong> ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃក្នុងតំបន់កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។
-                            </p>
-                        </div>
-                    </div>
-                    <div class="px-2 pb-2 pt-0">
-                        <button onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ...`)" class="text-xs font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800 transition cursor-pointer">
-                            EXPLORE GUIDE &rarr;
-                        </button>
-                    </div>
-                </div>
-
-                 <!-- Card 1 -->
-                <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4">
-                    <div>
-                        <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative cursor-pointer" onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ ដែលមានទីតាំងស្ថិតនៅក្នុងតំបន់រមណីយដ្ឋានបុរាណវិទ្យា កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។`)">
-                            <img src="01000713 2.JPG" alt="Prasat Pram" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        </div>
-                        <div class="px-2 mb-4">
-                            <h3 class="font-bold text-neutral-800 text-base sm:text-lg leading-snug group-hover:text-cyan-600 transition mb-2">
-                                1. Prasat Pram <span class="text-sm font-normal text-neutral-500 block">ប្រាសាទប្រាំ (ព្រំប្រទល់ខេត្តសៀមរាប-ព្រះវិហារ)</span>
-                            </h3>
-                            <p class="text-xs text-neutral-500 leading-relaxed">
-                                <strong>ទីតាំង និងប្រវត្តិ៖</strong> ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃក្នុងតំបន់កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។
-                            </p>
-                        </div>
-                    </div>
-                    <div class="px-2 pb-2 pt-0">
-                        <button onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ...`)" class="text-xs font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800 transition cursor-pointer">
-                            EXPLORE GUIDE &rarr;
-                        </button>
-                    </div>
-                </div>
-
-                 <!-- Card 1 -->
-                <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4">
-                    <div>
-                        <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative cursor-pointer" onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ ដែលមានទីតាំងស្ថិតនៅក្នុងតំបន់រមណីយដ្ឋានបុរាណវិទ្យា កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។`)">
-                            <img src="01000713 2.JPG" alt="Prasat Pram" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        </div>
-                        <div class="px-2 mb-4">
-                            <h3 class="font-bold text-neutral-800 text-base sm:text-lg leading-snug group-hover:text-cyan-600 transition mb-2">
-                                1. Prasat Pram <span class="text-sm font-normal text-neutral-500 block">ប្រាសាទប្រាំ (ព្រំប្រទល់ខេត្តសៀមរាប-ព្រះវិហារ)</span>
-                            </h3>
-                            <p class="text-xs text-neutral-500 leading-relaxed">
-                                <strong>ទីតាំង និងប្រវត្តិ៖</strong> ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃក្នុងតំបន់កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។
-                            </p>
-                        </div>
-                    </div>
-                    <div class="px-2 pb-2 pt-0">
-                        <button onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ...`)" class="text-xs font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800 transition cursor-pointer">
-                            EXPLORE GUIDE &rarr;
-                        </button>
-                    </div>
-                </div>
-
-                 <!-- Card 1 -->
-                <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4">
-                    <div>
-                        <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative cursor-pointer" onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ ដែលមានទីតាំងស្ថិតនៅក្នុងតំបន់រមណីយដ្ឋានបុរាណវិទ្យា កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។`)">
-                            <img src="01000713 2.JPG" alt="Prasat Pram" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        </div>
-                        <div class="px-2 mb-4">
-                            <h3 class="font-bold text-neutral-800 text-base sm:text-lg leading-snug group-hover:text-cyan-600 transition mb-2">
-                                1. Prasat Pram <span class="text-sm font-normal text-neutral-500 block">ប្រាសាទប្រាំ (ព្រំប្រទល់ខេត្តសៀមរាប-ព្រះវិហារ)</span>
-                            </h3>
-                            <p class="text-xs text-neutral-500 leading-relaxed">
-                                <strong>ទីតាំង និងប្រវត្តិ៖</strong> ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃក្នុងតំបន់កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។
-                            </p>
-                        </div>
-                    </div>
-                    <div class="px-2 pb-2 pt-0">
-                        <button onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ...`)" class="text-xs font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800 transition cursor-pointer">
-                            EXPLORE GUIDE &rarr;
-                        </button>
-                    </div>
-                </div>
-
-                 <!-- Card 1 -->
-                <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4">
-                    <div>
-                        <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative cursor-pointer" onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ ដែលមានទីតាំងស្ថិតនៅក្នុងតំបន់រមណីយដ្ឋានបុរាណវិទ្យា កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។`)">
-                            <img src="01000713 2.JPG" alt="Prasat Pram" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        </div>
-                        <div class="px-2 mb-4">
-                            <h3 class="font-bold text-neutral-800 text-base sm:text-lg leading-snug group-hover:text-cyan-600 transition mb-2">
-                                1. Prasat Pram <span class="text-sm font-normal text-neutral-500 block">ប្រាសាទប្រាំ (ព្រំប្រទល់ខេត្តសៀមរាប-ព្រះវិហារ)</span>
-                            </h3>
-                            <p class="text-xs text-neutral-500 leading-relaxed">
-                                <strong>ទីតាំង និងប្រវត្តិ៖</strong> ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃក្នុងតំបន់កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។
-                            </p>
-                        </div>
-                    </div>
-                    <div class="px-2 pb-2 pt-0">
-                        <button onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ...`)" class="text-xs font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800 transition cursor-pointer">
-                            EXPLORE GUIDE &rarr;
-                        </button>
-                    </div>
-                </div>
-
-                 <!-- Card 1 -->
-                <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4">
-                    <div>
-                        <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative cursor-pointer" onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ ដែលមានទីតាំងស្ថិតនៅក្នុងតំបន់រមណីយដ្ឋានបុរាណវិទ្យា កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។`)">
-                            <img src="01000713 2.JPG" alt="Prasat Pram" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        </div>
-                        <div class="px-2 mb-4">
-                            <h3 class="font-bold text-neutral-800 text-base sm:text-lg leading-snug group-hover:text-cyan-600 transition mb-2">
-                                1. Prasat Pram <span class="text-sm font-normal text-neutral-500 block">ប្រាសាទប្រាំ (ព្រំប្រទល់ខេត្តសៀមរាប-ព្រះវិហារ)</span>
-                            </h3>
-                            <p class="text-xs text-neutral-500 leading-relaxed">
-                                <strong>ទីតាំង និងប្រវត្តិ៖</strong> ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃក្នុងតំបន់កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។
-                            </p>
-                        </div>
-                    </div>
-                    <div class="px-2 pb-2 pt-0">
-                        <button onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ...`)" class="text-xs font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800 transition cursor-pointer">
-                            EXPLORE GUIDE &rarr;
-                        </button>
-                    </div>
-                </div>
-
-                 <!-- Card 1 -->
-                <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4">
-                    <div>
-                        <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative cursor-pointer" onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ ដែលមានទីតាំងស្ថិតនៅក្នុងតំបន់រមណីយដ្ឋានបុរាណវិទ្យា កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។`)">
-                            <img src="01000713 2.JPG" alt="Prasat Pram" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        </div>
-                        <div class="px-2 mb-4">
-                            <h3 class="font-bold text-neutral-800 text-base sm:text-lg leading-snug group-hover:text-cyan-600 transition mb-2">
-                                1. Prasat Pram <span class="text-sm font-normal text-neutral-500 block">ប្រាសាទប្រាំ (ព្រំប្រទល់ខេត្តសៀមរាប-ព្រះវិហារ)</span>
-                            </h3>
-                            <p class="text-xs text-neutral-500 leading-relaxed">
-                                <strong>ទីតាំង និងប្រវត្តិ៖</strong> ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃក្នុងតំបន់កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។
-                            </p>
-                        </div>
-                    </div>
-                    <div class="px-2 pb-2 pt-0">
-                        <button onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ...`)" class="text-xs font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800 transition cursor-pointer">
-                            EXPLORE GUIDE &rarr;
-                        </button>
-                    </div>
-                </div>
-
-                 <!-- Card 1 -->
-                <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4">
-                    <div>
-                        <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative cursor-pointer" onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ ដែលមានទីតាំងស្ថិតនៅក្នុងតំបន់រមណីយដ្ឋានបុរាណវិទ្យា កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។`)">
-                            <img src="01000713 2.JPG" alt="Prasat Pram" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        </div>
-                        <div class="px-2 mb-4">
-                            <h3 class="font-bold text-neutral-800 text-base sm:text-lg leading-snug group-hover:text-cyan-600 transition mb-2">
-                                1. Prasat Pram <span class="text-sm font-normal text-neutral-500 block">ប្រាសាទប្រាំ (ព្រំប្រទល់ខេត្តសៀមរាប-ព្រះវិហារ)</span>
-                            </h3>
-                            <p class="text-xs text-neutral-500 leading-relaxed">
-                                <strong>ទីតាំង និងប្រវត្តិ៖</strong> ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃក្នុងតំបន់កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។
-                            </p>
-                        </div>
-                    </div>
-                    <div class="px-2 pb-2 pt-0">
-                        <button onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ...`)" class="text-xs font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800 transition cursor-pointer">
-                            EXPLORE GUIDE &rarr;
-                        </button>
-                    </div>
-                </div>
-
-                 <!-- Card 1 -->
-                <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4">
-                    <div>
-                        <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative cursor-pointer" onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ ដែលមានទីតាំងស្ថិតនៅក្នុងតំបន់រមណីយដ្ឋានបុរាណវិទ្យា កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។`)">
-                            <img src="01000713 2.JPG" alt="Prasat Pram" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        </div>
-                        <div class="px-2 mb-4">
-                            <h3 class="font-bold text-neutral-800 text-base sm:text-lg leading-snug group-hover:text-cyan-600 transition mb-2">
-                                1. Prasat Pram <span class="text-sm font-normal text-neutral-500 block">ប្រាសាទប្រាំ (ព្រំប្រទល់ខេត្តសៀមរាប-ព្រះវិហារ)</span>
-                            </h3>
-                            <p class="text-xs text-neutral-500 leading-relaxed">
-                                <strong>ទីតាំង និងប្រវត្តិ៖</strong> ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃក្នុងតំបន់កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។
-                            </p>
-                        </div>
-                    </div>
-                    <div class="px-2 pb-2 pt-0">
-                        <button onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ...`)" class="text-xs font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800 transition cursor-pointer">
-                            EXPLORE GUIDE &rarr;
-                        </button>
-                    </div>
-                </div>
-
-                 <!-- Card 1 -->
-                <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4">
-                    <div>
-                        <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative cursor-pointer" onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ ដែលមានទីតាំងស្ថិតនៅក្នុងតំបន់រមណីយដ្ឋានបុរាណវិទ្យា កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។`)">
-                            <img src="01000713 2.JPG" alt="Prasat Pram" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        </div>
-                        <div class="px-2 mb-4">
-                            <h3 class="font-bold text-neutral-800 text-base sm:text-lg leading-snug group-hover:text-cyan-600 transition mb-2">
-                                1. Prasat Pram <span class="text-sm font-normal text-neutral-500 block">ប្រាសាទប្រាំ (ព្រំប្រទល់ខេត្តសៀមរាប-ព្រះវិហារ)</span>
-                            </h3>
-                            <p class="text-xs text-neutral-500 leading-relaxed">
-                                <strong>ទីតាំង និងប្រវត្តិ៖</strong> ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃក្នុងតំបន់កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។
-                            </p>
-                        </div>
-                    </div>
-                    <div class="px-2 pb-2 pt-0">
-                        <button onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ...`)" class="text-xs font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800 transition cursor-pointer">
-                            EXPLORE GUIDE &rarr;
-                        </button>
-                    </div>
-                </div>
-
-                 <!-- Card 1 -->
-                <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4">
-                    <div>
-                        <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative cursor-pointer" onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ ដែលមានទីតាំងស្ថិតនៅក្នុងតំបន់រមណីយដ្ឋានបុរាណវិទ្យា កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។`)">
-                            <img src="01000713 2.JPG" alt="Prasat Pram" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        </div>
-                        <div class="px-2 mb-4">
-                            <h3 class="font-bold text-neutral-800 text-base sm:text-lg leading-snug group-hover:text-cyan-600 transition mb-2">
-                                1. Prasat Pram <span class="text-sm font-normal text-neutral-500 block">ប្រាសាទប្រាំ (ព្រំប្រទល់ខេត្តសៀមរាប-ព្រះវិហារ)</span>
-                            </h3>
-                            <p class="text-xs text-neutral-500 leading-relaxed">
-                                <strong>ទីតាំង និងប្រវត្តិ៖</strong> ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃក្នុងតំបន់កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។
-                            </p>
-                        </div>
-                    </div>
-                    <div class="px-2 pb-2 pt-0">
-                        <button onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ...`)" class="text-xs font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800 transition cursor-pointer">
-                            EXPLORE GUIDE &rarr;
-                        </button>
-                    </div>
-                </div>
-
-                 <!-- Card 1 -->
-                <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4">
-                    <div>
-                        <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative cursor-pointer" onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ ដែលមានទីតាំងស្ថិតនៅក្នុងតំបន់រមណីយដ្ឋានបុរាណវិទ្យា កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។`)">
-                            <img src="01000713 2.JPG" alt="Prasat Pram" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        </div>
-                        <div class="px-2 mb-4">
-                            <h3 class="font-bold text-neutral-800 text-base sm:text-lg leading-snug group-hover:text-cyan-600 transition mb-2">
-                                1. Prasat Pram <span class="text-sm font-normal text-neutral-500 block">ប្រាសាទប្រាំ (ព្រំប្រទល់ខេត្តសៀមរាប-ព្រះវិហារ)</span>
-                            </h3>
-                            <p class="text-xs text-neutral-500 leading-relaxed">
-                                <strong>ទីតាំង និងប្រវត្តិ៖</strong> ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃក្នុងតំបន់កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។
-                            </p>
-                        </div>
-                    </div>
-                    <div class="px-2 pb-2 pt-0">
-                        <button onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ...`)" class="text-xs font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800 transition cursor-pointer">
-                            EXPLORE GUIDE &rarr;
-                        </button>
-                    </div>
-                </div>
-
-                 <!-- Card 1 -->
-                <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4">
-                    <div>
-                        <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative cursor-pointer" onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ ដែលមានទីតាំងស្ថិតនៅក្នុងតំបន់រមណីយដ្ឋានបុរាណវិទ្យា កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។`)">
-                            <img src="01000713 2.JPG" alt="Prasat Pram" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        </div>
-                        <div class="px-2 mb-4">
-                            <h3 class="font-bold text-neutral-800 text-base sm:text-lg leading-snug group-hover:text-cyan-600 transition mb-2">
-                                1. Prasat Pram <span class="text-sm font-normal text-neutral-500 block">ប្រាសាទប្រាំ (ព្រំប្រទល់ខេត្តសៀមរាប-ព្រះវិហារ)</span>
-                            </h3>
-                            <p class="text-xs text-neutral-500 leading-relaxed">
-                                <strong>ទីតាំង និងប្រវត្តិ៖</strong> ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃក្នុងតំបន់កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។
-                            </p>
-                        </div>
-                    </div>
-                    <div class="px-2 pb-2 pt-0">
-                        <button onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ...`)" class="text-xs font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800 transition cursor-pointer">
-                            EXPLORE GUIDE &rarr;
-                        </button>
-                    </div>
-                </div>
-
-                 <!-- Card 1 -->
-                <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4">
-                    <div>
-                        <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative cursor-pointer" onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ ដែលមានទីតាំងស្ថិតនៅក្នុងតំបន់រមណីយដ្ឋានបុរាណវិទ្យា កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។`)">
-                            <img src="01000713 2.JPG" alt="Prasat Pram" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        </div>
-                        <div class="px-2 mb-4">
-                            <h3 class="font-bold text-neutral-800 text-base sm:text-lg leading-snug group-hover:text-cyan-600 transition mb-2">
-                                1. Prasat Pram <span class="text-sm font-normal text-neutral-500 block">ប្រាសាទប្រាំ (ព្រំប្រទល់ខេត្តសៀមរាប-ព្រះវិហារ)</span>
-                            </h3>
-                            <p class="text-xs text-neutral-500 leading-relaxed">
-                                <strong>ទីតាំង និងប្រវត្តិ៖</strong> ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃក្នុងតំបន់កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។
-                            </p>
-                        </div>
-                    </div>
-                    <div class="px-2 pb-2 pt-0">
-                        <button onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ...`)" class="text-xs font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800 transition cursor-pointer">
-                            EXPLORE GUIDE &rarr;
-                        </button>
-                    </div>
-                </div>
-
-                 <!-- Card 1 -->
-                <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4">
-                    <div>
-                        <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative cursor-pointer" onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ ដែលមានទីតាំងស្ថិតនៅក្នុងតំបន់រមណីយដ្ឋានបុរាណវិទ្យា កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។`)">
-                            <img src="01000713 2.JPG" alt="Prasat Pram" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        </div>
-                        <div class="px-2 mb-4">
-                            <h3 class="font-bold text-neutral-800 text-base sm:text-lg leading-snug group-hover:text-cyan-600 transition mb-2">
-                                1. Prasat Pram <span class="text-sm font-normal text-neutral-500 block">ប្រាសាទប្រាំ (ព្រំប្រទល់ខេត្តសៀមរាប-ព្រះវិហារ)</span>
-                            </h3>
-                            <p class="text-xs text-neutral-500 leading-relaxed">
-                                <strong>ទីតាំង និងប្រវត្តិ៖</strong> ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃក្នុងតំបន់កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។
-                            </p>
-                        </div>
-                    </div>
-                    <div class="px-2 pb-2 pt-0">
-                        <button onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ...`)" class="text-xs font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800 transition cursor-pointer">
-                            EXPLORE GUIDE &rarr;
-                        </button>
-                    </div>
-                </div>
-
-                v
-                 <!-- Card 1 -->
-                <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4">
-                    <div>
-                        <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative cursor-pointer" onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ ដែលមានទីតាំងស្ថិតនៅក្នុងតំបន់រមណីយដ្ឋានបុរាណវិទ្យា កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។`)">
-                            <img src="01000713 2.JPG" alt="Prasat Pram" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        </div>
-                        <div class="px-2 mb-4">
-                            <h3 class="font-bold text-neutral-800 text-base sm:text-lg leading-snug group-hover:text-cyan-600 transition mb-2">
-                                1. Prasat Pram <span class="text-sm font-normal text-neutral-500 block">ប្រាសាទប្រាំ (ព្រំប្រទល់ខេត្តសៀមរាប-ព្រះវិហារ)</span>
-                            </h3>
-                            <p class="text-xs text-neutral-500 leading-relaxed">
-                                <strong>ទីតាំង និងប្រវត្តិ៖</strong> ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃក្នុងតំបន់កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។
-                            </p>
-                        </div>
-                    </div>
-                    <div class="px-2 pb-2 pt-0">
-                        <button onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ...`)" class="text-xs font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800 transition cursor-pointer">
-                            EXPLORE GUIDE &rarr;
-                        </button>
-                    </div>
-                </div>
-
-                 <!-- Card 1 -->
-                <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4">
-                    <div>
-                        <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative cursor-pointer" onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ ដែលមានទីតាំងស្ថិតនៅក្នុងតំបន់រមណីយដ្ឋានបុរាណវិទ្យា កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។`)">
-                            <img src="01000713 2.JPG" alt="Prasat Pram" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        </div>
-                        <div class="px-2 mb-4">
-                            <h3 class="font-bold text-neutral-800 text-base sm:text-lg leading-snug group-hover:text-cyan-600 transition mb-2">
-                                1. Prasat Pram <span class="text-sm font-normal text-neutral-500 block">ប្រាសាទប្រាំ (ព្រំប្រទល់ខេត្តសៀមរាប-ព្រះវិហារ)</span>
-                            </h3>
-                            <p class="text-xs text-neutral-500 leading-relaxed">
-                                <strong>ទីតាំង និងប្រវត្តិ៖</strong> ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃក្នុងតំបន់កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។
-                            </p>
-                        </div>
-                    </div>
-                    <div class="px-2 pb-2 pt-0">
-                        <button onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ...`)" class="text-xs font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800 transition cursor-pointer">
-                            EXPLORE GUIDE &rarr;
-                        </button>
-                    </div>
-                </div>
-
-                 <!-- Card 1 -->
-                <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4">
-                    <div>
-                        <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative cursor-pointer" onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ ដែលមានទីតាំងស្ថិតនៅក្នុងតំបន់រមណីយដ្ឋានបុរាណវិទ្យា កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។`)">
-                            <img src="01000713 2.JPG" alt="Prasat Pram" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        </div>
-                        <div class="px-2 mb-4">
-                            <h3 class="font-bold text-neutral-800 text-base sm:text-lg leading-snug group-hover:text-cyan-600 transition mb-2">
-                                1. Prasat Pram <span class="text-sm font-normal text-neutral-500 block">ប្រាសាទប្រាំ (ព្រំប្រទល់ខេត្តសៀមរាប-ព្រះវិហារ)</span>
-                            </h3>
-                            <p class="text-xs text-neutral-500 leading-relaxed">
-                                <strong>ទីតាំង និងប្រវត្តិ៖</strong> ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃក្នុងតំបន់កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។
-                            </p>
-                        </div>
-                    </div>
-                    <div class="px-2 pb-2 pt-0">
-                        <button onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ...`)" class="text-xs font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800 transition cursor-pointer">
-                            EXPLORE GUIDE &rarr;
-                        </button>
-                    </div>
-                </div>
-
-                 <!-- Card 1 -->
-                <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4">
-                    <div>
-                        <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative cursor-pointer" onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ ដែលមានទីតាំងស្ថិតនៅក្នុងតំបន់រមណីយដ្ឋានបុរាណវិទ្យា កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។`)">
-                            <img src="01000713 2.JPG" alt="Prasat Pram" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        </div>
-                        <div class="px-2 mb-4">
-                            <h3 class="font-bold text-neutral-800 text-base sm:text-lg leading-snug group-hover:text-cyan-600 transition mb-2">
-                                1. Prasat Pram <span class="text-sm font-normal text-neutral-500 block">ប្រាសាទប្រាំ (ព្រំប្រទល់ខេត្តសៀមរាប-ព្រះវិហារ)</span>
-                            </h3>
-                            <p class="text-xs text-neutral-500 leading-relaxed">
-                                <strong>ទីតាំង និងប្រវត្តិ៖</strong> ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃក្នុងតំបន់កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។
-                            </p>
-                        </div>
-                    </div>
-                    <div class="px-2 pb-2 pt-0">
-                        <button onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ...`)" class="text-xs font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800 transition cursor-pointer">
-                            EXPLORE GUIDE &rarr;
-                        </button>
-                    </div>
-                </div>
-
-                 <!-- Card 1 -->
-                <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4">
-                    <div>
-                        <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative cursor-pointer" onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ ដែលមានទីតាំងស្ថិតនៅក្នុងតំបន់រមណីយដ្ឋានបុរាណវិទ្យា កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។`)">
-                            <img src="01000713 2.JPG" alt="Prasat Pram" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        </div>
-                        <div class="px-2 mb-4">
-                            <h3 class="font-bold text-neutral-800 text-base sm:text-lg leading-snug group-hover:text-cyan-600 transition mb-2">
-                                1. Prasat Pram <span class="text-sm font-normal text-neutral-500 block">ប្រាសាទប្រាំ (ព្រំប្រទល់ខេត្តសៀមរាប-ព្រះវិហារ)</span>
-                            </h3>
-                            <p class="text-xs text-neutral-500 leading-relaxed">
-                                <strong>ទីតាំង និងប្រវត្តិ៖</strong> ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃក្នុងតំបន់កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។
-                            </p>
-                        </div>
-                    </div>
-                    <div class="px-2 pb-2 pt-0">
-                        <button onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ...`)" class="text-xs font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800 transition cursor-pointer">
-                            EXPLORE GUIDE &rarr;
-                        </button>
-                    </div>
-                </div>
-                 <!-- Card 1 -->
-                <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4">
-                    <div>
-                        <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative cursor-pointer" onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ ដែលមានទីតាំងស្ថិតនៅក្នុងតំបន់រមណីយដ្ឋានបុរាណវិទ្យា កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។`)">
-                            <img src="01000713 2.JPG" alt="Prasat Pram" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        </div>
-                        <div class="px-2 mb-4">
-                            <h3 class="font-bold text-neutral-800 text-base sm:text-lg leading-snug group-hover:text-cyan-600 transition mb-2">
-                                1. Prasat Pram <span class="text-sm font-normal text-neutral-500 block">ប្រាសាទប្រាំ (ព្រំប្រទល់ខេត្តសៀមរាប-ព្រះវិហារ)</span>
-                            </h3>
-                            <p class="text-xs text-neutral-500 leading-relaxed">
-                                <strong>ទីតាំង និងប្រវត្តិ៖</strong> ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃក្នុងតំបន់កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។
-                            </p>
-                        </div>
-                    </div>
-                    <div class="px-2 pb-2 pt-0">
-                        <button onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ...`)" class="text-xs font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800 transition cursor-pointer">
-                            EXPLORE GUIDE &rarr;
-                        </button>
-                    </div>
-                </div>
-             <!-- Card 1 -->
-                <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4">
-                    <div>
-                        <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative cursor-pointer" onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ ដែលមានទីតាំងស្ថិតនៅក្នុងតំបន់រមណីយដ្ឋានបុរាណវិទ្យា កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។`)">
-                            <img src="01000713 2.JPG" alt="Prasat Pram" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        </div>
-                        <div class="px-2 mb-4">
-                            <h3 class="font-bold text-neutral-800 text-base sm:text-lg leading-snug group-hover:text-cyan-600 transition mb-2">
-                                1. Prasat Pram <span class="text-sm font-normal text-neutral-500 block">ប្រាសាទប្រាំ (ព្រំប្រទល់ខេត្តសៀមរាប-ព្រះវិហារ)</span>
-                            </h3>
-                            <p class="text-xs text-neutral-500 leading-relaxed">
-                                <strong>ទីតាំង និងប្រវត្តិ៖</strong> ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃក្នុងតំបន់កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។
-                            </p>
-                        </div>
-                    </div>
-                    <div class="px-2 pb-2 pt-0">
-                        <button onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ...`)" class="text-xs font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800 transition cursor-pointer">
-                            EXPLORE GUIDE &rarr;
-                        </button>
-                    </div>
-                </div>
-                 <!-- Card 1 -->
-                <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4">
-                    <div>
-                        <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative cursor-pointer" onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ ដែលមានទីតាំងស្ថិតនៅក្នុងតំបន់រមណីយដ្ឋានបុរាណវិទ្យា កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។`)">
-                            <img src="01000713 2.JPG" alt="Prasat Pram" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        </div>
-                        <div class="px-2 mb-4">
-                            <h3 class="font-bold text-neutral-800 text-base sm:text-lg leading-snug group-hover:text-cyan-600 transition mb-2">
-                                1. Prasat Pram <span class="text-sm font-normal text-neutral-500 block">ប្រាសាទប្រាំ (ព្រំប្រទល់ខេត្តសៀមរាប-ព្រះវិហារ)</span>
-                            </h3>
-                            <p class="text-xs text-neutral-500 leading-relaxed">
-                                <strong>ទីតាំង និងប្រវត្តិ៖</strong> ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃក្នុងតំបន់កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។
-                            </p>
-                        </div>
-                    </div>
-                    <div class="px-2 pb-2 pt-0">
-                        <button onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ...`)" class="text-xs font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800 transition cursor-pointer">
-                            EXPLORE GUIDE &rarr;
-                        </button>
-                    </div>
-                </div>
- <!-- Card 1 -->
-                <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4">
-                    <div>
-                        <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative cursor-pointer" onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ ដែលមានទីតាំងស្ថិតនៅក្នុងតំបន់រមណីយដ្ឋានបុរាណវិទ្យា កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។`)">
-                            <img src="01000713 2.JPG" alt="Prasat Pram" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        </div>
-                        <div class="px-2 mb-4">
-                            <h3 class="font-bold text-neutral-800 text-base sm:text-lg leading-snug group-hover:text-cyan-600 transition mb-2">
-                                1. Prasat Pram <span class="text-sm font-normal text-neutral-500 block">ប្រាសាទប្រាំ (ព្រំប្រទល់ខេត្តសៀមរាប-ព្រះវិហារ)</span>
-                            </h3>
-                            <p class="text-xs text-neutral-500 leading-relaxed">
-                                <strong>ទីតាំង និងប្រវត្តិ៖</strong> ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃក្នុងតំបន់កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។
-                            </p>
-                        </div>
-                    </div>
-                    <div class="px-2 pb-2 pt-0">
-                        <button onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ...`)" class="text-xs font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800 transition cursor-pointer">
-                            EXPLORE GUIDE &rarr;
-                        </button>
-                    </div>
-                </div>
-                 <!-- Card 1 -->
-                <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4">
-                    <div>
-                        <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative cursor-pointer" onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ ដែលមានទីតាំងស្ថិតនៅក្នុងតំបន់រមណីយដ្ឋានបុរាណវិទ្យា កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។`)">
-                            <img src="01000713 2.JPG" alt="Prasat Pram" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        </div>
-                        <div class="px-2 mb-4">
-                            <h3 class="font-bold text-neutral-800 text-base sm:text-lg leading-snug group-hover:text-cyan-600 transition mb-2">
-                                1. Prasat Pram <span class="text-sm font-normal text-neutral-500 block">ប្រាសាទប្រាំ (ព្រំប្រទល់ខេត្តសៀមរាប-ព្រះវិហារ)</span>
-                            </h3>
-                            <p class="text-xs text-neutral-500 leading-relaxed">
-                                <strong>ទីតាំង និងប្រវត្តិ៖</strong> ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃក្នុងតំបន់កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។
-                            </p>
-                        </div>
-                    </div>
-                    <div class="px-2 pb-2 pt-0">
-                        <button onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ...`)" class="text-xs font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800 transition cursor-pointer">
-                            EXPLORE GUIDE &rarr;
-                        </button>
-                    </div>
-                </div>
-                 <!-- Card 1 -->
-                <div class="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4">
-                    <div>
-                        <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative cursor-pointer" onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ ដែលមានទីតាំងស្ថិតនៅក្នុងតំបន់រមណីយដ្ឋានបុរាណវិទ្យា កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។`)">
-                            <img src="01000713 2.JPG" alt="Prasat Pram" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        </div>
-                        <div class="px-2 mb-4">
-                            <h3 class="font-bold text-neutral-800 text-base sm:text-lg leading-snug group-hover:text-cyan-600 transition mb-2">
-                                1. Prasat Pram <span class="text-sm font-normal text-neutral-500 block">ប្រាសាទប្រាំ (ព្រំប្រទល់ខេត្តសៀមរាប-ព្រះវិហារ)</span>
-                            </h3>
-                            <p class="text-xs text-neutral-500 leading-relaxed">
-                                <strong>ទីតាំង និងប្រវត្តិ៖</strong> ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃក្នុងតំបន់កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។
-                            </p>
-                        </div>
-                    </div>
-                    <div class="px-2 pb-2 pt-0">
-                        <button onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ...`)" class="text-xs font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800 transition cursor-pointer">
-                            EXPLORE GUIDE &rarr;
-                        </button>
-                    </div>
-                </div>
-
-
+            <!-- No Search Results Notice -->
+            <div id="noResults" class="hidden text-center py-12">
+                <i class="fa-solid fa-triangle-exclamation text-3xl text-neutral-400 mb-3"></i>
+                <p class="text-neutral-500 font-medium">No matching temples or archives found. Try another keyword!</p>
             </div>
         </section>
 
@@ -1091,7 +265,7 @@
                 </div>
             </div>
             <div class="text-center">
-                <button onclick="alert('All temple articles loaded successfully!')" class="px-8 py-3 bg-neutral-900 text-white rounded-xl text-xs font-bold uppercase hover:bg-neutral-800 transition shadow-md cursor-pointer">
+                <button id="loadMoreBtn" onclick="loadMoreTemples()" class="px-8 py-3 bg-neutral-900 text-white rounded-xl text-xs font-bold uppercase hover:bg-neutral-800 transition shadow-md cursor-pointer">
                     LOAD MORE
                 </button>
             </div>
@@ -1177,6 +351,12 @@
             setInterval(nextSlide, 4000);
         }
 
+        // Mobile Menu Toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+
         // Modal Handler with Photo Collages
         function openModal(title, subtitle, images, historyText) {
             document.getElementById('modalTitle').innerText = title;
@@ -1219,14 +399,97 @@
             document.getElementById('lightboxModal').classList.add('hidden');
         }
 
-        // Search Bar Handler
+        // Live Search Handler
+        function handleLiveSearch(event) {
+            const query = document.getElementById('searchInput').value.toLowerCase();
+            const cards = document.querySelectorAll('.temple-card');
+            let visibleCount = 0;
+
+            cards.forEach(card => {
+                const text = card.getAttribute('data-title').toLowerCase();
+                if (text.includes(query)) {
+                    card.style.display = 'flex';
+                    visibleCount++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            const noResults = document.getElementById('noResults');
+            if (visibleCount === 0) {
+                noResults.classList.remove('hidden');
+            } else {
+                noResults.classList.add('hidden');
+            }
+        }
+
+        // Search Button Handler
         function handleSearch() {
-            const query = document.getElementById('searchInput').value;
-            if(query.trim() !== '') {
-                alert('Searching database for: ' + query);
+            const query = document.getElementById('searchInput').value.trim();
+            if(query !== '') {
+                handleLiveSearch();
             } else {
                 alert('Please enter a keyword to search.');
             }
+        }
+
+        // Dynamic Load More Feature
+        function loadMoreTemples() {
+            const grid = document.getElementById('templeGrid');
+            const newCards = [
+                {
+                    title: "5. Banteay Srei Temple",
+                    khmer: "ប្រាសាទបន្ទាយស្រី",
+                    img: "IMG_0713.JPG",
+                    desc: "<strong>សិល្បៈផ្កាថ្មពណ៌ផ្កាឈូក៖</strong> ត្រូវបានគេស្គាល់ថាជាត្បូងពេជ្រនៃសិល្បៈខ្មែរ សាងសង់ពីថ្មភក់ពណ៌ផ្កាថ្មឆ្លាក់លម្អយ៉ាងវិចិត្រ។"
+                },
+                {
+                    title: "6. Angkor Wat Temple",
+                    khmer: "ប្រាសាទអង្គរវត្ត",
+                    img: "IMG_0227.jpg",
+                    desc: "<strong>មហានគរ៖</strong> បូជនីយដ្ឋានសាសនាដ៏ធំបំផុតក្នុងពិភពលោក សាងសង់ឡើងដោយព្រះបាទសూర్យវរ្ម័នទី២។"
+                },
+                {
+                    title: "7. Bayon Temple",
+                    khmer: "ប្រាសាទបាយ័ន",
+                    img: "IMG_3034.jpeg",
+                    desc: "<strong>មុខព្រហ្មទាំងបួន៖</strong> មានបമാរូបចម្លាក់មុខព្រហ្មញញឹមស្ងប់ស្ងាត់ចំនួន ២១៦ សាងសង់ដោយព្រះបាទជ័យវរ្ម័នទី៧។"
+                },
+                {
+                    title: "8. Ta Prohm Temple",
+                    khmer: "ប្រាសាទតាព្រហ្ម",
+                    img: "IMG_9546.jpeg",
+                    desc: "<strong>ធម្មជាតិ និងបុរាណវិទ្យា៖</strong> ប្រាសាទដែលត្រូវបាន άល छोड़ाទុកក្នុងព្រៃធម្មជាតិជាមួយราសីដើមស្រឡៅ និងស្ពង់យក្ស។"
+                }
+            ];
+
+            newCards.forEach(item => {
+                const cardDiv = document.createElement('div');
+                cardDiv.className = 'temple-card group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4';
+                cardDiv.setAttribute('data-title', `${item.title} ${item.khmer}`);
+                cardDiv.innerHTML = `
+                    <div>
+                        <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative cursor-pointer" onclick="openModal('${item.khmer}', '${item.title}', ['${item.img}'], '${item.desc}')">
+                            <img src="${item.img}" alt="${item.title}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        </div>
+                        <div class="px-2 mb-4">
+                            <h3 class="font-bold text-neutral-800 text-base sm:text-lg leading-snug group-hover:text-cyan-600 transition mb-2">
+                                ${item.title} <span class="text-sm font-normal text-neutral-500 block">${item.khmer}</span>
+                            </h3>
+                            <p class="text-xs text-neutral-500 leading-relaxed">${item.desc}</p>
+                        </div>
+                    </div>
+                    <div class="px-2 pb-2 pt-0">
+                        <button onclick="openModal('${item.khmer}', '${item.title}', ['${item.img}'], '${item.desc}')" class="text-xs font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800 transition cursor-pointer">
+                            EXPLORE GUIDE &rarr;
+                        </button>
+                    </div>
+                `;
+                grid.appendChild(cardDiv);
+            });
+
+            // Hide button after loading extra items
+            document.getElementById('loadMoreBtn').parentElement.innerHTML = '<p class="text-xs text-neutral-400 font-medium uppercase tracking-wider">All temple archives successfully loaded</p>';
         }
     </script>
 </body>
