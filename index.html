@@ -66,7 +66,7 @@
                     </a>
                 </div>
                 <!-- Mobile Menu Button -->
-                <button onclick="toggleMobileMenu()" class="md:hidden text-neutral-700 hover:text-cyan-600 text-xl p-2">
+                <button onclick="toggleMobileMenu()" class="md:hidden text-neutral-700 hover:text-cyan-600 text-xl p-2 cursor-pointer">
                     <i class="fa-solid fa-bars" id="menuIcon"></i>
                 </button>
             </div>
@@ -143,11 +143,11 @@
             </div>
         </section>
 
-        <!-- Main Temple Cards Grid -->
+        <!-- Main Temple Cards Grid (3 Rows = 12 Cards Initially Visible) -->
         <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
             <div id="templeGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 
-                <!-- Card 1 -->
+                <!-- Row 1 (Cards 1 - 4) -->
                 <div class="temple-card group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4" data-title="1. Prasat Pram ប្រាសាទប្រាំ ព្រំប្រទល់ខេត្តសៀមរាប-ព្រះវិហារ 10th Century Koh Ker">
                     <div>
                         <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative cursor-pointer" onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ ដែលមានទីតាំងស្ថិតនៅក្នុងតំបន់រមណីយដ្ឋានបុរាណវិទ្យា កោះកេរ សាងសង់ឡើងនៅសតវត្សរ៍ទី១០។`)">
@@ -163,13 +163,12 @@
                         </div>
                     </div>
                     <div class="px-2 pb-2 pt-0">
-                        <button onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណដ៏មានតម្លៃមួយ...`)" class="text-xs font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800 transition cursor-pointer">
+                        <button onclick="openModal('ប្រាសាទប្រាំ', '10th Century - Prasat Pram', ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ប្រាសាទប្រាំ គឺជាស្ថាបត្យកម្មបុរាណ...`)" class="text-xs font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800 transition cursor-pointer">
                             EXPLORE GUIDE &rarr;
                         </button>
                     </div>
                 </div>
 
-                <!-- Card 2 -->
                 <div class="temple-card group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4" data-title="2. Prasat Pram (Koh Ker) ប្រាសាទប្រាំ តំបន់កោះកេរ 10th Century UNESCO ព្រះបាទជ័យវរ្ម័នទី៤">
                     <div>
                         <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative cursor-pointer" onclick="openModal('ប្រាសាទប្រាំ (កោះកេរ)', '10th Century - Koh Ker', ['01000787.JPG', '01000747.JPG'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>ស្ថិតក្នុងតំបន់បេតិកភណ្ឌពិភពលោក UNESCO កោះកេរ សាងសង់ក្នុងសតវត្សរ៍ទី១០ ដោយព្រះបាទជ័យវរ្ម័នទី៤។`)">
@@ -191,7 +190,6 @@
                     </div>
                 </div>
 
-                <!-- Card 3 -->
                 <div class="temple-card group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4" data-title="3. Preah Khan Kampong Svay ប្រាសាទព្រះខ័នកំពង់ស្វាយ 12th Century Military Citadel">
                     <div>
                         <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative cursor-pointer" onclick="openModal('ប្រាសាទព្រះខ័នកំពង់ស្វាយ', '12th Century - Preah Khan', ['01012482.JPG'], `<strong>សារៈសំខាន់យោធា៖</strong><br>ជាក្រុង និងជាមជ្ឈមណ្ឌលយោធាដ៏សំខាន់ក្នុងសម័យអង្គរ ដែលមានទំហំធំល្វឹងល្វើយ។`)">
@@ -213,7 +211,6 @@
                     </div>
                 </div>
 
-                <!-- Card 4 -->
                 <div class="temple-card group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4" data-title="4. Pong Toek Temple ប្រាសាទពងទឹក 11th-12th Century Preah Vihear">
                     <div>
                         <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative cursor-pointer" onclick="openModal('ប្រាសាទពងទឹក', '11th-12th Century - Pong Toek', ['01000713 4.jpg'], `<strong>ភាពលាក់ខ្លួន៖</strong><br>ប្រាសាទបុរាណលាក់ខ្លួនក្នុងព្រៃធម្មជាតិ តំបន់ព្រះវិហារ ដែលពោរពេញដោយរឿងរ៉ាវប្រវត្តិសាស្ត្រ។`)">
@@ -230,6 +227,134 @@
                     </div>
                     <div class="px-2 pb-2 pt-0">
                         <button onclick="openModal('ប្រាសាទពងទឹក', '11th-12th Century - Pong Toek', ['01000713 4.jpg'], `<strong>ភាពលាក់ខ្លួន៖</strong><br>ប្រាសាទបុរាណលាក់ខ្លួន...`)" class="text-xs font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800 transition cursor-pointer">
+                            EXPLORE GUIDE &rarr;
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Row 2 (Cards 5 - 8) -->
+                <div class="temple-card group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4" data-title="5. Banteay Srei Temple ប្រាសាទបន្ទាយស្រី 10th Century Pink Sandstone">
+                    <div>
+                        <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative cursor-pointer" onclick="openModal('ប្រាសាទបន្ទាយស្រី', '10th Century - Banteay Srei', ['IMG_0713.JPG'], `<strong>សិល្បៈផ្កាថ្មពណ៌ផ្កាឈូក៖</strong> ត្រូវបានគេស្គាល់ថាជាត្បូងពេជ្រនៃសិល្បៈខ្មែរ សាងសង់ពីថ្មភក់ពណ៌ផ្កាឈូកឆ្លាក់លម្អយ៉ាងវិចិត្រ។`)">
+                            <img src="IMG_0713.JPG" alt="Banteay Srei" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        </div>
+                        <div class="px-2 mb-4">
+                            <h3 class="font-bold text-neutral-800 text-base sm:text-lg leading-snug group-hover:text-cyan-600 transition mb-2">
+                                5. Banteay Srei Temple <span class="text-sm font-normal text-neutral-500 block">ប្រាសាទបន្ទាយស្រី</span>
+                            </h3>
+                            <p class="text-xs text-neutral-500 leading-relaxed">
+                                <strong>សិល្បៈផ្កាថ្មពណ៌ផ្កាឈូក៖</strong> ត្បូងពេជ្រនៃសិល្បៈខ្មែរឆ្លាក់លម្អយ៉ាងវិចិត្រ។
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-2 pb-2 pt-0">
+                        <button onclick="openModal('ប្រាសាទបន្ទាយស្រី', '10th Century - Banteay Srei', ['IMG_0713.JPG'], `<strong>សិល្បៈផ្កាថ្មពណ៌ផ្កាឈូក៖</strong>...`)" class="text-xs font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800 transition cursor-pointer">
+                            EXPLORE GUIDE &rarr;
+                        </button>
+                    </div>
+                </div>
+
+                <div class="temple-card group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4" data-title="6. Angkor Wat Temple ប្រាសាទអង្គរវត្ត 12th Century Suryavarman II">
+                    <div>
+                        <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative cursor-pointer" onclick="openModal('ប្រាសាទអង្គរវត្ត', '12th Century - Angkor Wat', ['IMG_0227.jpg'], `<strong>មហានគរ៖</strong> បូជនីយដ្ឋានសាសនាដ៏ធំបំផុតក្នុងពិភពលោក សាងសង់ឡើងដោយព្រះបាទសూర్យវរ្ម័នទី២។`)">
+                            <img src="IMG_0227.jpg" alt="Angkor Wat" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        </div>
+                        <div class="px-2 mb-4">
+                            <h3 class="font-bold text-neutral-800 text-base sm:text-lg leading-snug group-hover:text-cyan-600 transition mb-2">
+                                6. Angkor Wat Temple <span class="text-sm font-normal text-neutral-500 block">ប្រាសាទអង្គរវត្ត</span>
+                            </h3>
+                            <p class="text-xs text-neutral-500 leading-relaxed">
+                                <strong>មហានគរ៖</strong> បូជនីយដ្ឋានសាសនាដ៏ធំបំផុតក្នុងពិភពលោក។
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-2 pb-2 pt-0">
+                        <button onclick="openModal('ប្រាសាទអង្គរវត្ត', '12th Century - Angkor Wat', ['IMG_0227.jpg'], `<strong>មហានគរ៖</strong>...`)" class="text-xs font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800 transition cursor-pointer">
+                            EXPLORE GUIDE &rarr;
+                        </button>
+                    </div>
+                </div>
+
+                <div class="temple-card group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4" data-title="7. Bayon Temple ប្រាសាទបាយ័ន 12th-13th Century Jayavarman VII">
+                    <div>
+                        <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative cursor-pointer" onclick="openModal('ប្រាសាទបាយ័ន', '12th-13th Century - Bayon', ['IMG_3034.jpeg'], `<strong>មុខព្រហ្មទាំងបួន៖</strong> មានរូបចម្លាក់មុខព្រហ្មញញឹមស្ងប់ស្ងាត់ចំនួន ២១៦ សាងសង់ដោយព្រះបាទជ័យវរ្ម័នទី៧។`)">
+                            <img src="IMG_3034.jpeg" alt="Bayon" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        </div>
+                        <div class="px-2 mb-4">
+                            <h3 class="font-bold text-neutral-800 text-base sm:text-lg leading-snug group-hover:text-cyan-600 transition mb-2">
+                                7. Bayon Temple <span class="text-sm font-normal text-neutral-500 block">ប្រាសាទបាយ័ន</span>
+                            </h3>
+                            <p class="text-xs text-neutral-500 leading-relaxed">
+                                <strong>មុខព្រហ្មទាំងបួន៖</strong> មានរូបចម្លាក់មុខព្រហ្មញញឹមស្ងប់ស្ងាត់ចំនួន ២១៦។
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-2 pb-2 pt-0">
+                        <button onclick="openModal('ប្រាសាទបាយ័ន', '12th-13th Century - Bayon', ['IMG_3034.jpeg'], `<strong>មុខព្រហ្មទាំងបួន៖</strong>...`)" class="text-xs font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800 transition cursor-pointer">
+                            EXPLORE GUIDE &rarr;
+                        </button>
+                    </div>
+                </div>
+
+                <div class="temple-card group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4" data-title="8. Ta Prohm Temple ប្រាសាទតាព្រហ្ម 12th Century Jungle Temple">
+                    <div>
+                        <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative cursor-pointer" onclick="openModal('ប្រាសាទតាព្រហ្ម', '12th Century - Ta Prohm', ['IMG_9546.jpeg'], `<strong>ធម្មជាតិ និងបុរាណវិទ្យា៖</strong> ប្រាសាទដែលត្រូវបានទុកក្នុងព្រៃធម្មជាតិជាមួយរចនាប័ទ្មដើមស្រឡៅ និងស្ពង់យក្ស។`)">
+                            <img src="IMG_9546.jpeg" alt="Ta Prohm" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        </div>
+                        <div class="px-2 mb-4">
+                            <h3 class="font-bold text-neutral-800 text-base sm:text-lg leading-snug group-hover:text-cyan-600 transition mb-2">
+                                8. Ta Prohm Temple <span class="text-sm font-normal text-neutral-500 block">ប្រាសាទតាព្រហ្ម</span>
+                            </h3>
+                            <p class="text-xs text-neutral-500 leading-relaxed">
+                                <strong>ធម្មជាតិ និងបុរាណវិទ្យា៖</strong> ប្រាសាទដែលត្រូវបានទុកក្នុងព្រៃធម្មជាតិ។
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-2 pb-2 pt-0">
+                        <button onclick="openModal('ប្រាសាទតាព្រហ្ម', '12th Century - Ta Prohm', ['IMG_9546.jpeg'], `<strong>ធម្មជាតិ និងបុរាណវិទ្យា៖</strong>...`)" class="text-xs font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800 transition cursor-pointer">
+                            EXPLORE GUIDE &rarr;
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Row 3 (Cards 9 - 12) -->
+                <div class="temple-card group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4" data-title="9. Phnom Bakheng ប្រាសាទភ្នំខែង 9th-10th Century Sunset Temple">
+                    <div>
+                        <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative cursor-pointer" onclick="openModal('ប្រាសាទភ្នំខែង', '9th-10th Century - Phnom Bakheng', ['01000713 2.JPG'], `<strong>ទីតាំងទស្សនាថ្ងៃលិច៖</strong> ប្រាសាទភ្នំដំបូងគេក្នុងតំបន់អង្គរ សាងសង់ដោយព្រះបាទយሾវរ្ម័នទី១។`)">
+                            <img src="01000713 2.JPG" alt="Phnom Bakheng" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        </div>
+                        <div class="px-2 mb-4">
+                            <h3 class="font-bold text-neutral-800 text-base sm:text-lg leading-snug group-hover:text-cyan-600 transition mb-2">
+                                9. Phnom Bakheng <span class="text-sm font-normal text-neutral-500 block">ប្រាសាទភ្នំខែង</span>
+                            </h3>
+                            <p class="text-xs text-neutral-500 leading-relaxed">
+                                <strong>ទីតាំងទស្សនាថ្ងៃលិច៖</strong> ប្រាសាទភ្នំដំបូងគេក្នុងតំបន់អង្គរ។
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-2 pb-2 pt-0">
+                        <button onclick="openModal('ប្រាសាទភ្នំខែង', '9th-10th Century - Phnom Bakheng', ['01000713 2.JPG'], `<strong>ទីតាំងទស្សនាថ្ងៃលិច៖</strong>...`)" class="text-xs font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800 transition cursor-pointer">
+                            EXPLORE GUIDE &rarr;
+                        </button>
+                    </div>
+                </div>
+
+                <div class="temple-card group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4" data-title="10. West Mebon ប្រាសាទមេបុណ្យខាងលិច Western Baray Island">
+                    <div>
+                        <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative cursor-pointer" onclick="openModal('ប្រាសាទមេបុណ្យខាងលិច', 'West Mebon Temple', ['01000787.JPG'], `<strong>ប្រាសាទកោះកណ្តាលទឹក៖</strong> ស្ថិតនៅចំកណ្តាលបារាយណ៍ទឹកសាបខាងលិចដ៏ធំល្វឹងល្វើយ។`)">
+                            <img src="01000787.JPG" alt="West Mebon" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        </div>
+                        <div class="px-2 mb-4">
+                            <h3 class="font-bold text-neutral-800 text-base sm:text-lg leading-snug group-hover:text-cyan-600 transition mb-2">
+                                10. West Mebon <span class="text-sm font-normal text-neutral-500 block">ប្រាសាទមេបុណ្យខាងលិច</span>
+                            </h3>
+                            <p class="text-xs text-neutral-500 leading-relaxed">
+                                <strong>ប្រាសាទកោះកណ្តាលទឹក៖</strong> ស្ថិតនៅចំកណ្តាលបារាយណ៍ខាងលិច។
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-2 pb-2 pt-0">
+                        <button onclick="openModal('ប្រាសាទមេបុណ្យខាងលិច', 'West Mebon Temple', ['01000787.JPG'], `<strong>ប្រាសាទកោះកណ្តាលទឹក៖</strong>...`)" class="text-xs font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800 transition cursor-pointer">
                             EXPLORE GUIDE &rarr;
                         </button>
                     </div>
@@ -1088,6 +1213,133 @@
                     </div>
                 </div>
 
+                <div class="temple-card group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4" data-title="11. Beng Mealea ប្រាសាទបេងមាលា 12th Century Temple Ruins">
+                    <div>
+                        <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative cursor-pointer" onclick="openModal('ប្រាសាទបេងមាលា', '12th Century - Beng Mealea', ['01012482.JPG'], `<strong>ប្រាសាទបាក់បែកដ៏អស្ចារ្យ៖</strong> លាក់ខ្លួនក្នុងព្រៃជ្រៅ ស្រដៀងនឹងប្លង់របស់អង្គរវត្ត។`)">
+                            <img src="01012482.JPG" alt="Beng Mealea" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        </div>
+                        <div class="px-2 mb-4">
+                            <h3 class="font-bold text-neutral-800 text-base sm:text-lg leading-snug group-hover:text-cyan-600 transition mb-2">
+                                11. Beng Mealea <span class="text-sm font-normal text-neutral-500 block">ប្រាសាទបេងមាលា</span>
+                            </h3>
+                            <p class="text-xs text-neutral-500 leading-relaxed">
+                                <strong>ប្រាសាទបាក់បែកដ៏អស្ចារ្យ៖</strong> លាក់ខ្លួនក្នុងព្រៃជ្រៅ។
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-2 pb-2 pt-0">
+                        <button onclick="openModal('ប្រាសាទបេងមាលា', '12th Century - Beng Mealea', ['01012482.JPG'], `<strong>ប្រាសាទបាក់បែកដ៏អស្ចារ្យ៖</strong>...`)" class="text-xs font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800 transition cursor-pointer">
+                            EXPLORE GUIDE &rarr;
+                        </button>
+                    </div>
+                </div>
+
+                <div class="temple-card group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4" data-title="12. Banteay Srei Carvings ប្រាសាទបន្ទាយស្រី ចម្លាក់ថ្មភក់">
+                    <div>
+                        <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative cursor-pointer" onclick="openModal('ចម្លាក់បន្ទាយស្រី', 'Banteay Srei Art Details', ['01000713 4.jpg'], `<strong>រចនាបទអ៊ីស្វារៈបុរាណ៖</strong> សិល្បៈចម្លាក់លើថ្មភក់ពណ៌ផ្កាឈូកដែលល្បីល្បាញជាងគេក្នុងពិភពលោក។`)">
+                            <img src="01000713 4.jpg" alt="Banteay Srei Details" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        </div>
+                        <div class="px-2 mb-4">
+                            <h3 class="font-bold text-neutral-800 text-base sm:text-lg leading-snug group-hover:text-cyan-600 transition mb-2">
+                                12. Banteay Srei Carvings <span class="text-sm font-normal text-neutral-500 block">ចម្លាក់បន្ទាយស្រី</span>
+                            </h3>
+                            <p class="text-xs text-neutral-500 leading-relaxed">
+                                <strong>រចនាបទអ៊ីស្វារៈបុរាណ៖</strong> សិល្បៈចម្លាក់លើថ្មភក់ពណ៌ផ្កាឈូក។
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-2 pb-2 pt-0">
+                        <button onclick="openModal('ចម្លាក់បន្ទាយស្រី', 'Banteay Srei Art Details', ['01000713 4.jpg'], `<strong>រចនាបទអ៊ីស្វារៈបុរាណ៖</strong>...`)" class="text-xs font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800 transition cursor-pointer">
+                            EXPLORE GUIDE &rarr;
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Hidden Additional Rows (Revealed via LOAD MORE button) -->
+                <div class="temple-card hidden-card hidden group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4" data-title="13. Ta Som Temple ប្រាសាទតាស្រោម 12th Century Eastern Mebon Circuit">
+                    <div>
+                        <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative cursor-pointer" onclick="openModal('ប្រាសាទតាស្រោម', '12th Century - Ta Som', ['IMG_0592.jpeg'], `<strong>ទ្វារបូព៌ាស្រោបដោយឫសឈើ៖</strong> ប្រាសាទបុរាណដ៏ស្រស់ស្អាតស្ថិតក្នុងតំបន់រង្វង់ធំ។`)">
+                            <img src="IMG_0592.jpeg" alt="Ta Som" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        </div>
+                        <div class="px-2 mb-4">
+                            <h3 class="font-bold text-neutral-800 text-base sm:text-lg leading-snug group-hover:text-cyan-600 transition mb-2">
+                                13. Ta Som Temple <span class="text-sm font-normal text-neutral-500 block">ប្រាសាទតាស្រោម</span>
+                            </h3>
+                            <p class="text-xs text-neutral-500 leading-relaxed">
+                                <strong>ទ្វារបូព៌ាស្រោបដោយឫសឈើ៖</strong> ប្រាសាទបុរាណរង្វង់ធំ។
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-2 pb-2 pt-0">
+                        <button onclick="openModal('ប្រាសាទតាស្រោម', '12th Century - Ta Som', ['IMG_0592.jpeg'], `<strong>ទ្វារបូព៌ាស្រោបដោយឫសឈើ៖</strong>...`)" class="text-xs font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800 transition cursor-pointer">
+                            EXPLORE GUIDE &rarr;
+                        </button>
+                    </div>
+                </div>
+
+                <div class="temple-card hidden-card hidden group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4" data-title="14. Neak Pean ប្រាសាទនាគព័ន្ធ 12th Century Island Pool Temple">
+                    <div>
+                        <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative cursor-pointer" onclick="openModal('ប្រាសាទនាគព័ន្ធ', '12th Century - Neak Pean', ['IMG_9200.jpeg'], `<strong>ស្រះទឹកបុរាណព្យាបាលជំងឺ៖</strong> ប្រាសាទកោះកណ្តាលស្រះទឹកតំណាងឱ្យស្រះអโนតត។`)">
+                            <img src="IMG_9200.jpeg" alt="Neak Pean" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        </div>
+                        <div class="px-2 mb-4">
+                            <h3 class="font-bold text-neutral-800 text-base sm:text-lg leading-snug group-hover:text-cyan-600 transition mb-2">
+                                14. Neak Pean <span class="text-sm font-normal text-neutral-500 block">ប្រាសាទនាគព័ន្ធ</span>
+                            </h3>
+                            <p class="text-xs text-neutral-500 leading-relaxed">
+                                <strong>ស្រះទឹកបុរាណព្យាបាលជំងឺ៖</strong> ប្រាសាទកោះកណ្តាលស្រះទឹក។
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-2 pb-2 pt-0">
+                        <button onclick="openModal('ប្រាសាទនាគព័ន្ធ', '12th Century - Neak Pean', ['IMG_9200.jpeg'], `<strong>ស្រះទឹកបុរាណព្យាបាលជំងឺ៖</strong>...`)" class="text-xs font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800 transition cursor-pointer">
+                            EXPLORE GUIDE &rarr;
+                        </button>
+                    </div>
+                </div>
+
+                <div class="temple-card hidden-card hidden group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4" data-title="15. Pre Rup ប្រាសាទរូបព្រះ 10th Century Royal Crematorium & Temple Mountain">
+                    <div>
+                        <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative cursor-pointer" onclick="openModal('ប្រាសាទរូបព្រះ', '10th Century - Pre Rup', ['IMG_0516.jpeg'], `<strong>ឥដ្ឋក្រហម និងថ្មភក់៖</strong> ប្រាសាទភ្នំសាងសង់ពីឥដ្ឋក្រហមឆ្អិន មានទេសភាពថ្ងៃលិចដ៏ស្រស់ស្អាតបំផុត។`)">
+                            <img src="IMG_0516.jpeg" alt="Pre Rup" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        </div>
+                        <div class="px-2 mb-4">
+                            <h3 class="font-bold text-neutral-800 text-base sm:text-lg leading-snug group-hover:text-cyan-600 transition mb-2">
+                                15. Pre Rup <span class="text-sm font-normal text-neutral-500 block">ប្រាសាទរូបព្រះ</span>
+                            </h3>
+                            <p class="text-xs text-neutral-500 leading-relaxed">
+                                <strong>ឥដ្ឋក្រហម និងថ្មភក់៖</strong> ប្រាសាទភ្នំសាងសង់ពីឥដ្ឋក្រហម។
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-2 pb-2 pt-0">
+                        <button onclick="openModal('ប្រាសាទរូបព្រះ', '10th Century - Pre Rup', ['IMG_0516.jpeg'], `<strong>ឥដ្ឋក្រហម និងថ្មភក់៖</strong>...`)" class="text-xs font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800 transition cursor-pointer">
+                            EXPLORE GUIDE &rarr;
+                        </button>
+                    </div>
+                </div>
+
+                <div class="temple-card hidden-card hidden group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4" data-title="16. East Mebon ប្រាសាទមេបុណ្យខាងកើត 10th Century Rajendravarman II">
+                    <div>
+                        <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative cursor-pointer" onclick="openModal('ប្រាសាទមេបុណ្យខាងកើត', '10th Century - East Mebon', ['IMG_1979.JPG'], `<strong>ជាងចម្លាក់ដំរីថ្ម៖</strong> ស្ថិតលើកោះកណ្តាលបារាយណ៍ខាងកើត សាងសង់ដោយព្រះបាទរាជេន្រ្ទវរ្ម័នទី២។`)">
+                            <img src="IMG_1979.JPG" alt="East Mebon" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        </div>
+                        <div class="px-2 mb-4">
+                            <h3 class="font-bold text-neutral-800 text-base sm:text-lg leading-snug group-hover:text-cyan-600 transition mb-2">
+                                16. East Mebon <span class="text-sm font-normal text-neutral-500 block">ប្រាសាទមេបុណ្យខាងកើត</span>
+                            </h3>
+                            <p class="text-xs text-neutral-500 leading-relaxed">
+                                <strong>ជាងចម្លាក់ដំរីថ្ម៖</strong> ស្ថិតលើកោះកណ្តាលបារាយណ៍ខាងកើត។
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-2 pb-2 pt-0">
+                        <button onclick="openModal('ប្រាសាទមេបុណ្យខាងកើត', '10th Century - East Mebon', ['IMG_1979.JPG'], `<strong>ជាងចម្លាក់ដំរីថ្ម៖</strong>...`)" class="text-xs font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800 transition cursor-pointer">
+                            EXPLORE GUIDE &rarr;
+                        </button>
+                    </div>
+                </div>
+
             </div>
 
             <!-- No Search Results Notice -->
@@ -1095,37 +1347,18 @@
                 <i class="fa-solid fa-triangle-exclamation text-3xl text-neutral-400 mb-3"></i>
                 <p class="text-neutral-500 font-medium">No matching temples or archives found. Try another keyword!</p>
             </div>
-        </section>
 
-        <!-- Extra Feature Section (Matching Reference Layout) -->
-        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 border-t border-neutral-200">
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-                <div class="bg-white p-4 rounded-2xl shadow-sm border border-neutral-100 cursor-pointer hover:shadow-md transition" onclick="openModal('Preah Khan Guide', 'Maps, Highlights & History', ['01012482.JPG'], 'Comprehensive exploration of Preah Khan temple ruins, ancient stone corridors, and historical layout.')">
-                    <img src="01012482.JPG" class="w-full h-36 object-cover rounded-xl mb-3" alt="Preah Khan">
-                    <h4 class="font-bold text-sm text-neutral-800 hover:text-cyan-600 transition">Preah Khan – Maps, Highlights, Hidden Quirks, and History</h4>
-                </div>
-                <div class="bg-white p-4 rounded-2xl shadow-sm border border-neutral-100 cursor-pointer hover:shadow-md transition" onclick="openModal('West Mebon Temple', 'Ancient Waters & Architecture', ['01000787.JPG'], 'Discover the island temple of West Mebon located in the center of the former Western Baray reservoir.')">
-                    <img src="01000787.JPG" class="w-full h-36 object-cover rounded-xl mb-3" alt="West Mebon">
-                    <h4 class="font-bold text-sm text-neutral-800 hover:text-cyan-600 transition">West Mebon Temple – Ancient Waters & Architecture</h4>
-                </div>
-                <div class="bg-white p-4 rounded-2xl shadow-sm border border-neutral-100 cursor-pointer hover:shadow-md transition" onclick="openModal('Angkor Wat', 'Visiting Guide, Facts & History', ['IMG_0713.JPG'], 'The crown jewel of the Khmer Empire. Explore architectural masterpieces, bas-relief galleries, and sunrise history.')">
-                    <img src="IMG_0713.JPG" class="w-full h-36 object-cover rounded-xl mb-3" alt="Angkor Wat">
-                    <h4 class="font-bold text-sm text-neutral-800 hover:text-cyan-600 transition">Angkor Wat – Visiting Guide, Facts, History and More</h4>
-                </div>
-                <div class="bg-white p-4 rounded-2xl shadow-sm border border-neutral-100 cursor-pointer hover:shadow-md transition" onclick="openModal('Phnom Bakheng', 'Mountain Top Pyramid & Sunset', ['01000713 2.JPG'], 'The first temple mountain in the Angkor region built by King Yasovarman I with panoramic views.')">
-                    <img src="01000713 2.JPG" class="w-full h-36 object-cover rounded-xl mb-3" alt="Phnom Bakheng">
-                    <h4 class="font-bold text-sm text-neutral-800 hover:text-cyan-600 transition">Phnom Bakheng – The Mountain Top Pyramid - History & Sunset</h4>
-                </div>
-            </div>
-            <div class="text-center">
-                <button id="loadMoreBtn" onclick="loadMoreTemples()" class="px-8 py-3 bg-neutral-900 text-white rounded-xl text-xs font-bold uppercase hover:bg-neutral-800 transition shadow-md cursor-pointer">
-                    LOAD MORE
+            <!-- Load More Button Section (Placed directly below the 3 rows) -->
+            <div id="loadMoreContainer" class="text-center mt-12">
+                <button onclick="revealMoreTemples()" class="px-10 py-3.5 bg-neutral-900 text-white rounded-xl text-xs font-bold uppercase tracking-wider hover:bg-neutral-800 transition shadow-lg cursor-pointer flex items-center gap-2 mx-auto">
+                    <span>LOAD MORE</span>
+                    <i class="fa-solid fa-chevron-down text-xs"></i>
                 </button>
             </div>
         </section>
     </main>
 
-    <!-- Professional 3-Column Footer (Matching Reference) -->
+    <!-- Professional 3-Column Footer -->
     <footer id="about" class="bg-neutral-100 border-t border-neutral-200 pt-16 pb-12 text-sm text-neutral-600">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
             <div>
@@ -1269,6 +1502,18 @@
             });
 
             const noResults = document.getElementById('noResults');
+            const loadMoreContainer = document.getElementById('loadMoreContainer');
+
+            if (query.length > 0) {
+                if(loadMoreContainer) loadMoreContainer.style.display = 'none';
+            } else {
+                if(loadMoreContainer) loadMoreContainer.style.display = 'block';
+                // Re-hide the hidden cards when search is cleared
+                document.querySelectorAll('.hidden-card').forEach(card => {
+                    card.style.display = 'none';
+                });
+            }
+
             if (visibleCount === 0) {
                 noResults.classList.remove('hidden');
             } else {
@@ -1286,63 +1531,19 @@
             }
         }
 
-        // Dynamic Load More Feature
-        function loadMoreTemples() {
-            const grid = document.getElementById('templeGrid');
-            const newCards = [
-                {
-                    title: "5. Banteay Srei Temple",
-                    khmer: "ប្រាសាទបន្ទាយស្រី",
-                    img: "IMG_0713.JPG",
-                    desc: "<strong>សិល្បៈផ្កាថ្មពណ៌ផ្កាឈូក៖</strong> ត្រូវបានគេស្គាល់ថាជាត្បូងពេជ្រនៃសិល្បៈខ្មែរ សាងសង់ពីថ្មភក់ពណ៌ផ្កាថ្មឆ្លាក់លម្អយ៉ាងវិចិត្រ។"
-                },
-                {
-                    title: "6. Angkor Wat Temple",
-                    khmer: "ប្រាសាទអង្គរវត្ត",
-                    img: "IMG_0227.jpg",
-                    desc: "<strong>មហានគរ៖</strong> បូជនីយដ្ឋានសាសនាដ៏ធំបំផុតក្នុងពិភពលោក សាងសង់ឡើងដោយព្រះបាទសూర్យវរ្ម័នទី២។"
-                },
-                {
-                    title: "7. Bayon Temple",
-                    khmer: "ប្រាសាទបាយ័ន",
-                    img: "IMG_3034.jpeg",
-                    desc: "<strong>មុខព្រហ្មទាំងបួន៖</strong> មានបമാរូបចម្លាក់មុខព្រហ្មញញឹមស្ងប់ស្ងាត់ចំនួន ២១៦ សាងសង់ដោយព្រះបាទជ័យវរ្ម័នទី៧។"
-                },
-                {
-                    title: "8. Ta Prohm Temple",
-                    khmer: "ប្រាសាទតាព្រហ្ម",
-                    img: "IMG_9546.jpeg",
-                    desc: "<strong>ធម្មជាតិ និងបុរាណវិទ្យា៖</strong> ប្រាសាទដែលត្រូវបាន άល छोड़ाទុកក្នុងព្រៃធម្មជាតិជាមួយราសីដើមស្រឡៅ និងស្ពង់យក្ស។"
-                }
-            ];
-
-            newCards.forEach(item => {
-                const cardDiv = document.createElement('div');
-                cardDiv.className = 'temple-card group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4';
-                cardDiv.setAttribute('data-title', `${item.title} ${item.khmer}`);
-                cardDiv.innerHTML = `
-                    <div>
-                        <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative cursor-pointer" onclick="openModal('${item.khmer}', '${item.title}', ['${item.img}'], '${item.desc}')">
-                            <img src="${item.img}" alt="${item.title}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        </div>
-                        <div class="px-2 mb-4">
-                            <h3 class="font-bold text-neutral-800 text-base sm:text-lg leading-snug group-hover:text-cyan-600 transition mb-2">
-                                ${item.title} <span class="text-sm font-normal text-neutral-500 block">${item.khmer}</span>
-                            </h3>
-                            <p class="text-xs text-neutral-500 leading-relaxed">${item.desc}</p>
-                        </div>
-                    </div>
-                    <div class="px-2 pb-2 pt-0">
-                        <button onclick="openModal('${item.khmer}', '${item.title}', ['${item.img}'], '${item.desc}')" class="text-xs font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800 transition cursor-pointer">
-                            EXPLORE GUIDE &rarr;
-                        </button>
-                    </div>
-                `;
-                grid.appendChild(cardDiv);
+        // Reveal More Temples Feature
+        function revealMoreTemples() {
+            const hiddenCards = document.querySelectorAll('.hidden-card');
+            hiddenCards.forEach(card => {
+                card.classList.remove('hidden');
+                card.style.display = 'flex';
             });
 
-            // Hide button after loading extra items
-            document.getElementById('loadMoreBtn').parentElement.innerHTML = '<p class="text-xs text-neutral-400 font-medium uppercase tracking-wider">All temple archives successfully loaded</p>';
+            // Hide the Load More button after revealing all
+            const container = document.getElementById('loadMoreContainer');
+            if(container) {
+                container.innerHTML = '<p class="text-xs text-neutral-400 font-medium uppercase tracking-wider py-2">All temple archives successfully loaded</p>';
+            }
         }
     </script>
 </body>
