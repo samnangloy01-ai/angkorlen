@@ -780,8 +780,7 @@
             </button>
         </div>
     </div>
-
-  <!-- កូដ JavaScript សម្រាប់បញ្ជា -->
+<!-- កូដ JavaScript សម្រាប់បង្ខំឱ្យរូបភាពរីកធំពេញទំហំក្នុង Modal -->
     <script>
     function openModal(title, subtitle, images) {
         document.getElementById('modalTitle').innerText = title;
@@ -794,8 +793,10 @@
             images.forEach(function(src) {
                 const img = document.createElement('img');
                 img.src = src;
-                // កែសម្រួលទំហំទីនេះឱ្យធំពេញទំហំ និងមានគម្លាតស្អាត
-                img.className = 'w-full h-auto rounded-2xl object-cover shadow-md mb-6';
+                // បន្ថែម style width 100% និង max-width 100% ដើម្បីធានាថារូបភាពធំពេញប្រអប់
+                img.style.width = '100%';
+                img.style.height = 'auto';
+                img.className = 'rounded-2xl object-cover shadow-lg mb-6 block mx-auto';
                 gallery.appendChild(img);
             });
         }
