@@ -768,5 +768,45 @@
         }
         if (slides.length > 1) { setInterval(nextSlide, 4000); }
     </script>
+    <!-- ផ្ទាំង Modal សម្រាប់បង្ហាញរូបភាពទាំង ៥ -->
+    <div id="myModal" class="hidden fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl p-6 max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl">
+            <h2 id="modalTitle" class="text-xl font-bold text-neutral-800 mb-1"></h2>
+            <p id="modalSubtitle" class="text-sm text-neutral-500 mb-4"></p>
+
+            <!-- ទីតាំងទាញរូបភាពទាំង ៥ មកលោតចូលទីនេះ -->
+            <div id="modalGallery" class="space-y-3 mb-6"></div>
+
+            <button onclick="closeModal()" class="px-5 py-2.5 bg-neutral-900 text-white rounded-xl text-xs font-bold uppercase hover:bg-neutral-800 transition">
+                Close Guide
+            </button>
+        </div>
+    </div>
+
+    <!-- កូដ JavaScript សម្រាប់បញ្ជា -->
+    <script>
+    function openModal(title, subtitle, images) {
+        document.getElementById('modalTitle').innerText = title;
+        document.getElementById('modalSubtitle').innerText = subtitle;
+
+        const gallery = document.getElementById('modalGallery');
+        gallery.innerHTML = ''; // សម្អាតទិន្នន័យចាស់
+
+        if (images && images.length > 0) {
+            images.forEach(function(src) {
+                const img = document.createElement('img');
+                img.src = src;
+                img.className = 'w-full h-auto rounded-2xl object-cover shadow-sm';
+                gallery.appendChild(img);
+            });
+        }
+
+        document.getElementById('myModal').classList.remove('hidden');
+    }
+
+    function closeModal() {
+        document.getElementById('myModal').classList.add('hidden');
+    }
+    </script>
 </body>
 </html>
