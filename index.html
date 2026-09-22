@@ -765,22 +765,28 @@
             slides[currentSlide].classList.add('active', 'opacity-100');
         }
         if (slides.length > 1) { setInterval(nextSlide, 4000); }
-    </script>
-    <!-- ផ្ទាំង Modal សម្រាប់បង្ហាញរូបភាពទាំង ៥ -->
-    <div id="myModal" class="hidden fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
-        <div class="bg-white rounded-3xl p-6 max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl">
-            <h2 id="modalTitle" class="text-xl font-bold text-neutral-800 mb-1"></h2>
-            <p id="modalSubtitle" class="text-sm text-neutral-500 mb-4"></p>
+   
+    <!-- ផ្ទាំង Modal សម្រាប់បង្ហាញរូបភាពទាំង ៥ (បានពង្រីក max-w-4xl ឱ្យធំទូលាយ) -->
+    <div id="myModal" class="hidden fixed inset-0 bg-black/70 z-50 flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl p-6 md:p-8 max-w-4xl w-full max-h-[92vh] overflow-y-auto shadow-2xl">
+            <div class="flex justify-between items-start mb-4">
+                <div>
+                    <h2 id="modalTitle" class="text-2xl font-bold text-neutral-800 mb-1"></h2>
+                    <p id="modalSubtitle" class="text-sm text-neutral-500"></p>
+                </div>
+                <button onclick="closeModal()" class="text-neutral-400 hover:text-neutral-700 font-bold text-2xl px-2">&times;</button>
+            </div>
 
             <!-- ទីតាំងទាញរូបភាពទាំង ៥ មកលោតចូលទីនេះ -->
-            <div id="modalGallery" class="space-y-3 mb-6"></div>
+            <div id="modalGallery" class="space-y-4 mb-6"></div>
 
-            <button onclick="closeModal()" class="px-5 py-2.5 bg-neutral-900 text-white rounded-xl text-xs font-bold uppercase hover:bg-neutral-800 transition">
+            <button onclick="closeModal()" class="px-6 py-3 bg-neutral-900 text-white rounded-xl text-xs font-bold uppercase hover:bg-neutral-800 transition">
                 Close Guide
             </button>
         </div>
     </div>
-<!-- កូដ JavaScript សម្រាប់បង្ខំឱ្យរូបភាពរីកធំពេញទំហំក្នុង Modal -->
+
+<!-- កូដ JavaScript សម្រាប់បង្កំឱ្យរូបភាពរីកធំពេញប្រអប់ Modal -->
     <script>
     function openModal(title, subtitle, images) {
         document.getElementById('modalTitle').innerText = title;
@@ -793,10 +799,8 @@
             images.forEach(function(src) {
                 const img = document.createElement('img');
                 img.src = src;
-                // បន្ថែម style width 100% និង max-width 100% ដើម្បីធានាថារូបភាពធំពេញប្រអប់
-                img.style.width = '100%';
-                img.style.height = 'auto';
-                img.className = 'rounded-2xl object-cover shadow-lg mb-6 block mx-auto';
+                // កែសម្រួល classes ឱ្យរូបភាពធំពេញទទឹងប្រអប់ និងមានកម្ពស់សមរម្យស្អាត
+                img.className = 'w-full h-[450px] md:h-[550px] rounded-2xl object-cover shadow-lg mb-4';
                 gallery.appendChild(img);
             });
         }
