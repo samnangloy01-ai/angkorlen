@@ -781,7 +781,7 @@
         </div>
     </div>
 
-    <!-- កូដ JavaScript សម្រាប់បញ្ជា -->
+  <!-- កូដ JavaScript សម្រាប់បញ្ជា -->
     <script>
     function openModal(title, subtitle, images) {
         document.getElementById('modalTitle').innerText = title;
@@ -794,7 +794,8 @@
             images.forEach(function(src) {
                 const img = document.createElement('img');
                 img.src = src;
-                img.className = 'w-full h-auto rounded-2xl object-cover shadow-sm';
+                // កែសម្រួលទំហំទីនេះឱ្យធំពេញទំហំ និងមានគម្លាតស្អាត
+                img.className = 'w-full h-auto rounded-2xl object-cover shadow-md mb-6';
                 gallery.appendChild(img);
             });
         }
