@@ -264,7 +264,7 @@
         </div>
     </div>
 
-    <script>
+  <script>
         const menuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
         menuBtn.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); });
@@ -283,11 +283,12 @@
         let slides = document.querySelectorAll('.hero-banner .slide');
         let currentSlide = 0;
         function nextSlide() {
-            if (slides.length > 0) {
-                slides[currentSlide].classList.remove('active');
-                currentSlide = (currentSlide + 1) % slides.length;
-                slides[currentSlide].classList.add('active');
-            }
+            if (slides.length === 0) return;
+            slides[currentSlide].classList.remove('active', 'opacity-100');
+            slides[currentSlide].classList.add('opacity-0');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.remove('opacity-0');
+            slides[currentSlide].classList.add('active', 'opacity-100');
         }
         if (slides.length > 1) { setInterval(nextSlide, 4000); }
     </script>
