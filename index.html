@@ -349,12 +349,20 @@ Per fast
     </button>
 </div>
 
-<!-- Card 9 -->
-<div class="temple-card group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4" data-title="9. Preah Vihear Temple ប្រាសាទព្រះវិហារ 9th-12th Century UNESCO World Heritage">
+<!-- Load More Button Section (ដាក់នៅចន្លោះពីលើកាតដែលត្រូវលាក់) -->
+<div id="loadMoreContainer" class="col-span-full flex justify-center my-8">
+    <button onclick="revealMoreTemples()" class="px-6 py-3 bg-cyan-600 hover:bg-cyan-700 text-white font-semibold rounded-full shadow-md transition duration-300 flex items-center gap-2 cursor-pointer">
+        <span>Load More Temples</span>
+        <svg class="w-4 h-4 animate-bounce" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+        </svg>
+    </button>
+</div>
+
+<!-- Card 9 (លាក់ទុកជាមុន) -->
+<div class="temple-card hidden-card group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4" style="display: none;" data-title="9. Preah Vihear Temple ប្រាសាទព្រះវិហារ 9th-12th Century UNESCO World Heritage">
     <div>
-        <!-- កន្លែងចុចលើរូបភាព (អាចដាក់រូបភាពរហូតដល់ ១៥ សន្លឹកក្នុង Array នេះ) -->
-        <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative cursor-pointer" onclick="openModal('ប្រាសាទព្រះវិហារ', '9th to the 12th Century - Preah Vihear', ['IMG_0713.JPG', 'IMG_0516.jpeg', 'IMG_0674.jpeg', 'IMG_0715 2.jpeg', 'IMG_0725.jpeg', 'IMG_07251.jpeg', 'IMG_0729.jpeg', 'IMG_0732.jpeg', 'IMG_0739.jpeg', 'IMG_05521 2.jpeg', 'IMG_05522 2.jpeg', 'IMG_05523 2.jpeg', 'IMG_05524 2.jpeg', 'IMG_05525 2.jpeg', 'IMG_0636. jpeg.jpeg'], `<strong>ប្រវត្តិសាស្ត្រ និងកាលសាងសង់៖</strong> ប្រាសាទព្រះវិហារមិនមែនសាងសង់ឡើងក្នុងពេលតែមួយនោះទេ។ ប៉ុន្តែត្រូវបានផ្ដើមឡើង និងសាងសង់បន្ថែមបន្តបន្ទាប់ដោយព្រះមហាក្សត្រខ្មែរុបណាលាយព្រះអង្គ ក្នុងនោះ៖ សតវត្សរ៍ទី៩ ដល់ទី១២ (ចាប់ផ្តើមពីសម័យព្រះបាទយសវរ្ម័នទី១ និងបន្តពង្រីកដោយព្រះបាទសូរ្យវរ្ម័នទី១ និង សូរ្យវរ្ម័នទី២)。<br><br><strong>គោលបំណង និងការបួសន៖</strong> ប្រាសាទនេះត្រូវបានសាងសង់ឡើងដើម្បីឧទ្ទិសដល់ព្រះសិវៈ ក្នុងសាសនាហិណ្ឌូ/ព្រហ្មញ្ញសាសនា ដោយយកទម្រង់តាមភ្នំកៃលាស (Kailash) ដែលជាដំណាក់របស់ព្រះសិវៈស្ថាបក្សកម្ពុជ。<br><br><strong>ចំណុចពិសេសរបស់ប្រាសាទព្រះវិហារ៖</strong> គឺការសាងសង់បណ្តោយតាមរុករក្សពីជើងទៅត្បូង ឡើងតាមបណ្តោយភ្នំដែលមានកម្ពស់ខ្ពស់ស្ថាប័នស្រប ដោយមានគោបុរាណ (ទ្វារទ្វារ) ដ៏ធំធេងរៀបចំឡើងយ៉ាងស្រទាប់ ឆ្លុះបញ្ចាំងពីចិត្តស្មោះរបស់ទិកកន្ត្រប់របស់បាតសាសនាតាមបុរាណខ្មែរ。<br><br><strong>បេតិកភណ្ឌពិភពលោក៖</strong> ប្រាសាទនេះត្រូវបានអង្គការយូណេស្កូ (UNESCO) ដាក់បញ្ចូលជាបេតិកភណ្ឌពិភពលោកនៅថ្ងៃទី០៧ ខែកក្កដា ឆ្នាំ២០០៨。<br><br>Preah Vihear Temple was built over several centuries, spanning from the 9th to the 12th centuries during the Angkorian period. Construction began during the reign of King Yasovarman I and was continually expanded by subsequent monarchs, notably Suryavarman I and Suryavarman II.<br><br><strong>Religious Significance:</strong> Dedicated primarily to the Hindu god Shiva, the temple was designed to represent Mount Kailash, the sacred cosmic abode of Shiva, majestically integrated into the natural cliffside landscape of the Dangrek Mountains.`)">
-            <!-- រូបភាពបង្ហាញខាងក្រៅ (រូបទី១) -->
+        <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative cursor-pointer" onclick="openModal('ប្រាសាទព្រះវិហារ', '9th to the 12th Century - Preah Vihear', ['IMG_0713.JPG', 'IMG_0516.jpeg', 'IMG_0674.jpeg', 'IMG_0715 2.jpeg', 'IMG_0725.jpeg', 'IMG_07251.jpeg', 'IMG_0729.jpeg', 'IMG_0732.jpeg', 'IMG_0739.jpeg', 'IMG_05521 2.jpeg', 'IMG_05522 2.jpeg', 'IMG_05523 2.jpeg', 'IMG_05524 2.jpeg', 'IMG_05525 2.jpeg', 'IMG_0636. jpeg.jpeg'], `<strong>ប្រវត្តិសាស្ត្រ និងកាលសាងសង់៖</strong> ប្រាសាទព្រះវិហារមិនមែនសាងសង់ឡើងក្នុងពេលតែមួយនោះទេ។`)">
             <img src="IMG_0713.JPG" alt="Preah Vihear Temple" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
         </div>
         <div class="px-2 mb-4">
@@ -367,17 +375,16 @@ Per fast
         </div>
     </div>
     <div class="px-2 pb-2 pt-0">
-        <!-- កន្លែងចុចលើប៊ូតុង EXPLORE GUIDE (ត្រូវដាក់ Array រូបភាពទាំង ១៥ ឱ្យដូចគ្នាជាមួយខាងលើ) -->
-        <button onclick="openModal('ប្រាសាទព្រះវិហារ', '9th to the 12th Century - Preah Vihear', ['IMG_0713.JPG', 'IMG_0516.jpeg', 'IMG_0674.jpeg', 'IMG_0715 2.jpeg', 'IMG_0725.jpeg', 'IMG_07251.jpeg', 'IMG_0729.jpeg', 'IMG_0732.jpeg', 'IMG_0739.jpeg', 'IMG_05521 2.jpeg', 'IMG_05522 2.jpeg', 'IMG_05523 2.jpeg', 'IMG_05524 2.jpeg', 'IMG_05525 2.jpeg', 'IMG_0636. jpeg.jpeg'], `<strong>ប្រវត្តិសាស្ត្រ និងកាលសាងសង់៖</strong> ប្រាសាទព្រះវិហារមិនមែនសាងសង់ឡើងក្នុងពេលតែមួយនោះទេ។ ប៉ុន្តែត្រូវបានផ្ដើមឡើង និងសាងសង់បន្ថែមបន្តបន្ទាប់ដោយព្រះមហាក្សត្រខ្មែរុបណាលាយព្រះអង្គ ក្នុងនោះ៖ សតវត្សរ៍ទី៩ ដល់ទី១២ (ចាប់ផ្តើមពីសម័យព្រះបាទយសវរ្ម័នទី១ និងបន្តពង្រីកដោយព្រះបាទសូរ្យវរ្ម័នទី១ និង សូរ្យវរ្ម័នទី២)。<br><br><strong>គោលបំណង និងការបួសន៖</strong> ប្រាសាទនេះត្រូវបានសាងសង់ឡើងដើម្បីឧទ្ទិសដល់ព្រះសិវៈ ក្នុងសាសនាហិណ្ឌូ/ព្រហ្មញ្ញសាសនា ដោយយកទម្រង់តាមភ្នំកៃលាស (Kailash) ដែលជាដំណាក់របស់ព្រះសិវៈស្ថាបក្សកម្ពុជ。<br><br><strong>ចំណុចពិសេសរបស់ប្រាសាទព្រះវិហារ៖</strong> គឺការសាងសង់បណ្តោយតាមរុករក្សពីជើងទៅត្បូង ឡើងតាមបណ្តោយភ្នំដែលមានកម្ពស់ខ្ពស់ស្ថាប័នស្រប ដោយមានគោបុរាណ (ទ្វារទ្វារ) ដ៏ធំធេងរៀបចំឡើងយ៉ាងស្រទាប់ ឆ្លុះបញ្ចាំងពីចិត្តស្មោះរបស់ទិកកន្ត្រប់របស់បាតសាសនាតាមបុរាណខ្មែរ。<br><br><strong>បេតិកភណ្ឌពិភពលោក៖</strong> ប្រាសាទនេះត្រូវបានអង្គការយូណេស្កូ (UNESCO) ដាក់បញ្ចូលជាបេតិកភណ្ឌពិភពលោកនៅថ្ងៃទី០៧ ខែកក្កដា ឆ្នាំ២០០៨。<br><br>Preah Vihear Temple was built over several centuries, spanning from the 9th to the 12th centuries during the Angkorian period. Construction began during the reign of King Yasovarman I and was continually expanded by subsequent monarchs, notably Suryavarman I and Suryavarman II.`)" class="text-xs font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800 transition cursor-pointer">
+        <button onclick="openModal('ប្រាសាទព្រះវិហារ', '9th to the 12th Century - Preah Vihear', ['IMG_0713.JPG', 'IMG_0516.jpeg', 'IMG_0674.jpeg', 'IMG_0715 2.jpeg', 'IMG_0725.jpeg', 'IMG_07251.jpeg', 'IMG_0729.jpeg', 'IMG_0732.jpeg', 'IMG_0739.jpeg', 'IMG_05521 2.jpeg', 'IMG_05522 2.jpeg', 'IMG_05523 2.jpeg', 'IMG_05524 2.jpeg', 'IMG_05525 2.jpeg', 'IMG_0636. jpeg.jpeg'], `...`)" class="text-xs font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800 transition cursor-pointer">
             EXPLORE GUIDE &rarr;
         </button>
     </div>
 </div>
-            <!-- Card 10 -->
-<div class="temple-card group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4" data-title="10. Cha Eh Temple ប្រាសាទចាហេ 11th Century Preah Vihear">
+
+<!-- Card 10 (លាក់ទុកជាមុន) -->
+<div class="temple-card hidden-card group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4" style="display: none;" data-title="10. Cha Eh Temple ប្រាសាទចាហេ 11th Century Preah Vihear">
     <div>
-        <!-- កន្លែងចុចលើរូបភាព (ដាក់រូបភាពទាំង ៦ សន្លឹកក្នុង Array ទីនេះ) -->
-        <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative cursor-pointer" onclick="openModal('ប្រាសាទចាហេ', '11th Century - Cha Eh Temple', ['IMG_0783.jpeg', 'IMG_0784.jpeg', 'IMG_0785.jpeg', 'IMG_0786.jpeg', 'IMG_0787.jpeg', 'IMG_0788.jpeg'], `<strong>ទីតាំង និងឈ្មោះ៖</strong> ប្រាសាទចាហេ ស្ថិតនៅក្នុងភូមិចាហេ ឃុំទឹកក្រហម ស្រុកជាំក្សាន្ត ខេត្តព្រះវិហារ។ ប្រាសាទនេះក៏ត្រូវបានស្គាល់ក្នុងកំណត់ត្រាបុរាណវិទ្យាខ្លះថា ប្រាសាទត្រពាំងថ្នល់ ឬ ថ្នល់បែក ផងដែរ。<br><br><strong>រចនាសម្ព័ន្ធស្ថាបត្យកម្ម៖</strong> សំណង់ដើមសាងសង់ឡើងដោយឥដ្ឋ ដែលមានតួប៉មប្រាសាទនៅកណ្តាល។ មានបណ្ណាល័យ ឬ «បណ្ណាល័យ» ចំនួនពីរ សាងសង់នៅសងខាងមុខប្រាសាទ និងមានកំផែងជុំវិញទ្វារជាលក្ខណៈគោបុរាណ。<br><br><strong>ប្រវត្តិ និងការស្រាវជ្រាវ (សតវត្សរ៍ទី១១)៖</strong> ទីតាំងនេះត្រូវបានកត់ត្រាក្នុងបញ្ជីសារពើភណ្ឌបេតិកភណ្ឌ និងការស្ទង់មតិរបស់បារាំងតាំងពីដើមសតវត្សរ៍ទី២០ (ដោយអ្នកជំនាញដូចជា Lunet de Lajonquière និង Henri Parmentier) ដែលបង្ហាញថាជាបូជនីយដ្ឋានសម័យអង្គរ (សតវត្សរ៍ទី១១) ដើម្បីបម្រើឱ្យសហគមន៍ និងអ្នកធ្វើដំណើរតាមផ្លូវបុរាណក្នុងតំបន់ភូមិសាស្ត្រខេត្តព្រះវិហារ。<br><br>Location and Naming: Cha-eh Temple is located in Cha-eh Village, Tuek Kraham Commune, Choam Khsant District, Preah Vihear Province. It is also historically referenced in early archaeological records as Prasat Trapeang Thnal or Thnal Bek.<br><br><strong>Architectural Structure:</strong> The original structure is built of brick with a central sanctuary tower. It features two subsidiary "library" buildings flanking the front of the sanctuary, enclosed by an ancient foundation boundary wall.`)">
+        <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative cursor-pointer" onclick="openModal('ប្រាសាទចាហេ', '11th Century - Cha Eh Temple', ['IMG_0783.jpeg', 'IMG_0784.jpeg', 'IMG_0785.jpeg', 'IMG_0786.jpeg', 'IMG_0787.jpeg', 'IMG_0788.jpeg'], `...`)">
             <img src="IMG_0783.jpeg" alt="Cha Eh Temple" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
         </div>
         <div class="px-2 mb-4">
@@ -390,16 +397,16 @@ Per fast
         </div>
     </div>
     <div class="px-2 pb-2 pt-0">
-        <!-- កន្លែងចុចលើប៊ូតុង EXPLORE GUIDE (ត្រូវដាក់ Array រូបភាពទាំង ៦ ឱ្យដូចគ្នាជាមួយខាងលើ) -->
-        <button onclick="openModal('ប្រាសាទចាហេ', '11th Century - Cha Eh Temple', ['IMG_0783.jpeg', 'IMG_0784.jpeg', 'IMG_0785.jpeg', 'IMG_0786.jpeg', 'IMG_0787.jpeg', 'IMG_0788.jpeg'], `<strong>ទីតាំង និងឈ្មោះ៖</strong> ប្រាសាទចាហេ ស្ថិតនៅក្នុងភូមិចាហេ ឃុំទឹកក្រហម ស្រុកជាំក្សាន្ត ខេត្តព្រះវិហារ。<br><br><strong>រចនាសម្ព័ន្ធស្ថាបត្យកម្ម៖</strong> សំណង់ដើមសាងសង់ឡើងដោយឥដ្ឋ ដែលមានតួប៉មប្រាសាទនៅកណ្តាល。<br><br><strong>ប្រវត្តិ និងការស្រាវជ្រាវ (សតវត្សរ៍ទី១១)៖</strong> ទីតាំងនេះត្រូវបានកត់ត្រាក្នុងបញ្ជីសារពើភណ្ឌបេតិកភណ្ឌ និងការស្ទង់មតិរបស់បារាំងតាំងពីដើមសតវត្សរ៍ទី២០。<br><br>Location and Naming: Cha-eh Temple is located in Cha-eh Village, Tuek Kraham Commune, Choam Khsant District, Preah Vihear Province.`)" class="text-xs font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800 transition cursor-pointer">
+        <button onclick="openModal('ប្រាសាទចាហេ', '11th Century - Cha Eh Temple', ['IMG_0783.jpeg', 'IMG_0784.jpeg', 'IMG_0785.jpeg', 'IMG_0786.jpeg', 'IMG_0787.jpeg', 'IMG_0788.jpeg'], `...`)" class="text-xs font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800 transition cursor-pointer">
             EXPLORE GUIDE &rarr;
         </button>
     </div>
 </div>
-             <!-- Card 11 -->
-<div class="temple-card group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4" data-title="11. Suor Mab Temple ប្រាសាទសួរប៉័ង 10th Century Preah Vihear Region">
+
+<!-- Card 11 (លាក់ទុកជាមុន) -->
+<div class="temple-card hidden-card group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4" style="display: none;" data-title="11. Suor Mab Temple ប្រាសាទសួរប៉័ង 10th Century Preah Vihear Region">
     <div>
-        <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative cursor-pointer" onclick="openModal('ប្រាសាទសួរប៉័ង', '10th Century - Suor Mab Temple', ['01000713 9.jpeg'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong> ប្រាសាទសួរប៉័ង គឺជាបុរាណដ្ឋានប្រាសាទថ្មដ៏ំណាស់មួយ ស្ថិតនៅតំបន់ភាគនេតខាងជើងប្រទេសកម្ពុជា (ជាទូទៅត្រូវបានស្គាល់ជាស្ថិតក្នុងទីសាសាខេត្តព្រះវិហារ)។ បើទោះបីជាប្រាសាទនេះមិនសូវល្បីល្បាញខ្លាំងដូចប្រាសាទសិលាដ៏ធំដុបប្រាសាទអង្គរវត្ត ឬ ប្រាសាទព្រះវិហារក៏ដោយ ប៉ុន្តែមានប្រវត្តិ និងលក្ខណៈទៅនាតាស្ថាប័នកម្ពុជាបុរាណយ៉ាងសំខាន់។<br><br><strong>ប្រវត្តិសាស្ត្រ និងការសាងសង់៖</strong> ប្រាសាទនេះត្រូវបានសាងសង់ឡើងក្នុងសម័យអង្គរ ដែលឆ្លុះបញ្ចាំងពីការការពង្រីកដី និងការសាងសង់សាសនដ្ធាននៅតាមតំបន់ខេត្តនានាទីបំផុត។ អ្នកជំនាញបុរាណវិទ្យាបានស្គាល់ថា វាជាសំណង់ស្ថាបត្យកម្មប្រើឥដ្ឋ ដែលជាទូទៅទេសសាសនសង់ដីយមកយុគសម័យកាលមុន និងដើមសម័យអង្គរ។<br><br><strong>ទម្រង់ និងស្ថាបត្យកម្ម៖</strong> ប្រាសាទសួរប៉័ងមានតូបប៉មចំនួន ៣ ឈររៀបជាជួរតម្រាហ៍ពីជើង-ត្បូង និងបែរមុខទៅទិសខាងកើត ព្រមទាំងមានបណ្ណាល័យតូចមួយនៅទិសអាគ្នេយ៍ផងដែរ。<br><br>Prasat Suor Mab is an ancient Khmer temple site located in northern Cambodia (specifically within the Preah Vihear region). Although it is less prominent and lacks the massive epigraphic archives of major tourist centers like Angkor Wat, it holds a distinct place in regional Khmer architecture and history: History and Construction: The temple dates back to the Angkorian era, reflecting the empire's extensive reach in constructing religious and provincial sanctuaries across remote territories.`)">
+        <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative cursor-pointer" onclick="openModal('ប្រាសាទសួរប៉័ង', '10th Century - Suor Mab Temple', ['01000713 9.jpeg'], `...`)">
             <img src="01000713 9.jpeg" alt="Suor Mab Temple" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
         </div>
         <div class="px-2 mb-4">
@@ -412,7 +419,29 @@ Per fast
         </div>
     </div>
     <div class="px-2 pb-2 pt-0">
-        <button onclick="openModal('ប្រាសាទសួរប៉័ង', '10th Century - Suor Mab Temple', ['01000713 9.jpeg'], `<strong>ទីតាំង និងប្រវត្តិ៖</strong> ប្រាសាទសួរប៉័ង គឺជាបុរាណដ្ឋានប្រាសាទថ្មដ៏ំណាស់មួយ ស្ថិតនៅតំបន់ភាគនេតខាងជើងប្រទេសកម្ពុជា (ជាទូទៅត្រូវបានស្គាល់ជាស្ថិតក្នុងទីសាសាខេត្តព្រះវិហារ)。 បើទោះបីជាប្រាសាទនេះមិនសូវល្បីល្បាញខ្លាំងដូចប្រាសាទសិលាដ៏ធំដុបប្រាសាទអង្គរវត្ត ឬ ប្រាសាទព្រះវិហារក៏ដោយ ប៉ុន្តែមានប្រវត្តិ និងលក្ខណៈទៅនាតាស្ថាប័នកម្ពុជាបុរាណយ៉ាងសំខាន់。<br><br><strong>ប្រវត្តិសាស្ត្រ និងការសាងសង់៖</strong> ប្រាសាទនេះត្រូវបានសាងសង់ឡើងក្នុងសម័យអង្គរ ដែលឆ្លុះបញ្ចាំងពីការការពង្រីកដី និងការសាងសង់សាសនដ្ធាននៅតាមតំបន់ខេត្តនានាទីបំផុត。 អ្នកជំនាញបុរាណវិទ្យាបានស្គាល់ថា វាជាសំណង់ស្ថាបត្យកម្មប្រើឥដ្ឋ ដែលជាទូទៅទេសសាសនសង់ដីយមកយុគសម័យកាលមុន និងដើមសម័យអង្គរ。<br><br><strong>ទម្រង់ និងស្ថាបត្យកម្ម៖</strong> ប្រាសាទសួរប៉័ងមានតូបប៉មចំនួន ៣ ឈររៀបជាជួរតម្រាហ៍ពីជើង-ត្បូង និងបែរមុខទៅទិសខាងកើត ព្រមទាំងមានបណ្ណាល័យតូចមួយនៅទិសអាគ្នេយ៍ផងដែរ。<br><br>Prasat Suor Mab is an ancient Khmer temple site located in northern Cambodia (specifically within the Preah Vihear region). Although it is less prominent and lacks the massive epigraphic archives of major tourist centers like Angkor Wat, it holds a distinct place in regional Khmer architecture and history:`)" class="text-xs font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800 transition cursor-pointer">
+        <button onclick="openModal('ប្រាសាទសួរប៉័ង', '10th Century - Suor Mab Temple', ['01000713 9.jpeg'], `...`)" class="text-xs font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800 transition cursor-pointer">
+            EXPLORE GUIDE &rarr;
+        </button>
+    </div>
+</div>
+
+<!-- Card 12 (លាក់ទុកជាមុន) -->
+<div class="temple-card hidden-card group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4" style="display: none;" data-title="12. Kuk Pros Temple ប្រាសាទកុកប្រុស 12th Century Preah Vihear">
+    <div>
+        <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative cursor-pointer" onclick="openModal('ប្រាសាទកុកប្រុស', '12th Century - Kuk Pros Temple', ['IMG_1288.jpeg'], `...`)">
+            <img src="IMG_1288.jpeg" alt="Kuk Pros Temple" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+        </div>
+        <div class="px-2 mb-4">
+            <h3 class="font-bold text-neutral-800 text-base sm:text-lg leading-snug group-hover:text-cyan-600 transition mb-2">
+                12. Kuk Pros Temple <span class="text-sm font-normal text-neutral-500 block">ប្រាសាទកុកប្រុស</span>
+            </h3>
+            <p class="text-xs text-neutral-500 leading-relaxed">
+                <strong>ទីតាំង និងប្រវត្តិ៖</strong> ប្រាសាទចុងសម័យអង្គរ (សតវត្សរ៍ទី១២) ក្នុងខេត្តព្រះវិហារ។
+            </p>
+        </div>
+    </div>
+    <div class="px-2 pb-2 pt-0">
+        <button onclick="openModal('ប្រាសាទកុកប្រុស', '12th Century - Kuk Pros Temple', ['IMG_1288.jpeg'], `...`)" class="text-xs font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800 transition cursor-pointer">
             EXPLORE GUIDE &rarr;
         </button>
     </div>
