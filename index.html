@@ -108,6 +108,13 @@ Per fast
 .cookie-consent{position:fixed;left:20px;right:20px;bottom:20px;z-index:10000;background:rgba(17,24,39,.97);color:#fff;border-radius:14px;padding:16px 18px;box-shadow:0 10px 35px rgba(0,0,0,.25);display:flex;align-items:center;justify-content:space-between;gap:18px;font-size:14px;line-height:1.6}.cookie-consent.hidden{display:none}.cookie-consent-text{flex:1}.cookie-consent-text a{color:#67e8f9;text-decoration:underline}.cookie-consent-actions{display:flex;align-items:center;gap:10px;flex-shrink:0}.cookie-consent-btn{border:0;border-radius:9px;padding:9px 16px;font-weight:700;cursor:pointer;background:#06b6d4;color:#fff;transition:transform .15s ease,opacity .15s ease}.cookie-consent-btn:hover{opacity:.9;transform:translateY(-1px)}.cookie-consent-close{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.35);border-radius:9px;padding:8px 11px;cursor:pointer}@media(max-width:640px){.cookie-consent{left:10px;right:10px;bottom:10px;padding:14px;flex-direction:column;align-items:stretch;gap:12px}.cookie-consent-actions{justify-content:flex-end}}
 </style>
 
+
+<style>
+/* AngkorLens Membership */
+.membership-overlay{position:fixed;inset:0;background:rgba(0,0,0,.62);z-index:10000;display:flex;align-items:center;justify-content:center;padding:20px}.membership-overlay.hidden{display:none}.membership-card{width:min(760px,100%);max-height:90vh;overflow:auto;background:#fff;border-radius:24px;box-shadow:0 25px 70px rgba(0,0,0,.35);padding:28px}.membership-head{display:flex;justify-content:space-between;gap:20px;align-items:flex-start}.membership-close{border:0;background:#f3f4f6;width:40px;height:40px;border-radius:50%;font-size:24px;cursor:pointer}.membership-kicker{font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#9a6b20}.membership-title{font-size:30px;font-weight:800;color:#171717;margin:6px 0}.membership-copy{color:#525252;line-height:1.6}.membership-plans{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:22px}.membership-plan{border:1px solid #e5e7eb;border-radius:18px;padding:22px;background:#fafafa}.membership-plan.featured{border:2px solid #a8792c;background:#fffdf8}.membership-price{font-size:30px;font-weight:800;margin:8px 0}.membership-plan ul{padding-left:20px;color:#525252;line-height:1.8}.membership-btn{display:block;width:100%;border:0;border-radius:12px;padding:13px 16px;background:#171717;color:#fff;font-weight:700;cursor:pointer}.membership-btn:hover{opacity:.9}.membership-note{font-size:12px;color:#737373;margin-top:16px;line-height:1.5}@media(max-width:640px){.membership-plans{grid-template-columns:1fr}.membership-card{padding:20px}.membership-title{font-size:25px}}
+.original-download-btn{margin-top:12px;padding:10px 15px;border:1px solid #d6d3d1;border-radius:10px;background:#fff;font-weight:700;cursor:pointer}.original-download-btn:hover{background:#f5f5f4}
+</style>
+
 </head>
 <body class="bg-[#fafafa] text-neutral-800 antialiased min-h-screen flex flex-col justify-between">
 
@@ -3693,9 +3700,16 @@ function openModal(title, subtitle, images, historyText) {
         }
 
         // Fullscreen Lightbox Handler
+        // Full-size viewing is now behind the AngkorLens Membership prompt.
+        // NOTE: A public image URL cannot be fully protected from screenshots or direct downloads.
+        // Real protection requires private high-resolution originals + server-side membership checks.
         function openLightbox(src) {
-            document.getElementById('lightboxImg').src = src;
-            document.getElementById('lightboxModal').classList.remove('hidden');
+            window.angkorLensPendingPhoto = src || null;
+            const title = document.getElementById('membershipTitle');
+            const copy = document.querySelector('#membershipModal .membership-copy');
+            if (title) title.textContent = 'Unlock Full-Size Temple Photos';
+            if (copy) copy.textContent = 'You can browse the preview photos for free. To open the large full-size photograph, choose an AngkorLens Membership plan below.';
+            openMembershipModal();
         }
 
         function closeLightbox() {
@@ -3909,6 +3923,36 @@ document.addEventListener('DOMContentLoaded',function(){
 });
 </script>
 
+
+<!-- AngkorLens Membership Modal -->
+<div id="membershipModal" class="membership-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="membershipTitle">
+  <div class="membership-card">
+    <div class="membership-head">
+      <div>
+        <div class="membership-kicker">AngkorLens Membership</div>
+        <div id="membershipTitle" class="membership-title">Unlock Original High-Resolution Photos</div>
+        <div class="membership-copy">Browse temple photographs for free. Membership is designed to support Khmer heritage documentation and unlock original-resolution downloads.</div>
+      </div>
+      <button class="membership-close" type="button" onclick="closeMembershipModal()" aria-label="Close">&times;</button>
+    </div>
+    <div class="membership-plans">
+      <div class="membership-plan">
+        <div class="font-bold text-lg">Monthly</div>
+        <div class="membership-price">$1.99<span class="text-sm font-normal">/month</span></div>
+        <ul><li>Unlimited original photo downloads</li><li>High-resolution gallery access</li><li>Support Khmer heritage documentation</li></ul>
+        <button class="membership-btn" type="button" onclick="startMembershipCheckout('monthly')">Subscribe Monthly</button>
+      </div>
+      <div class="membership-plan featured">
+        <div class="font-bold text-lg">Yearly</div>
+        <div class="membership-price">$12.99<span class="text-sm font-normal">/year</span></div>
+        <ul><li>Unlimited original photo downloads</li><li>High-resolution gallery access</li><li>Support Khmer heritage documentation</li></ul>
+        <button class="membership-btn" type="button" onclick="startMembershipCheckout('yearly')">Subscribe Yearly</button>
+      </div>
+    </div>
+    <div class="membership-note">Full-size viewing and original downloads are for members. A screenshot cannot be completely prevented by a website; for stronger protection, keep original high-resolution files in private storage and release them only after payment is verified.</div>
+  </div>
+</div>
+
 <!-- Cookie Consent Banner -->
 <div id="cookieConsent" class="cookie-consent" role="dialog" aria-label="Cookie consent">
   <div class="cookie-consent-text">
@@ -3927,5 +3971,30 @@ function acceptCookies(){localStorage.setItem("angkorLensCookieConsent","accepte
 function dismissCookieBanner(){localStorage.setItem("angkorLensCookieConsent","dismissed");const b=document.getElementById("cookieConsent");if(b)b.classList.add("hidden");}
 document.addEventListener("DOMContentLoaded",function(){const c=localStorage.getItem("angkorLensCookieConsent");const b=document.getElementById("cookieConsent");if(b&&(c==="accepted"||c==="dismissed"))b.classList.add("hidden");});
 </script>
+
+<script>
+// AngkorLens Membership UI. Real payment links should be added only after creating them in your payment provider.
+const ANGKORLENS_CHECKOUT_LINKS = { monthly: '', yearly: '' };
+let requestedMembershipPlan = null;
+function openMembershipModal(plan){ requestedMembershipPlan=plan||null; const m=document.getElementById('membershipModal'); if(m)m.classList.remove('hidden'); }
+function closeMembershipModal(){ const m=document.getElementById('membershipModal'); if(m)m.classList.add('hidden'); }
+function startMembershipCheckout(plan){
+  const url=ANGKORLENS_CHECKOUT_LINKS[plan];
+  if(url){ window.location.href=url; return; }
+  alert('AngkorLens payment is not connected yet. Create the Monthly and Yearly checkout links first, then place them in ANGKORLENS_CHECKOUT_LINKS.');
+}
+function addMembershipButtonToModal(){
+  const gallery=document.getElementById('modalGallery');
+  if(!gallery || gallery.querySelector('.original-download-btn')) return;
+  const b=document.createElement('button');
+  b.type='button'; b.className='original-download-btn'; b.innerHTML='🔒 View Full-Size / Download Original';
+  b.onclick=function(){ openMembershipModal(); };
+  gallery.appendChild(b);
+}
+const _angkorLensOpenModal=openModal;
+openModal=function(title,subtitle,images,historyText){ _angkorLensOpenModal(title,subtitle,images,historyText); addMembershipButtonToModal(); };
+document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeMembershipModal(); });
+</script>
+
 </body>
 </html>
