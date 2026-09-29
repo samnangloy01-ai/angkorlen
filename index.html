@@ -1,4 +1,5 @@
-Supper good
+Good one use
+Perfect edit
 
 Good one
 
@@ -71,14 +72,42 @@ Per fast
         .load-more-btn i { transition: transform .2s ease; }
         .load-more-btn:hover i { transform: translateY(3px); }
         .temple-card[hidden] { display: none !important; }
+    
+        html { scroll-behavior: smooth; }
+        #heritage, #temple-groups, #creator, #about { scroll-margin-top: 96px; }
+
     </style>
+
+<style id="heritage-nav-icons">
+.nav-image-link {
+    display: inline-flex !important;
+    align-items: center;
+    gap: 8px;
+}
+.nav-mini-icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex: 0 0 28px;
+    box-shadow: 0 1px 5px rgba(0,0,0,.12);
+}
+@media (max-width: 768px) {
+    .nav-mini-icon {
+        width: 24px;
+        height: 24px;
+        flex-basis: 24px;
+    }
+}
+</style>
+
 </head>
 <body class="bg-[#fafafa] text-neutral-800 antialiased min-h-screen flex flex-col justify-between">
 
     <!-- Header Section -->
     <header class="bg-white border-b border-neutral-200 sticky top-0 z-50 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <div class="flex items-center space-x-2">
+            <div id="creator" class="flex items-center space-x-2">
                 <a href="#" class="text-3xl font-extrabold tracking-tight text-cyan-600 flex items-center gap-2">
                     <span class="text-neutral-900">Angkor</span><span class="text-cyan-600">Lens</span>
                 </a>
@@ -86,9 +115,15 @@ Per fast
 
             <!-- Desktop Nav -->
             <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-neutral-600">
-                <a href="#" class="hover:text-cyan-600 transition">Angkor</a>
-                <a href="#" class="hover:text-cyan-600 transition">Temple Groups</a>
-                <a href="#" class="hover:text-cyan-600 transition">Creator</a>
+                <a href="#heritage" class="hover:text-cyan-600 transition nav-image-link">
+    <img src="https://raw.githubusercontent.com/samnangloy01-ai/angkorlen/main/IMG_0713.JPG" alt="" class="nav-mini-icon">
+    <span>Khmer Heritage</span>
+</a>
+                <a href="#temple-groups" class="hover:text-cyan-600 transition nav-image-link">
+    <img src="https://raw.githubusercontent.com/samnangloy01-ai/angkorlen/main/IMG_0713.JPG" alt="" class="nav-mini-icon">
+    <span>Temple Groups</span>
+</a>
+                <a href="#creator" class="hover:text-cyan-600 transition">Creator</a>
                 <a href="#about" class="hover:text-cyan-600 transition">About</a>
             </nav>
 
@@ -113,9 +148,15 @@ Per fast
 
         <!-- Mobile Nav Drawer -->
         <div id="mobileMenu" class="hidden md:hidden bg-white border-b border-neutral-200 px-4 pt-2 pb-4 space-y-3">
-            <a href="#" class="block text-neutral-600 hover:text-cyan-600 font-medium py-1">Angkor</a>
-            <a href="#" class="block text-neutral-600 hover:text-cyan-600 font-medium py-1">Temple Groups</a>
-            <a href="#" class="block text-neutral-600 hover:text-cyan-600 font-medium py-1">Creator</a>
+            <a href="#heritage" class="block text-neutral-600 hover:text-cyan-600 font-medium py-1 nav-image-link">
+    <img src="https://raw.githubusercontent.com/samnangloy01-ai/angkorlen/main/IMG_0713.JPG" alt="" class="nav-mini-icon">
+    <span>Khmer Heritage</span>
+</a>
+            <a href="#temple-groups" class="block text-neutral-600 hover:text-cyan-600 font-medium py-1 nav-image-link">
+    <img src="https://raw.githubusercontent.com/samnangloy01-ai/angkorlen/main/IMG_0713.JPG" alt="" class="nav-mini-icon">
+    <span>Temple Groups</span>
+</a>
+            <a href="#creator" class="block text-neutral-600 hover:text-cyan-600 font-medium py-1">Creator</a>
             <a href="#about" class="block text-neutral-600 hover:text-cyan-600 font-medium py-1">About</a>
             <div class="flex items-center space-x-3 pt-2 border-t border-neutral-100">
                 <a href="https://www.youtube.com/@Urbanwalkstudio" target="_blank" class="w-8 h-8 rounded-full bg-red-600 text-white flex items-center justify-center"><i class="fa-brands fa-youtube text-xs"></i></a>
@@ -199,6 +240,64 @@ Per fast
                         </button>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- Heritage Highlights -->
+        <section id="heritage" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+            <div class="mb-6">
+                <p class="text-xs font-bold uppercase tracking-[0.2em] text-cyan-600 mb-2">Khmer Heritage</p>
+                <h2 class="text-2xl md:text-3xl font-extrabold text-neutral-900">Explore Beyond the Famous Temples</h2>
+                <p class="mt-2 max-w-3xl text-neutral-600 leading-relaxed">
+                    AngkorLens focuses on Cambodia's wider Khmer heritage — including lesser-known temples,
+                    archaeological remains, inscriptions, architecture, and forest sites across Preah Vihear and beyond.
+                </p>
+            </div>
+
+            <div id="temple-groups" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <article class="bg-white rounded-3xl border border-neutral-100 shadow-sm overflow-hidden hover:shadow-lg transition">
+                    <div class="grid grid-cols-2 gap-2 p-2">
+                        <img src="https://raw.githubusercontent.com/samnangloy01-ai/angkorlen/main/IMG_1474.jpeg"
+                             alt="Neak Buos Temple"
+                             class="w-full h-48 md:h-56 object-cover rounded-2xl">
+                        <img src="https://raw.githubusercontent.com/samnangloy01-ai/angkorlen/main/IMG_1979.JPG"
+                             alt="Neak Buos Temple detail"
+                             class="w-full h-48 md:h-56 object-cover rounded-2xl">
+                    </div>
+                    <div class="px-5 pb-5">
+                        <p class="text-xs font-bold uppercase tracking-wider text-cyan-600 mb-1">Temple Group</p>
+                        <h3 class="text-xl font-bold text-neutral-900">Neak Buos Temple Group</h3>
+                        <p class="mt-2 text-sm text-neutral-600 leading-relaxed">
+                            A forested archaeological complex in Preah Vihear with remains from different periods,
+                            inscriptions, and distinctive brick architecture.
+                        </p>
+                        <a href="#templeGrid" class="inline-block mt-4 text-sm font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800">
+                            Explore the collection →
+                        </a>
+                    </div>
+                </article>
+
+                <article class="bg-white rounded-3xl border border-neutral-100 shadow-sm overflow-hidden hover:shadow-lg transition">
+                    <div class="grid grid-cols-2 gap-2 p-2">
+                        <img src="https://raw.githubusercontent.com/samnangloy01-ai/angkorlen/main/IMG_3678.jpeg"
+                             alt="Khnar Temple"
+                             class="w-full h-48 md:h-56 object-cover rounded-2xl">
+                        <img src="https://raw.githubusercontent.com/samnangloy01-ai/angkorlen/main/IMG_3513.jpeg"
+                             alt="Khnar Temple detail"
+                             class="w-full h-48 md:h-56 object-cover rounded-2xl">
+                    </div>
+                    <div class="px-5 pb-5">
+                        <p class="text-xs font-bold uppercase tracking-wider text-cyan-600 mb-1">Temple Group</p>
+                        <h3 class="text-xl font-bold text-neutral-900">Khnar Temple Group</h3>
+                        <p class="mt-2 text-sm text-neutral-600 leading-relaxed">
+                            Discover the Khnar archaeological area, its inscriptions, architectural remains,
+                            and the wider ancient Khmer landscape of Preah Vihear.
+                        </p>
+                        <a href="#templeGrid" class="inline-block mt-4 text-sm font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800">
+                            Explore the collection →
+                        </a>
+                    </div>
+                </article>
             </div>
         </section>
 
@@ -1751,109 +1850,9 @@ Preah Vihear was inscribed on the UNESCO World Heritage List in 2008 under crite
 
         <!-- IMAGE / OPEN MODAL -->
         <div class="overflow-hidden aspect-[4/3] bg-neutral-100 rounded-2xl mb-4 relative cursor-pointer flex-shrink-0"
-             onclick="openModal('ប្រាសាទឆ្អេះ', '11th Century - Cha Eh Temple', ['IMG_0783.jpeg', 'IMG_07831.jpeg', 'IMG_078311.jpeg', 'IMG_07832.jpeg', 'IMG_07834.jpeg', 'IMG_07837.jpeg', 'IMG_07836.jpeg', 'IMG_078312.jpeg'], `
+             onclick="openChaEhModal(this)"">
 
-<strong>ទីតាំង និងឈ្មោះ៖</strong><br>
-ប្រាសាទឆ្អេះ ស្ថិតនៅក្នុងភូមិឆ្អេះ ឃុំទឹកក្រហម ស្រុកជាំក្សាន្ត ខេត្តព្រះវិហារ។ ប្រភពស្រាវជ្រាវបុរាណវិទ្យាសម័យទំនើបពិពណ៌នាទីតាំងនេះថា ជាសំណល់ប្រាសាទឥដ្ឋមួយក្នុងតំបន់ជនបទ និងព្រៃភ្នំនៃស្រុកជាំក្សាន្ត។
-
-<br><br>
-
-<strong>ទីតាំងបុរាណវិទ្យា៖</strong><br>
-ប្រាសាទឆ្អេះស្ថិតនៅក្នុងតំបន់ដែលមានបុរាណស្ថានជាច្រើនរបស់ខេត្តព្រះវិហារ។ ទីតាំងនេះត្រូវបានកត់ត្រាថា ជាប្រាសាទឥដ្ឋដែលនៅសល់ជាសំណល់បាក់បែក ប៉ុន្តែប្លង់ស្ថាបត្យកម្មមួយចំនួននៅតែអាចសម្គាល់បាន។
-
-<br><br>
-
-<strong>រចនាសម្ព័ន្ធស្ថាបត្យកម្ម៖</strong><br>
-សំណង់សំខាន់របស់ប្រាសាទសាងសង់ដោយឥដ្ឋ។ តាមការពិពណ៌នាបុរាណវិទ្យា ប្រាសាទមានតួសក្ការៈកណ្តាល ហើយមានសំណង់រងពីរដែលត្រូវបានហៅថា 'បណ្ណាល័យ' ស្ថិតនៅខាងមុខ និងសងខាងនៃតួប្រាសាទ។ ប្លង់នេះជាលក្ខណៈដែលអាចជួយឱ្យយើងយល់ពីការរៀបចំបរិវេណប្រាសាទខ្មែរសម័យអង្គរ។
-
-<br><br>
-
-<strong>កំផែង និងបរិវេណប្រាសាទ៖</strong><br>
-បរិវេណប្រាសាទត្រូវបានហ៊ុំព័ទ្ធដោយកំផែងខាងក្រៅ។ ច្រកចូល និងសំណង់រងជុំវិញតួប្រាសាទបង្ហាញថា ទីតាំងនេះមិនមែនជាតួប៉មឯកោទេ ប៉ុន្តែជាបរិវេណសាសនាដែលមានការរៀបចំជាសណ្តាប់ធ្នាប់។
-
-<br><br>
-
-<strong>សម័យកាល៖</strong><br>
-ប្រាសាទឆ្អេះត្រូវបានចាត់ទុកជាបុរាណស្ថានសម័យអង្គរ ហើយរូបរាងសំណង់ឥដ្ឋ និងប្លង់ស្ថាបត្យកម្មរបស់វាស្ថិតក្នុងប្រពៃណីស្ថាបត្យកម្មខ្មែរបុរាណ។ ការកំណត់កាលបរិច្ឆេទជាក់លាក់ត្រូវពឹងផ្អែកលើការសិក្សាបន្ថែម ដូចជា បច្ចេកទេសសំណង់ សិល្បៈ សំណល់បុរាណ និងសិលាចារឹក ប្រសិនបើមាន។
-
-<br><br>
-
-<strong>សារៈសំខាន់នៃ 'បណ្ណាល័យ'៖</strong><br>
-សំណង់ពីរដែលគេហៅថា 'បណ្ណាល័យ' ជាសំណង់រងដែលជាញឹកញាប់ត្រូវបានរកឃើញក្នុងប្លង់ប្រាសាទខ្មែរ។ ពាក្យ 'បណ្ណាល័យ' ជាពាក្យសម្គាល់តាមប្រពៃណីបុរាណវិទ្យា ហើយមុខងារពិតប្រាកដរបស់សំណង់នីមួយៗអាចមានភាពខុសគ្នាតាមទីតាំង។
-
-<br><br>
-
-<strong>ប្រវត្តិនៃការសិក្សា៖</strong><br>
-បុរាណស្ថានក្នុងតំបន់នេះត្រូវបានអ្នកស្រាវជ្រាវបារាំងកត់ត្រាតាំងពីដើមសតវត្សរ៍ទី២០។ ការស្ទង់មតិ និងបញ្ជីសារពើភណ្ឌបុរាណវិទ្យាបានជួយរក្សាទុកព័ត៌មានអំពីទីតាំងប្រាសាទជាច្រើននៅតំបន់ជាំក្សាន្ត ដែលមួយចំនួនស្ថិតនៅតំបន់ឆ្ងាយពីមជ្ឈមណ្ឌលទេសចរណ៍ធំៗ។
-
-<br><br>
-
-<strong>តម្លៃប្រវត្តិសាស្ត្រ៖</strong><br>
-ប្រាសាទឆ្អេះមានសារៈសំខាន់ក្នុងការសិក្សាពីការរីករាលដាលនៃស្ថាបត្យកម្ម និងវប្បធម៌ខ្មែរនៅតំបន់ខ្ពង់រាប និងតំបន់ជនបទនៃខេត្តព្រះវិហារ។ វាបង្ហាញថាបណ្តាញបុរាណស្ថានសម័យអង្គរមិនបានស្ថិតនៅតែជុំវិញអង្គរទេ ប៉ុន្តែបានរាលដាលទៅតំបន់ជាច្រើននៃកម្ពុជា។
-
-<br><br>
-
-<strong>ស្ថានភាពបច្ចុប្បន្ន៖</strong><br>
-ប្រាសាទនៅសល់ជាសំណល់បុរាណជាចម្បង ហើយសំណង់មួយចំនួនបានរងការបាក់បែក និងការលូតលាស់របស់រុក្ខជាតិ។ ទោះជាយ៉ាងណា ប្លង់សំណង់ និងសំណល់ឥដ្ឋនៅតែមានតម្លៃសម្រាប់ការសិក្សា និងការអភិរក្សបេតិកភណ្ឌវប្បធម៌ក្នុងតំបន់។
-
-<br><br>
-
-<strong>ទីតាំង និងបរិបទវប្បធម៌៖</strong><br>
-ការរក្សាទុកប្រាសាទឆ្អេះ និងបុរាណស្ថានជុំវិញស្រុកជាំក្សាន្ត មានសារៈសំខាន់សម្រាប់យល់ដឹងអំពីប្រវត្តិសាស្ត្រមូលដ្ឋាន និងបណ្តាញសាសនា សេដ្ឋកិច្ច និងការធ្វើដំណើររបស់សង្គមខ្មែរបុរាណ។
-
-<hr class="my-6">
-
-<strong>English — Location and Name:</strong><br>
-Cha Eh Temple is located in Cha-eh Village, Tuek Kraham Commune, Choam Khsant District, Preah Vihear Province. Modern archaeological references describe it as a ruined brick temple in the rural and forested landscape of Choam Khsant District.
-
-<br><br>
-
-<strong>Archaeological Setting:</strong><br>
-Cha Eh belongs to a wider group of ancient sites found across Preah Vihear Province. Although the temple is now largely ruinous, parts of its original architectural arrangement can still be recognized.
-
-<br><br>
-
-<strong>Architectural Structure:</strong><br>
-The principal structure was built in brick. Archaeological descriptions indicate a central sanctuary accompanied by two subsidiary buildings traditionally referred to as 'libraries,' positioned toward the front and on either side of the main sanctuary. This arrangement is characteristic of an organized Khmer temple complex rather than an isolated tower.
-
-<br><br>
-
-<strong>Enclosure and Layout:</strong><br>
-The temple complex was surrounded by an outer enclosure. The combination of the sanctuary, subsidiary buildings, entrance area, and enclosure demonstrates that the site was planned as a religious architectural complex with an organized internal layout.
-
-<br><br>
-
-<strong>Historical Period:</strong><br>
-Cha Eh is considered an Angkor-period archaeological site. Its brick construction and architectural arrangement belong to the broader tradition of ancient Khmer temple building. A precise construction date should be treated cautiously unless supported by inscriptions or further archaeological study.
-
-<br><br>
-
-<strong>The 'Libraries':</strong><br>
-The two subsidiary buildings traditionally called 'libraries' are an important part of the site's architectural plan. The term is a conventional archaeological designation, and the exact function of such buildings could vary from one Khmer temple to another.
-
-<br><br>
-
-<strong>History of Archaeological Research:</strong><br>
-Ancient monuments in this region were documented by French researchers and archaeological surveyors during the early twentieth century. These inventories helped preserve information about numerous temples in the Choam Khsant area, including sites located far from major tourist centers.
-
-<br><br>
-
-<strong>Historical Importance:</strong><br>
-Cha Eh is valuable for understanding the spread of Khmer architecture and religious culture into the upland and rural landscapes of Preah Vihear. Sites such as this demonstrate that the Angkorian cultural landscape extended far beyond the central monuments around Angkor.
-
-<br><br>
-
-<strong>Present Condition:</strong><br>
-The temple survives mainly as archaeological remains, with parts of the structure damaged or overtaken by vegetation. Nevertheless, the surviving brickwork and layout remain important for archaeological research and heritage conservation.
-
-<br><br>
-
-<strong>Cultural Heritage:</strong><br>
-Preserving Cha Eh and other ancient sites around Choam Khsant helps document the local history of Preah Vihear and provides evidence for understanding the religious, cultural, and settlement networks of ancient Cambodia.
-
-`)">
-
-            <img src="https://raw.githubusercontent.com/samnangloy01-ai/angkorlen/main/IMG_0783.jpeg"
+            <img src="https://raw.githubusercontent.com/samnangloy01-ai/angkorlen/main/IMG_0783.jpeg" onerror="tryChaEhFallback(this)" data-cha-eh-images="IMG_0783.jpeg|IMG_07831.jpeg|IMG_078311.jpeg|IMG_07832.jpeg|IMG_07834.jpeg|IMG_07837.jpeg|IMG_07836.jpeg|IMG_078312.jpeg"
                  alt="Cha Eh Temple - ប្រាសាទឆ្អេះ"
                  class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
 
@@ -1880,53 +1879,7 @@ Preserving Cha Eh and other ancient sites around Choam Khsant helps document the
     <!-- EXPLORE GUIDE -->
     <div class="px-2 pb-2 pt-0">
         <button
-            onclick="openModal('ប្រាសាទឆ្អេះ', '11th Century - Cha Eh Temple', ['IMG_0783.jpeg', 'IMG_07831.jpeg', 'IMG_078311.jpeg', 'IMG_07832.jpeg', 'IMG_07834.jpeg', 'IMG_07837.jpeg', 'IMG_07836.jpeg', 'IMG_078312.jpeg'], `
-
-<strong>ប្រាសាទឆ្អេះ — Cha Eh Temple</strong>
-
-<br><br>
-
-<strong>ទីតាំង៖</strong><br>
-ប្រាសាទឆ្អេះ ស្ថិតនៅក្នុងភូមិឆ្អេះ ឃុំទឹកក្រហម ស្រុកជាំក្សាន្ត ខេត្តព្រះវិហារ។
-
-<br><br>
-
-<strong>ប្រវត្តិ៖</strong><br>
-ប្រាសាទឆ្អេះស្ថិតក្នុងបណ្តាញបុរាណស្ថានសម័យអង្គរនៃតំបន់ជាំក្សាន្ត។ ទីតាំងនេះមានសំណល់ស្ថាបត្យកម្មដែលជួយបង្ហាញពីការរីករាលដាលនៃស្ថាបត្យកម្មខ្មែរបុរាណទៅតំបន់ព្រះវិហារ។
-
-<br><br>
-
-<strong>ស្ថាបត្យកម្ម៖</strong><br>
-ប្រាសាទនេះជាសំណង់ឥដ្ឋដែលមានតួសក្ការៈកណ្តាល និងសំណង់រងពីរដែលត្រូវបានហៅថា 'បណ្ណាល័យ'។ បរិវេណទាំងមូលត្រូវបានរៀបចំជាមួយកំផែងខាងក្រៅ។
-
-<br><br>
-
-<strong>សារៈសំខាន់៖</strong><br>
-ទោះបីជាសំណង់នៅសល់ជាសំណល់បាក់បែកក៏ដោយ ប្លង់ និងសម្ភារៈដែលនៅសល់មានតម្លៃសម្រាប់ការសិក្សាប្រវត្តិសាស្ត្រ ស្ថាបត្យកម្ម និងបណ្តាញសាសនារបស់តំបន់ជាំក្សាន្ត។
-
-<br><br>
-
-<strong>ការស្រាវជ្រាវ៖</strong><br>
-បុរាណស្ថាននៅតំបន់នេះត្រូវបានកត់ត្រាតាំងពីការស្ទង់មតិបុរាណវិទ្យានៅដើមសតវត្សរ៍ទី២០។ ការសិក្សាបន្ថែមអាចជួយបញ្ជាក់កាលបរិច្ឆេទ និងមុខងារដើមរបស់សំណង់បានកាន់តែច្បាស់។
-
-<br><br>
-
-<strong>English Summary:</strong><br>
-Cha Eh Temple is an Angkor-period brick temple located in Cha-eh Village, Tuek Kraham Commune, Choam Khsant District, Preah Vihear Province.
-
-<br><br>
-
-The surviving archaeological remains include a central sanctuary, two subsidiary buildings traditionally called 'libraries,' and an outer enclosure.
-
-<br><br>
-
-The site is important for understanding the spread of Khmer religious architecture into the Preah Vihear region. Although the temple is largely ruinous today, its surviving brick structures and architectural layout remain valuable for archaeological research and heritage conservation.
-
-<br><br>
-
-A precise construction date should be treated cautiously unless additional inscriptions or archaeological evidence provide a more secure chronology.
-
-`)"
+            onclick="openChaEhModal(this)""
             class="text-xs font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800 transition cursor-pointer">
             EXPLORE GUIDE &rarr;
         </button>
@@ -3610,28 +3563,28 @@ South Snaeng Krabei Temple is an Angkorian-period Khmer monument in Preah Vihear
     <footer id="about" class="bg-neutral-100 border-t border-neutral-200 pt-16 pb-12 text-sm text-neutral-600">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
             <div>
-                <h3 class="font-bold text-neutral-900 text-base mb-4">Navigate the Khmer Empire</h3>
+                <h3 class="font-bold text-neutral-900 text-base mb-4">Explore Khmer Heritage</h3>
                 <ul class="space-y-2.5">
-                    <li><a href="#" class="hover:text-cyan-600 transition">The Temples of Angkor</a></li>
-                    <li><a href="#" class="hover:text-cyan-600 transition">Angkor Wat</a></li>
-                    <li><a href="#" class="hover:text-cyan-600 transition">Angkor Thom</a></li>
-                    <li><a href="#" class="hover:text-cyan-600 transition">Small Circuit & Grand Circuit</a></li>
-                    <li><a href="#" class="hover:text-cyan-600 transition">Angkor Pass</a></li>
+                    <li><a href="#heritage" class="hover:text-cyan-600 transition">Khmer Heritage Highlights</a></li>
+                    <li><a href="#temple-groups" class="hover:text-cyan-600 transition">Neak Buos Temple Group</a></li>
+                    <li><a href="#temple-groups" class="hover:text-cyan-600 transition">Khnar Temple Group</a></li>
+                    <li><a href="#templeGrid" class="hover:text-cyan-600 transition">Preah Vihear Temples</a></li>
+                    <li><a href="#templeGrid" class="hover:text-cyan-600 transition">Hidden Brick Temples</a></li>
                 </ul>
             </div>
             <div>
                 <h3 class="font-bold text-neutral-900 text-base mb-4">Recent Posts</h3>
                 <ul class="space-y-2.5">
-                    <li><a href="#" class="hover:text-cyan-600 transition">A Journey into the Ancient Khmer World, 1000 Years Before Angkor</a></li>
-                    <li><a href="#" class="hover:text-cyan-600 transition">Our New Book: Essential Siem Reap 2026 – The New Explorer's Manual</a></li>
-                    <li><a href="#" class="hover:text-cyan-600 transition">In Pictures: The Siem Reap Giant Puppet Parade 2026</a></li>
-                    <li><a href="#" class="hover:text-cyan-600 transition">Rescuing the Bayon: Three Decades of Discovery & Defiance</a></li>
-                    <li><a href="#" class="hover:text-cyan-600 transition">Search Khmer Temples by Historical Names & Inventory Numbers</a></li>
+                    <li><a href="#" class="hover:text-cyan-600 transition">Exploring the Hidden Temples of Preah Vihear</a></li>
+                    <li><a href="#" class="hover:text-cyan-600 transition">Neak Buos: Inscriptions, Architecture & Forest Heritage</a></li>
+                    <li><a href="#" class="hover:text-cyan-600 transition">Khnar Temple: Inscriptions & the Ancient Khmer Landscape</a></li>
+                    <li><a href="#" class="hover:text-cyan-600 transition">Cha Eh Temple: A Rural Brick Temple of Choam Khsant</a></li>
+                    <li><a href="#" class="hover:text-cyan-600 transition">Discovering Khmer Temple Groups Beyond the Main Tourist Sites</a></li>
                 </ul>
             </div>
             <div>
                 <h3 class="font-bold text-neutral-900 text-base mb-4">Contact us</h3>
-                <p class="mb-4 leading-relaxed">AngkorLens is based in beautiful Siem Reap, Cambodia – Find out more & Contact. About Privacy and TOC, Data and Reference.</p>
+                <p class="mb-4 leading-relaxed">AngkorLens is a personal heritage project documenting Khmer temples, architecture, archaeology, and lesser-known historical sites across Cambodia. Find out more & Contact. About Privacy and TOC, Data and Reference.</p>
                 <h4 class="font-bold text-neutral-900 text-sm mb-2">Social</h4>
                 <div class="flex items-center space-x-3">
                     <a href="https://www.youtube.com/@Urbanwalkstudio" target="_blank" class="w-8 h-8 rounded-full bg-red-600 text-white flex items-center justify-center hover:bg-red-700 transition" title="YouTube"><i class="fa-brands fa-youtube text-xs"></i></a>
@@ -3641,7 +3594,7 @@ South Snaeng Krabei Temple is an Angkorian-period Khmer monument in Preah Vihear
             </div>
         </div>
         <div class="border-t border-neutral-300 pt-6 text-center text-xs text-neutral-500">
-            &copy; 2026 AngkorLens &mdash; Curated by Samnang (@samnang_2022) &bull; Built with GeneratePress style
+            &copy; 2026 AngkorLens &mdash; Curated by Samnang (@samnang_2022) &bull; Khmer temples, architecture & heritage discovery
         </div>
     </footer>
 
@@ -3838,5 +3791,83 @@ function openModal(title, subtitle, images, historyText) {
         }
 
 </script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    function installTempleImageFallbacks() {
+        document.querySelectorAll(".temple-card").forEach(function (card) {
+            const image = card.querySelector("img");
+            if (!image) return;
+
+            const onclick = card.querySelector("[onclick*='openModal']");
+            if (!onclick) return;
+
+            const match = onclick.getAttribute("onclick").match(/\[(.*?)\]/s);
+            if (!match) return;
+
+            let gallery = [];
+            try {
+                gallery = JSON.parse("[" + match[1] + "]");
+            } catch (e) {
+                return;
+            }
+
+            let current = 0;
+            image.addEventListener("error", function () {
+                current++;
+                while (current < gallery.length) {
+                    const next = getTempleImageUrl(gallery[current]);
+                    if (image.dataset.trying === next) {
+                        current++;
+                        continue;
+                    }
+                    image.dataset.trying = next;
+                    image.src = next;
+                    return;
+                }
+
+                // Last-resort image already used by the site, so the card
+                // never shows a broken-image icon.
+                image.onerror = null;
+                image.src = getTempleImageUrl("IMG_0713.JPG");
+            });
+
+            image.dataset.trying = image.src;
+        });
+    }
+
+    installTempleImageFallbacks();
+});
+</script>
+
+
+<script>
+const chaEhImages = ['IMG_0783.jpeg', 'IMG_07831.jpeg', 'IMG_078311.jpeg', 'IMG_07832.jpeg', 'IMG_07834.jpeg', 'IMG_07837.jpeg', 'IMG_07836.jpeg', 'IMG_078312.jpeg'];
+const chaEhHistory = "`\n\n<strong>ទីតាំង និងឈ្មោះ៖</strong><br>\nប្រាសាទឆ្អេះ ស្ថិតនៅក្នុងភូមិឆ្អេះ ឃុំទឹកក្រហម ស្រុកជាំក្សាន្ត ខេត្តព្រះវិហារ។ ប្រភពស្រាវជ្រាវបុរាណវិទ្យាសម័យទំនើបពិពណ៌នាទីតាំងនេះថា ជាសំណល់ប្រាសាទឥដ្ឋមួយក្នុងតំបន់ជនបទ និងព្រៃភ្នំនៃស្រុកជាំក្សាន្ត។\n\n<br><br>\n\n<strong>ទីតាំងបុរាណវិទ្យា៖</strong><br>\nប្រាសាទឆ្អេះស្ថិតនៅក្នុងតំបន់ដែលមានបុរាណស្ថានជាច្រើនរបស់ខេត្តព្រះវិហារ។ ទីតាំងនេះត្រូវបានកត់ត្រាថា ជាប្រាសាទឥដ្ឋដែលនៅសល់ជាសំណល់បាក់បែក ប៉ុន្តែប្លង់ស្ថាបត្យកម្មមួយចំនួននៅតែអាចសម្គាល់បាន។\n\n<br><br>\n\n<strong>រចនាសម្ព័ន្ធស្ថាបត្យកម្ម៖</strong><br>\nសំណង់សំខាន់របស់ប្រាសាទសាងសង់ដោយឥដ្ឋ។ តាមការពិពណ៌នាបុរាណវិទ្យា ប្រាសាទមានតួសក្ការៈកណ្តាល ហើយមានសំណង់រងពីរដែលត្រូវបានហៅថា 'បណ្ណាល័យ' ស្ថិតនៅខាងមុខ និងសងខាងនៃតួប្រាសាទ។ ប្លង់នេះជាលក្ខណៈដែលអាចជួយឱ្យយើងយល់ពីការរៀបចំបរិវេណប្រាសាទខ្មែរសម័យអង្គរ។\n\n<br><br>\n\n<strong>កំផែង និងបរិវេណប្រាសាទ៖</strong><br>\nបរិវេណប្រាសាទត្រូវបានហ៊ុំព័ទ្ធដោយកំផែងខាងក្រៅ។ ច្រកចូល និងសំណង់រងជុំវិញតួប្រាសាទបង្ហាញថា ទីតាំងនេះមិនមែនជាតួប៉មឯកោទេ ប៉ុន្តែជាបរិវេណសាសនាដែលមានការរៀបចំជាសណ្តាប់ធ្នាប់។\n\n<br><br>\n\n<strong>សម័យកាល៖</strong><br>\nប្រាសាទឆ្អេះត្រូវបានចាត់ទុកជាបុរាណស្ថានសម័យអង្គរ ហើយរូបរាងសំណង់ឥដ្ឋ និងប្លង់ស្ថាបត្យកម្មរបស់វាស្ថិតក្នុងប្រពៃណីស្ថាបត្យកម្មខ្មែរបុរាណ។ ការកំណត់កាលបរិច្ឆេទជាក់លាក់ត្រូវពឹងផ្អែកលើការសិក្សាបន្ថែម ដូចជា បច្ចេកទេសសំណង់ សិល្បៈ សំណល់បុរាណ និងសិលាចារឹក ប្រសិនបើមាន។\n\n<br><br>\n\n<strong>សារៈសំខាន់នៃ 'បណ្ណាល័យ'៖</strong><br>\nសំណង់ពីរដែលគេហៅថា 'បណ្ណាល័យ' ជាសំណង់រងដែលជាញឹកញាប់ត្រូវបានរកឃើញក្នុងប្លង់ប្រាសាទខ្មែរ។ ពាក្យ 'បណ្ណាល័យ' ជាពាក្យសម្គាល់តាមប្រពៃណីបុរាណវិទ្យា ហើយមុខងារពិតប្រាកដរបស់សំណង់នីមួយៗអាចមានភាពខុសគ្នាតាមទីតាំង។\n\n<br><br>\n\n<strong>ប្រវត្តិនៃការសិក្សា៖</strong><br>\nបុរាណស្ថានក្នុងតំបន់នេះត្រូវបានអ្នកស្រាវជ្រាវបារាំងកត់ត្រាតាំងពីដើមសតវត្សរ៍ទី២០។ ការស្ទង់មតិ និងបញ្ជីសារពើភណ្ឌបុរាណវិទ្យាបានជួយរក្សាទុកព័ត៌មានអំពីទីតាំងប្រាសាទជាច្រើននៅតំបន់ជាំក្សាន្ត ដែលមួយចំនួនស្ថិតនៅតំបន់ឆ្ងាយពីមជ្ឈមណ្ឌលទេសចរណ៍ធំៗ។\n\n<br><br>\n\n<strong>តម្លៃប្រវត្តិសាស្ត្រ៖</strong><br>\nប្រាសាទឆ្អេះមានសារៈសំខាន់ក្នុងការសិក្សាពីការរីករាលដាលនៃស្ថាបត្យកម្ម និងវប្បធម៌ខ្មែរនៅតំបន់ខ្ពង់រាប និងតំបន់ជនបទនៃខេត្តព្រះវិហារ។ វាបង្ហាញថាបណ្តាញបុរាណស្ថានសម័យអង្គរមិនបានស្ថិតនៅតែជុំវិញអង្គរទេ ប៉ុន្តែបានរាលដាលទៅតំបន់ជាច្រើននៃកម្ពុជា។\n\n<br><br>\n\n<strong>ស្ថានភាពបច្ចុប្បន្ន៖</strong><br>\nប្រាសាទនៅសល់ជាសំណល់បុរាណជាចម្បង ហើយសំណង់មួយចំនួនបានរងការបាក់បែក និងការលូតលាស់របស់រុក្ខជាតិ។ ទោះជាយ៉ាងណា ប្លង់សំណង់ និងសំណល់ឥដ្ឋនៅតែមានតម្លៃសម្រាប់ការសិក្សា និងការអភិរក្សបេតិកភណ្ឌវប្បធម៌ក្នុងតំបន់។\n\n<br><br>\n\n<strong>ទីតាំង និងបរិបទវប្បធម៌៖</strong><br>\nការរក្សាទុកប្រាសាទឆ្អេះ និងបុរាណស្ថានជុំវិញស្រុកជាំក្សាន្ត មានសារៈសំខាន់សម្រាប់យល់ដឹងអំពីប្រវត្តិសាស្ត្រមូលដ្ឋាន និងបណ្តាញសាសនា សេដ្ឋកិច្ច និងការធ្វើដំណើររបស់សង្គមខ្មែរបុរាណ។\n\n<hr class=\"my-6\">\n\n<strong>English — Location and Name:</strong><br>\nCha Eh Temple is located in Cha-eh Village, Tuek Kraham Commune, Choam Khsant District, Preah Vihear Province. Modern archaeological references describe it as a ruined brick temple in the rural and forested landscape of Choam Khsant District.\n\n<br><br>\n\n<strong>Archaeological Setting:</strong><br>\nCha Eh belongs to a wider group of ancient sites found across Preah Vihear Province. Although the temple is now largely ruinous, parts of its original architectural arrangement can still be recognized.\n\n<br><br>\n\n<strong>Architectural Structure:</strong><br>\nThe principal structure was built in brick. Archaeological descriptions indicate a central sanctuary accompanied by two subsidiary buildings traditionally referred to as 'libraries,' positioned toward the front and on either side of the main sanctuary. This arrangement is characteristic of an organized Khmer temple complex rather than an isolated tower.\n\n<br><br>\n\n<strong>Enclosure and Layout:</strong><br>\nThe temple complex was surrounded by an outer enclosure. The combination of the sanctuary, subsidiary buildings, entrance area, and enclosure demonstrates that the site was planned as a religious architectural complex with an organized internal layout.\n\n<br><br>\n\n<strong>Historical Period:</strong><br>\nCha Eh is considered an Angkor-period archaeological site. Its brick construction and architectural arrangement belong to the broader tradition of ancient Khmer temple building. A precise construction date should be treated cautiously unless supported by inscriptions or further archaeological study.\n\n<br><br>\n\n<strong>The 'Libraries':</strong><br>\nThe two subsidiary buildings traditionally called 'libraries' are an important part of the site's architectural plan. The term is a conventional archaeological designation, and the exact function of such buildings could vary from one Khmer temple to another.\n\n<br><br>\n\n<strong>History of Archaeological Research:</strong><br>\nAncient monuments in this region were documented by French researchers and archaeological surveyors during the early twentieth century. These inventories helped preserve information about numerous temples in the Choam Khsant area, including sites located far from major tourist centers.\n\n<br><br>\n\n<strong>Historical Importance:</strong><br>\nCha Eh is valuable for understanding the spread of Khmer architecture and religious culture into the upland and rural landscapes of Preah Vihear. Sites such as this demonstrate that the Angkorian cultural landscape extended far beyond the central monuments around Angkor.\n\n<br><br>\n\n<strong>Present Condition:</strong><br>\nThe temple survives mainly as archaeological remains, with parts of the structure damaged or overtaken by vegetation. Nevertheless, the surviving brickwork and layout remain important for archaeological research and heritage conservation.\n\n<br><br>\n\n<strong>Cultural Heritage:</strong><br>\nPreserving Cha Eh and other ancient sites around Choam Khsant helps document the local history of Preah Vihear and provides evidence for understanding the religious, cultural, and settlement networks of ancient Cambodia.\n\n";
+
+function openChaEhModal() {
+    openModal(
+        'ប្រាសាទឆ្អេះ',
+        '11th Century - Cha Eh Temple',
+        chaEhImages,
+        chaEhHistory
+    );
+}
+
+function tryChaEhFallback(img) {
+    const files = (img.dataset.chaEhImages || '').split('|').filter(Boolean);
+    const current = img.getAttribute('src') || '';
+    const currentName = current.substring(current.lastIndexOf('/') + 1);
+    const index = files.indexOf(currentName);
+    const base = 'https://raw.githubusercontent.com/samnangloy01-ai/angkorlen/main/';
+
+    if (index >= 0 && index + 1 < files.length) {
+        img.src = base + files[index + 1].split('/').map(encodeURIComponent).join('/');
+    } else {
+        img.onerror = null;
+    }
+}
+</script>
+
 </body>
 </html>
