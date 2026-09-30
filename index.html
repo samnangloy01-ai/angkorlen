@@ -1,5 +1,3 @@
-What I want best 
-
 Good one 
 Perfect edit
 
@@ -4351,24 +4349,78 @@ document.addEventListener("DOMContentLoaded",function(){const c=localStorage.get
 <script>
 /* AngkorLens requested additions: connect temple-name links to the existing full guide modals. */
 function openTempleFromIndex(query){
-    const q=(query||'').toLowerCase().trim();
+    const raw=(query||'').trim();
+    const q=raw.toLowerCase();
     const cards=Array.from(document.querySelectorAll('.temple-card'));
+    const grid=document.getElementById('templeGrid');
+    const input=document.getElementById('searchInput');
+
+    // IMPORTANT: Top 30 is a navigation category, not a temple name.
+    // The old code searched for the words "Top 30 Ancient Sites" inside
+    // data-title, found nothing, and then ran the normal search — hiding
+    // every temple card. This keeps all existing temple data and simply
+    // reveals the first 30 cards for this category.
+    if(q === 'top 30 ancient sites'){
+        if(input) input.value='';
+        cards.forEach(function(card,index){
+            const show=index < 30;
+            card.hidden=!show;
+            card.style.display=show ? 'flex' : 'none';
+            if(show) card.dataset.revealed='true';
+        });
+        document.querySelectorAll('.load-more-wrap').forEach(function(wrapper){
+            wrapper.style.display='none';
+        });
+        const noResults=document.getElementById('noResults');
+        if(noResults) noResults.classList.add('hidden');
+        if(grid) grid.scrollIntoView({behavior:'smooth',block:'start'});
+        return;
+    }
+
+    // These are also navigation categories rather than temple names.
+    if(q === 'top 100 ancient sites' || q === 'all angkor sites'){
+        if(input) input.value='';
+        cards.forEach(function(card){
+            card.hidden=false;
+            card.style.display='flex';
+            card.dataset.revealed='true';
+        });
+        document.querySelectorAll('.load-more-wrap').forEach(function(wrapper){
+            wrapper.style.display='flex';
+        });
+        const noResults=document.getElementById('noResults');
+        if(noResults) noResults.classList.add('hidden');
+        if(grid) grid.scrollIntoView({behavior:'smooth',block:'start'});
+        return;
+    }
+
+    // For a real temple/category name, first try to open the existing
+    // full temple guide without changing the underlying card data.
     let card=cards.find(c => ((c.dataset.title||'')+' '+(c.innerText||'')).toLowerCase().includes(q));
+
     if(!card && q){
-        const input=document.getElementById('searchInput');
-        if(input){ input.value=query; handleLiveSearch(); }
-        const grid=document.getElementById('templeGrid');
+        // Do not leave the page empty when a navigation label has no
+        // exact card. Show the full collection and let the user continue.
+        if(input) input.value='';
+        cards.forEach(function(card){
+            card.hidden=false;
+            card.style.display='flex';
+        });
+        const noResults=document.getElementById('noResults');
+        if(noResults) noResults.classList.add('hidden');
         if(grid) grid.scrollIntoView({behavior:'smooth',block:'start'});
         return;
     }
+
     if(!card){
-        const grid=document.getElementById('templeGrid');
         if(grid) grid.scrollIntoView({behavior:'smooth',block:'start'});
         return;
     }
+
     card.hidden=false;
     card.style.display='flex';
     card.dataset.revealed='true';
+
     const guide=card.querySelector("button[onclick*='openModal']");
     if(guide){
         setTimeout(function(){ guide.click(); },120);
