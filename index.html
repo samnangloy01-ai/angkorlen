@@ -1,3 +1,5 @@
+What I want best 
+
 Good one 
 Perfect edit
 
@@ -116,6 +118,80 @@ Per fast
 
     </style>
 
+<style id="angkorlens-enhancements">
+/* Requested HelloAngkor-inspired navigation dropdowns — AngkorLens content remains original. */
+.angkor-nav-item{position:relative;display:flex;align-items:center;height:80px}
+.angkor-nav-trigger{display:inline-flex;align-items:center;gap:7px;height:100%;border:0;background:transparent;color:#525252;font:inherit;cursor:pointer;padding:0}
+.angkor-nav-trigger:hover{color:#0891b2}
+.angkor-nav-trigger .chevron{font-size:12px;color:#737373;transition:transform .18s ease}
+.angkor-nav-item:hover .chevron{transform:rotate(180deg)}
+.angkor-dropdown{position:absolute;top:calc(100% - 1px);left:0;min-width:290px;background:#ededed;border-top:2px solid #e5e5e5;box-shadow:0 12px 28px rgba(0,0,0,.13);padding:8px 0;opacity:0;visibility:hidden;transform:translateY(6px);transition:opacity .16s ease,transform .16s ease,visibility .16s ease;z-index:80}
+.angkor-nav-item:hover>.angkor-dropdown,.angkor-nav-item:focus-within>.angkor-dropdown{opacity:1;visibility:visible;transform:translateY(0)}
+.angkor-dropdown a{display:block;padding:11px 18px;color:#555;text-decoration:none;font-size:16px;line-height:1.35;white-space:normal}
+.angkor-dropdown a::before{content:'»';display:inline-block;margin-right:10px;color:#666;font-weight:700}
+.angkor-dropdown a:hover{background:#e2e2e2;color:#111}
+.angkor-dropdown.wide{min-width:390px;max-width:430px}
+.angkor-dropdown .dropdown-label{display:block;padding:8px 18px 6px;color:#777;font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+
+/* Middle-of-page temple name index */
+.temple-index-section{max-width:1200px;margin:0 auto;padding:28px 24px 12px}
+.temple-index-title{font-size:clamp(28px,3vw,40px);line-height:1.15;font-weight:500;color:#262626;margin:0 0 20px;border-bottom:1px solid #ededed;padding-bottom:10px}
+.temple-index-list{display:flex;flex-wrap:wrap;gap:0 28px;align-items:flex-start}
+.temple-index-link{border:0;background:transparent;color:#2b2b2b;font-size:16px;line-height:1.9;text-align:left;padding:0;cursor:pointer;transition:color .15s ease;text-decoration:none}
+.temple-index-link:hover{color:#0891b2;text-decoration:underline}
+.temple-index-link::before{content:'»';margin-right:7px;color:#777}
+
+/* Centered LOAD MORE + divider requested by the user */
+.load-more-wrap{grid-column:1 / -1;display:flex;flex-direction:column;align-items:center;justify-content:center;width:100%;padding:12px 0 32px;gap:22px}
+.load-more-btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:0;border:0;border-radius:0;background:transparent;color:#262626;font-size:14px;font-weight:700;letter-spacing:.06em;box-shadow:none;cursor:pointer}
+.load-more-btn:hover{background:transparent;color:#0891b2;transform:none;box-shadow:none}
+.load-more-btn i{font-size:11px;transition:transform .18s ease}
+.load-more-btn:hover i{transform:translateY(3px)}
+.load-more-wrap::after{content:'';width:min(92%,1160px);height:1px;background:#777;display:block}
+
+/* First-visit legal/privacy dialog */
+.angkor-legal-overlay{position:fixed;inset:0;z-index:10003;background:rgba(0,0,0,.72);display:flex;align-items:center;justify-content:center;padding:20px;backdrop-filter:blur(2px)}
+.angkor-legal-overlay.hidden{display:none}
+.angkor-legal-card{width:min(560px,100%);background:#fff;border-radius:18px;padding:30px 34px;box-shadow:0 24px 80px rgba(0,0,0,.35);text-align:center}
+.angkor-legal-card h2{margin:0 0 12px;color:#3a3a3a;font-size:24px;font-weight:800}
+.angkor-legal-card p{margin:0 auto 18px;color:#666;font-size:14px;line-height:1.65;max-width:480px}
+.angkor-legal-card a{color:#1681c4;text-decoration:underline}
+.angkor-legal-close{border:0;border-radius:999px;background:#242424;color:#fff;padding:11px 22px;font-size:13px;font-weight:800;cursor:pointer}
+.angkor-legal-close:hover{background:#0891b2}
+
+/* Newsletter popup */
+.angkor-newsletter-overlay{position:fixed;inset:0;z-index:10004;background:rgba(0,0,0,.72);display:flex;align-items:center;justify-content:center;padding:20px;backdrop-filter:blur(3px)}
+.angkor-newsletter-overlay.hidden{display:none}
+.angkor-newsletter-card{width:min(860px,100%);min-height:430px;background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 28px 90px rgba(0,0,0,.38);display:grid;grid-template-columns:1fr 1fr;position:relative}
+.angkor-newsletter-copy{padding:42px 42px 34px;display:flex;flex-direction:column;justify-content:center}
+.angkor-newsletter-kicker{font-size:12px;font-weight:900;letter-spacing:.12em;color:#c62828;text-transform:uppercase;border-top:3px solid #c62828;padding-top:7px;width:max-content}
+.angkor-newsletter-copy h2{font-family:Georgia,serif;font-size:34px;line-height:1.12;color:#222;margin:16px 0 12px}
+.angkor-newsletter-copy p{font-size:15px;line-height:1.65;color:#444;margin:0 0 20px}
+.angkor-newsletter-form{display:flex;gap:8px;align-items:center}
+.angkor-newsletter-form input{flex:1;min-width:0;height:44px;border:1px solid #bbb;border-radius:999px;padding:0 15px;font-size:14px;outline:none}
+.angkor-newsletter-form input:focus{border-color:#0891b2;box-shadow:0 0 0 3px rgba(8,145,178,.12)}
+.angkor-newsletter-form button{height:44px;border:0;border-radius:999px;background:#222;color:#fff;padding:0 18px;font-weight:800;cursor:pointer}
+.angkor-newsletter-form button:hover{background:#0891b2}
+.angkor-newsletter-fine{font-size:10px!important;line-height:1.45!important;color:#777!important;margin-top:16px!important;margin-bottom:0!important}
+.angkor-newsletter-image{min-height:430px;background:#eee}
+.angkor-newsletter-image img{width:100%;height:100%;object-fit:cover;display:block}
+.angkor-newsletter-x{position:absolute;right:10px;top:10px;width:38px;height:38px;border:1px solid rgba(255,255,255,.8);border-radius:50%;background:rgba(20,20,20,.65);color:#fff;font-size:25px;line-height:1;cursor:pointer;z-index:2}
+.angkor-newsletter-x:hover{background:#111}
+.angkor-newsletter-icon{display:inline-flex!important;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;background:#222;color:#fff!important;transition:transform .15s ease,background .15s ease}
+.angkor-newsletter-icon:hover{background:#0891b2;transform:translateY(-1px)}
+@media(max-width:900px){.angkor-dropdown{position:absolute;left:auto;right:0}.angkor-newsletter-card{grid-template-columns:1fr}.angkor-newsletter-image{min-height:250px;order:-1}.angkor-newsletter-copy{padding:30px}.angkor-newsletter-copy h2{font-size:30px}}
+@media(max-width:640px){.angkor-nav-item{height:auto}.angkor-dropdown{position:static;min-width:0;width:100%;box-shadow:none;border-top:1px solid #ddd;opacity:1;visibility:visible;transform:none;display:none}.angkor-nav-item:focus-within>.angkor-dropdown{display:block}.temple-index-section{padding:24px 16px 10px}.temple-index-list{gap:0 18px}.temple-index-link{font-size:14px}.angkor-newsletter-form{flex-direction:column;align-items:stretch}.angkor-newsletter-form button{width:100%}}
+
+/* Newsletter signup section at the bottom of the page */
+.angkor-newsletter-bottom-section{max-width:1200px;margin:0 auto;padding:42px 24px 56px}
+.angkor-newsletter-bottom-card{width:100%;min-height:360px;background:#fff;border:1px solid #eee;border-radius:18px;overflow:hidden;box-shadow:0 12px 40px rgba(0,0,0,.08);display:grid;grid-template-columns:1fr 1fr;position:relative}
+.angkor-newsletter-bottom-card .angkor-newsletter-copy{padding:42px}
+.angkor-newsletter-bottom-card .angkor-newsletter-image{min-height:360px}
+.angkor-newsletter-bottom-card .angkor-newsletter-copy h2{font-size:32px}
+@media(max-width:900px){.angkor-newsletter-bottom-card{grid-template-columns:1fr}.angkor-newsletter-bottom-card .angkor-newsletter-image{min-height:260px;order:-1}}
+@media(max-width:640px){.angkor-newsletter-bottom-section{padding:30px 16px 42px}.angkor-newsletter-bottom-card .angkor-newsletter-copy{padding:28px 22px}}
+</style>
+
 <style id="heritage-nav-icons">
 .nav-image-link {
     display: inline-flex !important;
@@ -150,6 +226,98 @@ Per fast
 .photo-membership-overlay{position:fixed;inset:0;z-index:10001;background:rgba(15,23,42,.72);backdrop-filter:blur(5px);display:flex;align-items:center;justify-content:center;padding:18px}.photo-membership-overlay.hidden{display:none}.photo-membership-card{width:min(560px,100%);max-height:92vh;overflow-y:auto;background:#fff;border:1px solid #e5e7eb;border-radius:28px;box-shadow:0 25px 80px rgba(0,0,0,.35);padding:28px}.photo-membership-top{display:flex;justify-content:space-between;align-items:flex-start;gap:16px}.photo-membership-badge{display:inline-flex;align-items:center;gap:7px;padding:6px 10px;border-radius:999px;background:#ecfeff;color:#0e7490;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}.photo-membership-close{border:0;background:transparent;color:#737373;font-size:30px;line-height:1;cursor:pointer;padding:2px 7px}.photo-membership-card h2{margin:12px 0 8px;color:#171717;font-size:25px;font-weight:800}.photo-membership-subtitle{margin:0;color:#525252;font-size:14px;line-height:1.6}.photo-membership-preview{margin:20px 0;border-radius:18px;overflow:hidden;background:#f5f5f5;position:relative}.photo-membership-preview img{width:100%;height:220px;object-fit:cover;display:block;filter:blur(3px);transform:scale(1.02);opacity:.72}.photo-membership-preview-lock{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.18)}.photo-membership-lock-circle{width:58px;height:58px;border-radius:50%;background:rgba(17,24,39,.86);color:#fff;display:flex;align-items:center;justify-content:center;font-size:22px}.photo-plan-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px}.photo-plan{border:1px solid #e5e7eb;border-radius:18px;padding:18px;background:#fff}.photo-plan.yearly{border-color:#0891b2;box-shadow:0 5px 20px rgba(8,145,178,.10)}.photo-plan h3{margin:0;color:#171717;font-size:15px;font-weight:800}.photo-plan-price{margin:7px 0 12px;color:#0891b2;font-size:25px;font-weight:900}.photo-plan-price span{font-size:12px;color:#737373;font-weight:600}.photo-plan ul{margin:0;padding-left:18px;color:#525252;font-size:12px;line-height:1.75}.photo-pay-btn{width:100%;margin-top:14px;border:0;border-radius:12px;padding:11px 14px;background:#171717;color:#fff;font-size:12px;font-weight:800;letter-spacing:.04em;cursor:pointer}.photo-plan.yearly .photo-pay-btn{background:#0891b2}.photo-pay-btn:hover{opacity:.9}.photo-membership-note{margin:16px 0 0;text-align:center;color:#737373;font-size:11px;line-height:1.5}.photo-membership-note strong{color:#525252}@media(max-width:640px){.photo-membership-card{padding:20px;border-radius:22px}.photo-plan-grid{grid-template-columns:1fr}.photo-membership-preview img{height:180px}}
 </style>
 
+
+<style id="angkorlens-heritage-index-v2">
+.temple-index-section{max-width:980px;margin:0 auto;padding:54px 24px 18px}
+.temple-index-kicker{font-size:12px;line-height:1.2;font-weight:900;letter-spacing:.22em;color:#0b9bc2;margin:0 0 12px;text-transform:uppercase}
+.temple-index-title{font-size:clamp(28px,3.1vw,38px);line-height:1.15;font-weight:800;color:#171717;margin:0 0 12px;border:0;padding:0}
+.temple-index-description{font-size:15px;line-height:1.65;color:#737373;margin:0 0 28px;max-width:900px}
+.temple-index-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));column-gap:28px;row-gap:0;border-top:1px solid #e5e5e5}
+.temple-index-item{min-width:0;padding:15px 0 14px;border-bottom:1px solid #e9e9e9;text-align:left}
+.temple-index-item button{display:block;width:100%;padding:0;border:0;background:transparent;text-align:left;cursor:pointer;color:#303030}
+.temple-index-item button:hover .temple-index-name{color:#0891b2}
+.temple-index-name{font-size:15px;line-height:1.35;font-weight:800;color:#333;transition:color .15s ease;white-space:normal}
+.temple-index-name::before{content:'»';display:inline-block;margin-right:9px;color:#777;font-weight:700}
+.temple-index-khmer{display:block;margin:5px 0 0 21px;color:#8a8a8a;font-size:13px;line-height:1.45;font-weight:400}
+.temple-index-item.extra{display:none}
+.temple-index-section.expanded .temple-index-item.extra{display:block}
+.temple-index-load-more{display:flex;align-items:center;justify-content:center;gap:9px;margin:28px auto 0;min-width:164px;height:44px;padding:0 22px;border:0;border-radius:999px;background:#202020;color:#fff;font-size:12px;font-weight:900;letter-spacing:.12em;cursor:pointer;box-shadow:0 9px 22px rgba(0,0,0,.14)}
+.temple-index-load-more:hover{background:#0891b2}
+.temple-index-load-more i{font-size:11px;transition:transform .18s ease}
+.temple-index-section.expanded .temple-index-load-more{display:none}
+.temple-index-divider{height:1px;background:#d7d7d7;margin-top:24px}
+@media(max-width:900px){.temple-index-grid{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:24px}}
+@media(max-width:640px){.temple-index-section{padding:38px 16px 12px}.temple-index-grid{grid-template-columns:1fr}.temple-index-title{font-size:28px}.temple-index-description{font-size:14px}}
+</style>
+
+<style id="angkorlens-temple-group-inside-style">
+    .al-group-inside {
+        margin-top: 18px;
+        border-top: 1px solid #e5e5e5;
+        padding-top: 14px;
+    }
+    .al-group-inside-toggle {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        border: 1px solid #e5e5e5;
+        background: #fafafa;
+        color: #222;
+        border-radius: 12px;
+        padding: 10px 12px;
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: .04em;
+        cursor: pointer;
+        text-align: left;
+    }
+    .al-group-inside-toggle:hover {
+        background: #f3f3f3;
+    }
+    .al-group-inside-toggle i {
+        transition: transform .2s ease;
+    }
+    .al-group-inside-toggle.open i {
+        transform: rotate(180deg);
+    }
+    .al-group-inside-list {
+        display: none;
+        margin-top: 10px;
+        grid-template-columns: 1fr 1fr;
+        gap: 6px 12px;
+    }
+    .al-group-inside-list.show {
+        display: grid;
+    }
+    .al-group-inside-item {
+        border: 0;
+        background: transparent;
+        padding: 7px 0;
+        text-align: left;
+        color: #404040;
+        font-size: 12px;
+        line-height: 1.35;
+        cursor: pointer;
+    }
+    .al-group-inside-item:hover {
+        color: #0891b2;
+    }
+    .al-group-inside-item strong {
+        display: block;
+        font-weight: 700;
+    }
+    .al-group-inside-item span {
+        display: block;
+        color: #888;
+        margin-top: 2px;
+    }
+    @media (max-width: 520px) {
+        .al-group-inside-list { grid-template-columns: 1fr; }
+    }
+</style>
+
 </head>
 <body class="bg-[#fafafa] text-neutral-800 antialiased min-h-screen flex flex-col justify-between">
 
@@ -164,14 +332,45 @@ Per fast
 
             <!-- Desktop Nav -->
             <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-neutral-600">
+                <div class="angkor-nav-item">
+                    <button type="button" class="angkor-nav-trigger">Angkor <span class="chevron">⌄</span></button>
+                    <div class="angkor-dropdown">
+                        <span class="dropdown-label">Explore Angkor</span>
+                        <a href="#templeGrid" onclick="openTempleFromIndex('Top 30 Ancient Sites');return true;">Top 30 Ancient Sites</a>
+                        <a href="#templeGrid" onclick="openTempleFromIndex('Top 100 Ancient Sites');return true;">Top 100 Ancient Sites</a>
+                        <a href="#templeGrid" onclick="openTempleFromIndex('Angkor Small Circuit');return true;">Angkor Small Circuit</a>
+                        <a href="#templeGrid" onclick="openTempleFromIndex('Angkor Grand Circuit');return true;">Angkor Grand Circuit</a>
+                        <a href="#templeGrid" onclick="openTempleFromIndex('Angkor Wat');return true;">Angkor Wat</a>
+                        <a href="#templeGrid" onclick="openTempleFromIndex('Angkor Thom');return true;">Angkor Thom</a>
+                        <a href="#templeGrid" onclick="openTempleFromIndex('All Angkor Sites');return true;">All Angkor Sites</a>
+                    </div>
+                </div>
                 <a href="#heritage" class="hover:text-cyan-600 transition nav-image-link">
-    <img src="https://raw.githubusercontent.com/samnangloy01-ai/angkorlen/main/IMG_0713.JPG" alt="" class="nav-mini-icon">
-    <span>Khmer Heritage</span>
-</a>
-                <a href="#temple-groups" class="hover:text-cyan-600 transition nav-image-link">
-    <img src="https://raw.githubusercontent.com/samnangloy01-ai/angkorlen/main/IMG_0713.JPG" alt="" class="nav-mini-icon">
-    <span>Temple Groups</span>
-</a>
+                    <img src="https://raw.githubusercontent.com/samnangloy01-ai/angkorlen/main/IMG_0713.JPG" alt="" class="nav-mini-icon">
+                    <span>Khmer Heritage</span>
+                </a>
+                <div class="angkor-nav-item">
+                    <button type="button" class="angkor-nav-trigger">Temple Groups <span class="chevron">⌄</span></button>
+                    <div class="angkor-dropdown wide">
+                        <span class="dropdown-label">Temple Groups & Heritage Areas</span>
+                        <a href="#templeGrid">Angkor</a>
+                        <a href="#templeGrid">Roluos (Bakong)</a>
+                        <a href="#templeGrid">Phnom Kulen</a>
+                        <a href="#templeGrid">Beng Mealea</a>
+                        <a href="#templeGrid">Koh Ker</a>
+                        <a href="#templeGrid">Banteay Chhmar</a>
+                        <a href="#templeGrid">Preah Khan of Kampong Svay</a>
+                        <a href="#templeGrid">Prasat Preah Vihear</a>
+                        <a href="#templeGrid">Sambor Prei Kuk Group</a>
+                        <a href="#templeGrid">Longvek & Oudong</a>
+                        <a href="#templeGrid">Ancient Bridges</a>
+                        <a href="#templeGrid">Ancient Royal Road</a>
+                        <a href="#templeGrid">Firehouse (Dharmasala/Vahnigriha)</a>
+                        <a href="#templeGrid">Hospital Chapel</a>
+                        <a href="#templeGrid">Buddhist Terrace (Angkor)</a>
+                        <a href="#templeGrid">Wats & Pagodas</a>
+                    </div>
+                </div>
                 <a href="#creator" class="hover:text-cyan-600 transition">Creator</a>
                 <a href="#about" class="hover:text-cyan-600 transition">About</a>
             </nav>
@@ -187,6 +386,7 @@ Per fast
                     <a href="https://www.instagram.com/samnang_2022" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-gradient-to-tr from-yellow-500 via-pink-600 to-purple-700 text-white flex items-center justify-center hover:opacity-90 transition shadow-sm" title="Instagram: samnang_2022">
                         <i class="fa-brands fa-instagram text-sm"></i>
                     </a>
+                    <button type="button" class="angkor-newsletter-icon" onclick="openNewsletterIfNeeded()" title="AngkorLens Newsletter" aria-label="Open AngkorLens Newsletter"><i class="fa-regular fa-envelope text-sm"></i></button>
                 </div>
                 <!-- Mobile Menu Button -->
                 <button onclick="toggleMobileMenu()" class="md:hidden text-neutral-700 hover:text-cyan-600 text-xl p-2 cursor-pointer">
@@ -197,14 +397,34 @@ Per fast
 
         <!-- Mobile Nav Drawer -->
         <div id="mobileMenu" class="hidden md:hidden bg-white border-b border-neutral-200 px-4 pt-2 pb-4 space-y-3">
+            <details class="text-neutral-600">
+                <summary class="font-medium py-2 cursor-pointer">Angkor</summary>
+                <div class="pl-4 space-y-1 pb-2">
+                    <a href="#templeGrid" onclick="openTempleFromIndex('Angkor Wat')" class="block py-1">» Angkor Wat</a>
+                    <a href="#templeGrid" onclick="openTempleFromIndex('Angkor Thom')" class="block py-1">» Angkor Thom</a>
+                    <a href="#templeGrid" onclick="openTempleFromIndex('Angkor Small Circuit')" class="block py-1">» Angkor Small Circuit</a>
+                    <a href="#templeGrid" onclick="openTempleFromIndex('Angkor Grand Circuit')" class="block py-1">» Angkor Grand Circuit</a>
+                    <a href="#templeGrid" class="block py-1">» All Angkor Sites</a>
+                </div>
+            </details>
             <a href="#heritage" class="block text-neutral-600 hover:text-cyan-600 font-medium py-1 nav-image-link">
-    <img src="https://raw.githubusercontent.com/samnangloy01-ai/angkorlen/main/IMG_0713.JPG" alt="" class="nav-mini-icon">
-    <span>Khmer Heritage</span>
-</a>
-            <a href="#temple-groups" class="block text-neutral-600 hover:text-cyan-600 font-medium py-1 nav-image-link">
-    <img src="https://raw.githubusercontent.com/samnangloy01-ai/angkorlen/main/IMG_0713.JPG" alt="" class="nav-mini-icon">
-    <span>Temple Groups</span>
-</a>
+                <img src="https://raw.githubusercontent.com/samnangloy01-ai/angkorlen/main/IMG_0713.JPG" alt="" class="nav-mini-icon">
+                <span>Khmer Heritage</span>
+            </a>
+            <details class="text-neutral-600">
+                <summary class="font-medium py-2 cursor-pointer">Temple Groups</summary>
+                <div class="pl-4 space-y-1 pb-2">
+                    <a href="#templeGrid" class="block py-1">» Angkor</a>
+                    <a href="#templeGrid" class="block py-1">» Roluos (Bakong)</a>
+                    <a href="#templeGrid" class="block py-1">» Phnom Kulen</a>
+                    <a href="#templeGrid" class="block py-1">» Beng Mealea</a>
+                    <a href="#templeGrid" class="block py-1">» Koh Ker</a>
+                    <a href="#templeGrid" class="block py-1">» Banteay Chhmar</a>
+                    <a href="#templeGrid" class="block py-1">» Preah Khan of Kampong Svay</a>
+                    <a href="#templeGrid" class="block py-1">» Ancient Royal Road</a>
+                    <a href="#templeGrid" class="block py-1">» Wats & Pagodas</a>
+                </div>
+            </details>
             <a href="#creator" class="block text-neutral-600 hover:text-cyan-600 font-medium py-1">Creator</a>
             <a href="#about" class="block text-neutral-600 hover:text-cyan-600 font-medium py-1">About</a>
             <div class="flex items-center space-x-3 pt-2 border-t border-neutral-100">
@@ -320,6 +540,16 @@ Per fast
                             A forested archaeological complex in Preah Vihear with remains from different periods,
                             inscriptions, and distinctive brick architecture.
                         </p>
+<div class="al-group-inside">
+  <button type="button" class="al-group-inside-toggle" aria-expanded="false" onclick="toggleTempleGroupInside('al-neak-buos-members', this)">
+    <span><i class="fa-solid fa-list-ul mr-2 text-cyan-600"></i>Temples in this group</span>
+    <i class="fa-solid fa-chevron-down"></i>
+  </button>
+  <div id="al-neak-buos-members" class="al-group-inside-list">
+    <button type="button" class="al-group-inside-item" onclick="openExistingTempleGuide(Preah Vihear Temple,ប្រាសាទព្រះវិហារ)"><strong>Preah Vihear Temple</strong><span>ប្រាសាទព្រះវិហារ</span></button><button type="button" class="al-group-inside-item" onclick="openExistingTempleGuide(Cha Eh Temple,ប្រាសាទឆ្អេះ)"><strong>Cha Eh Temple</strong><span>ប្រាសាទឆ្អេះ</span></button><button type="button" class="al-group-inside-item" onclick="openExistingTempleGuide(Suor Mab Temple,ប្រាសាទ សួរម៉ាប់)"><strong>Suor Mab Temple</strong><span>ប្រាសាទ សួរម៉ាប់</span></button><button type="button" class="al-group-inside-item" onclick="openExistingTempleGuide(Kuk Pros Temple,ប្រាសាទគុក ប្រុស)"><strong>Kuk Pros Temple</strong><span>ប្រាសាទគុក ប្រុស</span></button><button type="button" class="al-group-inside-item" onclick="openExistingTempleGuide(Kuk Srey Temple,ប្រាសាទកុកស្រី)"><strong>Kuk Srey Temple</strong><span>ប្រាសាទកុកស្រី</span></button><button type="button" class="al-group-inside-item" onclick="openExistingTempleGuide(Neak Buos Temple,ប្រាសាទអ្នកបួស)"><strong>Neak Buos Temple</strong><span>ប្រាសាទអ្នកបួស</span></button><button type="button" class="al-group-inside-item" onclick="openExistingTempleGuide(Seima Temple,ប្រាសាទសីម៉ា)"><strong>Seima Temple</strong><span>ប្រាសាទសីម៉ា</span></button><button type="button" class="al-group-inside-item" onclick="openExistingTempleGuide(South Snaeng Krabei Temple,ប្រាសាទស្នែងក្របីត្បូង)"><strong>South Snaeng Krabei Temple</strong><span>ប្រាសាទស្នែងក្របីត្បូង</span></button><button type="button" class="al-group-inside-item" onclick="openExistingTempleGuide(North Snaeng Krabei Temple,ប្រាសាទស្នែងក្របីជើង)"><strong>North Snaeng Krabei Temple</strong><span>ប្រាសាទស្នែងក្របីជើង</span></button><button type="button" class="al-group-inside-item" onclick="openExistingTempleGuide(Prasat O Krouch Temple,ប្រាសាទអូរក្រូច)"><strong>Prasat O Krouch Temple</strong><span>ប្រាសាទអូរក្រូច</span></button><button type="button" class="al-group-inside-item" onclick="openExistingTempleGuide(Prasat Tram Preal,ប្រាសាទត្រាំប្រាល)"><strong>Prasat Tram Preal</strong><span>ប្រាសាទត្រាំប្រាល</span></button><button type="button" class="al-group-inside-item" onclick="openExistingTempleGuide(Lom Neang Temple,ប្រាសាទលោមនាង)"><strong>Lom Neang Temple</strong><span>ប្រាសាទលោមនាង</span></button>
+  </div>
+</div>
+
                         <a href="#templeGrid" class="inline-block mt-4 text-sm font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800">
                             Explore the collection →
                         </a>
@@ -342,6 +572,16 @@ Per fast
                             Discover the Khnar archaeological area, its inscriptions, architectural remains,
                             and the wider ancient Khmer landscape of Preah Vihear.
                         </p>
+<div class="al-group-inside">
+  <button type="button" class="al-group-inside-toggle" aria-expanded="false" onclick="toggleTempleGroupInside('al-khnar-members', this)">
+    <span><i class="fa-solid fa-list-ul mr-2 text-cyan-600"></i>Temples in this group</span>
+    <i class="fa-solid fa-chevron-down"></i>
+  </button>
+  <div id="al-khnar-members" class="al-group-inside-list">
+    <button type="button" class="al-group-inside-item" onclick="openExistingTempleGuide(Chau Kom Mon Temple,ប្រាសាទ ចៅកំម៉ុន)"><strong>Chau Kom Mon Temple</strong><span>ប្រាសាទ ចៅកំម៉ុន</span></button><button type="button" class="al-group-inside-item" onclick="openExistingTempleGuide(Punnareay Temple,ប្រាសាទ ពណ្ណរាយ)"><strong>Punnareay Temple</strong><span>ប្រាសាទ ពណ្ណរាយ</span></button><button type="button" class="al-group-inside-item" onclick="openExistingTempleGuide(Khnar Temple,ប្រាសាទខ្នារ)"><strong>Khnar Temple</strong><span>ប្រាសាទខ្នារ</span></button><button type="button" class="al-group-inside-item" onclick="openExistingTempleGuide(Chaeng Maeng Temple,ប្រាសាទចែងម៉ែង)"><strong>Chaeng Maeng Temple</strong><span>ប្រាសាទចែងម៉ែង</span></button><button type="button" class="al-group-inside-item" onclick="openExistingTempleGuide(Kampheum Temple,ប្រាសាទកំភើម)"><strong>Kampheum Temple</strong><span>ប្រាសាទកំភើម</span></button><button type="button" class="al-group-inside-item" onclick="openExistingTempleGuide(Krapum Chhouk Temple,ប្រាសាទក្រពុំឈូក)"><strong>Krapum Chhouk Temple</strong><span>ប្រាសាទក្រពុំឈូក</span></button><button type="button" class="al-group-inside-item" onclick="openExistingTempleGuide(Khnar Phtol Temple,ប្រាសាទខ្នារផ្ទោល)"><strong>Khnar Phtol Temple</strong><span>ប្រាសាទខ្នារផ្ទោល</span></button><button type="button" class="al-group-inside-item" onclick="openExistingTempleGuide(Thmom Peang Temple,ប្រាសាទធ្មមពាំង)"><strong>Thmom Peang Temple</strong><span>ប្រាសាទធ្មមពាំង</span></button><button type="button" class="al-group-inside-item" onclick="openExistingTempleGuide(Ta Tout Temple,ប្រាសាទតាតូច (Preah Pithu X))"><strong>Ta Tout Temple</strong><span>ប្រាសាទតាតូច (Preah Pithu X)</span></button><button type="button" class="al-group-inside-item" onclick="openExistingTempleGuide(Trapeang Khyaong Temple,ប្រាសាទត្រពាំងខ្យង (បន្ទាយខ្យង))"><strong>Trapeang Khyaong Temple</strong><span>ប្រាសាទត្រពាំងខ្យង (បន្ទាយខ្យង)</span></button>
+  </div>
+</div>
+
                         <a href="#templeGrid" class="inline-block mt-4 text-sm font-bold uppercase tracking-wider text-cyan-600 hover:text-cyan-800">
                             Explore the collection →
                         </a>
@@ -1648,7 +1888,7 @@ The site should be protected as part of Cambodia&#39;s archaeological heritage. 
 <!-- SINGLE LOAD MORE BUTTON -->
 <div id="singleLoadMoreWrap" class="load-more-wrap">
     <button type="button" class="load-more-btn" onclick="loadNextTempleGroup(this)">
-        <span>LOAD MORE TEMPLES</span>
+        <span>LOAD MORE</span>
         <i class="fa-solid fa-chevron-down"></i>
     </button>
 </div>
@@ -3598,6 +3838,18 @@ South Snaeng Krabei Temple is an Angkorian-period Khmer monument in Preah Vihear
 </div>
             </div>
 
+            <!-- Temple / Heritage Index — revealed after the 3rd LOAD MORE click -->
+            <section id="temple-name-index" class="temple-index-section" style="display:none;">
+                <div class="temple-index-kicker">EXPLORE MORE KHMER HERITAGE</div>
+                <h2 class="temple-index-title">Temple Sites, Museums &amp; Khmer Heritage</h2>
+                <p class="temple-index-description">Temple and heritage names from your photo folders are listed here in the middle of the site. Click any name to open its full information page.</p>
+                <div id="templeNameIndex" class="temple-index-grid" aria-label="Temple sites, museums and Khmer heritage"></div>
+                <button id="heritageIndexLoadMore" type="button" class="temple-index-load-more" onclick="loadMoreHeritageIndex()">
+                    <span>LOAD MORE</span><i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="temple-index-divider"></div>
+            </section>
+
             <!-- No Search Results Notice -->
             <div id="noResults" class="hidden text-center py-12">
                 <i class="fa-solid fa-triangle-exclamation text-3xl text-neutral-400 mb-3"></i>
@@ -3609,7 +3861,27 @@ South Snaeng Krabei Temple is an Angkorian-period Khmer monument in Preah Vihear
     </main>
 
     <!-- Professional Footer -->
-    <footer id="about" class="bg-neutral-100 border-t border-neutral-200 pt-16 pb-12 text-sm text-neutral-600">
+    
+<!-- AngkorLens Newsletter section at the bottom of the page -->
+<section id="newsletter-bottom" class="angkor-newsletter-bottom-section">
+  <div class="angkor-newsletter-bottom-card">
+    <div class="angkor-newsletter-copy">
+      <div class="angkor-newsletter-kicker">ANGKORLENS REVEALED</div>
+      <h2>Sign up for Temple &amp; Heritage Updates</h2>
+      <p>Get featured Khmer temple discoveries, new heritage stories, photography updates, and selected AngkorLens research delivered to your inbox.</p>
+      <form class="angkor-newsletter-form" onsubmit="submitAngkorNewsletter(event)">
+        <input type="email" placeholder="Your email address" autocomplete="email" required aria-label="Your email address">
+        <button type="submit">Sign Up</button>
+      </form>
+      <p class="angkor-newsletter-fine">By submitting your information, you agree to receive AngkorLens updates. You can opt out at any time. Privacy Policy | Terms of Use | Contact Us</p>
+    </div>
+    <div class="angkor-newsletter-image">
+      <img src="https://raw.githubusercontent.com/samnangloy01-ai/angkorlen/main/IMG_0713.JPG" alt="Khmer temple heritage">
+    </div>
+  </div>
+</section>
+
+<footer id="about" class="bg-neutral-100 border-t border-neutral-200 pt-16 pb-12 text-sm text-neutral-600">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
             <div>
                 <h3 class="font-bold text-neutral-900 text-base mb-4">Explore Khmer Heritage</h3>
@@ -3687,16 +3959,16 @@ South Snaeng Krabei Temple is an Angkorian-period Khmer monument in Preah Vihear
                     <h3>Monthly Membership</h3>
                     <div class="photo-plan-price">$3.99 <span>/ month</span></div>
                     <ul><li>Unlimited photo access</li><li>Original-resolution photographs</li><li>Support Khmer heritage documentation</li></ul>
-                    <button class="photo-pay-btn" onclick="startMembershipCheckout('monthly', this)">Continue — $3.99/month</button>
+                    <button class="photo-pay-btn" onclick="startMembershipCheckout('monthly')">Continue — $3.99/month</button>
                 </div>
                 <div class="photo-plan yearly">
                     <h3>Yearly Membership</h3>
                     <div class="photo-plan-price">$12.99 <span>/ year</span></div>
                     <ul><li>Unlimited photo access</li><li>Original-resolution photographs</li><li>Support Khmer heritage documentation</li></ul>
-                    <button class="photo-pay-btn" onclick="startMembershipCheckout('yearly', this)">Continue — $12.99/year</button>
+                    <button class="photo-pay-btn" onclick="startMembershipCheckout('yearly')">Continue — $12.99/year</button>
                 </div>
             </div>
-            <p class="photo-membership-note"><strong>Secure checkout:</strong> Payments are handled by Stripe. AngkorLens does not collect or store your card or bank information.</p>
+            <p class="photo-membership-note"><strong>Payment setup:</strong> Stripe Checkout will be connected in the next step. This page does not collect or store card or bank information.</p>
         </div>
     </div>
 
@@ -3772,21 +4044,10 @@ function openModal(title, subtitle, images, historyText) {
         // Photo Membership Paywall
         let pendingPhotoSrc = '';
 
-        function hasAngkorLensMembership() {
-            return localStorage.getItem('angkorLensMembershipActive') === 'true';
-        }
-
         function openPhotoMembership(src) {
             pendingPhotoSrc = src || '';
-
-            // Returning members can open the photo directly.
-            if (hasAngkorLensMembership() && pendingPhotoSrc) {
-                openLightbox(getTempleImageUrl(pendingPhotoSrc));
-                return;
-            }
-
             const preview = document.getElementById('photoMembershipPreview');
-            if (preview && pendingPhotoSrc) preview.src = getTempleImageUrl(pendingPhotoSrc);
+            if (preview && pendingPhotoSrc) preview.src = pendingPhotoSrc;
             document.getElementById('photoMembershipModal').classList.remove('hidden');
         }
 
@@ -3795,60 +4056,9 @@ function openModal(title, subtitle, images, historyText) {
             pendingPhotoSrc = '';
         }
 
-        // Stripe Checkout integration. The browser never receives a Stripe secret key.
-        // Set ANGKORLENS_API_URL to your deployed backend URL before going live.
-        const ANGKORLENS_API_URL = window.ANGKORLENS_API_URL || window.location.origin;
-
-        async function verifyMembershipFromReturn() {
-            const params = new URLSearchParams(window.location.search);
-            const sessionId = params.get('session_id');
-            const membershipStatus = params.get('membership');
-
-            if (membershipStatus !== 'success' || !sessionId) return;
-
-            try {
-                const response = await fetch(ANGKORLENS_API_URL.replace(/\/$/, '') + '/api/verify-membership?session_id=' + encodeURIComponent(sessionId));
-                const data = await response.json();
-                if (response.ok && data.active) {
-                    localStorage.setItem('angkorLensMembershipActive', 'true');
-                    localStorage.setItem('angkorLensMembershipPlan', data.plan || '');
-                    const cleanUrl = window.location.origin + window.location.pathname;
-                    window.history.replaceState({}, document.title, cleanUrl);
-                    alert('Membership activated successfully. You can now open member photos.');
-                }
-            } catch (error) {
-                console.error('Membership verification error:', error);
-            }
-        }
-
-        async function startMembershipCheckout(plan, button) {
-            const originalText = button ? button.textContent : '';
-            if (button) {
-                button.disabled = true;
-                button.textContent = 'Opening Stripe…';
-            }
-
-            try {
-                const response = await fetch(ANGKORLENS_API_URL.replace(/\/$/, '') + '/api/create-checkout', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ plan: plan })
-                });
-
-                const data = await response.json();
-                if (!response.ok || !data.url) {
-                    throw new Error(data.error || 'Unable to create Stripe Checkout session.');
-                }
-
-                window.location.href = data.url;
-            } catch (error) {
-                console.error('Stripe Checkout error:', error);
-                alert('Stripe Checkout is not connected yet.\n\nPlease make sure the AngkorLens Stripe backend is deployed and configured.');
-                if (button) {
-                    button.disabled = false;
-                    button.textContent = originalText;
-                }
-            }
+        function startMembershipCheckout(plan) {
+            const price = plan === 'yearly' ? '$12.99/year' : '$3.99/month';
+            alert('Membership selected: ' + price + '\n\nStripe Checkout is not connected yet. The next step is to connect the real Stripe payment flow.');
         }
 
         document.getElementById('photoMembershipModal').addEventListener('click', function(event) {
@@ -3936,18 +4146,36 @@ function openModal(title, subtitle, images, historyText) {
             const wrap = document.getElementById("singleLoadMoreWrap");
 
             if (wrap && cards.length) {
-                // Put the same single button after the newly revealed group.
+                // Keep the same single LOAD MORE button moving down after each group.
                 cards[cards.length - 1].after(wrap);
 
+                // On the 3rd LOAD MORE click, reveal the temple-name index.
                 if (nextTempleGroupIndex >= templeGroupsInOrder.length) {
                     wrap.remove();
+
+                    const indexSection = document.getElementById("temple-name-index");
+                    if (indexSection) {
+                        indexSection.style.display = "";
+                        indexSection.dataset.revealed = "true";
+                        buildTempleNameIndex();
+                    }
                 }
 
                 setTimeout(() => {
-                    cards[0].scrollIntoView({
-                        behavior: "smooth",
-                        block: "center"
-                    });
+                    if (nextTempleGroupIndex >= templeGroupsInOrder.length) {
+                        const indexSection = document.getElementById("temple-name-index");
+                        if (indexSection) {
+                            indexSection.scrollIntoView({
+                                behavior: "smooth",
+                                block: "start"
+                            });
+                        }
+                    } else {
+                        cards[0].scrollIntoView({
+                            behavior: "smooth",
+                            block: "center"
+                        });
+                    }
                 }, 100);
             }
         }
@@ -4041,6 +4269,36 @@ function tryChaEhFallback(img) {
 
 
 
+<!-- AngkorLens first-visit Legal Terms & Privacy dialog -->
+<div id="angkorLegalModal" class="angkor-legal-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="angkorLegalTitle">
+  <div class="angkor-legal-card">
+    <h2 id="angkorLegalTitle">Legal Terms and Privacy</h2>
+    <p>By clicking “Accept &amp; Close”, you acknowledge AngkorLens' Terms of Use and agree to the collection and use of information through cookies and similar technologies as described in our Privacy Policy.</p>
+    <p><a href="#about">Terms of Use</a> &nbsp;|&nbsp; <a href="#about">Privacy Policy</a></p>
+    <button type="button" class="angkor-legal-close" onclick="acceptAngkorLegal()">Accept &amp; Close</button>
+  </div>
+</div>
+
+<!-- AngkorLens Newsletter popup -->
+<div id="angkorNewsletterModal" class="angkor-newsletter-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="angkorNewsletterTitle">
+  <div class="angkor-newsletter-card">
+    <button type="button" class="angkor-newsletter-x" onclick="closeNewsletter()" aria-label="Close">&times;</button>
+    <div class="angkor-newsletter-copy">
+      <div class="angkor-newsletter-kicker">ANGKORLENS REVEALED</div>
+      <h2 id="angkorNewsletterTitle">Sign up for Temple &amp; Heritage Updates</h2>
+      <p>Get featured Khmer temple discoveries, new heritage stories, photography updates, and selected AngkorLens research delivered to your inbox.</p>
+      <form class="angkor-newsletter-form" onsubmit="submitAngkorNewsletter(event)">
+        <input id="angkorNewsletterEmail" type="email" placeholder="Your email address" autocomplete="email" required aria-label="Your email address">
+        <button type="submit">Sign Up</button>
+      </form>
+      <p class="angkor-newsletter-fine">By submitting your information, you agree to receive AngkorLens updates. You can opt out at any time. Privacy Policy | Terms of Use | Contact Us</p>
+    </div>
+    <div class="angkor-newsletter-image">
+      <img src="https://raw.githubusercontent.com/samnangloy01-ai/angkorlen/main/IMG_0713.JPG" alt="Khmer temple heritage">
+    </div>
+  </div>
+</div>
+
 <!-- AngkorLens Google-style welcome prompt -->
 <div id="googleWelcome" class="google-welcome-overlay" role="dialog" aria-modal="true" aria-label="AngkorLens welcome">
   <div class="google-welcome-card">
@@ -4088,7 +4346,210 @@ document.addEventListener('DOMContentLoaded',function(){
 <script>
 function acceptCookies(){localStorage.setItem("angkorLensCookieConsent","accepted");const b=document.getElementById("cookieConsent");if(b)b.classList.add("hidden");}
 function dismissCookieBanner(){localStorage.setItem("angkorLensCookieConsent","dismissed");const b=document.getElementById("cookieConsent");if(b)b.classList.add("hidden");}
-document.addEventListener("DOMContentLoaded",function(){verifyMembershipFromReturn();const c=localStorage.getItem("angkorLensCookieConsent");const b=document.getElementById("cookieConsent");if(b&&(c==="accepted"||c==="dismissed"))b.classList.add("hidden");});
+document.addEventListener("DOMContentLoaded",function(){const c=localStorage.getItem("angkorLensCookieConsent");const b=document.getElementById("cookieConsent");if(b&&(c==="accepted"||c==="dismissed"))b.classList.add("hidden");});
 </script>
+<script>
+/* AngkorLens requested additions: connect temple-name links to the existing full guide modals. */
+function openTempleFromIndex(query){
+    const q=(query||'').toLowerCase().trim();
+    const cards=Array.from(document.querySelectorAll('.temple-card'));
+    let card=cards.find(c => ((c.dataset.title||'')+' '+(c.innerText||'')).toLowerCase().includes(q));
+    if(!card && q){
+        const input=document.getElementById('searchInput');
+        if(input){ input.value=query; handleLiveSearch(); }
+        const grid=document.getElementById('templeGrid');
+        if(grid) grid.scrollIntoView({behavior:'smooth',block:'start'});
+        return;
+    }
+    if(!card){
+        const grid=document.getElementById('templeGrid');
+        if(grid) grid.scrollIntoView({behavior:'smooth',block:'start'});
+        return;
+    }
+    card.hidden=false;
+    card.style.display='flex';
+    card.dataset.revealed='true';
+    const guide=card.querySelector("button[onclick*='openModal']");
+    if(guide){
+        setTimeout(function(){ guide.click(); },120);
+    }else{
+        card.scrollIntoView({behavior:'smooth',block:'center'});
+    }
+}
+
+function buildTempleNameIndex(){
+    const wrap=document.getElementById('templeNameIndex');
+    if(!wrap || wrap.dataset.built==='yes') return;
+
+    const items = [
+        {name:'Prasat Phnom Banteay...', kh:'ប្រាសាទភ្នំបន្ទាយ...', kind:'folder'},
+        {name:'Prasat Pram (Khvav)...', kh:'ប្រាសាទប្រាំ (ខ្វាវ)...', kind:'folder'},
+        {name:'Prasat Sopheap South...', kh:'ប្រាសាទសុភ័ព្ទខាងត្បូង...', kind:'folder'},
+        {name:'Ta Noub Temple', kh:'ប្រាសាទតានប់', kind:'folder'},
+        {name:'Sralao Temple', kh:'ប្រាសាទស្រឡៅ', kind:'folder'},
+        {name:'Prasat K... Pongro', kh:'ប្រាសាទ ក...ពង្រ', kind:'folder'},
+        {name:'Elephant Pond – Srah Damrei', kh:'ស្រះដំរី', kind:'folder'},
+        {name:'Siem Reap Museums', kh:'សារមន្ទីរនៅសៀមរាប', kind:'heritage'},
+        {name:'Phnom Penh Museums', kh:'សារមន្ទីរនៅភ្នំពេញ', kind:'heritage'},
+        {name:'Battambang Museums', kh:'សារមន្ទីរនៅបាត់ដំបង', kind:'heritage'},
+        {name:'Khmer Traditional House', kh:'ផ្ទះខ្មែរបុរាណ', kind:'heritage'},
+        {name:'Floating Village', kh:'ភូមិបណ្តែតទឹក', kind:'heritage'},
+        {name:'Khmer People & Traditional Life', kh:'ប្រជាជនខ្មែរ និងជីវិតប្រពៃណី', kind:'heritage'}
+    ];
+
+    wrap.innerHTML='';
+    items.forEach(function(item,index){
+        const row=document.createElement('div');
+        row.className='temple-index-item'+(index>=7?' extra':'');
+        const btn=document.createElement('button');
+        btn.type='button';
+        btn.setAttribute('aria-label','Open full information for '+item.name);
+        btn.addEventListener('click',function(){openHeritageIndexItem(item);});
+
+        const name=document.createElement('span');
+        name.className='temple-index-name';
+        name.textContent=item.name;
+        btn.appendChild(name);
+
+        const kh=document.createElement('span');
+        kh.className='temple-index-khmer';
+        kh.textContent=item.kh;
+        btn.appendChild(kh);
+
+        row.appendChild(btn);
+        wrap.appendChild(row);
+    });
+    wrap.dataset.built='yes';
+}
+
+function loadMoreHeritageIndex(){
+    const section=document.getElementById('temple-name-index');
+    if(section) section.classList.add('expanded');
+}
+
+function openHeritageIndexItem(item){
+    // First try the existing full temple guide for a matching temple card.
+    const q=(item.name||'').toLowerCase().trim();
+    const cards=Array.from(document.querySelectorAll('.temple-card'));
+    let card=cards.find(c => ((c.dataset.title||'')+' '+(c.innerText||'')).toLowerCase().includes(q.replace(/\.\.\.$/,'')));
+    if(card){
+        card.hidden=false;
+        card.style.display='flex';
+        card.dataset.revealed='true';
+        const guide=card.querySelector("button[onclick*='openModal']");
+        if(guide){ setTimeout(function(){ guide.click(); },100); return; }
+    }
+
+    // Folder/heritage entries without an existing card still open the site's full guide modal.
+    const kh=item.kh || '';
+    const title=item.name+' / '+kh;
+    const body=`<strong>AngkorLens Heritage Guide</strong><br><br><strong>English:</strong> ${item.name} is part of the Khmer heritage collection presented by AngkorLens. This entry is connected to the site's temple, heritage, museum, traditional-house, and community archive.<br><br><strong>Khmer:</strong> ${kh} គឺជាធាតុមួយក្នុងបណ្ណសារមរតកខ្មែររបស់ AngkorLens។ ទំព័រនេះត្រូវបានរៀបចំសម្រាប់បង្ហាញប្រវត្តិ ទីតាំង ស្ថាបត្យកម្ម ឬបរិបទវប្បធម៌ និងព័ត៌មានពាក់ព័ន្ធ។<br><br><strong>More information:</strong> AngkorLens will expand this guide with verified history, location, architecture or cultural details and related photographs as the archive grows.`;
+    openModal(kh || item.name, title, [], body);
+}
+
+
+/* First-visit legal/privacy dialog */
+function acceptAngkorLegal(){
+    localStorage.setItem('angkorLensLegalAccepted','accepted');
+    const el=document.getElementById('angkorLegalModal');
+    if(el) el.classList.add('hidden');
+}
+function showAngkorLegalIfNeeded(){
+    const el=document.getElementById('angkorLegalModal');
+    if(el && localStorage.getItem('angkorLensLegalAccepted')!=='accepted') el.classList.remove('hidden');
+}
+
+/* Newsletter: the icon always opens it again until the visitor signs up. */
+function openNewsletterIfNeeded(){
+    if(localStorage.getItem('angkorLensNewsletterSubscribed')==='yes') return;
+    const el=document.getElementById('angkorNewsletterModal');
+    if(el) el.classList.remove('hidden');
+}
+function closeNewsletter(){
+    const el=document.getElementById('angkorNewsletterModal');
+    if(el) el.classList.add('hidden');
+}
+function submitAngkorNewsletter(event){
+    event.preventDefault();
+    const email=document.getElementById('angkorNewsletterEmail');
+    if(!email || !email.value) return;
+    localStorage.setItem('angkorLensNewsletterSubscribed','yes');
+    refreshNewsletterVisibility();
+    closeNewsletter();
+    alert('Thank you for signing up for AngkorLens updates.');
+}
+
+/* Newsletter behavior: show on every visit and after photo clicks until the visitor signs up. */
+function refreshNewsletterVisibility(){
+    const subscribed = localStorage.getItem('angkorLensNewsletterSubscribed') === 'yes';
+    const bottom = document.getElementById('newsletter-bottom');
+    if(bottom) bottom.style.display = subscribed ? 'none' : '';
+}
+
+document.addEventListener('DOMContentLoaded',function(){
+    // Keep the temple-name index hidden until the 3rd LOAD MORE click.
+    showAngkorLegalIfNeeded();
+    refreshNewsletterVisibility();
+
+    // Every visit: reopen the newsletter unless the visitor has signed up.
+    setTimeout(function(){
+        if(localStorage.getItem('angkorLensNewsletterSubscribed')!=='yes'){
+            openNewsletterIfNeeded();
+        }
+    }, 3500);
+
+    // Every temple/photo click: reopen the newsletter until signup.
+    document.addEventListener('click',function(event){
+        if(localStorage.getItem('angkorLensNewsletterSubscribed')==='yes') return;
+
+        const photoTarget = event.target.closest(
+            '.temple-card img, .temple-card [onclick*="openModal"], .temple-card [onclick*="openPhotoMembership"], .temple-card [onclick*="openLightbox"]'
+        );
+        if(!photoTarget) return;
+
+        setTimeout(function(){
+            openNewsletterIfNeeded();
+        }, 250);
+    }, true);
+});
+</script>
+
+
+<script id="angkorlens-temple-group-inside-script">
+(function(){
+    window.toggleTempleGroupInside = function(id, button){
+        const panel=document.getElementById(id);
+        if(!panel) return;
+        const open=panel.classList.toggle('show');
+        button.classList.toggle('open', open);
+        button.setAttribute('aria-expanded', open ? 'true' : 'false');
+    };
+
+    window.openExistingTempleGuide = function(englishName, khmerName){
+        const cards=[...document.querySelectorAll('.temple-card[data-title]')];
+        const wanted=(englishName||'').toLowerCase().replace(/\s+/g,' ').trim();
+        let card=cards.find(c=>{
+            const title=(c.getAttribute('data-title')||'').toLowerCase();
+            return title.includes(wanted);
+        });
+        if(!card){
+            card=cards.find(c=>{
+                const title=(c.getAttribute('data-title')||'').toLowerCase();
+                return title.includes((khmerName||'').toLowerCase().trim());
+            });
+        }
+        if(card){
+            const guide=card.querySelector('button[onclick*="openModal"], a[onclick*="openModal"], button[onclick*="openPhotoMembership"]');
+            if(guide){
+                guide.click();
+                return;
+            }
+            const image=card.querySelector('[onclick*="openModal"]');
+            if(image) image.click();
+        }
+    };
+})();
+</script>
+
 </body>
 </html>
