@@ -1,4 +1,9 @@
+Good one 
+Perfect edit
 
+Good one
+
+Per fast
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
@@ -3682,16 +3687,16 @@ South Snaeng Krabei Temple is an Angkorian-period Khmer monument in Preah Vihear
                     <h3>Monthly Membership</h3>
                     <div class="photo-plan-price">$3.99 <span>/ month</span></div>
                     <ul><li>Unlimited photo access</li><li>Original-resolution photographs</li><li>Support Khmer heritage documentation</li></ul>
-                    <button class="photo-pay-btn" onclick="startMembershipCheckout('monthly')">Continue — $3.99/month</button>
+                    <button class="photo-pay-btn" onclick="startMembershipCheckout('monthly', this)">Continue — $3.99/month</button>
                 </div>
                 <div class="photo-plan yearly">
                     <h3>Yearly Membership</h3>
                     <div class="photo-plan-price">$12.99 <span>/ year</span></div>
                     <ul><li>Unlimited photo access</li><li>Original-resolution photographs</li><li>Support Khmer heritage documentation</li></ul>
-                    <button class="photo-pay-btn" onclick="startMembershipCheckout('yearly')">Continue — $12.99/year</button>
+                    <button class="photo-pay-btn" onclick="startMembershipCheckout('yearly', this)">Continue — $12.99/year</button>
                 </div>
             </div>
-            <p class="photo-membership-note"><strong>Payment setup:</strong> Stripe Checkout will be connected in the next step. This page does not collect or store card or bank information.</p>
+            <p class="photo-membership-note"><strong>Secure checkout:</strong> Payments are handled by Stripe. AngkorLens does not collect or store your card or bank information.</p>
         </div>
     </div>
 
@@ -3767,10 +3772,21 @@ function openModal(title, subtitle, images, historyText) {
         // Photo Membership Paywall
         let pendingPhotoSrc = '';
 
+        function hasAngkorLensMembership() {
+            return localStorage.getItem('angkorLensMembershipActive') === 'true';
+        }
+
         function openPhotoMembership(src) {
             pendingPhotoSrc = src || '';
+
+            // Returning members can open the photo directly.
+            if (hasAngkorLensMembership() && pendingPhotoSrc) {
+                openLightbox(getTempleImageUrl(pendingPhotoSrc));
+                return;
+            }
+
             const preview = document.getElementById('photoMembershipPreview');
-            if (preview && pendingPhotoSrc) preview.src = pendingPhotoSrc;
+            if (preview && pendingPhotoSrc) preview.src = getTempleImageUrl(pendingPhotoSrc);
             document.getElementById('photoMembershipModal').classList.remove('hidden');
         }
 
@@ -3779,78 +3795,61 @@ function openModal(title, subtitle, images, historyText) {
             pendingPhotoSrc = '';
         }
 
-        async function startMembershipCheckout(plan) {
+        // Stripe Checkout integration. The browser never receives a Stripe secret key.
+        // Set ANGKORLENS_API_URL to your deployed backend URL before going live.
+        const ANGKORLENS_API_URL = window.ANGKORLENS_API_URL || window.location.origin;
+
+        async function verifyMembershipFromReturn() {
+            const params = new URLSearchParams(window.location.search);
+            const sessionId = params.get('session_id');
+            const membershipStatus = params.get('membership');
+
+            if (membershipStatus !== 'success' || !sessionId) return;
+
             try {
-                const response = await fetch('/api/create-checkout', {
+                const response = await fetch(ANGKORLENS_API_URL.replace(/\/$/, '') + '/api/verify-membership?session_id=' + encodeURIComponent(sessionId));
+                const data = await response.json();
+                if (response.ok && data.active) {
+                    localStorage.setItem('angkorLensMembershipActive', 'true');
+                    localStorage.setItem('angkorLensMembershipPlan', data.plan || '');
+                    const cleanUrl = window.location.origin + window.location.pathname;
+                    window.history.replaceState({}, document.title, cleanUrl);
+                    alert('Membership activated successfully. You can now open member photos.');
+                }
+            } catch (error) {
+                console.error('Membership verification error:', error);
+            }
+        }
+
+        async function startMembershipCheckout(plan, button) {
+            const originalText = button ? button.textContent : '';
+            if (button) {
+                button.disabled = true;
+                button.textContent = 'Opening Stripe…';
+            }
+
+            try {
+                const response = await fetch(ANGKORLENS_API_URL.replace(/\/$/, '') + '/api/create-checkout', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ plan })
+                    body: JSON.stringify({ plan: plan })
                 });
 
                 const data = await response.json();
                 if (!response.ok || !data.url) {
-                    throw new Error(data.error || 'Unable to create Stripe Checkout.');
+                    throw new Error(data.error || 'Unable to create Stripe Checkout session.');
                 }
 
                 window.location.href = data.url;
             } catch (error) {
-                console.error(error);
-                alert('We could not open the secure payment page yet. Please try again.');
-            }
-        }
-
-        async function checkAngkorLensMembership() {
-            const params = new URLSearchParams(window.location.search);
-            const sessionId = params.get('session_id');
-
-            if (params.get('membership') === 'success' && sessionId) {
-                try {
-                    const response = await fetch('/api/verify-membership?session_id=' + encodeURIComponent(sessionId));
-                    const data = await response.json();
-
-                    if (response.ok && data.active) {
-                        localStorage.setItem('angkorLensMembershipSession', sessionId);
-                        localStorage.setItem('angkorLensMembershipActive', 'true');
-                        alert('Membership confirmed. Your AngkorLens photo access is now unlocked on this browser.');
-                        window.history.replaceState({}, document.title, window.location.pathname);
-                    }
-                } catch (error) {
-                    console.error('Membership verification failed:', error);
+                console.error('Stripe Checkout error:', error);
+                alert('Stripe Checkout is not connected yet.\n\nPlease make sure the AngkorLens Stripe backend is deployed and configured.');
+                if (button) {
+                    button.disabled = false;
+                    button.textContent = originalText;
                 }
             }
         }
-
-        async function hasAngkorLensMembership() {
-            const sessionId = localStorage.getItem('angkorLensMembershipSession');
-            if (!sessionId) return false;
-
-            try {
-                const response = await fetch('/api/verify-membership?session_id=' + encodeURIComponent(sessionId));
-                const data = await response.json();
-                if (response.ok && data.active) {
-                    localStorage.setItem('angkorLensMembershipActive', 'true');
-                    return true;
-                }
-            } catch (error) {
-                console.error('Membership check failed:', error);
-            }
-
-            localStorage.removeItem('angkorLensMembershipSession');
-            localStorage.removeItem('angkorLensMembershipActive');
-            return false;
-        }
-
-        // Keep the photo gate in front of the original-resolution lightbox.
-        const originalOpenPhotoMembership = openPhotoMembership;
-        openPhotoMembership = async function(src) {
-            if (await hasAngkorLensMembership()) {
-                openLightbox(src);
-                return;
-            }
-            originalOpenPhotoMembership(src);
-        };
-
-        document.addEventListener('DOMContentLoaded', checkAngkorLensMembership);
 
         document.getElementById('photoMembershipModal').addEventListener('click', function(event) {
             if (event.target === this) closePhotoMembership();
@@ -4089,7 +4088,7 @@ document.addEventListener('DOMContentLoaded',function(){
 <script>
 function acceptCookies(){localStorage.setItem("angkorLensCookieConsent","accepted");const b=document.getElementById("cookieConsent");if(b)b.classList.add("hidden");}
 function dismissCookieBanner(){localStorage.setItem("angkorLensCookieConsent","dismissed");const b=document.getElementById("cookieConsent");if(b)b.classList.add("hidden");}
-document.addEventListener("DOMContentLoaded",function(){const c=localStorage.getItem("angkorLensCookieConsent");const b=document.getElementById("cookieConsent");if(b&&(c==="accepted"||c==="dismissed"))b.classList.add("hidden");});
+document.addEventListener("DOMContentLoaded",function(){verifyMembershipFromReturn();const c=localStorage.getItem("angkorLensCookieConsent");const b=document.getElementById("cookieConsent");if(b&&(c==="accepted"||c==="dismissed"))b.classList.add("hidden");});
 </script>
 </body>
 </html>
