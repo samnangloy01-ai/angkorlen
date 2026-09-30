@@ -6,7 +6,10 @@ module.exports = async function handler(req, res) {
   }
 
   try {
-    const stripe = Stripe(process.env.STRIPE_SECRET_KEY);
+    if (!process.env.STRIPE_SECRET_KEY) {
+      return res.status(500).json({ error: 'Stripe is not configured: STRIPE_SECRET_KEY is missing.' });
+    }
+
     const { plan } = req.body || {};
 
     const priceId =
@@ -17,8 +20,16 @@ module.exports = async function handler(req, res) {
           : null;
 
     if (!priceId) {
-      return res.status(400).json({ error: 'Invalid membership plan.' });
+      return res.status(500).json({
+        error: plan === 'monthly'
+          ? 'Stripe is not configured: STRIPE_PRICE_MONTHLY is missing.'
+          : plan === 'yearly'
+            ? 'Stripe is not configured: STRIPE_PRICE_YEARLY is missing.'
+            : 'Invalid membership plan.'
+      });
     }
+
+    const stripe = Stripe(process.env.STRIPE_SECRET_KEY);
 
     const forwardedProto = req.headers['x-forwarded-proto'] || 'https';
     const host = req.headers.host;
@@ -32,6 +43,14 @@ module.exports = async function handler(req, res) {
           quantity: 1
         }
       ],
+      metadata: {
+        plan
+      },
+      subscription_data: {
+        metadata: {
+          plan
+        }
+      },
       success_url: `${siteUrl}/?membership=success&session_id={CHECKOUT_SESSION_ID}`,
       cancel_url: `${siteUrl}/?membership=cancelled`,
       allow_promotion_codes: false
@@ -40,6 +59,8 @@ module.exports = async function handler(req, res) {
     return res.status(200).json({ url: session.url });
   } catch (error) {
     console.error('Stripe checkout error:', error);
-    return res.status(500).json({ error: 'Unable to create checkout session.' });
+    return res.status(500).json({
+      error: error?.message || 'Unable to create checkout session.'
+    });
   }
 };
