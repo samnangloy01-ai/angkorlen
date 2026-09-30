@@ -1,6 +1,3 @@
-Best one 
-
-
 Good one 
 Perfect edit
 
@@ -317,6 +314,154 @@ Per fast
     @media (max-width: 520px) {
         .al-group-inside-list { grid-template-columns: 1fr; }
     }
+</style>
+
+
+<style id="angkorlens-mobile-fix">
+/* Mobile layout fixes — keep the existing desktop design unchanged. */
+@media (max-width: 639px) {
+    /* Show temple cards two per row on phones. */
+    #templeGrid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 12px !important;
+        width: 100%;
+        min-width: 0;
+    }
+
+    #templeGrid .temple-card {
+        min-width: 0;
+        width: 100%;
+        padding: 9px !important;
+        border-radius: 16px !important;
+    }
+
+    #templeGrid .temple-card h3 {
+        font-size: 12px !important;
+        line-height: 1.3 !important;
+    }
+
+    #templeGrid .temple-card p {
+        font-size: 10px !important;
+        line-height: 1.45 !important;
+    }
+
+    #templeGrid .temple-card img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    /* The temple-name collection also stays compact in two columns. */
+    .temple-index-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        column-gap: 16px !important;
+        row-gap: 16px !important;
+    }
+
+    /* Newsletter popup: keep the whole dialog inside the phone screen.
+       The image gets a controlled height instead of expanding vertically. */
+    .angkor-newsletter-overlay {
+        padding: 10px !important;
+        align-items: center !important;
+        overflow-y: auto !important;
+    }
+
+    .angkor-newsletter-card {
+        width: 100% !important;
+        max-width: 430px !important;
+        max-height: calc(100dvh - 20px) !important;
+        min-height: 0 !important;
+        height: auto !important;
+        display: flex !important;
+        flex-direction: column !important;
+        overflow-y: auto !important;
+        overflow-x: hidden !important;
+        border-radius: 16px !important;
+    }
+
+    .angkor-newsletter-card .angkor-newsletter-image {
+        order: -1 !important;
+        width: 100% !important;
+        height: 190px !important;
+        min-height: 190px !important;
+        max-height: 190px !important;
+        flex: 0 0 190px !important;
+        overflow: hidden !important;
+    }
+
+    .angkor-newsletter-card .angkor-newsletter-image img {
+        width: 100% !important;
+        height: 100% !important;
+        min-height: 0 !important;
+        max-height: none !important;
+        object-fit: cover !important;
+        display: block !important;
+    }
+
+    .angkor-newsletter-card .angkor-newsletter-copy {
+        padding: 22px 18px 20px !important;
+        min-width: 0 !important;
+    }
+
+    .angkor-newsletter-card .angkor-newsletter-copy h2 {
+        font-size: 25px !important;
+        line-height: 1.12 !important;
+        margin: 12px 0 10px !important;
+    }
+
+    .angkor-newsletter-card .angkor-newsletter-copy p {
+        font-size: 13px !important;
+        line-height: 1.5 !important;
+        margin-bottom: 14px !important;
+    }
+
+    .angkor-newsletter-form {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+        gap: 8px !important;
+    }
+
+    .angkor-newsletter-form input,
+    .angkor-newsletter-form button {
+        width: 100% !important;
+        min-width: 0 !important;
+        box-sizing: border-box !important;
+    }
+
+    .angkor-newsletter-fine {
+        font-size: 9px !important;
+        line-height: 1.4 !important;
+    }
+
+    .angkor-newsletter-x {
+        position: absolute !important;
+        top: 8px !important;
+        right: 8px !important;
+        width: 34px !important;
+        height: 34px !important;
+        z-index: 10 !important;
+    }
+}
+
+/* Very small phones: make the popup image a little shorter. */
+@media (max-width: 380px) {
+    .angkor-newsletter-card .angkor-newsletter-image {
+        height: 155px !important;
+        min-height: 155px !important;
+        max-height: 155px !important;
+        flex-basis: 155px !important;
+    }
+
+    #templeGrid {
+        gap: 8px !important;
+    }
+
+    #templeGrid .temple-card {
+        padding: 7px !important;
+    }
+}
 </style>
 
 </head>
