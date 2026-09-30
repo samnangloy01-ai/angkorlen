@@ -4203,9 +4203,10 @@ function openModal(title, subtitle, images, historyText) {
         }
 
         async function startMembershipCheckout(plan) {
-            const button = document.querySelector(
-                '#photoMembershipModal .photo-plan.' + (plan === 'yearly' ? 'yearly' : ':not(.yearly)') + ' .photo-pay-btn'
-            );
+            const plans = document.querySelectorAll('#photoMembershipModal .photo-plan');
+            const button = plan === 'yearly'
+                ? document.querySelector('#photoMembershipModal .photo-plan.yearly .photo-pay-btn')
+                : Array.from(plans).find(card => !card.classList.contains('yearly'))?.querySelector('.photo-pay-btn');
             const originalText = button ? button.textContent : '';
             const price = plan === 'yearly' ? '$12.99/year' : '$3.99/month';
 
