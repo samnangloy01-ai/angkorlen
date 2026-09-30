@@ -1,0 +1,9 @@
+{
+  "name": "angkorlens",
+  "private": true,
+  "version": "1.0.0",
+  "description": "AngkorLens Khmer heritage site with Stripe membership checkout",
+  "dependencies": {
+    "stripe": "^18.5.0"
+  }
+}
