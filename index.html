@@ -4114,7 +4114,7 @@ South Snaeng Krabei Temple is an Angkorian-period Khmer monument in Preah Vihear
                     <button class="photo-pay-btn" onclick="startMembershipCheckout('yearly')">Continue — $12.99/year</button>
                 </div>
             </div>
-            <p class="photo-membership-note"><strong>Payment setup:</strong> Stripe Checkout will be connected in the next step. This page does not collect or store card or bank information.</p>
+            <p class="photo-membership-note"><strong>Secure payment:</strong> You will be sent to Stripe Checkout to complete your membership. AngkorLens does not collect or store your card or bank information.</p>
         </div>
     </div>
 
@@ -4202,9 +4202,40 @@ function openModal(title, subtitle, images, historyText) {
             pendingPhotoSrc = '';
         }
 
-        function startMembershipCheckout(plan) {
+        async function startMembershipCheckout(plan) {
+            const button = document.querySelector(
+                '#photoMembershipModal .photo-plan.' + (plan === 'yearly' ? 'yearly' : ':not(.yearly)') + ' .photo-pay-btn'
+            );
+            const originalText = button ? button.textContent : '';
             const price = plan === 'yearly' ? '$12.99/year' : '$3.99/month';
-            alert('Membership selected: ' + price + '\n\nStripe Checkout is not connected yet. The next step is to connect the real Stripe payment flow.');
+
+            try {
+                if (button) {
+                    button.disabled = true;
+                    button.textContent = 'Opening secure checkout...';
+                }
+
+                const response = await fetch('/api/create-checkout', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ plan })
+                });
+
+                const data = await response.json().catch(() => ({}));
+
+                if (!response.ok || !data.url) {
+                    throw new Error(data.error || 'Unable to start Stripe Checkout.');
+                }
+
+                window.location.href = data.url;
+            } catch (error) {
+                console.error('Membership checkout error:', error);
+                alert('We could not open secure Stripe Checkout for ' + price + '.\\n\\n' + (error.message || 'Please try again.'));
+                if (button) {
+                    button.disabled = false;
+                    button.textContent = originalText;
+                }
+            }
         }
 
         document.getElementById('photoMembershipModal').addEventListener('click', function(event) {
