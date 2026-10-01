@@ -754,19 +754,7 @@ Per fast
              onclick="openModal(
                 'ប្រាសាទប្រាំ',
                 'Prasat Pram - Siem Reap & Preah Vihear Border',
-                [
-                '01000711 2.JPG',
-                '01000725 2.JPG',
-                '01000747.JPG',
-                '01000713 2.JPG',
-                '01000722.JPG',
-                '01000713.JPG',
-                '01000723 2.JPG',
-                '01000727.JPG',
-                '01000730 2.JPG',
-                '01000740 2.jpg',
-                'IMG_4859.JPG'
-            ],
+                ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'],
 
                 `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>
                 ប្រាសាទប្រាំ គឺជាប្រាសាទបុរាណខ្មែរមួយ ដែលស្ថិតនៅតំបន់ជិតព្រំប្រទល់ខេត្តសៀមរាប និងខេត្តព្រះវិហារ តាមបណ្តោយផ្លូវជាតិលេខ ៦៤ ក្នុងតំបន់រវាងស្វាយលើ និងគូលែន។ ទីតាំងប្រាសាទស្ថិតនៅក្បែរផ្លូវជាតិ ហើយអាចចូលទៅកាន់ប្រាសាទតាមផ្លូវលំតូចមួយពីផ្លូវធំ។<br><br>
@@ -833,19 +821,7 @@ Per fast
             onclick="openModal(
                 'ប្រាសាទប្រាំ',
                 'Prasat Pram - Siem Reap & Preah Vihear Border',
-                [
-                '01000711 2.JPG',
-                '01000725 2.JPG',
-                '01000747.JPG',
-                '01000713 2.JPG',
-                '01000722.JPG',
-                '01000713.JPG',
-                '01000723 2.JPG',
-                '01000727.JPG',
-                '01000730 2.JPG',
-                '01000740 2.jpg',
-                'IMG_4859.JPG'
-            ],
+                ['01000711 2.JPG', '01000725 2.JPG', '01000747.JPG', '01000713 2.JPG'],
 
                 `<strong>ទីតាំង និងប្រវត្តិ៖</strong><br>
                 ប្រាសាទប្រាំ គឺជាប្រាសាទបុរាណខ្មែរមួយ ដែលស្ថិតនៅតំបន់ជិតព្រំប្រទល់ខេត្តសៀមរាប និងខេត្តព្រះវិហារ តាមបណ្តោយផ្លូវជាតិលេខ ៦៤។<br><br>
@@ -880,31 +856,7 @@ Per fast
              onclick='openModal(
                 "ប្រាសាទប្រាំ",
                 "10th Century - Prasat Pram (Koh Ker)",
-                [
-                "01000787.JPG",
-                "IMG_1288 5.jpeg",
-                "P1014764 2.JPG",
-                "01000784.jpg",
-                "01000786.JPG",
-                "01000793.jpg",
-                "01000794.JPG",
-                "01000795.jpg",
-                "01000796.JPG",
-                "01000797.JPG",
-                "01000798.JPG",
-                "01000799.JPG",
-                "01000800.JPG",
-                "01000802.jpg",
-                "01000803.JPG",
-                "01000806.JPG",
-                "01000814.JPG",
-                "01000816.JPG",
-                "01000824.JPG",
-                "01000829.JPG",
-                "01000837.JPG",
-                "IMG_4940.JPG",
-                "IMG_4946.jpg"
-            ],
+                ["01000787.JPG", "IMG_1288 5.jpeg", "P1014764 2.JPG"],
 
                 `<strong>ទីតាំង និងប្រវត្តិសាស្ត្រ៖</strong><br><br>
 
@@ -1089,31 +1041,7 @@ Per fast
             onclick='openModal(
                 "ប្រាសាទប្រាំ",
                 "10th Century - Prasat Pram (Koh Ker)",
-                [
-                "01000787.JPG",
-                "IMG_1288 5.jpeg",
-                "P1014764 2.JPG",
-                "01000784.jpg",
-                "01000786.JPG",
-                "01000793.jpg",
-                "01000794.JPG",
-                "01000795.jpg",
-                "01000796.JPG",
-                "01000797.JPG",
-                "01000798.JPG",
-                "01000799.JPG",
-                "01000800.JPG",
-                "01000802.jpg",
-                "01000803.JPG",
-                "01000806.JPG",
-                "01000814.JPG",
-                "01000816.JPG",
-                "01000824.JPG",
-                "01000829.JPG",
-                "01000837.JPG",
-                "IMG_4940.JPG",
-                "IMG_4946.jpg"
-            ],
+                ["01000787.JPG", "IMG_1288 5.jpeg", "P1014764 2.JPG"],
 
                 `<strong>ប្រាសាទប្រាំ (កោះកេរ)</strong><br><br>
 
@@ -4351,9 +4279,25 @@ function openModal(title, subtitle, images, historyText) {
         }
 
         function loadNextTempleGroup(button) {
+            // After Card 45, the same LOAD MORE button is used once more
+            // to reveal the temple-name index.
             if (nextTempleGroupIndex >= templeGroupsInOrder.length) {
                 const wrap = document.getElementById("singleLoadMoreWrap");
                 if (wrap) wrap.remove();
+
+                const indexSection = document.getElementById("temple-name-index");
+                if (indexSection) {
+                    indexSection.style.display = "";
+                    indexSection.dataset.revealed = "true";
+                    buildTempleNameIndex();
+
+                    setTimeout(() => {
+                        indexSection.scrollIntoView({
+                            behavior: "smooth",
+                            block: "start"
+                        });
+                    }, 100);
+                }
                 return;
             }
 
@@ -4365,35 +4309,14 @@ function openModal(title, subtitle, images, historyText) {
 
             if (wrap && cards.length) {
                 // Keep the same single LOAD MORE button moving down after each group.
+                // This leaves it directly under Card 45 after the final group is shown.
                 cards[cards.length - 1].after(wrap);
 
-                // On the 3rd LOAD MORE click, reveal the temple-name index.
-                if (nextTempleGroupIndex >= templeGroupsInOrder.length) {
-                    wrap.remove();
-
-                    const indexSection = document.getElementById("temple-name-index");
-                    if (indexSection) {
-                        indexSection.style.display = "";
-                        indexSection.dataset.revealed = "true";
-                        buildTempleNameIndex();
-                    }
-                }
-
                 setTimeout(() => {
-                    if (nextTempleGroupIndex >= templeGroupsInOrder.length) {
-                        const indexSection = document.getElementById("temple-name-index");
-                        if (indexSection) {
-                            indexSection.scrollIntoView({
-                                behavior: "smooth",
-                                block: "start"
-                            });
-                        }
-                    } else {
-                        cards[0].scrollIntoView({
-                            behavior: "smooth",
-                            block: "center"
-                        });
-                    }
+                    cards[0].scrollIntoView({
+                        behavior: "smooth",
+                        block: "center"
+                    });
                 }, 100);
             }
         }
@@ -4654,7 +4577,7 @@ function buildTempleNameIndex(){
     if(!wrap || wrap.dataset.built==='yes') return;
 
     const items = [
-        {name:'Prasat Phnom Banteay...', kh:'ប្រាសាទភ្នំបន្ទាយ...', kind:'folder'},
+        {name:'Prasat Phnom Banteay - Khvav, Siem Reap', kh:'ប្រាសាទភ្នំបន្ទាយ ខ្វាវ សៀមរាប', kind:'folder'},
         {name:'Prasat Pram (Khvav)...', kh:'ប្រាសាទប្រាំ (ខ្វាវ)...', kind:'folder'},
         {name:'Prasat Sopheap South...', kh:'ប្រាសាទសុភ័ព្ទខាងត្បូង...', kind:'folder'},
         {name:'Ta Noub Temple', kh:'ប្រាសាទតានប់', kind:'folder'},
