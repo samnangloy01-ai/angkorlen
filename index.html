@@ -462,6 +462,130 @@ Per fast
         padding: 7px !important;
     }
 }
+
+<style id="angkorlens-top100-list-style">
+/* Top 100 Ancient Sites view — keep it as its own listing page inside AngkorLens. */
+body.top100-view .hero-banner,
+body.top100-view #heritage,
+body.top100-view #templeGrid,
+body.top100-view #temple-name-index {
+    display: none !important;
+}
+body.top100-view .top100-test-section {
+    display: block !important;
+}
+
+/* Top 100 test list — only used by the Top 100 Ancient Sites menu item. */
+.top100-test-section{
+    display:none;
+    max-width:1200px;
+    margin:0 auto;
+    padding:48px 24px 24px;
+}
+.top100-test-section.active{display:block}
+.top100-test-heading{
+    margin:0 0 10px;
+    font-size:clamp(30px,4vw,48px);
+    line-height:1.08;
+    font-weight:500;
+    color:#222;
+    letter-spacing:-.02em;
+}
+.top100-test-intro{
+    margin:0 0 34px;
+    color:#737373;
+    font-size:14px;
+    line-height:1.7;
+}
+.top100-test-list{display:flex;flex-direction:column;gap:28px}
+.top100-test-card{
+    display:grid;
+    grid-template-columns:minmax(280px,45%) 1fr;
+    min-height:300px;
+    background:#fff;
+    border:1px solid #e5e5e5;
+    border-radius:2px;
+    overflow:hidden;
+    box-shadow:0 8px 24px rgba(0,0,0,.05);
+}
+.top100-test-image{
+    width:100%;
+    height:100%;
+    min-height:300px;
+    object-fit:cover;
+    display:block;
+    background:#f1f1f1;
+}
+.top100-test-copy{
+    padding:34px 38px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+.top100-test-number{
+    margin:0 0 8px;
+    color:#888;
+    font-size:11px;
+    font-weight:800;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+}
+.top100-test-title{
+    margin:0;
+    color:#222;
+    font-family:Georgia,serif;
+    font-size:clamp(25px,3vw,38px);
+    line-height:1.12;
+    font-weight:500;
+}
+.top100-test-khmer{
+    margin:8px 0 16px;
+    color:#777;
+    font-size:15px;
+    line-height:1.5;
+}
+.top100-test-summary{
+    margin:0 0 20px;
+    color:#555;
+    font-size:14px;
+    line-height:1.75;
+    display:-webkit-box;
+    -webkit-line-clamp:4;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+}
+.top100-test-read{
+    align-self:flex-start;
+    border:0;
+    border-bottom:1px solid #222;
+    background:transparent;
+    color:#222;
+    padding:0 0 4px;
+    font-size:12px;
+    font-weight:800;
+    letter-spacing:.1em;
+    text-transform:uppercase;
+    cursor:pointer;
+}
+.top100-test-read:hover{color:#0891b2;border-color:#0891b2}
+.top100-test-close{
+    display:inline-flex;
+    margin:34px auto 8px;
+    border:0;
+    background:transparent;
+    color:#555;
+    font-size:13px;
+    font-weight:700;
+    cursor:pointer;
+}
+.top100-test-close:hover{color:#0891b2}
+@media(max-width:700px){
+    .top100-test-section{padding:34px 16px 20px}
+    .top100-test-card{grid-template-columns:1fr;min-height:0}
+    .top100-test-image{height:230px;min-height:230px}
+    .top100-test-copy{padding:24px 22px 28px}
+    .top100-test-title{font-size:28px}
+}
 </style>
 
 </head>
@@ -483,7 +607,7 @@ Per fast
                     <div class="angkor-dropdown">
                         <span class="dropdown-label">Explore Angkor</span>
                         <a href="#templeGrid" onclick="openTempleFromIndex('Top 30 Ancient Sites');return true;">Top 30 Ancient Sites</a>
-                        <a href="#templeGrid" onclick="openTempleFromIndex('Top 100 Ancient Sites');return true;">Top 100 Ancient Sites</a>
+                        <a href="#top100TestSection" onclick="openTempleFromIndex('Top 100 Ancient Sites');return true;">Top 100 Ancient Sites</a>
                         <a href="#templeGrid" onclick="openTempleFromIndex('Angkor Small Circuit');return true;">Angkor Small Circuit</a>
                         <a href="#templeGrid" onclick="openTempleFromIndex('Angkor Grand Circuit');return true;">Angkor Grand Circuit</a>
                         <a href="#templeGrid" onclick="openTempleFromIndex('Angkor Wat');return true;">Angkor Wat</a>
@@ -735,6 +859,85 @@ Per fast
                 </article>
             </div>
         </section>
+
+
+<!-- ===================================================== -->
+<!-- TOP 100 ANCIENT SITES — FIRST 6 ENTRIES -->
+<!-- ===================================================== -->
+<section id="top100TestSection" class="top100-test-section" aria-label="Top 100 Ancient Sites">
+    <h2 class="top100-test-heading">Top 100 Ancient Sites</h2>
+    <p class="top100-test-intro">Explore the Top 100 Ancient Sites collection. These first six entries are the current test set; the same listing layout will continue for the remaining sites.</p>
+
+    <div class="top100-test-list">
+        <article class="top100-test-card">
+            <img class="top100-test-image" src="https://raw.githubusercontent.com/samnangloy01-ai/angkorlen/main/IMG_9605.JPG" alt="Neang Khmao" loading="lazy">
+            <div class="top100-test-copy">
+                <p class="top100-test-number">01 · Heritage Site</p>
+                <h3 class="top100-test-title">Neang Khmao</h3>
+                <p class="top100-test-khmer">ប្រាសាទនាងខ្មៅ</p>
+                <p class="top100-test-summary">Prasat Neang Khmau means “Dark Skin Lady” and is named for the dark bluish laterite of the monument. Angkor Enterprise dates its construction to 921–928 CE.</p>
+                <button type="button" class="top100-test-read" onclick="openTop100TestGuide(0)">Read more →</button>
+            </div>
+        </article>
+
+        <article class="top100-test-card">
+            <img class="top100-test-image" src="https://raw.githubusercontent.com/samnangloy01-ai/angkorlen/main/IMG_9900%202.jpg" alt="Prasat Cham" loading="lazy">
+            <div class="top100-test-copy">
+                <p class="top100-test-number">02 · Heritage Site</p>
+                <h3 class="top100-test-title">Prasat Cham</h3>
+                <p class="top100-test-khmer">ប្រាសាទចាម</p>
+                <p class="top100-test-summary">Prasat Cham is presented here using the exact site name you supplied for this photograph. The detailed location and history can be expanded in the full guide.</p>
+                <button type="button" class="top100-test-read" onclick="openTop100TestGuide(1)">Read more →</button>
+            </div>
+        </article>
+
+        <article class="top100-test-card">
+            <img class="top100-test-image" src="https://raw.githubusercontent.com/samnangloy01-ai/angkorlen/main/P1011342.JPG" alt="O Sae Slat Bridge" loading="lazy">
+            <div class="top100-test-copy">
+                <p class="top100-test-number">03 · Heritage Site</p>
+                <h3 class="top100-test-title">O Sae Slat Bridge</h3>
+                <p class="top100-test-khmer">O Sae Slat Bridge</p>
+                <p class="top100-test-summary">This entry uses the exact name supplied for the photograph: O Sae Slat Bridge. The image and site name are preserved without substituting another name.</p>
+                <button type="button" class="top100-test-read" onclick="openTop100TestGuide(2)">Read more →</button>
+            </div>
+        </article>
+
+        <article class="top100-test-card">
+            <img class="top100-test-image" src="https://raw.githubusercontent.com/samnangloy01-ai/angkorlen/main/P1014202.JPG" alt="Wat Prasat" loading="lazy">
+            <div class="top100-test-copy">
+                <p class="top100-test-number">04 · Heritage Site</p>
+                <h3 class="top100-test-title">Wat Prasat</h3>
+                <p class="top100-test-khmer">វត្តប្រាសាទ</p>
+                <p class="top100-test-summary">This entry uses the exact site name supplied for this photograph: Wat Prasat. The detailed location and history can be added once the specific site is confirmed.</p>
+                <button type="button" class="top100-test-read" onclick="openTop100TestGuide(3)">Read more →</button>
+            </div>
+        </article>
+
+        <article class="top100-test-card">
+            <img class="top100-test-image" src="https://raw.githubusercontent.com/samnangloy01-ai/angkorlen/main/P1014394.JPG" alt="Phnom Tompon" loading="lazy">
+            <div class="top100-test-copy">
+                <p class="top100-test-number">05 · Heritage Site</p>
+                <h3 class="top100-test-title">Phnom Tompon</h3>
+                <p class="top100-test-khmer">Phnom Tompon</p>
+                <p class="top100-test-summary">Phnom Tompon is kept exactly as the site name supplied for this photograph. The detailed history can be added after the location and source information are confirmed.</p>
+                <button type="button" class="top100-test-read" onclick="openTop100TestGuide(4)">Read more →</button>
+            </div>
+        </article>
+
+        <article class="top100-test-card">
+            <img class="top100-test-image" src="https://raw.githubusercontent.com/samnangloy01-ai/angkorlen/main/P1014807.JPG" alt="Prasat Pram - Koh Ker" loading="lazy">
+            <div class="top100-test-copy">
+                <p class="top100-test-number">06 · Heritage Site</p>
+                <h3 class="top100-test-title">Prasat Pram – Koh Ker</h3>
+                <p class="top100-test-khmer">ប្រាសាទប្រាំ · កោះកេរ</p>
+                <p class="top100-test-summary">Prasat Pram is one of the temple complexes of Koh Ker. The test card keeps the photograph large and places the site name and introduction beside it, matching the requested guide-style presentation.</p>
+                <button type="button" class="top100-test-read" onclick="openTop100TestGuide(5)">Read more →</button>
+            </div>
+        </article>
+    </div>
+
+    <button type="button" class="top100-test-close" onclick="closeTop100TestSection()">← Back to temple collection</button>
+</section>
 
         <!-- Main Temple Cards Section -->
         <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -4491,7 +4694,30 @@ document.addEventListener("DOMContentLoaded",function(){const c=localStorage.get
 </script>
 <script>
 /* AngkorLens requested additions: connect temple-name links to the existing full guide modals. */
+function openTop100TestGuide(index){
+    const guides = [
+        ['ប្រាសាទនាងខ្មៅ','Neang Khmao','IMG_9605.JPG','<strong>Neang Khmao</strong><br><br>This is the first test entry for the new Top 100 guide layout. The site name and photograph are kept exactly with the filename mapping supplied for this project.'],
+        ['ប្រាសាទចាម','Prasat Cham','IMG_9900 2.jpg','<strong>Prasat Cham</strong><br><br>This is the second test entry for the new Top 100 guide layout. The full historical text can be expanded later without changing the visual design.'],
+        ['O Sae Slat Bridge','O Sae Slat Bridge','P1011342.JPG','<strong>O Sae Slat Bridge</strong><br><br>The name is preserved exactly as supplied for this photograph. No alternate name is substituted.'],
+        ['វត្តប្រាសាទ','Wat Prasat','P1014202.JPG','<strong>Wat Prasat</strong><br><br>This is the fourth test entry in the new large-image guide presentation.'],
+        ['ភ្នំតំបន់','Phnom Tompon','P1014394.JPG','<strong>Phnom Tompon</strong><br><br>This is the fifth test entry. The detailed site history can be added once the remaining source information is supplied or verified.'],
+        ['ប្រាសាទប្រាំ','Prasat Pram – Koh Ker','P1014807.JPG','<strong>Prasat Pram – Koh Ker</strong><br><br>Prasat Pram is a temple complex at Koh Ker. The five-shrine complex includes brick tower-shrines and is associated with the 10th-century Koh Ker period.']
+    ];
+    const item=guides[index];
+    if(!item) return;
+    openModal(item[0], item[1], [item[2]], item[3]);
+}
+
+function closeTop100TestSection(){
+    const top100=document.getElementById('top100TestSection');
+    const grid=document.getElementById('templeGrid');
+    if(top100) top100.classList.remove('active');
+    if(grid) grid.style.display='grid';
+    if(grid) grid.scrollIntoView({behavior:'smooth',block:'start'});
+}
+
 function openTempleFromIndex(query){
+    document.body.classList.remove('top100-view');
     const raw=(query||'').trim();
     const q=raw.toLowerCase();
     const cards=Array.from(document.querySelectorAll('.temple-card'));
@@ -4520,9 +4746,29 @@ function openTempleFromIndex(query){
         return;
     }
 
-    // These are also navigation categories rather than temple names.
-    if(q === 'top 100 ancient sites' || q === 'all angkor sites'){
+    // Top 100 now uses the new large-image guide list for the first six test entries.
+    // All other existing temple cards remain untouched and continue to work normally.
+    if(q === 'top 100 ancient sites'){
+        document.body.classList.add('top100-view');
         if(input) input.value='';
+        const top100=document.getElementById('top100TestSection');
+        if(top100) top100.classList.add('active');
+        if(grid) grid.style.display='none';
+        document.querySelectorAll('.load-more-wrap').forEach(function(wrapper){
+            wrapper.style.display='none';
+        });
+        const noResults=document.getElementById('noResults');
+        if(noResults) noResults.classList.add('hidden');
+        if(top100) top100.scrollIntoView({behavior:'smooth',block:'start'});
+        return;
+    }
+
+    // All Angkor Sites keeps the original card collection exactly as before.
+    if(q === 'all angkor sites'){
+        if(input) input.value='';
+        const top100=document.getElementById('top100TestSection');
+        if(top100) top100.classList.remove('active');
+        if(grid) grid.style.display='grid';
         cards.forEach(function(card){
             card.hidden=false;
             card.style.display='flex';
