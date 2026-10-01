@@ -3371,7 +3371,7 @@ South Snaeng Krabei Temple is an Angkorian-period Khmer monument in Preah Vihear
 </div>
     <!-- Card 31: Prasat Trapeang Thnal Chhouk -->
 <div class="temple-card group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4"
-    data-title="31. Prasat Trapeang Thnal Chhouk ប្រាសាទត្រពាំងថ្នល់ឈូក 10th Century Preah Vihear" data-temple-group="group-4" hidden>
+    data-title="31. Prasat Trapeang Thnal Chhouk ប្រាសាទត្រពាំងថ្នល់ឈូក 10th Century Preah Vihear" data-temple-group="group-3" hidden>
 
     <div>
 
@@ -3426,7 +3426,7 @@ South Snaeng Krabei Temple is an Angkorian-period Khmer monument in Preah Vihear
 </div>
      <!-- Card 32: Phnom Sdok Temple -->
 
-<div class="temple-card group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4" data-title="32. Phnom Sdok Temple ប្រាសាទភ្នំសណ្តក Preah Vihear" data-temple-group="group-4" hidden>
+<div class="temple-card group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 border border-neutral-100 flex flex-col justify-between p-4" data-title="32. Phnom Sdok Temple ប្រាសាទភ្នំសណ្តក Preah Vihear" data-temple-group="group-3" hidden>
 
     <div>
 
@@ -4114,7 +4114,7 @@ South Snaeng Krabei Temple is an Angkorian-period Khmer monument in Preah Vihear
                     <button class="photo-pay-btn" onclick="startMembershipCheckout('yearly')">Continue — $12.99/year</button>
                 </div>
             </div>
-            <p class="photo-membership-note"><strong>Secure payment:</strong> You will be sent to Stripe Checkout to complete your membership. AngkorLens does not collect or store your card or bank information.</p>
+            <p class="photo-membership-note"><strong>Payment setup:</strong> Stripe Checkout will be connected in the next step. This page does not collect or store card or bank information.</p>
         </div>
     </div>
 
@@ -4202,41 +4202,9 @@ function openModal(title, subtitle, images, historyText) {
             pendingPhotoSrc = '';
         }
 
-        async function startMembershipCheckout(plan) {
-            const plans = document.querySelectorAll('#photoMembershipModal .photo-plan');
-            const button = plan === 'yearly'
-                ? document.querySelector('#photoMembershipModal .photo-plan.yearly .photo-pay-btn')
-                : Array.from(plans).find(card => !card.classList.contains('yearly'))?.querySelector('.photo-pay-btn');
-            const originalText = button ? button.textContent : '';
+        function startMembershipCheckout(plan) {
             const price = plan === 'yearly' ? '$12.99/year' : '$3.99/month';
-
-            try {
-                if (button) {
-                    button.disabled = true;
-                    button.textContent = 'Opening secure checkout...';
-                }
-
-                const response = await fetch('/api/create-checkout', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ plan })
-                });
-
-                const data = await response.json().catch(() => ({}));
-
-                if (!response.ok || !data.url) {
-                    throw new Error(data.error || 'Unable to start Stripe Checkout.');
-                }
-
-                window.location.href = data.url;
-            } catch (error) {
-                console.error('Membership checkout error:', error);
-                alert('We could not open secure Stripe Checkout for ' + price + '.\\n\\n' + (error.message || 'Please try again.'));
-                if (button) {
-                    button.disabled = false;
-                    button.textContent = originalText;
-                }
-            }
+            alert('Membership selected: ' + price + '\n\nStripe Checkout is not connected yet. The next step is to connect the real Stripe payment flow.');
         }
 
         document.getElementById('photoMembershipModal').addEventListener('click', function(event) {
@@ -4292,7 +4260,7 @@ function openModal(title, subtitle, images, historyText) {
         // Reveal one temple group at a time
         
         // One LOAD MORE button that advances one group at a time:
-        // 1-8 -> 9-20 -> 21-30 -> 31-45 -> done.
+        // 1-8 -> 9-20 -> 21-32 -> 33-45 -> done.
         const templeGroupsInOrder = ["group-2", "group-3", "group-4"];
         let nextTempleGroupIndex = 0;
 
