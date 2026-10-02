@@ -4867,7 +4867,7 @@ function openModal(title, subtitle, images, historyText) {
         function openPhotoMembership(src) {
             pendingPhotoSrc = src || '';
             const preview = document.getElementById('photoMembershipPreview');
-            if (preview && pendingPhotoSrc) preview.src = pendingPhotoSrc;
+            if (preview && pendingPhotoSrc) preview.src = getTempleImageUrl(pendingPhotoSrc);
             document.getElementById('photoMembershipModal').classList.remove('hidden');
         }
 
