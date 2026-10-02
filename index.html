@@ -4771,15 +4771,21 @@ South Snaeng Krabei Temple is an Angkorian-period Khmer monument in Preah Vihear
             <div class="photo-plan-grid">
                 <div class="photo-plan">
                     <h3>Monthly Membership</h3>
-                    <div class="photo-plan-price">$3.99 <span>/ month</span></div>
+                    <div class="photo-plan-price">$14.99 <span>/ month</span></div>
                     <ul><li>Unlimited photo access</li><li>Original-resolution photographs</li><li>Support Khmer heritage documentation</li></ul>
-                    <button class="photo-pay-btn" onclick="startMembershipCheckout('monthly')">Continue — $3.99/month</button>
+                    <button class="photo-pay-btn" onclick="startMembershipCheckout('monthly')">Continue — $14.99/month</button>
+                </div>
+                <div class="photo-plan">
+                    <h3>Buy One Picture</h3>
+                    <div class="photo-plan-price">$4.99 <span>/ picture</span></div>
+                    <ul><li>One original-resolution photograph</li><li>Purchase this picture only</li></ul>
+                    <button class="photo-pay-btn">Buy This Picture — $4.99</button>
                 </div>
                 <div class="photo-plan yearly">
                     <h3>Yearly Membership</h3>
-                    <div class="photo-plan-price">$12.99 <span>/ year</span></div>
+                    <div class="photo-plan-price">$100.00 <span>/ year</span></div>
                     <ul><li>Unlimited photo access</li><li>Original-resolution photographs</li><li>Support Khmer heritage documentation</li></ul>
-                    <button class="photo-pay-btn" onclick="startMembershipCheckout('yearly')">Continue — $12.99/year</button>
+                    <button class="photo-pay-btn" onclick="startMembershipCheckout('yearly')">Continue — $100.00/year</button>
                 </div>
             </div>
             <p class="photo-membership-note"><strong>Payment setup:</strong> Stripe Checkout will be connected in the next step. This page does not collect or store card or bank information.</p>
@@ -4871,7 +4877,7 @@ function openModal(title, subtitle, images, historyText) {
         }
 
         function startMembershipCheckout(plan) {
-            const price = plan === 'yearly' ? '$12.99/year' : '$3.99/month';
+            const price = plan === 'yearly' ? '$100.00/year' : '$14.99/month';
             alert('Membership selected: ' + price + '\n\nStripe Checkout is not connected yet. The next step is to connect the real Stripe payment flow.');
         }
 
