@@ -594,6 +594,37 @@ body.top100-view .top100-test-section {
 }
 </style>
 
+
+<style id="reamker-gallery-styles">
+.reamker-section{display:none;max-width:80rem;margin:0 auto;padding:42px 16px 70px;}
+.reamker-section.active{display:block;}
+.reamker-hero{background:#fff;border:1px solid #e5e5e5;border-radius:28px;padding:28px;box-shadow:0 8px 30px rgba(0,0,0,.06);margin-bottom:28px;}
+.reamker-title{font-size:clamp(30px,4vw,46px);font-weight:800;line-height:1.15;color:#171717;margin:0;}
+.reamker-khmer{font-size:clamp(21px,2.6vw,30px);font-weight:700;color:#0e7490;margin-top:10px;}
+.reamker-meta{color:#666;margin-top:12px;font-size:15px;line-height:1.7;}
+.reamker-story{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:24px;}
+.reamker-story article{background:#fafafa;border:1px solid #ececec;border-radius:22px;padding:22px;line-height:1.8;color:#333;}
+.reamker-story h3{margin:0 0 10px;font-size:20px;color:#111;}
+.reamker-covers{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:22px;}
+.reamker-covers img{width:100%;height:240px;object-fit:cover;border-radius:18px;background:#eee;}
+.reamker-gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;}
+.reamker-card{background:#fff;border:1px solid #e8e8e8;border-radius:18px;overflow:hidden;box-shadow:0 4px 18px rgba(0,0,0,.04);}
+.reamker-card img{display:block;width:100%;height:210px;object-fit:cover;background:#eee;}
+.reamker-card-copy{padding:13px 14px 15px;}
+.reamker-number{font-size:12px;font-weight:800;color:#777;letter-spacing:.06em;}
+.reamker-caption-kh{font-size:15px;font-weight:700;color:#222;margin-top:5px;}
+.reamker-caption-en{font-size:13px;color:#666;margin-top:2px;}
+.reamker-actions{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap;}
+.reamker-actions a,.reamker-actions button{border:1px solid #ddd;background:#fff;border-radius:999px;padding:7px 11px;font-size:12px;font-weight:700;color:#333;text-decoration:none;cursor:pointer;}
+.reamker-actions a:hover,.reamker-actions button:hover{border-color:#0891b2;color:#0891b2;}
+.reamker-section-head{display:flex;align-items:end;justify-content:space-between;gap:16px;margin:30px 0 16px;}
+.reamker-section-head h2{margin:0;font-size:28px;font-weight:800;color:#111;}
+.reamker-section-head p{margin:0;color:#777;font-size:14px;}
+.reamker-back{margin-top:26px;border:0;background:transparent;color:#555;font-size:13px;font-weight:700;cursor:pointer;}
+.reamker-back:hover{color:#0891b2;}
+@media(max-width:900px){.reamker-gallery{grid-template-columns:repeat(3,minmax(0,1fr));}.reamker-story{grid-template-columns:1fr;}}
+@media(max-width:650px){.reamker-gallery{grid-template-columns:repeat(2,minmax(0,1fr));}.reamker-covers{grid-template-columns:1fr;}.reamker-covers img{height:220px;}.reamker-card img{height:180px;}.reamker-section{padding:30px 14px 55px;}}
+</style>
 </head>
 <body class="bg-[#fafafa] text-neutral-800 antialiased min-h-screen flex flex-col justify-between">
 
@@ -612,7 +643,7 @@ body.top100-view .top100-test-section {
                     <button type="button" class="angkor-nav-trigger">Angkor <span class="chevron">⌄</span></button>
                     <div class="angkor-dropdown">
                         <span class="dropdown-label">Explore Angkor</span>
-                        <a href="#templeGrid" onclick="openTempleFromIndex('Top 30 Ancient Sites');return true;">Top 30 Ancient Sites</a>
+                        <a href="#templeGrid" onclick="openTempleFromIndex('Reamker Mural at the Silver Palace');return true;">គំនូររាមកេរ្តិ៍នៅព្រះវិហារព្រះកែវមរកត — Reamker Mural at the Silver Palace</a>
                         <a href="#top100TestSection" onclick="openTempleFromIndex('Top 37 Ancient Sites');return true;">Top 37 Ancient Sites</a>
                         <a href="#templeGrid" onclick="openTempleFromIndex('Angkor Small Circuit');return true;">Angkor Small Circuit</a>
                         <a href="#templeGrid" onclick="openTempleFromIndex('Angkor Grand Circuit');return true;">Angkor Grand Circuit</a>
@@ -1314,6 +1345,51 @@ body.top100-view .top100-test-section {
         </article>    </div>
 
     <button type="button" class="top100-test-close" onclick="closeTop100TestSection()">← Back to temple collection</button>
+</section>
+
+
+<!-- ========================= -->
+<!-- REAMKER MURAL COLLECTION -->
+<!-- ========================= -->
+<section id="reamkerMuralSection" class="reamker-section" aria-label="Reamker Mural at the Silver Palace">
+  <div class="reamker-hero">
+    <h1 class="reamker-title">Reamker Mural at the Silver Palace</h1>
+    <div class="reamker-khmer">គំនូររាមកេរ្តិ៍នៅព្រះវិហារព្រះកែវមរកត</div>
+    <div class="reamker-meta">
+      គំនូររាមកេរ្តិ៍នៅជុំវិញព្រះវិហារព្រះកែវមរកត ក្នុងព្រះបរមរាជវាំងចតុម្មុខមង្គល រាជធានីភ្នំពេញ។ គម្រោងគំនូរត្រូវបានធ្វើឡើងក្នុងឆ្នាំ ១៩០៣–១៩០៤ ក្នុងរជ្ជកាលព្រះបាទនរោត្តម។ ប្រភពសិក្សា AMS Khmer Civilization រាយការណ៍ថា មានផ្ទាំងគំនូររាមកេរ្តិ៍ចំនួន ១៧៧ ឈុត នៅតាមជញ្ជាំងប្រវែងប្រហែល ៦១៦ ម៉ែត្រ និងកម្ពស់ប្រហែល ២.៥ ម៉ែត្រ។ ប្រភពផ្សេងទៀតរាយការណ៍ទំហំ និងចំនួនខុសគ្នាបន្តិច ដូច្នេះ AngkorLens នឹងរក្សាព័ត៌មានជាទម្រង់ប្រុងប្រយ័ត្ន។
+    </div>
+    <div class="reamker-covers" id="reamkerCovers"></div>
+    <div class="reamker-story">
+      <article>
+        <h3>ប្រវត្តិ និងសារៈសំខាន់</h3>
+        <p>រាមកេរ្តិ៍ គឺជាវីររឿងដ៏សំខាន់មួយក្នុងបេតិកភណ្ឌអក្សរសិល្ប៍ និងសិល្បៈខ្មែរ។ វាមានទំនាក់ទំនងជាមួយរឿងរាមាយណៈ ប៉ុន្តែប្រពៃណីខ្មែរបានបកស្រាយ កែសម្រួល និងបន្ថែមអន្លើតួអង្គ និងទស្សនៈដែលមានលក្ខណៈផ្ទាល់ខ្លួន។ ដូច្នេះ រាមកេរ្តិ៍មិនគួរត្រូវបានយល់ថាជាការចម្លងរឿងឥណ្ឌាទាំងស្រុងឡើយ។ វាបានរស់នៅតាមរយៈអក្សរសិល្ប៍ ការសម្តែងល្ខោនខោល របាំ ស្បែកធំ ចម្លាក់ និងគំនូរជញ្ជាំង ហើយបានក្លាយជាផ្នែកមួយនៃការចងចាំវប្បធម៌ខ្មែរ។</p>
+        <p>ថែវជុំវិញព្រះវិហារព្រះកែវមរកត ក្នុងព្រះបរមរាជវាំងចតុម្មុខមង្គល រាជធានីភ្នំពេញ គឺជាកន្លែងសំខាន់មួយសម្រាប់សិក្សាពីការបង្ហាញរាមកេរ្តិ៍តាមរយៈគំនូរជញ្ជាំង។ ប្រភព AMS Khmer Civilization ពិពណ៌នាថា ថែវមានប្រវែងប្រហែល ៦៤២ ម៉ែត្រ ហើយគំនូររាមកេរ្តិ៍ព័ទ្ធជុំវិញជញ្ជាំងទាំងបួនទិស។ ឯកសារមួយដែលបានលើកឡើងដោយប្រភពនោះ រាប់បាន ១៩២ វគ្គ និងមានចំណងជើងឈុតរហូតដល់ ៥១១ ចំណងជើង។ ចំនួនទាំងនេះជាការរាប់តាមឯកសារផ្សេងៗ ហើយអាចខុសគ្នាតាមវិធីកំណត់ថាជា “វគ្គ” ឬ “ចំណងជើង”។</p>
+        <p>ប្រភពសិក្សាផ្សេងទៀតរាយការណ៍ថា គំនូរត្រូវបានបង្កើតក្នុងឆ្នាំ ១៩០៣–១៩០៤ ហើយពាក់ព័ន្ធនឹងក្រុមវិចិត្រករខ្មែរប្រមាណ ៤០ នាក់។ ឈ្មោះឧកញ៉ាទេពនិម្មិត ម៉ក់ ត្រូវបានភ្ជាប់យ៉ាងជិតស្និទ្ធជាមួយការដឹកនាំសាលាសិល្បៈ និងការងារគំនូរនេះ។ ប្រភព Archivision ក៏រាយការណ៍ថា គម្រោងនេះមានវិចិត្រករ Vichitre Chea និងឧកញ៉ាទេពនិម្មិតជាអ្នកដឹកនាំសិល្បៈ និងស្ថាបត្យកម្ម។ ដោយសារប្រភពផ្សេងៗប្រើការសរសេរឈ្មោះខុសគ្នា AngkorLens រក្សាឈ្មោះតាមទម្រង់ដែលប្រភពនីមួយៗបានប្រើ។</p>
+        <p>រឿងដែលគំនូរបង្ហាញមានព្រះរាម ព្រះនាងសីតា ព្រះលក្ស្មណ៍ ហនុមាន រាពណ៍ និងតួអង្គជាច្រើនទៀត។ ដំណើររឿងត្រូវបានបង្ហាញជាបន្តបន្ទាប់ជុំវិញថែវ ដូច្នេះការដើរមើលតាមជញ្ជាំងអាចធ្វើឱ្យអ្នកទស្សនាមានអារម្មណ៍ដូចជាកំពុងដើរតាមសាច់រឿងមួយដ៏វែង។ ប្រភពមួយពិពណ៌នាថា រឿងចាប់ផ្តើមពីថែវខាងកើតផ្នែកខាងត្បូង ហើយបន្តព័ទ្ធជុំវិញបរិវេណទាំងមូល។</p>
+        <p>លក្ខណៈសិល្បៈរបស់គំនូរមានសារៈសំខាន់ជាពិសេស។ AMS Khmer Civilization កត់សម្គាល់ការប្រើពណ៌ជាអត្តសញ្ញាណសម្រាប់តួអង្គ ដូចជា ព្រះរាមពណ៌បៃតង ព្រះលក្ស្មណ៍ពណ៌សាច់ ហនុមានពណ៌ស និងអង្គទពណ៌បៃតងខ្ចីកាត់ខ្មៅ ឬបៃតងចាស់។ ការប្រើពណ៌បែបនេះជួយឱ្យអ្នកទស្សនាស្គាល់តួអង្គនៅក្នុងឈុតដែលមានមនុស្ស និងសកម្មភាពជាច្រើន។</p>
+        <p>គំនូរទាំងនេះក៏បង្ហាញពីវិធីដែលសិល្បករខ្មែរបានបញ្ចូលទេសភាព ស្ថាបត្យកម្ម សម្លៀកបំពាក់ និងសកម្មភាពរបស់មនុស្សទៅក្នុងសាច់រឿង។ Archivision កត់សម្គាល់ថា អគារនៅក្នុងគំនូរមួយចំនួនត្រូវបានបង្ហាញតាមទម្រង់ isometric និងមានមាត្រដ្ឋានខុសពីតួអង្គ ខណៈទេសភាពត្រូវបានប្រើដើម្បីបង្កើតអារម្មណ៍នៃទីកន្លែង និងបរិយាកាស។ នេះធ្វើឱ្យគំនូរមិនមែនមានតួនាទីជាការនិទានរឿងតែប៉ុណ្ណោះទេ ប៉ុន្តែក៏ជាឯកសារសំខាន់សម្រាប់សិក្សាអំពីការគិត និងភាសារូបភាពរបស់សិល្បៈខ្មែរនៅដើមសតវត្សទី២០ផងដែរ។</p>
+        <p>សារៈសំខាន់មួយទៀតគឺការរួមរស់រវាងប្រធានបទដែលមានប្រភពព្រហ្មញ្ញសាសនា និងទីកន្លែងដែលមានតួនាទីជាព្រះវិហារព្រះពុទ្ធសាសនា។ ប្រភព Archivision ពន្យល់ថា ប្រធានបទព្រះរាមនៅតែមានកន្លែងក្នុងពិធីរាជការ និងសិល្បៈរាជវាំង ហើយការបង្ហាញរឿងរាមកេរ្តិ៍នៅក្នុងបរិវេណព្រះវិហារមិនត្រូវបានចាត់ទុកថាផ្ទុយពីបរិបទព្រះពុទ្ធសាសនាឡើយ។ នេះបង្ហាញពីការបន្ត និងការបញ្ចូលគ្នារវាងប្រពៃណីសិល្បៈ និងជំនឿជាច្រើននៅក្នុងសង្គមខ្មែរ។</p>
+        <p>សព្វថ្ងៃ គំនូរទាំងនេះក៏មានតម្លៃជាឯកសារបេតិកភណ្ឌដែលត្រូវការការថែរក្សា ព្រោះជញ្ជាំងបើកទទួលអាកាសធាតុ និងគំនូរមួយចំនួនរងការខូចខាតតាមពេលវេលា។ ប្រភព Archivision រាយការណ៍ពីការខូចខាតដោយអាកាសធាតុ ហើយក៏មានប្រវត្តិនៃកិច្ចខិតខំអភិរក្សជាបន្តបន្ទាប់។ ដូច្នេះ ការថតរូប និងការរៀបចំឯកសាររូបភាពដែលមានលេខ និងលំដាប់ច្បាស់លាស់ អាចជួយរក្សាទុកជាកំណត់ត្រាសម្រាប់ការសិក្សា និងការយល់ដឹងរបស់មនុស្សជំនាន់ក្រោយ។</p>
+      </article>
+      <article>
+        <h3>History &amp; Significance</h3>
+        <p>The Reamker is one of Cambodia’s major epic traditions in literature, visual art, and performance. It is related to the Indian Ramayana, but the Khmer tradition developed its own interpretations, episodes, character treatments, and cultural meanings. For that reason, the Reamker should not be treated simply as a direct copy of the Indian epic. It has lived through Khmer literature, masked theatre, dance, large shadow puppetry, sculpture, and mural painting, becoming part of Cambodia’s long cultural memory.</p>
+        <p>The cloister surrounding the Preah Vihear Preah Keo Morakot, commonly known in English as the Silver Pagoda, within the Royal Palace compound in Phnom Penh is one of the most important places for studying the visual presentation of the Reamker. AMS Khmer Civilization describes a cloister of roughly 642 metres around the four sides and reports, from a written record cited in its study, 192 sections and as many as 511 individual titles for the mural sequence. These counts reflect different ways of dividing the narrative into sections and titles and should therefore be understood as source-dependent rather than as a single universally fixed count.</p>
+        <p>Sources date the mural project to 1903–1904 and associate it with a team of about 40 Cambodian artists. The name Oknha Tep Nimit Mak is closely associated with the leadership of the artistic project. Archivision records the murals as the work of a team of students from 1903–1904 under the supervision of the artist Vichitre Chea and architect Oknha Tep Nimit Thneak. Because published sources use somewhat different spellings and descriptions of the names and roles, AngkorLens keeps those differences visible rather than silently combining them into one version.</p>
+        <p>The painted narrative includes Preah Ream, Sita, Preah Leak, Hanuman, Reap (Ravana), and many other characters and episodes. The story unfolds around the cloister, so moving along the walls allows viewers to experience the mural as a continuous visual narrative. One description says the sequence begins at the eastern gallery on the southern side and continues around the entire complex.</p>
+        <p>The artistic language of the murals is especially important. AMS Khmer Civilization notes the use of colour as a visual identity for major characters: Preah Ream is associated with green, Preah Leak with a flesh-colour tone, Hanuman with white, and Angkath with a lighter green combined with black or dark green. Such colour conventions help viewers distinguish characters in crowded narrative scenes.</p>
+        <p>The paintings also combine narrative scenes with landscapes, architecture, clothing, and human activity. Archivision notes that buildings may be shown with an isometric type of projection and with a scale different from the figures, while landscape passages are used to establish place and atmosphere. The murals therefore function not only as illustrations of a long story but also as an important record of the visual language of Cambodian art in the early twentieth century.</p>
+        <p>The murals are also significant because they place a story with Brahmanic origins within a royal Buddhist setting. Archivision explains that the Reamker continued to have a role in court ceremonies and royal performance traditions, and that its presence in a Buddhist worship context was not considered incompatible with local religious and artistic practice. This provides an important example of how different strands of Cambodian cultural tradition could coexist and interact.</p>
+        <p>Today the murals are also a conservation record. The paintings are exposed to environmental conditions, and some portions have suffered weather-related deterioration. Archivision documents damaged areas and a history of conservation efforts. Careful photography and organized digital documentation can therefore serve as a useful record for study, interpretation, and future generations, while the physical paintings remain part of the living heritage of the Royal Palace complex.</p>
+      </article>
+    </div>
+  </div>
+
+  <div class="reamker-section-head">
+    <div><h2>Reamker Mural Photo Collection</h2><p>179 photographs identified from your three uploaded folder screenshots.</p></div>
+  </div>
+  <div id="reamkerGallery" class="reamker-gallery"></div>
+  <button type="button" class="reamker-back" onclick="closeReamkerSection()">← Back to temple collection</button>
 </section>
 
         <!-- Main Temple Cards Section -->
@@ -5085,6 +5161,238 @@ function acceptCookies(){localStorage.setItem("angkorLensCookieConsent","accepte
 function dismissCookieBanner(){localStorage.setItem("angkorLensCookieConsent","dismissed");const b=document.getElementById("cookieConsent");if(b)b.classList.add("hidden");}
 document.addEventListener("DOMContentLoaded",function(){const c=localStorage.getItem("angkorLensCookieConsent");const b=document.getElementById("cookieConsent");if(b&&(c==="accepted"||c==="dismissed"))b.classList.add("hidden");});
 </script>
+
+<script id="reamker-gallery-script">
+const reamkerPhotoFiles = [
+    "P1025848.jpg",
+    "P1025857.jpg",
+    "P1025859.jpg",
+    "P1025860.jpg",
+    "P1025863.JPG",
+    "P1025865.JPG",
+    "P1025868.JPG",
+    "P1025870.JPG",
+    "P1025873.JPG",
+    "P1025874.JPG",
+    "P1025878.JPG",
+    "P1025880.JPG",
+    "P1025883.JPG",
+    "P1025884.JPG",
+    "P1025887.jpg",
+    "P1025891.jpg",
+    "P1025893.jpg",
+    "P1025894.jpg",
+    "P1025896.jpg",
+    "P1025899.jpg",
+    "P1025901.jpg",
+    "P1025902.jpg",
+    "P1025904.JPG",
+    "P1025920.JPG",
+    "P1025922.JPG",
+    "P1025924.JPG",
+    "P1025925.JPG",
+    "P1025926.JPG",
+    "P1025927.JPG",
+    "P1025930.JPG",
+    "P1025932.JPG",
+    "P1025933.JPG",
+    "P1025935.JPG",
+    "P1025936.JPG",
+    "P1025937.JPG",
+    "P1025938.JPG",
+    "P1025941.JPG",
+    "P1025946.jpg",
+    "P1025948.jpg",
+    "P1025949.jpg",
+    "P1025950.jpg",
+    "P1025951.jpg",
+    "P1025953.jpg",
+    "P1025955.jpg",
+    "P1025958.jpg",
+    "P1025959.jpg",
+    "P1025960.jpg",
+    "P1025962.jpg",
+    "P1025963.jpg",
+    "P1025965.jpg",
+    "P1025967.jpg",
+    "P1025970.jpg",
+    "P1025971.jpg",
+    "P1025972.jpg",
+    "P1025974.jpg",
+    "P1025977.jpg",
+    "P1025982.jpg",
+    "P1025983.jpg",
+    "P1025984.jpg",
+    "P1025986.jpg",
+    "P1025987.jpg",
+    "P1025989.jpg",
+    "P1025991.jpg",
+    "P1025996.jpg",
+    "P1025997.jpg",
+    "P1025998.jpg",
+    "P1025999.jpg",
+    "P1026001.jpg",
+    "P1026003.jpg",
+    "P1026005.jpg",
+    "P1026006.jpg",
+    "P1026007.jpg",
+    "P1026008.jpg",
+    "P1026010.jpg",
+    "P1026013.jpg",
+    "P1026017.jpg",
+    "P1026020.jpg",
+    "P1026021.jpg",
+    "P1026026.jpg",
+    "P1026028.jpg",
+    "P1026031.jpg",
+    "P1026033.jpg",
+    "P1026035.jpg",
+    "P1026037.jpg",
+    "P1026039.jpg",
+    "P1026044.jpg",
+    "P1026047.jpg",
+    "P1026048.jpg",
+    "P1026050.jpg",
+    "P1026057.jpg",
+    "P1026059.jpg",
+    "P1026061.jpg",
+    "P1026066.jpg",
+    "P1026069.jpg",
+    "P1026072.jpg",
+    "P1026073.jpg",
+    "P1026074.jpg",
+    "P1026076.jpg",
+    "P1026077.jpg",
+    "P1026079.jpg",
+    "P1026081.jpg",
+    "P1026093.jpg",
+    "P1026110.jpg",
+    "P1026115.jpg",
+    "P1026117.jpg",
+    "P1026121.jpg",
+    "P1026134.jpg",
+    "P1026143.jpg",
+    "P1026148.jpg",
+    "P1026151.jpg",
+    "P1026177.jpg",
+    "P1026185.jpg",
+    "P1026188.jpg",
+    "P1026192.jpg",
+    "P1026194.jpg",
+    "P1026210.jpg",
+    "P1026220.jpg",
+    "P1026224.jpg",
+    "P1026233.jpg",
+    "P1026235.jpg",
+    "P1026248.jpg",
+    "P1026256.jpg",
+    "P1026269.jpg",
+    "P1026275.jpg",
+    "P1026279.jpg",
+    "P1026289.jpg",
+    "P1026290.jpg",
+    "P1026291.jpg",
+    "P1026292.jpg",
+    "P1026295.jpg",
+    "P1026297.jpg",
+    "P1026301.jpg",
+    "P1026306.jpg",
+    "P1026307.jpg",
+    "P1026314.jpg",
+    "P1026315.jpg",
+    "P1026318.jpg",
+    "P1026321.jpg",
+    "P1026323.jpg",
+    "P1026324.jpg",
+    "P1026327.jpg",
+    "P1026330.jpg",
+    "P1026336.jpg",
+    "P1026337.jpg",
+    "P1026341.jpg",
+    "P1026346.jpg",
+    "P1026348.jpg",
+    "P1026353.jpg",
+    "P1026364.jpg",
+    "P1026369.jpg",
+    "P1026377.jpg",
+    "P1026379.jpg",
+    "P1026383.jpg",
+    "P1026397.jpg",
+    "P1026400.jpg",
+    "P1026402.jpg",
+    "P1026403.jpg",
+    "P1026414.jpg",
+    "P1026424.jpg",
+    "P1026425.jpg",
+    "P1026426.jpg",
+    "P1026428.jpg",
+    "P1026429.jpg",
+    "P1026432.jpg",
+    "P1026442.jpg",
+    "P1026444.jpg",
+    "P1026446.jpg",
+    "P1026455.jpg",
+    "P1026462.jpg",
+    "P1026463.jpg",
+    "P1026464.jpg",
+    "P1026465.jpg",
+    "P1026468.jpg",
+    "P1026469.jpg",
+    "P1026470.jpg",
+    "P1026475.jpg",
+    "P1026476.jpg",
+    "P1026481.jpg",
+    "P1026484.jpg"
+];
+function renderReamkerGallery(){
+  const gallery=document.getElementById('reamkerGallery');
+  const covers=document.getElementById('reamkerCovers');
+  if(!gallery || !covers || gallery.dataset.ready==='true') return;
+  const base='https://raw.githubusercontent.com/samnangloy01-ai/angkorlen/main/';
+  const esc=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  reamkerPhotoFiles.slice(0,3).forEach((file,i)=>{
+    const img=document.createElement('img');
+    img.src=base+encodeURIComponent(file).replace(/%20/g,' ');
+    img.alt='Reamker Mural Cover '+(i+1);
+    img.loading='eager';
+    img.style.cursor='pointer';
+    img.onclick=()=>requestReamkerPicture(i);
+    covers.appendChild(img);
+  });
+  reamkerPhotoFiles.forEach((file,i)=>{
+    const card=document.createElement('article');
+    card.className='reamker-card';
+    const src=base+encodeURIComponent(file).replace(/%20/g,' ');
+    const num=String(i+1).padStart(3,'0');
+    card.innerHTML=`<img src="${src}" alt="Reamker Mural Scene ${num}" loading="lazy" onclick="requestReamkerPicture(${i})" style="cursor:pointer;">
+      <div class="reamker-card-copy">
+        <div class="reamker-number">PHOTO ${num}</div>
+        <div class="reamker-caption-kh">ឈុតគំនូររាមកេរ្តិ៍ លេខ ${num}</div>
+        <div class="reamker-caption-en">Reamker Mural Scene ${num}</div>
+        <div class="reamker-actions">
+          <a href="${src}" target="_blank" rel="noopener noreferrer">View / Full Size</a>
+          <button type="button" onclick="requestReamkerPicture(${i})">Buy Picture</button>
+        </div>
+      </div>`;
+    gallery.appendChild(card);
+  });
+  gallery.dataset.ready='true';
+}
+function requestReamkerPicture(index){
+  const file=reamkerPhotoFiles[index];
+  if(!file) return;
+  const base='https://raw.githubusercontent.com/samnangloy01-ai/angkorlen/main/';
+  const src=base+encodeURIComponent(file).replace(/%20/g,' ');
+  openPhotoMembership(src);
+}
+function closeReamkerSection(){
+  const section=document.getElementById('reamkerMuralSection');
+  const grid=document.getElementById('templeGrid');
+  document.body.classList.remove('reamker-view');
+  if(section) section.classList.remove('active');
+  if(grid){ grid.style.display='grid'; grid.scrollIntoView({behavior:'smooth',block:'start'}); }
+}
+</script>
 <script>
 /* AngkorLens requested additions: connect temple-name links to the existing full guide modals. */
 function openTop100TestGuide(index){
@@ -5132,6 +5440,8 @@ function openTop100TestGuide(index){
     openModal(item[0], item[1], [item[2]], item[3]);
 }
 function closeTop100TestSection(){
+    const reamker=document.getElementById('reamkerMuralSection');
+    if(reamker) reamker.classList.remove('active');
     const top100=document.getElementById('top100TestSection');
     const grid=document.getElementById('templeGrid');
     if(top100) top100.classList.remove('active');
@@ -5146,6 +5456,23 @@ function openTempleFromIndex(query){
     const cards=Array.from(document.querySelectorAll('.temple-card'));
     const grid=document.getElementById('templeGrid');
     const input=document.getElementById('searchInput');
+
+    if(q === 'reamker mural at the silver palace'){
+        document.body.classList.add('reamker-view');
+        document.body.classList.remove('top100-view');
+        if(input) input.value='';
+        const section=document.getElementById('reamkerMuralSection');
+        if(section) section.classList.add('active');
+        const top100=document.getElementById('top100TestSection');
+        if(top100) top100.classList.remove('active');
+        if(grid) grid.style.display='none';
+        document.querySelectorAll('.load-more-wrap').forEach(function(wrapper){wrapper.style.display='none';});
+        const noResults=document.getElementById('noResults');
+        if(noResults) noResults.classList.add('hidden');
+        renderReamkerGallery();
+        if(section) section.scrollIntoView({behavior:'smooth',block:'start'});
+        return;
+    }
 
     // IMPORTANT: Top 30 is a navigation category, not a temple name.
     // The old code searched for the words "Top 30 Ancient Sites" inside
