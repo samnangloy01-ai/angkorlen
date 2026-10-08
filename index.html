@@ -1,4 +1,4 @@
-12
+123
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
@@ -151,30 +151,6 @@
 .angkor-legal-card a{color:#1681c4;text-decoration:underline}
 .angkor-legal-close{border:0;border-radius:999px;background:#242424;color:#fff;padding:11px 22px;font-size:13px;font-weight:800;cursor:pointer}
 .angkor-legal-close:hover{background:#0891b2}
-
-/* Newsletter popup */
-.angkor-newsletter-overlay{position:fixed;inset:0;z-index:10004;background:rgba(0,0,0,.72);display:flex;align-items:center;justify-content:center;padding:20px;backdrop-filter:blur(3px)}
-.angkor-newsletter-overlay.hidden{display:none}
-.angkor-newsletter-card{width:min(860px,100%);min-height:430px;background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 28px 90px rgba(0,0,0,.38);display:grid;grid-template-columns:1fr 1fr;position:relative}
-.angkor-newsletter-copy{padding:42px 42px 34px;display:flex;flex-direction:column;justify-content:center}
-.angkor-newsletter-kicker{font-size:12px;font-weight:900;letter-spacing:.12em;color:#c62828;text-transform:uppercase;border-top:3px solid #c62828;padding-top:7px;width:max-content}
-.angkor-newsletter-copy h2{font-family:Georgia,serif;font-size:34px;line-height:1.12;color:#222;margin:16px 0 12px}
-.angkor-newsletter-copy p{font-size:15px;line-height:1.65;color:#444;margin:0 0 20px}
-.angkor-newsletter-form{display:flex;gap:8px;align-items:center}
-.angkor-newsletter-form input{flex:1;min-width:0;height:44px;border:1px solid #bbb;border-radius:999px;padding:0 15px;font-size:14px;outline:none}
-.angkor-newsletter-form input:focus{border-color:#0891b2;box-shadow:0 0 0 3px rgba(8,145,178,.12)}
-.angkor-newsletter-form button{height:44px;border:0;border-radius:999px;background:#222;color:#fff;padding:0 18px;font-weight:800;cursor:pointer}
-.angkor-newsletter-form button:hover{background:#0891b2}
-.angkor-newsletter-fine{font-size:10px!important;line-height:1.45!important;color:#777!important;margin-top:16px!important;margin-bottom:0!important}
-.angkor-newsletter-image{min-height:430px;background:#eee}
-.angkor-newsletter-image img{width:100%;height:100%;object-fit:cover;display:block}
-.angkor-newsletter-x{position:absolute;right:10px;top:10px;width:38px;height:38px;border:1px solid rgba(255,255,255,.8);border-radius:50%;background:rgba(20,20,20,.65);color:#fff;font-size:25px;line-height:1;cursor:pointer;z-index:2}
-.angkor-newsletter-x:hover{background:#111}
-.angkor-newsletter-icon{display:inline-flex!important;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;background:#222;color:#fff!important;transition:transform .15s ease,background .15s ease}
-.angkor-newsletter-icon:hover{background:#0891b2;transform:translateY(-1px)}
-@media(max-width:640px){.angkor-header-social{gap:4px}.angkor-newsletter-icon{width:28px;height:28px;font-size:12px}.angkor-header-social a{flex:0 0 auto}}
-@media(max-width:900px){.angkor-dropdown{position:absolute;left:auto;right:0}.angkor-newsletter-card{grid-template-columns:1fr}.angkor-newsletter-image{min-height:250px;order:-1}.angkor-newsletter-copy{padding:30px}.angkor-newsletter-copy h2{font-size:30px}}
-@media(max-width:640px){.angkor-nav-item{height:auto}.angkor-dropdown{position:static;min-width:0;width:100%;box-shadow:none;border-top:1px solid #ddd;opacity:1;visibility:visible;transform:none;display:none}.angkor-nav-item:focus-within>.angkor-dropdown{display:block}.temple-index-section{padding:24px 16px 10px}.temple-index-list{gap:0 18px}.temple-index-link{font-size:14px}.angkor-newsletter-form{flex-direction:column;align-items:stretch}.angkor-newsletter-form button{width:100%}}
 
 /* Newsletter signup section at the bottom of the page */
 .angkor-newsletter-bottom-section{max-width:1200px;margin:0 auto;padding:42px 24px 56px}
@@ -367,109 +343,6 @@
         row-gap: 16px !important;
     }
 
-    /* Newsletter popup: keep the whole dialog inside the phone screen.
-       The image gets a controlled height instead of expanding vertically. */
-    .angkor-newsletter-overlay {
-        padding: 10px !important;
-        align-items: center !important;
-        overflow-y: auto !important;
-    }
-
-    .angkor-newsletter-card {
-        width: 100% !important;
-        max-width: 430px !important;
-        max-height: calc(100dvh - 20px) !important;
-        min-height: 0 !important;
-        height: auto !important;
-        display: flex !important;
-        flex-direction: column !important;
-        overflow-y: auto !important;
-        overflow-x: hidden !important;
-        border-radius: 16px !important;
-    }
-
-    .angkor-newsletter-card .angkor-newsletter-image {
-        order: -1 !important;
-        width: 100% !important;
-        height: 190px !important;
-        min-height: 190px !important;
-        max-height: 190px !important;
-        flex: 0 0 190px !important;
-        overflow: hidden !important;
-    }
-
-    .angkor-newsletter-card .angkor-newsletter-image img {
-        width: 100% !important;
-        height: 100% !important;
-        min-height: 0 !important;
-        max-height: none !important;
-        object-fit: cover !important;
-        display: block !important;
-    }
-
-    .angkor-newsletter-card .angkor-newsletter-copy {
-        padding: 22px 18px 20px !important;
-        min-width: 0 !important;
-    }
-
-    .angkor-newsletter-card .angkor-newsletter-copy h2 {
-        font-size: 25px !important;
-        line-height: 1.12 !important;
-        margin: 12px 0 10px !important;
-    }
-
-    .angkor-newsletter-card .angkor-newsletter-copy p {
-        font-size: 13px !important;
-        line-height: 1.5 !important;
-        margin-bottom: 14px !important;
-    }
-
-    .angkor-newsletter-form {
-        display: flex !important;
-        flex-direction: column !important;
-        width: 100% !important;
-        gap: 8px !important;
-    }
-
-    .angkor-newsletter-form input,
-    .angkor-newsletter-form button {
-        width: 100% !important;
-        min-width: 0 !important;
-        box-sizing: border-box !important;
-    }
-
-    .angkor-newsletter-fine {
-        font-size: 9px !important;
-        line-height: 1.4 !important;
-    }
-
-    .angkor-newsletter-x {
-        position: absolute !important;
-        top: 8px !important;
-        right: 8px !important;
-        width: 34px !important;
-        height: 34px !important;
-        z-index: 10 !important;
-    }
-}
-
-/* Very small phones: make the popup image a little shorter. */
-@media (max-width: 380px) {
-    .angkor-newsletter-card .angkor-newsletter-image {
-        height: 155px !important;
-        min-height: 155px !important;
-        max-height: 155px !important;
-        flex-basis: 155px !important;
-    }
-
-    #templeGrid {
-        gap: 8px !important;
-    }
-
-    #templeGrid .temple-card {
-        padding: 7px !important;
-    }
-}
 
 <style id="angkorlens-top100-list-style">
 /* Top 37 Ancient Sites view — keep it as its own listing page inside AngkorLens. */
@@ -660,7 +533,6 @@ body.top100-view .top100-test-section {
 @media(max-width:900px){.gallery-album-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:640px){.gallery-album-section{padding:30px 14px 55px}.gallery-album-hero{padding:22px}.gallery-album-grid{grid-template-columns:1fr}.gallery-album-title{font-size:30px}}
 </style>
-
 </head>
 <body class="bg-[#fafafa] text-neutral-800 antialiased min-h-screen flex flex-col justify-between">
 
@@ -712,7 +584,7 @@ body.top100-view .top100-test-section {
                     <a href="https://www.instagram.com/samnang_2022" target="_blank" rel="noopener noreferrer" class="w-7 h-7 sm:w-9 sm:h-9 rounded-full bg-gradient-to-tr from-yellow-500 via-pink-600 to-purple-700 text-white flex items-center justify-center hover:opacity-90 transition shadow-sm" title="Instagram: samnang_2022" aria-label="Instagram: samnang_2022">
                         <i class="fa-brands fa-instagram text-[11px] sm:text-sm"></i>
                     </a>
-                    <button type="button" class="angkor-newsletter-icon" onclick="openNewsletterIfNeeded()" title="AngkorLens Newsletter" aria-label="Open AngkorLens Newsletter"><i class="fa-regular fa-envelope text-xs sm:text-sm"></i></button>
+                    
                 </div>
                 <!-- Mobile Menu Button -->
                 <button onclick="toggleMobileMenu()" class="md:hidden text-neutral-700 hover:text-cyan-600 text-xl p-2 cursor-pointer">
@@ -5500,26 +5372,6 @@ function tryChaEhFallback(img) {
   </div>
 </div>
 
-<!-- AngkorLens Newsletter popup -->
-<div id="angkorNewsletterModal" class="angkor-newsletter-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="angkorNewsletterTitle">
-  <div class="angkor-newsletter-card">
-    <button type="button" class="angkor-newsletter-x" onclick="closeNewsletter()" aria-label="Close">&times;</button>
-    <div class="angkor-newsletter-copy">
-      <div class="angkor-newsletter-kicker">ANGKORLENS REVEALED</div>
-      <h2 id="angkorNewsletterTitle">Sign up for Temple &amp; Heritage Updates</h2>
-      <p>Get featured Khmer temple discoveries, new heritage stories, photography updates, and selected AngkorLens research delivered to your inbox.</p>
-      <form class="angkor-newsletter-form" onsubmit="submitAngkorNewsletter(event)">
-        <input id="angkorNewsletterEmail" type="email" placeholder="Your email address" autocomplete="email" required aria-label="Your email address">
-        <button type="submit">Sign Up</button>
-      </form>
-      <p class="angkor-newsletter-fine">By submitting your information, you agree to receive AngkorLens updates. You can opt out at any time. Privacy Policy | Terms of Use | Contact Us</p>
-    </div>
-    <div class="angkor-newsletter-image">
-      <img src="https://raw.githubusercontent.com/samnangloy01-ai/angkorlen/main/IMG_0713.JPG" alt="Khmer temple heritage">
-    </div>
-  </div>
-</div>
-
 <!-- AngkorLens Google-style welcome prompt -->
 <div id="googleWelcome" class="google-welcome-overlay" role="dialog" aria-modal="true" aria-label="AngkorLens welcome">
   <div class="google-welcome-card">
@@ -8177,27 +8029,18 @@ function showAngkorLegalIfNeeded(){
     if(el && localStorage.getItem('angkorLensLegalAccepted')!=='accepted') el.classList.remove('hidden');
 }
 
-/* Newsletter: the icon always opens it again until the visitor signs up. */
-function openNewsletterIfNeeded(){
-    if(localStorage.getItem('angkorLensNewsletterSubscribed')==='yes') return;
-    const el=document.getElementById('angkorNewsletterModal');
-    if(el) el.classList.remove('hidden');
-}
-function closeNewsletter(){
-    const el=document.getElementById('angkorNewsletterModal');
-    if(el) el.classList.add('hidden');
-}
+/* Newsletter bottom-section behavior. The old AngkorLens custom popup has been removed.
+   Mailchimp now handles the live newsletter popup and email collection. */
 function submitAngkorNewsletter(event){
     event.preventDefault();
-    const email=document.getElementById('angkorNewsletterEmail');
+    const form=event.target;
+    const email=form ? form.querySelector('input[type="email"]') : null;
     if(!email || !email.value) return;
     localStorage.setItem('angkorLensNewsletterSubscribed','yes');
     refreshNewsletterVisibility();
-    closeNewsletter();
     alert('Thank you for signing up for AngkorLens updates.');
 }
 
-/* Newsletter behavior: show on every visit and after photo clicks until the visitor signs up. */
 function refreshNewsletterVisibility(){
     const subscribed = localStorage.getItem('angkorLensNewsletterSubscribed') === 'yes';
     const bottom = document.getElementById('newsletter-bottom');
@@ -8208,27 +8051,6 @@ document.addEventListener('DOMContentLoaded',function(){
     // Keep the temple-name index hidden until the 3rd LOAD MORE click.
     showAngkorLegalIfNeeded();
     refreshNewsletterVisibility();
-
-    // Every visit: reopen the newsletter unless the visitor has signed up.
-    setTimeout(function(){
-        if(localStorage.getItem('angkorLensNewsletterSubscribed')!=='yes'){
-            openNewsletterIfNeeded();
-        }
-    }, 3500);
-
-    // Every temple/photo click: reopen the newsletter until signup.
-    document.addEventListener('click',function(event){
-        if(localStorage.getItem('angkorLensNewsletterSubscribed')==='yes') return;
-
-        const photoTarget = event.target.closest(
-            '.temple-card img, .temple-card [onclick*="openModal"], .temple-card [onclick*="openPhotoMembership"], .temple-card [onclick*="openLightbox"]'
-        );
-        if(!photoTarget) return;
-
-        setTimeout(function(){
-            openNewsletterIfNeeded();
-        }, 250);
-    }, true);
 });
 </script>
 
@@ -8354,6 +8176,294 @@ function openPrasatTrungLolok(){
   }
 }
 </style>
+
+
+<!-- AngkorLens Newsletter: single custom popup using the Mailchimp embedded signup endpoint -->
+<style>
+  #angkorLensNewsletterOverlay{
+    position:fixed;
+    inset:0;
+    z-index:2147483000;
+    display:none;
+    align-items:center;
+    justify-content:center;
+    padding:24px;
+    background:rgba(0,0,0,.70);
+    backdrop-filter:blur(3px);
+    -webkit-backdrop-filter:blur(3px);
+  }
+  #angkorLensNewsletterOverlay.al-show{display:flex}
+  .al-newsletter-card{
+    position:relative;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    width:min(900px,94vw);
+    min-height:460px;
+    max-height:calc(100vh - 48px);
+    overflow:hidden;
+    border-radius:20px;
+    background:#fff;
+    box-shadow:0 24px 70px rgba(0,0,0,.35);
+  }
+  .al-newsletter-copy{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding:42px 42px 36px;
+  }
+  .al-newsletter-kicker{
+    display:inline-flex;
+    align-items:center;
+    width:max-content;
+    margin-bottom:18px;
+    padding-top:8px;
+    border-top:3px solid #c62828;
+    color:#c62828;
+    font:700 13px/1.2 Arial,sans-serif;
+    letter-spacing:2px;
+  }
+  .al-newsletter-copy h2{
+    margin:0 0 18px;
+    color:#222;
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:clamp(31px,3.1vw,43px);
+    line-height:1.02;
+    font-weight:500;
+  }
+  .al-newsletter-copy > p{
+    margin:0 0 24px;
+    color:#555;
+    font:16px/1.6 Arial,sans-serif;
+  }
+  .al-newsletter-form{
+    display:flex;
+    align-items:center;
+    gap:9px;
+    margin:0;
+  }
+  .al-newsletter-form input[type="email"]{
+    flex:1 1 auto;
+    min-width:0;
+    height:48px;
+    padding:0 16px;
+    border:1px solid #c9c9c9;
+    border-radius:25px;
+    outline:none;
+    background:#fff;
+    color:#222;
+    font:15px Arial,sans-serif;
+  }
+  .al-newsletter-form input[type="email"]:focus{
+    border-color:#888;
+    box-shadow:0 0 0 3px rgba(0,0,0,.06);
+  }
+  .al-newsletter-form button{
+    flex:0 0 auto;
+    height:48px;
+    padding:0 21px;
+    border:0;
+    border-radius:25px;
+    background:#252525;
+    color:#fff;
+    cursor:pointer;
+    font:700 16px Arial,sans-serif;
+  }
+  .al-newsletter-form button:hover{background:#111}
+  .al-newsletter-fine{
+    margin:25px 0 0 !important;
+    color:#888 !important;
+    font:11px/1.45 Arial,sans-serif !important;
+  }
+  .al-newsletter-image{
+    min-height:460px;
+    background:#eee;
+  }
+  .al-newsletter-image img{
+    display:block;
+    width:100%;
+    height:100%;
+    min-height:460px;
+    object-fit:cover;
+  }
+  .al-newsletter-close{
+    position:absolute;
+    top:12px;
+    right:12px;
+    z-index:2;
+    width:40px;
+    height:40px;
+    border:1px solid rgba(255,255,255,.75);
+    border-radius:50%;
+    background:rgba(20,20,20,.62);
+    color:#fff;
+    cursor:pointer;
+    font:400 27px/36px Arial,sans-serif;
+  }
+  .al-newsletter-close:hover{background:rgba(0,0,0,.82)}
+  .al-newsletter-status{
+    display:none;
+    margin-top:12px;
+    color:#2e7d32;
+    font:13px/1.4 Arial,sans-serif;
+  }
+  @media (max-width:700px){
+    #angkorLensNewsletterOverlay{
+      padding:14px;
+      align-items:center;
+    }
+    .al-newsletter-card{
+      display:flex;
+      flex-direction:column;
+      width:min(430px,96vw);
+      max-height:calc(100vh - 28px);
+      border-radius:17px;
+      overflow:auto;
+    }
+    .al-newsletter-image{
+      order:-1;
+      min-height:180px;
+      height:180px;
+    }
+    .al-newsletter-image img{
+      min-height:180px;
+      height:180px;
+      object-fit:cover;
+    }
+    .al-newsletter-copy{
+      padding:27px 23px 25px;
+    }
+    .al-newsletter-kicker{margin-bottom:13px;font-size:11px}
+    .al-newsletter-copy h2{
+      margin-bottom:13px;
+      font-size:29px;
+      line-height:1.08;
+    }
+    .al-newsletter-copy > p{
+      margin-bottom:18px;
+      font-size:14px;
+      line-height:1.5;
+    }
+    .al-newsletter-form{
+      flex-direction:column;
+      align-items:stretch;
+    }
+    .al-newsletter-form input[type="email"],
+    .al-newsletter-form button{
+      width:100%;
+    }
+    .al-newsletter-close{
+      top:9px;
+      right:9px;
+      width:37px;
+      height:37px;
+      font-size:24px;
+      line-height:33px;
+    }
+  }
+</style>
+
+<div id="angkorLensNewsletterOverlay" aria-hidden="true">
+  <div class="al-newsletter-card" role="dialog" aria-modal="true" aria-labelledby="alNewsletterTitle">
+    <button type="button" class="al-newsletter-close" aria-label="Close newsletter" onclick="alCloseNewsletter()">×</button>
+
+    <div class="al-newsletter-copy">
+      <div class="al-newsletter-kicker">ANGKORLENS REVEALED</div>
+      <h2 id="alNewsletterTitle">Sign up for Temple &amp; Heritage Updates</h2>
+      <p>Get featured Khmer temple discoveries, new heritage stories, photography updates, and selected AngkorLens research delivered to your inbox.</p>
+
+      <form
+        id="alMailchimpSignupForm"
+        class="al-newsletter-form"
+        action="https://angkorlens.us18.list-manage.com/subscribe/post?u=e6789655af6ec5f2999065860&amp;id=ef82bc12a4&amp;f_id=007bb1e6f0"
+        method="post"
+        target="alMailchimpHiddenFrame"
+        onsubmit="return alSubmitNewsletter(this)"
+      >
+        <input
+          id="alNewsletterEmail"
+          type="email"
+          name="EMAIL"
+          placeholder="Your email address"
+          autocomplete="email"
+          required
+          aria-label="Your email address"
+        >
+        <input type="text" name="b_e6789655af6ec5f2999065860_ef82bc12a4" tabindex="-1" value="" aria-hidden="true" style="position:absolute;left:-5000px;">
+        <button type="submit">Sign Up</button>
+      </form>
+
+      <div id="alNewsletterStatus" class="al-newsletter-status">Thank you for signing up for AngkorLens updates.</div>
+
+      <p class="al-newsletter-fine">By submitting your information, you agree to receive AngkorLens updates. You can opt out at any time.</p>
+    </div>
+
+    <div class="al-newsletter-image">
+      <img src="https://raw.githubusercontent.com/samnangloy01-ai/angkorlen/main/IMG_0713.JPG" alt="Khmer temple heritage">
+    </div>
+  </div>
+</div>
+
+<iframe name="alMailchimpHiddenFrame" title="Mailchimp signup" style="display:none;width:0;height:0;border:0;"></iframe>
+
+<script>
+(function(){
+  const KEY = 'angkorLensMailchimpSubscribed';
+
+  function showNewsletter(){
+    if(localStorage.getItem(KEY) === 'yes') return;
+    const overlay = document.getElementById('angkorLensNewsletterOverlay');
+    if(!overlay) return;
+    overlay.classList.add('al-show');
+    overlay.setAttribute('aria-hidden','false');
+    document.body.style.overflow='hidden';
+  }
+
+  window.alCloseNewsletter = function(){
+    const overlay = document.getElementById('angkorLensNewsletterOverlay');
+    if(!overlay) return;
+    overlay.classList.remove('al-show');
+    overlay.setAttribute('aria-hidden','true');
+    document.body.style.overflow='';
+  };
+
+  window.alSubmitNewsletter = function(form){
+    const email = document.getElementById('alNewsletterEmail');
+    if(!email || !email.checkValidity()) return true;
+
+    /*
+      The form submits to Mailchimp in a hidden iframe, while the visitor stays
+      on AngkorLens. We remember the successful submit action locally so this
+      popup does not return on this browser/device.
+    */
+    localStorage.setItem(KEY,'yes');
+
+    const overlay = document.getElementById('angkorLensNewsletterOverlay');
+    const status = document.getElementById('alNewsletterStatus');
+    if(status) status.style.display='block';
+    if(overlay){
+      setTimeout(function(){
+        overlay.classList.remove('al-show');
+        overlay.setAttribute('aria-hidden','true');
+        document.body.style.overflow='';
+      }, 450);
+    }
+    return true;
+  };
+
+  document.addEventListener('DOMContentLoaded', function(){
+    if(localStorage.getItem(KEY) !== 'yes'){
+      setTimeout(showNewsletter, 2000);
+    }
+
+    const overlay = document.getElementById('angkorLensNewsletterOverlay');
+    if(overlay){
+      overlay.addEventListener('click', function(e){
+        if(e.target === overlay) alCloseNewsletter();
+      });
+    }
+  });
+})();
+</script>
 
 </body>
 </html>
