@@ -172,6 +172,7 @@
 .angkor-newsletter-x:hover{background:#111}
 .angkor-newsletter-icon{display:inline-flex!important;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;background:#222;color:#fff!important;transition:transform .15s ease,background .15s ease}
 .angkor-newsletter-icon:hover{background:#0891b2;transform:translateY(-1px)}
+@media(max-width:640px){.angkor-header-social{gap:4px}.angkor-newsletter-icon{width:28px;height:28px;font-size:12px}.angkor-header-social a{flex:0 0 auto}}
 @media(max-width:900px){.angkor-dropdown{position:absolute;left:auto;right:0}.angkor-newsletter-card{grid-template-columns:1fr}.angkor-newsletter-image{min-height:250px;order:-1}.angkor-newsletter-copy{padding:30px}.angkor-newsletter-copy h2{font-size:30px}}
 @media(max-width:640px){.angkor-nav-item{height:auto}.angkor-dropdown{position:static;min-width:0;width:100%;box-shadow:none;border-top:1px solid #ddd;opacity:1;visibility:visible;transform:none;display:none}.angkor-nav-item:focus-within>.angkor-dropdown{display:block}.temple-index-section{padding:24px 16px 10px}.temple-index-list{gap:0 18px}.temple-index-link{font-size:14px}.angkor-newsletter-form{flex-direction:column;align-items:stretch}.angkor-newsletter-form button{width:100%}}
 
@@ -660,6 +661,7 @@ body.top100-view .top100-test-section {
 @media(max-width:640px){.gallery-album-section{padding:30px 14px 55px}.gallery-album-hero{padding:22px}.gallery-album-grid{grid-template-columns:1fr}.gallery-album-title{font-size:30px}}
 </style>
 
+<script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/e6789655af6ec5f2999065860/f0a19947d297b1e1663074b03.js");</script>
 </head>
 <body class="bg-[#fafafa] text-neutral-800 antialiased min-h-screen flex flex-col justify-between">
 
@@ -701,17 +703,17 @@ body.top100-view .top100-test-section {
             </nav>
 
             <div class="flex items-center space-x-3">
-                <div class="hidden sm:flex items-center space-x-3">
-                    <a href="https://www.youtube.com/@Urbanwalkstudio" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-red-600 text-white flex items-center justify-center hover:bg-red-700 transition shadow-sm" title="YouTube: Urban walk studio">
-                        <i class="fa-brands fa-youtube text-sm"></i>
+                <div class="flex items-center space-x-1 sm:space-x-3 angkor-header-social">
+                    <a href="https://www.youtube.com/@Urbanwalkstudio" target="_blank" rel="noopener noreferrer" class="w-7 h-7 sm:w-9 sm:h-9 rounded-full bg-red-600 text-white flex items-center justify-center hover:bg-red-700 transition shadow-sm" title="YouTube: Urban walk studio" aria-label="YouTube: Urban walk studio">
+                        <i class="fa-brands fa-youtube text-[11px] sm:text-sm"></i>
                     </a>
-                    <a href="https://www.facebook.com/UrbanExplorer4K" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-blue-600 text-white flex items-center justify-center hover:bg-blue-700 transition shadow-sm" title="Facebook Page: Urban Explorer 4K">
-                        <i class="fa-brands fa-facebook-f text-sm"></i>
+                    <a href="https://www.facebook.com/UrbanExplorer4K" target="_blank" rel="noopener noreferrer" class="w-7 h-7 sm:w-9 sm:h-9 rounded-full bg-blue-600 text-white flex items-center justify-center hover:bg-blue-700 transition shadow-sm" title="Facebook Page: Urban Explorer 4K" aria-label="Facebook Page: Urban Explorer 4K">
+                        <i class="fa-brands fa-facebook-f text-[11px] sm:text-sm"></i>
                     </a>
-                    <a href="https://www.instagram.com/samnang_2022" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-gradient-to-tr from-yellow-500 via-pink-600 to-purple-700 text-white flex items-center justify-center hover:opacity-90 transition shadow-sm" title="Instagram: samnang_2022">
-                        <i class="fa-brands fa-instagram text-sm"></i>
+                    <a href="https://www.instagram.com/samnang_2022" target="_blank" rel="noopener noreferrer" class="w-7 h-7 sm:w-9 sm:h-9 rounded-full bg-gradient-to-tr from-yellow-500 via-pink-600 to-purple-700 text-white flex items-center justify-center hover:opacity-90 transition shadow-sm" title="Instagram: samnang_2022" aria-label="Instagram: samnang_2022">
+                        <i class="fa-brands fa-instagram text-[11px] sm:text-sm"></i>
                     </a>
-                    <button type="button" class="angkor-newsletter-icon" onclick="openNewsletterIfNeeded()" title="AngkorLens Newsletter" aria-label="Open AngkorLens Newsletter"><i class="fa-regular fa-envelope text-sm"></i></button>
+                    <button type="button" class="angkor-newsletter-icon" onclick="openNewsletterIfNeeded()" title="AngkorLens Newsletter" aria-label="Open AngkorLens Newsletter"><i class="fa-regular fa-envelope text-xs sm:text-sm"></i></button>
                 </div>
                 <!-- Mobile Menu Button -->
                 <button onclick="toggleMobileMenu()" class="md:hidden text-neutral-700 hover:text-cyan-600 text-xl p-2 cursor-pointer">
