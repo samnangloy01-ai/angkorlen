@@ -1,4 +1,4 @@
-123
+01
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
@@ -152,6 +152,29 @@
 .angkor-legal-close{border:0;border-radius:999px;background:#242424;color:#fff;padding:11px 22px;font-size:13px;font-weight:800;cursor:pointer}
 .angkor-legal-close:hover{background:#0891b2}
 
+/* Newsletter popup */
+.angkor-newsletter-overlay{position:fixed;inset:0;z-index:10004;background:rgba(0,0,0,.72);display:flex;align-items:center;justify-content:center;padding:20px;backdrop-filter:blur(3px)}
+.angkor-newsletter-overlay.hidden{display:none}
+.angkor-newsletter-card{width:min(860px,100%);min-height:430px;background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 28px 90px rgba(0,0,0,.38);display:grid;grid-template-columns:1fr 1fr;position:relative}
+.angkor-newsletter-copy{padding:42px 42px 34px;display:flex;flex-direction:column;justify-content:center}
+.angkor-newsletter-kicker{font-size:12px;font-weight:900;letter-spacing:.12em;color:#c62828;text-transform:uppercase;border-top:3px solid #c62828;padding-top:7px;width:max-content}
+.angkor-newsletter-copy h2{font-family:Georgia,serif;font-size:34px;line-height:1.12;color:#222;margin:16px 0 12px}
+.angkor-newsletter-copy p{font-size:15px;line-height:1.65;color:#444;margin:0 0 20px}
+.angkor-newsletter-form{display:flex;gap:8px;align-items:center}
+.angkor-newsletter-form input{flex:1;min-width:0;height:44px;border:1px solid #bbb;border-radius:999px;padding:0 15px;font-size:14px;outline:none}
+.angkor-newsletter-form input:focus{border-color:#0891b2;box-shadow:0 0 0 3px rgba(8,145,178,.12)}
+.angkor-newsletter-form button{height:44px;border:0;border-radius:999px;background:#222;color:#fff;padding:0 18px;font-weight:800;cursor:pointer}
+.angkor-newsletter-form button:hover{background:#0891b2}
+.angkor-newsletter-fine{font-size:10px!important;line-height:1.45!important;color:#777!important;margin-top:16px!important;margin-bottom:0!important}
+.angkor-newsletter-image{min-height:430px;background:#eee}
+.angkor-newsletter-image img{width:100%;height:100%;object-fit:cover;display:block}
+.angkor-newsletter-x{position:absolute;right:10px;top:10px;width:38px;height:38px;border:1px solid rgba(255,255,255,.8);border-radius:50%;background:rgba(20,20,20,.65);color:#fff;font-size:25px;line-height:1;cursor:pointer;z-index:2}
+.angkor-newsletter-x:hover{background:#111}
+.angkor-newsletter-icon{display:inline-flex!important;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;background:#222;color:#fff!important;transition:transform .15s ease,background .15s ease}
+.angkor-newsletter-icon:hover{background:#0891b2;transform:translateY(-1px)}
+@media(max-width:900px){.angkor-dropdown{position:absolute;left:auto;right:0}.angkor-newsletter-card{grid-template-columns:1fr}.angkor-newsletter-image{min-height:250px;order:-1}.angkor-newsletter-copy{padding:30px}.angkor-newsletter-copy h2{font-size:30px}}
+@media(max-width:640px){.angkor-nav-item{height:auto}.angkor-dropdown{position:static;min-width:0;width:100%;box-shadow:none;border-top:1px solid #ddd;opacity:1;visibility:visible;transform:none;display:none}.angkor-nav-item:focus-within>.angkor-dropdown{display:block}.temple-index-section{padding:24px 16px 10px}.temple-index-list{gap:0 18px}.temple-index-link{font-size:14px}.angkor-newsletter-form{flex-direction:column;align-items:stretch}.angkor-newsletter-form button{width:100%}}
+
 /* Newsletter signup section at the bottom of the page */
 .angkor-newsletter-bottom-section{max-width:1200px;margin:0 auto;padding:42px 24px 56px}
 .angkor-newsletter-bottom-card{width:100%;min-height:360px;background:#fff;border:1px solid #eee;border-radius:18px;overflow:hidden;box-shadow:0 12px 40px rgba(0,0,0,.08);display:grid;grid-template-columns:1fr 1fr;position:relative}
@@ -201,7 +224,7 @@
 .google-welcome-overlay{position:fixed;inset:0;z-index:9998;background:rgba(15,23,42,.45);backdrop-filter:blur(3px);display:flex;align-items:center;justify-content:center;padding:20px}.google-welcome-overlay.hidden{display:none}.google-welcome-card{width:min(420px,100%);background:#fff;border:1px solid #dadce0;border-radius:16px;box-shadow:0 18px 55px rgba(0,0,0,.25);padding:28px;text-align:center;font-family:Arial,sans-serif}.google-welcome-logo{width:42px;height:42px;border-radius:50%;object-fit:cover;margin:0 auto 16px;display:block}.google-welcome-card h2{margin:0 0 10px;color:#202124;font-size:22px;font-weight:500}.google-welcome-card p{margin:0 0 20px;color:#5f6368;font-size:14px;line-height:1.55}.google-account-btn{width:100%;height:46px;border:1px solid #dadce0;border-radius:8px;background:#fff;color:#3c4043;font-size:15px;font-weight:600;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;transition:background .15s,box-shadow .15s}.google-account-btn:hover{background:#f8f9fa;box-shadow:0 1px 3px rgba(60,64,67,.2)}.google-g{font-weight:700;font-size:20px;color:#4285f4}.google-skip{margin-top:12px;border:0;background:transparent;color:#5f6368;cursor:pointer;font-size:14px}.google-skip:hover{text-decoration:underline}.google-note{margin-top:18px!important;margin-bottom:0!important;font-size:11px!important;color:#80868b!important}
 
 /* Cookie consent banner */
-.cookie-consent{position:fixed;left:20px;right:20px;bottom:20px;z-index:10000;background:rgba(17,24,39,.97);color:#fff;border-radius:14px;padding:15px 18px;box-shadow:0 10px 35px rgba(0,0,0,.25);display:flex;align-items:center;justify-content:space-between;gap:18px;font-size:13px;line-height:1.55}.cookie-consent.hidden{display:none}.cookie-consent-text{flex:1;min-width:0}.cookie-consent-text strong{display:block;margin-bottom:3px;font-size:15px}.cookie-consent-text span{display:block;color:#e5e7eb}.cookie-consent-text a{display:inline-block;margin-top:4px;color:#67e8f9;text-decoration:underline}.cookie-consent-actions{display:flex;align-items:center;justify-content:flex-end;gap:8px;flex-shrink:0;flex-wrap:wrap}.cookie-consent-btn,.cookie-consent-secondary{border:0;border-radius:9px;padding:9px 13px;font-weight:700;cursor:pointer;white-space:nowrap}.cookie-consent-btn{background:#06b6d4;color:#fff;transition:transform .15s ease,opacity .15s ease}.cookie-consent-btn:hover{opacity:.9;transform:translateY(-1px)}.cookie-consent-secondary{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.35)}.cookie-consent-secondary:hover{background:rgba(255,255,255,.08)}.cookie-settings-panel{position:absolute;left:20px;right:20px;bottom:calc(100% + 10px);background:#fff;color:#202020;border-radius:14px;padding:16px 18px;box-shadow:0 12px 35px rgba(0,0,0,.22);border:1px solid #e5e7eb;display:flex;align-items:center;justify-content:space-between;gap:18px}.cookie-settings-panel.hidden{display:none}.cookie-settings-panel p{margin:4px 0 0;color:#666;font-size:12px;line-height:1.5;max-width:700px}.cookie-settings-actions{display:flex;gap:8px;flex-shrink:0}.cookie-settings-panel .cookie-consent-secondary{color:#202020;border-color:#d1d5db}@media(max-width:640px){.cookie-consent{left:10px;right:10px;bottom:10px;padding:14px;display:block}.cookie-consent-text{margin-bottom:10px}.cookie-consent-actions{justify-content:flex-start}.cookie-settings-panel{left:10px;right:10px;bottom:calc(100% + 10px);display:block}.cookie-settings-actions{margin-top:12px;justify-content:flex-end;flex-wrap:wrap}}
+.cookie-consent{position:fixed;left:20px;right:20px;bottom:20px;z-index:10000;background:rgba(17,24,39,.97);color:#fff;border-radius:14px;padding:16px 18px;box-shadow:0 10px 35px rgba(0,0,0,.25);display:flex;align-items:center;justify-content:space-between;gap:18px;font-size:14px;line-height:1.6}.cookie-consent.hidden{display:none}.cookie-consent-text{flex:1}.cookie-consent-text a{color:#67e8f9;text-decoration:underline}.cookie-consent-actions{display:flex;align-items:center;gap:10px;flex-shrink:0}.cookie-consent-btn{border:0;border-radius:9px;padding:9px 16px;font-weight:700;cursor:pointer;background:#06b6d4;color:#fff;transition:transform .15s ease,opacity .15s ease}.cookie-consent-btn:hover{opacity:.9;transform:translateY(-1px)}.cookie-consent-close{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.35);border-radius:9px;padding:8px 11px;cursor:pointer}@media(max-width:640px){.cookie-consent{left:10px;right:10px;bottom:10px;padding:14px;flex-direction:column;align-items:stretch;gap:12px}.cookie-consent-actions{justify-content:flex-end}}
 </style>
 
 <style id="angkorlens-photo-membership">
@@ -343,6 +366,109 @@
         row-gap: 16px !important;
     }
 
+    /* Newsletter popup: keep the whole dialog inside the phone screen.
+       The image gets a controlled height instead of expanding vertically. */
+    .angkor-newsletter-overlay {
+        padding: 10px !important;
+        align-items: center !important;
+        overflow-y: auto !important;
+    }
+
+    .angkor-newsletter-card {
+        width: 100% !important;
+        max-width: 430px !important;
+        max-height: calc(100dvh - 20px) !important;
+        min-height: 0 !important;
+        height: auto !important;
+        display: flex !important;
+        flex-direction: column !important;
+        overflow-y: auto !important;
+        overflow-x: hidden !important;
+        border-radius: 16px !important;
+    }
+
+    .angkor-newsletter-card .angkor-newsletter-image {
+        order: -1 !important;
+        width: 100% !important;
+        height: 190px !important;
+        min-height: 190px !important;
+        max-height: 190px !important;
+        flex: 0 0 190px !important;
+        overflow: hidden !important;
+    }
+
+    .angkor-newsletter-card .angkor-newsletter-image img {
+        width: 100% !important;
+        height: 100% !important;
+        min-height: 0 !important;
+        max-height: none !important;
+        object-fit: cover !important;
+        display: block !important;
+    }
+
+    .angkor-newsletter-card .angkor-newsletter-copy {
+        padding: 22px 18px 20px !important;
+        min-width: 0 !important;
+    }
+
+    .angkor-newsletter-card .angkor-newsletter-copy h2 {
+        font-size: 25px !important;
+        line-height: 1.12 !important;
+        margin: 12px 0 10px !important;
+    }
+
+    .angkor-newsletter-card .angkor-newsletter-copy p {
+        font-size: 13px !important;
+        line-height: 1.5 !important;
+        margin-bottom: 14px !important;
+    }
+
+    .angkor-newsletter-form {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+        gap: 8px !important;
+    }
+
+    .angkor-newsletter-form input,
+    .angkor-newsletter-form button {
+        width: 100% !important;
+        min-width: 0 !important;
+        box-sizing: border-box !important;
+    }
+
+    .angkor-newsletter-fine {
+        font-size: 9px !important;
+        line-height: 1.4 !important;
+    }
+
+    .angkor-newsletter-x {
+        position: absolute !important;
+        top: 8px !important;
+        right: 8px !important;
+        width: 34px !important;
+        height: 34px !important;
+        z-index: 10 !important;
+    }
+}
+
+/* Very small phones: make the popup image a little shorter. */
+@media (max-width: 380px) {
+    .angkor-newsletter-card .angkor-newsletter-image {
+        height: 155px !important;
+        min-height: 155px !important;
+        max-height: 155px !important;
+        flex-basis: 155px !important;
+    }
+
+    #templeGrid {
+        gap: 8px !important;
+    }
+
+    #templeGrid .temple-card {
+        padding: 7px !important;
+    }
+}
 
 <style id="angkorlens-top100-list-style">
 /* Top 37 Ancient Sites view — keep it as its own listing page inside AngkorLens. */
@@ -533,6 +659,7 @@ body.top100-view .top100-test-section {
 @media(max-width:900px){.gallery-album-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:640px){.gallery-album-section{padding:30px 14px 55px}.gallery-album-hero{padding:22px}.gallery-album-grid{grid-template-columns:1fr}.gallery-album-title{font-size:30px}}
 </style>
+
 </head>
 <body class="bg-[#fafafa] text-neutral-800 antialiased min-h-screen flex flex-col justify-between">
 
@@ -574,17 +701,17 @@ body.top100-view .top100-test-section {
             </nav>
 
             <div class="flex items-center space-x-3">
-                <div class="flex items-center space-x-1 sm:space-x-3 angkor-header-social">
-                    <a href="https://www.youtube.com/@Urbanwalkstudio" target="_blank" rel="noopener noreferrer" class="w-7 h-7 sm:w-9 sm:h-9 rounded-full bg-red-600 text-white flex items-center justify-center hover:bg-red-700 transition shadow-sm" title="YouTube: Urban walk studio" aria-label="YouTube: Urban walk studio">
-                        <i class="fa-brands fa-youtube text-[11px] sm:text-sm"></i>
+                <div class="hidden sm:flex items-center space-x-3">
+                    <a href="https://www.youtube.com/@Urbanwalkstudio" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-red-600 text-white flex items-center justify-center hover:bg-red-700 transition shadow-sm" title="YouTube: Urban walk studio">
+                        <i class="fa-brands fa-youtube text-sm"></i>
                     </a>
-                    <a href="https://www.facebook.com/UrbanExplorer4K" target="_blank" rel="noopener noreferrer" class="w-7 h-7 sm:w-9 sm:h-9 rounded-full bg-blue-600 text-white flex items-center justify-center hover:bg-blue-700 transition shadow-sm" title="Facebook Page: Urban Explorer 4K" aria-label="Facebook Page: Urban Explorer 4K">
-                        <i class="fa-brands fa-facebook-f text-[11px] sm:text-sm"></i>
+                    <a href="https://www.facebook.com/UrbanExplorer4K" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-blue-600 text-white flex items-center justify-center hover:bg-blue-700 transition shadow-sm" title="Facebook Page: Urban Explorer 4K">
+                        <i class="fa-brands fa-facebook-f text-sm"></i>
                     </a>
-                    <a href="https://www.instagram.com/samnang_2022" target="_blank" rel="noopener noreferrer" class="w-7 h-7 sm:w-9 sm:h-9 rounded-full bg-gradient-to-tr from-yellow-500 via-pink-600 to-purple-700 text-white flex items-center justify-center hover:opacity-90 transition shadow-sm" title="Instagram: samnang_2022" aria-label="Instagram: samnang_2022">
-                        <i class="fa-brands fa-instagram text-[11px] sm:text-sm"></i>
+                    <a href="https://www.instagram.com/samnang_2022" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-gradient-to-tr from-yellow-500 via-pink-600 to-purple-700 text-white flex items-center justify-center hover:opacity-90 transition shadow-sm" title="Instagram: samnang_2022">
+                        <i class="fa-brands fa-instagram text-sm"></i>
                     </a>
-                    
+                    <button type="button" class="angkor-newsletter-icon" onclick="openNewsletterIfNeeded()" title="AngkorLens Newsletter" aria-label="Open AngkorLens Newsletter"><i class="fa-regular fa-envelope text-sm"></i></button>
                 </div>
                 <!-- Mobile Menu Button -->
                 <button onclick="toggleMobileMenu()" class="md:hidden text-neutral-700 hover:text-cyan-600 text-xl p-2 cursor-pointer">
@@ -5372,6 +5499,26 @@ function tryChaEhFallback(img) {
   </div>
 </div>
 
+<!-- AngkorLens Newsletter popup -->
+<div id="angkorNewsletterModal" class="angkor-newsletter-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="angkorNewsletterTitle">
+  <div class="angkor-newsletter-card">
+    <button type="button" class="angkor-newsletter-x" onclick="closeNewsletter()" aria-label="Close">&times;</button>
+    <div class="angkor-newsletter-copy">
+      <div class="angkor-newsletter-kicker">ANGKORLENS REVEALED</div>
+      <h2 id="angkorNewsletterTitle">Sign up for Temple &amp; Heritage Updates</h2>
+      <p>Get featured Khmer temple discoveries, new heritage stories, photography updates, and selected AngkorLens research delivered to your inbox.</p>
+      <form class="angkor-newsletter-form" onsubmit="submitAngkorNewsletter(event)">
+        <input id="angkorNewsletterEmail" type="email" placeholder="Your email address" autocomplete="email" required aria-label="Your email address">
+        <button type="submit">Sign Up</button>
+      </form>
+      <p class="angkor-newsletter-fine">By submitting your information, you agree to receive AngkorLens updates. You can opt out at any time. Privacy Policy | Terms of Use | Contact Us</p>
+    </div>
+    <div class="angkor-newsletter-image">
+      <img src="https://raw.githubusercontent.com/samnangloy01-ai/angkorlen/main/IMG_0713.JPG" alt="Khmer temple heritage">
+    </div>
+  </div>
+</div>
+
 <!-- AngkorLens Google-style welcome prompt -->
 <div id="googleWelcome" class="google-welcome-overlay" role="dialog" aria-modal="true" aria-label="AngkorLens welcome">
   <div class="google-welcome-card">
@@ -5404,46 +5551,22 @@ document.addEventListener('DOMContentLoaded',function(){
 </script>
 
 <!-- Cookie Consent Banner -->
-<div id="cookieConsent" class="cookie-consent" role="dialog" aria-label="Cookie consent" aria-live="polite">
+<div id="cookieConsent" class="cookie-consent" role="dialog" aria-label="Cookie consent">
   <div class="cookie-consent-text">
-    <strong>Cookies on AngkorLens</strong>
-    <span>We use cookies to improve your experience, understand how visitors use our website, and support essential website functions.</span>
-    <a href="https://www.parksconservancy.org/about/privacy#cookies" target="_blank" rel="noopener noreferrer">Privacy &amp; Cookie Policy</a>
+    We use cookies on this site to enhance your user experience.
+    By continuing to use this site, you consent to the use of cookies in accordance with our
+    <a href="https://www.parksconservancy.org/about/privacy#cookies" target="_blank" rel="noopener noreferrer">cookie policy</a>.
   </div>
   <div class="cookie-consent-actions">
-    <button type="button" class="cookie-consent-secondary" onclick="setCookieConsent('essential')">Essential Only</button>
-    <button type="button" class="cookie-consent-secondary" onclick="toggleCookieSettings()">Cookie Settings</button>
-    <button type="button" class="cookie-consent-btn" onclick="setCookieConsent('all')">Accept All</button>
-  </div>
-  <div id="cookieSettingsPanel" class="cookie-settings-panel hidden" aria-hidden="true">
-    <div>
-      <strong>Cookie Settings</strong>
-      <p>Essential cookies are always active because they help the website function. You can choose whether to allow optional cookies.</p>
-    </div>
-    <div class="cookie-settings-actions">
-      <button type="button" class="cookie-consent-secondary" onclick="setCookieConsent('essential')">Essential Only</button>
-      <button type="button" class="cookie-consent-btn" onclick="setCookieConsent('all')">Accept All</button>
-    </div>
+    <button type="button" class="cookie-consent-close" onclick="dismissCookieBanner()">Close</button>
+    <button type="button" class="cookie-consent-btn" onclick="acceptCookies()">Accept</button>
   </div>
 </div>
 
 <script>
-function setCookieConsent(choice){
-  localStorage.setItem("angkorLensCookieConsent",choice);
-  const b=document.getElementById("cookieConsent");
-  if(b)b.classList.add("hidden");
-}
-function toggleCookieSettings(){
-  const p=document.getElementById("cookieSettingsPanel");
-  if(!p)return;
-  const open=p.classList.toggle("hidden")===false;
-  p.setAttribute("aria-hidden",open?"false":"true");
-}
-document.addEventListener("DOMContentLoaded",function(){
-  const c=localStorage.getItem("angkorLensCookieConsent");
-  const b=document.getElementById("cookieConsent");
-  if(b&&(c==="all"||c==="essential"))b.classList.add("hidden");
-});
+function acceptCookies(){localStorage.setItem("angkorLensCookieConsent","accepted");const b=document.getElementById("cookieConsent");if(b)b.classList.add("hidden");}
+function dismissCookieBanner(){localStorage.setItem("angkorLensCookieConsent","dismissed");const b=document.getElementById("cookieConsent");if(b)b.classList.add("hidden");}
+document.addEventListener("DOMContentLoaded",function(){const c=localStorage.getItem("angkorLensCookieConsent");const b=document.getElementById("cookieConsent");if(b&&(c==="accepted"||c==="dismissed"))b.classList.add("hidden");});
 </script>
 
 <script id="reamker-gallery-script">
@@ -8003,7 +8126,7 @@ Prasat Pram (Khvav) — History<br><br>Prasat Pram (Khvav) is a lesser-known anc
             'https://raw.githubusercontent.com/samnangloy01-ai/angkorlen/main/183114459.jpg'
         ];
         const title = 'Neak Ta Ceremony / Traditional Khmer Beliefs';
-        const history = `<strong>English — :</strong> Neak Ta traditions are an important part of Khmer cultural life, connecting families and communities with ancestral beliefs, sacred places, nature, and the history of the land. In many Cambodian communities, people respectfully honor Neak Ta as protective spirits associated with villages, fields, forests, water sources, ancient sites, and important local places. These traditions are passed from parents and elders to younger generations through ceremonies, offerings, prayers, stories, and community gatherings. The annual ceremony can bring relatives, neighbors, and community members together to prepare food, flowers, incense, fruits, drinks, and other offerings. People may ask for health, safety, peace, successful harvests, family happiness, and protection from difficulties. The ceremony also provides an opportunity for older generations to teach younger people about respect, responsibility, gratitude, and traditional values. Around the Angkor region, these beliefs are especially meaningful because cultural landscapes include temples, villages, reservoirs, rice fields, forests, roads, and sacred locations that have supported community life for centuries. Neak Ta traditions therefore help connect the visible heritage of ancient Cambodia with living traditions practiced today. They show that Cambodian heritage is not limited to stone monuments, but also includes beliefs, memories, relationships, rituals, and everyday community life. By preserving respectful traditions and documenting ceremonies through photographs, communities can share their cultural knowledge with future generations while helping visitors understand the continuing relationship between people, place, history, spirituality, and Khmer identity. These practices encourage cooperation, kindness, and care for shared places, reminding everyone that heritage remains meaningful when communities protect it together.<br><br><strong>ខ្មែរ — ៖</strong> ប្រពៃណី អ្នកតា គឺជា ផ្នែក សំខាន់ នៃ ជីវិត វប្បធម៌ ខ្មែរ ដែល ភ្ជាប់ មនុស្ស គ្រួសារ និង សហគមន៍ ជាមួយ ជំនឿ បុរាណ ទីកន្លែង សក្ការៈ ធម្មជាតិ និង ប្រវត្តិសាស្ត្រ នៃ ទឹកដី។ នៅ ក្នុង សហគមន៍ ជាច្រើន ប្រជាជន ខ្មែរ គោរព អ្នកតា ជា វិញ្ញាណ អាណាព្យាបាល ដែល មាន ទំនាក់ទំនង ជាមួយ ភូមិ ស្រែ ព្រៃ ទឹក បឹង ផ្លូវ បុរាណ និង ទីកន្លែង សំខាន់ ក្នុង មូលដ្ឋាន។ ទំនៀមទម្លាប់ ទាំងនេះ ត្រូវបាន បន្ត ពី ឪពុកម្តាយ ជីដូនជីតា និង អ្នកចាស់ទុំ ទៅ កាន់ កូនចៅ តាមរយៈ ពិធី សែន ការអធិស្ឋាន រឿងរ៉ាវ ការណែនាំ និង ការជួបជុំ សហគមន៍។ នៅ ពេល មាន ពិធី ប្រជាជន អាច រៀបចំ ម្ហូបអាហារ ផ្លែឈើ ផ្កា ធូប ភេសជ្ជៈ និង គ្រឿងសំណែន ដើម្បី បង្ហាញ ការគោរព និង ការដឹងគុណ។ ពួកគេ សុំ សុខភាព ល្អ សុវត្ថិភាព សន្តិភាព សំណាងល្អ ផលដំណាំ ភាពសុខដុមរមនា និង ការការពារ សម្រាប់ គ្រួសារ និង ភូមិ។ ពិធី អ្នកតា ក៏ ជា ឱកាស ឱ្យ អ្នកចាស់ទុំ បង្រៀន យុវជន អំពី ការគោរព ការទទួលខុសត្រូវ សេចក្តីថ្លៃថ្នូរ ការដឹងគុណ និង តម្លៃ ប្រពៃណី។ នៅ តំបន់ អង្គរ ជំនឿ និង ប្រពៃណី អ្នកតា មាន អត្ថន័យ ពិសេស ព្រោះ ទេសភាព វប្បធម៌ មាន ប្រាសាទ ភូមិ អាងទឹក ស្រែចម្ការ ព្រៃឈើ ផ្លូវ និង ទីតាំង សក្ការៈ ដែល គាំទ្រ ជីវិត សហគមន៍ អស់ រយៈពេល យូរ។ ដូច្នេះ ប្រពៃណី អ្នកតា ជួយ ភ្ជាប់ បេតិកភណ្ឌ បុរាណ ដែល អាច មើលឃើញ ជាមួយ ប្រពៃណី រស់ ដែល ប្រជាជន នៅតែ អនុវត្ត នៅ សព្វថ្ងៃ។ វា បង្ហាញថា បេតិកភណ្ឌ ខ្មែរ មិនមែន មាន តែ ប្រាសាទ ថ្ម និង សំណង់ បុរាណ ប៉ុណ្ណោះ ទេ ប៉ុន្តែ រួមមាន ជំនឿ ការចងចាំ ទំនាក់ទំនង ពិធីការ ចំណេះដឹង និង ជីវិត ប្រចាំថ្ងៃ របស់ សហគមន៍។ ការថតរូប និង ការកត់ត្រា ពិធី ទាំងនេះ អាច ជួយ រក្សា ចំណេះដឹង វប្បធម៌ សម្រាប់ ជំនាន់ ក្រោយ និង ជួយ អ្នកទស្សនា យល់ អំពី ទំនាក់ទំនង រវាង មនុស្ស ទីកន្លែង ប្រវត្តិសាស្ត្រ ធម្មជាតិ ជំនឿ និង អត្តសញ្ញាណ ខ្មែរ។ ប្រពៃណី នេះ ក៏ ជំរុញ ការសហការ សេចក្តីមេត្តា និង ការថែរក្សា ទីកន្លែង រួម ដោយ រំលឹក មនុស្ស គ្រប់រូប ថា បេតិកភណ្ឌ មាន អត្ថន័យ នៅពេល សហគមន៍ បន្ត ការពារ វា។<br><br><strong>Lerng Neak Ta</strong>, meaning the <strong>“ceremony of going up to Neak Ta,”</strong> is an important traditional Khmer spiritual practice rooted in Cambodia's ancient beliefs about guardian spirits. A Neak Ta is traditionally understood as a protective spirit connected with a particular place, community, ancestral territory, ancient mound, temple, or sacred landscape. The tradition remains part of community life in many parts of Cambodia.<br><br>Around the Angkor region, one important form of the ceremony is called <strong>Lerng Meak</strong>, or Lerng Neak Ta. It is traditionally held around the <strong>third waxing day of the month of Meak</strong>, after the rice harvest has been completed. The ceremony marks the conclusion of one agricultural cycle and the beginning of preparation for the next. Villagers gather at a Neak Ta shrine, ancient mound, temple, monastery, or another place regarded as sacred by the community.<br><br>The ceremony has several purposes. People make offerings and prayers asking for <strong>peace, good health, protection from illness, sufficient rainfall, fertile soil, abundant crops, and the well-being of animals and the community</strong>. In this way, the ceremony connects spiritual belief with the agricultural life of rural Cambodian communities.<br><br>Offerings differ from one community to another. They may include <strong>rice, noodles, cooked food, desserts, fruit, flowers, candles, incense, drinks, cigarettes, chickens, and a pig's head</strong>, depending on local customs and the resources of the villagers. Some communities also prepare special foods or build symbolic piles of rice.<br><br>Some ceremonies include <strong>spirit-medium practices</strong>, traditional music, and the ritual representation or invocation of the Neak Ta. The exact form varies greatly from one village to another. These differences are important because Neak Ta traditions are transmitted locally from generation to generation rather than following one standardized national ceremony.<br><br>Neak Ta beliefs are also connected with other Cambodian cultural traditions. UNESCO, for example, documents the role of Neak Ta guardian spirits in <strong>Lkhon Khol Wat Svay Andet</strong>, where ritual performances are conducted to honor the spirits and seek protection and prosperity for the community and its agricultural lands.<br><br>Today, <strong>Lerng Neak Ta remains an important example of living Khmer intangible heritage</strong>, demonstrating the continuing relationship between Cambodian communities, their ancestors, sacred landscapes, and the agricultural environment.`
+        const history = `<strong>English — 250 words:</strong> Neak Ta traditions are an important part of Khmer cultural life, connecting families and communities with ancestral beliefs, sacred places, nature, and the history of the land. In many Cambodian communities, people respectfully honor Neak Ta as protective spirits associated with villages, fields, forests, water sources, ancient sites, and important local places. These traditions are passed from parents and elders to younger generations through ceremonies, offerings, prayers, stories, and community gatherings. The annual ceremony can bring relatives, neighbors, and community members together to prepare food, flowers, incense, fruits, drinks, and other offerings. People may ask for health, safety, peace, successful harvests, family happiness, and protection from difficulties. The ceremony also provides an opportunity for older generations to teach younger people about respect, responsibility, gratitude, and traditional values. Around the Angkor region, these beliefs are especially meaningful because cultural landscapes include temples, villages, reservoirs, rice fields, forests, roads, and sacred locations that have supported community life for centuries. Neak Ta traditions therefore help connect the visible heritage of ancient Cambodia with living traditions practiced today. They show that Cambodian heritage is not limited to stone monuments, but also includes beliefs, memories, relationships, rituals, and everyday community life. By preserving respectful traditions and documenting ceremonies through photographs, communities can share their cultural knowledge with future generations while helping visitors understand the continuing relationship between people, place, history, spirituality, and Khmer identity. These practices encourage cooperation, kindness, and care for shared places, reminding everyone that heritage remains meaningful when communities protect it together.<br><br><strong>ខ្មែរ — ២៥០ ពាក្យ៖</strong> ប្រពៃណី អ្នកតា គឺជា ផ្នែក សំខាន់ នៃ ជីវិត វប្បធម៌ ខ្មែរ ដែល ភ្ជាប់ មនុស្ស គ្រួសារ និង សហគមន៍ ជាមួយ ជំនឿ បុរាណ ទីកន្លែង សក្ការៈ ធម្មជាតិ និង ប្រវត្តិសាស្ត្រ នៃ ទឹកដី។ នៅ ក្នុង សហគមន៍ ជាច្រើន ប្រជាជន ខ្មែរ គោរព អ្នកតា ជា វិញ្ញាណ អាណាព្យាបាល ដែល មាន ទំនាក់ទំនង ជាមួយ ភូមិ ស្រែ ព្រៃ ទឹក បឹង ផ្លូវ បុរាណ និង ទីកន្លែង សំខាន់ ក្នុង មូលដ្ឋាន។ ទំនៀមទម្លាប់ ទាំងនេះ ត្រូវបាន បន្ត ពី ឪពុកម្តាយ ជីដូនជីតា និង អ្នកចាស់ទុំ ទៅ កាន់ កូនចៅ តាមរយៈ ពិធី សែន ការអធិស្ឋាន រឿងរ៉ាវ ការណែនាំ និង ការជួបជុំ សហគមន៍។ នៅ ពេល មាន ពិធី ប្រជាជន អាច រៀបចំ ម្ហូបអាហារ ផ្លែឈើ ផ្កា ធូប ភេសជ្ជៈ និង គ្រឿងសំណែន ដើម្បី បង្ហាញ ការគោរព និង ការដឹងគុណ។ ពួកគេ សុំ សុខភាព ល្អ សុវត្ថិភាព សន្តិភាព សំណាងល្អ ផលដំណាំ ភាពសុខដុមរមនា និង ការការពារ សម្រាប់ គ្រួសារ និង ភូមិ។ ពិធី អ្នកតា ក៏ ជា ឱកាស ឱ្យ អ្នកចាស់ទុំ បង្រៀន យុវជន អំពី ការគោរព ការទទួលខុសត្រូវ សេចក្តីថ្លៃថ្នូរ ការដឹងគុណ និង តម្លៃ ប្រពៃណី។ នៅ តំបន់ អង្គរ ជំនឿ និង ប្រពៃណី អ្នកតា មាន អត្ថន័យ ពិសេស ព្រោះ ទេសភាព វប្បធម៌ មាន ប្រាសាទ ភូមិ អាងទឹក ស្រែចម្ការ ព្រៃឈើ ផ្លូវ និង ទីតាំង សក្ការៈ ដែល គាំទ្រ ជីវិត សហគមន៍ អស់ រយៈពេល យូរ។ ដូច្នេះ ប្រពៃណី អ្នកតា ជួយ ភ្ជាប់ បេតិកភណ្ឌ បុរាណ ដែល អាច មើលឃើញ ជាមួយ ប្រពៃណី រស់ ដែល ប្រជាជន នៅតែ អនុវត្ត នៅ សព្វថ្ងៃ។ វា បង្ហាញថា បេតិកភណ្ឌ ខ្មែរ មិនមែន មាន តែ ប្រាសាទ ថ្ម និង សំណង់ បុរាណ ប៉ុណ្ណោះ ទេ ប៉ុន្តែ រួមមាន ជំនឿ ការចងចាំ ទំនាក់ទំនង ពិធីការ ចំណេះដឹង និង ជីវិត ប្រចាំថ្ងៃ របស់ សហគមន៍។ ការថតរូប និង ការកត់ត្រា ពិធី ទាំងនេះ អាច ជួយ រក្សា ចំណេះដឹង វប្បធម៌ សម្រាប់ ជំនាន់ ក្រោយ និង ជួយ អ្នកទស្សនា យល់ អំពី ទំនាក់ទំនង រវាង មនុស្ស ទីកន្លែង ប្រវត្តិសាស្ត្រ ធម្មជាតិ ជំនឿ និង អត្តសញ្ញាណ ខ្មែរ។ ប្រពៃណី នេះ ក៏ ជំរុញ ការសហការ សេចក្តីមេត្តា និង ការថែរក្សា ទីកន្លែង រួម ដោយ រំលឹក មនុស្ស គ្រប់រូប ថា បេតិកភណ្ឌ មាន អត្ថន័យ នៅពេល សហគមន៍ បន្ត ការពារ វា។<br><br><strong>Lerng Neak Ta</strong>, meaning the <strong>“ceremony of going up to Neak Ta,”</strong> is an important traditional Khmer spiritual practice rooted in Cambodia's ancient beliefs about guardian spirits. A Neak Ta is traditionally understood as a protective spirit connected with a particular place, community, ancestral territory, ancient mound, temple, or sacred landscape. The tradition remains part of community life in many parts of Cambodia.<br><br>Around the Angkor region, one important form of the ceremony is called <strong>Lerng Meak</strong>, or Lerng Neak Ta. It is traditionally held around the <strong>third waxing day of the month of Meak</strong>, after the rice harvest has been completed. The ceremony marks the conclusion of one agricultural cycle and the beginning of preparation for the next. Villagers gather at a Neak Ta shrine, ancient mound, temple, monastery, or another place regarded as sacred by the community.<br><br>The ceremony has several purposes. People make offerings and prayers asking for <strong>peace, good health, protection from illness, sufficient rainfall, fertile soil, abundant crops, and the well-being of animals and the community</strong>. In this way, the ceremony connects spiritual belief with the agricultural life of rural Cambodian communities.<br><br>Offerings differ from one community to another. They may include <strong>rice, noodles, cooked food, desserts, fruit, flowers, candles, incense, drinks, cigarettes, chickens, and a pig's head</strong>, depending on local customs and the resources of the villagers. Some communities also prepare special foods or build symbolic piles of rice.<br><br>Some ceremonies include <strong>spirit-medium practices</strong>, traditional music, and the ritual representation or invocation of the Neak Ta. The exact form varies greatly from one village to another. These differences are important because Neak Ta traditions are transmitted locally from generation to generation rather than following one standardized national ceremony.<br><br>Neak Ta beliefs are also connected with other Cambodian cultural traditions. UNESCO, for example, documents the role of Neak Ta guardian spirits in <strong>Lkhon Khol Wat Svay Andet</strong>, where ritual performances are conducted to honor the spirits and seek protection and prosperity for the community and its agricultural lands.<br><br>Today, <strong>Lerng Neak Ta remains an important example of living Khmer intangible heritage</strong>, demonstrating the continuing relationship between Cambodian communities, their ancestors, sacred landscapes, and the agricultural environment.`
         openModal('ឡើងអ្នកតា', title, photos, history);
         return;
     }
@@ -8011,7 +8134,7 @@ Prasat Pram (Khvav) — History<br><br>Prasat Pram (Khvav) is a lesser-known anc
     if(q === 'floating village'){
         const photos = ['https://raw.githubusercontent.com/samnangloy01-ai/angkorlen/main/IMG_7411.jpg', 'https://raw.githubusercontent.com/samnangloy01-ai/angkorlen/main/IMG_7412.jpg', 'https://raw.githubusercontent.com/samnangloy01-ai/angkorlen/main/IMG_7413.jpg', 'https://raw.githubusercontent.com/samnangloy01-ai/angkorlen/main/IMG_7417.jpg', 'https://raw.githubusercontent.com/samnangloy01-ai/angkorlen/main/IMG_7452.jpg', 'https://raw.githubusercontent.com/samnangloy01-ai/angkorlen/main/IMG_7453.jpg', 'https://raw.githubusercontent.com/samnangloy01-ai/angkorlen/main/IMG_7683.jpg', 'https://raw.githubusercontent.com/samnangloy01-ai/angkorlen/main/IMG_7686.jpg', 'https://raw.githubusercontent.com/samnangloy01-ai/angkorlen/main/IMG_7688.jpg', 'https://raw.githubusercontent.com/samnangloy01-ai/angkorlen/main/IMG_7689.JPG', 'https://raw.githubusercontent.com/samnangloy01-ai/angkorlen/main/IMG_7690.jpg', 'https://raw.githubusercontent.com/samnangloy01-ai/angkorlen/main/IMG_7691.jpg', 'https://raw.githubusercontent.com/samnangloy01-ai/angkorlen/main/IMG_7692.jpg', 'https://raw.githubusercontent.com/samnangloy01-ai/angkorlen/main/IMG_7696.jpg', 'https://raw.githubusercontent.com/samnangloy01-ai/angkorlen/main/IMG_7697.jpg', 'https://raw.githubusercontent.com/samnangloy01-ai/angkorlen/main/IMG_7698.jpg'];
         const title = 'Floating Village';
-        const history = `<strong>Floating Village — ភូមិបណ្តែតទឹក</strong><br><br><strong>English — </strong><br><br>Floating villages are distinctive Cambodian communities built around water, where homes, boats, fishing areas, markets, schools, and daily activities adapt to changing lake conditions. Many are associated with the Tonle Sap, one of Southeast Asia’s important freshwater systems. Water is not simply part of the landscape; it is central to transportation, food, work, family life, and community connections. For many residents, boats function like roads, carrying people between homes, markets, schools, fishing grounds, and nearby communities.<br><br>Life in a floating village follows the seasonal rhythm of the water. During the wet season, water levels rise and expand across the lake and floodplain. During the dry season, the landscape changes again, affecting fishing, travel, and the location of homes and activities. Families have developed practical knowledge to live with these changes, passing skills and traditions from one generation to the next.<br><br>Fishing is an important part of life for many families. Knowledge about fish, water conditions, weather, boats, and seasonal movements is learned through experience and shared within families. Boats are also used for transportation, trade, carrying supplies, visiting relatives, and reaching services. Children grow up learning how to move safely on the water and how to respect the environment that supports their community.<br><br>The photographs in this AngkorLens collection document everyday scenes of floating life: wooden houses, boats, fishing equipment, waterways, families, working spaces, and wide views across the water. These images show that a floating village is not simply a tourist destination. It is a living community with routines, relationships, skills, challenges, and traditions.<br><br>Floating communities also demonstrate the close relationship between Cambodian people and the natural environment. Seasonal flooding provides resources but can also create difficulties. Protecting these communities therefore means respecting local people, their livelihoods, water resources, cultural traditions, and changing ways of life.<br><br>For AngkorLens, the floating village collection preserves more than scenery. It records a living part of Cambodian cultural heritage and shows how people continue to adapt, work, cooperate, and build family life around water. These photographs help future generations understand the diversity, resilience, creativity, and everyday character of communities living on Cambodia’s waterways.<br><br><strong>ប្រវត្តិ និងការពិពណ៌នាជាភាសាខ្មែរ — </strong><br><br>ភូមិបណ្តែតទឹក គឺជាសហគមន៍ពិសេសរបស់កម្ពុជា ដែលប្រជាជនរស់នៅជាមួយទឹក ហើយបានកែសម្របជីវិតប្រចាំថ្ងៃទៅតាមការឡើងចុះនៃទឹក។ ភូមិបណ្តែតទឹកជាច្រើនមានទំនាក់ទំនងជាមួយបឹងទន្លេសាប ដែលជាប្រព័ន្ធទឹកសាបដ៏សំខាន់សម្រាប់ការនេសាទ ការធ្វើដំណើរ ជីវភាពគ្រួសារ និងសកម្មភាពសេដ្ឋកិច្ចរបស់ប្រជាជនមូលដ្ឋាន។ សម្រាប់អ្នករស់នៅទីនេះ ទូកមានតួនាទីដូចជាផ្លូវនៅលើដី ដោយប្រើសម្រាប់ទៅផ្ទះ ទៅផ្សារ ទៅសាលារៀន ទៅកន្លែងនេសាទ និងទៅសហគមន៍ជិតខាង។<br><br>ជីវិតនៅភូមិបណ្តែតទឹកមានការផ្លាស់ប្តូរតាមរដូវ។ នៅរដូវវស្សា ទឹកឡើងខ្ពស់ និងពង្រីកផ្ទៃទឹក ខណៈរដូវប្រាំង ទេសភាព និងទីតាំងសកម្មភាពផ្សេងៗក៏ប្រែប្រួល។ ប្រជាជនបានបង្កើតចំណេះដឹង និងវិធីរស់នៅដែលសមស្របនឹងការប្រែប្រួលទាំងនេះ ហើយបន្តបង្រៀនដល់កូនចៅតាមរយៈបទពិសោធន៍ប្រចាំថ្ងៃ។<br><br>ការនេសាទគឺជាមុខរបរសំខាន់សម្រាប់គ្រួសារជាច្រើន។ ចំណេះដឹងអំពីត្រី ទឹក អាកាសធាតុ រដូវ និងការប្រើប្រាស់ទូក ត្រូវបានបន្តពីមនុស្សចាស់ទៅកាន់ជំនាន់ក្រោយ។ ទូកក៏ត្រូវបានប្រើសម្រាប់ដឹកជញ្ជូន ដឹកទំនិញ ទៅធ្វើការ ទៅសាលារៀន និងទំនាក់ទំនងរវាងគ្រួសារ។ កុមាររៀនប្រើទឹកដោយសុវត្ថិភាព និងរៀនគោរពបរិស្ថានជុំវិញខ្លួន។<br><br>រូបភាពក្នុង AngkorLens បង្ហាញពីផ្ទះឈើ ទូក ឧបករណ៍នេសាទ ផ្លូវទឹក ក្រុមគ្រួសារ និងទេសភាពបឹង។ វាបង្ហាញថា ភូមិបណ្តែតទឹកមិនមែនជាកន្លែងទេសចរណ៍តែប៉ុណ្ណោះទេ ប៉ុន្តែជាសហគមន៍រស់ដែលមានការងារ ទំនាក់ទំនង ប្រពៃណី និងរបៀបរស់នៅផ្ទាល់ខ្លួន។<br><br>ភូមិបណ្តែតទឹកក៏បង្ហាញពីទំនាក់ទំនងជិតស្និទ្ធរវាងមនុស្សខ្មែរ និងធម្មជាតិ។ ការអភិរក្សសហគមន៍ទឹកមានន័យថា ត្រូវគោរពប្រជាជន ជីវភាព វប្បធម៌ ប្រពៃណី និងធនធានទឹក។ សម្រាប់ AngkorLens រូបថតទាំងនេះជាកំណត់ត្រានៃបេតិកភណ្ឌរស់ ដែលបង្ហាញពីភាពអត់ធ្មត់ ភាពច្នៃប្រឌិត សាមគ្គីភាព និងការសម្របខ្លួនរបស់ប្រជាជនខ្មែរ។`;
+        const history = `<strong>Floating Village — ភូមិបណ្តែតទឹក</strong><br><br><strong>English — 350 words</strong><br><br>Floating villages are distinctive Cambodian communities built around water, where homes, boats, fishing areas, markets, schools, and daily activities adapt to changing lake conditions. Many are associated with the Tonle Sap, one of Southeast Asia’s important freshwater systems. Water is not simply part of the landscape; it is central to transportation, food, work, family life, and community connections. For many residents, boats function like roads, carrying people between homes, markets, schools, fishing grounds, and nearby communities.<br><br>Life in a floating village follows the seasonal rhythm of the water. During the wet season, water levels rise and expand across the lake and floodplain. During the dry season, the landscape changes again, affecting fishing, travel, and the location of homes and activities. Families have developed practical knowledge to live with these changes, passing skills and traditions from one generation to the next.<br><br>Fishing is an important part of life for many families. Knowledge about fish, water conditions, weather, boats, and seasonal movements is learned through experience and shared within families. Boats are also used for transportation, trade, carrying supplies, visiting relatives, and reaching services. Children grow up learning how to move safely on the water and how to respect the environment that supports their community.<br><br>The photographs in this AngkorLens collection document everyday scenes of floating life: wooden houses, boats, fishing equipment, waterways, families, working spaces, and wide views across the water. These images show that a floating village is not simply a tourist destination. It is a living community with routines, relationships, skills, challenges, and traditions.<br><br>Floating communities also demonstrate the close relationship between Cambodian people and the natural environment. Seasonal flooding provides resources but can also create difficulties. Protecting these communities therefore means respecting local people, their livelihoods, water resources, cultural traditions, and changing ways of life.<br><br>For AngkorLens, the floating village collection preserves more than scenery. It records a living part of Cambodian cultural heritage and shows how people continue to adapt, work, cooperate, and build family life around water. These photographs help future generations understand the diversity, resilience, creativity, and everyday character of communities living on Cambodia’s waterways.<br><br><strong>ប្រវត្តិ និងការពិពណ៌នាជាភាសាខ្មែរ — 250 words</strong><br><br>ភូមិបណ្តែតទឹក គឺជាសហគមន៍ពិសេសរបស់កម្ពុជា ដែលប្រជាជនរស់នៅជាមួយទឹក ហើយបានកែសម្របជីវិតប្រចាំថ្ងៃទៅតាមការឡើងចុះនៃទឹក។ ភូមិបណ្តែតទឹកជាច្រើនមានទំនាក់ទំនងជាមួយបឹងទន្លេសាប ដែលជាប្រព័ន្ធទឹកសាបដ៏សំខាន់សម្រាប់ការនេសាទ ការធ្វើដំណើរ ជីវភាពគ្រួសារ និងសកម្មភាពសេដ្ឋកិច្ចរបស់ប្រជាជនមូលដ្ឋាន។ សម្រាប់អ្នករស់នៅទីនេះ ទូកមានតួនាទីដូចជាផ្លូវនៅលើដី ដោយប្រើសម្រាប់ទៅផ្ទះ ទៅផ្សារ ទៅសាលារៀន ទៅកន្លែងនេសាទ និងទៅសហគមន៍ជិតខាង។<br><br>ជីវិតនៅភូមិបណ្តែតទឹកមានការផ្លាស់ប្តូរតាមរដូវ។ នៅរដូវវស្សា ទឹកឡើងខ្ពស់ និងពង្រីកផ្ទៃទឹក ខណៈរដូវប្រាំង ទេសភាព និងទីតាំងសកម្មភាពផ្សេងៗក៏ប្រែប្រួល។ ប្រជាជនបានបង្កើតចំណេះដឹង និងវិធីរស់នៅដែលសមស្របនឹងការប្រែប្រួលទាំងនេះ ហើយបន្តបង្រៀនដល់កូនចៅតាមរយៈបទពិសោធន៍ប្រចាំថ្ងៃ។<br><br>ការនេសាទគឺជាមុខរបរសំខាន់សម្រាប់គ្រួសារជាច្រើន។ ចំណេះដឹងអំពីត្រី ទឹក អាកាសធាតុ រដូវ និងការប្រើប្រាស់ទូក ត្រូវបានបន្តពីមនុស្សចាស់ទៅកាន់ជំនាន់ក្រោយ។ ទូកក៏ត្រូវបានប្រើសម្រាប់ដឹកជញ្ជូន ដឹកទំនិញ ទៅធ្វើការ ទៅសាលារៀន និងទំនាក់ទំនងរវាងគ្រួសារ។ កុមាររៀនប្រើទឹកដោយសុវត្ថិភាព និងរៀនគោរពបរិស្ថានជុំវិញខ្លួន។<br><br>រូបភាពក្នុង AngkorLens បង្ហាញពីផ្ទះឈើ ទូក ឧបករណ៍នេសាទ ផ្លូវទឹក ក្រុមគ្រួសារ និងទេសភាពបឹង។ វាបង្ហាញថា ភូមិបណ្តែតទឹកមិនមែនជាកន្លែងទេសចរណ៍តែប៉ុណ្ណោះទេ ប៉ុន្តែជាសហគមន៍រស់ដែលមានការងារ ទំនាក់ទំនង ប្រពៃណី និងរបៀបរស់នៅផ្ទាល់ខ្លួន។<br><br>ភូមិបណ្តែតទឹកក៏បង្ហាញពីទំនាក់ទំនងជិតស្និទ្ធរវាងមនុស្សខ្មែរ និងធម្មជាតិ។ ការអភិរក្សសហគមន៍ទឹកមានន័យថា ត្រូវគោរពប្រជាជន ជីវភាព វប្បធម៌ ប្រពៃណី និងធនធានទឹក។ សម្រាប់ AngkorLens រូបថតទាំងនេះជាកំណត់ត្រានៃបេតិកភណ្ឌរស់ ដែលបង្ហាញពីភាពអត់ធ្មត់ ភាពច្នៃប្រឌិត សាមគ្គីភាព និងការសម្របខ្លួនរបស់ប្រជាជនខ្មែរ។`;
         openModal('Floating Village', 'ភូមិបណ្តែតទឹក', photos, history);
         return;
     }
@@ -8053,18 +8176,27 @@ function showAngkorLegalIfNeeded(){
     if(el && localStorage.getItem('angkorLensLegalAccepted')!=='accepted') el.classList.remove('hidden');
 }
 
-/* Newsletter bottom-section behavior. The old AngkorLens custom popup has been removed.
-   Mailchimp now handles the live newsletter popup and email collection. */
+/* Newsletter: the icon always opens it again until the visitor signs up. */
+function openNewsletterIfNeeded(){
+    if(localStorage.getItem('angkorLensNewsletterSubscribed')==='yes') return;
+    const el=document.getElementById('angkorNewsletterModal');
+    if(el) el.classList.remove('hidden');
+}
+function closeNewsletter(){
+    const el=document.getElementById('angkorNewsletterModal');
+    if(el) el.classList.add('hidden');
+}
 function submitAngkorNewsletter(event){
     event.preventDefault();
-    const form=event.target;
-    const email=form ? form.querySelector('input[type="email"]') : null;
+    const email=document.getElementById('angkorNewsletterEmail');
     if(!email || !email.value) return;
     localStorage.setItem('angkorLensNewsletterSubscribed','yes');
     refreshNewsletterVisibility();
+    closeNewsletter();
     alert('Thank you for signing up for AngkorLens updates.');
 }
 
+/* Newsletter behavior: show on every visit and after photo clicks until the visitor signs up. */
 function refreshNewsletterVisibility(){
     const subscribed = localStorage.getItem('angkorLensNewsletterSubscribed') === 'yes';
     const bottom = document.getElementById('newsletter-bottom');
@@ -8075,6 +8207,27 @@ document.addEventListener('DOMContentLoaded',function(){
     // Keep the temple-name index hidden until the 3rd LOAD MORE click.
     showAngkorLegalIfNeeded();
     refreshNewsletterVisibility();
+
+    // Every visit: reopen the newsletter unless the visitor has signed up.
+    setTimeout(function(){
+        if(localStorage.getItem('angkorLensNewsletterSubscribed')!=='yes'){
+            openNewsletterIfNeeded();
+        }
+    }, 3500);
+
+    // Every temple/photo click: reopen the newsletter until signup.
+    document.addEventListener('click',function(event){
+        if(localStorage.getItem('angkorLensNewsletterSubscribed')==='yes') return;
+
+        const photoTarget = event.target.closest(
+            '.temple-card img, .temple-card [onclick*="openModal"], .temple-card [onclick*="openPhotoMembership"], .temple-card [onclick*="openLightbox"]'
+        );
+        if(!photoTarget) return;
+
+        setTimeout(function(){
+            openNewsletterIfNeeded();
+        }, 250);
+    }, true);
 });
 </script>
 
@@ -8200,294 +8353,6 @@ function openPrasatTrungLolok(){
   }
 }
 </style>
-
-
-<!-- AngkorLens Newsletter: single custom popup using the Mailchimp embedded signup endpoint -->
-<style>
-  #angkorLensNewsletterOverlay{
-    position:fixed;
-    inset:0;
-    z-index:2147483000;
-    display:none;
-    align-items:center;
-    justify-content:center;
-    padding:24px;
-    background:rgba(0,0,0,.70);
-    backdrop-filter:blur(3px);
-    -webkit-backdrop-filter:blur(3px);
-  }
-  #angkorLensNewsletterOverlay.al-show{display:flex}
-  .al-newsletter-card{
-    position:relative;
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    width:min(900px,94vw);
-    min-height:460px;
-    max-height:calc(100vh - 48px);
-    overflow:hidden;
-    border-radius:20px;
-    background:#fff;
-    box-shadow:0 24px 70px rgba(0,0,0,.35);
-  }
-  .al-newsletter-copy{
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    padding:42px 42px 36px;
-  }
-  .al-newsletter-kicker{
-    display:inline-flex;
-    align-items:center;
-    width:max-content;
-    margin-bottom:18px;
-    padding-top:8px;
-    border-top:3px solid #c62828;
-    color:#c62828;
-    font:700 13px/1.2 Arial,sans-serif;
-    letter-spacing:2px;
-  }
-  .al-newsletter-copy h2{
-    margin:0 0 18px;
-    color:#222;
-    font-family:Georgia,"Times New Roman",serif;
-    font-size:clamp(31px,3.1vw,43px);
-    line-height:1.02;
-    font-weight:500;
-  }
-  .al-newsletter-copy > p{
-    margin:0 0 24px;
-    color:#555;
-    font:16px/1.6 Arial,sans-serif;
-  }
-  .al-newsletter-form{
-    display:flex;
-    align-items:center;
-    gap:9px;
-    margin:0;
-  }
-  .al-newsletter-form input[type="email"]{
-    flex:1 1 auto;
-    min-width:0;
-    height:48px;
-    padding:0 16px;
-    border:1px solid #c9c9c9;
-    border-radius:25px;
-    outline:none;
-    background:#fff;
-    color:#222;
-    font:15px Arial,sans-serif;
-  }
-  .al-newsletter-form input[type="email"]:focus{
-    border-color:#888;
-    box-shadow:0 0 0 3px rgba(0,0,0,.06);
-  }
-  .al-newsletter-form button{
-    flex:0 0 auto;
-    height:48px;
-    padding:0 21px;
-    border:0;
-    border-radius:25px;
-    background:#252525;
-    color:#fff;
-    cursor:pointer;
-    font:700 16px Arial,sans-serif;
-  }
-  .al-newsletter-form button:hover{background:#111}
-  .al-newsletter-fine{
-    margin:25px 0 0 !important;
-    color:#888 !important;
-    font:11px/1.45 Arial,sans-serif !important;
-  }
-  .al-newsletter-image{
-    min-height:460px;
-    background:#eee;
-  }
-  .al-newsletter-image img{
-    display:block;
-    width:100%;
-    height:100%;
-    min-height:460px;
-    object-fit:cover;
-  }
-  .al-newsletter-close{
-    position:absolute;
-    top:12px;
-    right:12px;
-    z-index:2;
-    width:40px;
-    height:40px;
-    border:1px solid rgba(255,255,255,.75);
-    border-radius:50%;
-    background:rgba(20,20,20,.62);
-    color:#fff;
-    cursor:pointer;
-    font:400 27px/36px Arial,sans-serif;
-  }
-  .al-newsletter-close:hover{background:rgba(0,0,0,.82)}
-  .al-newsletter-status{
-    display:none;
-    margin-top:12px;
-    color:#2e7d32;
-    font:13px/1.4 Arial,sans-serif;
-  }
-  @media (max-width:700px){
-    #angkorLensNewsletterOverlay{
-      padding:14px;
-      align-items:center;
-    }
-    .al-newsletter-card{
-      display:flex;
-      flex-direction:column;
-      width:min(430px,96vw);
-      max-height:calc(100vh - 28px);
-      border-radius:17px;
-      overflow:auto;
-    }
-    .al-newsletter-image{
-      order:-1;
-      min-height:180px;
-      height:180px;
-    }
-    .al-newsletter-image img{
-      min-height:180px;
-      height:180px;
-      object-fit:cover;
-    }
-    .al-newsletter-copy{
-      padding:27px 23px 25px;
-    }
-    .al-newsletter-kicker{margin-bottom:13px;font-size:11px}
-    .al-newsletter-copy h2{
-      margin-bottom:13px;
-      font-size:29px;
-      line-height:1.08;
-    }
-    .al-newsletter-copy > p{
-      margin-bottom:18px;
-      font-size:14px;
-      line-height:1.5;
-    }
-    .al-newsletter-form{
-      flex-direction:column;
-      align-items:stretch;
-    }
-    .al-newsletter-form input[type="email"],
-    .al-newsletter-form button{
-      width:100%;
-    }
-    .al-newsletter-close{
-      top:9px;
-      right:9px;
-      width:37px;
-      height:37px;
-      font-size:24px;
-      line-height:33px;
-    }
-  }
-</style>
-
-<div id="angkorLensNewsletterOverlay" aria-hidden="true">
-  <div class="al-newsletter-card" role="dialog" aria-modal="true" aria-labelledby="alNewsletterTitle">
-    <button type="button" class="al-newsletter-close" aria-label="Close newsletter" onclick="alCloseNewsletter()">×</button>
-
-    <div class="al-newsletter-copy">
-      <div class="al-newsletter-kicker">ANGKORLENS REVEALED</div>
-      <h2 id="alNewsletterTitle">Sign up for Temple &amp; Heritage Updates</h2>
-      <p>Get featured Khmer temple discoveries, new heritage stories, photography updates, and selected AngkorLens research delivered to your inbox.</p>
-
-      <form
-        id="alMailchimpSignupForm"
-        class="al-newsletter-form"
-        action="https://angkorlens.us18.list-manage.com/subscribe/post?u=e6789655af6ec5f2999065860&amp;id=ef82bc12a4&amp;f_id=007bb1e6f0"
-        method="post"
-        target="alMailchimpHiddenFrame"
-        onsubmit="return alSubmitNewsletter(this)"
-      >
-        <input
-          id="alNewsletterEmail"
-          type="email"
-          name="EMAIL"
-          placeholder="Your email address"
-          autocomplete="email"
-          required
-          aria-label="Your email address"
-        >
-        <input type="text" name="b_e6789655af6ec5f2999065860_ef82bc12a4" tabindex="-1" value="" aria-hidden="true" style="position:absolute;left:-5000px;">
-        <button type="submit">Sign Up</button>
-      </form>
-
-      <div id="alNewsletterStatus" class="al-newsletter-status">Thank you for signing up for AngkorLens updates.</div>
-
-      <p class="al-newsletter-fine">By submitting your information, you agree to receive AngkorLens updates. You can opt out at any time.</p>
-    </div>
-
-    <div class="al-newsletter-image">
-      <img src="https://raw.githubusercontent.com/samnangloy01-ai/angkorlen/main/IMG_0713.JPG" alt="Khmer temple heritage">
-    </div>
-  </div>
-</div>
-
-<iframe name="alMailchimpHiddenFrame" title="Mailchimp signup" style="display:none;width:0;height:0;border:0;"></iframe>
-
-<script>
-(function(){
-  const KEY = 'angkorLensMailchimpSubscribed';
-
-  function showNewsletter(){
-    if(localStorage.getItem(KEY) === 'yes') return;
-    const overlay = document.getElementById('angkorLensNewsletterOverlay');
-    if(!overlay) return;
-    overlay.classList.add('al-show');
-    overlay.setAttribute('aria-hidden','false');
-    document.body.style.overflow='hidden';
-  }
-
-  window.alCloseNewsletter = function(){
-    const overlay = document.getElementById('angkorLensNewsletterOverlay');
-    if(!overlay) return;
-    overlay.classList.remove('al-show');
-    overlay.setAttribute('aria-hidden','true');
-    document.body.style.overflow='';
-  };
-
-  window.alSubmitNewsletter = function(form){
-    const email = document.getElementById('alNewsletterEmail');
-    if(!email || !email.checkValidity()) return true;
-
-    /*
-      The form submits to Mailchimp in a hidden iframe, while the visitor stays
-      on AngkorLens. We remember the successful submit action locally so this
-      popup does not return on this browser/device.
-    */
-    localStorage.setItem(KEY,'yes');
-
-    const overlay = document.getElementById('angkorLensNewsletterOverlay');
-    const status = document.getElementById('alNewsletterStatus');
-    if(status) status.style.display='block';
-    if(overlay){
-      setTimeout(function(){
-        overlay.classList.remove('al-show');
-        overlay.setAttribute('aria-hidden','true');
-        document.body.style.overflow='';
-      }, 450);
-    }
-    return true;
-  };
-
-  document.addEventListener('DOMContentLoaded', function(){
-    if(localStorage.getItem(KEY) !== 'yes'){
-      setTimeout(showNewsletter, 2000);
-    }
-
-    const overlay = document.getElementById('angkorLensNewsletterOverlay');
-    if(overlay){
-      overlay.addEventListener('click', function(e){
-        if(e.target === overlay) alCloseNewsletter();
-      });
-    }
-  });
-})();
-</script>
 
 </body>
 </html>
