@@ -978,6 +978,89 @@ function alxSignup(){var s=null;try{s=localStorage.getItem('angkorLensNewsletter
 (function(){try{if(localStorage.getItem('alxTravelHidden')==='1'||localStorage.getItem('angkorLensNewsletterSubscribed')==='yes'){var t=document.getElementById('alxTravel');if(t)t.classList.add('alx-min');}}catch(e){}})();
 </script>
 
+<style>
+.alh{max-width:80rem;margin:0 auto;padding:64px 16px 8px;color:#221F1C}
+.alh h2{font-size:clamp(28px,3.6vw,44px);font-weight:500;text-align:center;margin:0 0 8px;font-family:inherit}
+.alh .sub{text-align:center;color:#6b6359;font-size:17px;margin:0 0 32px}
+.alh-dive{display:grid;grid-template-columns:1.6fr 1fr 1.5fr;grid-template-rows:260px 260px;gap:16px}
+.alh-dive a{position:relative;border-radius:16px;overflow:hidden;display:block;color:#fff;text-decoration:none;background:#221F1C}
+.alh-dive a img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.alh-dive a:hover img{transform:scale(1.04)}
+.alh-dive a::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.65),rgba(0,0,0,0) 45%)}
+.alh-dive span{position:absolute;left:20px;bottom:16px;z-index:1;font-size:clamp(18px,1.8vw,24px);font-weight:500}
+.alh-dive .t3{grid-row:1/3;grid-column:3}
+.alh-dive .b1{grid-column:1/2}.alh-dive .b2{grid-column:2/3}
+.alh-focus{display:grid;grid-template-columns:1fr 1fr;border-radius:16px;overflow:hidden;box-shadow:0 2px 14px rgba(0,0,0,.12);background:#fff}
+.alh-focus .tx{padding:40px 36px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+.alh-focus .tx small{letter-spacing:.15em;font-weight:700;font-size:13px;color:#7A5A1E}
+.alh-focus h3{font-size:clamp(24px,2.6vw,34px);font-weight:500;margin:14px 0 6px}
+.alh-focus .km{color:#7A5A1E;margin:0 0 12px}
+.alh-focus p{color:#4E4740;font-size:16px;line-height:1.6;margin:0 0 24px;max-width:460px}
+.alh-btn{background:#221F1C;color:#fff;border:0;border-radius:6px;padding:12px 26px;font-size:16px;cursor:pointer;font-family:inherit;text-decoration:none;display:inline-block}
+.alh-focus .im{position:relative;min-height:380px;cursor:pointer;border:0;padding:0;background:#221F1C}
+.alh-focus .im img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.alh-circles{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;text-align:center}
+.alh-circles a{color:#221F1C;text-decoration:none;display:block}
+.alh-circles .c{position:relative;width:100%;max-width:240px;aspect-ratio:1;margin:0 auto;border-radius:50%;overflow:hidden;background:#ddd}
+.alh-circles .c img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.alh-circles a:hover img{transform:scale(1.06)}
+.alh-circles .pin{width:46px;height:46px;border-radius:50%;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.2);margin:-24px auto 0;position:relative;display:flex;align-items:center;justify-content:center;font-size:22px}
+.alh-circles small{display:block;letter-spacing:.15em;color:#8a8278;font-size:12px;margin:14px 0 6px}
+.alh-circles b{display:block;font-size:19px;font-weight:500}
+.alh-circles i{font-style:normal;color:#8a8278;font-size:15px}
+.alh-spot{display:grid;grid-template-columns:1.3fr 1fr;gap:40px;align-items:center}
+.alh-spot h2{text-align:left}
+.alh-spot .row{display:grid;grid-template-columns:170px 1fr;gap:28px;align-items:center;margin-top:20px}
+.alh-spot .logo{font-weight:800;font-size:22px;line-height:1.15;letter-spacing:.02em}
+.alh-spot p{color:#4E4740;font-size:16px;line-height:1.6;margin:0 0 20px}
+.alh-spot .blob{width:100%;max-width:420px;aspect-ratio:1;border-radius:50%;overflow:hidden;justify-self:center}
+.alh-spot .blob img{width:100%;height:100%;object-fit:cover}
+@media (max-width:860px){.alh-dive{grid-template-columns:1fr 1fr;grid-template-rows:200px 200px 260px}.alh-dive .t3{grid-row:3;grid-column:1/3}.alh-focus,.alh-spot{grid-template-columns:1fr}.alh-focus .im{min-height:260px;order:-1}.alh-circles{grid-template-columns:1fr 1fr}.alh-spot .row{grid-template-columns:1fr}.alh-spot h2{text-align:center}}
+</style>
+<section class="alh" aria-label="Dive into">
+ <h2>Dive into…</h2><p class="sub">Temples, lake villages and museums through my lens</p>
+ <div class="alh-dive">
+  <a href="#templeGrid" class="t1"><img src="al-feature-bayon.jpg" alt="" loading="lazy" decoding="async"><span>Khmer Temples</span></a>
+  <a href="#tonle-focus" class="t2"><img src="sf-tonlesap-1-t.jpg" alt="" loading="lazy" decoding="async"><span>Life on the Tonle Sap</span></a>
+  <a href="#khmer-art-sf" class="t3"><img src="sf-shiva-1.jpg" alt="" loading="lazy" decoding="async"><span>Khmer Art in San Francisco</span></a>
+  <a href="#sf-lens" class="b1"><img src="sf-goldengate-9-t.jpg" alt="" loading="lazy" decoding="async"><span>The Golden Gate</span></a>
+  <a href="#books" class="b2"><img src="al-book-angkorlens-1.jpg" alt="" loading="lazy" decoding="async" style="object-position:center 20%"><span>My Books</span></a>
+ </div>
+</section>
+<section class="alh" id="tonle-focus" aria-label="In focus: Tonle Sap">
+ <h2>In focus…</h2><p class="sub">&nbsp;</p>
+ <div class="alh-focus">
+  <div class="tx"><small>PHOTO STORY</small><h3>Life on the Tonle Sap</h3><div class="km">ជីវិតលើបឹងទន្លេសាប</div><p>Houses that float, boats for every journey, and families who move with the rising and falling water of Cambodia's great lake.</p><button type="button" class="alh-btn" onclick="window.alsfStory&&alsfStory('tonlesap')">Explore</button></div>
+  <button type="button" class="im" onclick="window.alsfStory&&alsfStory('tonlesap')" aria-label="Open the Tonle Sap photo story"><img src="sf-tonlesap-1.jpg" alt="Floating houses on the Tonle Sap lake" loading="lazy" decoding="async"></button>
+ </div>
+</section>
+<section class="alh" aria-label="Places I have photographed">
+ <h2>Places I've photographed</h2><p class="sub">Where do you want to visit today?</p>
+ <div class="alh-circles">
+  <a href="#templeGrid"><div class="c"><img src="al-feature-angkor-wat.jpg" alt="" loading="lazy" decoding="async"></div><div class="pin">🛕</div><small>EXPLORE</small><b>Angkor</b><i>Siem Reap, Cambodia</i></a>
+  <a href="#tonle-focus"><div class="c"><img src="sf-tonlesap-3-t.jpg" alt="" loading="lazy" decoding="async"></div><div class="pin">🛶</div><small>EXPLORE</small><b>Tonle Sap Lake</b><i>Cambodia</i></a>
+  <a href="#sf-lens"><div class="c"><img src="sf-painted-1-t.jpg" alt="" loading="lazy" decoding="async"></div><div class="pin">🌉</div><small>EXPLORE</small><b>San Francisco</b><i>California, USA</i></a>
+  <a href="#khmer-art-sf"><div class="c"><img src="sf-naga-1-t.jpg" alt="" loading="lazy" decoding="async"></div><div class="pin">🏛️</div><small>EXPLORE</small><b>Asian Art Museum</b><i>San Francisco</i></a>
+ </div>
+</section>
+<section class="alh" style="padding-bottom:40px" aria-label="Museum spotlight">
+ <div class="alh-spot"><div><h2>Museum spotlight</h2>
+  <div class="row"><div class="logo">ASIAN ART<br>MUSEUM<br><span style="font-weight:500;font-size:15px">San Francisco</span></div>
+  <div><p>A beautiful collection of Khmer sculpture in San Francisco, and until January 25, 2027, home to the bronze Reclining Vishnu from the West Mebon.</p><a class="alh-btn" href="#khmer-art-sf" style="background:#C9A55A;color:#221F1C;font-weight:700">See the collection</a></div></div></div>
+  <div class="blob"><img src="sf-vishnu-3.jpg" alt="" loading="lazy" decoding="async"></div></div>
+</section>
+<script>
+document.addEventListener('DOMContentLoaded',function(){var A=window.ALSF_A;if(!A)return;
+A.tonlesap={n:10,t:'Life on the Tonle Sap',km:'ជីវិតលើបឹងទន្លេសាប',by:'Photographs by Samnang Loy · Tonle Sap, Cambodia',
+ f:[['Where','Tonle Sap lake, Cambodia'],['Lake','The largest freshwater lake in Southeast Asia']],
+ d:['Many families on the Tonle Sap live in houses that float. The houses sit on rafts of bamboo, wood and old metal drums, so they rise and fall with the water.',
+    'In the rainy season the lake grows many times larger, and the water reaches deep into the flooded forest. In the dry season it shrinks again, and families move their houses to follow the water.',
+    'Boats are everything here: for fishing, for going to school, for visiting neighbours and for carrying goods. Small floating shops sell water, food and fuel from house to house.',
+    'Look at the roofs: many houses now have a small solar panel for light, and a tall TV antenna.'],
+ l:'The metal drums and bamboo under each house · the long wooden boats · solar panels on the roofs · water hyacinth plants floating around the houses.',src:[]};
+});
+</script>
+
         <!-- Heritage Highlights -->
         <section id="heritage" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
             <div class="mb-6">
@@ -5242,7 +5325,7 @@ function caps(a){var c=[];a.d.forEach(function(p,i){c.push({h:i===0?'About this 
  c.push({h:'Facts',p:a.f.map(function(r){return r[0]+': '+r[1];}).join(' · ')});c.push({h:'Look closely',p:a.l});
  if(a.tbc)c.push({h:'Details to be confirmed',p:'I will add the museum label information soon.'});return c;}
 function story(k){var a=A[k];var c=caps(a);var n=a.n;var h='';
- h+='<section class="alst-sl alst-hero"><div class="alst-bg" style="background-image:url('+im(k,1)+')"></div><h2>'+esc(a.t)+'</h2><div class="km">'+a.km+'</div><p>'+esc(sub(a,k))+'</p><div class="by">Photographs by Samnang Loy · Asian Art Museum of San Francisco</div><button type="button" class="alst-down" aria-label="Start">↓</button></section>';
+ h+='<section class="alst-sl alst-hero"><div class="alst-bg" style="background-image:url('+im(k,1)+')"></div><h2>'+esc(a.t)+'</h2><div class="km">'+a.km+'</div><p>'+esc(sub(a,k))+'</p><div class="by">'+(a.by||'Photographs by Samnang Loy · Asian Art Museum of San Francisco')+'</div><button type="button" class="alst-down" aria-label="Start">↓</button></section>';
  var slides=Math.max(n,Math.min(c.length,n));
  for(var i=1;i<=n;i++){var cp=c[i-1];if(i===n&&c.length>n){cp={h:cp?cp.h:'',p:c.slice(n-1).map(function(x){return (x.h?x.h+': ':'')+x.p;}).join('  ')};}
   h+='<section class="alst-sl"><div class="alst-bg" style="background-image:url('+im(k,i,1)+')"></div><img src="'+im(k,i)+'" alt="'+esc(a.t)+' — photo '+i+'" loading="lazy"><span class="alst-cr">'+i+' / '+n+'</span>'+(cp?'<div class="alst-cap">'+(cp.h?'<h3>'+esc(cp.h)+'</h3>':'<h3>'+esc(a.t)+'</h3>')+'<p>'+esc(cp.p)+'</p></div>':'')+'<button type="button" class="alst-zoom" data-z="'+im(k,i)+'">⤢ Full size</button></section>';}
@@ -5303,6 +5386,7 @@ A.hills={n:6,t:'City views from the hills',km:'ទិដ្ឋភាពទីក
  d:['San Francisco is a city of hills. I climbed the rocky hilltop parks in the middle of the city to see the whole skyline at once, from the tall towers of downtown to the houses that cover every hill.',
     'Wildflowers, old rocks and cypress trees make a beautiful frame for the city below. Some days the fog rolls in from the ocean and covers the far hills.'],
  l:'Purple lupine flowers in front of the city · the red and brown rocks · the long straight streets running up and down the hills.',src:[]};
+['goldengate','ferry','painted','hills','palace'].forEach(function(k){A[k].by='Photographs by Samnang Loy · San Francisco';});
 var L=[['goldengate','San Francisco · 1937'],['ferry','The Embarcadero · 1898'],['painted','Alamo Square'],['hills','Hilltop views'],['palace','Marina District · 1915']];
 var S=document.getElementById('sflStrips');
 function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;');}
