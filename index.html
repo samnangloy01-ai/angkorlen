@@ -740,6 +740,7 @@ body.top100-view .top100-test-section {
                         <a href="#book-deck">The Unbroken Deck</a>
                     </div>
                 </div>
+                <a href="#khmer-art-sf" class="hover:text-cyan-600 transition">Museum</a>
                 <a href="#creator" class="hover:text-cyan-600 transition">Creator</a>
                 <a href="#about" class="hover:text-cyan-600 transition">About</a>
             </nav>
@@ -799,6 +800,7 @@ body.top100-view .top100-test-section {
                     <a href="#book-deck" class="block py-1">» The Unbroken Deck</a>
                 </div>
             </details>
+            <a href="#khmer-art-sf" class="block text-neutral-600 hover:text-cyan-600 font-medium py-1">Museum — Khmer Art in SF</a>
             <a href="#creator" class="block text-neutral-600 hover:text-cyan-600 font-medium py-1">Creator</a>
             <a href="#about" class="block text-neutral-600 hover:text-cyan-600 font-medium py-1">About</a>
             <div class="flex items-center space-x-3 pt-2 border-t border-neutral-100">
@@ -4928,6 +4930,186 @@ function openAddedBottomPhoto(dataUri){
     <p class="al-books-note">As an independent author, every copy you buy helps me keep photographing and documenting Khmer heritage. Thank you! · សូមអរគុណ</p>
   </div>
 </section>
+
+
+<!-- ===== Khmer Art in San Francisco (Asian Art Museum) ===== -->
+<style>
+.alsf{background:#F6F1E7;color:#221F1C;padding:72px 16px}
+.alsf-inner{max-width:80rem;margin:0 auto}
+.alsf-kicker{color:#7A5A1E;font-size:12px;font-weight:700;letter-spacing:.25em;text-transform:uppercase;margin:0 0 10px}
+.alsf h2{font-family:Georgia,'Times New Roman',serif;font-size:clamp(30px,4vw,44px);font-weight:600;line-height:1.1;margin:0 0 8px;color:#221F1C}
+.alsf-km{font-size:18px;color:#7A5A1E;margin:0 0 12px}
+.alsf-lead{color:#4E4740;max-width:720px;margin:0 0 32px;font-size:16px;line-height:1.65}
+.alsf-feature{display:grid;grid-template-columns:1.4fr 1fr;gap:0;background:#221F1C;color:#F3EDE2;border-radius:22px;overflow:hidden;margin:0 0 36px;cursor:pointer;border:0;padding:0;text-align:left;width:100%;font:inherit}
+.alsf-feature img{width:100%;height:100%;min-height:300px;object-fit:cover;display:block}
+.alsf-feature-body{padding:32px 30px;display:flex;flex-direction:column;justify-content:center}
+.alsf-badge{display:inline-block;align-self:flex-start;background:#C9A55A;color:#221F1C;font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:6px 12px;border-radius:999px;margin:0 0 14px}
+.alsf-feature h3{font-family:Georgia,serif;font-size:clamp(24px,3vw,34px);line-height:1.15;margin:0 0 6px;color:#F3EDE2}
+.alsf-feature .alsf-fkm{color:#E2C98F;font-size:17px;margin:0 0 14px}
+.alsf-feature p{color:#CFC6B6;font-size:15px;line-height:1.6;margin:0 0 18px}
+.alsf-open{align-self:flex-start;background:#C9A55A;color:#221F1C;font-weight:700;font-size:14px;padding:10px 18px;border-radius:999px}
+.alsf-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:18px}
+.alsf-card{position:relative;border:0;padding:0;margin:0;border-radius:16px;overflow:hidden;background:#d8d1c3;cursor:pointer;aspect-ratio:3/4;font:inherit;text-align:left;transition:transform .25s,box-shadow .25s}
+.alsf-card:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(34,31,28,.25)}
+.alsf-card img{width:100%;height:100%;object-fit:cover;display:block}
+.alsf-card-cap{position:absolute;left:0;right:0;bottom:0;padding:44px 14px 12px;background:linear-gradient(to top,rgba(20,18,16,.88),rgba(20,18,16,0));color:#fff}
+.alsf-card-cap b{display:block;font-family:Georgia,serif;font-size:17px;line-height:1.2}
+.alsf-card-cap span{display:block;font-size:13px;color:#E2C98F;margin-top:3px}
+.alsf-card-n{position:absolute;top:10px;right:10px;background:rgba(20,18,16,.7);color:#fff;font-size:12px;font-weight:700;padding:4px 9px;border-radius:999px}
+.alsf-note{color:#6b6359;font-size:13px;line-height:1.6;margin:28px 0 0;max-width:820px}
+.alsf-modal{position:fixed;inset:0;background:rgba(14,12,10,.92);z-index:9999;display:none;overflow-y:auto;padding:18px 12px}
+.alsf-modal.open{display:block}
+.alsf-box{max-width:1100px;margin:0 auto;background:#221F1C;color:#F3EDE2;border-radius:20px;overflow:hidden;position:relative}
+.alsf-close{position:absolute;top:10px;right:12px;width:42px;height:42px;border-radius:50%;border:0;background:rgba(0,0,0,.55);color:#fff;font-size:26px;line-height:42px;cursor:pointer;z-index:3}
+.alsf-stage{position:relative;background:#141210;display:flex;align-items:center;justify-content:center;min-height:240px}
+.alsf-stage img{max-width:100%;max-height:72vh;display:block}
+.alsf-nav{position:absolute;top:50%;transform:translateY(-50%);width:44px;height:44px;border-radius:50%;border:0;background:rgba(0,0,0,.55);color:#fff;font-size:22px;cursor:pointer}
+.alsf-prev{left:10px}.alsf-next{right:10px}
+.alsf-count{position:absolute;left:12px;bottom:10px;background:rgba(0,0,0,.6);color:#fff;font-size:12px;padding:4px 10px;border-radius:999px}
+.alsf-thumbs{display:flex;gap:8px;overflow-x:auto;padding:10px 12px;background:#1A1816}
+.alsf-thumbs button{flex:0 0 auto;border:2px solid transparent;border-radius:8px;padding:0;background:none;cursor:pointer;opacity:.6}
+.alsf-thumbs button.on{border-color:#C9A55A;opacity:1}
+.alsf-thumbs img{width:72px;height:72px;object-fit:cover;border-radius:6px;display:block}
+.alsf-info{padding:24px 24px 28px}
+.alsf-info h3{font-family:Georgia,serif;font-size:clamp(22px,3vw,30px);margin:0 0 4px;color:#F3EDE2}
+.alsf-info .alsf-ikm{color:#E2C98F;font-size:17px;margin:0 0 16px}
+.alsf-facts{width:100%;border-collapse:collapse;font-size:14px;margin:0 0 16px}
+.alsf-facts td{padding:8px 6px;border-bottom:1px solid #3B352F;vertical-align:top}
+.alsf-facts td:first-child{color:#9E958A;width:130px;white-space:nowrap}
+.alsf-info p{color:#CFC6B6;font-size:15px;line-height:1.7;margin:0 0 12px}
+.alsf-look{color:#E2C98F;font-weight:700;font-size:13px;letter-spacing:.08em;text-transform:uppercase;margin:18px 0 6px}
+.alsf-tbc{display:inline-block;background:#3B352F;color:#E2C98F;font-size:12px;padding:4px 10px;border-radius:999px;margin:0 0 12px}
+.alsf-credit{color:#9E958A;font-size:12px;margin:16px 0 0}
+.alsf-credit a{color:#E2C98F}
+@media (max-width:760px){.alsf-feature{grid-template-columns:1fr}.alsf-feature img{min-height:220px;max-height:320px}.alsf-facts td:first-child{width:96px;white-space:normal}}
+</style>
+<section id="khmer-art-sf" class="alsf" aria-label="Khmer Art in San Francisco">
+  <div class="alsf-inner">
+    <p class="alsf-kicker">Asian Art Museum · San Francisco</p>
+    <h2>Khmer Art in San Francisco</h2>
+    <p class="alsf-km">សិល្បៈខ្មែរ នៅសាន់ហ្វ្រាន់ស៊ីស្កូ</p>
+    <p class="alsf-lead">Far from Angkor, a room of Khmer sculpture waits in San Francisco. I photographed these works at the Asian Art Museum. Tap any artwork to open its album and read about it. Free to view.</p>
+    <button type="button" class="alsf-feature" data-alsf="vishnu">
+      <img src="sf-vishnu-2.jpg" alt="The bronze Reclining Vishnu from the West Mebon on display in San Francisco" loading="lazy">
+      <div class="alsf-feature-body">
+        <span class="alsf-badge">On view until Jan 25, 2027</span>
+        <h3>The West Mebon Reclining Vishnu</h3>
+        <p class="alsf-fkm">ព្រះវិស្ណុផ្ទំ ប្រាសាទមេបុណ្យខាងលិច</p>
+        <p>A bronze about a thousand years old and nearly twenty feet long, lent by the National Museum of Cambodia. It visits San Francisco before going home to Cambodia.</p>
+        <span class="alsf-open">Open album →</span>
+      </div>
+    </button>
+    <div class="alsf-grid" id="alsfGrid"></div>
+    <p class="alsf-note">Artworks are in the collection of, or on loan to, the Asian Art Museum of San Francisco. Photographs by Samnang Loy, shared for education. Facts come from the museum's own records where noted; anything not yet confirmed is marked "Details to be confirmed."</p>
+  </div>
+</section>
+<div class="alsf-modal" id="alsfModal" role="dialog" aria-modal="true" aria-labelledby="alsfTitle">
+  <div class="alsf-box">
+    <button type="button" class="alsf-close" aria-label="Close" onclick="alsfClose()">&times;</button>
+    <div class="alsf-stage">
+      <img id="alsfImg" src="" alt="">
+      <button type="button" class="alsf-nav alsf-prev" aria-label="Previous photo" onclick="alsfStep(-1)">‹</button>
+      <button type="button" class="alsf-nav alsf-next" aria-label="Next photo" onclick="alsfStep(1)">›</button>
+      <span class="alsf-count" id="alsfCount"></span>
+    </div>
+    <div class="alsf-thumbs" id="alsfThumbs"></div>
+    <div class="alsf-info" id="alsfInfo"></div>
+  </div>
+</div>
+<script>
+(function(){
+var MUS='https://searchcollection.asianart.org/objects/';
+var A={
+vishnu:{n:11,t:'The West Mebon Reclining Vishnu',km:'ព្រះវិស្ណុផ្ទំ ប្រាសាទមេបុណ្យខាងលិច',
+ f:[['Date','About 1,000 years old (11th century)'],['From','West Mebon temple, Angkor, Siem Reap, Cambodia'],['Material','Bronze'],['Size','Nearly 20 feet (about 6 m) long'],['Lent by','National Museum of Cambodia, Phnom Penh'],['Exhibition','"Vishnu’s Cosmic Ocean," Asian Art Museum, Oct 23, 2026 – Jan 25, 2027']],
+ d:['The god Vishnu lies on his side, resting his head on his hand. In Khmer belief he sleeps on the cosmic ocean between the end of one world and the beginning of the next. This great bronze once lay in the West Mebon, a temple on an island in the middle of the West Baray reservoir at Angkor. French archaeologists found it there in 1936.',
+    'Only part of the statue survives today: the head, shoulders, two arms and pieces of the body and legs. Even broken, it is one of the most important bronzes ever made in Cambodia. After its time abroad it will return home to Cambodia.'],
+ l:'The calm face resting on the hand · the fine necklace with flower-shaped jewels · the bangles on the wrists · inside the hollow body you can see how thin the cast bronze is.',
+ src:[['Asian Art Museum exhibition page','https://exhibitions.asianart.org/?p=3916'],['Cambodianess, Oct 25, 2026','https://cambodianess.com/article/the-reclining-vishnu-on-display-in-san-francisco-before-returning-home']]},
+shiva:{n:3,t:'The Hindu god Shiva',km:'ព្រះឥសូរ',
+ f:[['Date','Approx. 975–1025'],['From','Cambodia, former kingdom of Angkor'],['Material','Sandstone'],['Size','H. 44 in (111.8 cm)'],['Museum no.','B66S2 · The Avery Brundage Collection']],
+ d:['Shiva is shown as a gentle young man. You can tell it is Shiva by the third eye carved upright on his forehead. The museum shows him as one of a pair with his wife, the goddess Parvati (Uma).'],
+ l:'The third eye · the hair braided and tied into a tall bun · the thin moustache · the carved necklace and armbands, finely detailed against the smooth skin.',
+ src:[['Museum record B66S2','https://searchcollection.asianart.org/objects/11992/the-deity-shiva-one-of-a-pair']]},
+parvati:{n:4,t:'The goddess Parvati (Uma)',km:'ព្រះនាងឧមា (បាវ៌តី)',tbc:1,
+ f:[['Date','Approx. 975–1025 (as the pair to Shiva)'],['From','Cambodia, former kingdom of Angkor'],['Material','Sandstone']],
+ d:['This goddess stands beside the Shiva in the gallery and matches his style, so she is very likely Parvati (also called Uma), Shiva’s wife. The museum notes that faint reddish paint survives on the back of the female figure, showing the clothes were once colored.'],
+ l:'The pleated skirt with a beaded belt and hanging loops of jewels · the folded cloth at the waist · the braided hair bun · the back view, which few visitors notice.',
+ src:[['Museum record for the pair (B66S2)','https://searchcollection.asianart.org/objects/11992/the-deity-shiva-one-of-a-pair']]},
+naga:{n:3,t:'Crowned Buddha sheltered by the naga',km:'ព្រះពុទ្ធរូប នាគបាំង',
+ f:[['Date','Approx. 1150–1175'],['From','Cambodia, former kingdom of Angkor'],['Material','Sandstone'],['Size','H. 33 1/4 in (84 cm)'],['Museum no.','B69S12 · Museum purchase']],
+ d:['The Buddha sits in meditation on the coils of a great serpent (naga), whose seven heads spread behind him like a shield. The story: after his Enlightenment a storm arose, and the naga king Muchalinda protected him.',
+    'Here the Buddha wears a crown and jewelry, which he would not have worn at that time. For this reason scholars think the image shows a supreme, cosmic Buddha rather than only the Buddha who taught on earth.'],
+ l:'The seven naga heads · the patterned coils under the Buddha · his crown, earrings, necklace and armbands · the hands resting together in meditation.',
+ src:[['Museum record B69S12','https://asianart.emuseum.com/objects/12124/crowned-and-bejeweled-serpententhroned-buddha']]},
+kumbha:{n:2,t:'Kumbhakarna battles the monkeys (Reamker)',km:'កុម្ភកណ្ណ ច្បាំងនឹងកងទ័ពស្វា — រឿងរាមកេរ្តិ៍',
+ f:[['Date','Approx. 1075–1125'],['From','Northeastern Thailand, former kingdom of Angkor'],['Material','Sandstone'],['Size','H. 35 in × W. 74 in (88.9 × 188 cm)'],['Museum no.','B66S7 · The Avery Brundage Collection']],
+ d:['A battle from the Ramayana (Reamker in Khmer). Ravana has taken Rama’s wife Sita to Lanka, and Rama’s monkey army attacks. In the middle stands the giant Kumbhakarna, Ravana’s brother, crushing and biting the monkeys. This relief was probably placed above a temple door.',
+    'Before the museum got it, an earlier owner fully restored the giant’s face and head. The museum has darkened that part so visitors can tell new stone from old.'],
+ l:'Monkeys climbing all over the giant · his tall crown and long ornamented cloth · the darker restored face.',
+ src:[['Museum record B66S7','https://asianart.emuseum.com/objects/12002/the-giant-kumbhakarna-battles-the-monkeys-from-the-ramayana']]},
+nine:{n:6,t:'Nine deities',km:'ទេព ៩ អង្គ (នព្វគ្រោះ)',
+ f:[['Date','1000–1100'],['From','Cambodia, former kingdom of Angkor'],['Material','Stone'],['Size','W. 55 in (139.7 cm)'],['Museum no.','B71S9 · Gift of Edward Nagel']],
+ d:['Nine gods sit in a row of arched niches, each on his own animal or throne. The museum identifies the figure at the far left as Surya, the sun god. Many groups of nine like this survive from Angkor; one idea is that they are the nine planetary gods of Hindu tradition.'],
+ l:'The animal mounts under each god · the leafy arches and small pillars between the niches · one god seated on a plain pedestal and one rising from a scaly mound.',
+ src:[['Museum record B71S9','https://asianart.emuseum.com/objects/11995/nine-deities']]},
+palanquin:{n:2,t:'Bronze palanquin fittings',km:'គ្រឿងលម្អសែង សំរិទ្ធ',
+ f:[['Date','Approx. 1200–1220'],['From','Cambodia'],['Material','Bronze'],['Museum no.','1992.346.1-.5']],
+ d:['These fittings decorated a hammock-like palanquin that servants carried on a pole for nobles. The two hooks held the hammock; the central piece was only for decoration.'],
+ l:'Fighting figures and a worshipping figure with elephants on the hooks · the serpent heads at the tips · in the center, a female figure holding a round object, perhaps a mirror.',
+ src:[['Museum record 1992.346','https://asianart.emuseum.com/objects/12386/palanquin-fittings']]},
+lion:{n:1,t:'Guardian lion',km:'សិង្ហ',
+ f:[['Date','Approx. 1150–1225'],['From','Cambodia, former kingdom of Angkor'],['Material','Sandstone'],['Size','H. 35 in (88.9 cm)'],['Museum no.','B76S1 · Museum purchase']],
+ d:['Pairs of lions like this one guarded the approaches to Khmer temples. You still see them on the stairs and causeways at Angkor today.'],
+ l:'The wide grin and teeth · the curly mane · the scale-like pattern on the chest.',
+ src:[['Museum record B76S1','https://searchcollection.asianart.org/objects/11954/lion']]},
+crowned:{n:6,t:'Goddess with a tall crown',km:'ទេពធីតា ពាក់មកុដ',tbc:1,
+ f:[['Material','Sandstone'],['From','Cambodia']],
+ d:['A standing goddess with a soft smile, wearing a tall crown with a band of flowers and her hair gathered high. Her long skirt is finely pleated and folded at the waist.'],
+ l:'The decorated crown band · the smile · the pleats and the folded cloth of the skirt.',src:[]},
+goddess:{n:2,t:'Goddess with a conical hair bun',km:'ទេពធីតា សក់បួងជាកោណ',tbc:1,
+ f:[['Material','Sandstone'],['From','Cambodia']],
+ d:['A slender goddess with her hair braided into a tall, pointed bun and a gentle, smiling face. She wears a simple skirt with a decorated hem at the waist.'],
+ l:'The braided hair bun · the calm smile · the decorated waistband.',src:[]},
+fourarm:{n:2,t:'Crowned god with four arms',km:'ទេព ៤ ព្រះហស្ត ពាក់មកុដ',tbc:1,
+ f:[['Material','Stone'],['From','Cambodia']],
+ d:['A crowned god with a moustache and small beard. Two raised upper arms show he was made with four arms, as Vishnu often is in Khmer sculpture. The museum label will confirm who he is.'],
+ l:'The tall crown with flower patterns · the moustache and beard · the polished, smooth stone.',src:[]},
+head:{n:1,t:'Head of a deity',km:'ព្រះសិរ ទេព',tbc:1,
+ f:[['Material','Sandstone'],['From','Cambodia']],
+ d:['A smiling head with closed eyes and a tall, decorated headdress. A small seated figure is carved on the front of the headdress.'],
+ l:'The small seated figure on the headdress · the patterned band · the peaceful smile.',src:[]}
+};
+var order=['shiva','parvati','naga','kumbha','nine','palanquin','lion','crowned','goddess','fourarm','head'];
+function src(k,i,t){return 'sf-'+k+'-'+i+(t?'-t':'')+'.jpg';}
+var g=document.getElementById('alsfGrid');
+order.forEach(function(k){var a=A[k];var b=document.createElement('button');b.type='button';b.className='alsf-card';b.setAttribute('data-alsf',k);
+ b.innerHTML='<img src="'+src(k,1,1)+'" alt="'+a.t.replace(/"/g,'&quot;')+'" loading="lazy" decoding="async"><span class="alsf-card-n">'+a.n+' photo'+(a.n>1?'s':'')+'</span><span class="alsf-card-cap"><b>'+a.t+'</b><span>'+a.km+'</span></span>';g.appendChild(b);});
+document.querySelectorAll('[data-alsf]').forEach(function(el){el.addEventListener('click',function(){alsfOpen(el.getAttribute('data-alsf'));});});
+var cur=null,idx=1,M=document.getElementById('alsfModal');
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;');}
+window.alsfOpen=function(k){cur=k;idx=1;var a=A[k];
+ var th='';for(var i=1;i<=a.n;i++)th+='<button type="button" data-i="'+i+'" aria-label="Photo '+i+'"><img src="'+src(k,i,1)+'" alt="" loading="lazy"></button>';
+ var T=document.getElementById('alsfThumbs');T.innerHTML=th;T.style.display=a.n>1?'flex':'none';
+ T.querySelectorAll('button').forEach(function(b){b.onclick=function(){idx=+b.getAttribute('data-i');show();};});
+ var h='<h3 id="alsfTitle">'+esc(a.t)+'</h3><p class="alsf-ikm">'+a.km+'</p>';
+ if(a.tbc)h+='<span class="alsf-tbc">Details to be confirmed with the museum label</span>';
+ h+='<table class="alsf-facts">'+a.f.map(function(r){return '<tr><td>'+r[0]+'</td><td>'+esc(r[1])+'</td></tr>';}).join('')+'</table>';
+ h+=a.d.map(function(p){return '<p>'+esc(p)+'</p>';}).join('');
+ h+='<div class="alsf-look">Look closely</div><p>'+esc(a.l)+'</p>';
+ h+='<p class="alsf-credit">Photos © Samnang Loy · Asian Art Museum of San Francisco'+(a.src.length?' · Sources: '+a.src.map(function(s){return '<a href="'+s[1]+'" target="_blank" rel="noopener">'+s[0]+'</a>';}).join(', '):'')+'</p>';
+ document.getElementById('alsfInfo').innerHTML=h;
+ document.querySelectorAll('.alsf-nav').forEach(function(b){b.style.display=a.n>1?'block':'none';});
+ show();M.classList.add('open');document.body.style.overflow='hidden';M.scrollTop=0;};
+function show(){var a=A[cur];var im=document.getElementById('alsfImg');im.src=src(cur,idx);im.alt=a.t+' — photo '+idx;
+ document.getElementById('alsfCount').textContent=idx+' / '+a.n;
+ document.querySelectorAll('#alsfThumbs button').forEach(function(b){b.classList.toggle('on',+b.getAttribute('data-i')===idx);});}
+window.alsfStep=function(d){var n=A[cur].n;idx=((idx-1+d+n)%n)+1;show();};
+window.alsfClose=function(){M.classList.remove('open');document.body.style.overflow='';};
+M.addEventListener('click',function(e){if(e.target===M)alsfClose();});
+document.addEventListener('keydown',function(e){if(!M.classList.contains('open'))return;if(e.key==='Escape')alsfClose();if(e.key==='ArrowLeft')alsfStep(-1);if(e.key==='ArrowRight')alsfStep(1);});
+})();
+</script>
 
 <!-- AngkorLens Newsletter section at the bottom of the page -->
 <section id="newsletter-bottom" class="angkor-newsletter-bottom-section">
