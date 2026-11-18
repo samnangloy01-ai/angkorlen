@@ -1021,10 +1021,10 @@ function alxSignup(){var s=null;try{s=localStorage.getItem('angkorLensNewsletter
  <h2>Dive into…</h2><p class="sub">Temples, lake villages and museums through my lens</p>
  <div class="alh-dive">
   <a href="#templeGrid" class="t1"><img src="al-feature-bayon.jpg" alt="" loading="lazy" decoding="async"><span>Khmer Temples</span></a>
-  <a href="#tonle-focus" class="t2"><img src="sf-tonlesap-1-t.jpg" alt="" loading="lazy" decoding="async"><span>Life on the Tonle Sap</span></a>
+  <a href="#tonle-focus" class="t2"><img src="sf-tonlesap-1.jpg" alt="" loading="lazy" decoding="async"><span>Life on the Tonle Sap</span></a>
   <a href="#khmer-art-sf" class="t3"><img src="sf-shiva-1.jpg" alt="" loading="lazy" decoding="async"><span>Khmer Art in San Francisco</span></a>
-  <a href="#sf-lens" class="b1"><img src="sf-goldengate-9-t.jpg" alt="" loading="lazy" decoding="async"><span>The Golden Gate</span></a>
-  <a href="#books" class="b2"><img src="al-book-angkorlens-1.jpg" alt="" loading="lazy" decoding="async" style="object-position:center 20%"><span>My Books</span></a>
+  <a href="#sf-lens" class="b1"><img src="sf-goldengate-1.jpg" alt="" loading="lazy" decoding="async"><span>The Golden Gate</span></a>
+  <a href="#sf-lens" class="b2" onclick="setTimeout(function(){window.alsfStory&&alsfStory('chinatown')},400)"><img src="sf-chinatown-1.jpg" alt="" loading="lazy" decoding="async" style="object-position:center 35%"><span>Chinatown</span></a>
  </div>
 </section>
 <section class="alh" id="tonle-focus" aria-label="In focus: Tonle Sap">
@@ -1038,9 +1038,9 @@ function alxSignup(){var s=null;try{s=localStorage.getItem('angkorLensNewsletter
  <h2>Places I've photographed</h2><p class="sub">Where do you want to visit today?</p>
  <div class="alh-circles">
   <a href="#templeGrid"><div class="c"><img src="al-feature-angkor-wat.jpg" alt="" loading="lazy" decoding="async"></div><div class="pin">🛕</div><small>EXPLORE</small><b>Angkor</b><i>Siem Reap, Cambodia</i></a>
-  <a href="#tonle-focus"><div class="c"><img src="sf-tonlesap-3-t.jpg" alt="" loading="lazy" decoding="async"></div><div class="pin">🛶</div><small>EXPLORE</small><b>Tonle Sap Lake</b><i>Cambodia</i></a>
-  <a href="#sf-lens"><div class="c"><img src="sf-painted-1-t.jpg" alt="" loading="lazy" decoding="async"></div><div class="pin">🌉</div><small>EXPLORE</small><b>San Francisco</b><i>California, USA</i></a>
-  <a href="#khmer-art-sf"><div class="c"><img src="sf-naga-1-t.jpg" alt="" loading="lazy" decoding="async"></div><div class="pin">🏛️</div><small>EXPLORE</small><b>Asian Art Museum</b><i>San Francisco</i></a>
+  <a href="#tonle-focus"><div class="c"><img src="sf-tonlesap-3.jpg" alt="" loading="lazy" decoding="async"></div><div class="pin">🛶</div><small>EXPLORE</small><b>Tonle Sap Lake</b><i>Cambodia</i></a>
+  <a href="#sf-lens"><div class="c"><img src="sf-painted-1.jpg" alt="" loading="lazy" decoding="async"></div><div class="pin">🌉</div><small>EXPLORE</small><b>San Francisco</b><i>California, USA</i></a>
+  <a href="#sf-lens" onclick="setTimeout(function(){window.alsfStory&&alsfStory('pavilion')},400)"><div class="c"><img src="sf-pavilion-6.jpg" alt="" loading="lazy" decoding="async"></div><div class="pin">🏯</div><small>EXPLORE</small><b>Golden Gate Park</b><i>San Francisco</i></a>
  </div>
 </section>
 <section class="alh" style="padding-bottom:40px" aria-label="Museum spotlight">
@@ -5267,7 +5267,7 @@ document.addEventListener('keydown',function(e){if(!M.classList.contains('open')
 .alsf-sc span{display:block;font-size:15px;color:#E2C98F;margin-top:6px}
 .alsf-sc em{display:inline-block;font-style:normal;background:#C9A55A;color:#221F1C;font-size:12px;font-weight:700;padding:4px 10px;border-radius:999px;margin-bottom:10px}
 .alsf-tag{position:absolute;top:50%;right:14px;transform:translateY(-50%);z-index:1;background:rgba(255,255,255,.88);color:#221F1C;font-size:13px;padding:4px 10px;border-radius:8px;opacity:0;transition:opacity .3s .3s}
-.alsf-strip.on .alsf-tag{opacity:1}
+.alsf-tag{display:none!important}
 .alsf-hint{text-align:center;color:#6b6359;font-size:14px;margin:16px 0 0}
 @media (max-width:700px){.alsf-strips{flex-direction:column;height:auto;gap:8px}.alsf-strip{flex:none;height:64px;transition:height .5s}.alsf-strip.on{height:380px}.alsf-tag{display:none}.alsf-strip:not(.on) .alsf-sc{opacity:1;transform:none;bottom:50%;transform:translateY(50%)}.alsf-strip:not(.on) .alsf-sc b{font-size:17px;text-shadow:0 1px 6px #000}.alsf-strip:not(.on) .alsf-sc span,.alsf-strip:not(.on) .alsf-sc em{display:none}.alsf-strip:not(.on)::before{content:"";position:absolute;inset:0;background:rgba(0,0,0,.5);z-index:1}.alsf-strip .alsf-sc{z-index:2}}
 .alst{position:fixed;inset:0;z-index:10005;background:#0e0d0c;display:none}
@@ -5390,11 +5390,12 @@ A.hills={n:6,t:'City views from the hills',km:'ទិដ្ឋភាពទីក
  d:['San Francisco is a city of hills. I climbed the rocky hilltop parks in the middle of the city to see the whole skyline at once, from the tall towers of downtown to the houses that cover every hill.',
     'Wildflowers, old rocks and cypress trees make a beautiful frame for the city below. Some days the fog rolls in from the ocean and covers the far hills.'],
  l:'Purple lupine flowers in front of the city · the red and brown rocks · the long straight streets running up and down the hills.',src:[]};
-A.cityhall={n:6,t:'City Hall in lights',km:'សាលាក្រុង SF ពេលយប់',by:'Photographs by Samnang Loy · San Francisco',
- f:[['Where','Civic Center, San Francisco'],['When','At night, during a light show']],
- d:['San Francisco City Hall has one of the tallest domes in the United States. On this night the whole building glowed pink, purple and gold, and beams of colored light shot straight up into the sky.',
-    'I tried different lenses and angles: close to the dome, far back with the street lamps, and wide enough to show every beam meeting high above the building.'],
- l:'The beams of light rising from the dome · the colors changing from blue to green to rainbow · the tiny lights like stars in the sky · the crowds and flags in front of the building.',src:[]};
+A.cityhall={n:18,t:'Pride lights in San Francisco',km:'ពិធីបុណ្យ Pride នៅ SF ពេលយប់',by:'Photographs by Samnang Loy · San Francisco',
+ f:[['When','San Francisco Pride, at night'],['Where','City Hall (Civic Center) and the Ferry Building on the Embarcadero']],
+ d:['For San Francisco Pride, the city lit up its landmarks in rainbow colors. City Hall, with one of the tallest domes in the United States, glowed pink, purple and gold, and beams of light shot straight up into the sky.',
+    'Down at the waterfront, huge rainbow laser beams stretched along Market Street toward the clock tower of the Ferry Building. Standing under them, the colors seemed to pour down from the sky over the crowds.',
+    'I tried different lenses and angles: close to the dome, far back with the street lamps, and right under the beams so the clock tower sits in the middle of the rainbow.'],
+ l:'The rainbow beams meeting at the Ferry Building tower · the clock face shining through the light · the colors changing from red to blue to purple · City Hall\u2019s dome lit pink and gold.',src:[]};
 A.chinatown={n:9,t:'Chinatown: lanterns & murals',km:'សង្កាត់ចិន ចង្កៀងក្រហម និងគំនូរជញ្ជាំង',by:'Photographs by Samnang Loy · San Francisco',
  f:[['Where','Grant Avenue and nearby streets, Chinatown'],['Seen','Red lanterns, dragon street lamps, wall murals']],
  d:['San Francisco\u2019s Chinatown is one of the oldest Chinatowns in North America. Along Grant Avenue, hundreds of red lanterns hang over the street, and the green lamp posts are shaped like small pagodas with dragons and bells.',
@@ -5412,12 +5413,17 @@ A.bandshell={n:7,t:'Music Concourse Bandshell',km:'ឆាកតន្ត្រ�
     'In front of it, rows of green wooden benches wait for the audience, shaded by trees with twisted branches. When I visited, big blue letters across the top read \u201cLIFT EVERY VOICE.\u201d',
     'Walking along the colonnade, the columns throw long stripes of shadow across the floor, and the ceiling is covered with pink-veined marble.'],
  l:'The carved figures on both sides of the great arch · the square panels inside the half-dome · the curly tops of the columns · the marble ceiling of the side colonnade.',src:[]};
-['goldengate','ferry','painted','hills','chinatown','cityhall','palace','pavilion','bandshell'].forEach(function(k){A[k].by='Photographs by Samnang Loy · San Francisco';});
-var L=[['goldengate','San Francisco · 1937'],['ferry','The Embarcadero · 1898'],['painted','Alamo Square'],['hills','Hilltop views'],['chinatown','Grant Avenue'],['cityhall','Civic Center · at night'],['pavilion','Golden Gate Park'],['bandshell','Golden Gate Park · 1900'],['palace','Marina District · 1915']];
+A.lombard={n:8,t:'Lombard Street',km:'ផ្លូវកោងៗ Lombard Street',
+ f:[['Where','Russian Hill, San Francisco'],['Known as','"The crookedest street"']],
+ d:['Lombard Street is famous for one short block on Russian Hill where the road zig-zags down the steep hill in tight hairpin turns. The brick road is lined with gardens, and in summer the hydrangeas bloom pink, purple and blue.',
+    'Cars go down slowly, one way, while visitors walk the stairs on both sides. From the top you can see far across the city: Coit Tower on Telegraph Hill, the Bay Bridge, and the blue water of the bay.'],
+ l:'The red brick road and its tight curves · the big hydrangea bushes · Coit Tower on the hill in the distance · the white Bay Bridge tower across the water.',src:[]};
+['goldengate','ferry','painted','hills','chinatown','cityhall','palace','pavilion','bandshell','lombard'].forEach(function(k){A[k].by='Photographs by Samnang Loy · San Francisco';});
+var L=[['goldengate','San Francisco · 1937'],['ferry','The Embarcadero · 1898'],['lombard','Russian Hill'],['painted','Alamo Square'],['hills','Hilltop views'],['chinatown','Grant Avenue'],['cityhall','Pride · at night'],['pavilion','Golden Gate Park'],['bandshell','Golden Gate Park · 1900'],['palace','Marina District · 1915']];
 var S=document.getElementById('sflStrips');
 function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;');}
 L.forEach(function(x,n){var k=x[0],a=A[k];
- var picks={goldengate:[1,9,13,4,5],ferry:[1,3],painted:[1,3],hills:[1,3],chinatown:[1,6],cityhall:[1,5],pavilion:[1,5],bandshell:[1,3],palace:[2,5]}[k]||[1];picks.forEach(function(i){var b=document.createElement('button');b.type='button';b.className='alsf-strip'+(n===0&&i===9?' on':'');b.setAttribute('data-k',k);b.setAttribute('aria-label',a.t);
+ var picks={goldengate:[1],ferry:[1],lombard:[1],painted:[1],hills:[1],chinatown:[1],cityhall:[1],pavilion:[1],bandshell:[1],palace:[2]}[k]||[1];picks.forEach(function(i){var b=document.createElement('button');b.type='button';b.className='alsf-strip'+(n===0?' on':'');b.setAttribute('data-k',k);b.setAttribute('aria-label',a.t);
   b.innerHTML='<img src="sf-'+k+'-'+i+'.jpg" alt="" loading="lazy" decoding="async"><span class="alsf-tag">'+esc(a.t)+'</span><span class="alsf-sc"><b>'+esc(a.t)+'</b><span>'+x[1]+'</span></span>';S.appendChild(b);});
 });
 var st=[].slice.call(S.children);function act(b){st.forEach(function(x){x.classList.toggle('on',x===b);});}
