@@ -5190,6 +5190,7 @@ document.addEventListener('keydown',function(e){if(!M.classList.contains('open')
 .altr h2{font-family:Georgia,'Times New Roman',serif;font-size:clamp(30px,4vw,44px);font-weight:600;line-height:1.1;margin:0 0 8px;color:#F3EDE2}
 .altr-km{color:#E2C98F;font-size:18px;margin:0 0 12px}
 .altr-lead{color:#CFC6B6;max-width:760px;margin:0 0 34px;font-size:16px;line-height:1.65}
+.altr-host{display:grid;grid-template-columns:240px 1fr;gap:28px;align-items:center;background:#2C2824;border:1px solid #3B352F;border-radius:22px;padding:22px;margin:0 0 34px}.altr-host img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:16px;display:block}.altr-host h3{font-family:Georgia,serif;font-size:clamp(24px,3vw,32px);margin:4px 0 10px;color:#F3EDE2}.altr-host p{color:#CFC6B6;font-size:15px;line-height:1.7;margin:0 0 10px}.altr-host .altr-badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}.altr-host .altr-badges span{background:#3B352F;color:#E2C98F;font-size:13px;padding:6px 12px;border-radius:999px}@media (max-width:700px){.altr-host{grid-template-columns:1fr}.altr-host img{max-width:280px}}
 .altr-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:20px}
 .altr-card{background:#2C2824;border:1px solid #3B352F;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;transition:transform .25s,border-color .25s}
 .altr-card:hover{transform:translateY(-4px);border-color:#C9A55A}
@@ -5234,6 +5235,13 @@ document.addEventListener('keydown',function(e){if(!M.classList.contains('open')
   <h2>Siem Reap Temple &amp; Culture Tours</h2>
   <p class="altr-km">ដំណើរកម្សាន្ត សៀមរាប</p>
   <p class="altr-lead">Travel with a local Cambodian guide born in Siem Reap. All tours include private A/C transport and multi-language guide options. Choose a tour, send a booking request, and I will reply to confirm the date and arrange payment.</p>
+<div class="altr-host" id="meet-your-guide">
+   <img src="al-samnang.jpg" alt="Samnang Loy, founder of AngkorLens" loading="lazy" decoding="async">
+   <div><p class="altr-kicker" style="margin:0">Meet your host</p><h3>Hi, I'm Samnang Loy</h3>
+   <p>I was born in Siem Reap. I am the author and photographer of the AngkorLens books, and the temple photos in my books and galleries are my own.</p>
+   <p>Your tour is guided by a <b>licensed local guide</b> in Siem Reap whom I know and trust. Send me your booking and I will personally arrange everything for you.</p>
+   <div class="altr-badges"><span>📍 Born in Siem Reap</span><span>📚 Author of AngkorLens</span><span>🪪 Licensed local guide</span></div></div>
+  </div>
   <div class="altr-grid" id="altrGrid"></div>
 
   <div class="altr-circ">
