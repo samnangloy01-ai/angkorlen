@@ -741,6 +741,7 @@ body.top100-view .top100-test-section {
                     </div>
                 </div>
                 <a href="#khmer-art-sf" class="hover:text-cyan-600 transition">Museum</a>
+                <a href="#tours" class="hover:text-cyan-600 transition">Tours</a>
                 <a href="#creator" class="hover:text-cyan-600 transition">Creator</a>
                 <a href="#about" class="hover:text-cyan-600 transition">About</a>
             </nav>
@@ -801,6 +802,7 @@ body.top100-view .top100-test-section {
                 </div>
             </details>
             <a href="#khmer-art-sf" class="block text-neutral-600 hover:text-cyan-600 font-medium py-1">Museum — Khmer Art in SF</a>
+            <a href="#tours" class="block text-neutral-600 hover:text-cyan-600 font-medium py-1">Tours — Book a trip</a>
             <a href="#creator" class="block text-neutral-600 hover:text-cyan-600 font-medium py-1">Creator</a>
             <a href="#about" class="block text-neutral-600 hover:text-cyan-600 font-medium py-1">About</a>
             <div class="flex items-center space-x-3 pt-2 border-t border-neutral-100">
@@ -946,9 +948,11 @@ body.top100-view .top100-test-section {
 .alx-act{display:flex;gap:26px;align-items:center;white-space:nowrap}
 .alx-act button{background:none;border:0;color:#fff;font-size:18px;cursor:pointer;font-family:inherit;padding:6px 0}
 .alx-act .alx-no{color:#CFC6B6}
+.alx-min .alx-no,.alx-min .alx-yes{display:none}.alx-min .alx-t h3:after{content:""}
+.alx-act .alx-tour{background:#fff;color:#221F1C;font-weight:700;padding:10px 20px;border-radius:999px;text-decoration:none;font-size:18px}
 .alx-act .alx-yes{background:#C9A55A;color:#221F1C;font-weight:700;padding:10px 20px;border-radius:999px}
 @media (max-width:900px){.alx-row{grid-template-columns:repeat(2,1fr)}.alx-card{aspect-ratio:3/4}}
-@media (max-width:640px){.alx-travel{flex-direction:column;align-items:flex-start;padding:150px 20px 20px}.alx-stack{left:20px;top:-14px;bottom:auto;height:150px}.alx-act{gap:18px}.alx-name{font-size:24px}.alx-in{padding:20px 10px 22px}.alx-top{font-size:14px}.alx-btn{padding:8px 16px;font-size:14px}}
+@media (max-width:640px){.alx-act{flex-wrap:wrap;white-space:normal}.alx-travel{flex-direction:column;align-items:flex-start;padding:150px 20px 20px}.alx-stack{left:20px;top:-14px;bottom:auto;height:150px}.alx-act{gap:18px}.alx-name{font-size:24px}.alx-in{padding:20px 10px 22px}.alx-top{font-size:14px}.alx-btn{padding:8px 16px;font-size:14px}}
 </style>
 <section class="alx" aria-label="Explore AngkorLens">
   <div class="alx-row">
@@ -960,15 +964,15 @@ body.top100-view .top100-test-section {
   <div class="alx-travel" id="alxTravel">
     <div class="alx-stack" aria-hidden="true"><img src="al-feature-koh-ker.jpg" alt=""><img src="al-feature-ta-prohm.jpg" alt=""><img src="al-feature-angkor-wat.jpg" alt=""></div>
     <div class="alx-t"><h3>Interested in Travel?</h3><p>Get new temples, photos and travel stories from AngkorLens.</p></div>
-    <div class="alx-act"><button type="button" class="alx-no" onclick="alxHide()">No, thanks</button><button type="button" class="alx-yes" onclick="alxSignup()">Sign up now</button></div>
+    <div class="alx-act"><button type="button" class="alx-no" onclick="alxHide()">No, thanks</button><button type="button" class="alx-yes" onclick="alxSignup()">Sign up now</button><a href="#tours" class="alx-tour">🛺 Book a Tour</a></div>
   </div>
 </section>
 <script>
-function alxHide(){var t=document.getElementById('alxTravel');if(t)t.style.display='none';try{localStorage.setItem('alxTravelHidden','1')}catch(e){}}
+function alxHide(){var t=document.getElementById('alxTravel');if(t)t.classList.add('alx-min');try{localStorage.setItem('alxTravelHidden','1')}catch(e){}}
 function alxSignup(){var s=null;try{s=localStorage.getItem('angkorLensNewsletterSubscribed')}catch(e){}
  if(s==='yes'){var t=document.getElementById('alxTravel');if(t)t.querySelector('p').textContent='You are signed up. Thank you!';return;}
  if(typeof openNewsletterIfNeeded==='function')openNewsletterIfNeeded();else location.hash='newsletter-bottom';}
-(function(){try{if(localStorage.getItem('alxTravelHidden')==='1'||localStorage.getItem('angkorLensNewsletterSubscribed')==='yes'){var t=document.getElementById('alxTravel');if(t)t.style.display='none';}}catch(e){}})();
+(function(){try{if(localStorage.getItem('alxTravelHidden')==='1'||localStorage.getItem('angkorLensNewsletterSubscribed')==='yes'){var t=document.getElementById('alxTravel');if(t)t.classList.add('alx-min');}}catch(e){}})();
 </script>
 
         <!-- Heritage Highlights -->
@@ -5171,6 +5175,143 @@ IM.addEventListener('click',function(){var zi=Z.querySelector('img');zi.style.di
 window.alsfClose=function(){zClose();M.classList.remove('open');document.body.style.overflow='';};
 M.addEventListener('click',function(e){if(e.target===M)alsfClose();});
 document.addEventListener('keydown',function(e){if(!M.classList.contains('open'))return;if(e.key==='Escape'){if(Z.style.display==='flex'){zClose();return;}alsfClose();}if(e.key==='ArrowLeft')alsfStep(-1);if(e.key==='ArrowRight')alsfStep(1);});
+})();
+</script>
+
+
+<!-- ===== AngkorLens Siem Reap Tours ===== -->
+<style>
+.altr{background:#221F1C;color:#F3EDE2;padding:72px 16px}
+.altr-inner{max-width:80rem;margin:0 auto}
+.altr-kicker{color:#C9A55A;font-size:12px;font-weight:700;letter-spacing:.25em;text-transform:uppercase;margin:0 0 10px}
+.altr h2{font-family:Georgia,'Times New Roman',serif;font-size:clamp(30px,4vw,44px);font-weight:600;line-height:1.1;margin:0 0 8px;color:#F3EDE2}
+.altr-km{color:#E2C98F;font-size:18px;margin:0 0 12px}
+.altr-lead{color:#CFC6B6;max-width:760px;margin:0 0 34px;font-size:16px;line-height:1.65}
+.altr-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:20px}
+.altr-card{background:#2C2824;border:1px solid #3B352F;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;transition:transform .25s,border-color .25s}
+.altr-card:hover{transform:translateY(-4px);border-color:#C9A55A}
+.altr-pic{height:150px;position:relative;background:linear-gradient(135deg,#3B352F,#2a2622);display:flex;align-items:center;justify-content:center;font-size:56px}
+.altr-pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.altr-body{padding:18px 18px 20px;display:flex;flex-direction:column;flex:1}
+.altr-sub{color:#C9A55A;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin:0 0 6px}
+.altr-card h3{font-family:Georgia,serif;font-size:20px;line-height:1.25;margin:0 0 8px;color:#F3EDE2}
+.altr-desc{color:#CFC6B6;font-size:14px;line-height:1.6;margin:0 0 16px;flex:1}
+.altr-foot{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.altr-price{font-size:13px;color:#9E958A}.altr-price b{display:block;font-size:24px;color:#F3EDE2}
+.altr-btn{background:#C9A55A;color:#221F1C;border:0;font-weight:700;font-size:14px;padding:11px 18px;border-radius:999px;cursor:pointer;font-family:inherit}
+.altr-btn:hover{background:#E2C98F}
+.altr-circ{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:48px 0 0}
+.altr-box{background:#2C2824;border:1px solid #3B352F;border-radius:18px;padding:24px}
+.altr-box h3{font-family:Georgia,serif;font-size:22px;margin:0 0 6px;color:#F3EDE2}
+.altr-box p{color:#CFC6B6;font-size:14px;line-height:1.6;margin:0 0 12px}
+.altr-box ol{margin:0;padding-left:22px;color:#E8E1D5;font-size:15px;line-height:1.9;columns:2;column-gap:24px}
+.altr-box small{display:block;color:#9E958A;font-size:12px;margin-top:12px}
+.altr-tips{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin:20px 0 0}
+.altr-tips div{background:#2C2824;border-radius:16px;padding:18px;border:1px solid #3B352F}
+.altr-tips b{display:block;color:#E2C98F;margin:0 0 6px;font-size:15px}
+.altr-tips span{color:#CFC6B6;font-size:14px;line-height:1.6}
+.altr-modal{position:fixed;inset:0;z-index:10002;background:rgba(14,12,10,.85);display:none;overflow-y:auto;padding:24px 12px}
+.altr-modal.open{display:block}
+.altr-form{max-width:520px;margin:0 auto;background:#F6F1E7;color:#221F1C;border-radius:20px;padding:26px 24px;position:relative}
+.altr-form h3{font-family:Georgia,serif;font-size:24px;margin:0 0 4px}
+.altr-form .altr-ft{color:#7A5A1E;font-weight:700;margin:0 0 16px}
+.altr-form label{display:block;font-size:13px;font-weight:700;color:#4E4740;margin:12px 0 5px}
+.altr-form input,.altr-form select,.altr-form textarea{width:100%;box-sizing:border-box;border:1px solid #d8d1c3;border-radius:10px;padding:11px 12px;font-size:16px;font-family:inherit;background:#fff;color:#221F1C}
+.altr-row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.altr-total{display:flex;justify-content:space-between;align-items:center;background:#221F1C;color:#F3EDE2;border-radius:12px;padding:14px 16px;margin:18px 0 6px}
+.altr-total b{font-size:24px;color:#E2C98F}
+.altr-note{font-size:12px;color:#6b6359;line-height:1.5;margin:6px 0 16px}
+.altr-send{width:100%;padding:14px;font-size:16px}.altr-tg{margin-top:10px;background:#229ED9;color:#fff}.altr-tg:hover{background:#1b8ec4}
+.altr-x{position:absolute;top:10px;right:12px;width:40px;height:40px;border-radius:50%;border:0;background:#e9e2d4;font-size:24px;cursor:pointer;color:#221F1C}
+@media (max-width:760px){.altr-circ,.altr-tips{grid-template-columns:1fr}.altr-box ol{columns:1}}
+</style>
+<section id="tours" class="altr" aria-label="Siem Reap tours">
+ <div class="altr-inner">
+  <p class="altr-kicker">Book a guided trip · Siem Reap, Cambodia</p>
+  <h2>Siem Reap Temple &amp; Culture Tours</h2>
+  <p class="altr-km">ដំណើរកម្សាន្ត សៀមរាប</p>
+  <p class="altr-lead">Travel with a local Cambodian guide born in Siem Reap. All tours include private A/C transport and multi-language guide options. Choose a tour, send a booking request, and I will reply to confirm the date and arrange payment.</p>
+  <div class="altr-grid" id="altrGrid"></div>
+
+  <div class="altr-circ">
+   <div class="altr-box"><h3>🏛️ Small Circuit</h3><p>A classic route for first-time visitors. Usually planned as a full-day visit.</p>
+    <ol><li>Angkor Wat</li><li>Angkor Thom South Gate</li><li>Bayon</li><li>Baphuon</li><li>Phimeanakas</li><li>Terrace of the Elephants</li><li>Terrace of the Leper King</li><li>Thommanon</li><li>Chau Say Tevoda</li><li>Ta Keo</li><li>Ta Prohm</li><li>Banteay Kdei</li><li>Srah Srang</li><li>Prasat Kravan</li></ol>
+    <small>Suggested planning list, not a guarantee that every stop is included in every tour package.</small></div>
+   <div class="altr-box"><h3>🌿 Grand Circuit</h3><p>A route around the wider Angkor area, often paired with a full day of sightseeing.</p>
+    <ol><li>Preah Khan</li><li>Neak Pean</li><li>Ta Som</li><li>East Mebon</li><li>Pre Rup</li></ol>
+    <small>Five well-known Grand Circuit highlights. Other stops may be added depending on the route.</small></div>
+  </div>
+  <div class="altr-tips">
+   <div><b>☀️ Sunrise at Angkor Wat</b><span>Start early, bring water, and confirm your pickup time and temple-pass requirements before departure.</span></div>
+   <div><b>🌿 Jungle temples</b><span>Wear comfortable shoes, respect barriers and sacred spaces, and follow your guide's safety instructions.</span></div>
+   <div><b>🚤 Lake &amp; local life</b><span>For lake trips, ask about seasonal water levels, boat fees, transport, and what is included in the price.</span></div>
+  </div>
+ </div>
+</section>
+<div class="altr-modal" id="altrModal" role="dialog" aria-modal="true" aria-labelledby="altrTitle">
+ <form class="altr-form" id="altrForm">
+  <button type="button" class="altr-x" aria-label="Close" onclick="altrClose()">&times;</button>
+  <h3 id="altrTitle">Booking request</h3>
+  <p class="altr-ft" id="altrTourName"></p>
+  <label for="altrTour">Tour</label><select id="altrTour"></select>
+  <label for="altrName">Your full name</label><input id="altrName" required autocomplete="name">
+  <div class="altr-row2"><div><label for="altrDate">Tour date</label><input id="altrDate" type="date" required></div>
+  <div><label for="altrGuests">Guests</label><input id="altrGuests" type="number" min="1" max="20" value="2" required></div></div>
+  <label for="altrLang">Guide language</label><select id="altrLang"><option>English</option><option>Spanish (Español)</option><option>Japanese (日本語)</option><option>French (Français)</option><option>German (Deutsch)</option><option>Khmer (ខ្មែរ)</option></select>
+  <label for="altrHotel">Hotel / pickup place (optional)</label><input id="altrHotel">
+  <label for="altrMsg">Message (optional)</label><textarea id="altrMsg" rows="2"></textarea>
+  <div class="altr-total"><span>Estimated total</span><b id="altrTotal">$0</b></div>
+  <p class="altr-note">No payment is taken on this website. Your request opens WhatsApp (+855 93 496 561) or Telegram (@samnang676) with me; I will confirm availability and arrange payment with you directly.</p>
+  <button type="submit" class="altr-btn altr-send" id="altrSend" data-via="wa">Send on WhatsApp</button>
+  <button type="submit" class="altr-btn altr-send altr-tg" data-via="tg">Send on Telegram</button>
+ </form>
+</div>
+<script>
+(function(){
+var CONTACT={whatsapp:'85593496561',telegram:'samnang676'}; /* set phone (digits, with country code) or Telegram username */
+var T=[
+['sunrise','☀️','Angkor Wat Sunrise Tour','4:30 AM – 12:30 PM',65,'Witness the magical sunrise over the iconic temple towers, followed by inner temple exploration.','al-feature-angkor-wat.jpg'],
+['small','🏛️','Small Circle Temples','Full-day classic',55,'Explore 14 main Small Circuit stops, including Angkor Wat, Phnom Bakheng, Bayon, Chau Say Tevoda, Ta Keo, Ta Prohm, Banteay Kdei, Prasat Kravan, Prohm Kel, Baksei Chamkrong, Bay Kaek, Top Khang Lech, Ta Nei, and Srah Srang.','al-feature-bayon.jpg'],
+['big','🏯','Big Temple Circle','Extensive route',60,'Explore Preah Khan, Ta Som, Neak Pean, and East Mebon for a deeper historical immersion.',''],
+['chong','🚤','Chong Khneas Floating Village','Tonle Sap Lake',45,'Boat cruise across the floating community, schools, and markets on Southeast Asia’s largest lake.',''],
+['pluck','🛶','Kompong Pluck Flooded Forest','Stilted houses & mangroves',70,'See towering stilted houses and take a wooden boat through the flooded mangrove forest.',''],
+['beng','🌿','Beng Mealea Jungle Temple','Unrestored adventure',90,'Discover the mysterious 12th-century temple swallowed by jungle vines and giant trees.',''],
+['kohker','⛰️','Koh Ker & Beng Mealea','Full-day pyramid temple',110,'Venture to the remote seven-tiered pyramid temple of Koh Ker and explore ancient Khmer ruins.','al-feature-koh-ker.jpg'],
+['kulen','🏔️','Phnom Kulen Sacred Mountain','Waterfalls & 1,000 lingas',120,'Hike the sacred mountain, see riverbed carvings and the giant reclining Buddha, and swim at the waterfalls.',''],
+['city','🛕','Siem Reap City & Pagoda Tour','Pagodas & culture',40,'Discover local Buddhist pagodas, cultural traditions, and downtown Siem Reap life.',''],
+['roluos','🧱','Roluos Group Temples','Bakong, Lolei, Preah Ko',50,'Explore some of the earliest permanent temples of the Khmer Empire, built in the 9th century.',''],
+['market','🛍️','Siem Reap Market & Artisan Tour','Old Market & crafts',35,'Browse local markets, souvenirs, silk weaving, and artisan handicraft workshops.',''],
+['cook','👨‍🍳','Khmer Cooking Class & Market','Hands-on cooking',65,'Shop for fresh ingredients at a local market and learn to cook authentic amok and spring rolls.',''],
+['baray','🌊','West Baray & West Mebon','Ancient reservoir',55,'Visit the huge ancient reservoir built by Khmer engineers and take a boat to West Mebon island.',''],
+['srei','🌸','Banteay Srei Pink Temple','Pink sandstone carvings',75,'Admire the intricate pink sandstone carvings known as the jewel of Khmer art.',''],
+['tuktuk','🛺','Tuk Tuk City Highlights','Fun local transport',30,'Ride through Siem Reap in a traditional tuk tuk to see temples and markets.',''],
+['food','🍲','Evening Khmer Food Tasting','Street food & nightlife',55,'Taste local Cambodian dishes, tropical fruits, and drinks with a local food guide.','']
+];
+var g=document.getElementById('altrGrid'),sel=document.getElementById('altrTour');
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;');}
+T.forEach(function(t){
+ var c=document.createElement('article');c.className='altr-card';
+ c.innerHTML='<div class="altr-pic">'+(t[6]?'<img src="'+t[6]+'" alt="" loading="lazy" decoding="async">':'<span aria-hidden="true">'+t[1]+'</span>')+'</div><div class="altr-body"><p class="altr-sub">'+esc(t[3])+'</p><h3>'+esc(t[2])+'</h3><p class="altr-desc">'+esc(t[5])+'</p><div class="altr-foot"><span class="altr-price">From<b>$'+t[4]+'</b>per person</span><button type="button" class="altr-btn" data-tour="'+t[0]+'">Book Now</button></div></div>';
+ g.appendChild(c);
+ var o=document.createElement('option');o.value=t[0];o.textContent=t[2]+' — $'+t[4];sel.appendChild(o);
+});
+var M=document.getElementById('altrModal');
+function cur(){for(var i=0;i<T.length;i++)if(T[i][0]===sel.value)return T[i];return T[0];}
+function upd(){var t=cur(),n=Math.max(1,parseInt(document.getElementById('altrGuests').value||'1',10));document.getElementById('altrTotal').textContent='$'+(t[4]*n).toFixed(2);document.getElementById('altrTourName').textContent=t[2];}
+window.altrOpen=function(id){if(id)sel.value=id;upd();var d=document.getElementById('altrDate');if(!d.min){var x=new Date();x.setDate(x.getDate()+1);d.min=x.toISOString().slice(0,10);}M.classList.add('open');document.body.style.overflow='hidden';};
+window.altrClose=function(){M.classList.remove('open');document.body.style.overflow='';};
+g.addEventListener('click',function(e){var b=e.target.closest('[data-tour]');if(b)altrOpen(b.getAttribute('data-tour'));});
+sel.addEventListener('change',upd);document.getElementById('altrGuests').addEventListener('input',upd);
+M.addEventListener('click',function(e){if(e.target===M)altrClose();});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&M.classList.contains('open'))altrClose();});
+document.getElementById('altrForm').addEventListener('submit',function(e){e.preventDefault();var t=cur();
+ var n=document.getElementById('altrGuests').value;
+ var msg='Hello Samnang! Tour booking request (AngkorLens)\n\nTour: '+t[2]+'\nDate: '+document.getElementById('altrDate').value+'\nGuests: '+n+'\nGuide language: '+document.getElementById('altrLang').value+'\nName: '+document.getElementById('altrName').value+(document.getElementById('altrHotel').value?'\nPickup: '+document.getElementById('altrHotel').value:'')+(document.getElementById('altrMsg').value?'\nMessage: '+document.getElementById('altrMsg').value:'')+'\nEstimated total: $'+(t[4]*n).toFixed(2);
+ var via=(e.submitter&&e.submitter.getAttribute('data-via'))||'wa';
+ if(via==='wa'&&CONTACT.whatsapp){window.open('https://wa.me/'+CONTACT.whatsapp+'?text='+encodeURIComponent(msg),'_blank','noopener');}
+ else if(CONTACT.telegram){try{var pr=navigator.clipboard&&navigator.clipboard.writeText(msg);if(pr&&pr.catch)pr.catch(function(){});}catch(err){}alert('Your booking details are copied. Paste them in the Telegram chat that opens now.');window.open('https://t.me/'+CONTACT.telegram,'_blank','noopener');}
+ else{document.getElementById('altrSend').textContent='Online booking opens soon — thank you!';}
+});
 })();
 </script>
 
