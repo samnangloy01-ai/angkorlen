@@ -918,6 +918,59 @@ body.top100-view .top100-test-section {
             </div>
         </section>
 
+
+<!-- ===== Explore cards + travel sign-up bar ===== -->
+<style>
+.alx{max-width:80rem;margin:28px auto 8px;padding:0 16px}
+.alx-row{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.alx-card{position:relative;display:block;border-radius:18px;overflow:hidden;aspect-ratio:5/8;color:#fff;text-decoration:none;background:#221F1C}
+.alx-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.alx-card:hover img{transform:scale(1.05)}
+.alx-card::after{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,rgba(20,18,16,.55) 0%,rgba(20,18,16,.15) 35%,rgba(20,18,16,.25) 60%,rgba(20,18,16,.8) 100%)}
+.alx-in{position:absolute;inset:0;z-index:1;display:flex;flex-direction:column;align-items:center;justify-content:space-between;padding:30px 14px 34px;text-align:center}
+.alx-top{font-size:17px;font-weight:600;letter-spacing:.02em}
+.alx-top:after{content:"";display:block;width:28px;height:2px;background:#fff;margin:10px auto 0}
+.alx-name{font-family:Georgia,'Times New Roman',serif;font-size:clamp(24px,2.6vw,34px);line-height:1.1;text-shadow:0 2px 12px rgba(0,0,0,.5)}
+.alx-km{display:block;font-family:inherit;font-size:15px;color:#E2C98F;margin-top:6px}
+.alx-btn{border:1.5px solid #fff;padding:10px 26px;font-size:16px;font-weight:600;transition:background .2s,color .2s}
+.alx-card:hover .alx-btn{background:#fff;color:#221F1C}
+.alx-travel{position:relative;margin:26px 0 0;background:#3A352F;color:#fff;border-radius:22px;display:flex;align-items:center;gap:24px;padding:22px 28px 22px 220px;min-height:130px}
+.alx-stack{position:absolute;left:28px;bottom:14px;width:170px;height:150px}
+.alx-stack img{position:absolute;bottom:0;width:96px;height:132px;object-fit:cover;border-radius:12px;box-shadow:0 8px 20px rgba(0,0,0,.4);border:2px solid #fff}
+.alx-stack img:nth-child(1){left:0;transform:rotate(-10deg)}
+.alx-stack img:nth-child(2){left:64px;transform:rotate(9deg)}
+.alx-stack img:nth-child(3){left:30px;bottom:12px;z-index:1}
+.alx-t{flex:1}
+.alx-t h3{font-size:clamp(22px,2.6vw,34px);font-weight:600;margin:0 0 4px;color:#fff}
+.alx-t p{margin:0;color:#E8E1D5;font-size:clamp(15px,1.6vw,19px)}
+.alx-act{display:flex;gap:26px;align-items:center;white-space:nowrap}
+.alx-act button{background:none;border:0;color:#fff;font-size:18px;cursor:pointer;font-family:inherit;padding:6px 0}
+.alx-act .alx-no{color:#CFC6B6}
+.alx-act .alx-yes{background:#C9A55A;color:#221F1C;font-weight:700;padding:10px 20px;border-radius:999px}
+@media (max-width:900px){.alx-row{grid-template-columns:repeat(2,1fr)}.alx-card{aspect-ratio:3/4}}
+@media (max-width:640px){.alx-travel{flex-direction:column;align-items:flex-start;padding:150px 20px 20px}.alx-stack{left:20px;top:-14px;bottom:auto;height:150px}.alx-act{gap:18px}.alx-name{font-size:24px}.alx-in{padding:20px 10px 22px}.alx-top{font-size:14px}.alx-btn{padding:8px 16px;font-size:14px}}
+</style>
+<section class="alx" aria-label="Explore AngkorLens">
+  <div class="alx-row">
+    <a class="alx-card" href="#templeGrid"><img src="al-feature-bayon.jpg" alt="" loading="lazy" decoding="async"><div class="alx-in"><span class="alx-top">Explore</span><span class="alx-name">Temples<span class="alx-km">ប្រាសាទ</span></span><span class="alx-btn">Explore</span></div></a>
+    <a class="alx-card" href="#heritage"><img src="/IMG_0713.JPG" alt="" loading="lazy" decoding="async"><div class="alx-in"><span class="alx-top">Explore</span><span class="alx-name">Heritage<span class="alx-km">បេតិកភណ្ឌ</span></span><span class="alx-btn">Explore</span></div></a>
+    <a class="alx-card" href="#khmer-art-sf"><img src="sf-vishnu-3.jpg" alt="" loading="lazy" decoding="async" style="object-position:40% 50%"><div class="alx-in"><span class="alx-top">Museum</span><span class="alx-name">Khmer Art<span class="alx-km">សិល្បៈខ្មែរ</span></span><span class="alx-btn">Explore</span></div></a>
+    <a class="alx-card" href="#books"><img src="al-feature-angkor-wat.jpg" alt="" loading="lazy" decoding="async"><div class="alx-in"><span class="alx-top">Read</span><span class="alx-name">Books<span class="alx-km">សៀវភៅ</span></span><span class="alx-btn">Explore</span></div></a>
+  </div>
+  <div class="alx-travel" id="alxTravel">
+    <div class="alx-stack" aria-hidden="true"><img src="al-feature-koh-ker.jpg" alt=""><img src="al-feature-ta-prohm.jpg" alt=""><img src="al-feature-angkor-wat.jpg" alt=""></div>
+    <div class="alx-t"><h3>Interested in Travel?</h3><p>Get new temples, photos and travel stories from AngkorLens.</p></div>
+    <div class="alx-act"><button type="button" class="alx-no" onclick="alxHide()">No, thanks</button><button type="button" class="alx-yes" onclick="alxSignup()">Sign up now</button></div>
+  </div>
+</section>
+<script>
+function alxHide(){var t=document.getElementById('alxTravel');if(t)t.style.display='none';try{localStorage.setItem('alxTravelHidden','1')}catch(e){}}
+function alxSignup(){var s=null;try{s=localStorage.getItem('angkorLensNewsletterSubscribed')}catch(e){}
+ if(s==='yes'){var t=document.getElementById('alxTravel');if(t)t.querySelector('p').textContent='You are signed up. Thank you!';return;}
+ if(typeof openNewsletterIfNeeded==='function')openNewsletterIfNeeded();else location.hash='newsletter-bottom';}
+(function(){try{if(localStorage.getItem('alxTravelHidden')==='1'||localStorage.getItem('angkorLensNewsletterSubscribed')==='yes'){var t=document.getElementById('alxTravel');if(t)t.style.display='none';}}catch(e){}})();
+</script>
+
         <!-- Heritage Highlights -->
         <section id="heritage" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
             <div class="mb-6">
