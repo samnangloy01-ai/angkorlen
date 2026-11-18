@@ -5191,7 +5191,7 @@ document.addEventListener('keydown',function(e){if(!M.classList.contains('open')
 .altr-card{background:#2C2824;border:1px solid #3B352F;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;transition:transform .25s,border-color .25s}
 .altr-card:hover{transform:translateY(-4px);border-color:#C9A55A}
 .altr-pic{height:150px;position:relative;background:linear-gradient(135deg,#3B352F,#2a2622);display:flex;align-items:center;justify-content:center;font-size:56px}
-.altr-pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.altr-pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.altr-cr{position:absolute;right:6px;bottom:6px;z-index:1;background:rgba(0,0,0,.6);color:#eee;font-size:10px;padding:2px 7px;border-radius:999px;text-decoration:none;max-width:92%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .altr-body{padding:18px 18px 20px;display:flex;flex-direction:column;flex:1}
 .altr-sub{color:#C9A55A;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin:0 0 6px}
 .altr-card h3{font-family:Georgia,serif;font-size:20px;line-height:1.25;margin:0 0 8px;color:#F3EDE2}
@@ -5241,6 +5241,7 @@ document.addEventListener('keydown',function(e){if(!M.classList.contains('open')
     <ol><li>Preah Khan</li><li>Neak Pean</li><li>Ta Som</li><li>East Mebon</li><li>Pre Rup</li></ol>
     <small>Five well-known Grand Circuit highlights. Other stops may be added depending on the route.</small></div>
   </div>
+  <p style="color:#9E958A;font-size:12px;margin:14px 0 0">Some tour photos are from Wikimedia Commons, used under the free licenses shown on each photo (tap the credit to see the original). Other photos © Samnang Loy.</p>
   <div class="altr-tips">
    <div><b>☀️ Sunrise at Angkor Wat</b><span>Start early, bring water, and confirm your pickup time and temple-pass requirements before departure.</span></div>
    <div><b>🌿 Jungle temples</b><span>Wear comfortable shoes, respect barriers and sacred spaces, and follow your guide's safety instructions.</span></div>
@@ -5272,26 +5273,26 @@ var CONTACT={whatsapp:'85593496561',telegram:'samnang676'}; /* set phone (digits
 var T=[
 ['sunrise','☀️','Angkor Wat Sunrise Tour','4:30 AM – 12:30 PM',65,'Witness the magical sunrise over the iconic temple towers, followed by inner temple exploration.','al-feature-angkor-wat.jpg'],
 ['small','🏛️','Small Circle Temples','Full-day classic',55,'Explore 14 main Small Circuit stops, including Angkor Wat, Phnom Bakheng, Bayon, Chau Say Tevoda, Ta Keo, Ta Prohm, Banteay Kdei, Prasat Kravan, Prohm Kel, Baksei Chamkrong, Bay Kaek, Top Khang Lech, Ta Nei, and Srah Srang.','al-feature-bayon.jpg'],
-['big','🏯','Big Temple Circle','Extensive route',60,'Explore Preah Khan, Ta Som, Neak Pean, and East Mebon for a deeper historical immersion.',''],
-['chong','🚤','Chong Khneas Floating Village','Tonle Sap Lake',45,'Boat cruise across the floating community, schools, and markets on Southeast Asia’s largest lake.',''],
-['pluck','🛶','Kompong Pluck Flooded Forest','Stilted houses & mangroves',70,'See towering stilted houses and take a wooden boat through the flooded mangrove forest.',''],
-['beng','🌿','Beng Mealea Jungle Temple','Unrestored adventure',90,'Discover the mysterious 12th-century temple swallowed by jungle vines and giant trees.',''],
+['big','🏯','Big Temple Circle','Extensive route',60,'Explore Preah Khan, Ta Som, Neak Pean, and East Mebon for a deeper historical immersion.','https://commons.wikimedia.org/wiki/Special:FilePath/Entrance_to_the_Preah_Khan_temple%2C_Angkor%2C_Cambodia.jpg?width=900','Satdeep Gill · CC BY-SA 4.0','https://commons.wikimedia.org/wiki/File:Entrance_to_the_Preah_Khan_temple%2C_Angkor%2C_Cambodia.jpg'],
+['chong','🚤','Chong Khneas Floating Village','Tonle Sap Lake',45,'Boat cruise across the floating community, schools, and markets on Southeast Asia’s largest lake.','https://commons.wikimedia.org/wiki/Special:FilePath/Floating_village_of_Chong_Kneas_%284380890080%29.jpg?width=900','Christine Zenino · CC BY 2.0','https://commons.wikimedia.org/wiki/File:Floating_village_of_Chong_Kneas_%284380890080%29.jpg'],
+['pluck','🛶','Kompong Pluck Flooded Forest','Stilted houses & mangroves',70,'See towering stilted houses and take a wooden boat through the flooded mangrove forest.','https://commons.wikimedia.org/wiki/Special:FilePath/Kampong_Phlouk_%2828%29.jpg?width=900','Krzysztof Golik · CC BY-SA 4.0','https://commons.wikimedia.org/wiki/File:Kampong_Phlouk_%2828%29.jpg'],
+['beng','🌿','Beng Mealea Jungle Temple','Unrestored adventure',90,'Discover the mysterious 12th-century temple swallowed by jungle vines and giant trees.','https://commons.wikimedia.org/wiki/Special:FilePath/07-Beng_Mealea-nX-36.jpg?width=900','PsamatheM · CC BY-SA 4.0','https://commons.wikimedia.org/wiki/File:07-Beng_Mealea-nX-36.jpg'],
 ['kohker','⛰️','Koh Ker & Beng Mealea','Full-day pyramid temple',110,'Venture to the remote seven-tiered pyramid temple of Koh Ker and explore ancient Khmer ruins.','al-feature-koh-ker.jpg'],
-['kulen','🏔️','Phnom Kulen Sacred Mountain','Waterfalls & 1,000 lingas',120,'Hike the sacred mountain, see riverbed carvings and the giant reclining Buddha, and swim at the waterfalls.',''],
-['city','🛕','Siem Reap City & Pagoda Tour','Pagodas & culture',40,'Discover local Buddhist pagodas, cultural traditions, and downtown Siem Reap life.',''],
-['roluos','🧱','Roluos Group Temples','Bakong, Lolei, Preah Ko',50,'Explore some of the earliest permanent temples of the Khmer Empire, built in the 9th century.',''],
-['market','🛍️','Siem Reap Market & Artisan Tour','Old Market & crafts',35,'Browse local markets, souvenirs, silk weaving, and artisan handicraft workshops.',''],
-['cook','👨‍🍳','Khmer Cooking Class & Market','Hands-on cooking',65,'Shop for fresh ingredients at a local market and learn to cook authentic amok and spring rolls.',''],
-['baray','🌊','West Baray & West Mebon','Ancient reservoir',55,'Visit the huge ancient reservoir built by Khmer engineers and take a boat to West Mebon island.',''],
-['srei','🌸','Banteay Srei Pink Temple','Pink sandstone carvings',75,'Admire the intricate pink sandstone carvings known as the jewel of Khmer art.',''],
-['tuktuk','🛺','Tuk Tuk City Highlights','Fun local transport',30,'Ride through Siem Reap in a traditional tuk tuk to see temples and markets.',''],
-['food','🍲','Evening Khmer Food Tasting','Street food & nightlife',55,'Taste local Cambodian dishes, tropical fruits, and drinks with a local food guide.','']
+['kulen','🏔️','Phnom Kulen Sacred Mountain','Waterfalls & 1,000 lingas',120,'Hike the sacred mountain, see riverbed carvings and the giant reclining Buddha, and swim at the waterfalls.','https://commons.wikimedia.org/wiki/Special:FilePath/Phnom_Kulen%2C_Cambodia_%282211417201%29.jpg?width=900','yeowatzup · CC BY 2.0','https://commons.wikimedia.org/wiki/File:Phnom_Kulen%2C_Cambodia_%282211417201%29.jpg'],
+['city','🛕','Siem Reap City & Pagoda Tour','Pagodas & culture',40,'Discover local Buddhist pagodas, cultural traditions, and downtown Siem Reap life.','https://commons.wikimedia.org/wiki/Special:FilePath/02-Wat_Prom_Rath_%28NgnL%29-06646.jpg?width=900','No(0)GoodNamesLeft · CC BY-SA 4.0','https://commons.wikimedia.org/wiki/File:02-Wat_Prom_Rath_%28NgnL%29-06646.jpg'],
+['roluos','🧱','Roluos Group Temples','Bakong, Lolei, Preah Ko',50,'Explore some of the earliest permanent temples of the Khmer Empire, built in the 9th century.','https://commons.wikimedia.org/wiki/Special:FilePath/Roulos_Group_-_005_Bakong_%288587796725%29.jpg?width=900','Photo Dharma · CC BY 2.0','https://commons.wikimedia.org/wiki/File:Roulos_Group_-_005_Bakong_%288587796725%29.jpg'],
+['market','🛍️','Siem Reap Market & Artisan Tour','Old Market & crafts',35,'Browse local markets, souvenirs, silk weaving, and artisan handicraft workshops.','https://commons.wikimedia.org/wiki/Special:FilePath/A_view_of_the_Old_Market_in_Siem_Reap.JPG?width=900','Hzh · CC BY-SA 4.0','https://commons.wikimedia.org/wiki/File:A_view_of_the_Old_Market_in_Siem_Reap.JPG'],
+['cook','👨‍🍳','Khmer Cooking Class & Market','Hands-on cooking',65,'Shop for fresh ingredients at a local market and learn to cook authentic amok and spring rolls.','https://commons.wikimedia.org/wiki/Special:FilePath/Fish_Amok-_Khmer_specialty.jpg?width=900','Ben Yapp · CC BY 2.0','https://commons.wikimedia.org/wiki/File:Fish_Amok-_Khmer_specialty.jpg'],
+['baray','🌊','West Baray & West Mebon','Ancient reservoir',55,'Visit the huge ancient reservoir built by Khmer engineers and take a boat to West Mebon island.','https://commons.wikimedia.org/wiki/Special:FilePath/Westernbaray2.jpg?width=900','Gabriella Clare Marino · CC BY-SA 3.0','https://commons.wikimedia.org/wiki/File:Westernbaray2.jpg'],
+['srei','🌸','Banteay Srei Pink Temple','Pink sandstone carvings',75,'Admire the intricate pink sandstone carvings known as the jewel of Khmer art.','https://commons.wikimedia.org/wiki/Special:FilePath/Banteay_Srei_32a.jpg?width=900','Olaf Tausch · CC BY 3.0','https://commons.wikimedia.org/wiki/File:Banteay_Srei_32a.jpg'],
+['tuktuk','🛺','Tuk Tuk City Highlights','Fun local transport',30,'Ride through Siem Reap in a traditional tuk tuk to see temples and markets.','https://commons.wikimedia.org/wiki/Special:FilePath/Tuk-tuk_in_Cambodia_Siem_Reap.jpg?width=900','Elmschrat · CC0','https://commons.wikimedia.org/wiki/File:Tuk-tuk_in_Cambodia_Siem_Reap.jpg'],
+['food','🍲','Evening Khmer Food Tasting','Street food & nightlife',55,'Taste local Cambodian dishes, tropical fruits, and drinks with a local food guide.','https://commons.wikimedia.org/wiki/Special:FilePath/Siem_Reap_Pub_Street_02.jpg?width=900','Christophe95 · CC BY-SA 4.0','https://commons.wikimedia.org/wiki/File:Siem_Reap_Pub_Street_02.jpg']
 ];
 var g=document.getElementById('altrGrid'),sel=document.getElementById('altrTour');
 function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;');}
 T.forEach(function(t){
  var c=document.createElement('article');c.className='altr-card';
- c.innerHTML='<div class="altr-pic">'+(t[6]?'<img src="'+t[6]+'" alt="" loading="lazy" decoding="async">':'<span aria-hidden="true">'+t[1]+'</span>')+'</div><div class="altr-body"><p class="altr-sub">'+esc(t[3])+'</p><h3>'+esc(t[2])+'</h3><p class="altr-desc">'+esc(t[5])+'</p><div class="altr-foot"><span class="altr-price">From<b>$'+t[4]+'</b>per person</span><button type="button" class="altr-btn" data-tour="'+t[0]+'">Book Now</button></div></div>';
+ c.innerHTML='<div class="altr-pic">'+(t[6]?'<img src="'+t[6]+'" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">':'<span aria-hidden="true">'+t[1]+'</span>')+(t[7]?'<a class="altr-cr" href="'+t[8]+'" target="_blank" rel="noopener">Photo: '+esc(t[7])+'</a>':'')+'</div><div class="altr-body"><p class="altr-sub">'+esc(t[3])+'</p><h3>'+esc(t[2])+'</h3><p class="altr-desc">'+esc(t[5])+'</p><div class="altr-foot"><span class="altr-price">From<b>$'+t[4]+'</b>per person</span><button type="button" class="altr-btn" data-tour="'+t[0]+'">Book Now</button></div></div>';
  g.appendChild(c);
  var o=document.createElement('option');o.value=t[0];o.textContent=t[2]+' — $'+t[4];sel.appendChild(o);
 });
