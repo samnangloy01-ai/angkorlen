@@ -742,6 +742,7 @@ body.top100-view .top100-test-section {
                 </div>
                 <a href="#khmer-art-sf" class="hover:text-cyan-600 transition">Museum</a>
                 <a href="#tours" class="hover:text-cyan-600 transition">Tours</a>
+                <a href="#guide" class="hover:text-cyan-600 transition">Guide</a>
                 <a href="#creator" class="hover:text-cyan-600 transition">Creator</a>
                 <a href="#about" class="hover:text-cyan-600 transition">About</a>
             </nav>
@@ -803,6 +804,8 @@ body.top100-view .top100-test-section {
             </details>
             <a href="#khmer-art-sf" class="block text-neutral-600 hover:text-cyan-600 font-medium py-1">Museum — Khmer Art in SF</a>
             <a href="#tours" class="block text-neutral-600 hover:text-cyan-600 font-medium py-1">Tours — Book a trip</a>
+            <a href="#guide" class="block text-neutral-600 hover:text-cyan-600 font-medium py-1">Travel Guide</a>
+            <a href="#reviews" class="block text-neutral-600 hover:text-cyan-600 font-medium py-1">Reviews</a>
             <a href="#creator" class="block text-neutral-600 hover:text-cyan-600 font-medium py-1">Creator</a>
             <a href="#about" class="block text-neutral-600 hover:text-cyan-600 font-medium py-1">About</a>
             <div class="flex items-center space-x-3 pt-2 border-t border-neutral-100">
@@ -5313,6 +5316,140 @@ document.getElementById('altrForm').addEventListener('submit',function(e){e.prev
  else if(CONTACT.telegram){try{var pr=navigator.clipboard&&navigator.clipboard.writeText(msg);if(pr&&pr.catch)pr.catch(function(){});}catch(err){}alert('Your booking details are copied. Paste them in the Telegram chat that opens now.');window.open('https://t.me/'+CONTACT.telegram,'_blank','noopener');}
  else{document.getElementById('altrSend').textContent='Online booking opens soon — thank you!';}
 });
+})();
+</script>
+
+
+<!-- ===== Travel Guide + Reviews + WhatsApp button ===== -->
+<style>
+.algd{background:#F6F1E7;color:#221F1C;padding:72px 16px}
+.algd-in{max-width:80rem;margin:0 auto}
+.algd-k{color:#7A5A1E;font-size:12px;font-weight:700;letter-spacing:.25em;text-transform:uppercase;margin:0 0 10px}
+.algd h2{font-family:Georgia,'Times New Roman',serif;font-size:clamp(30px,4vw,44px);font-weight:600;line-height:1.1;margin:0 0 8px}
+.algd-km{color:#7A5A1E;font-size:18px;margin:0 0 12px}
+.algd-lead{color:#4E4740;max-width:720px;margin:0 0 30px;font-size:16px;line-height:1.65}
+.algd-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.algd-card{background:#fff;border:1px solid #e6dfd1;border-radius:18px;overflow:hidden;cursor:pointer;text-align:left;padding:0;font:inherit;color:inherit;display:flex;flex-direction:column;transition:transform .25s,box-shadow .25s}
+.algd-card:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(34,31,28,.15)}
+.algd-card img{width:100%;height:190px;object-fit:cover;display:block}
+.algd-cb{padding:18px 20px 22px}
+.algd-tag{color:#7A5A1E;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.algd-card h3{font-family:Georgia,serif;font-size:22px;line-height:1.25;margin:6px 0 8px}
+.algd-card p{color:#4E4740;font-size:14px;line-height:1.6;margin:0 0 12px}
+.algd-more{color:#7A5A1E;font-weight:700;font-size:14px}
+.algd-modal{position:fixed;inset:0;z-index:10003;background:rgba(14,12,10,.85);display:none;overflow-y:auto;padding:24px 12px}
+.algd-modal.open{display:block}
+.algd-art{max-width:760px;margin:0 auto;background:#fff;color:#221F1C;border-radius:20px;overflow:hidden;position:relative}
+.algd-art img.algd-hero{width:100%;height:260px;object-fit:cover;display:block}
+.algd-body{padding:26px 28px 32px;font-size:16px;line-height:1.75}
+.algd-body h3{font-family:Georgia,serif;font-size:clamp(24px,3.4vw,32px);line-height:1.2;margin:0 0 6px}
+.algd-body h4{font-size:18px;margin:24px 0 6px}
+.algd-body p,.algd-body li{color:#3b352f}
+.algd-body ul{padding-left:22px;margin:6px 0}
+.algd-body table{width:100%;border-collapse:collapse;margin:10px 0;font-size:15px}
+.algd-body td,.algd-body th{border-bottom:1px solid #eee;padding:9px 6px;text-align:left}
+.algd-note{background:#F6F1E7;border-radius:12px;padding:12px 14px;font-size:14px;color:#4E4740;margin:16px 0}
+.algd-cta{display:inline-block;background:#C9A55A;color:#221F1C;font-weight:700;padding:12px 20px;border-radius:999px;text-decoration:none;margin-top:14px}
+.algd-src{font-size:12px;color:#8a8278;margin-top:20px}
+.algd-src a{color:#7A5A1E}
+.algd-x{position:absolute;top:10px;right:12px;width:42px;height:42px;border-radius:50%;border:0;background:rgba(0,0,0,.55);color:#fff;font-size:26px;cursor:pointer;z-index:2}
+.alrv{background:#221F1C;color:#F3EDE2;padding:64px 16px}
+.alrv-in{max-width:80rem;margin:0 auto;display:grid;grid-template-columns:1.1fr 1fr;gap:28px;align-items:center}
+.alrv h2{font-family:Georgia,serif;font-size:clamp(28px,3.6vw,40px);margin:0 0 10px;color:#F3EDE2}
+.alrv p{color:#CFC6B6;font-size:16px;line-height:1.65;margin:0 0 16px}
+.alrv-box{background:#2C2824;border:1px solid #3B352F;border-radius:18px;padding:24px;text-align:center}
+.alrv-stars{font-size:30px;letter-spacing:6px;color:#C9A55A;margin:0 0 8px}
+.alrv-box b{display:block;font-size:18px;margin:0 0 6px;color:#F3EDE2}
+.alrv-box span{display:block;color:#9E958A;font-size:14px;margin:0 0 16px}
+.alrv-btn{display:inline-block;background:#C9A55A;color:#221F1C;font-weight:700;padding:12px 20px;border-radius:999px;text-decoration:none;border:0;cursor:pointer;font:inherit;font-weight:700;margin:4px}
+.alrv-btn.alt{background:transparent;color:#E2C98F;border:1px solid #C9A55A}
+.alwa{position:fixed;right:18px;bottom:18px;z-index:9990;width:58px;height:58px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(0,0,0,.3);text-decoration:none;transition:transform .2s}
+.alwa:hover{transform:scale(1.08)}
+.alwa svg{width:32px;height:32px}
+@media (max-width:860px){.algd-grid,.alrv-in{grid-template-columns:1fr}.algd-body{padding:22px 18px 28px}}
+</style>
+<section id="guide" class="algd" aria-label="Siem Reap travel guide">
+ <div class="algd-in">
+  <p class="algd-k">Plan your trip</p>
+  <h2>Siem Reap Travel Guide</h2>
+  <p class="algd-km">មគ្គុទ្ទេសក៍ធ្វើដំណើរ សៀមរាប</p>
+  <p class="algd-lead">Simple, practical advice from a Siem Reap local: how to get your temple ticket, when to come, and how to spend three days.</p>
+  <div class="algd-grid">
+   <button type="button" class="algd-card" data-art="pass"><img src="al-feature-angkor-wat.jpg" alt="Angkor Wat reflected in water" loading="lazy" decoding="async"><div class="algd-cb"><span class="algd-tag">Tickets</span><h3>How to Buy the Angkor Pass</h3><p>Prices, where to buy, opening hours, and the tickets you need for Koh Ker and Phnom Kulen.</p><span class="algd-more">Read guide →</span></div></button>
+   <button type="button" class="algd-card" data-art="when"><img src="al-feature-ta-prohm.jpg" alt="Ta Prohm temple" loading="lazy" decoding="async"><div class="algd-cb"><span class="algd-tag">Seasons</span><h3>Best Time to Visit Angkor</h3><p>Cool season, hot season, or green season? What each month is like at the temples and the lake.</p><span class="algd-more">Read guide →</span></div></button>
+   <button type="button" class="algd-card" data-art="three"><img src="al-feature-bayon.jpg" alt="Bayon temple" loading="lazy" decoding="async"><div class="algd-cb"><span class="algd-tag">Itinerary</span><h3>3 Days in Siem Reap</h3><p>A relaxed three-day plan: sunrise at Angkor Wat, the jungle temples, Banteay Srei, and the lake.</p><span class="algd-more">Read guide →</span></div></button>
+  </div>
+ </div>
+</section>
+<div class="algd-modal" id="algdModal" role="dialog" aria-modal="true"><div class="algd-art"><button type="button" class="algd-x" aria-label="Close" onclick="algdClose()">&times;</button><div id="algdArt"></div></div></div>
+<template id="algd-pass"><img class="algd-hero" src="al-feature-angkor-wat.jpg" alt=""><div class="algd-body">
+<h3>How to Buy the Angkor Pass</h3><p><i>Updated November 2026</i></p>
+<p>To visit Angkor Wat and the temples of Angkor Archaeological Park you need an <b>Angkor Pass</b>. Here is everything you need to know.</p>
+<h4>Prices (US dollars)</h4>
+<table><tr><th>Pass</th><th>Price</th><th>How to use it</th></tr>
+<tr><td>1 day</td><td><b>$37</b></td><td>Valid on the date printed on the ticket</td></tr>
+<tr><td>3 days</td><td><b>$62</b></td><td>Any 3 days within 7 days</td></tr>
+<tr><td>7 days</td><td><b>$72</b></td><td>Any 7 days within 30 days</td></tr></table>
+<p>Children under 12 enter free (bring their passport to show their age). The 3-day and 7-day passes include your photo.</p>
+<h4>Where to buy</h4>
+<ul><li><b>Online</b> at the official site <b>angkorenterprise.gov.kh</b> — your ticket arrives by email as a QR code.</li>
+<li><b>Angkor ticket office</b> on Road 60, about 4 km from Siem Reap town. Open 5:00 AM – 5:30 PM; after 4:30 PM you can buy a ticket for the next day. Cards are accepted.</li>
+<li><b>Ticket machines</b> near the western entrance of Angkor Wat and at Heritage Walk mall in town.</li></ul>
+<div class="algd-note">⚠️ Buy only from the official office, machines, or website. Tickets bought from anyone else are not valid, and tickets are not sold at the temple gates.</div>
+<h4>Opening hours</h4>
+<ul><li>Angkor Wat: from 5:00 AM (for sunrise)</li><li>Most other temples: about 6:00 AM – 6:30 PM</li><li>Sunrise and sunset viewpoints such as Phnom Bakheng and Pre Rup stay open a little later</li></ul>
+<h4>Sites with their own ticket</h4>
+<ul><li><b>Koh Ker</b> – separate ticket (about $15)</li><li><b>Phnom Kulen</b> – separate ticket (about $20)</li></ul>
+<div class="algd-note">Prices and hours can change. Please check angkorenterprise.gov.kh just before your trip.</div>
+<a class="algd-cta" href="#tours" onclick="algdClose()">See my temple tours →</a>
+<p class="algd-src">Sources: <a href="https://helloangkor.com/angkor-ticket-prices/" target="_blank" rel="noopener">Hello Angkor (Feb 2026)</a> · <a href="https://adventurescambodia.com/blog/angkor-wat-tickets/" target="_blank" rel="noopener">Adventures Cambodia (Aug 2026)</a></p>
+</div></template>
+<template id="algd-when"><img class="algd-hero" src="al-feature-ta-prohm.jpg" alt=""><div class="algd-body">
+<h3>Best Time to Visit Angkor</h3>
+<p>Siem Reap is warm all year, but the seasons change your trip a lot. Here is what to expect.</p>
+<h4>🌤️ Cool, dry season — November to February</h4>
+<p>The most popular time. Blue skies, cooler mornings and little rain. It is the busiest season, so arrive early at famous temples like Angkor Wat and Ta Prohm.</p>
+<h4>☀️ Hot season — March to May</h4>
+<p>Very hot, especially in April and May. Visit temples early in the morning, rest at midday, and go out again in the late afternoon. Fewer visitors. Khmer New Year falls in mid-April.</p>
+<h4>🌧️ Green (rainy) season — June to October</h4>
+<p>Rain usually comes in short afternoon showers. The forests are green, the moats are full, the temples are quiet, and hotels are cheaper. Bring a light rain jacket and good shoes for wet stones.</p>
+<h4>🚤 For the Tonle Sap lake</h4>
+<p>The lake rises in the rainy season and falls in the dry season. When the water is high, boat trips through the flooded forest are at their best. When the water is low, you see the full height of the stilted houses. Ask me which is better for your dates.</p>
+<div class="algd-note">💡 My tip: whatever month you come, start at sunrise. The light is beautiful and the air is cooler.</div>
+<a class="algd-cta" href="#tours" onclick="algdClose()">Book a sunrise tour →</a>
+</div></template>
+<template id="algd-three"><img class="algd-hero" src="al-feature-bayon.jpg" alt=""><div class="algd-body">
+<h3>3 Days in Siem Reap</h3>
+<p>A relaxed plan for first-time visitors. A <b>3-day Angkor Pass ($62)</b> covers days 1 and 2 and Banteay Srei.</p>
+<h4>Day 1 — Sunrise and the great temples</h4>
+<ul><li>Sunrise at <b>Angkor Wat</b>, then explore the galleries and carvings</li><li><b>Angkor Thom</b>: the South Gate and the smiling faces of the <b>Bayon</b></li><li>The tree-covered ruins of <b>Ta Prohm</b></li><li>Evening: dinner and the night market in town</li></ul>
+<h4>Day 2 — The Grand Circuit and Banteay Srei</h4>
+<ul><li><b>Banteay Srei</b>, the pink sandstone "jewel of Khmer art"</li><li><b>Preah Khan</b>, <b>Neak Pean</b> and <b>Ta Som</b></li><li>Sunset at <b>Pre Rup</b></li></ul>
+<h4>Day 3 — Beyond the crowds</h4>
+<ul><li>Morning: the jungle temple <b>Beng Mealea</b>, or the 9th-century <b>Roluos</b> temples</li><li>Afternoon: a boat trip on the <b>Tonle Sap</b> lake to a floating or stilted village</li><li>Evening: a Khmer cooking class or street-food tasting</li></ul>
+<div class="algd-note">💡 Want to go further? Koh Ker and Phnom Kulen are full-day trips with their own tickets — add a fourth day.</div>
+<a class="algd-cta" href="#tours" onclick="algdClose()">Choose your tours →</a>
+</div></template>
+
+<section id="reviews" class="alrv" aria-label="Guest reviews">
+ <div class="alrv-in">
+  <div><p class="algd-k" style="color:#C9A55A">Guest reviews</p><h2>What travelers say</h2><p>I am just starting my guided tours. Reviews from real guests will appear here after their trips. If you have travelled with me or read my books, I would love to hear from you.</p><p style="font-size:14px;color:#9E958A">មតិរបស់ភ្ញៀវពិតប្រាកដ នឹងបង្ហាញនៅទីនេះ។</p></div>
+  <div class="alrv-box"><div class="alrv-stars" aria-hidden="true">★★★★★</div><b>Be one of my first reviewers</b><span>Tell me about your tour, your favorite temple, or my books.</span>
+   <a class="alrv-btn" id="alrvWa" href="#" target="_blank" rel="noopener">Write a review on WhatsApp</a><a class="alrv-btn alt" href="https://t.me/samnang676" target="_blank" rel="noopener">Telegram</a></div>
+ </div>
+</section>
+<a class="alwa" id="alwa" href="#" target="_blank" rel="noopener" aria-label="Chat on WhatsApp" title="Chat on WhatsApp"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="#fff" d="M16 3C9 3 3.3 8.6 3.3 15.6c0 2.4.7 4.7 1.9 6.7L3 29l6.9-2.2c1.9 1 4 1.6 6.1 1.6 7 0 12.7-5.7 12.7-12.7S23 3 16 3zm0 23.2c-2 0-3.9-.6-5.5-1.6l-.4-.2-4.1 1.3 1.3-4-.3-.4c-1.1-1.7-1.7-3.6-1.7-5.6C5.3 9.8 10.1 5 16 5s10.6 4.8 10.6 10.6S21.9 26.2 16 26.2zm5.8-7.9c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1c-.3-.2-1.3-.5-2.5-1.6-.9-.8-1.6-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.6c.2-.2.2-.4.3-.6.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4s-1.2 1.1-1.2 2.7 1.2 3.1 1.4 3.3c.2.2 2.3 3.6 5.6 5 .8.3 1.4.5 1.9.7.8.3 1.5.2 2.1.1.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg></a>
+<script>
+(function(){
+var WA='85593496561';
+document.getElementById('alwa').href='https://wa.me/'+WA+'?text='+encodeURIComponent('Hello Samnang! I found you on AngkorLens.com and have a question about a tour.');
+document.getElementById('alrvWa').href='https://wa.me/'+WA+'?text='+encodeURIComponent('Hello Samnang! My review for AngkorLens:\n\nMy name / country:\nTour or book:\nStars (1-5):\nMy review:\n\n(OK to show my first name and country on the website: yes / no)');
+var M=document.getElementById('algdModal'),B=document.getElementById('algdArt');
+window.algdOpen=function(k){var t=document.getElementById('algd-'+k);if(!t)return;B.innerHTML='';B.appendChild(t.content.cloneNode(true));M.classList.add('open');M.scrollTop=0;document.body.style.overflow='hidden';};
+window.algdClose=function(){M.classList.remove('open');document.body.style.overflow='';};
+document.querySelectorAll('[data-art]').forEach(function(b){b.addEventListener('click',function(){algdOpen(b.getAttribute('data-art'));});});
+M.addEventListener('click',function(e){if(e.target===M)algdClose();});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&M.classList.contains('open'))algdClose();});
 })();
 </script>
 
