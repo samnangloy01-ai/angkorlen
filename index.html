@@ -5250,12 +5250,13 @@ function openAddedBottomPhoto(dataUri){
                 <img id="photoMembershipPreview" src="" alt="Membership photo preview" loading="lazy" decoding="async">
                 <div class="photo-membership-preview-lock"><div class="photo-membership-lock-circle"><i class="fa-solid fa-lock"></i></div></div>
             </div>
+            <div id="photoComingSoon" style="display:none;margin:0 0 16px;padding:16px 18px;border-radius:14px;background:#fff7e6;border:1px solid #e2c98f;color:#5a4316;font-size:15px;line-height:1.5"><strong>Coming soon ✨</strong><br>Online payment for original photos will open soon. Thank you for supporting AngkorLens and Khmer heritage!</div>
             <div class="photo-plan-grid">
 <div class="photo-plan">
                     <h3>Buy One Picture</h3>
                     <div class="photo-plan-price">$4.99 <span>/ picture</span></div>
                     <ul><li>One original-resolution photograph</li><li>Purchase this picture only</li></ul>
-                    <button class="photo-pay-btn">Buy This Picture — $4.99</button>
+                    <button class="photo-pay-btn" onclick="startMembershipCheckout('single')">Buy This Picture — $4.99</button>
                 </div>
 <div class="photo-plan">
                     <h3>Monthly Membership</h3>
@@ -5421,11 +5422,12 @@ function openModal(title, subtitle, images, historyText) {
         function closePhotoMembership() {
             document.getElementById('photoMembershipModal').classList.add('hidden');
             pendingPhotoSrc = '';
+            var n=document.getElementById('photoComingSoon'); if(n) n.style.display='none';
         }
 
         function startMembershipCheckout(plan) {
             const price = plan === 'yearly' ? '$100.00/year' : '$14.99/month';
-            alert('Membership selected: ' + price + '\n\nStripe Checkout is not connected yet. The next step is to connect the real Stripe payment flow.');
+            var n=document.getElementById('photoComingSoon'); if(n){n.style.display='block'; n.scrollIntoView({behavior:'smooth',block:'nearest'});}
         }
 
         document.getElementById('photoMembershipModal').addEventListener('click', function(event) {
