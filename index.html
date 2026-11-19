@@ -720,15 +720,7 @@ body.top100-view .top100-test-section {
                     <img src="/IMG_0713.JPG" alt="" class="nav-mini-icon">
                     <span>Khmer Heritage</span>
                 </a>
-                <div class="angkor-nav-item">
-                    <button type="button" class="angkor-nav-trigger">Temple Groups <span class="chevron">⌄</span></button>
-                    <div class="angkor-dropdown wide">
-                        <span class="dropdown-label">Temple Groups</span>
-                        <a href="#khmer-life">Khmer life collection (all)</a>
-                        <a href="#galleryAlbumSection" onclick="openTempleFromIndex('Traditional Khmer Wooden Stilt House');return false;">1. Traditional Khmer Wooden Stilt House</a>
-                        <a href="#galleryAlbumSection" onclick="openTempleFromIndex('Transporting Harvested Crops in Rural Cambodia');return false;">2. Transporting Harvested Crops in Rural Cambodia</a>
-                    </div>
-                </div>
+                <a href="#khmer-life" class="hover:text-cyan-600 transition">Khmer Life</a>
                 <div class="angkor-nav-item">
                     <button type="button" class="angkor-nav-trigger">Books <span class="chevron">⌄</span></button>
                     <div class="angkor-dropdown">
@@ -785,14 +777,7 @@ body.top100-view .top100-test-section {
                 <img src="/IMG_0713.JPG" alt="" class="nav-mini-icon">
                 <span>Khmer Heritage</span>
             </a>
-            <details class="text-neutral-600">
-                <summary class="font-medium py-2 cursor-pointer">Temple Groups</summary>
-                <div class="pl-4 space-y-1 pb-2">
-                    <a href="#khmer-life" class="block py-1">» Khmer life collection (all)</a>
-                    <a href="#galleryAlbumSection" onclick="openTempleFromIndex('Traditional Khmer Wooden Stilt House');return false;" class="block py-1">» 1. Traditional Khmer Wooden Stilt House</a>
-                    <a href="#galleryAlbumSection" onclick="openTempleFromIndex('Transporting Harvested Crops in Rural Cambodia');return false;" class="block py-1">» 2. Transporting Harvested Crops in Rural Cambodia</a>
-                </div>
-            </details>
+            <a href="#khmer-life" class="block text-neutral-600 hover:text-cyan-600 font-medium py-1">Khmer Life</a>
 <details class="text-neutral-600">
                 <summary class="font-medium py-2 cursor-pointer">Books</summary>
                 <div class="pl-4 space-y-1 pb-2">
@@ -1023,19 +1008,13 @@ function alxSignup(){var s=null;try{s=localStorage.getItem('angkorLensNewsletter
  <h2>Dive into…</h2><p class="sub">Temples, lake villages and museums through my lens</p>
  <div class="alh-dive">
   <a href="#templeGrid" class="t1"><img src="al-feature-bayon.jpg" alt="" loading="lazy" decoding="async"><span>Khmer Temples</span></a>
-  <a href="#tonle-focus" class="t2"><img src="sf-tonlesap-1.jpg" alt="" loading="lazy" decoding="async"><span>Life on the Tonle Sap</span></a>
+  <a href="#khmer-life" class="t2"><img src="sf-tonlesap-1.jpg" alt="" loading="lazy" decoding="async"><span>Life on the Tonle Sap</span></a>
   <a href="#khmer-art-sf" class="t3"><img src="sf-shiva-1.jpg" alt="" loading="lazy" decoding="async"><span>Khmer Art in San Francisco</span></a>
   <a href="#sf-lens" class="b1"><img src="sf-goldengate-1.jpg" alt="" loading="lazy" decoding="async"><span>The Golden Gate</span></a>
   <a href="#sf-lens" class="b2" onclick="setTimeout(function(){window.alsfStory&&alsfStory('chinatown')},400)"><img src="sf-chinatown-1.jpg" alt="" loading="lazy" decoding="async" style="object-position:center 35%"><span>Chinatown</span></a>
  </div>
 </section>
-<section class="alh" id="tonle-focus" aria-label="In focus: Tonle Sap">
- <h2>In focus…</h2><p class="sub">&nbsp;</p>
- <div class="alh-focus">
-  <div class="tx"><small>PHOTO STORY</small><h3>Life on the Tonle Sap</h3><div class="km">ជីវិតលើបឹងទន្លេសាប</div><p>Houses that float, boats for every journey, and families who move with the rising and falling water of Cambodia's great lake.</p><button type="button" class="alh-btn" onclick="window.alsfStory&&alsfStory('tonlesap')">Explore</button></div>
-  <button type="button" class="im" onclick="window.alsfStory&&alsfStory('tonlesap')" aria-label="Open the Tonle Sap photo story"><img src="sf-tonlesap-1.jpg" alt="Floating houses on the Tonle Sap lake" loading="lazy" decoding="async"></button>
- </div>
-</section>
+
 <!-- ===== Khmer life collection ===== -->
 <style>
 .almc{background:#EFE7D8;color:#221F1C;padding:72px 16px}
@@ -1083,7 +1062,7 @@ g.addEventListener('click',function(e){var b=e.target.closest('.almc-c');if(!b)r
  <h2>Places I've photographed</h2><p class="sub">Where do you want to visit today?</p>
  <div class="alh-circles">
   <a href="#templeGrid"><div class="c"><img src="al-feature-angkor-wat.jpg" alt="" loading="lazy" decoding="async"></div><div class="pin">🛕</div><small>EXPLORE</small><b>Angkor</b><i>Siem Reap, Cambodia</i></a>
-  <a href="#tonle-focus"><div class="c"><img src="sf-tonlesap-3.jpg" alt="" loading="lazy" decoding="async"></div><div class="pin">🛶</div><small>EXPLORE</small><b>Tonle Sap Lake</b><i>Cambodia</i></a>
+  <a href="#khmer-life"><div class="c"><img src="sf-tonlesap-3.jpg" alt="" loading="lazy" decoding="async"></div><div class="pin">🛶</div><small>EXPLORE</small><b>Tonle Sap Lake</b><i>Cambodia</i></a>
   <a href="#sf-lens"><div class="c"><img src="sf-painted-1.jpg" alt="" loading="lazy" decoding="async"></div><div class="pin">🌉</div><small>EXPLORE</small><b>San Francisco</b><i>California, USA</i></a>
   <a href="#sf-lens" onclick="setTimeout(function(){window.alsfStory&&alsfStory('pavilion')},400)"><div class="c"><img src="sf-pavilion-6.jpg" alt="" loading="lazy" decoding="async"></div><div class="pin">🏯</div><small>EXPLORE</small><b>Golden Gate Park</b><i>San Francisco</i></a>
  </div>
@@ -4543,8 +4522,8 @@ South Snaeng Krabei Temple is an Angkorian-period Khmer monument in Preah Vihear
             <!-- Temple / Heritage Index — revealed after the 3rd LOAD MORE click -->
             <section id="temple-name-index" class="temple-index-section" style="display:none;">
                 <div class="temple-index-kicker">EXPLORE MORE KHMER HERITAGE</div>
-                <h2 class="temple-index-title">Temple Sites, Museums &amp; Khmer Heritage</h2>
-                <p class="temple-index-description">More temples, museums and everyday Khmer life from the AngkorLens photo archive. Click any card to open its full guide.</p>
+                <h2 class="temple-index-title">Temple Sites</h2>
+                <p class="temple-index-description">More temples from the AngkorLens photo archive. Click any card to open its full guide. Museums and everyday Khmer life now have their own collections.</p>
                 <div id="templeNameIndex" class="temple-index-grid" aria-label="Temple sites, museums and Khmer heritage"></div>
                 <button id="heritageIndexLoadMore" type="button" class="temple-index-load-more" onclick="loadMoreHeritageIndex()">
                     <span>LOAD MORE</span><i class="fa-solid fa-chevron-down"></i>
@@ -8421,13 +8400,7 @@ function buildTempleNameIndex(){
         {img:'/100200111.jpg', name:'Ta Noub Temple', kh:'ប្រាសាទតានប់', kind:'folder'},
         {img:'/121212211.jpg', name:'Sralao Temple', kh:'ប្រាសាទស្រឡៅ', kind:'folder'},
         {img:'/123451.jpg', name:'Prasat Kouk Pongro', kh:'ប្រាសាទគោកពង្រ', kind:'folder'},
-        {img:'/0011221342.jpg', name:'Elephant Pond – Srah Damrei', kh:'ស្រះដំរី', kind:'folder'},
-        {img:'/IMG_5451.JPG', name:'Siem Reap Museums', kh:'សារមន្ទីរនៅសៀមរាប', kind:'heritage'},
-        {img:'/IMG_0308.jpg', name:'Phnom Penh Museums', kh:'សារមន្ទីរនៅភ្នំពេញ', kind:'heritage'},
-        {img:'/010019.jpeg', name:'Battambang Museums', kh:'សារមន្ទីរនៅបាត់ដំបង', kind:'heritage'},
-        {img:'/IMG_2474.JPG', name:'Preah Norodom Sihanouk-Angkor Museum', kh:'សារមន្ទីរព្រះនរោត្តម សីហនុ-អង្គរ', kind:'heritage'},
-        {img:'/IMG_7411.jpg', name:'Floating Village', kh:'ភូមិបណ្តែតទឹក', kind:'heritage'},
-        {img:'/94114459.jpg', name:'Khmer People & Traditional Life', kh:'ប្រជាជនខ្មែរ និងជីវិតប្រពៃណី', kind:'heritage'}
+        {img:'/0011221342.jpg', name:'Elephant Pond – Srah Damrei', kh:'ស្រះដំរី', kind:'folder'}
     ];
 
     wrap.innerHTML='';
@@ -8455,6 +8428,7 @@ function buildTempleNameIndex(){
         wrap.appendChild(row);
     });
     wrap.dataset.built='yes';
+    var lm=document.getElementById('heritageIndexLoadMore');if(lm&&items.length<=7)lm.style.display='none';
 }
 
 function loadMoreHeritageIndex(){
