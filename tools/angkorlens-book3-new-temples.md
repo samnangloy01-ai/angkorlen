@@ -1,0 +1,135 @@
+# AngkorLens Book 3 — New temples list
+
+Temples for AngkorLens Book 3: new temples added to angkorlens.com, plus temples not yet in AngkorLens Books 1 and 2.
+
+| # | Temple | Khmer | Added | Photos | Web page | History status |
+|---|--------|-------|-------|--------|----------|----------------|
+| 1 | Prasat Ta Dong | ប្រាសាទតាដុង | 19 Nov 2026 | 10 | /temple-prasat-ta-dong.html | Phnom Kulen, Chop Leu village, Svay Leu, Siem Reap. Lintels 7th-c. style; some local sources say 9th c. (Jayavarman II, Kulen style) — not confirmed by inscription. |
+| 2 | Spean Ta Ong (bridge) | ស្ពានតាអុង | 19 Nov 2026 | 3 (one zoomed) | /temple-spean-ta-ong.html | Chong Spean, Khvav, Chi Kraeng, Siem Reap. East Royal Road. 3rd-longest Angkorian bridge (APSARA). Suryavarman I–II era (helloangkor). Repaired 2021–22. |
+| 3 | Tonle Snguot Temple | ប្រាសាទទន្លេស្ងួត | 19 Nov 2026 | 11 | /temple-tonle-snguot-temple.html | Hospital chapel, Jayavarman VII, late 12th–early 13th c., Bayon style. Nokor Krau, Kouk Chak, Siem Reap. Restored 2019–20. |
+| 4 | Thma Dap Temple | ប្រាសាទថ្មដាប់ | 19 Nov 2026 | 4 | /temple-thma-dap-temple.html | Anlong Thom, Khnang Phnum, Svay Leu, Siem Reap (Phnom Kulen). 1,200+ yrs, Kulen period 9th c. (Jayavarman II era). APSARA restoration Jan 2026 (4 months). |
+| 5 | Bakong Temple | ប្រាសាទបាគង | 19 Nov 2026 | 19 | /temple-bakong-temple.html | Roluos (Hariharalaya), Siem Reap. Indravarman I, dedicated 881 CE to Shiva. 5-level temple-mountain; summit tower 12th c.; restored by Maurice Glaize 1930s. |
+| 6 | Banteay Srei | ប្រាសាទបន្ទាយស្រី | 19 Nov 2026 | 36 | /temple-banteay-srei.html | Founded 967 CE (reign of Rajendravarman II) by Brahmin Yajnavaraha and brother Vishnukumara; Shiva; pink sandstone. Rediscovered 1914; Malraux 1923; Marchal anastylosis from 1931. |
+| 7 | Spean Toap (bridge) | ស្ពានទ័ព | 19 Nov 2026 | 5 (one zoomed) | /temple-spean-toap.html | Chong Kal, Oddar Meanchey; longest ancient Khmer bridge, ~150 m, 28 openings; Jayavarman VII. Bombed Dec 2025. |
+| 8 | Prasat Prohm Kel | ប្រាសាទព្រហ្មកិល | 19 Nov 2026 | 3 (one zoomed) | /temple-prasat-prohm-kel.html | Cheung Tien, Chong Kal, Oddar Meanchey; 700 m N of Spean Toap. "House of fire" on Royal Road; Jayavarman VII, Bayon style. |
+| 9 | Spean Preah Chang'er (bridge) | ស្ពានព្រះចង្អេរ | 19 Nov 2026 | 4 (one zoomed) | /temple-spean-preah-changer.html | Kôl, Angkor Chum, Siem Reap. 47 × 9 m, 12+ openings, laterite, 12th–13th c. Angkor–Phimai Royal Road. Still in use. |
+| 10 | Prasat Preah Phnom | ប្រាសាទព្រះភ្នំ | 19 Nov 2026 | 5 (2 zoomed, 1 colour-corrected) | /temple-prasat-preah-phnom.html | Preah Phnom village, Srae Khvav, Angkor Chum, Siem Reap. 10th c., 5 brick towers; Indra lintel; inscriptions K.593 (930 CE), K.454 (1101 CE). |
+| 11 | Prasat Kok Chak | ប្រាសាទគោកចក | 19 Nov 2026 | 23 (3 zoomed, cover polished) | /temple-prasat-kok-chak.html | Teaksen Tbong, Kouk Chak, Siem Reap town. 2 brick towers; Garuda lintel; K.521 on door jambs. Founded 850 CE (9th c.) per K.521. APSARA brick repair. |
+| 11 | Prasat Kok Chak | ប្រាសាទគោកចក | 19 Nov 2026 | 23 (5 zoomed; cover = both towers) | /temple-prasat-kok-chak.html | Teaksen Tbong, Sangkat Kouk Chak, Siem Reap city. 2 brick towers facing east; Garuda lintel; inscription K.521. Founded 850 CE (9th c.) per K.521. APSARA repair 2015–2021. |
+
+## Notes per temple
+
+### 1. Prasat Ta Dong (ប្រាសាទតាដុង)
+- Brick tower in dry forest and bamboo; grass and small trees growing on top.
+- False door of brick panels; lintel carved directly into the brick (leaf scrolls, small figures).
+- One side supported by metal scaffolding.
+- Octagonal sandstone colonnettes and broken pieces lying around.
+- Nearby rock shelter with offerings and portrait of a revered monk.
+- Also called Prasat Tadong / Ta Ong. Location: side of Phnom Kulen, Chop Leu village, Svay Leu commune/district, Siem Reap (helloangkor.com).
+- Originally 3 brick towers; 1 remains, faces east; false upper levels; outer brick wall with east gopura; well; sandstone remains; ruined laterite stair; hermit caves nearby.
+- Recorded by Aymonier 1900, Lajonquière 1902 (IK 226), Parmentier 1913 ("Prasat Ta Don").
+- Dating: lintels "reminiscent of 7th-century style" (helloangkor); 9th c. / Jayavarman II / Kulen style per a Facebook post — verify before the book.
+- Still to confirm: deity, monk's name in shrine.
+
+### 2. Spean Ta Ong (ស្ពានតាអុង) — also Spean Ta Oung / Ta Oak
+- Location: Chong Spean village, Khvav commune, Chi Kraeng district, Siem Reap (APSARA, helloangkor).
+- On the ancient East Royal Road: Angkor – Beng Mealea – Preah Khan Kampong Svay; crosses the Ta Ong stream; still in daily use.
+- APSARA: 3rd-longest Angkorian bridge after Spean Toap and Kampong Kdei (same article also says "longest of 23" on the road — conflicting).
+- Size: 63 m × 12 m × 7.3 m (helloangkor) vs 77 m between abutments, 13 m wide (Lajonquière 1902). 14 corbelled openings.
+- Laterite with sandstone naga balustrades; naga-head fans among the finest.
+- Date: between Suryavarman I and Suryavarman II, likely II; possible Jayavarman VII additions (helloangkor).
+- APSARA repairs 2021 and 2022.
+
+### 3. Tonle Snguot Temple (ប្រាសាទទន្លេស្ងួត)
+- North of Angkor Thom; Nokor Krau village, Sangkat Kouk Chak, Siem Reap city.
+- Hospital chapel (arogyasala) of Jayavarman VII, one of 102; one of four around Angkor Thom. Late 12th–early 13th c., Bayon style (APSARA).
+- Sandstone tower with entrance hall, laterite enclosure, east gopura, library traces, NE basin; faces east to a reservoir (~800 × 400 m).
+- Finds: stele K. 955 (Sanskrit, Saka 1108), K. 1112 graffiti, new 55-line Sanskrit stele (2020), dvarapala, ceramics, Medicine Buddha (now Preah Norodom Sihanouk-Angkor Museum).
+- APSARA restoration 2019–2020; dam/reservoir works 2025 (NZ-supported Angkor Water Resilience).
+- Photos show new grey replacement stones beside old ones; devatas; offerings inside.
+
+### 4. Thma Dap Temple (ប្រាសាទថ្មដាប់)
+- Anlong Thom village, Khnang Phnum commune, Svay Leu district, Siem Reap; Phnom Kulen group (helloangkor).
+- Single brick sanctuary; carved brick pilasters, friezes, lintel, false floors; original stucco partly preserved.
+- East: laterite steps, remains of outer enclosure. Surveyed 1973, 1979.
+- Photos: crack down the front, wooden support frame, vegetation on top; nearby stream + waterfall.
+- Age: 1,200+ years (APSARA, 2 Jan 2026); early Angkorian Kulen period, 9th c., Jayavarman II era (user info; no inscription).
+- APSARA restoration from Jan 2026, 4 months: cracks E & W, sandstone doorway/lintel/pillars, vegetation removed. First structural restoration ever.
+- Photos taken before restoration.
+- Still to confirm: deity.
+
+### 5. Bakong Temple (ប្រាសាទបាគង) — not in Books 1 & 2
+- Roluos group, ancient capital Hariharalaya, Siem Reap.
+- State temple of King Indravarman I, dedicated to Shiva in 881 CE; one of the first great Khmer temple-mountains.
+- Sandstone pyramid of 5 levels; stone lions on stairways, elephants at corners of lower terraces.
+- Two moats; causeway with 7-headed naga balustrades (among the earliest).
+- Summit tower added later (12th c.). Restored by Maurice Glaize in the 1930s by anastylosis.
+- Photos: devatas on summit tower, carved lintel framing the tower, moat with palms.
+- Source: Wikipedia — Bakong.
+
+### 6. Banteay Srei (ប្រាសាទបន្ទាយស្រី) — not in Books 1 & 2
+- North of the main Angkor group; "citadel of women / of beauty".
+- Foundation inscription: 967 CE, reign of Rajendravarman II; built by Brahmin advisor Yajnavaraha and brother Vishnukumara; dedicated to Shiva.
+- Pink sandstone; three central towers; finest carving in Khmer art.
+- Pediments: Vali vs Sugriva with Rama (Ramayana); Indra on 3-headed elephant sending rain on the burning Khandava forest (Mahabharata); Narasimha killing Hiranyakashipu.
+- Rediscovered 1914; André Malraux tried to remove devatas 1923; Henri Marchal anastylosis from 1931.
+- Sources: Sahapedia; Wikipedia — Banteay Srei.
+
+### 7. Spean Toap (ស្ពានទ័ព) — also Spean Tip / O'Chik Bridge
+- Cheung Tien village & commune, Chong Kal district, Oddar Meanchey; over the Sreng River.
+- Longest ancient bridge of the Khmer Empire (helloangkor); ~150 m long, 14.5–16.4 m wide, ~10 m high, 28 openings (ron ta dev).
+- Jayavarman VII, late 12th–early 13th c. (The Star / Ministry of Culture).
+- On the NW Royal Road Angkor–Phimai; near Spean Memay and Spean Tbong.
+- Laterite; sandstone naga balustrades and end caps.
+- Ministry of Culture conservation since 2015 (8 phases). Bombed at both ends 15 Dec 2025 during border fighting; 68 balustrade sections damaged; inspected 12 Sep 2026.
+- Photos taken during conservation (crane, bamboo scaffolding), before the damage.
+
+### 8. Prasat Prohm Kel (ប្រាសាទព្រហ្មកិល)
+- Cheung Tien commune, Chong Kal district, Oddar Meanchey; ~700 m north of Spean Toap; ~35 km from Samraong (helloangkor).
+- Late 12th–early 13th c., Jayavarman VII, Bayon style.
+- Laterite with sandstone door frames/windows; single tower facing east; windows on south side only, none on north.
+- "House of fire" (dharmasala / vahni-griha) on the NW Royal Road Angkor–Phimai. Two basins nearby.
+- Recorded: Lajonquière 1911 (IK 721); MH 580 (1926): "laterite building, basins and statues".
+- Photos: stepped laterite tower reflected in pond; sandstone pieces lined at base; info sign board.
+- Never restored (confirmed by Samnang, visited in person).
+- Still to confirm: village name (helloangkor gives Cheung Tien and Srae Prang).
+
+### 9. Spean Preah Chang'er (ស្ពានព្រះចង្អេរ) — also Spean Prah Changer
+- Kôl village & commune, Angkor Chum district, Siem Reap (helloangkor).
+- Laterite; 47 m long, 9 m wide; at least 12 corbelled openings; 12th–13th c. (no king named in source).
+- NW Royal Road Angkor–Phimai; Kdei Ta Kom group.
+- Lajonquière 1911 (IK 687; then "Srok Kralanh"); MH 555 (1926); CISARK 561.
+- Still used by local traffic; newer road parallel on east.
+- Photos: laterite courses with lifting holes, reflections, arch openings at waterline; 2 photos with visitors on top.
+- Still to confirm: king; restoration history.
+
+### 10. Prasat Preah Phnom (ប្រាសាទព្រះភ្នំ) — "The Holy Mountain"
+- Preah Phnom village, Srae Khvav commune, Angkor Chum district, Siem Reap; ~65 km from Siem Reap (helloangkor).
+- 10th c. (no king named in source). 5 square brick towers on a natural mound, facing east, 2 rows (3 front, 2 back); 2 brick annexes; moat; basin to north; no wall/gopura.
+- Sandstone door frames, octagonal colonnettes; lintels worn — central one: Indra on 3-headed elephant. Corbelled roofs standing; grass on top.
+- Inscriptions: K.593 (Saka 852 = 930 CE), K.454 (Saka 1023 = 1101 CE, central tower), K.594 (15 lines).
+- Lajonquière 1901 (IK 706); MH 565 (1926); CISARK 571.
+- Large Nandin and pedestal fragments reported on site.
+- Never restored (confirmed by Samnang, visited in person); door frames are original.
+- Still to confirm: deity (Shiva? Nandin suggests).
+
+### 11. Prasat Kok Chak (ប្រាសាទគោកចក) — also Kouk Chak / Prasat Chak
+- Teaksen Tbong village, Sangkat Kouk Chak, Siem Reap town; ~200 m north of Wat Prasat Kouk Chak (helloangkor).
+- 2 brick sanctuaries, N–S line, facing east; sandstone door frames; octagonal colonnettes; former moat (dry).
+- Lintels (from photos): one = Garuda on naga heads holding garland; other = crowned figure above two small lions, makaras at ends — identify the figure before the book.
+- Inscription K.521 on door jambs (Khmer, 15 + 16 lines; IC IV p.167).
+- Date conflict: helloangkor "10th century" but also "foundation 850 AD" from K.521 — check Coedès before printing.
+- IK 544.01; CISARK 431; MH 420 (1926, "Prasat Chak").
+- APSARA restored/strengthened brickwork (new orange bricks visible).
+- Living worship: coconuts, lotus, incense, offerings at the main tower door.
+
+### 11. Prasat Kok Chak (ប្រាសាទគោកចក) — also Kouk Chak / Prasat Chak
+- Teaksen Tbong village, Sangkat Kouk Chak, Siem Reap city; ~200 m north of modern Wat Prasat Kouk Chak (helloangkor).
+- 2 brick sanctuaries, N–S line, both facing east; dry moat.
+- Sandstone door frames, octagonal colonnettes (very fine bands); lintels: south/main tower = Garuda holding nagas; other tower = crowned figure on garland with monster heads (identity not confirmed).
+- Inscription K.521 on door jambs (Khmer, 15 + 16 lines; IC IV p.167).
+- Date: 850 CE, 9th century (foundation date from inscription K.521; chosen by Samnang). helloangkor also lists "10th century".
+- IK 544.01; CISARK 431; MH 420 (1926, "Prasat Chak").
+- APSARA: work began 2015 (south tower + south wall); Feb 2021 announced both towers repaired (Khmer Times 11 Feb 2021). New bright bricks visible in photos.
+- Photos: offerings (coconuts, lotus, baysei) at main door; false doors on other sides.
+- Still to confirm: king, deity.
