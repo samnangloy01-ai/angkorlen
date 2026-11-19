@@ -740,7 +740,7 @@ body.top100-view .top100-test-section {
                         <a href="#book-deck">The Unbroken Deck</a>
                     </div>
                 </div>
-                <a href="#khmer-art-sf" class="hover:text-cyan-600 transition">Museum</a>
+                <a href="#museum-collection" class="hover:text-cyan-600 transition">Museum</a>
                 <a href="#tours" class="hover:text-cyan-600 transition">Tours</a>
                 <a href="#guide" class="hover:text-cyan-600 transition">Guide</a>
                 <a href="#creator" class="hover:text-cyan-600 transition">Creator</a>
@@ -802,7 +802,7 @@ body.top100-view .top100-test-section {
                     <a href="#book-deck" class="block py-1">» The Unbroken Deck</a>
                 </div>
             </details>
-            <a href="#khmer-art-sf" class="block text-neutral-600 hover:text-cyan-600 font-medium py-1">Museum — Khmer Art in SF</a>
+            <a href="#museum-collection" class="block text-neutral-600 hover:text-cyan-600 font-medium py-1">Museums</a>
             <a href="#tours" class="block text-neutral-600 hover:text-cyan-600 font-medium py-1">Tours — Book a trip</a>
             <a href="#guide" class="block text-neutral-600 hover:text-cyan-600 font-medium py-1">Travel Guide</a>
             <a href="#reviews" class="block text-neutral-600 hover:text-cyan-600 font-medium py-1">Reviews</a>
@@ -5075,6 +5075,49 @@ function openAddedBottomPhoto(dataUri){
 </section>
 
 
+<!-- ===== Museum collection ===== -->
+<style>
+.almc{background:#EFE7D8;color:#221F1C;padding:72px 16px}
+.almc-in{max-width:80rem;margin:0 auto}
+.almc-k{color:#7A5A1E;font-size:12px;font-weight:700;letter-spacing:.25em;text-transform:uppercase;margin:0 0 10px}
+.almc h2{font-family:Georgia,'Times New Roman',serif;font-size:clamp(30px,4vw,44px);font-weight:600;line-height:1.1;margin:0 0 8px;color:#221F1C}
+.almc-km{font-size:18px;color:#7A5A1E;margin:0 0 12px}
+.almc-lead{color:#4E4740;max-width:720px;margin:0 0 30px;font-size:16px;line-height:1.65}
+.almc-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.almc-c{position:relative;border:0;padding:0;margin:0;border-radius:18px;overflow:hidden;background:#cfc6b6;cursor:pointer;aspect-ratio:3/4;font:inherit;text-align:left;transition:transform .25s,box-shadow .25s}
+.almc-c:hover,.almc-c:focus-visible{transform:translateY(-4px);box-shadow:0 14px 30px rgba(34,31,28,.25);outline:none}
+.almc-c img{width:100%;height:100%;object-fit:cover;display:block}
+.almc-cap{position:absolute;left:0;right:0;bottom:0;padding:56px 14px 14px;background:linear-gradient(to top,rgba(20,18,16,.9),rgba(20,18,16,0));color:#fff}
+.almc-cap small{display:block;color:#C9A55A;font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;margin-bottom:4px}
+.almc-cap b{display:block;font-family:Georgia,serif;font-size:18px;line-height:1.2}
+.almc-cap span{display:block;font-size:13px;color:#E2C98F;margin-top:4px}
+.almc-cap i{display:inline-block;font-style:normal;margin-top:10px;font-size:12px;font-weight:700;letter-spacing:.08em;color:#fff;border-bottom:1px solid #C9A55A}
+@media (max-width:1000px){.almc-grid{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:640px){.almc-grid{grid-template-columns:repeat(2,1fr);gap:12px}.almc-cap{padding:44px 10px 10px}.almc-cap b{font-size:15px}.almc-cap span{font-size:12px}}
+</style>
+<section id="museum-collection" class="almc" aria-label="Museum collection">
+ <div class="almc-in">
+  <p class="almc-k">Museum collection</p>
+  <h2>Khmer art in museums</h2>
+  <p class="almc-km">សារមន្ទីរ ដែលខ្ញុំបានថតរូប</p>
+  <p class="almc-lead">All the museums I have photographed, in Cambodia and in San Francisco, in one place. Tap a museum to open its photos and guide.</p>
+  <div class="almc-grid">
+   <button type="button" class="almc-c" data-m="Preah Norodom Sihanouk-Angkor Museum"><img src="/IMG_2474.JPG" alt="" loading="lazy" decoding="async"><span class="almc-cap"><small>Siem Reap</small><b>Preah Norodom Sihanouk-Angkor Museum</b><span>សារមន្ទីរព្រះនរោត្តម សីហនុ-អង្គរ</span><i>EXPLORE →</i></span></button>
+   <button type="button" class="almc-c" data-m="Siem Reap Museums"><img src="/IMG_5451.JPG" alt="" loading="lazy" decoding="async"><span class="almc-cap"><small>Siem Reap</small><b>Siem Reap Museums</b><span>សារមន្ទីរនៅសៀមរាប</span><i>EXPLORE →</i></span></button>
+   <button type="button" class="almc-c" data-m="Phnom Penh Museums"><img src="/IMG_0308.jpg" alt="" loading="lazy" decoding="async"><span class="almc-cap"><small>Phnom Penh</small><b>Phnom Penh Museums</b><span>សារមន្ទីរនៅភ្នំពេញ</span><i>EXPLORE →</i></span></button>
+   <button type="button" class="almc-c" data-m="Battambang Museums"><img src="/010019.jpeg" alt="" loading="lazy" decoding="async"><span class="almc-cap"><small>Battambang</small><b>Battambang Museums</b><span>សារមន្ទីរនៅបាត់ដំបង</span><i>EXPLORE →</i></span></button>
+   <button type="button" class="almc-c" data-go="khmer-art-sf"><img src="sf-vishnu-3.jpg" alt="" loading="lazy" decoding="async"><span class="almc-cap"><small>San Francisco, USA</small><b>Asian Art Museum</b><span>សារមន្ទីរសិល្បៈអាស៊ី</span><i>EXPLORE →</i></span></button>
+  </div>
+ </div>
+</section>
+<script>
+(function(){var g=document.querySelector('#museum-collection .almc-grid');if(!g)return;
+g.addEventListener('click',function(e){var b=e.target.closest('.almc-c');if(!b)return;
+ if(b.dataset.go){var t=document.getElementById(b.dataset.go);if(t)t.scrollIntoView({behavior:'smooth'});return;}
+ if(typeof openHeritageIndexItem==='function')openHeritageIndexItem({name:b.dataset.m});});
+})();
+</script>
+
 <!-- ===== Khmer Art in San Francisco (Asian Art Museum) ===== -->
 <style>
 .alsf{background:#F6F1E7;color:#221F1C;padding:72px 16px}
@@ -5450,10 +5493,10 @@ A.lombard={n:8,t:'Lombard Street',km:'ផ្លូវកោងៗ Lombard Street
     'Cars go down slowly, one way, while visitors walk the stairs on both sides. From the top you can see far across the city: Coit Tower on Telegraph Hill, the Bay Bridge, and the blue water of the bay.'],
  l:'The red brick road and its tight curves · the big hydrangea bushes · Coit Tower on the hill in the distance · the white Bay Bridge tower across the water.',src:[]};
 ['goldengate','ferry','painted','hills','chinatown','cityhall','palace','pavilion','bandshell','lombard','civic','california','teagarden','coit','grace'].forEach(function(k){A[k].by='Photographs by Samnang Loy · San Francisco';});
-var L=[['goldengate','San Francisco · 1937'],['ferry','The Embarcadero · 1898'],['lombard','Russian Hill'],['coit','Telegraph Hill · 1933'],['painted','Alamo Square'],['hills','Hilltop views'],['chinatown','Grant Avenue'],['civic','Civic Center · 1915'],['california','Nob Hill · cable cars'],['grace','Nob Hill'],['cityhall','Pride · at night'],['museum','Asian Art Museum · Khmer art'],['teagarden','Golden Gate Park · 1894'],['pavilion','Golden Gate Park'],['bandshell','Golden Gate Park · 1900'],['palace','Marina District · 1915']];
+var L=[['goldengate','San Francisco · 1937'],['ferry','The Embarcadero · 1898'],['lombard','Russian Hill'],['coit','Telegraph Hill · 1933'],['painted','Alamo Square'],['hills','Hilltop views'],['chinatown','Grant Avenue'],['civic','Civic Center · 1915'],['california','Nob Hill · cable cars'],['grace','Nob Hill'],['cityhall','Pride · at night'],['museum','Cambodia & San Francisco'],['teagarden','Golden Gate Park · 1894'],['pavilion','Golden Gate Park'],['bandshell','Golden Gate Park · 1900'],['palace','Marina District · 1915']];
 var S=document.getElementById('sflStrips');
 function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;');}
-L.forEach(function(x,n){var k=x[0],a=k==='museum'?{t:'Khmer art in the museum'}:A[k];
+L.forEach(function(x,n){var k=x[0],a=k==='museum'?{t:'Museum collection'}:A[k];
  var picks={goldengate:[1],ferry:[1],lombard:[1],painted:[1],hills:[1],chinatown:[1],cityhall:[1],pavilion:[1],bandshell:[1],palace:[2],coit:[4]}[k]||[1];picks.forEach(function(i){var b=document.createElement('button');b.type='button';b.className='alsf-strip'+(n===0?' on':'');b.setAttribute('data-k',k);b.setAttribute('aria-label',a.t);
   b.innerHTML='<img src="'+(k==='museum'?'sf-vishnu-3.jpg':'sf-'+k+'-'+i+'.jpg')+'" alt="" loading="lazy" decoding="async"><span class="alsf-tag">'+esc(a.t)+'</span><span class="alsf-sc"><b>'+esc(a.t)+'</b><span>'+x[1]+'</span></span>';S.appendChild(b);});
 });
@@ -5464,7 +5507,7 @@ st.forEach(function(b){var was=false;
  b.addEventListener('pointerdown',function(e){was=b.classList.contains('on')&&(e.pointerType==='mouse'||b.dataset.ready==='1');});
  b.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' ')was=true;});
  b.addEventListener('focus',function(){act(b);});
- b.addEventListener('click',function(){if(!was){act(b);st.forEach(function(x){x.dataset.ready='';});b.dataset.ready='1';return;}was=false;var kk=b.getAttribute('data-k');if(kk==='museum'){var t=document.getElementById('khmer-art-sf');if(t)t.scrollIntoView({behavior:'smooth'});return;}window.alsfStory(kk);});
+ b.addEventListener('click',function(){if(!was){act(b);st.forEach(function(x){x.dataset.ready='';});b.dataset.ready='1';return;}was=false;var kk=b.getAttribute('data-k');if(kk==='museum'){var t=document.getElementById('museum-collection');if(t)t.scrollIntoView({behavior:'smooth'});return;}window.alsfStory(kk);});
 });
 })();
 </script>
