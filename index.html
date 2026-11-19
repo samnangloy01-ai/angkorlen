@@ -1259,7 +1259,7 @@ A.tonlesap={n:10,t:'Life on the Tonle Sap',km:'ជីវិតលើបឹងទ
 
 
         <!-- Photo-selling albums for Temple Groups 1 and 2 -->
-        <section id="galleryAlbumSection" class="gallery-album-section">
+        <section id="galleryAlbumSection" class="gallery-album-section" style="display:none">
             <div class="gallery-album-hero">
                 <h2 id="galleryAlbumTitle" class="gallery-album-title"></h2>
                 <p id="galleryAlbumSubtitle" class="gallery-album-subtitle"></p>
@@ -8179,6 +8179,17 @@ function closeTop100TestSection(){
         function openGalleryAlbum(albumName) {
             const data = galleryAlbumData[albumName];
             if (!data) return;
+            // Open the album inside the popup (same as other photo stories) instead of on the page.
+            if (typeof openModal === 'function') {
+                const albumText = {
+                    "Traditional Khmer Wooden Stilt House": ['ផ្ទះឈើខ្មែរបុរាណ', '<strong>Traditional Khmer Wooden Stilt House — ផ្ទះឈើខ្មែរបុរាណ</strong><br><br>In the Cambodian countryside, many family homes are built of wood and raised high on posts. The space under the house stays shaded and cool, so families use it to rest in hammocks, work, store tools and firewood, and keep animals. Raising the house also keeps it above the water during the rainy season. A wooden staircase leads up to the living rooms, and the roofs are often covered with metal sheets or tiles.<br><br>នៅតាមជនបទកម្ពុជា ផ្ទះគ្រួសារជាច្រើនធ្វើពីឈើ ហើយលើកខ្ពស់លើសសរ។ ក្រោមផ្ទះមានម្លប់ និងត្រជាក់ ដូច្នេះគ្រួសារប្រើសម្រាប់សម្រាកលើអង្រឹង ធ្វើការ ទុកឧបករណ៍ និងអុស ហើយចិញ្ចឹមសត្វ។ ការលើកផ្ទះខ្ពស់ក៏ការពារផ្ទះពីទឹកនៅរដូវវស្សាផងដែរ។ មានជណ្ដើរឈើឡើងទៅបន្ទប់រស់នៅ ហើយដំបូលច្រើនប្រក់ដោយស័ង្កសី ឬក្បឿង។'],
+                    "Transporting Harvested Crops in Rural Cambodia": ['ការដឹកជញ្ជូនផលដំណាំនៅជនបទកម្ពុជា', '<strong>Transporting Harvested Crops in Rural Cambodia — ការដឹកជញ្ជូនផលដំណាំ</strong><br><br>Harvest time is one of the busiest times of the year in rural Cambodia. These photographs show how families move their harvested crops from the fields to their homes and to market along village roads. It is hard work, and relatives and neighbours often help one another.<br><br>រដូវប្រមូលផល គឺជាពេលមមាញឹកបំផុតមួយក្នុងឆ្នាំនៅជនបទកម្ពុជា។ រូបថតទាំងនេះបង្ហាញពីរបៀបដែលគ្រួសារដឹកផលដំណាំពីស្រែចម្ការ ទៅផ្ទះ និងទៅផ្សារ តាមផ្លូវភូមិ។ វាជាការងារលំបាក ហើយសាច់ញាតិ និងអ្នកជិតខាងតែងជួយគ្នាទៅវិញទៅមក។']
+                }[albumName] || [data.subtitle, ''];
+                const album0 = document.getElementById('galleryAlbumSection');
+                if (album0) album0.style.display = 'none';
+                openModal(data.caption, albumText[0], data.images.slice(), albumText[1]);
+                return;
+            }
             document.body.classList.remove('top100-view','reamker-view');
             const grid = document.getElementById('templeGrid');
             const album = document.getElementById('galleryAlbumSection');
