@@ -761,7 +761,7 @@ body.top100-view .top100-test-section {
                     <button type="button" class="angkor-nav-trigger">Angkor <span class="chevron">⌄</span></button>
                     <div class="angkor-dropdown">
                         <span class="dropdown-label">Explore Angkor</span>
-                        <a href="/temples.html">All temple guides (81)</a>
+                        <a href="/temples.html">All temple guides (82)</a>
                         <a href="#top100TestSection" onclick="openTempleFromIndex('Top 37 Ancient Sites');return true;">Top 37 Ancient Sites</a>
                     </div>
                 </div>
@@ -816,7 +816,7 @@ body.top100-view .top100-test-section {
                 <div class="pl-4 space-y-1 pb-2">
                     <a href="#templeGrid" class="block py-1">» All Angkor Sites</a>
                     <div class="mt-2 mb-1 text-[10px] font-bold tracking-widest uppercase text-neutral-500">Explore Angkor</div>
-                    <a href="/temples.html" class="block py-1">» All temple guides (81)</a>
+                    <a href="/temples.html" class="block py-1">» All temple guides (82)</a>
                     <a href="#top100TestSection" onclick="openTempleFromIndex('Top 37 Ancient Sites');return true;" class="block py-1">» Top 37 Ancient Sites</a>
                 </div>
             </details>
@@ -1116,8 +1116,44 @@ g.addEventListener('click',function(e){var b=e.target.closest('.almc-c');if(!b)r
   <a href="#sf-lens"><div class="c"><img src="sf-painted-1.jpg" alt="Painted Ladies Victorian houses, San Francisco" loading="lazy" decoding="async"></div><div class="pin">🌉</div><small>EXPLORE</small><b>San Francisco</b><i>California, USA</i></a>
   <a href="#sf-lens" onclick="setTimeout(function(){window.alsfStory&&alsfStory('pavilion')},400)"><div class="c"><img src="sf-pavilion-6.jpg" alt="Chinese Pavilion at Stow Lake, Golden Gate Park" loading="lazy" decoding="async"></div><div class="pin">🏯</div><small>EXPLORE</small><b>Golden Gate Park</b><i>San Francisco</i></a>
  </div>
- <p style="text-align:center;margin:34px 0 0"><a href="/temples.html" style="display:inline-block;background:#221F1C;color:#F3EDE2;padding:12px 22px;border-radius:999px;text-decoration:none;font-weight:600">Explore 81 Khmer temple guides →</a></p>
+ <p style="text-align:center;margin:34px 0 0"><a href="/temples.html" style="display:inline-block;background:#221F1C;color:#F3EDE2;padding:12px 22px;border-radius:999px;text-decoration:none;font-weight:600">Explore 82 Khmer temple guides →</a></p>
 </section>
+<!-- ===== New temples row ===== -->
+<style>
+.alrow{max-width:80rem;margin:0 auto;padding:48px 16px 8px}
+.alrow-h{display:flex;align-items:baseline;justify-content:space-between;gap:16px;margin:0 0 22px}
+.alrow-h h2{font-size:clamp(26px,3.4vw,40px);font-weight:500;margin:0;color:#171717;letter-spacing:-.01em}
+.alrow-h a{color:#171717;text-decoration:underline;text-underline-offset:4px;font-size:17px;white-space:nowrap}
+.alrow-w{position:relative}
+.alrow-s{display:flex;gap:24px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;padding-bottom:6px}
+.alrow-s::-webkit-scrollbar{display:none}
+.alrow-c{flex:0 0 calc((100% - 72px)/4);scroll-snap-align:start;text-decoration:none;color:#171717;min-width:0}
+.alrow-i{display:block;aspect-ratio:4/3;overflow:hidden;background:#eee}
+.alrow-i img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s}
+.alrow-c:hover .alrow-i img{transform:scale(1.04)}
+.alrow-c small{display:block;margin:14px 0 2px;font-size:15px;color:#333}
+.alrow-c b{display:block;font-size:clamp(20px,2vw,28px);font-weight:500;line-height:1.2;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.alrow-c i{display:block;font-style:normal;color:#7A5A1E;font-size:15px;margin-top:4px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.alrow-b{position:absolute;top:calc(((100% - 6px) * 0) + 0px);width:56px;height:56px;border-radius:50%;border:0;background:#fff;box-shadow:0 4px 16px rgba(0,0,0,.15);cursor:pointer;font-size:24px;color:#333;display:flex;align-items:center;justify-content:center;z-index:2}
+.alrow-b.l{left:-12px}.alrow-b.r{right:-12px}.alrow-b[disabled]{opacity:0;pointer-events:none}
+@media(max-width:1000px){.alrow-c{flex-basis:calc((100% - 24px)/2.3)}}
+@media(max-width:640px){.alrow-s{gap:14px}.alrow-c{flex-basis:78%}.alrow-b{display:none}}
+</style>
+<div style="background:#fafafa;width:100%;padding:1px 0 30px"><section class="alrow" id="new-temples" aria-label="New temples">
+ <div class="alrow-h"><h2>New Temples · ប្រាសាទថ្មី</h2><a href="/temples.html">View all</a></div>
+ <div class="alrow-w">
+  <button type="button" class="alrow-b l" aria-label="Scroll left" disabled>‹</button>
+  <div class="alrow-s"><!--NEWCARDS--><a class="alrow-c" href="/temple-prasat-ta-dong.html"><span class="alrow-i"><img loading="lazy" decoding="async" src="https://wsrv.nl/?url=https%3A%2F%2Fwww.angkorlens.com%2Fsf-tadong-1.jpg&w=600&q=75&output=jpg" alt="Prasat Ta Dong"></span><small>New temple</small><b>Prasat Ta Dong</b><i>ប្រាសាទតាដុង</i></a><!--/NEWCARDS--></div>
+  <button type="button" class="alrow-b r" aria-label="Scroll right">›</button>
+ </div>
+</section></div>
+<script>
+(function(){var w=document.querySelector('#new-temples .alrow-w');if(!w)return;var s=w.querySelector('.alrow-s'),l=w.querySelector('.l'),r=w.querySelector('.r');
+function pos(){var img=s.querySelector('.alrow-i');if(img){var t=img.offsetHeight/2-28+'px';l.style.top=t;r.style.top=t;}l.disabled=s.scrollLeft<5;r.disabled=s.scrollLeft+s.clientWidth>=s.scrollWidth-5;}
+l.onclick=function(){s.scrollBy({left:-s.clientWidth*0.9,behavior:'smooth'});};r.onclick=function(){s.scrollBy({left:s.clientWidth*0.9,behavior:'smooth'});};
+s.addEventListener('scroll',pos,{passive:true});window.addEventListener('resize',pos);setTimeout(pos,300);pos();})();
+</script>
+
 <section class="alh" style="padding-bottom:40px" aria-label="Museum spotlight">
  <div class="alh-spot"><div><h2>Museum spotlight</h2>
   <div class="row"><div class="logo">ASIAN ART<br>MUSEUM<br><span style="font-weight:500;font-size:15px">San Francisco</span></div>
@@ -4574,7 +4610,7 @@ South Snaeng Krabei Temple is an Angkorian-period Khmer monument in Preah Vihear
             <section id="temple-name-index" class="temple-index-section" style="display:none;">
                 <div class="temple-index-kicker">EXPLORE MORE KHMER HERITAGE</div>
                 <h2 class="temple-index-title">Temple Sites</h2>
-                <p style="text-align:center;margin:6px 0 14px"><a href="/temples.html" style="color:#0891b2;font-weight:600">See all 81 temple guides →</a></p>
+                <p style="text-align:center;margin:6px 0 14px"><a href="/temples.html" style="color:#0891b2;font-weight:600">See all 82 temple guides →</a></p>
                 <p class="temple-index-description">More temples from the AngkorLens photo archive. Click any card to open its full guide. Museums and everyday Khmer life now have their own collections.</p>
                 <div id="templeNameIndex" class="temple-index-grid" aria-label="Temple sites, museums and Khmer heritage"></div>
                 <button id="heritageIndexLoadMore" type="button" class="temple-index-load-more" onclick="loadMoreHeritageIndex()">
