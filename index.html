@@ -97,11 +97,26 @@ document.addEventListener('error', function (e) {
     <!-- Structured Data -->
     <script type="application/ld+json">
     {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "AngkorLens",
-        "url": "https://www.angkorlens.com/",
-        "description": "Explore Khmer temples, Cambodian heritage, ancient architecture, archaeological sites, and heritage landscapes with AngkorLens."
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://www.angkorlens.com/#website",
+          "name": "AngkorLens",
+          "url": "https://www.angkorlens.com/",
+          "description": "Explore Khmer temples, Cambodian heritage, ancient architecture, archaeological sites, and heritage landscapes with AngkorLens.",
+          "inLanguage": "en",
+          "author": {"@id": "https://www.angkorlens.com/#samnang"}
+        },
+        {
+          "@type": "Person",
+          "@id": "https://www.angkorlens.com/#samnang",
+          "name": "Samnang Loy",
+          "jobTitle": "Photographer and author",
+          "description": "Cambodian photographer and author of the AngkorLens books on Khmer temples and heritage.",
+          "url": "https://www.angkorlens.com/"
+        }
+      ]
     }
     </script>
 
@@ -976,13 +991,13 @@ body.top100-view .top100-test-section {
 </style>
 <section class="alx" aria-label="Explore AngkorLens">
   <div class="alx-row">
-    <a class="alx-card" href="#templeGrid"><img src="al-feature-bayon.jpg" alt="" loading="lazy" decoding="async"><div class="alx-in"><span class="alx-top">Explore</span><span class="alx-name">Temples<span class="alx-km">ប្រាសាទ</span></span><span class="alx-btn">Explore</span></div></a>
+    <a class="alx-card" href="#templeGrid"><img src="al-feature-bayon.jpg" alt="Bayon temple faces, Angkor Thom" loading="lazy" decoding="async"><div class="alx-in"><span class="alx-top">Explore</span><span class="alx-name">Temples<span class="alx-km">ប្រាសាទ</span></span><span class="alx-btn">Explore</span></div></a>
     <a class="alx-card" href="#heritage"><img src="https://wsrv.nl/?url=https%3A%2F%2Fwww.angkorlens.com%2FIMG_0713.JPG&w=900&q=75&output=jpg" alt="" loading="lazy" decoding="async"><div class="alx-in"><span class="alx-top">Explore</span><span class="alx-name">Heritage<span class="alx-km">បេតិកភណ្ឌ</span></span><span class="alx-btn">Explore</span></div></a>
-    <a class="alx-card" href="#khmer-art-sf"><img src="sf-vishnu-3.jpg" alt="" loading="lazy" decoding="async" style="object-position:40% 50%"><div class="alx-in"><span class="alx-top">Museum</span><span class="alx-name">Khmer Art<span class="alx-km">សិល្បៈខ្មែរ</span></span><span class="alx-btn">Explore</span></div></a>
-    <a class="alx-card" href="#books"><img src="al-feature-angkor-wat.jpg" alt="" loading="lazy" decoding="async"><div class="alx-in"><span class="alx-top">Read</span><span class="alx-name">Books<span class="alx-km">សៀវភៅ</span></span><span class="alx-btn">Explore</span></div></a>
+    <a class="alx-card" href="#khmer-art-sf"><img src="sf-vishnu-3.jpg" alt="Bronze Reclining Vishnu, Asian Art Museum San Francisco" loading="lazy" decoding="async" style="object-position:40% 50%"><div class="alx-in"><span class="alx-top">Museum</span><span class="alx-name">Khmer Art<span class="alx-km">សិល្បៈខ្មែរ</span></span><span class="alx-btn">Explore</span></div></a>
+    <a class="alx-card" href="#books"><img src="al-feature-angkor-wat.jpg" alt="Angkor Wat temple, Siem Reap, Cambodia" loading="lazy" decoding="async"><div class="alx-in"><span class="alx-top">Read</span><span class="alx-name">Books<span class="alx-km">សៀវភៅ</span></span><span class="alx-btn">Explore</span></div></a>
   </div>
   <div class="alx-travel" id="alxTravel">
-    <div class="alx-stack" aria-hidden="true"><img src="al-feature-koh-ker.jpg" alt=""><img src="al-feature-ta-prohm.jpg" alt=""><img src="al-feature-angkor-wat.jpg" alt=""></div>
+    <div class="alx-stack" aria-hidden="true"><img src="al-feature-koh-ker.jpg" alt=""><img src="al-feature-ta-prohm.jpg" alt=""><img src="al-feature-angkor-wat.jpg" alt="Angkor Wat temple, Siem Reap, Cambodia"></div>
     <div class="alx-t"><h3>Interested in Travel?</h3><p>Get new temples, photos and travel stories from AngkorLens.</p></div>
     <div class="alx-act"><button type="button" class="alx-no" onclick="alxHide()">No, thanks</button><button type="button" class="alx-yes" onclick="alxSignup()">Sign up now</button><a href="#tours" class="alx-tour">🛺 Book a Tour</a></div>
   </div>
@@ -1037,11 +1052,11 @@ function alxSignup(){var s=null;try{s=localStorage.getItem('angkorLensNewsletter
 <section class="alh" aria-label="Dive into">
  <h2>Dive into…</h2><p class="sub">Temples, lake villages and museums through my lens</p>
  <div class="alh-dive">
-  <a href="#templeGrid" class="t1" onclick="if(window.alsfStory){alsfStory('bakong');return false;}"><img src="sf-bakong-1.jpg" alt="" loading="lazy" decoding="async" style="object-position:50% 45%"><span>Bakong Temple</span></a>
-  <a href="#templeGrid" class="t2" onclick="if(window.alsfStory){alsfStory('banteaysrei');return false;}"><img src="sf-banteaysrei-1.jpg" alt="" loading="lazy" decoding="async"><span>Banteay Srei</span></a>
-  <a href="#khmer-art-sf" class="t3"><img src="sf-shiva-1.jpg" alt="" loading="lazy" decoding="async"><span>Khmer Art in San Francisco</span></a>
-  <a href="#sf-lens" class="b1"><img src="sf-goldengate-1.jpg" alt="" loading="lazy" decoding="async"><span>The Golden Gate</span></a>
-  <a href="#sf-lens" class="b2" onclick="setTimeout(function(){window.alsfStory&&alsfStory('chinatown')},400)"><img src="sf-chinatown-1.jpg" alt="" loading="lazy" decoding="async" style="object-position:center 35%"><span>Chinatown</span></a>
+  <a href="#templeGrid" class="t1" onclick="if(window.alsfStory){alsfStory('bakong');return false;}"><img src="sf-bakong-1.jpg" alt="Bakong temple, Roluos, Cambodia" loading="lazy" decoding="async" style="object-position:50% 45%"><span>Bakong Temple</span></a>
+  <a href="#templeGrid" class="t2" onclick="if(window.alsfStory){alsfStory('banteaysrei');return false;}"><img src="sf-banteaysrei-1.jpg" alt="Banteay Srei pink sandstone temple, Cambodia" loading="lazy" decoding="async"><span>Banteay Srei</span></a>
+  <a href="#khmer-art-sf" class="t3"><img src="sf-shiva-1.jpg" alt="Khmer sculpture of Shiva, Asian Art Museum" loading="lazy" decoding="async"><span>Khmer Art in San Francisco</span></a>
+  <a href="#sf-lens" class="b1"><img src="sf-goldengate-1.jpg" alt="Golden Gate Bridge, San Francisco" loading="lazy" decoding="async"><span>The Golden Gate</span></a>
+  <a href="#sf-lens" class="b2" onclick="setTimeout(function(){window.alsfStory&&alsfStory('chinatown')},400)"><img src="sf-chinatown-1.jpg" alt="Chinatown lanterns, San Francisco" loading="lazy" decoding="async" style="object-position:center 35%"><span>Chinatown</span></a>
  </div>
 </section>
 
@@ -1072,11 +1087,11 @@ function alxSignup(){var s=null;try{s=localStorage.getItem('angkorLensNewsletter
   <p class="almc-km">ជីវិតប្រចាំថ្ងៃរបស់ប្រជាជនខ្មែរ</p>
   <p class="almc-lead">Village houses, farm work, floating villages and family traditions, all together in one place. Tap a card to open its photos.</p>
   <div class="almc-grid" id="khmerLifeGrid">
-   <button type="button" class="almc-c" data-t="Traditional Khmer Wooden Stilt House"><img src="https://wsrv.nl/?url=https%3A%2F%2Fwww.angkorlens.com%2F10335104.jpeg&w=900&q=75&output=jpg" alt="" loading="lazy" decoding="async"><span class="almc-cap"><small>Village life</small><b>Traditional Khmer Wooden Stilt House</b><span>ផ្ទះឈើខ្មែរបុរាណ</span><i>EXPLORE →</i></span></button>
-   <button type="button" class="almc-c" data-t="Transporting Harvested Crops in Rural Cambodia"><img src="https://wsrv.nl/?url=https%3A%2F%2Fwww.angkorlens.com%2F103351.jpeg&w=900&q=75&output=jpg" alt="" loading="lazy" decoding="async"><span class="almc-cap"><small>Farm life</small><b>Transporting Harvested Crops</b><span>ការដឹកជញ្ជូនផលដំណាំ</span><i>EXPLORE →</i></span></button>
-   <button type="button" class="almc-c" data-h="Khmer People &amp; Traditional Life"><img src="https://wsrv.nl/?url=https%3A%2F%2Fwww.angkorlens.com%2F94114459.jpg&w=900&q=75&output=jpg" alt="" loading="lazy" decoding="async"><span class="almc-cap"><small>People &amp; tradition</small><b>Khmer People &amp; Traditional Life</b><span>ប្រជាជនខ្មែរ និងជីវិតប្រពៃណី</span><i>EXPLORE →</i></span></button>
-   <button type="button" class="almc-c" data-h="Floating Village"><img src="https://wsrv.nl/?url=https%3A%2F%2Fwww.angkorlens.com%2FIMG_7411.jpg&w=900&q=75&output=jpg" alt="" loading="lazy" decoding="async"><span class="almc-cap"><small>Tonle Sap</small><b>Floating Village</b><span>ភូមិបណ្តែតទឹក</span><i>EXPLORE →</i></span></button>
-   <button type="button" class="almc-c" data-s="tonlesap"><img src="sf-tonlesap-1.jpg" alt="" loading="lazy" decoding="async"><span class="almc-cap"><small>Photo story</small><b>Life on the Tonle Sap</b><span>ជីវិតលើបឹងទន្លេសាប</span><i>EXPLORE →</i></span></button>
+   <button type="button" class="almc-c" data-t="Traditional Khmer Wooden Stilt House"><img src="https://wsrv.nl/?url=https%3A%2F%2Fwww.angkorlens.com%2F10335104.jpeg&w=900&q=75&output=jpg" alt="Traditional Khmer wooden stilt house" loading="lazy" decoding="async"><span class="almc-cap"><small>Village life</small><b>Traditional Khmer Wooden Stilt House</b><span>ផ្ទះឈើខ្មែរបុរាណ</span><i>EXPLORE →</i></span></button>
+   <button type="button" class="almc-c" data-t="Transporting Harvested Crops in Rural Cambodia"><img src="https://wsrv.nl/?url=https%3A%2F%2Fwww.angkorlens.com%2F103351.jpeg&w=900&q=75&output=jpg" alt="Transporting harvested crops in rural Cambodia" loading="lazy" decoding="async"><span class="almc-cap"><small>Farm life</small><b>Transporting Harvested Crops</b><span>ការដឹកជញ្ជូនផលដំណាំ</span><i>EXPLORE →</i></span></button>
+   <button type="button" class="almc-c" data-h="Khmer People &amp; Traditional Life"><img src="https://wsrv.nl/?url=https%3A%2F%2Fwww.angkorlens.com%2F94114459.jpg&w=900&q=75&output=jpg" alt="Khmer people and traditional life" loading="lazy" decoding="async"><span class="almc-cap"><small>People &amp; tradition</small><b>Khmer People &amp; Traditional Life</b><span>ប្រជាជនខ្មែរ និងជីវិតប្រពៃណី</span><i>EXPLORE →</i></span></button>
+   <button type="button" class="almc-c" data-h="Floating Village"><img src="https://wsrv.nl/?url=https%3A%2F%2Fwww.angkorlens.com%2FIMG_7411.jpg&w=900&q=75&output=jpg" alt="Floating village on the Tonle Sap" loading="lazy" decoding="async"><span class="almc-cap"><small>Tonle Sap</small><b>Floating Village</b><span>ភូមិបណ្តែតទឹក</span><i>EXPLORE →</i></span></button>
+   <button type="button" class="almc-c" data-s="tonlesap"><img src="sf-tonlesap-1.jpg" alt="Floating house on the Tonle Sap lake, Cambodia" loading="lazy" decoding="async"><span class="almc-cap"><small>Photo story</small><b>Life on the Tonle Sap</b><span>ជីវិតលើបឹងទន្លេសាប</span><i>EXPLORE →</i></span></button>
   </div>
  </div>
 </section>
@@ -1091,20 +1106,20 @@ g.addEventListener('click',function(e){var b=e.target.closest('.almc-c');if(!b)r
 <section class="alh" aria-label="Places I have photographed">
  <h2>Places I've photographed</h2><p class="sub">Where do you want to visit today?</p>
  <div class="alh-circles">
-  <a href="#templeGrid"><div class="c"><img src="al-feature-angkor-wat.jpg" alt="" loading="lazy" decoding="async"></div><div class="pin">🛕</div><small>EXPLORE</small><b>Angkor</b><i>Siem Reap, Cambodia</i></a>
-  <a href="#angkorSunriseSection" onclick="openTempleFromIndex('Angkor Wat Sunrise');return false;"><div class="c"><img src="https://wsrv.nl/?url=https%3A%2F%2Fwww.angkorlens.com%2F1001991.jpeg&w=900&q=75&output=jpg" alt="" loading="lazy" decoding="async"></div><div class="pin">🌅</div><small>EXPLORE</small><b>Angkor Wat Sunrise</b><i>អង្គរវត្តពេលថ្ងៃរះ</i></a>
-  <a href="#angkorViewGallerySection" onclick="openTempleFromIndex('Angkor Wat — View from the Gallery');return false;"><div class="c"><img src="https://wsrv.nl/?url=https%3A%2F%2Fwww.angkorlens.com%2F173114459.jpg&w=900&q=75&output=jpg" alt="" loading="lazy" decoding="async"></div><div class="pin">🏛️</div><small>EXPLORE</small><b>View from the Gallery</b><i>Angkor Wat</i></a>
-  <a href="#reamkerMuralSection" onclick="openTempleFromIndex('Reamker Mural at the Silver Palace');return false;"><div class="c"><img src="https://wsrv.nl/?url=https%3A%2F%2Fwww.angkorlens.com%2FP1025848.jpg&w=900&q=75&output=jpg" alt="" loading="lazy" decoding="async"></div><div class="pin">🎨</div><small>EXPLORE</small><b>Reamker Mural</b><i>Silver Pagoda, Phnom Penh</i></a>
-  <a href="#khmer-life"><div class="c"><img src="sf-tonlesap-3.jpg" alt="" loading="lazy" decoding="async"></div><div class="pin">🛶</div><small>EXPLORE</small><b>Tonle Sap Lake</b><i>Cambodia</i></a>
-  <a href="#sf-lens"><div class="c"><img src="sf-painted-1.jpg" alt="" loading="lazy" decoding="async"></div><div class="pin">🌉</div><small>EXPLORE</small><b>San Francisco</b><i>California, USA</i></a>
-  <a href="#sf-lens" onclick="setTimeout(function(){window.alsfStory&&alsfStory('pavilion')},400)"><div class="c"><img src="sf-pavilion-6.jpg" alt="" loading="lazy" decoding="async"></div><div class="pin">🏯</div><small>EXPLORE</small><b>Golden Gate Park</b><i>San Francisco</i></a>
+  <a href="#templeGrid"><div class="c"><img src="al-feature-angkor-wat.jpg" alt="Angkor Wat temple, Siem Reap, Cambodia" loading="lazy" decoding="async"></div><div class="pin">🛕</div><small>EXPLORE</small><b>Angkor</b><i>Siem Reap, Cambodia</i></a>
+  <a href="#angkorSunriseSection" onclick="openTempleFromIndex('Angkor Wat Sunrise');return false;"><div class="c"><img src="https://wsrv.nl/?url=https%3A%2F%2Fwww.angkorlens.com%2F1001991.jpeg&w=900&q=75&output=jpg" alt="Angkor Wat at sunrise" loading="lazy" decoding="async"></div><div class="pin">🌅</div><small>EXPLORE</small><b>Angkor Wat Sunrise</b><i>អង្គរវត្តពេលថ្ងៃរះ</i></a>
+  <a href="#angkorViewGallerySection" onclick="openTempleFromIndex('Angkor Wat — View from the Gallery');return false;"><div class="c"><img src="https://wsrv.nl/?url=https%3A%2F%2Fwww.angkorlens.com%2F173114459.jpg&w=900&q=75&output=jpg" alt="View from the gallery of Angkor Wat" loading="lazy" decoding="async"></div><div class="pin">🏛️</div><small>EXPLORE</small><b>View from the Gallery</b><i>Angkor Wat</i></a>
+  <a href="#reamkerMuralSection" onclick="openTempleFromIndex('Reamker Mural at the Silver Palace');return false;"><div class="c"><img src="https://wsrv.nl/?url=https%3A%2F%2Fwww.angkorlens.com%2FP1025848.jpg&w=900&q=75&output=jpg" alt="Reamker mural at the Silver Pagoda, Phnom Penh" loading="lazy" decoding="async"></div><div class="pin">🎨</div><small>EXPLORE</small><b>Reamker Mural</b><i>Silver Pagoda, Phnom Penh</i></a>
+  <a href="#khmer-life"><div class="c"><img src="sf-tonlesap-3.jpg" alt="Tonle Sap lake, Cambodia" loading="lazy" decoding="async"></div><div class="pin">🛶</div><small>EXPLORE</small><b>Tonle Sap Lake</b><i>Cambodia</i></a>
+  <a href="#sf-lens"><div class="c"><img src="sf-painted-1.jpg" alt="Painted Ladies Victorian houses, San Francisco" loading="lazy" decoding="async"></div><div class="pin">🌉</div><small>EXPLORE</small><b>San Francisco</b><i>California, USA</i></a>
+  <a href="#sf-lens" onclick="setTimeout(function(){window.alsfStory&&alsfStory('pavilion')},400)"><div class="c"><img src="sf-pavilion-6.jpg" alt="Chinese Pavilion at Stow Lake, Golden Gate Park" loading="lazy" decoding="async"></div><div class="pin">🏯</div><small>EXPLORE</small><b>Golden Gate Park</b><i>San Francisco</i></a>
  </div>
 </section>
 <section class="alh" style="padding-bottom:40px" aria-label="Museum spotlight">
  <div class="alh-spot"><div><h2>Museum spotlight</h2>
   <div class="row"><div class="logo">ASIAN ART<br>MUSEUM<br><span style="font-weight:500;font-size:15px">San Francisco</span></div>
   <div><p>A beautiful collection of Khmer sculpture in San Francisco, and until January 25, 2027, home to the bronze Reclining Vishnu from the West Mebon.</p><a class="alh-btn" href="#khmer-art-sf" style="background:#C9A55A;color:#221F1C;font-weight:700">See the collection</a></div></div></div>
-  <div class="blob"><img src="sf-vishnu-3.jpg" alt="" loading="lazy" decoding="async"></div></div>
+  <div class="blob"><img src="sf-vishnu-3.jpg" alt="Bronze Reclining Vishnu, Asian Art Museum San Francisco" loading="lazy" decoding="async"></div></div>
 </section>
 <script>
 document.addEventListener('DOMContentLoaded',function(){var A=window.ALSF_A;if(!A)return;
@@ -5141,11 +5156,11 @@ function openAddedBottomPhoto(dataUri){
   <p class="almc-km">សារមន្ទីរ ដែលខ្ញុំបានថតរូប</p>
   <p class="almc-lead">All the museums I have photographed, in Cambodia and in San Francisco, in one place. Tap a museum to open its photos and guide.</p>
   <div class="almc-grid">
-   <button type="button" class="almc-c" data-m="Preah Norodom Sihanouk-Angkor Museum"><img src="https://wsrv.nl/?url=https%3A%2F%2Fwww.angkorlens.com%2FIMG_2474.JPG&w=900&q=75&output=jpg" alt="" loading="lazy" decoding="async"><span class="almc-cap"><small>Siem Reap</small><b>Preah Norodom Sihanouk-Angkor Museum</b><span>សារមន្ទីរព្រះនរោត្តម សីហនុ-អង្គរ</span><i>EXPLORE →</i></span></button>
-   <button type="button" class="almc-c" data-m="Siem Reap Museums"><img src="https://wsrv.nl/?url=https%3A%2F%2Fwww.angkorlens.com%2FIMG_5451.JPG&w=900&q=75&output=jpg" alt="" loading="lazy" decoding="async"><span class="almc-cap"><small>Siem Reap</small><b>Siem Reap Museums</b><span>សារមន្ទីរនៅសៀមរាប</span><i>EXPLORE →</i></span></button>
-   <button type="button" class="almc-c" data-m="Phnom Penh Museums"><img src="https://wsrv.nl/?url=https%3A%2F%2Fwww.angkorlens.com%2FIMG_0308.jpg&w=900&q=75&output=jpg" alt="" loading="lazy" decoding="async"><span class="almc-cap"><small>Phnom Penh</small><b>Phnom Penh Museums</b><span>សារមន្ទីរនៅភ្នំពេញ</span><i>EXPLORE →</i></span></button>
-   <button type="button" class="almc-c" data-m="Battambang Museums"><img src="https://wsrv.nl/?url=https%3A%2F%2Fwww.angkorlens.com%2F010019.jpeg&w=900&q=75&output=jpg" alt="" loading="lazy" decoding="async"><span class="almc-cap"><small>Battambang</small><b>Battambang Museums</b><span>សារមន្ទីរនៅបាត់ដំបង</span><i>EXPLORE →</i></span></button>
-   <button type="button" class="almc-c" data-go="khmer-art-sf"><img src="sf-vishnu-3.jpg" alt="" loading="lazy" decoding="async"><span class="almc-cap"><small>San Francisco, USA</small><b>Asian Art Museum</b><span>សារមន្ទីរសិល្បៈអាស៊ី</span><i>EXPLORE →</i></span></button>
+   <button type="button" class="almc-c" data-m="Preah Norodom Sihanouk-Angkor Museum"><img src="https://wsrv.nl/?url=https%3A%2F%2Fwww.angkorlens.com%2FIMG_2474.JPG&w=900&q=75&output=jpg" alt="Preah Norodom Sihanouk-Angkor Museum, Siem Reap" loading="lazy" decoding="async"><span class="almc-cap"><small>Siem Reap</small><b>Preah Norodom Sihanouk-Angkor Museum</b><span>សារមន្ទីរព្រះនរោត្តម សីហនុ-អង្គរ</span><i>EXPLORE →</i></span></button>
+   <button type="button" class="almc-c" data-m="Siem Reap Museums"><img src="https://wsrv.nl/?url=https%3A%2F%2Fwww.angkorlens.com%2FIMG_5451.JPG&w=900&q=75&output=jpg" alt="Museum in Siem Reap" loading="lazy" decoding="async"><span class="almc-cap"><small>Siem Reap</small><b>Siem Reap Museums</b><span>សារមន្ទីរនៅសៀមរាប</span><i>EXPLORE →</i></span></button>
+   <button type="button" class="almc-c" data-m="Phnom Penh Museums"><img src="https://wsrv.nl/?url=https%3A%2F%2Fwww.angkorlens.com%2FIMG_0308.jpg&w=900&q=75&output=jpg" alt="Museum in Phnom Penh" loading="lazy" decoding="async"><span class="almc-cap"><small>Phnom Penh</small><b>Phnom Penh Museums</b><span>សារមន្ទីរនៅភ្នំពេញ</span><i>EXPLORE →</i></span></button>
+   <button type="button" class="almc-c" data-m="Battambang Museums"><img src="https://wsrv.nl/?url=https%3A%2F%2Fwww.angkorlens.com%2F010019.jpeg&w=900&q=75&output=jpg" alt="Museum in Battambang" loading="lazy" decoding="async"><span class="almc-cap"><small>Battambang</small><b>Battambang Museums</b><span>សារមន្ទីរនៅបាត់ដំបង</span><i>EXPLORE →</i></span></button>
+   <button type="button" class="almc-c" data-go="khmer-art-sf"><img src="sf-vishnu-3.jpg" alt="Bronze Reclining Vishnu, Asian Art Museum San Francisco" loading="lazy" decoding="async"><span class="almc-cap"><small>San Francisco, USA</small><b>Asian Art Museum</b><span>សារមន្ទីរសិល្បៈអាស៊ី</span><i>EXPLORE →</i></span></button>
   </div>
  </div>
 </section>
@@ -5555,7 +5570,7 @@ var S=document.getElementById('sflStrips');
 function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;');}
 L.forEach(function(x,n){var k=x[0],a=k==='museum'?{t:'Museum collection'}:A[k];
  var picks={goldengate:[1],ferry:[1],lombard:[1],painted:[1],hills:[1],chinatown:[1],cityhall:[1],pavilion:[1],bandshell:[1],palace:[2],coit:[4]}[k]||[1];picks.forEach(function(i){var b=document.createElement('button');b.type='button';b.className='alsf-strip'+(n===0?' on':'');b.setAttribute('data-k',k);b.setAttribute('aria-label',a.t);
-  b.innerHTML='<img src="'+(k==='museum'?'sf-vishnu-3.jpg':'sf-'+k+'-'+i+'.jpg')+'" alt="" loading="lazy" decoding="async"><span class="alsf-tag">'+esc(a.t)+'</span><span class="alsf-sc"><b>'+esc(a.t)+'</b><span>'+x[1]+'</span></span>';S.appendChild(b);});
+  b.innerHTML='<img src="'+(k==='museum'?'sf-vishnu-3.jpg':'sf-'+k+'-'+i+'.jpg')+'" alt="Bronze Reclining Vishnu, Asian Art Museum San Francisco" loading="lazy" decoding="async"><span class="alsf-tag">'+esc(a.t)+'</span><span class="alsf-sc"><b>'+esc(a.t)+'</b><span>'+x[1]+'</span></span>';S.appendChild(b);});
 });
 var st=[].slice.call(S.children);function act(b){st.forEach(function(x){x.classList.toggle('on',x===b);});}
 var fine=window.matchMedia&&matchMedia('(hover:hover)').matches;
@@ -5777,7 +5792,7 @@ document.getElementById('altrForm').addEventListener('submit',function(e){e.prev
  </div>
 </section>
 <div class="algd-modal" id="algdModal" role="dialog" aria-modal="true"><div class="algd-art"><button type="button" class="algd-x" aria-label="Close" onclick="algdClose()">&times;</button><div id="algdArt"></div></div></div>
-<template id="algd-pass"><img class="algd-hero" src="al-feature-angkor-wat.jpg" alt=""><div class="algd-body">
+<template id="algd-pass"><img class="algd-hero" src="al-feature-angkor-wat.jpg" alt="Angkor Wat temple, Siem Reap, Cambodia"><div class="algd-body">
 <h3>How to Buy the Angkor Pass</h3><p><i>Updated November 2026</i></p>
 <p>To visit Angkor Wat and the temples of Angkor Archaeological Park you need an <b>Angkor Pass</b>. Here is everything you need to know.</p>
 <h4>Prices (US dollars)</h4>
@@ -5813,7 +5828,7 @@ document.getElementById('altrForm').addEventListener('submit',function(e){e.prev
 <div class="algd-note">💡 My tip: whatever month you come, start at sunrise. The light is beautiful and the air is cooler.</div>
 <a class="algd-cta" href="#tours" onclick="algdClose()">Book a sunrise tour →</a>
 </div></template>
-<template id="algd-three"><img class="algd-hero" src="al-feature-bayon.jpg" alt=""><div class="algd-body">
+<template id="algd-three"><img class="algd-hero" src="al-feature-bayon.jpg" alt="Bayon temple faces, Angkor Thom"><div class="algd-body">
 <h3>3 Days in Siem Reap</h3>
 <p>A relaxed plan for first-time visitors. A <b>3-day Angkor Pass ($62)</b> covers days 1 and 2 and Banteay Srei.</p>
 <h4>Day 1 — Sunrise and the great temples</h4>

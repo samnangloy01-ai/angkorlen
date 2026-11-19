@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /AngkorLens_index_FIXED.html
+Disallow: /api/
+
+Sitemap: https://www.angkorlens.com/sitemap.xml
