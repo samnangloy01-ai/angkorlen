@@ -724,6 +724,7 @@ body.top100-view .top100-test-section {
                     <button type="button" class="angkor-nav-trigger">Temple Groups <span class="chevron">⌄</span></button>
                     <div class="angkor-dropdown wide">
                         <span class="dropdown-label">Temple Groups</span>
+                        <a href="#khmer-life">Khmer life collection (all)</a>
                         <a href="#galleryAlbumSection" onclick="openTempleFromIndex('Traditional Khmer Wooden Stilt House');return false;">1. Traditional Khmer Wooden Stilt House</a>
                         <a href="#galleryAlbumSection" onclick="openTempleFromIndex('Transporting Harvested Crops in Rural Cambodia');return false;">2. Transporting Harvested Crops in Rural Cambodia</a>
                     </div>
@@ -787,6 +788,7 @@ body.top100-view .top100-test-section {
             <details class="text-neutral-600">
                 <summary class="font-medium py-2 cursor-pointer">Temple Groups</summary>
                 <div class="pl-4 space-y-1 pb-2">
+                    <a href="#khmer-life" class="block py-1">» Khmer life collection (all)</a>
                     <a href="#galleryAlbumSection" onclick="openTempleFromIndex('Traditional Khmer Wooden Stilt House');return false;" class="block py-1">» 1. Traditional Khmer Wooden Stilt House</a>
                     <a href="#galleryAlbumSection" onclick="openTempleFromIndex('Transporting Harvested Crops in Rural Cambodia');return false;" class="block py-1">» 2. Transporting Harvested Crops in Rural Cambodia</a>
                 </div>
@@ -1034,6 +1036,49 @@ function alxSignup(){var s=null;try{s=localStorage.getItem('angkorLensNewsletter
   <button type="button" class="im" onclick="window.alsfStory&&alsfStory('tonlesap')" aria-label="Open the Tonle Sap photo story"><img src="sf-tonlesap-1.jpg" alt="Floating houses on the Tonle Sap lake" loading="lazy" decoding="async"></button>
  </div>
 </section>
+<!-- ===== Khmer life collection ===== -->
+<style>
+.almc{background:#EFE7D8;color:#221F1C;padding:72px 16px}
+.almc-in{max-width:80rem;margin:0 auto}
+.almc-k{color:#7A5A1E;font-size:12px;font-weight:700;letter-spacing:.25em;text-transform:uppercase;margin:0 0 10px}
+.almc h2{font-family:Georgia,'Times New Roman',serif;font-size:clamp(30px,4vw,44px);font-weight:600;line-height:1.1;margin:0 0 8px;color:#221F1C}
+.almc-km{font-size:18px;color:#7A5A1E;margin:0 0 12px}
+.almc-lead{color:#4E4740;max-width:720px;margin:0 0 30px;font-size:16px;line-height:1.65}
+.almc-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.almc-c{position:relative;border:0;padding:0;margin:0;border-radius:18px;overflow:hidden;background:#cfc6b6;cursor:pointer;aspect-ratio:3/4;font:inherit;text-align:left;transition:transform .25s,box-shadow .25s}
+.almc-c:hover,.almc-c:focus-visible{transform:translateY(-4px);box-shadow:0 14px 30px rgba(34,31,28,.25);outline:none}
+.almc-c img{width:100%;height:100%;object-fit:cover;display:block}
+.almc-cap{position:absolute;left:0;right:0;bottom:0;padding:56px 14px 14px;background:linear-gradient(to top,rgba(20,18,16,.9),rgba(20,18,16,0));color:#fff}
+.almc-cap small{display:block;color:#C9A55A;font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;margin-bottom:4px}
+.almc-cap b{display:block;font-family:Georgia,serif;font-size:18px;line-height:1.2}
+.almc-cap span{display:block;font-size:13px;color:#E2C98F;margin-top:4px}
+.almc-cap i{display:inline-block;font-style:normal;margin-top:10px;font-size:12px;font-weight:700;letter-spacing:.08em;color:#fff;border-bottom:1px solid #C9A55A}
+@media (max-width:1000px){.almc-grid{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:640px){.almc-grid{grid-template-columns:repeat(2,1fr);gap:12px}.almc-cap{padding:44px 10px 10px}.almc-cap b{font-size:15px}.almc-cap span{font-size:12px}}
+</style>
+<section id="khmer-life" class="almc" style="background:#F6F1E7" aria-label="Khmer life collection">
+ <div class="almc-in">
+  <p class="almc-k">Khmer life collection</p>
+  <h2>Everyday life in Cambodia</h2>
+  <p class="almc-km">ជីវិតប្រចាំថ្ងៃរបស់ប្រជាជនខ្មែរ</p>
+  <p class="almc-lead">Village houses, farm work, floating villages and family traditions, all together in one place. Tap a card to open its photos.</p>
+  <div class="almc-grid" id="khmerLifeGrid">
+   <button type="button" class="almc-c" data-t="Traditional Khmer Wooden Stilt House"><img src="10335104.jpeg" alt="" loading="lazy" decoding="async"><span class="almc-cap"><small>Village life</small><b>Traditional Khmer Wooden Stilt House</b><span>ផ្ទះឈើខ្មែរបុរាណ</span><i>EXPLORE →</i></span></button>
+   <button type="button" class="almc-c" data-t="Transporting Harvested Crops in Rural Cambodia"><img src="103351.jpeg" alt="" loading="lazy" decoding="async"><span class="almc-cap"><small>Farm life</small><b>Transporting Harvested Crops</b><span>ការដឹកជញ្ជូនផលដំណាំ</span><i>EXPLORE →</i></span></button>
+   <button type="button" class="almc-c" data-h="Khmer People &amp; Traditional Life"><img src="/94114459.jpg" alt="" loading="lazy" decoding="async"><span class="almc-cap"><small>People &amp; tradition</small><b>Khmer People &amp; Traditional Life</b><span>ប្រជាជនខ្មែរ និងជីវិតប្រពៃណី</span><i>EXPLORE →</i></span></button>
+   <button type="button" class="almc-c" data-h="Floating Village"><img src="/IMG_7411.jpg" alt="" loading="lazy" decoding="async"><span class="almc-cap"><small>Tonle Sap</small><b>Floating Village</b><span>ភូមិបណ្តែតទឹក</span><i>EXPLORE →</i></span></button>
+   <button type="button" class="almc-c" data-s="tonlesap"><img src="sf-tonlesap-1.jpg" alt="" loading="lazy" decoding="async"><span class="almc-cap"><small>Photo story</small><b>Life on the Tonle Sap</b><span>ជីវិតលើបឹងទន្លេសាប</span><i>EXPLORE →</i></span></button>
+  </div>
+ </div>
+</section>
+<script>
+document.addEventListener('DOMContentLoaded',function(){var g=document.getElementById('khmerLifeGrid');if(!g)return;
+g.addEventListener('click',function(e){var b=e.target.closest('.almc-c');if(!b)return;
+ if(b.dataset.s){if(window.alsfStory)alsfStory(b.dataset.s);return;}
+ if(b.dataset.h){if(typeof openHeritageIndexItem==='function')openHeritageIndexItem({name:b.dataset.h});return;}
+ if(b.dataset.t&&typeof openTempleFromIndex==='function')openTempleFromIndex(b.dataset.t);});
+});
+</script>
 <section class="alh" aria-label="Places I have photographed">
  <h2>Places I've photographed</h2><p class="sub">Where do you want to visit today?</p>
  <div class="alh-circles">
@@ -5076,25 +5121,7 @@ function openAddedBottomPhoto(dataUri){
 
 
 <!-- ===== Museum collection ===== -->
-<style>
-.almc{background:#EFE7D8;color:#221F1C;padding:72px 16px}
-.almc-in{max-width:80rem;margin:0 auto}
-.almc-k{color:#7A5A1E;font-size:12px;font-weight:700;letter-spacing:.25em;text-transform:uppercase;margin:0 0 10px}
-.almc h2{font-family:Georgia,'Times New Roman',serif;font-size:clamp(30px,4vw,44px);font-weight:600;line-height:1.1;margin:0 0 8px;color:#221F1C}
-.almc-km{font-size:18px;color:#7A5A1E;margin:0 0 12px}
-.almc-lead{color:#4E4740;max-width:720px;margin:0 0 30px;font-size:16px;line-height:1.65}
-.almc-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
-.almc-c{position:relative;border:0;padding:0;margin:0;border-radius:18px;overflow:hidden;background:#cfc6b6;cursor:pointer;aspect-ratio:3/4;font:inherit;text-align:left;transition:transform .25s,box-shadow .25s}
-.almc-c:hover,.almc-c:focus-visible{transform:translateY(-4px);box-shadow:0 14px 30px rgba(34,31,28,.25);outline:none}
-.almc-c img{width:100%;height:100%;object-fit:cover;display:block}
-.almc-cap{position:absolute;left:0;right:0;bottom:0;padding:56px 14px 14px;background:linear-gradient(to top,rgba(20,18,16,.9),rgba(20,18,16,0));color:#fff}
-.almc-cap small{display:block;color:#C9A55A;font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;margin-bottom:4px}
-.almc-cap b{display:block;font-family:Georgia,serif;font-size:18px;line-height:1.2}
-.almc-cap span{display:block;font-size:13px;color:#E2C98F;margin-top:4px}
-.almc-cap i{display:inline-block;font-style:normal;margin-top:10px;font-size:12px;font-weight:700;letter-spacing:.08em;color:#fff;border-bottom:1px solid #C9A55A}
-@media (max-width:1000px){.almc-grid{grid-template-columns:repeat(3,1fr)}}
-@media (max-width:640px){.almc-grid{grid-template-columns:repeat(2,1fr);gap:12px}.almc-cap{padding:44px 10px 10px}.almc-cap b{font-size:15px}.almc-cap span{font-size:12px}}
-</style>
+
 <section id="museum-collection" class="almc" aria-label="Museum collection">
  <div class="almc-in">
   <p class="almc-k">Museum collection</p>
