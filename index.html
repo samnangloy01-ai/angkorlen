@@ -6187,6 +6187,13 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape'&&M.classList
                    String(filename).replace(/^\/+/, "").split("/").map(encodeURIComponent).join("/");
         }
 
+// Smaller copies for viewing (resized on the fly); originals stay for Full Size / purchase.
+        function alSizedUrl(src, w) {
+            const u = getTempleImageUrl(src);
+            if (!u || /^data:/i.test(u) || /^https?:\/\//i.test(u)) return u;
+            return 'https://wsrv.nl/?url=' + encodeURIComponent('https://www.angkorlens.com' + u) + '&w=' + w + '&q=78&output=jpg&we';
+        }
+
 function openModal(title, subtitle, images, historyText) {
             document.getElementById('modalTitle').innerText = title;
             document.getElementById('modalSubtitle').innerText = subtitle;
@@ -6219,11 +6226,13 @@ function openModal(title, subtitle, images, historyText) {
 
                 const mainImg = document.createElement('img');
                 const primary = getTempleImageUrl(mainSrc);
-                mainImg.src = primary;
+                mainImg.decoding = 'async';
+                mainImg.src = alSizedUrl(mainSrc, 1600);
                 mainImg.alt = title;
                 mainImg.className = 'heritage-main-photo';
                 mainImg.onclick = () => openPhotoMembership(mainSrc);
                 mainImg.onerror = function() {
+                    if (!mainImg.dataset.origTried) { mainImg.dataset.origTried = '1'; mainImg.src = primary; return; }
                     if (mainImg.dataset.fallbackTried === '1') return;
                     const m = String(primary).match(/^https:\/\/raw\.githubusercontent\.com\/([^/]+)\/([^/]+)\/([^/]+)\/(.+)$/i);
                     if (m) {
@@ -6248,12 +6257,14 @@ function openModal(title, subtitle, images, historyText) {
                 images.slice(1).forEach(function(src) {
                     const img = document.createElement('img');
                     const primary = getTempleImageUrl(src);
-                    img.src = primary;
-                    img.alt = title;
                     img.loading = 'lazy';
+                    img.decoding = 'async';
+                    img.src = alSizedUrl(src, 480);
+                    img.alt = title;
                     img.className = 'heritage-rest-photo';
                     img.onclick = () => openPhotoMembership(src);
                     img.onerror = function() {
+                        if (!img.dataset.origTried) { img.dataset.origTried = '1'; img.src = primary; return; }
                         if (img.dataset.fallbackTried === '1') return;
                         const m = String(primary).match(/^https:\/\/raw\.githubusercontent\.com\/([^/]+)\/([^/]+)\/([^/]+)\/(.+)$/i);
                         if (m) {
