@@ -14,8 +14,8 @@ Temples for AngkorLens Book 3: new temples added to angkorlens.com, plus temples
 | 8 | Prasat Prohm Kel | ប្រាសាទព្រហ្មកិល | 19 Nov 2026 | 3 (one zoomed) | /temple-prasat-prohm-kel.html | Cheung Tien, Chong Kal, Oddar Meanchey; 700 m N of Spean Toap. "House of fire" on Royal Road; Jayavarman VII, Bayon style. |
 | 9 | Spean Preah Chang'er (bridge) | ស្ពានព្រះចង្អេរ | 19 Nov 2026 | 4 (one zoomed) | /temple-spean-preah-changer.html | Kôl, Angkor Chum, Siem Reap. 47 × 9 m, 12+ openings, laterite, 12th–13th c. Angkor–Phimai Royal Road. Still in use. |
 | 10 | Prasat Preah Phnom | ប្រាសាទព្រះភ្នំ | 19 Nov 2026 | 5 (2 zoomed, 1 colour-corrected) | /temple-prasat-preah-phnom.html | Preah Phnom village, Srae Khvav, Angkor Chum, Siem Reap. 10th c., 5 brick towers; Indra lintel; inscriptions K.593 (930 CE), K.454 (1101 CE). |
-| 11 | Prasat Kok Chak | ប្រាសាទគោកចក | 19 Nov 2026 | 23 (3 zoomed, cover polished) | /temple-prasat-kok-chak.html | Teaksen Tbong, Kouk Chak, Siem Reap town. 2 brick towers; Garuda lintel; K.521 on door jambs. Founded 850 CE (9th c.) per K.521. APSARA brick repair. |
 | 11 | Prasat Kok Chak | ប្រាសាទគោកចក | 19 Nov 2026 | 23 (5 zoomed; cover = both towers) | /temple-prasat-kok-chak.html | Teaksen Tbong, Sangkat Kouk Chak, Siem Reap city. 2 brick towers facing east; Garuda lintel; inscription K.521. Founded 850 CE (9th c.) per K.521. APSARA repair 2015–2021. |
+| 12 | Kor Sak Temple (Preah Pithu T) | ប្រាសាទកោរសក់ | 19 Nov 2026 | 8 (cover = main pyramid, polished; 5 colour toned down) | /temple-kor-sak-temple.html | Angkor Thom, Sangkat Nokor Thum. Early 12th c., Angkor Wat style; originally Vishnu (helloangkor, APSARA). King: APSARA lists Suryavarman II for the group; helloangkor names none — confirm before printing. Restoration start date to confirm. |
 
 ## Notes per temple
 
@@ -133,3 +133,15 @@ Temples for AngkorLens Book 3: new temples added to angkorlens.com, plus temples
 - APSARA: work began 2015 (south tower + south wall); Feb 2021 announced both towers repaired (Khmer Times 11 Feb 2021). New bright bricks visible in photos.
 - Photos: offerings (coconuts, lotus, baysei) at main door; false doors on other sides.
 - Still to confirm: king, deity.
+
+### 12. Kor Sak Temple (ប្រាសាទកោរសក់) — Preah Pithu T / "Temple t"
+- Angkor Thom, Sangkat Nokor Thum, Siem Reap; northeast of the ancient Royal Palace. One of 5 temples of the Preah Pithu group (T, U, V, X, Y); shares a moated island with Chorm Temple (Preah Pithu U) to the east (helloangkor).
+- Khmer name used on site: ប្រាសាទកោរសក់ (Samnang). helloangkor writes ព្រះពិធូរ (ប៉ម តេ); one travel site spells it ប្រាសាទកោសក់ — spelling to confirm before the book.
+- Date: early 12th c. (helloangkor); APSARA group page: beginning of 12th c., Angkor Wat style, reign Suryavarman II (for the group). helloangkor names no king. APSARA: the 5 temples were not built together. Wikipedia: T and U probably built together (same axis, one moat).
+- Originally Vishnu (helloangkor). Reused sandstone blocks from 11th- and 13th-c. sites inside the enclosure.
+- Faces west; large raised cruciform terrace with naga balustrade; west gopura -> central stepped pyramid shrine with a staircase on each side; east gopura -> Chorm; small N and S entrances; 2 devatas on each side of the outer walls. Fully moated; reached only by the west causeway.
+- Finds: linga with inscription K.544 (Sanskrit, deity names; Phnom Penh National Museum, ka 1687); K.545 (one Khmer line on a pedestal); 3 lingas reported.
+- Records: Aymonier 1904 (Le Cambodge III, p.103); Lajonquiere 1911 ("Temple t", Inventaire III, p.66); BEFEO Chronique 1918; MH 374 (1926, "3 terraces and 3 sandstone sanctuaries"); IK 481; CISARK 381. Wikipedia: group cleared by Commaille 1908, Marchal 1918-20.
+- Restoration: helloangkor (Chorm page) says work in the Preah Pithu group began in 2019 with Kor Sak's west terrace, then Chorm. Another site says a Korea-funded (KOICA / Korea Cultural Heritage Foundation + APSARA) project began in Sept 2015 — start date conflict, so only 2019 (helloangkor) is on the web page. APSARA says Korea Cultural Heritage Foundation is restoring Chorm (3 years from 2021). Scaffolding visible behind the naga terrace in Samnang's photos.
+- Photos: main pyramid (cover), pyramid stairs with devata niche, naga terrace, 3 naga close-ups (lichen), 2 fig-root doorways.
+- Still to confirm: king, which devata/lintel details, restoration dates.
