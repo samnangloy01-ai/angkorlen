@@ -16,6 +16,7 @@ Temples for AngkorLens Book 3: new temples added to angkorlens.com, plus temples
 | 10 | Prasat Preah Phnom | ប្រាសាទព្រះភ្នំ | 19 Nov 2026 | 5 (2 zoomed, 1 colour-corrected) | /temple-prasat-preah-phnom.html | Preah Phnom village, Srae Khvav, Angkor Chum, Siem Reap. 10th c., 5 brick towers; Indra lintel; inscriptions K.593 (930 CE), K.454 (1101 CE). |
 | 11 | Prasat Kok Chak | ប្រាសាទគោកចក | 19 Nov 2026 | 23 (5 zoomed; cover = both towers) | /temple-prasat-kok-chak.html | Teaksen Tbong, Sangkat Kouk Chak, Siem Reap city. 2 brick towers facing east; Garuda lintel; inscription K.521. Founded 850 CE (9th c.) per K.521. APSARA repair 2015–2021. |
 | 12 | Kor Sak Temple (Preah Pithu T) | ប្រាសាទកោរសក់ | 19 Nov 2026 | 8 (cover = main pyramid, polished; 5 colour toned down) | /temple-kor-sak-temple.html | Angkor Thom, Sangkat Nokor Thum. Early 12th c., Angkor Wat style; originally Vishnu (helloangkor, APSARA). King: APSARA lists Suryavarman II for the group; helloangkor names none — confirm before printing. Restoration start date to confirm. |
+| 13 | Daun Mea Temple (Preah Pithu V) | ប្រាសាទដូនមារ | 19 Nov 2026 | 8 (cover = sanctuary from below, polished; 6 colour toned down) | /temple-daun-mea-temple.html | Angkor Thom, Sangkat Nokor Thum; centre of Preah Pithu group. Early 12th c. by art style (helloangkor); Hindu, deity not stated; no foundation inscription. King: APSARA lists Suryavarman II for the group — confirm. Terrace date disputed. |
 
 ## Notes per temple
 
@@ -145,3 +146,15 @@ Temples for AngkorLens Book 3: new temples added to angkorlens.com, plus temples
 - Restoration: helloangkor (Chorm page) says work in the Preah Pithu group began in 2019 with Kor Sak's west terrace, then Chorm. Another site says a Korea-funded (KOICA / Korea Cultural Heritage Foundation + APSARA) project began in Sept 2015 — start date conflict, so only 2019 (helloangkor) is on the web page. APSARA says Korea Cultural Heritage Foundation is restoring Chorm (3 years from 2021). Scaffolding visible behind the naga terrace in Samnang's photos.
 - Photos: main pyramid (cover), pyramid stairs with devata niche, naga terrace, 3 naga close-ups (lichen), 2 fig-root doorways.
 - Still to confirm: king, which devata/lintel details, restoration dates.
+
+### 13. Daun Mea Temple (ប្រាសាទដូនមារ) — Preah Pithu V / Duan Mea / "Temple v"
+- Angkor Thom, Sangkat Nokor Thum, Siem Reap. Near the middle of the Preah Pithu group (T, U, V, X, Y); Wikipedia: north of Temple U, outside the residual moat. Spelling: Samnang writes Daun Mea; helloangkor writes Duan Mea; helloangkor Khmer name ព្រះពិធូរ (ប៉ម វេ) — confirm Khmer spelling ដូនមារ before the book.
+- Date: early 12th c. from art style, no foundation inscription (helloangkor); APSARA group page: beginning of 12th c., Angkor Wat style, reign Suryavarman II (for the group). Hindu; dedication not stated (do not say Shiva/Vishnu). Fine carving, unfinished in places; no large devatas or medallions.
+- Earthen mound; large west terrace/raised causeway with round columns (compared to Baphuon, Beng Mealea, Chau Say Tevoda, Banteay Samre, Royal Palace terrace). Terrace date disputed: later addition or contemporary; one study (Uchida, Sato, Cunin, Toyouchi 2013, Archaeometry 55, magnetic susceptibility) suggests late/post-Bayon.
+- Cruciform plan, mandapa extending east; steps to open N and S entrances; monumental stone pillars on the east displaced.
+- Wikipedia: sanctuary on 2-tier basement, largest chamber of the group, 3.80 m square, large linga ~1.5 m; faces east with double vestibule; west causeway leads to a 40 m cruciform terrace, no enclosure. Other sources (penang-traveltips, hikingproject) say the causeway is about 70 m / 40 m — length conflict, so no length is on the web page.
+- helloangkor: large sandstone linga with pedestal base in the NORTHERN wing, possibly once at the shrine centre — location differs from Wikipedia; web page gives both, attributed.
+- Records: Aymonier 1904 (Le Cambodge III, p.103); Lajonquiere 1911 (Inventaire III, p.70); MH 374 (1926, 3 terraces and 3 sandstone sanctuaries — whole group); IK 484; CISARK 384; K.841 (one line, script/date unknown; Revue des Arts Cambodgiens Oct 1935). Wikipedia: group cleared by Commaille 1908, Marchal 1918-20.
+- Restoration: no source found for Temple V (Kor Sak/Chorm works are separate).
+- Photos: sanctuary from below with balustered windows (cover), far view, steps, corner of ruined wall, door jamb with colonnette, naga fragment, doorway with timber frame and linga, linga close-up.
+- Still to confirm: king, dedication, windows/door details, restoration.
