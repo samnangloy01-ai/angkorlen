@@ -10,7 +10,9 @@ cards=''.join(f'<a class="alrow-c" href="/temple-{e["slug"]}.html"><span class="
 f=R+'index.html'; s=open(f).read()
 i=s.index('<!--NEWCARDS-->')+15; j=s.index('<!--/NEWCARDS-->'); s=s[:i]+cards+s[j:]
 n=len(glob.glob(R+'temple-*.html'))
+nt=len(d)
 s=re.sub(r'Explore \d+ Khmer',f'Explore {n} Khmer',s)
 s=re.sub(r'All temple guides \(\d+\)',f'All temple guides ({n})',s)
 s=re.sub(r'See all \d+ temple',f'See all {n} temple',s)
-open(f,'w').write(s); print('index.html updated, count =',n)
+s=re.sub(r'<h2>New Temples(?: \(\d+\))? · ប្រាសាទថ្មី(?: \(\d+\))?</h2>',f'<h2>New Temples ({nt}) · ប្រាសាទថ្មី ({nt})</h2>',s)
+open(f,'w').write(s); print('index.html updated, count =',n,'new temples count =',nt)
