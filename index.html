@@ -9329,9 +9329,22 @@ function showAngkorLegalIfNeeded(){
     if(el && localStorage.getItem('angkorLensLegalAccepted')!=='accepted') el.classList.remove('hidden');
 }
 
-/* Newsletter: the icon always opens it again until the visitor signs up. */
+/* Newsletter: the icon always opens it again until the visitor signs up.
+   A signup only "counts" for 7 days -- after that it expires and the
+   popup starts asking again, as if the visitor never signed up. */
+const ANGKOR_NEWSLETTER_EXPIRY_MS = 7*24*60*60*1000; // 1 week
+function isAngkorNewsletterSubscribed(){
+    if(localStorage.getItem('angkorLensNewsletterSubscribed')!=='yes') return false;
+    const ts=parseInt(localStorage.getItem('angkorLensNewsletterSubscribedAt')||'0',10);
+    if(!ts || (Date.now()-ts) > ANGKOR_NEWSLETTER_EXPIRY_MS){
+        localStorage.removeItem('angkorLensNewsletterSubscribed');
+        localStorage.removeItem('angkorLensNewsletterSubscribedAt');
+        return false;
+    }
+    return true;
+}
 function openNewsletterIfNeeded(){
-    if(localStorage.getItem('angkorLensNewsletterSubscribed')==='yes') return;
+    if(isAngkorNewsletterSubscribed()) return;
     const el=document.getElementById('angkorNewsletterModal');
     if(el) el.classList.remove('hidden');
 }
@@ -9344,6 +9357,7 @@ function submitAngkorNewsletter(event){
     const email=document.getElementById('angkorNewsletterEmail');
     if(!email || !email.value) return;
     localStorage.setItem('angkorLensNewsletterSubscribed','yes');
+    localStorage.setItem('angkorLensNewsletterSubscribedAt', String(Date.now()));
     refreshNewsletterVisibility();
     closeNewsletter();
     alert('Thank you for signing up for AngkorLens updates.');
@@ -9351,7 +9365,7 @@ function submitAngkorNewsletter(event){
 
 /* Newsletter behavior: show on every visit and after photo clicks until the visitor signs up. */
 function refreshNewsletterVisibility(){
-    const subscribed = localStorage.getItem('angkorLensNewsletterSubscribed') === 'yes';
+    const subscribed = isAngkorNewsletterSubscribed();
     const bottom = document.getElementById('newsletter-bottom');
     if(bottom) bottom.style.display = subscribed ? 'none' : '';
 }
@@ -9361,16 +9375,16 @@ document.addEventListener('DOMContentLoaded',function(){
     showAngkorLegalIfNeeded();
     refreshNewsletterVisibility();
 
-    // Every visit: reopen the newsletter unless the visitor has signed up.
+    // Every visit: reopen the newsletter unless the visitor has signed up (within the last 7 days).
     setTimeout(function(){
-        if(localStorage.getItem('angkorLensNewsletterSubscribed')!=='yes'){
+        if(!isAngkorNewsletterSubscribed()){
             openNewsletterIfNeeded();
         }
     }, 3500);
 
     // Every temple/photo click: reopen the newsletter until signup.
     document.addEventListener('click',function(event){
-        if(localStorage.getItem('angkorLensNewsletterSubscribed')==='yes') return;
+        if(isAngkorNewsletterSubscribed()) return;
 
         const photoTarget = event.target.closest(
             '.temple-card img, .temple-card [onclick*="openModal"], .temple-card [onclick*="openPhotoMembership"], .temple-card [onclick*="openLightbox"]'
