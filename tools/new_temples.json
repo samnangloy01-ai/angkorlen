@@ -95,7 +95,12 @@
       "sf-prohmkel-3.jpg",
       "sf-prohmkel-2.jpg",
       "sf-prohmkel-1.jpg"
-    ]
+    ],
+    "gps": {
+      "lat": 13.9085357,
+      "lon": 103.530397,
+      "dms": "13°54'30.7\"N 103°31'49.4\"E"
+    }
   },
   {
     "slug": "spean-preah-changer",
