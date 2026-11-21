@@ -396,7 +396,12 @@
       "sf-dauntroung-24.jpg",
       "sf-dauntroung-25.jpg",
       "sf-dauntroung-26.jpg"
-    ]
+    ],
+    "gps": {
+      "lat": 13.5260003,
+      "lon": 103.5273671,
+      "dms": "13°31'33.6\"N 103°31'38.5\"E"
+    }
   },
   {
     "slug": "kok-roka-temple",
