@@ -415,7 +415,12 @@
       "sf-kokroka-3.jpg",
       "sf-kokroka-4.jpg",
       "sf-kokroka-5.jpg"
-    ]
+    ],
+    "gps": {
+      "lat": 12.6251872,
+      "lon": 104.9177656,
+      "dms": "12°37'30.7\"N 104°55'04.0\"E"
+    }
   },
   {
     "slug": "beng-mealea-temple",
@@ -460,7 +465,12 @@
       "sf-ancientpond-7.jpg",
       "sf-ancientpond-8.jpg",
       "sf-ancientpond-9.jpg"
-    ]
+    ],
+    "gps": {
+      "lat": 13.447237,
+      "lon": 103.856209,
+      "dms": "13°26'50.1\"N 103°51'22.4\"E"
+    }
   },
   {
     "slug": "prasat-chrung-northeast",
@@ -479,7 +489,12 @@
       "sf-chrungne-8.jpg",
       "sf-chrungne-9.jpg",
       "sf-chrungne-10.jpg"
-    ]
+    ],
+    "gps": {
+      "lat": 13.4552378,
+      "lon": 103.8728957,
+      "dms": "13°27'18.9\"N 103°52'22.4\"E"
+    }
   },
   {
     "slug": "river-of-a-thousand-lingas",
@@ -512,7 +527,12 @@
       "sf-banan-1.jpg",
       "sf-banan-2.jpg",
       "sf-banan-3.jpg"
-    ]
+    ],
+    "gps": {
+      "lat": 12.9509276,
+      "lon": 103.1397819,
+      "dms": "12°57'03.3\"N 103°08'23.2\"E"
+    }
   },
   {
     "slug": "tro-moung-temple",
@@ -523,7 +543,12 @@
     "i": [
       "sf-tromoung-1.jpg",
       "sf-tromoung-2.jpg"
-    ]
+    ],
+    "gps": {
+      "lat": 13.4414383,
+      "lon": 103.8405867,
+      "dms": "13°26'29.2\"N 103°50'26.1\"E"
+    }
   },
   {
     "slug": "prasat-prohm-kel-angkor",
@@ -552,7 +577,12 @@
       "sf-tortemple-3.jpg",
       "sf-tortemple-4.jpg",
       "sf-tortemple-5.jpg"
-    ]
+    ],
+    "gps": {
+      "lat": 13.4562545,
+      "lon": 103.955496,
+      "dms": "13°27'22.5\"N 103°57'19.8\"E"
+    }
   },
   {
     "slug": "prasat-krovil",
@@ -567,7 +597,12 @@
       "sf-krovil-4.jpg",
       "sf-krovil-5.jpg",
       "sf-krovil-6.jpg"
-    ]
+    ],
+    "gps": {
+      "lat": 13.2334772,
+      "lon": 104.185035,
+      "dms": "13°14'00.5\"N 104°11'06.1\"E"
+    }
   },
   {
     "slug": "ek-phnom-temple",
@@ -579,7 +614,12 @@
       "sf-ekphnom-1.jpg",
       "sf-ekphnom-2.jpg",
       "sf-ekphnom-3.jpg"
-    ]
+    ],
+    "gps": {
+      "lat": 13.1627217,
+      "lon": 103.1880046,
+      "dms": "13°09'45.8\"N 103°11'16.8\"E"
+    }
   },
   {
     "slug": "prasat-reangsei",
@@ -597,7 +637,12 @@
       "sf-reangsei-7.jpg",
       "sf-reangsei-8.jpg",
       "sf-reangsei-9.jpg"
-    ]
+    ],
+    "gps": {
+      "lat": 13.2167269,
+      "lon": 104.1858643,
+      "dms": "13°13'00.2\"N 104°11'09.1\"E"
+    }
   },
   {
     "slug": "koh-ho-temple",
@@ -611,7 +656,12 @@
       "sf-kohho-2.jpg",
       "sf-kohho-4.jpg",
       "sf-kohho-5.jpg"
-    ]
+    ],
+    "gps": {
+      "lat": 13.4221319,
+      "lon": 103.7909845,
+      "dms": "13°25'19.7\"N 103°47'27.5\"E"
+    }
   },
   {
     "slug": "sampov-temple",
@@ -633,7 +683,12 @@
       "sf-sampov-10.jpg",
       "sf-sampov-11.jpg",
       "sf-sampov-13.jpg"
-    ]
+    ],
+    "gps": {
+      "lat": 13.5056875,
+      "lon": 103.8299375,
+      "dms": "13°30'20.5\"N 103°49'47.8\"E"
+    }
   },
   {
     "slug": "spean-ta-ong",
@@ -673,7 +728,12 @@
       "sf-charleu-5.jpg",
       "sf-charleu-6.jpg",
       "sf-charleu-7.jpg"
-    ]
+    ],
+    "gps": {
+      "lat": 13.6527011,
+      "lon": 103.3994512,
+      "dms": "13°39'09.7\"N 103°23'58.0\"E"
+    }
   },
   {
     "slug": "spean-memay-lbek",
@@ -706,7 +766,12 @@
       "sf-yeaypoan-4.jpg",
       "sf-yeaypoan-5.jpg",
       "sf-yeaypoan-6.jpg"
-    ]
+    ],
+    "gps": {
+      "lat": 13.454291,
+      "lon": 104.345819,
+      "dms": "13°27'15.4\"N 104°20'44.9\"E"
+    }
   },
   {
     "slug": "banteay-kdei-temple",
