@@ -346,3 +346,9 @@ Temples for AngkorLens Book 3: new temples added to angkorlens.com, plus temples
 - Photos: 9 used. Two rubble views were near-duplicates, so the second was cropped closer. Greens in the tower-among-trees photo reduced 10%. Cover brightened slightly.
 - Video: P1011402.MP4 (20 s, 71 MB) was sent but the website has no video section yet, so it is not used.
 - Still to confirm: date/century, original layout, name meaning (កាប់ចិន = "cut/chop Chinese"? — not confirmed, not on the page).
+
+### Correction (21 Nov 2026): River of a Thousand Lingas = Phnom Kulen, not Kbal Spean
+- Owner confirmed the photos were taken at the thousand lingas on top of Phnom Kulen near Preah Ang Thom (Google Maps «លឹង្គ1000», pin 13°33'58.4"N 104°06'06.9"E), not at Kbal Spean. The page was renamed "River of a Thousand Lingas (Phnom Kulen)" / លិង្គមួយពាន់ ភ្នំគូលែន and the history rewritten.
+- Facts used (helloangkor HA11736): Khmer name អន្លង់ពងផ្កាយ (Anlong Pong Phkay); other names 1000 Lingas Temple, ប្រាសាទលិង្គមួយពាន់, Phon Khkay, Anluong Phkay; Khnang Phnum commune, Svay Leu district; ~500 m of riverbed with linga, large and small yoni, a large Vishnu; small carving in the bank wall; natural spring with shrines at the southern end; lingas continue east to a bridge. IK 552, MoCFA 453. UNESCO tentative list names Kbal Spean and the "One Thousand Linga" as two separate sculpted riverbeds. Culture Trip: the river sits at the base of Wat Preah Ang Thom.
+- Removed from this page (they belong to Kbal Spean): 1054 minister of Suryavarman I, 1059 golden linga of Udayadityavarman II, inscriptions K.1011/1012/1015/1016.
+- Date: Culture Trip says the carvings are "believed" to date to Udayadityavarman II, but this may confuse it with Kbal Spean, so it is not on the page. Still to confirm.
