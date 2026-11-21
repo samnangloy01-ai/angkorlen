@@ -63,7 +63,12 @@
       "sf-speantoap-2.jpg",
       "sf-speantoap-4.jpg",
       "sf-speantoap-5.jpg"
-    ]
+    ],
+    "gps": {
+      "lat": 13.904139,
+      "lon": 103.531833,
+      "dms": "13°54'14.9\"N 103°31'54.6\"E"
+    }
   },
   {
     "slug": "prasat-prohm-kel",
@@ -151,7 +156,13 @@
       "sf-korsak-6.jpg",
       "sf-korsak-7.jpg",
       "sf-korsak-8.jpg"
-    ]
+    ],
+    "gps": {
+      "lat": 13.44889,
+      "lon": 103.86139,
+      "dms": "13°26'56\"N 103°51'41\"E",
+      "note": "Preah Pithu group"
+    }
   },
   {
     "slug": "daun-mea-temple",
@@ -168,7 +179,13 @@
       "sf-daunmea-6.jpg",
       "sf-daunmea-7.jpg",
       "sf-daunmea-8.jpg"
-    ]
+    ],
+    "gps": {
+      "lat": 13.44889,
+      "lon": 103.86139,
+      "dms": "13°26'56\"N 103°51'41\"E",
+      "note": "Preah Pithu group"
+    }
   },
   {
     "slug": "kandork-yeak-temple",
@@ -199,7 +216,13 @@
       "sf-kandork-20.jpg",
       "sf-kandork-21.jpg",
       "sf-kandork-22.jpg"
-    ]
+    ],
+    "gps": {
+      "lat": 13.44889,
+      "lon": 103.86139,
+      "dms": "13°26'56\"N 103°51'41\"E",
+      "note": "Preah Pithu group"
+    }
   },
   {
     "slug": "north-khleang-temple",
@@ -239,7 +262,13 @@
     "i": [
       "sf-suorprat-n1-2.jpg",
       "sf-suorprat-n1-1.jpg"
-    ]
+    ],
+    "gps": {
+      "lat": 13.44694,
+      "lon": 103.86028,
+      "dms": "13°26'49\"N 103°51'37\"E",
+      "note": "Prasat Suor Prat group"
+    }
   },
   {
     "slug": "banteay-thom-temple",
@@ -348,7 +377,12 @@
       "sf-bengmealea-11.jpg",
       "sf-bengmealea-12.jpg",
       "sf-bengmealea-13.jpg"
-    ]
+    ],
+    "gps": {
+      "lat": 13.47639,
+      "lon": 104.23833,
+      "dms": "13°28'35\"N 104°14'18\"E"
+    }
   },
   {
     "slug": "ancient-royal-pond",
@@ -401,7 +435,12 @@
       "sf-thousandlinga-5.jpg",
       "sf-thousandlinga-6.jpg",
       "sf-thousandlinga-7.jpg"
-    ]
+    ],
+    "gps": {
+      "lat": 13.708361,
+      "lon": 104.025583,
+      "dms": "13°42'30.1\"N 104°01'32.1\"E"
+    }
   },
   {
     "slug": "banan-temple",
@@ -434,7 +473,12 @@
     "h": "<p>ប្រាសាទនេះឈ្មោះពិតគឺ តាព្រហ្មកិល (ឬហៅកាត់ថា ព្រហ្មកិល) ដែលខុសពី ប្រាសាទព្រហ្មកិល នៅខេត្តឧត្តរមានជ័យ ទាំងពីរមានឈ្មោះស្រដៀងគ្នាតែជាប្រាសាទផ្សេងគ្នាទាំងស្រុង។ តាព្រហ្មកិល ស្ថិតនៅខាងជើងនៃច្រកចូលធំរបស់ប្រាសាទអង្គរវត្ត ក្នុងសួនឧទ្យានបុរាណវត្ថុអង្គរ។ ប្រាង្គថ្មបាយក្រៀមតែមួយ ខ្ពស់ប្រហែល ១២ម៉ែត្រ សាងសង់ក្នុងរចនាបថបាយ័នដោយព្រះបាទជ័យវរ្ម័នទី៧ នៅសតវត្សទី១២ ជាអារោគ្យសាលមួយទៀត។</p>\n<p>សិលាចារឹកដែលរកឃើញនៅទីនេះ (K.614) បញ្ជាក់ពីតួនាទីរបស់ប្រាសាទជាកន្លែងព្យាបាលជំងឺ។ ប្រាង្គបានដួលរលំជាមួយពេលវេលា ហើយអាជ្ញាធរជាតិអប្សរាបានបញ្ចប់ការជួសជុលប្រាង្គកណ្តាលឡើងវិញក្នុងប្រហែលឆ្នាំ ២០២១-២០២២ (ដូចអាចឃើញពីរបារដែកសម្រាប់ការងារជួសជុលនៅក្នុងរូបថត)។</p><hr style=\"border:none;border-top:1px solid #ddd;margin:18px 0;\"><p>This temple's real name is Ta Prohm Kel (sometimes just Prohm Kel) — not to be confused with the similarly-named Prasat Prohm Kel in Oddar Meanchey province, an entirely different site. Ta Prohm Kel sits just north of the main entrance gate to Angkor Wat, inside the Angkor Archaeological Park. Its single laterite and sandstone tower rises to about 12 meters, built in the Bayon style by King Jayavarman VII in the 12th century as another of his hospital chapels.</p>\n<p>An inscription recovered at the site (K.614) confirms its role as a place of healing. Over time its tower partially collapsed, and the APSARA National Authority completed restoration of the central tower around 2021–2022 — the metal scaffolding visible in the photo here was part of that conservation work.</p>",
     "i": [
       "sf-prohmkelangkor-1.jpg"
-    ]
+    ],
+    "gps": {
+      "lat": 13.41556,
+      "lon": 103.85833,
+      "dms": "13°24'56\"N 103°51'30\"E"
+    }
   },
   {
     "slug": "tor-temple",
@@ -548,7 +592,12 @@
       "sf-speantaong-7.jpg",
       "sf-speantaong-8.jpg",
       "sf-speantaong-10.jpg"
-    ]
+    ],
+    "gps": {
+      "lat": 13.421917,
+      "lon": 104.406694,
+      "dms": "13°25'18.9\"N 104°24'24.1\"E"
+    }
   },
   {
     "slug": "char-leu-temple",
@@ -571,13 +620,18 @@
     "name": "Spean Memay – Lbek (Bridge)",
     "km": "ស្ពានមេម៉ាយ (ល្បើក)",
     "sub": "Ancient Laterite Bridge · Date not recorded · Near Lbek Village, Siem Reap",
-    "h": "<strong>Spean Memay – Lbek (Bridge)</strong><br><br><div style=\"margin:4px 0 16px;padding:12px 16px;background:#fff;border:1px solid #E6DCCB;border-radius:14px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px;\"><span>📍 <strong>GPS:</strong> 13°39'04.5\"N 103°44'00.7\"E</span><a href=\"https://www.google.com/maps?q=13.651250,103.733528\" target=\"_blank\" rel=\"noopener\" style=\"display:inline-block;padding:7px 14px;border-radius:999px;background:#8A5A2B;color:#fff;text-decoration:none;font-weight:700;font-size:14px;\">Open in Google Maps</a></div>This small ancient bridge stands in the countryside near Lbek village (ល្បើក) and Kcha Pagoda in Siem Reap Province. It has no official name on a sign, but people in the village call it Spean Memay (ស្ពានមេម៉ាយ). In Khmer, \"memay\" means \"widow\"; the story behind the name has not been recorded.<br><br>The bridge is built of large laterite blocks laid in rows. Under the deck there are several narrow rectangular openings, at least four, whose tops are formed by blocks stepped inwards, the corbel method that ancient Khmer builders used instead of a true arch. Today the bridge is half hidden by trees and bushes, a large tree grows against one end, and the ground under the openings was dry when photographed.<br><br>Several ancient bridges in the Siem Reap region share the name Spean Memay. This one is a different bridge from the Spean Memay near the north-west corner of the West Baray, which has its own page on this site. No inscription, construction date or survey record has yet been confirmed for this bridge, so its age is not known.<hr style=\"border:none;border-top:1px solid #ddd;margin:18px 0;\"><strong>ស្ពានមេម៉ាយ (ល្បើក)</strong><br><br><div style=\"margin:4px 0 16px;padding:12px 16px;background:#fff;border:1px solid #E6DCCB;border-radius:14px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px;\"><span>📍 <strong>ទីតាំង GPS៖</strong> 13°39'04.5\"N 103°44'00.7\"E</span><a href=\"https://www.google.com/maps?q=13.651250,103.733528\" target=\"_blank\" rel=\"noopener\" style=\"display:inline-block;padding:7px 14px;border-radius:999px;background:#8A5A2B;color:#fff;text-decoration:none;font-weight:700;font-size:14px;\">បើកក្នុង Google Maps</a></div>ស្ពានបុរាណតូចនេះ ស្ថិតនៅតំបន់ជនបទ ក្បែរភូមិល្បើក និងវត្តខ្ចារ ខេត្តសៀមរាប។ ស្ពាននេះគ្មានឈ្មោះផ្លូវការទេ ប៉ុន្តែអ្នកភូមិហៅវាថា «ស្ពានមេម៉ាយ»។ រឿងរ៉ាវពីប្រភពនៃឈ្មោះនេះ មិនទាន់មានការកត់ត្រាទេ។<br><br>ស្ពាននេះសាងសង់ពីដុំថ្មបាយក្រៀមធំៗ ដាក់ត្រួតគ្នាជាជួរ។ នៅក្រោមខ្នងស្ពាន មានរន្ធចតុកោណតូចៗយ៉ាងហោចណាស់បួន ដែលផ្នែកខាងលើធ្វើពីថ្មដាក់លយចូលគ្នាជាថ្នាក់ៗ តាមបច្ចេកទេសដែលជាងខ្មែរបុរាណប្រើ ជំនួសធ្នូពិត។ សព្វថ្ងៃ ស្ពានស្ថិតពាក់កណ្តាលក្រោមដើមឈើ និងគុម្ពោត មានដើមឈើធំមួយដុះជាប់ចុងម្ខាង ហើយដីក្រោមរន្ធស្ងួតនៅពេលថតរូប។<br><br>នៅតំបន់សៀមរាប មានស្ពានបុរាណច្រើនដែលមានឈ្មោះ «ស្ពានមេម៉ាយ» ដូចគ្នា។ ស្ពាននេះខុសពីស្ពានមេម៉ាយ នៅជ្រុងពាយ័ព្យនៃបារាយណ៍ខាងលិច ដែលមានទំព័រផ្ទាល់ខ្លួននៅលើគេហទំព័រនេះ។ មិនទាន់មានសិលាចារឹក ឆ្នាំសាងសង់ ឬកំណត់ត្រាស្រាវជ្រាវណាមួយ ដែលបញ្ជាក់ច្បាស់សម្រាប់ស្ពាននេះទេ ដូច្នេះអាយុរបស់វាមិនទាន់ដឹងនៅឡើយ។",
+    "h": "<strong>Spean Memay – Lbek (Bridge)</strong><br><br>This small ancient bridge stands in the countryside near Lbek village (ល្បើក) and Kcha Pagoda in Siem Reap Province. It has no official name on a sign, but people in the village call it Spean Memay (ស្ពានមេម៉ាយ). In Khmer, \"memay\" means \"widow\"; the story behind the name has not been recorded.<br><br>The bridge is built of large laterite blocks laid in rows. Under the deck there are several narrow rectangular openings, at least four, whose tops are formed by blocks stepped inwards, the corbel method that ancient Khmer builders used instead of a true arch. Today the bridge is half hidden by trees and bushes, a large tree grows against one end, and the ground under the openings was dry when photographed.<br><br>Several ancient bridges in the Siem Reap region share the name Spean Memay. This one is a different bridge from the Spean Memay near the north-west corner of the West Baray, which has its own page on this site. No inscription, construction date or survey record has yet been confirmed for this bridge, so its age is not known.<hr style=\"border:none;border-top:1px solid #ddd;margin:18px 0;\"><strong>ស្ពានមេម៉ាយ (ល្បើក)</strong><br><br>ស្ពានបុរាណតូចនេះ ស្ថិតនៅតំបន់ជនបទ ក្បែរភូមិល្បើក និងវត្តខ្ចារ ខេត្តសៀមរាប។ ស្ពាននេះគ្មានឈ្មោះផ្លូវការទេ ប៉ុន្តែអ្នកភូមិហៅវាថា «ស្ពានមេម៉ាយ»។ រឿងរ៉ាវពីប្រភពនៃឈ្មោះនេះ មិនទាន់មានការកត់ត្រាទេ។<br><br>ស្ពាននេះសាងសង់ពីដុំថ្មបាយក្រៀមធំៗ ដាក់ត្រួតគ្នាជាជួរ។ នៅក្រោមខ្នងស្ពាន មានរន្ធចតុកោណតូចៗយ៉ាងហោចណាស់បួន ដែលផ្នែកខាងលើធ្វើពីថ្មដាក់លយចូលគ្នាជាថ្នាក់ៗ តាមបច្ចេកទេសដែលជាងខ្មែរបុរាណប្រើ ជំនួសធ្នូពិត។ សព្វថ្ងៃ ស្ពានស្ថិតពាក់កណ្តាលក្រោមដើមឈើ និងគុម្ពោត មានដើមឈើធំមួយដុះជាប់ចុងម្ខាង ហើយដីក្រោមរន្ធស្ងួតនៅពេលថតរូប។<br><br>នៅតំបន់សៀមរាប មានស្ពានបុរាណច្រើនដែលមានឈ្មោះ «ស្ពានមេម៉ាយ» ដូចគ្នា។ ស្ពាននេះខុសពីស្ពានមេម៉ាយ នៅជ្រុងពាយ័ព្យនៃបារាយណ៍ខាងលិច ដែលមានទំព័រផ្ទាល់ខ្លួននៅលើគេហទំព័រនេះ។ មិនទាន់មានសិលាចារឹក ឆ្នាំសាងសង់ ឬកំណត់ត្រាស្រាវជ្រាវណាមួយ ដែលបញ្ជាក់ច្បាស់សម្រាប់ស្ពាននេះទេ ដូច្នេះអាយុរបស់វាមិនទាន់ដឹងនៅឡើយ។",
     "i": [
       "sf-memaylbek-1.jpg",
       "sf-memaylbek-2.jpg",
       "sf-memaylbek-3.jpg",
       "sf-memaylbek-4.jpg"
-    ]
+    ],
+    "gps": {
+      "lat": 13.65125,
+      "lon": 103.733528,
+      "dms": "13°39'04.5\"N 103°44'00.7\"E"
+    }
   },
   {
     "slug": "spean-yeay-poan",
@@ -603,7 +657,12 @@
     "i": [
       "sf-banteaykdei-1.jpg",
       "sf-banteaykdei-2.jpg"
-    ]
+    ],
+    "gps": {
+      "lat": 13.42972,
+      "lon": 103.89833,
+      "dms": "13°25'47\"N 103°53'54\"E"
+    }
   },
   {
     "slug": "preah-ko-roluos",
@@ -620,6 +679,11 @@
       "sf-preahkoroluos-6.jpg",
       "sf-preahkoroluos-7.jpg",
       "sf-preahkoroluos-8.jpg"
-    ]
+    ],
+    "gps": {
+      "lat": 13.34389,
+      "lon": 103.97278,
+      "dms": "13°20'38\"N 103°58'22\"E"
+    }
   }
 ]
