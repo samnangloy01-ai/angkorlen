@@ -125,7 +125,7 @@ for k in keys:
 <h2 style="font-family:Georgia,serif">More photos · រូបថតបន្ថែម</h2><p class="lockmsg">🔒 Tap any photo to see it full size or buy the original. · ចុចលើរូប ដើម្បីមើលទំហំធំ ឬទិញរូបដើម។</p><div class="grid">{thumbs}</div>
 <a class="cta" href="/">← Explore all of AngkorLens</a>
 <h2 style="font-family:Georgia,serif;margin-top:34px">More temples</h2><nav class="more">{more}</nav>
-</main><footer>© AngkorLens · Samnang Loy</footer>'''+LB+(MAPGATE if x.get('gps') else '')+'''</body></html>'''
+</main><footer>© AngkorLens · Samnang Loy</footer>'''+(MAPGATE if x.get('gps') else '')+LB+'''</body></html>'''
     out[f'temple-{k}.html']=page
 # index page
 cards=''.join(f'<a class="c" href="/temple-{k}.html"><img loading="lazy" src="{img(pages[k]["i"][0],480)[0]}" data-o="{img(pages[k]["i"][0],480)[1]}" {FB} alt="{html.escape(pages[k]["name"])}"><b>{html.escape(pages[k]["name"])}</b><span>{html.escape(pages[k]["t"].strip())}</span></a>' for k in keys)
