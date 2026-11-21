@@ -26,7 +26,7 @@ footer{text-align:center;color:#6b625a;font-size:14px;padding:24px 16px}
 <h1>Prasat Reangsei</h1><p class="km">ប្រាសាទរង្ស៉ី</p><p class="sub">Brick Shrine Ruin · Angkorian Period · Chi Kraeng, Siem Reap</p>
 <figure class="ph hero-w"><img class="hero" draggable="false" src="https://wsrv.nl/?url=https%3A%2F%2Fwww.angkorlens.com%2Fsf-reangsei-1.jpg&w=900&q=75&output=jpg" alt="Prasat Reangsei, Cambodia"><span class="wm">© AngkorLens · Samnang Loy</span></figure>
 <p class="by">Photographs by Samnang Loy · AngkorLens</p>
-<section class="story"><p>Prasat Reangsei — also recorded as Prasat (V.) or Kalong — is a small, ruinous brick temple standing on the grounds of the modern Reangsei Pagoda (Wat Prasat), in Samrong Kanhchaoch village, Ruessei Lok commune, Chi Kraeng district, Siem Reap Province. It sits along the old Angkor–Prasat Andet royal road.</p>
+<div class="mapbox" style="margin:6px 0 18px;padding:12px 16px;background:#fff;border:1px solid #E6DCCB;border-radius:14px;"><div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px;"><span>📍 <strong>GPS · ទីតាំង:</strong> 13°13&#x27;00.2&quot;N 104°11&#x27;09.1&quot;E</span><a class="mapbtn" data-slug="prasat-reangsei" href="https://www.google.com/maps?q=13.2167269,104.1858643" target="_blank" rel="noopener" style="display:inline-block;padding:7px 14px;border-radius:999px;background:#8A5A2B;color:#fff;text-decoration:none;font-weight:700;font-size:14px;">Open in Google Maps · បើកផែនទី</a></div><div id="mapLeft" style="margin-top:6px;color:#7a6a55;font-size:12px"></div></div><section class="story"><p>Prasat Reangsei — also recorded as Prasat (V.) or Kalong — is a small, ruinous brick temple standing on the grounds of the modern Reangsei Pagoda (Wat Prasat), in Samrong Kanhchaoch village, Ruessei Lok commune, Chi Kraeng district, Siem Reap Province. It sits along the old Angkor–Prasat Andet royal road.</p>
 <p>Only a fraction of the original brick sanctuary survives: a single east-facing sandstone doorframe still stands, inscribed on its jambs, though the inscription has not been assigned a published "K." catalogue number that I could confirm, so I'm not giving it one here rather than guessing. Scattered around the doorway are carved fragments — a colonette, and other broken sandstone pieces — some now gathered at the base of the ruin as part of an active shrine, with offerings of incense, fruit and flowers left at its foot, much as you can see in these photos. A large basin and the working pagoda itself stand immediately beside the ancient ruin.</p>
 <p>Like many small village temples recorded only in regional heritage surveys rather than the major French-era catalogues, Reangsei's exact founding date and dedication aren't established in what I could find — only that it is an older Angkorian-period brick shrine, now folded into the grounds of a living Buddhist pagoda that still cares for it.</p>
 <hr style="border:none;border-top:1px solid #ddd;margin:18px 0;">
@@ -85,4 +85,22 @@ document.querySelectorAll('.ph').forEach(function(el){el.addEventListener('click
 document.addEventListener('contextmenu',function(e){if(e.target.closest('.ph'))e.preventDefault();});
 document.addEventListener('dragstart',function(e){if(e.target.tagName==='IMG')e.preventDefault();});
 })();
-</script></body></html>
+</script><div id="mapPayModal" class="photo-membership-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="mapPayTitle"><div class="photo-membership-card">
+<div class="photo-membership-top"><div><span class="photo-membership-badge">🗺️ Temple Maps</span><h2 id="mapPayTitle">Unlock all temple maps</h2>
+<p class="photo-membership-subtitle">You have used your 5 free temple maps. Unlock the GPS map for every AngkorLens temple with one payment.<br>អ្នកបានប្រើផែនទីឥតគិតថ្លៃគ្រប់ ៥ ប្រាសាទហើយ។ បង់ម្តង ដើម្បីប្រើផែនទីប្រាសាទទាំងអស់។</p></div>
+<button class="photo-membership-close" onclick="closeMapPay()" aria-label="Close">&times;</button></div>
+<div id="mapComingSoon" style="display:none;margin:16px 0;padding:16px 18px;border-radius:14px;background:#fff7e6;border:1px solid #e2c98f;color:#5a4316;font-size:15px;line-height:1.5"><strong>Coming soon ✨</strong><br>Online payment will open soon. Thank you for supporting AngkorLens and Khmer heritage!<br>ការបង់ប្រាក់តាមអនឡាញ នឹងបើកឆាប់ៗនេះ។</div>
+<div class="photo-plan yearly" style="margin-top:18px"><h3>All Temple Maps</h3><div class="photo-plan-price">$10.99 <span>/ one time</span></div>
+<ul><li>GPS map for every temple</li><li>Use as many times as you like</li><li>Support Khmer heritage documentation</li></ul>
+<button class="photo-pay-btn" onclick="document.getElementById('mapComingSoon').style.display='block'">Unlock all maps — $10.99</button></div>
+<p class="photo-membership-note"><strong>Payment setup:</strong> Stripe Checkout will be connected in the next step. This page does not collect or store card or bank information.</p></div></div>
+<script>(function(){var K='al_maps_v1',U='al_maps_unlocked',F=5,m=document.getElementById('mapPayModal'),b=document.querySelector('.mapbtn'),L=document.getElementById('mapLeft');
+function get(){try{var a=JSON.parse(localStorage.getItem(K)||'[]');return Array.isArray(a)?a:[]}catch(e){return []}}
+function save(a){try{localStorage.setItem(K,JSON.stringify(a))}catch(e){}}
+function un(){try{return localStorage.getItem(U)==='1'}catch(e){return false}}
+window.closeMapPay=function(){m.classList.add('hidden');document.body.style.overflow='';};
+function openPay(){document.getElementById('mapComingSoon').style.display='none';m.classList.remove('hidden');document.body.style.overflow='hidden';}
+if(!b)return;var s=b.getAttribute('data-slug');
+function upd(){var a=get();if(un()||a.indexOf(s)>=0){L.textContent='';return}var r=Math.max(0,F-a.length);L.textContent=r>0?(r+' of '+F+' free temple maps left · នៅសល់ផែនទីឥតគិតថ្លៃ '+r+'/'+F):'Your 5 free temple maps are used · ផែនទីឥតគិតថ្លៃ ៥ អស់ហើយ';}
+b.addEventListener('click',function(e){var a=get();if(un()||a.indexOf(s)>=0)return;if(a.length<F){a.push(s);save(a);setTimeout(upd,300);return}e.preventDefault();openPay();});
+m.addEventListener('click',function(e){if(e.target===m)closeMapPay();});document.addEventListener('keydown',function(e){if(e.key==='Escape')closeMapPay();});upd();})();</script></body></html>
