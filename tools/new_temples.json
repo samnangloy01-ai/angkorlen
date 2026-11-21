@@ -113,7 +113,12 @@
       "sf-changer-1.jpg",
       "sf-changer-3.jpg",
       "sf-changer-4.jpg"
-    ]
+    ],
+    "gps": {
+      "lat": 13.7407712,
+      "lon": 103.6489094,
+      "dms": "13°44'26.8\"N 103°38'56.1\"E"
+    }
   },
   {
     "slug": "prasat-preah-phnom",
@@ -127,7 +132,12 @@
       "sf-preahphnom-3.jpg",
       "sf-preahphnom-4.jpg",
       "sf-preahphnom-5.jpg"
-    ]
+    ],
+    "gps": {
+      "lat": 13.8040228,
+      "lon": 103.6411437,
+      "dms": "13°48'14.5\"N 103°38'28.1\"E"
+    }
   },
   {
     "slug": "prasat-kok-chak",
@@ -159,7 +169,12 @@
       "sf-kokchak-21.jpg",
       "sf-kokchak-22.jpg",
       "sf-kokchak-23.jpg"
-    ]
+    ],
+    "gps": {
+      "lat": 13.3873717,
+      "lon": 103.8465345,
+      "dms": "13°23'14.5\"N 103°50'47.5\"E"
+    }
   },
   {
     "slug": "kor-sak-temple",
@@ -271,7 +286,12 @@
       "sf-nkhleang-18.jpg",
       "sf-nkhleang-19.jpg",
       "sf-nkhleang-20.jpg"
-    ]
+    ],
+    "gps": {
+      "lat": 13.4472209,
+      "lon": 103.8609106,
+      "dms": "13°26'50.0\"N 103°51'39.3\"E"
+    }
   },
   {
     "slug": "prasat-suor-prat-n1",
@@ -301,7 +321,12 @@
       "sf-banteaythom-2.jpg",
       "sf-banteaythom-3.jpg",
       "sf-banteaythom-4.jpg"
-    ]
+    ],
+    "gps": {
+      "lat": 13.4735396,
+      "lon": 103.844728,
+      "dms": "13°28'24.7\"N 103°50'41.0\"E"
+    }
   },
   {
     "slug": "phnom-da-temple",
