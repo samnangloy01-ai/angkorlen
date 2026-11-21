@@ -34,6 +34,7 @@ Temples for AngkorLens Book 3: new temples added to angkorlens.com, plus temples
 | 28 | Banteay Kdei Temple | ប្រាសាទបន្ទាយក្តី | 21 Nov 2026 | 2 (cover = wide view of the towers with the big silk-cotton tree; 2nd = gallery and towers from the north-west side; no duplicates, colour natural) | /temple-banteay-kdei-temple.html | Angkor Archaeological Park, opposite Srah Srang (Srah Srang Tbong village, Sangkat Nokor Thum, Krong Siem Reap). Buddhist temple, late 12th–early 13th c., Jayavarman VII, Bayon style. 274 Buddhist sculptures excavated in 2001 by Sophia University (now in the Preah Norodom Sihanouk Angkor Museum). |
 | 29 | Preah Ko Temple (Roluos) | ប្រាសាទព្រះគោ (រលួស) | 21 Nov 2026 | 8 (cover = the three front towers, polished; wide causeway view, lintel, guardian in niche (colour toned down), 2 views through a door frame (the 2nd zoomed on the tower), 2 views through the outer wall window) | /temple-preah-ko-roluos.html | Roluos group (ancient Hariharalaya), ~15 km SE of Angkor. Six brick towers on one platform, built by Indravarman I, dedicated 879 (APSARA intro says 25 Jan 880) to his ancestors and Shiva; ancient name Paramesvara. Different from the Stung Treng 'Preah Ko' already on the site. |
 | 30 | Kap Chen Temple | ប្រាសាទកាប់ចិន | 21 Nov 2026 | 9 (cover = standing part of the tower, polished; tower among trees, rubble, 3 carving close-ups, 2 rubble views (the 2nd zoomed, near-duplicate), mound from outside; video P1011402.MP4 not used on the site) | /temple-kap-chen-temple.html | Owner's GPS 13°27'55.9"N 104°12'53.0"E. Toek Lich village, Boeng Mealea commune, Svay Leu, Siem Reap (helloangkor). Sandstone temple, one partly standing tower, big spread of fallen blocks. Also Thnal Romeang Ka; CISARK 1983; IK 215.04; Boulbet 1979 JB 332. Date not recorded. |
+| 31 | Dei Chnang Gate (Angkor Thom North Gate) | ខ្លោងទ្វារដីឆ្នាំង | 21 Nov 2026 | 7 (cover = full gate front, polished; 3 near-identical front views zoomed: big face, arch with road, three towers; side face with mossy wall; forest road to the gate; tall view; strong greens reduced) | /temple-dei-chnang-gate.html |
 
 ## Notes per temple
 
@@ -346,6 +347,14 @@ Temples for AngkorLens Book 3: new temples added to angkorlens.com, plus temples
 - Photos: 9 used. Two rubble views were near-duplicates, so the second was cropped closer. Greens in the tower-among-trees photo reduced 10%. Cover brightened slightly.
 - Video: P1011402.MP4 (20 s, 71 MB) was sent but the website has no video section yet, so it is not used.
 - Still to confirm: date/century, original layout, name meaning (កាប់ចិន = "cut/chop Chinese"? — not confirmed, not on the page).
+
+### 31. Dei Chnang Gate (ខ្លោងទ្វារដីឆ្នាំង)
+- Location: owner's Google Maps pin "Dei Chnang Gate" 13.4549036, 103.8589988 (13°27'17.7"N 103°51'32.4"E). Sangkat Nokor Thum, Siem Reap.
+- Records (helloangkor HA12152): other names Thvear Ta Nok / អង្គរ-ទ្វារតានុក; MH 363 (1926, under Angkor Thom); IK 473.03; CISARK 1010.
+- Description (helloangkor): 3 towers (central tallest), 4 smiling faces; causeway with 54 asuras and 54 devas pulling a naga; 3-headed elephant Airavata each side picking lotuses; figure above likely Indra with 2 devas (one reading: king and 2 wives — speculative, not on page); culverts added in the causeway linking east and west moats; laterite spur chambers, purpose unclear.
+- Context: Angkor Thom founded late 12th century by Jayavarman VII, Bayon style; gate towers ~23 m (Wikipedia). Name meaning "gate of clay for pottery" (Sophia University paper on Angkor place names). Links to Preah Khan and the Grand Circuit (Lonely Planet).
+- Photos: 7 used. Four front views looked the same, so three were zoomed (face, arch, towers). Greens reduced 8–18%.
+- Still to confirm: exact construction year of the gate itself; restoration history.
 
 ### Correction (21 Nov 2026): River of a Thousand Lingas = Phnom Kulen, not Kbal Spean
 - Owner confirmed the photos were taken at the thousand lingas on top of Phnom Kulen near Preah Ang Thom (Google Maps «លឹង្គ1000», pin 13°33'58.4"N 104°06'06.9"E), not at Kbal Spean. The page was renamed "River of a Thousand Lingas (Phnom Kulen)" / លិង្គមួយពាន់ ភ្នំគូលែន and the history rewritten.
