@@ -16,7 +16,12 @@
       "sf-tadong-8.jpg",
       "sf-tadong-9.jpg",
       "sf-tadong-10.jpg"
-    ]
+    ],
+    "gps": {
+      "lat": 13.5472413,
+      "lon": 104.2368349,
+      "dms": "13°32'50.1\"N 104°14'12.6\"E"
+    }
   },
   {
     "slug": "tonle-snguot-temple",
@@ -36,7 +41,12 @@
       "sf-tonlesnguot-9.jpg",
       "sf-tonlesnguot-10.jpg",
       "sf-tonlesnguot-11.jpg"
-    ]
+    ],
+    "gps": {
+      "lat": 13.4598214,
+      "lon": 103.858515,
+      "dms": "13°27'35.4\"N 103°51'30.7\"E"
+    }
   },
   {
     "slug": "thma-dap-temple",
@@ -49,7 +59,12 @@
       "sf-thmadap-2.jpg",
       "sf-thmadap-3.jpg",
       "sf-thmadap-4.jpg"
-    ]
+    ],
+    "gps": {
+      "lat": 13.5013838,
+      "lon": 104.1595799,
+      "dms": "13°30'05.0\"N 104°09'34.5\"E"
+    }
   },
   {
     "slug": "spean-toap",
