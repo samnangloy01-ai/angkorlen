@@ -26,7 +26,7 @@ footer{text-align:center;color:#6b625a;font-size:14px;padding:24px 16px}
 <h1>Banteay Thom Temple</h1><p class="km">ប្រាសាទបន្ទាយធំ</p><p class="sub">12th-13th Century · Angkor Thom, Siem Reap</p>
 <figure class="ph hero-w"><img class="hero" draggable="false" src="https://wsrv.nl/?url=https%3A%2F%2Fwww.angkorlens.com%2Fsf-banteaythom-1.jpg&w=900&q=75&output=jpg" alt="Banteay Thom Temple, Cambodia"><span class="wm">© AngkorLens · Samnang Loy</span></figure>
 <p class="by">Photographs by Samnang Loy · AngkorLens</p>
-<section class="story"><strong>ទីតាំង៖</strong> ប្រាសាទបន្ទាយធំ ស្ថិតនៅចម្ងាយប្រហែល១៥គីឡូម៉ែត្រខាងជើងក្រុងសៀមរាប និង១០គីឡូម៉ែត្រខាងជើងប្រាសាទអង្គរវត្ត ក្រៅពីផ្លូវទេសចរណ៍តូច និងផ្លូវធំ (Small Circuit, Grand Circuit)។ ស្ថិតក្នុងភូមិកូកក្រឡ ឃុំលាំងដៃ ស្រុកអង្គរធំ ខេត្តសៀមរាប។ ការធ្វើដំណើរទៅដល់ទីនោះត្រូវការម៉ូតូ កង់ ឬដើរ ហើយផ្លូវជាដីក្រហមមានរណ្តៅ និងភក់ក្រោយភ្លៀង។<br><br>
+<div class="mapbox" style="margin:6px 0 18px;padding:12px 16px;background:#fff;border:1px solid #E6DCCB;border-radius:14px;"><div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px;"><span>📍 <strong>GPS · ទីតាំង:</strong> 13°28&#x27;24.7&quot;N 103°50&#x27;41.0&quot;E</span><a class="mapbtn" data-slug="banteay-thom-temple" href="https://www.google.com/maps?q=13.4735396,103.844728" target="_blank" rel="noopener" style="display:inline-block;padding:7px 14px;border-radius:999px;background:#8A5A2B;color:#fff;text-decoration:none;font-weight:700;font-size:14px;">Open in Google Maps · បើកផែនទី</a></div><div id="mapLeft" style="margin-top:6px;color:#7a6a55;font-size:12px"></div></div><section class="story"><strong>ទីតាំង៖</strong> ប្រាសាទបន្ទាយធំ ស្ថិតនៅចម្ងាយប្រហែល១៥គីឡូម៉ែត្រខាងជើងក្រុងសៀមរាប និង១០គីឡូម៉ែត្រខាងជើងប្រាសាទអង្គរវត្ត ក្រៅពីផ្លូវទេសចរណ៍តូច និងផ្លូវធំ (Small Circuit, Grand Circuit)។ ស្ថិតក្នុងភូមិកូកក្រឡ ឃុំលាំងដៃ ស្រុកអង្គរធំ ខេត្តសៀមរាប។ ការធ្វើដំណើរទៅដល់ទីនោះត្រូវការម៉ូតូ កង់ ឬដើរ ហើយផ្លូវជាដីក្រហមមានរណ្តៅ និងភក់ក្រោយភ្លៀង។<br><br>
 
 <strong>សម័យកាល និងអ្នកសាងសង់៖</strong> ប្រាសាទនេះត្រូវបានកសាងប្រហែលសតវត្សរ៍ទី១២ ដល់ទី១៣ ជឿថាកសាងឡើងក្នុងរជ្ជកាលព្រះបាទជ័យវរ្ម័នទី៧។<br><br>
 
@@ -107,4 +107,22 @@ document.querySelectorAll('.ph').forEach(function(el){el.addEventListener('click
 document.addEventListener('contextmenu',function(e){if(e.target.closest('.ph'))e.preventDefault();});
 document.addEventListener('dragstart',function(e){if(e.target.tagName==='IMG')e.preventDefault();});
 })();
-</script></body></html>
+</script><div id="mapPayModal" class="photo-membership-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="mapPayTitle"><div class="photo-membership-card">
+<div class="photo-membership-top"><div><span class="photo-membership-badge">🗺️ Temple Maps</span><h2 id="mapPayTitle">Unlock all temple maps</h2>
+<p class="photo-membership-subtitle">You have used your 5 free temple maps. Unlock the GPS map for every AngkorLens temple with one payment.<br>អ្នកបានប្រើផែនទីឥតគិតថ្លៃគ្រប់ ៥ ប្រាសាទហើយ។ បង់ម្តង ដើម្បីប្រើផែនទីប្រាសាទទាំងអស់។</p></div>
+<button class="photo-membership-close" onclick="closeMapPay()" aria-label="Close">&times;</button></div>
+<div id="mapComingSoon" style="display:none;margin:16px 0;padding:16px 18px;border-radius:14px;background:#fff7e6;border:1px solid #e2c98f;color:#5a4316;font-size:15px;line-height:1.5"><strong>Coming soon ✨</strong><br>Online payment will open soon. Thank you for supporting AngkorLens and Khmer heritage!<br>ការបង់ប្រាក់តាមអនឡាញ នឹងបើកឆាប់ៗនេះ។</div>
+<div class="photo-plan yearly" style="margin-top:18px"><h3>All Temple Maps</h3><div class="photo-plan-price">$10.99 <span>/ one time</span></div>
+<ul><li>GPS map for every temple</li><li>Use as many times as you like</li><li>Support Khmer heritage documentation</li></ul>
+<button class="photo-pay-btn" onclick="document.getElementById('mapComingSoon').style.display='block'">Unlock all maps — $10.99</button></div>
+<p class="photo-membership-note"><strong>Payment setup:</strong> Stripe Checkout will be connected in the next step. This page does not collect or store card or bank information.</p></div></div>
+<script>(function(){var K='al_maps_v1',U='al_maps_unlocked',F=5,m=document.getElementById('mapPayModal'),b=document.querySelector('.mapbtn'),L=document.getElementById('mapLeft');
+function get(){try{var a=JSON.parse(localStorage.getItem(K)||'[]');return Array.isArray(a)?a:[]}catch(e){return []}}
+function save(a){try{localStorage.setItem(K,JSON.stringify(a))}catch(e){}}
+function un(){try{return localStorage.getItem(U)==='1'}catch(e){return false}}
+window.closeMapPay=function(){m.classList.add('hidden');document.body.style.overflow='';};
+function openPay(){document.getElementById('mapComingSoon').style.display='none';m.classList.remove('hidden');document.body.style.overflow='hidden';}
+if(!b)return;var s=b.getAttribute('data-slug');
+function upd(){var a=get();if(un()||a.indexOf(s)>=0){L.textContent='';return}var r=Math.max(0,F-a.length);L.textContent=r>0?(r+' of '+F+' free temple maps left · នៅសល់ផែនទីឥតគិតថ្លៃ '+r+'/'+F):'Your 5 free temple maps are used · ផែនទីឥតគិតថ្លៃ ៥ អស់ហើយ';}
+b.addEventListener('click',function(e){var a=get();if(un()||a.indexOf(s)>=0)return;if(a.length<F){a.push(s);save(a);setTimeout(upd,300);return}e.preventDefault();openPay();});
+m.addEventListener('click',function(e){if(e.target===m)closeMapPay();});document.addEventListener('keydown',function(e){if(e.key==='Escape')closeMapPay();});upd();})();</script></body></html>
