@@ -356,7 +356,12 @@
       "sf-leakneang-1.jpg",
       "sf-leakneang-2.jpg",
       "sf-leakneang-3.jpg"
-    ]
+    ],
+    "gps": {
+      "lat": 13.4453199,
+      "lon": 103.8805789,
+      "dms": "13°26'43.2\"N 103°52'50.1\"E"
+    }
   },
   {
     "slug": "daun-troung-temple",
