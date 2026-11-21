@@ -35,6 +35,7 @@ Temples for AngkorLens Book 3: new temples added to angkorlens.com, plus temples
 | 29 | Preah Ko Temple (Roluos) | ប្រាសាទព្រះគោ (រលួស) | 21 Nov 2026 | 8 (cover = the three front towers, polished; wide causeway view, lintel, guardian in niche (colour toned down), 2 views through a door frame (the 2nd zoomed on the tower), 2 views through the outer wall window) | /temple-preah-ko-roluos.html | Roluos group (ancient Hariharalaya), ~15 km SE of Angkor. Six brick towers on one platform, built by Indravarman I, dedicated 879 (APSARA intro says 25 Jan 880) to his ancestors and Shiva; ancient name Paramesvara. Different from the Stung Treng 'Preah Ko' already on the site. |
 | 30 | Kap Chen Temple | ប្រាសាទកាប់ចិន | 21 Nov 2026 | 9 (cover = standing part of the tower, polished; tower among trees, rubble, 3 carving close-ups, 2 rubble views (the 2nd zoomed, near-duplicate), mound from outside; video P1011402.MP4 not used on the site) | /temple-kap-chen-temple.html | Owner's GPS 13°27'55.9"N 104°12'53.0"E. Toek Lich village, Boeng Mealea commune, Svay Leu, Siem Reap (helloangkor). Sandstone temple, one partly standing tower, big spread of fallen blocks. Also Thnal Romeang Ka; CISARK 1983; IK 215.04; Boulbet 1979 JB 332. Date not recorded. |
 | 31 | Dei Chnang Gate (Angkor Thom North Gate) | ខ្លោងទ្វារដីឆ្នាំង | 21 Nov 2026 | 7 (cover = full gate front, polished; 3 near-identical front views zoomed: big face, arch with road, three towers; side face with mossy wall; forest road to the gate; tall view; strong greens reduced) | /temple-dei-chnang-gate.html |
+| 32 | Ta Som Temple | ប្រាសាទតាសោម | 21 Nov 2026 | 14 (cover = full front view, polished; two similar tower views → 2nd zoomed on tower top; tower with blue sky → zoomed on devata row; props, rubble, devata walls, false window, baluster window, carved detail, pediment, lintel, naga end, laterite wall; strong greens reduced) | /temple-ta-som-temple.html |
 
 ## Notes per temple
 
@@ -355,6 +356,14 @@ Temples for AngkorLens Book 3: new temples added to angkorlens.com, plus temples
 - Context: Angkor Thom founded late 12th century by Jayavarman VII, Bayon style; gate towers ~23 m (Wikipedia). Name meaning "gate of clay for pottery" (Sophia University paper on Angkor place names). Links to Preah Khan and the Grand Circuit (Lonely Planet).
 - Photos: 7 used. Four front views looked the same, so three were zoomed (face, arch, towers). Greens reduced 8–18%.
 - Still to confirm: exact construction year of the gate itself; restoration history.
+
+### 32. Ta Som Temple (ប្រាសាទតាសោម)
+- Location: owner's Google Maps pin 13.4645747, 103.913001 (13°27'52.5"N 103°54'46.8"E). East of Jayatataka baray / Neak Pean; Grand Circuit.
+- Records (helloangkor): MH 401 (1926), IK 528, CISARK 412; inscriptions K.460 (doorjambs: lords and high priests), K.665, K.1025, K.1026, K.1027.
+- History: built end of 12th c., Bayon style, Jayavarman VII; no foundation stele; most likely dedicated to his father Dharanindravarman II (r. 1150–1160) (Wikipedia, Cambodia Daily, WMF "likely"); some suggest a teacher (WMF).
+- Layout (helloangkor): outer enclosure ~200 x 200 m with moat; face gopuras; eastern gopura framed by tree roots; inner enclosure with 4 gopuras, central shrine, 2 libraries; reassembled pediments outside N and S gopuras. Marchal cleared it in the 1930s.
+- Disagreement: WMF start year — 1998 (Wikipedia, other guides) vs 1999 (WMF's own page). Page says "since the late 1990s".
+- Not on page: name meaning "ancestor Som" (teacher) — doubtful per source. Owner's photos do not show the tree-root east gopura.
 
 ### Correction (21 Nov 2026): River of a Thousand Lingas = Phnom Kulen, not Kbal Spean
 - Owner confirmed the photos were taken at the thousand lingas on top of Phnom Kulen near Preah Ang Thom (Google Maps «លឹង្គ1000», pin 13°33'58.4"N 104°06'06.9"E), not at Kbal Spean. The page was renamed "River of a Thousand Lingas (Phnom Kulen)" / លិង្គមួយពាន់ ភ្នំគូលែន and the history rewritten.
