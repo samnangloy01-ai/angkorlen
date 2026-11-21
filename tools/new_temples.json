@@ -339,7 +339,12 @@
       "sf-phnomda-2.jpg",
       "sf-phnomda-3.jpg",
       "sf-phnomda-4.jpg"
-    ]
+    ],
+    "gps": {
+      "lat": 10.9644581,
+      "lon": 104.9886765,
+      "dms": "10°57'52.0\"N 104°59'19.2\"E"
+    }
   },
   {
     "slug": "prasat-leak-neang",
