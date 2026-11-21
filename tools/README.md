@@ -9,6 +9,7 @@ Change ONLY what he asks. Don't invent facts. Mark anything uncertain. Cite sour
 - `new_temples.json` lists the new temples, oldest first. Each entry has `slug`, `name`, `km` (Khmer name), `sub`, `h` (history HTML in English then Khmer) and `i` (image file names; the first is the cover).
 - `temples.json` and `extra.json` hold the original 79 temples plus Bakong and Banteay Srei. Don't edit them unless asked.
 - `angkorlens-book3-new-temples.md` is the Book 3 list: a table row and a notes section for each new temple.
+- 40 new temples = one book. New temples 1–40 are Book 3; 41–80 go in `angkorlens-book4-new-temples.md` (Book 4), and so on. `update_home.py` makes one homepage row per book, newest book on top.
 
 ## Steps for each new temple
 1. Clone the repo: `git clone https://github.com/samnangloy01-ai/angkorlen`.
