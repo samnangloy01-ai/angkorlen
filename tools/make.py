@@ -115,7 +115,9 @@ for k in keys:
 <title>{html.escape(n)} ({html.escape(km)}) – Photos &amp; History | AngkorLens</title>
 <meta name="description" content="{html.escape(desc)}"><link rel="canonical" href="{url}"><link rel="icon" href="/favicon.ico">
 <meta property="og:title" content="{html.escape(n)} – AngkorLens"><meta property="og:description" content="{html.escape(desc)}"><meta property="og:image" content="{ogi}"><meta property="og:url" content="{url}"><meta property="og:type" content="article">
-<script type="application/ld+json">{json.dumps(ld,ensure_ascii=False)}</script><style>{CSS}</style></head><body>
+<script type="application/ld+json">{json.dumps(ld,ensure_ascii=False)}</script><style>{CSS}</style><script>/* Google tag GTM-KRG6W6QM: loads only after the visitor accepts cookies */
+function alLoadGA(){{if(window.alGA)return;window.alGA=1;var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtm.js?id=GTM-KRG6W6QM';document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){{dataLayer.push(arguments);}};gtag('js',new Date());}}
+try{{if(localStorage.getItem('angkorLensCookieConsent')==='accepted')alLoadGA();}}catch(e){{}}</script></head><body>
 <header><a href="/">AngkorLens</a></header><main>
 <p class="crumb"><a href="/">Home</a> › <a href="/temples.html">Temple guides</a> › {html.escape(n)}</p>
 <h1>{html.escape(n)}</h1><p class="km">{html.escape(km)}</p><p class="sub">{html.escape(sub)}</p>
@@ -133,7 +135,9 @@ out['temples.html']=f'''<!doctype html><html lang="en"><head><meta charset="utf-
 <title>Khmer Temple Guides – {len(keys)} Temples in Cambodia | AngkorLens</title>
 <meta name="description" content="Photo guides to {len(keys)} ancient Khmer temples across Cambodia, from Preah Vihear and Koh Ker to Preah Khan Kampong Svay, photographed by Samnang Loy.">
 <link rel="canonical" href="https://www.angkorlens.com/temples.html"><link rel="icon" href="/favicon.ico"><style>{CSS}
-.list{{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px}}.c{{background:#fff;border-radius:16px;overflow:hidden;text-decoration:none;color:#221F1C}}.c img{{width:100%;height:160px;object-fit:cover;display:block;background:#e8e0d2}}.c b{{display:block;padding:10px 12px 0;font-family:Georgia,serif}}.c span{{display:block;padding:0 12px 12px;color:#7A5A1E;font-size:14px}}</style></head><body>
+.list{{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px}}.c{{background:#fff;border-radius:16px;overflow:hidden;text-decoration:none;color:#221F1C}}.c img{{width:100%;height:160px;object-fit:cover;display:block;background:#e8e0d2}}.c b{{display:block;padding:10px 12px 0;font-family:Georgia,serif}}.c span{{display:block;padding:0 12px 12px;color:#7A5A1E;font-size:14px}}</style><script>/* Google tag GTM-KRG6W6QM: loads only after the visitor accepts cookies */
+function alLoadGA(){{if(window.alGA)return;window.alGA=1;var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtm.js?id=GTM-KRG6W6QM';document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){{dataLayer.push(arguments);}};gtag('js',new Date());}}
+try{{if(localStorage.getItem('angkorLensCookieConsent')==='accepted')alLoadGA();}}catch(e){{}}</script></head><body>
 <header><a href="/">AngkorLens</a></header><main><p class="crumb"><a href="/">Home</a> › Temple guides</p>
 <h1>Khmer Temple Guides</h1><p class="km">មគ្គុទ្ទេសក៍ប្រាសាទខ្មែរ</p><p class="sub">{len(keys)} temples photographed by Samnang Loy, each with history in English and Khmer.</p>
 <div class="list">{cards}</div></main><footer>© AngkorLens · Samnang Loy</footer></body></html>'''
