@@ -5925,7 +5925,7 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape'&&M.classList
         <input type="email" placeholder="Your email address" autocomplete="email" required aria-label="Your email address">
         <button type="submit">Sign Up</button>
       </form>
-      <p class="angkor-newsletter-fine">By submitting your information, you agree to receive AngkorLens updates. You can opt out at any time. Privacy Policy | Terms of Use | Contact Us</p>
+      <p class="angkor-newsletter-fine">By submitting your information, you agree to receive AngkorLens updates. You can opt out at any time. <a href="/privacy.html" style="text-decoration:underline">Privacy Policy</a> | <a href="/privacy.html#terms" style="text-decoration:underline">Terms of Use</a> | <a href="https://wa.me/85593496561" target="_blank" rel="noopener" style="text-decoration:underline">Contact Us</a></p>
     </div>
     <div class="angkor-newsletter-image">
       <img src="https://wsrv.nl/?url=https%3A%2F%2Fwww.angkorlens.com%2FIMG_0713.JPG&w=900&q=75&output=jpg" alt="Khmer temple heritage" loading="lazy" decoding="async">
@@ -6667,7 +6667,7 @@ function tryChaEhFallback(img) {
         <input id="angkorNewsletterEmail" type="email" placeholder="Your email address" autocomplete="email" required aria-label="Your email address">
         <button type="submit">Sign Up</button>
       </form>
-      <p class="angkor-newsletter-fine">By submitting your information, you agree to receive AngkorLens updates. You can opt out at any time. Privacy Policy | Terms of Use | Contact Us</p>
+      <p class="angkor-newsletter-fine">By submitting your information, you agree to receive AngkorLens updates. You can opt out at any time. <a href="/privacy.html" style="text-decoration:underline">Privacy Policy</a> | <a href="/privacy.html#terms" style="text-decoration:underline">Terms of Use</a> | <a href="https://wa.me/85593496561" target="_blank" rel="noopener" style="text-decoration:underline">Contact Us</a></p>
     </div>
     <div class="angkor-newsletter-image">
       <img src="https://wsrv.nl/?url=https%3A%2F%2Fwww.angkorlens.com%2FIMG_0713.JPG&w=900&q=75&output=jpg" alt="Khmer temple heritage" loading="lazy" decoding="async">
@@ -6711,7 +6711,7 @@ document.addEventListener('DOMContentLoaded',function(){
   <div class="cookie-consent-text">
     We use cookies on this site to enhance your user experience.
     By continuing to use this site, you consent to the use of cookies in accordance with our
-    <a href="https://www.parksconservancy.org/about/privacy#cookies" target="_blank" rel="noopener noreferrer">cookie policy</a>.
+    <a href="/privacy.html#cookies">cookie policy</a>.
   </div>
   <div class="cookie-consent-actions">
     <button type="button" class="cookie-consent-close" onclick="dismissCookieBanner()">Close</button>
@@ -9366,16 +9366,29 @@ function closeNewsletter(){
     const el=document.getElementById('angkorNewsletterModal');
     if(el) el.classList.add('hidden');
 }
+var ANGKOR_NEWSLETTER_TO = 'samnangloy01@gmail.com'; /* owner's email for FormSubmit; empty = not connected yet */
 function submitAngkorNewsletter(event){
     event.preventDefault();
-    const email=document.getElementById('angkorNewsletterEmail');
+    const form=event.target;
+    const email=form.querySelector('input[type="email"]');
     if(!email || !email.value) return;
-    localStorage.setItem('angkorLensNewsletterSubscribed','yes');
-    localStorage.setItem('angkorLensNewsletterSubscribedAt', String(Date.now()));
-    refreshNewsletterVisibility();
-    closeNewsletter();
-    alert('Thank you for signing up for AngkorLens updates.');
+    const btn=form.querySelector('button[type="submit"]');
+    function done(){
+        localStorage.setItem('angkorLensNewsletterSubscribed','yes');
+        localStorage.setItem('angkorLensNewsletterSubscribedAt', String(Date.now()));
+        refreshNewsletterVisibility();
+        closeNewsletter();
+        alert('Thank you for signing up for AngkorLens updates.');
+    }
+    if(!ANGKOR_NEWSLETTER_TO){ done(); return; }
+    if(btn){btn.disabled=true;btn.textContent='Sending...';}
+    fetch('https://formsubmit.co/ajax/'+ANGKOR_NEWSLETTER_TO,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},
+        body:JSON.stringify({email:email.value,_subject:'New AngkorLens newsletter sign-up',_template:'table',page:location.href})})
+    .then(function(r){if(!r.ok)throw new Error('send');done();})
+    .catch(function(){alert('Sorry, the sign-up could not be sent. Please try again later or contact us on WhatsApp.');})
+    .finally(function(){if(btn){btn.disabled=false;btn.textContent='Sign Up';}});
 }
+
 
 /* Newsletter behavior: show on every visit and after photo clicks until the visitor signs up. */
 function refreshNewsletterVisibility(){
