@@ -9343,19 +9343,25 @@ function showAngkorLegalIfNeeded(){
     if(el && localStorage.getItem('angkorLensLegalAccepted')!=='accepted') el.classList.remove('hidden');
 }
 
-/* Newsletter: the icon always opens it again until the visitor signs up.
-   A signup only "counts" for 7 days -- after that it expires and the
-   popup starts asking again, as if the visitor never signed up. */
-const ANGKOR_NEWSLETTER_EXPIRY_MS = 7*24*60*60*1000; // 1 week
+/* Newsletter: the envelope icon opens it until the visitor signs up. A sign-up counts forever. */
 function isAngkorNewsletterSubscribed(){
-    if(localStorage.getItem('angkorLensNewsletterSubscribed')!=='yes') return false;
-    const ts=parseInt(localStorage.getItem('angkorLensNewsletterSubscribedAt')||'0',10);
-    if(!ts || (Date.now()-ts) > ANGKOR_NEWSLETTER_EXPIRY_MS){
-        localStorage.removeItem('angkorLensNewsletterSubscribed');
-        localStorage.removeItem('angkorLensNewsletterSubscribedAt');
-        return false;
-    }
+    try{ return localStorage.getItem('angkorLensNewsletterSubscribed')==='yes'; }catch(e){ return false; }
+}
+/* Auto popup: once per visit, and after the visitor closes it, wait 3 days. Signed-up visitors never see it again. */
+const ANGKOR_NEWSLETTER_SNOOZE_MS = 3*24*60*60*1000; // 3 days
+function angkorNewsletterAutoAllowed(){
+    if(isAngkorNewsletterSubscribed()) return false;
+    try{
+        if(sessionStorage.getItem('angkorLensNewsletterShownThisVisit')==='yes') return false;
+        const d=parseInt(localStorage.getItem('angkorLensNewsletterDismissedAt')||'0',10);
+        if(d && (Date.now()-d) < ANGKOR_NEWSLETTER_SNOOZE_MS) return false;
+    }catch(e){}
     return true;
+}
+function autoOpenNewsletter(){
+    if(!angkorNewsletterAutoAllowed()) return;
+    try{ sessionStorage.setItem('angkorLensNewsletterShownThisVisit','yes'); }catch(e){}
+    openNewsletterIfNeeded();
 }
 function openNewsletterIfNeeded(){
     if(isAngkorNewsletterSubscribed()) return;
@@ -9365,6 +9371,7 @@ function openNewsletterIfNeeded(){
 function closeNewsletter(){
     const el=document.getElementById('angkorNewsletterModal');
     if(el) el.classList.add('hidden');
+    try{ if(!isAngkorNewsletterSubscribed()) localStorage.setItem('angkorLensNewsletterDismissedAt', String(Date.now())); }catch(e){}
 }
 var ANGKOR_NEWSLETTER_TO = 'samnangloy01@gmail.com'; /* owner's email for FormSubmit; empty = not connected yet */
 function submitAngkorNewsletter(event){
@@ -9402,26 +9409,8 @@ document.addEventListener('DOMContentLoaded',function(){
     showAngkorLegalIfNeeded();
     refreshNewsletterVisibility();
 
-    // Every visit: reopen the newsletter unless the visitor has signed up (within the last 7 days).
-    setTimeout(function(){
-        if(!isAngkorNewsletterSubscribed()){
-            openNewsletterIfNeeded();
-        }
-    }, 3500);
-
-    // Every temple/photo click: reopen the newsletter until signup.
-    document.addEventListener('click',function(event){
-        if(isAngkorNewsletterSubscribed()) return;
-
-        const photoTarget = event.target.closest(
-            '.temple-card img, .temple-card [onclick*="openModal"], .temple-card [onclick*="openPhotoMembership"], .temple-card [onclick*="openLightbox"]'
-        );
-        if(!photoTarget) return;
-
-        setTimeout(function(){
-            openNewsletterIfNeeded();
-        }, 250);
-    }, true);
+    // Once per visit (not again for 3 days after the visitor closes it; never after sign-up).
+    setTimeout(autoOpenNewsletter, 3500);
 });
 </script>
 
