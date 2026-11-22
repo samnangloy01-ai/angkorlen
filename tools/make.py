@@ -117,7 +117,14 @@ for k in keys:
 <meta property="og:title" content="{html.escape(n)} – AngkorLens"><meta property="og:description" content="{html.escape(desc)}"><meta property="og:image" content="{ogi}"><meta property="og:url" content="{url}"><meta property="og:type" content="article">
 <script type="application/ld+json">{json.dumps(ld,ensure_ascii=False)}</script><style>{CSS}</style><script>/* Google tag GTM-KRG6W6QM: loads only after the visitor accepts cookies */
 function alLoadGA(){{if(window.alGA)return;window.alGA=1;var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtm.js?id=GTM-KRG6W6QM';document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){{dataLayer.push(arguments);}};gtag('js',new Date());}}
-try{{if(localStorage.getItem('angkorLensCookieConsent')==='accepted')alLoadGA();}}catch(e){{}}</script></head><body>
+try{{if(localStorage.getItem('angkorLensCookieConsent')==='accepted')alLoadGA();}}catch(e){{}}
+document.addEventListener('DOMContentLoaded',function(){{var c;try{{c=localStorage.getItem('angkorLensCookieConsent')}}catch(e){{}}if(c==='accepted'||c==='dismissed')return;
+var b=document.createElement('div');b.id='alCookieBar';b.setAttribute('role','dialog');b.setAttribute('aria-label','Cookie notice');
+b.style.cssText='position:fixed;left:12px;right:12px;bottom:12px;z-index:99999;max-width:640px;margin:0 auto;background:#fff;color:#221F1C;border:1px solid #e5ded2;border-radius:14px;box-shadow:0 8px 30px rgba(0,0,0,.15);padding:12px 14px;display:flex;gap:12px;align-items:center;flex-wrap:wrap;font:14px/1.45 -apple-system,Segoe UI,Roboto,sans-serif';
+b.innerHTML='<span style="flex:1 1 260px">We use cookies to see how visitors use AngkorLens. See our <a href="/privacy.html#cookies" style="color:#7A5A1E;text-decoration:underline">cookie policy</a>.</span><span style="display:flex;gap:8px"><button type="button" id="alCkClose" style="border:1px solid #ccc;background:#fff;border-radius:999px;padding:7px 14px;cursor:pointer;font:inherit">Close</button><button type="button" id="alCkOk" style="border:0;background:#221F1C;color:#fff;border-radius:999px;padding:7px 16px;cursor:pointer;font:inherit">Accept</button></span>';
+document.body.appendChild(b);
+function set(v){{try{{localStorage.setItem('angkorLensCookieConsent',v)}}catch(e){{}}b.remove();if(v==='accepted')alLoadGA();}}
+document.getElementById('alCkOk').onclick=function(){{set('accepted')}};document.getElementById('alCkClose').onclick=function(){{set('dismissed')}};}});</script></head><body>
 <header><a href="/">AngkorLens</a></header><main>
 <p class="crumb"><a href="/">Home</a> › <a href="/temples.html">Temple guides</a> › {html.escape(n)}</p>
 <h1>{html.escape(n)}</h1><p class="km">{html.escape(km)}</p><p class="sub">{html.escape(sub)}</p>
@@ -137,7 +144,14 @@ out['temples.html']=f'''<!doctype html><html lang="en"><head><meta charset="utf-
 <link rel="canonical" href="https://www.angkorlens.com/temples.html"><link rel="icon" href="/favicon.ico"><style>{CSS}
 .list{{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px}}.c{{background:#fff;border-radius:16px;overflow:hidden;text-decoration:none;color:#221F1C}}.c img{{width:100%;height:160px;object-fit:cover;display:block;background:#e8e0d2}}.c b{{display:block;padding:10px 12px 0;font-family:Georgia,serif}}.c span{{display:block;padding:0 12px 12px;color:#7A5A1E;font-size:14px}}</style><script>/* Google tag GTM-KRG6W6QM: loads only after the visitor accepts cookies */
 function alLoadGA(){{if(window.alGA)return;window.alGA=1;var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtm.js?id=GTM-KRG6W6QM';document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){{dataLayer.push(arguments);}};gtag('js',new Date());}}
-try{{if(localStorage.getItem('angkorLensCookieConsent')==='accepted')alLoadGA();}}catch(e){{}}</script></head><body>
+try{{if(localStorage.getItem('angkorLensCookieConsent')==='accepted')alLoadGA();}}catch(e){{}}
+document.addEventListener('DOMContentLoaded',function(){{var c;try{{c=localStorage.getItem('angkorLensCookieConsent')}}catch(e){{}}if(c==='accepted'||c==='dismissed')return;
+var b=document.createElement('div');b.id='alCookieBar';b.setAttribute('role','dialog');b.setAttribute('aria-label','Cookie notice');
+b.style.cssText='position:fixed;left:12px;right:12px;bottom:12px;z-index:99999;max-width:640px;margin:0 auto;background:#fff;color:#221F1C;border:1px solid #e5ded2;border-radius:14px;box-shadow:0 8px 30px rgba(0,0,0,.15);padding:12px 14px;display:flex;gap:12px;align-items:center;flex-wrap:wrap;font:14px/1.45 -apple-system,Segoe UI,Roboto,sans-serif';
+b.innerHTML='<span style="flex:1 1 260px">We use cookies to see how visitors use AngkorLens. See our <a href="/privacy.html#cookies" style="color:#7A5A1E;text-decoration:underline">cookie policy</a>.</span><span style="display:flex;gap:8px"><button type="button" id="alCkClose" style="border:1px solid #ccc;background:#fff;border-radius:999px;padding:7px 14px;cursor:pointer;font:inherit">Close</button><button type="button" id="alCkOk" style="border:0;background:#221F1C;color:#fff;border-radius:999px;padding:7px 16px;cursor:pointer;font:inherit">Accept</button></span>';
+document.body.appendChild(b);
+function set(v){{try{{localStorage.setItem('angkorLensCookieConsent',v)}}catch(e){{}}b.remove();if(v==='accepted')alLoadGA();}}
+document.getElementById('alCkOk').onclick=function(){{set('accepted')}};document.getElementById('alCkClose').onclick=function(){{set('dismissed')}};}});</script></head><body>
 <header><a href="/">AngkorLens</a></header><main><p class="crumb"><a href="/">Home</a> › Temple guides</p>
 <h1>Khmer Temple Guides</h1><p class="km">មគ្គុទ្ទេសក៍ប្រាសាទខ្មែរ</p><p class="sub">{len(keys)} temples photographed by Samnang Loy, each with history in English and Khmer.</p>
 <div class="list">{cards}</div></main><footer>© AngkorLens · Samnang Loy</footer></body></html>'''
