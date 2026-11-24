@@ -8,6 +8,7 @@ Temples for AngkorLens Book 4: new temples 41–80 added to angkorlens.com (40 t
 | 2 | Gate of the Dead | ខ្លោងទ្វារខ្មោច | 24 Nov 2026 | 13 (cover = full gate front, polished; side face tower + elephants; elephant trunks close-up; face towers through leaves; face close-ups getting closer; tree + face; strong greens reduced; 24 Nov: photos 2 (road to the gate) and 3 (gate behind leaves) re-edited professionally → sf-gatedead-2b/3b) | /temple-gate-of-the-dead.html | Angkor Thom East Gate; late 12th c., Jayavarman VII, Bayon style; name origin uncertain. |
 | 3 | Prasat Daun Chan (Hospital Chapel) | ប្រាសាទដូនចាន់ | 24 Nov 2026 | 10 (cover = shrine with tree and wooden door frame, polished; shrine views; collapsed doorway + zoom; wall with tree; laterite gopura window; site view; enclosure wall; carved fragment (soft focus); greens reduced) | /temple-prasat-daun-chan.html | Hospital chapel attributed to Jayavarman VII (by plan, no inscription). |
 | 4 | Spean Thma (Spean Thmor) | ស្ពានថ្ម | 24 Nov 2026 | 6 (cover = wide view of the arches with tree on top, polished; tall tree view; side view; path through an arch; arch close-up; tree gripping stones; greens reduced) | /temple-spean-thma.html | Stone bridge of reused blocks; date disputed (15th/16th/17th c.). |
+| 5 | Victory Gate | ក្លោងទ្វារជ័យ | 24 Nov 2026 | 8 (cover = face tower against sky, polished; gate with doorway; face close-up; face through trees; near-duplicate → zoomed on face; tree-root views; face with leaves; greens reduced) | /temple-victory-gate.html | Angkor Thom east gate on the Royal Palace axis; late 12th c., Jayavarman VII. |
 
 ## Notes
 
@@ -42,3 +43,9 @@ Temples for AngkorLens Book 4: new temples 41–80 added to angkorlens.com (40 t
 - National Geographic (Dan Penny): eastern end destroyed; floods; river went around the bridge.
 - Ta Keo nursery waterwheel nearby (Phnom Penh Post, helloangkor).
 - Lonely Planet says "an arch and several piers remain" vs. 14 arches elsewhere — page says "the remains show 14 arches" (Glaize/Wikipedia).
+
+### 5. Victory Gate (ក្លោងទ្វារជ័យ)
+- Location: owner's Google Maps pin 13.4460678, 103.8729782 (13°26'45.8"N 103°52'22.7"E).
+- helloangkor HA11654: IK 473.01, CISARK 370, MH 363; inscriptions K.889, K.890, K.896, K.1018 (12th c. graffiti); axis to Terrace of Elephants / Royal Palace, East Baray terrace ~1.5 km, East Mebon ~5 km; 54 giants naga railing; recycled sandstone causeway; vajra figure (Marchal: Indra + 2 divinities; others: Jayavarman VII + 2 queens); only gate with pediment remains (Avalokiteshvara, west side); 1920 devas reassembled (BEFEO).
+- Wikipedia: 500 m north of the east gate; 23 m towers. Smarthistory: used by the king to leave/return to the palace ("would have been" — page says "it is thought").
+- NOT on page: helloangkor says "three elephants flank each side"; page uses the standard "three-headed elephants" (Glaize/Angkor Guide).
