@@ -18,7 +18,7 @@ Temples for AngkorLens Book 4: new temples 41–80 added to angkorlens.com (40 t
 - Not on page: the conversion to Hindu worship under Jayavarman VIII (it is on the NE page from earlier sources; APSARA's page does not mention it — not repeated here). Content of K.597 not summarised (no source read).
 
 ### 2. Gate of the Dead (ខ្លោងទ្វារខ្មោច)
-- Location: GPS NOT YET ADDED — waiting for owner's Google Maps pin (no map box on the page until then).
+- Location: owner's Google Maps pin 13.4414661, 103.8732166 (13°26'29.3"N 103°52'23.6"E), added 24 Nov 2026. Cover changed to sf-gatedead-3b (gate behind leaves) at owner's request.
 - helloangkor HA12151: Thvear Khnoch / Khmoch; IK 473.02, CISARK 1009, MH 363; asuras/devas causeway remains (some likely in moat silt); two laterite chambers either side (purpose unknown); medallion band; original sandstone paving with wheel ruts; not on modern road network; statues found nearby by Henri Marchal 1925 (Hevajra, Prajnaparamita head, Buddha head, two Avalokitesvara); wall walk 7 min to Victory Gate, 18 min to SE Prasat Chrung. Refs: BEFEO Chronique 25 & 33; Rapport de la Conservation d'Angkor, May 1925.
 - Wikipedia (Angkor Thom): east gate = Gate of the Dead; Victory Gate 500 m north; 23 m face towers; Bayon style, Jayavarman VII.
 - Name origin: sources disagree (funeral processions / defeated armies / simply the east entrance) — page says it is uncertain.
