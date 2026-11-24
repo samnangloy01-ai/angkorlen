@@ -11,6 +11,7 @@ Temples for AngkorLens Book 4: new temples 41–80 added to angkorlens.com (40 t
 | 5 | Victory Gate | ក្លោងទ្វារជ័យ | 24 Nov 2026 | 8 (cover = face tower against sky, polished; gate with doorway; face close-up; face through trees; near-duplicate → zoomed on face; tree-root views; face with leaves; greens reduced) | /temple-victory-gate.html | Angkor Thom east gate on the Royal Palace axis; late 12th c., Jayavarman VII. |
 | 6 | Ta Kav Gate (West Gate of Angkor Thom) | ខ្លោងទ្វារតាកៅ | 24 Nov 2026 | 7 (cover = gate in golden sunset light, polished; golden face close-up; road with visitors and giants; headless giant with gate; restored face tower (wide + close); giant head silhouette over the moat at dusk; warm colours kept, greens reduced on daytime photos) | /temple-ta-kav-gate.html | West gate of Angkor Thom; restored by APSARA, completed Feb 2023. |
 | 7 | Spean Khvav (Ancient Bridge) | ស្ពានខ្វាវ | 24 Nov 2026 | 9 (cover = side view of arches over water, polished; second arch view; north side with fallen balustrade; near-duplicate → zoomed on piers and log; naga headpiece with red cloth (2 views); naga headpiece close; seated figure close-ups; greens reduced) | /temple-spean-khvav.html | Laterite bridge on the East Royal Road; 12th c. (Wikipedia list). |
+| 8 | Prasat Chamreh (Prasat Op On) | ប្រាសាទចំរេះ | 24 Nov 2026 | 4 (cover = brick tower close, blue sky, polished; side view; near-duplicate → zoomed on upper tiers; tower through trees; greens reduced) | /temple-prasat-chamreh.html | Koh Ker brick tower; date debated (Jayavarman IV or soon after 941). |
 
 ## Notes
 
@@ -65,3 +66,10 @@ Temples for AngkorLens Book 4: new temples 41–80 added to angkorlens.com (40 t
 - helloangkor HA12745: east side of Khvav village (O village), Khvav commune, Chi Kraeng; East Road Angkor–Beng Mealea–Preah Khan Kompong Svay; 26 m x 7 m x 3.2 m; "amazing condition"; naga balustrade fragments; one headpiece; MH 222 (1926), IK 233.01, CISARK 1599.
 - Wikipedia (List of bridges in Cambodia): 26 m, 7 corbelled arches, laterite, 12th century.
 - Seated figure under naga hood + red cloth: from owner's photos only; NOT identified as Buddha on the page (no source).
+
+### 8. Prasat Chamreh (ប្រាសាទចំរេះ)
+- Location: owner's Google Maps pin 13.7750555, 104.5545003 (13°46'30.2"N 104°33'16.2"E), Koh Ker.
+- helloangkor HA11967 (as Op On / Chamreh): IK 274.02, CISARK 684, MH 678; brick on laterite base, east door with sandstone frame, false doors with pilasters/brick arches; false storeys; pierced stones for velum cord; chimney vault; lintel Indra on Airavata with garlands, frieze in niches (Parmentier 1939, type III); 300 m E of Banteay Pir Chan, ~500 m SE of Rahal.
+- kingjayavarmanvii blog: lintel damaged, two blocks; scholars suggest a few years after 941. IntoCambodia: reign of Jayavarman IV; also called "Leak Neang" → DATE CONFLICT noted on page; Leak Neang alias NOT used (confusing with Koh Ker's Prasat Leak Neang).
+- IntoCambodia says "100 m east of Prasat Lom Neang" vs Parmentier 300 m E of Banteay Pir Chan → only Parmentier used.
+- Owner's photos show side/back with false doors; lintel not photographed.
