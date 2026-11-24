@@ -6,6 +6,7 @@ Temples for AngkorLens Book 4: new temples 41–80 added to angkorlens.com (40 t
 |---|--------|-------|-------|--------|----------|----------------|
 | 1 | Prasat Chrung Southeast | ប្រាសាទជ្រុង-អាគ្នេយ៍ | 21 Nov 2026 | 14 (cover = full tower, blue sky, polished; second tower view zoomed on the top; two similar lotus devatas → 2nd zoomed on face; door frame views, stele pavilion, devata walls, headless figures; strong greens reduced) | /temple-prasat-chrung-southeast.html | Late 12th c., Jayavarman VII, Bayon style; best preserved of the 4 corner shrines (APSARA). Stele K.597. |
 | 2 | Gate of the Dead | ខ្លោងទ្វារខ្មោច | 24 Nov 2026 | 13 (cover = full gate front, polished; side face tower + elephants; elephant trunks close-up; face towers through leaves; face close-ups getting closer; tree + face; strong greens reduced; 24 Nov: photos 2 (road to the gate) and 3 (gate behind leaves) re-edited professionally → sf-gatedead-2b/3b) | /temple-gate-of-the-dead.html | Angkor Thom East Gate; late 12th c., Jayavarman VII, Bayon style; name origin uncertain. |
+| 3 | Prasat Daun Chan (Hospital Chapel) | ប្រាសាទដូនចាន់ | 24 Nov 2026 | 10 (cover = shrine with tree and wooden door frame, polished; shrine views; collapsed doorway + zoom; wall with tree; laterite gopura window; site view; enclosure wall; carved fragment (soft focus); greens reduced) | /temple-prasat-daun-chan.html | Hospital chapel attributed to Jayavarman VII (by plan, no inscription). |
 
 ## Notes
 
@@ -23,3 +24,10 @@ Temples for AngkorLens Book 4: new temples 41–80 added to angkorlens.com (40 t
 - Name origin: sources disagree (funeral processions / defeated armies / simply the east entrance) — page says it is uncertain.
 - Lonely Planet: Tomb Raider filming location.
 - Steel cables around the face tower: from the owner's photos only (no source found on who/when) — page only says they hold the blocks.
+
+### 3. Prasat Daun Chan (ប្រាសាទដូនចាន់)
+- Location: owner's Google Maps pin 13.4740231, 104.2219017 (13°28'26.5"N 104°13'18.8"E). Boeng Mealea village/commune, Svay Leu district.
+- helloangkor HA11595: IK 215, CISARK 308, MH 302 (1926), JB 258; laterite enclosure, east cruciform gopura, sandstone shrine (decayed, never finished), library SE, basin NE (perhaps S); hospital chapel attributed to Jayavarman VII (no inscription cited); Lajonquière's lintels not seen now. Aymonier 1900 p.458; Lajonquière 1902 p.285.
+- 102 hospitals: Tourism Cambodia (Chapel of the Hospital page).
+- NOT on page: helloangkor says "around 400 m SW of the western entrance of Beng Mealea", but the owner's pin is ~1.3 km west of Beng Mealea's west side — conflict, so the page only says "west of Beng Mealea".
+- Wooden door frames: from owner's photos only.
