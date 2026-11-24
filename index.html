@@ -746,6 +746,12 @@ body.top100-view .top100-test-section {
 <script>/* Google tag GTM-KRG6W6QM: loads only after the visitor accepts cookies */
 function alLoadGA(){if(window.alGA)return;window.alGA=1;var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtm.js?id=GTM-KRG6W6QM';document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments);};gtag('js',new Date());}
 try{if(localStorage.getItem('angkorLensCookieConsent')==='accepted')alLoadGA();}catch(e){}</script>
+<style id="al-clean-nav">
+.al-soc{width:36px!important;height:36px!important;border-radius:999px!important;background:transparent!important;color:#6b6259!important;border:1px solid #E6DCCB!important;box-shadow:none!important;display:inline-flex!important;align-items:center;justify-content:center}
+.al-soc:hover{color:#8A5A2B!important;border-color:#C9A55A!important;background:#FBF7F0!important}
+.al-tour-btn{align-items:center;border:1px solid #C9A55A;color:#8A5A2B;font-weight:600;font-size:14px;padding:7px 16px;border-radius:999px;text-decoration:none;white-space:nowrap;transition:background .2s}
+.al-tour-btn:hover{background:#C9A55A;color:#221F1C}
+</style>
 </head>
 <body class="bg-[#fafafa] text-neutral-800 antialiased min-h-screen flex flex-col justify-between">
 
@@ -761,16 +767,15 @@ try{if(localStorage.getItem('angkorLensCookieConsent')==='accepted')alLoadGA();}
             <!-- Desktop Nav -->
             <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-neutral-600">
                 <div class="angkor-nav-item">
-                    <button type="button" class="angkor-nav-trigger">Angkor <span class="chevron">⌄</span></button>
+                    <button type="button" class="angkor-nav-trigger">Temples <span class="chevron">⌄</span></button>
                     <div class="angkor-dropdown">
                         <span class="dropdown-label">Explore Angkor</span>
                         <a href="/temples.html">All temple guides (122)</a>
                         <a href="#top100TestSection" onclick="openTempleFromIndex('Top 37 Ancient Sites');return true;">Top 37 Ancient Sites</a>
                     </div>
                 </div>
-                <a href="#heritage" class="hover:text-cyan-600 transition nav-image-link">
-                    <img loading="lazy" src="https://wsrv.nl/?url=https%3A%2F%2Fwww.angkorlens.com%2FIMG_0713.JPG&w=900&q=75&output=jpg" alt="" class="nav-mini-icon">
-                    <span>Khmer Heritage</span>
+                <a href="#heritage" class="hover:text-cyan-600 transition" title="Khmer Heritage">
+                    <span>Heritage</span>
                 </a>
                 <a href="#khmer-life" class="hover:text-cyan-600 transition">Khmer Life</a>
                 <div class="angkor-nav-item">
@@ -794,16 +799,17 @@ try{if(localStorage.getItem('angkorLensCookieConsent')==='accepted')alLoadGA();}
 
             <div class="flex items-center space-x-3">
                 <div class="hidden sm:flex items-center space-x-3">
-                    <a href="https://www.youtube.com/@Urbanwalkstudio" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-red-600 text-white flex items-center justify-center hover:bg-red-700 transition shadow-sm" title="YouTube: Urban walk studio">
+                    <a href="https://www.youtube.com/@Urbanwalkstudio" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full al-soc flex items-center justify-center transition" title="YouTube: Urban walk studio">
                         <i class="fa-brands fa-youtube text-sm"></i>
                     </a>
-                    <a href="https://www.facebook.com/UrbanExplorer4K" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-blue-600 text-white flex items-center justify-center hover:bg-blue-700 transition shadow-sm" title="Facebook Page: Urban Explorer 4K">
+                    <a href="https://www.facebook.com/UrbanExplorer4K" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full al-soc flex items-center justify-center transition" title="Facebook Page: Urban Explorer 4K">
                         <i class="fa-brands fa-facebook-f text-sm"></i>
                     </a>
-                    <a href="https://www.instagram.com/samnang_2022" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-gradient-to-tr from-yellow-500 via-pink-600 to-purple-700 text-white flex items-center justify-center hover:opacity-90 transition shadow-sm" title="Instagram: samnang_2022">
+                    <a href="https://www.instagram.com/samnang_2022" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full al-soc flex items-center justify-center transition" title="Instagram: samnang_2022">
                         <i class="fa-brands fa-instagram text-sm"></i>
                     </a>
-                    <button type="button" class="angkor-newsletter-icon" onclick="openNewsletterIfNeeded()" title="AngkorLens Newsletter" aria-label="Open AngkorLens Newsletter"><i class="fa-regular fa-envelope text-sm"></i></button>
+                    <button type="button" class="angkor-newsletter-icon al-soc" onclick="openNewsletterIfNeeded()" title="AngkorLens Newsletter" aria-label="Open AngkorLens Newsletter"><i class="fa-regular fa-envelope text-sm"></i></button>
+                    <a href="#tours" class="al-tour-btn hidden lg:inline-flex">Book a tour</a>
                 </div>
                 <!-- Mobile Menu Button -->
                 <button onclick="toggleMobileMenu()" class="md:hidden text-neutral-700 hover:text-cyan-600 text-xl p-2 cursor-pointer">
@@ -823,8 +829,7 @@ try{if(localStorage.getItem('angkorLensCookieConsent')==='accepted')alLoadGA();}
                     <a href="#top100TestSection" onclick="openTempleFromIndex('Top 37 Ancient Sites');return true;" class="block py-1">» Top 37 Ancient Sites</a>
                 </div>
             </details>
-            <a href="#heritage" class="block text-neutral-600 hover:text-cyan-600 font-medium py-1 nav-image-link">
-                <img loading="lazy" src="https://wsrv.nl/?url=https%3A%2F%2Fwww.angkorlens.com%2FIMG_0713.JPG&w=900&q=75&output=jpg" alt="" class="nav-mini-icon">
+            <a href="#heritage" class="block text-neutral-600 hover:text-cyan-600 font-medium py-1">
                 <span>Khmer Heritage</span>
             </a>
             <a href="#khmer-life" class="block text-neutral-600 hover:text-cyan-600 font-medium py-1">Khmer Life</a>
