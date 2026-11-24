@@ -1229,19 +1229,19 @@ A.tonlesap={n:10,t:'Life on the Tonle Sap',km:'ជីវិតលើបឹងទ
 
             <div id="temple-groups" class="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <article class="bg-white rounded-3xl border border-neutral-100 shadow-sm overflow-hidden hover:shadow-lg transition">
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 p-4">
+  <div class="grid grid-cols-2 gap-2 p-2 md:gap-6 md:p-4">
     <div class="text-left">
       <img src="al-feature-angkor-wat.jpg" alt="Angkor Wat / អង្គរវត្ត" class="w-full h-[520px] md:h-[700px] object-cover rounded-3xl shadow-md" loading="lazy" decoding="async">
       <div class="pt-4 px-1">
         <p class="text-xs font-bold uppercase tracking-wider text-cyan-600 mb-1">Featured Temple</p>
-        <button type="button" class="featured-temple-name-btn text-2xl md:text-3xl font-bold text-neutral-900 hover:text-cyan-600 transition text-left p-0 bg-transparent border-0 cursor-pointer" data-featured-key="angkor-wat">Angkor Wat / អង្គរវត្ត</button>
+        <button type="button" class="featured-temple-name-btn text-xl md:text-3xl font-bold text-neutral-900 hover:text-cyan-600 transition text-left p-0 bg-transparent border-0 cursor-pointer" data-featured-key="angkor-wat">Angkor Wat / អង្គរវត្ត</button>
       </div>
     </div>
     <div class="text-left">
       <img src="al-feature-ta-prohm.jpg" alt="Ta Prohm / ប្រាសាទតាព្រហ្ម" class="w-full h-[520px] md:h-[700px] object-cover rounded-3xl shadow-md" loading="lazy" decoding="async">
       <div class="pt-4 px-1">
         <p class="text-xs font-bold uppercase tracking-wider text-cyan-600 mb-1">Featured Temple</p>
-        <button type="button" class="featured-temple-name-btn text-2xl md:text-3xl font-bold text-neutral-900 hover:text-cyan-600 transition text-left p-0 bg-transparent border-0 cursor-pointer" data-featured-key="ta-prohm">Ta Prohm / ប្រាសាទតាព្រហ្ម</button>
+        <button type="button" class="featured-temple-name-btn text-xl md:text-3xl font-bold text-neutral-900 hover:text-cyan-600 transition text-left p-0 bg-transparent border-0 cursor-pointer" data-featured-key="ta-prohm">Ta Prohm / ប្រាសាទតាព្រហ្ម</button>
       </div>
     </div>
   </div>
@@ -5158,6 +5158,20 @@ function openAddedBottomPhoto(dataUri){
 .al-book-btn-alt{background:transparent;color:#E2C98F;border:1px solid #C9A55A}
 .al-book-btn-alt:hover{background:#3B352F}
 .al-books-note{color:#9E958A;font-size:13px;margin:28px 0 0}
+@media (max-width:640px){
+.al-books{padding:48px 12px}
+.al-books-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.al-book{border-radius:16px}
+.al-book-cover{padding:14px 12px 0}
+.al-book-cover img{width:82%;max-height:210px!important}
+.al-book-body{padding:22px 12px 14px}
+.al-book-sub{font-size:10px;letter-spacing:.08em}
+.al-book h3{font-size:16px}
+.al-book-km{font-size:13px}
+.al-book-desc{font-size:12.5px;line-height:1.5}
+.al-book-btns{gap:6px}
+.al-book-btn{font-size:12px;padding:8px 11px}
+}
 </style>
 <section id="books" class="al-books" aria-label="Books by Samnang Loy">
   <div class="al-books-inner">
