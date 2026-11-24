@@ -7,6 +7,7 @@ Temples for AngkorLens Book 4: new temples 41–80 added to angkorlens.com (40 t
 | 1 | Prasat Chrung Southeast | ប្រាសាទជ្រុង-អាគ្នេយ៍ | 21 Nov 2026 | 14 (cover = full tower, blue sky, polished; second tower view zoomed on the top; two similar lotus devatas → 2nd zoomed on face; door frame views, stele pavilion, devata walls, headless figures; strong greens reduced) | /temple-prasat-chrung-southeast.html | Late 12th c., Jayavarman VII, Bayon style; best preserved of the 4 corner shrines (APSARA). Stele K.597. |
 | 2 | Gate of the Dead | ខ្លោងទ្វារខ្មោច | 24 Nov 2026 | 13 (cover = full gate front, polished; side face tower + elephants; elephant trunks close-up; face towers through leaves; face close-ups getting closer; tree + face; strong greens reduced; 24 Nov: photos 2 (road to the gate) and 3 (gate behind leaves) re-edited professionally → sf-gatedead-2b/3b) | /temple-gate-of-the-dead.html | Angkor Thom East Gate; late 12th c., Jayavarman VII, Bayon style; name origin uncertain. |
 | 3 | Prasat Daun Chan (Hospital Chapel) | ប្រាសាទដូនចាន់ | 24 Nov 2026 | 10 (cover = shrine with tree and wooden door frame, polished; shrine views; collapsed doorway + zoom; wall with tree; laterite gopura window; site view; enclosure wall; carved fragment (soft focus); greens reduced) | /temple-prasat-daun-chan.html | Hospital chapel attributed to Jayavarman VII (by plan, no inscription). |
+| 4 | Spean Thma (Spean Thmor) | ស្ពានថ្ម | 24 Nov 2026 | 6 (cover = wide view of the arches with tree on top, polished; tall tree view; side view; path through an arch; arch close-up; tree gripping stones; greens reduced) | /temple-spean-thma.html | Stone bridge of reused blocks; date disputed (15th/16th/17th c.). |
 
 ## Notes
 
@@ -31,3 +32,13 @@ Temples for AngkorLens Book 4: new temples 41–80 added to angkorlens.com (40 t
 - 102 hospitals: Tourism Cambodia (Chapel of the Hospital page).
 - NOT on page: helloangkor says "around 400 m SW of the western entrance of Beng Mealea", but the owner's pin is ~1.3 km west of Beng Mealea's west side — conflict, so the page only says "west of Beng Mealea".
 - Wooden door frames: from owner's photos only.
+
+### 4. Spean Thma (ស្ពានថ្ម)
+- Location: owner's Google Maps pin 13.446191, 103.8795661 (13°26'46.3"N 103°52'46.4"E). ~200 m east of Thommanon (Lonely Planet, Tourism Cambodia, Angkor Guide).
+- Wikipedia (Rooney 2005 p.313): former course of Siem Reap River between Angkor Thom and East Baray; probably rebuilt after the Khmer period (~15th c.), reused sandstone blocks; 14 arches 1.10 m wide.
+- Angkor Guide (Glaize): piers 1.60 m; cleared by H. Marchal 1920; bridge about twice as wide as the river.
+- helloangkor HA11676: IK 491, MH 381 (1926 "ruined bridge"), CISARK 392; blocks with Bayon-era carving; helloangkor gives "17th century".
+- Penang travel tips: "16th century". Phnom Penh Post: "originally constructed in Angkorian times". → Date conflict; page says sources disagree.
+- National Geographic (Dan Penny): eastern end destroyed; floods; river went around the bridge.
+- Ta Keo nursery waterwheel nearby (Phnom Penh Post, helloangkor).
+- Lonely Planet says "an arch and several piers remain" vs. 14 arches elsewhere — page says "the remains show 14 arches" (Glaize/Wikipedia).
