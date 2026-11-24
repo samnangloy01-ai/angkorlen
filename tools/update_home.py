@@ -23,13 +23,65 @@ STYLE='''<style>
 </style>
 '''
 books=[d[i:i+PER_BOOK] for i in range(0,len(d),PER_BOOK)]
-rows=STYLE
+COLL=['collection-explore.html','collection-favorite.html']
+def collpage(k):  # newest book first: 0 = explore, 1 = favorite, 2+ = more
+    j=len(books)-1-k
+    return COLL[j] if j<len(COLL) else f'collection-book{FIRST_BOOK+k}.html'
+def blurb(e):
+    t=re.sub(r'<[^>]+>',' ',e['h'].split('<hr')[0]); t=re.sub(r'\s+',' ',t).strip()
+    t=t[len(e['name']):].strip() if t.startswith(e['name']) else t
+    m=re.match(r'(.{40,170}?[.!?])\s',t+' '); t=m.group(1) if m else t[:150].rsplit(' ',1)[0]+'…'
+    return t
+def fcard(e): return (f'<a class="alfx-c" href="/temple-{e["slug"]}.html"><span class="alfx-i"><img loading="lazy" decoding="async" src="{im(e["i"][0],700)}" alt="{html.escape(e["name"])}"></span>'
+    f'<b>{html.escape(e["name"])}</b><i>{html.escape(e["km"])}</i><span class="alrow-p">{PIN}{html.escape(loc(e))}</span><p>{html.escape(blurb(e))}</p></a>')
+FSTYLE='''<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<style>
+.alfx{max-width:1280px;margin:0 auto;padding:56px 24px 40px;display:grid;grid-template-columns:minmax(260px,.9fr) 2.1fr;gap:40px;align-items:start}
+.alfx-l .eb{font-size:14px;font-weight:800;letter-spacing:.18em;color:#3f7a3a;text-transform:uppercase;margin:6px 0 10px}
+.alfx-l h2{margin:0;line-height:1.02}
+.alfx-l h2 .t1{display:block;font-size:clamp(40px,4.6vw,64px);font-weight:900;color:#1d1b19;letter-spacing:-.02em}
+.alfx-l h2 .t2{display:block;font-family:Pacifico,'Brush Script MT',cursive;font-weight:400;font-size:clamp(36px,4.2vw,58px);color:#c8452c;margin-top:4px}
+.alfx-l .kmt{font-family:'Noto Serif Khmer','Khmer OS',serif;color:#7A5A1E;font-size:18px;margin:12px 0 0}
+.alfx-l .ds{font-size:18px;line-height:1.65;color:#3a3633;margin:18px 0 24px}
+.alfx-btn{display:inline-block;background:#24485c;color:#fff;font-weight:800;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;padding:16px 30px;border-radius:4px}
+.alfx-btn:hover{background:#1a3747}
+.alfx-r{position:relative;min-width:0}
+.alfx-s{display:flex;gap:28px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:6px 4px 10px}
+.alfx-s::-webkit-scrollbar{display:none}
+.alfx-c{flex:0 0 min(320px,78vw);scroll-snap-align:start;text-decoration:none;color:#221F1C}
+.alfx-i{display:block;aspect-ratio:1/1;overflow:hidden;background:#e8e0d2;position:relative}
+.alfx-i img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s}
+.alfx-i:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,170,120,.10),rgba(140,60,40,.12))}
+.alfx-c:first-child .alfx-i{transform:rotate(-3deg);margin:8px 6px 4px}
+.alfx-c:hover .alfx-i img{transform:scale(1.04)}
+.alfx-c b{display:block;font-size:26px;font-weight:900;line-height:1.15;margin-top:18px;letter-spacing:-.01em}
+.alfx-c:hover b{color:#c8452c;text-decoration:underline}
+.alfx-c i{display:block;font-style:normal;font-family:'Noto Serif Khmer','Khmer OS',serif;color:#7A5A1E;font-size:15px;margin-top:4px}
+.alfx-c p{font-size:16px;line-height:1.6;color:#3a3633;margin:12px 0 0}
+.alfx-a{position:absolute;left:-26px;top:40px;display:flex;flex-direction:column;gap:6px;z-index:3}
+.alfx-a button{width:52px;height:52px;border:0;background:#b9d7e6;color:#24485c;font-size:22px;cursor:pointer;border-radius:2px}
+.alfx-a button:disabled{opacity:.45;cursor:default}
+@media(max-width:860px){.alfx{grid-template-columns:1fr;gap:24px;padding-top:36px}.alfx-a{display:none}.alfx-c:first-child .alfx-i{transform:none;margin:0}}
+</style>
+'''
+rows=STYLE+FSTYLE
 for k in range(len(books)-1,-1,-1):
     b=books[k]; no=FIRST_BOOK+k; n=len(b)
     sid='new-temples' if k==len(books)-1 else f'new-temples-book{no}'
     t=TITLES[len(books)-1-k] if len(books)-1-k < len(TITLES) else 'More temples · ប្រាសាទផ្សេងទៀត'
+    cp=collpage(k)
+    if k==len(books)-1:
+        rows+=(f'<div style="background:#fff;width:100%"><section class="alfx" id="{sid}" aria-label="Explore our temple collection">\n'
+               ' <div class="alfx-l"><p class="eb">The collection · ទើបបន្ថែមថ្មី</p>'
+               '<h2><span class="t1">Explore our</span><span class="t2">Temple Collection</span></h2>'
+               '<p class="kmt">ស្វែងរកបណ្តុំប្រាសាទរបស់យើង</p>'
+               '<p class="ds">From hidden brick towers in the forest to bridges and gates of the Khmer Empire, these are the newest temples I have photographed and written about. Each one has its history in English and Khmer, photos and a GPS map.</p>'
+               f'<a class="alfx-btn" href="/{cp}">See all ({n}) · មើលទាំងអស់</a></div>\n'
+               ' <div class="alfx-r"><div class="alfx-a"><button type="button" class="r" aria-label="Next">→</button><button type="button" class="l" aria-label="Previous" disabled>←</button></div>\n'
+               '  <div class="alfx-s">'+''.join(fcard(e) for e in reversed(b))+'</div></div>\n</section></div>\n')
+        continue
     rows+=(f'<div style="background:#fafafa;width:100%;padding:1px 0 30px"><section class="alrow" id="{sid}" aria-label="{html.escape(t.split(" · ")[0])}">\n'
-           f' <div class="alrow-h"><h2>{html.escape(t)} ({n})</h2><a href="/temples.html">View all</a></div>\n'
+           f' <div class="alrow-h"><h2>{html.escape(t)} ({n})</h2><a href="/{cp}">View all</a></div>\n'
            ' <div class="alrow-w">\n  <button type="button" class="alrow-b l" aria-label="Scroll left" disabled>‹</button>\n'
            '  <div class="alrow-s">'+''.join(card(e) for e in reversed(b))+'</div>\n'
            '  <button type="button" class="alrow-b r" aria-label="Scroll right">›</button>\n </div>\n</section></div>\n')
@@ -38,7 +90,26 @@ document.querySelectorAll('.alrow-w').forEach(function(w){var s=w.querySelector(
 function pos(){var img=s.querySelector('.alrow-i');if(img){var t=img.offsetHeight/2-28+'px';l.style.top=t;r.style.top=t;}l.disabled=s.scrollLeft<5;r.disabled=s.scrollLeft+s.clientWidth>=s.scrollWidth-5;}
 l.onclick=function(){s.scrollBy({left:-s.clientWidth*0.9,behavior:'smooth'});};r.onclick=function(){s.scrollBy({left:s.clientWidth*0.9,behavior:'smooth'});};
 s.addEventListener('scroll',pos,{passive:true});window.addEventListener('resize',pos);setTimeout(pos,300);pos();});
+document.querySelectorAll('.alfx-r').forEach(function(w){var s=w.querySelector('.alfx-s'),l=w.querySelector('.l'),r=w.querySelector('.r');
+function pos(){l.disabled=s.scrollLeft<5;r.disabled=s.scrollLeft+s.clientWidth>=s.scrollWidth-5;}
+l.onclick=function(){s.scrollBy({left:-s.clientWidth*0.8,behavior:'smooth'});};r.onclick=function(){s.scrollBy({left:s.clientWidth*0.8,behavior:'smooth'});};
+s.addEventListener('scroll',pos,{passive:true});window.addEventListener('resize',pos);setTimeout(pos,300);pos();});
 </script>'''
+# collection pages: built from temples.html (same look), only that collection's temples
+tp=open(R+'temples.html').read()
+allc={m.group(1):m.group(0) for m in re.finditer(r'<a class="c" href="/temple-([a-z0-9-]+)\.html">.*?</a>',tp)}
+CT=[('Explore our temple collection','ស្វែងរកបណ្តុំប្រាសាទរបស់យើង'),('My favorite temple collection','បណ្តុំប្រាសាទដែលខ្ញុំចូលចិត្ត')]
+for k in range(len(books)):
+    b=books[k]; j=len(books)-1-k; en,kmT=CT[j] if j<len(CT) else ('More temples','ប្រាសាទផ្សេងទៀត')
+    cards=''.join(allc[e['slug']] for e in reversed(b) if e['slug'] in allc)
+    pg=tp
+    pg=re.sub(r'<title>.*?</title>',f'<title>{en} – {len(b)} Khmer Temples | AngkorLens</title>',pg,1)
+    pg=re.sub(r'<link rel="canonical" href="[^"]*">',f'<link rel="canonical" href="https://www.angkorlens.com/{collpage(k)}">',pg,1)
+    pg=re.sub(r'<meta name="description" content="[^"]*">',f'<meta name="description" content="{en}: {len(b)} Khmer temples photographed by AngkorLens, with history in English and Khmer.">',pg,1)
+    pg=re.sub(r'<p class="crumb">.*?</p>',f'<p class="crumb"><a href="/">Home</a> › <a href="/temples.html">Temple guides</a> › {en}</p>',pg,1)
+    pg=re.sub(r'<h1>.*?</h1><p class="km">.*?</p><p class="sub">.*?</p>',f'<h1>{en}</h1><p class="km">{kmT}</p><p class="sub">{len(b)} temples · <a href="/temples.html">See all temples</a></p>',pg,1)
+    pg=re.sub(r'<div class="list">.*?</div></main>','<div class="list">'+cards.replace('\\','\\\\')+'</div></main>',pg,1,flags=re.S)
+    open(R+collpage(k),'w').write(pg)
 f=R+'index.html'; s=open(f).read()
 i=s.index('<!--NEWROWS-->')+14; j=s.index('<!--/NEWROWS-->'); s=s[:i]+rows+s[j:]
 n=len(glob.glob(R+'temple-*.html'))
