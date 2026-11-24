@@ -30,6 +30,7 @@ def collpage(k):  # newest book first: 0 = explore, 1 = favorite, 2+ = more
 def blurb(e):
     t=re.sub(r'<[^>]+>',' ',e['h'].split('<hr')[0]); t=re.sub(r'\s+',' ',t).strip()
     t=t[len(e['name']):].strip() if t.startswith(e['name']) else t
+    t=re.sub(r'^\([^)]*\)\s*','',t)  # drop a "(Other name)" left over from the heading
     m=re.match(r'(.{40,170}?[.!?])\s',t+' '); t=m.group(1) if m else t[:150].rsplit(' ',1)[0]+'…'
     return t
 def fcard(e): return (f'<a class="alfx-c" href="/temple-{e["slug"]}.html"><span class="alfx-i"><img loading="lazy" decoding="async" src="{im(e["i"][0],700)}" alt="{html.escape(e["name"])}"></span>'
