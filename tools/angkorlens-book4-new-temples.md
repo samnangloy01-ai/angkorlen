@@ -5,7 +5,7 @@ Temples for AngkorLens Book 4: new temples 41–80 added to angkorlens.com (40 t
 | # | Temple | Khmer | Added | Photos | Web page | History status |
 |---|--------|-------|-------|--------|----------|----------------|
 | 1 | Prasat Chrung Southeast | ប្រាសាទជ្រុង-អាគ្នេយ៍ | 21 Nov 2026 | 14 (cover = full tower, blue sky, polished; second tower view zoomed on the top; two similar lotus devatas → 2nd zoomed on face; door frame views, stele pavilion, devata walls, headless figures; strong greens reduced) | /temple-prasat-chrung-southeast.html | Late 12th c., Jayavarman VII, Bayon style; best preserved of the 4 corner shrines (APSARA). Stele K.597. |
-| 2 | Gate of the Dead | ខ្លោងទ្វារខ្មោច | 24 Nov 2026 | 13 (cover = full gate front, polished; side face tower + elephants; elephant trunks close-up; face towers through leaves; face close-ups getting closer; tree + face; strong greens reduced) | /temple-gate-of-the-dead.html | Angkor Thom East Gate; late 12th c., Jayavarman VII, Bayon style; name origin uncertain. |
+| 2 | Gate of the Dead | ខ្លោងទ្វារខ្មោច | 24 Nov 2026 | 13 (cover = full gate front, polished; side face tower + elephants; elephant trunks close-up; face towers through leaves; face close-ups getting closer; tree + face; strong greens reduced; 24 Nov: photos 2 (road to the gate) and 3 (gate behind leaves) re-edited professionally → sf-gatedead-2b/3b) | /temple-gate-of-the-dead.html | Angkor Thom East Gate; late 12th c., Jayavarman VII, Bayon style; name origin uncertain. |
 
 ## Notes
 
