@@ -52,3 +52,38 @@ out['san-francisco.html']=head('San Francisco Through My Lens – Photos of 15 P
 <p class="sub">{len(SF)} places in San Francisco, California, photographed by Samnang Loy. Tap a place to see its photos and story in English and Khmer.<br>ចុចលើកន្លែងណាមួយ ដើម្បីមើលរូបថត និងរឿងរ៉ាវជាភាសាអង់គ្លេស និងខ្មែរ។</p>
 <div class="list">{cards}</div>
 <a class="cta" href="/">← Back to AngkorLens</a></main><footer>© AngkorLens · Samnang Loy</footer></body></html>'''
+
+# ---- On the way to Reno (photo-card page, like the sftravel "Top 10" row) ----
+ROAD=[('reno-1.jpg','Reno · Nevada','The Reno Arch','ខ្លោងទ្វារ Reno','The famous sign over the street: “The Biggest Little City in the World.”'),
+('road-1.jpg','On the way','High desert hills','ភ្នំវាលខ្សាច់ខ្ពង់រាប','Brown hills, a green golf course, and snowy peaks peeking through the gap.'),
+('road-2.jpg','On the way','Wetlands and a wide sky','វាលភក់ និងមេឃធំទូលាយ','Flat marsh with pools of water, yellow wildflowers and low hills far away.'),
+('road-3.jpg','On the way','A winding mountain road','ផ្លូវភ្នំកោងៗ','Sagebrush slopes, a 35 mph sign and mountains under white clouds.'),
+('road-4.jpg','On the way','Snow-capped mountains','ភ្នំគ្របដោយព្រិល','A long white ridge rising above the town, seen from the highway.'),
+('road-5.jpg','On the way','Ranch land below the peaks','ដីកសិដ្ឋាន ក្រោមកំពូលភ្នំ','Wooden barns, juniper trees and a bright snowy summit.'),
+('road-6.jpg','On the way','City below the mountains','ទីក្រុងនៅជើងភ្នំ','Green neighborhoods spreading out to the foot of the hills.'),
+('road-7.jpg','On the way','Exit 65','ច្រកចេញលេខ ៦៥','A quiet off-ramp lined with pine and eucalyptus trees.'),
+('road-8.jpg','On the way','Down the hill','ចុះពីលើភ្នំ','A 15 mph curve sign, power poles and snowy peaks in the distance.'),
+('road-9.jpg','On the way','Toward Lake Tahoe','ឆ្ពោះទៅបឹង Tahoe','A road sign for South Lake Tahoe below jagged snowy mountains.'),
+('road-10.jpg','On the way','Rolling green hills','ភ្នំបៃតងរលកៗ','Oak trees scattered over grassy hills beside the freeway.'),
+('road-11.jpg','On the way','Green hills over the street','ភ្នំបៃតងពីលើផ្លូវ','Lamp posts, a gas station sign and grassy hills under puffy clouds.'),
+('road-12.jpg','On the way','A row of tall palms','ជួរដើមដូងខ្ពស់ៗ','Skinny palm trees standing high above a green park.'),
+('road-13.jpg','On the way','Golden hills by the freeway','ភ្នំពណ៌មាសក្បែរផ្លូវធំ','Dry golden grass and dark oak trees along the highway.'),
+('road-14.jpg','On the way','Marsh and wind turbines','វាលភក់ និងម៉ាស៊ីនខ្យល់','Wide green wetlands, a strip of water and white wind turbines far away.'),
+('road-15.jpg','On the way','Junction U.S. 50','ផ្លូវប្រសព្វ U.S. 50','A green highway sign, sagebrush and a line of snowy peaks.'),
+('road-16.jpg','On the way','Down into the valley','ចុះទៅជ្រលងភ្នំ','The freeway dropping toward layers of rolling hills and a glimpse of water.')]
+_o=['reno-1.jpg']+[f'road-{n}.jpg' for n in (10,16,13,11,12,2,14,7,1,3,8,4,5,6,9,15)]
+ROAD=sorted(ROAD,key=lambda r:_o.index(r[0]))
+RURL='https://www.angkorlens.com/reno-lake-tahoe.html'; SF_URLS.append(RURL)
+rc=''.join(f'<article class="rc"><figure class="ph"><img loading="lazy" decoding="async" draggable="false" src="{img(f,640)[0]}" alt="{html.escape(t)} – on the way to Reno, photo by Samnang Loy"><span class="wm">© AngkorLens</span></figure><div class="rb"><small>{html.escape(lab)}</small><b>{html.escape(t)}</b><i>{html.escape(k)}</i><p>{html.escape(d)}</p></div></article>' for f,lab,t,k,d in ROAD)
+rd='Photos from the drive to Reno, Nevada by Samnang Loy: wetlands, rolling green hills, high desert, snow-capped mountains and the Reno Arch.'
+rld={"@context":"https://schema.org","@type":"ImageGallery","name":"On the way to Reno","description":rd,"url":RURL,"author":{"@type":"Person","name":"Samnang Loy"}}
+out['reno-lake-tahoe.html']=head('On the Way to Reno & Lake Tahoe – Photos | AngkorLens',rd,RURL,img('reno-1.jpg',1200)[0],rld).replace('<main>','<div class="band"><div class="bi"><p class="crumb"><a href="/">Home</a> › Reno &amp; Lake Tahoe</p><small>ON THE ROAD · តាមផ្លូវ</small><h1>On the way <em>to Reno</em></h1><p class="km2">តាមផ្លូវទៅ Reno រដ្ឋ Nevada</p><p class="bd">Photos from my drive to Reno, Nevada: green and golden hills, open wetlands, high desert and snow-capped mountains. Tap a photo to see it full size.<br>រូបថតតាមផ្លូវទៅ Reno៖ វាលភក់ ភ្នំបៃតង វាលខ្សាច់ និងភ្នំគ្របដោយព្រិល។</p></div></div><main class="rm">',1)+f'''
+<style>.band{{background:#B9532F;color:#fff;padding:34px 16px 120px}}.bi{{max-width:1500px;margin:0 auto}}.band .crumb a{{color:#FBE7C6}}.band small{{letter-spacing:.2em;font-weight:800;font-size:14px}}
+.band h1{{font-family:Georgia,serif;font-size:clamp(34px,6vw,64px);margin:6px 0 4px;color:#fff}}.band h1 em{{display:block;color:#FBE7C6;font-style:italic}}.km2{{color:#FBE7C6;font-size:20px;margin:0 0 10px}}.bd{{max-width:900px;font-size:17px;margin:0}}
+main.rm{{max-width:1500px;margin-top:-100px;padding-top:0}}.rg{{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}}.rc{{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 6px 22px rgba(0,0,0,.12)}}
+.rc img{{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;background:#e8e0d2}}.rb{{padding:12px 16px 18px}}.rb small{{color:#6b625a;letter-spacing:.08em;text-transform:uppercase;font-size:12px;font-weight:700}}
+.rb b{{display:block;font-family:Georgia,serif;font-size:20px;margin:4px 0 0;color:#1f2a44}}.rb i{{display:block;font-style:normal;color:#7A5A1E;font-size:14px}}.rb p{{margin:6px 0 0;color:#4E4740;font-size:15px;line-height:1.5}}
+@media(max-width:900px){{.rg{{grid-template-columns:repeat(2,1fr);gap:12px}}.rb b{{font-size:16px}}.rb p{{font-size:13px}}}}</style>
+<div class="rg">{rc}</div>
+<p class="by" style="margin-top:18px">Photographs by Samnang Loy · AngkorLens. More Reno and Lake Tahoe photos coming soon.</p>
+<a class="cta" href="/">← Back to AngkorLens</a></main><footer>© AngkorLens · Samnang Loy</footer>'''+LB+'</body></html>'
