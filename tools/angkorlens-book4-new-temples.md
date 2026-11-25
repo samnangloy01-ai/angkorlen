@@ -28,6 +28,7 @@ Temples for AngkorLens Book 4: new temples 41–80 added to angkorlens.com (40 t
 | 22 | Prasat Khtum | ប្រាសាទក្ទម្ព | 25 Nov 2026 | 10 of 11 (cover = close view of tower with east door, polished; info-board photo used for facts only, NOT on page; near-duplicate doorway → zoomed on lintel & colonnettes; greens reduced) | /temple-prasat-khtum.html | Koh Ker; 10th c., Jayavarman IV, Shiva (NAPV board) |
 | 23 | Prasat Damrei Kandoeng | ប្រាសាទដំរីកណ្ដឹង | 25 Nov 2026 | 16 (cover = tower front with two elephants, polished; person at left edge cropped out of one photo; near-duplicate tower front → zoomed on tower; near-duplicate elephant → zoomed on head; greens reduced) | /temple-prasat-damrei-kandoeng.html | Koh Ker; 10th c., Jayavarman IV; stone elephants |
 | 24 | Prasat Beng | ប្រាសាទបេង | 25 Nov 2026 | 6 (cover = gopura with pillars, polished; greens reduced; no duplicates) | /temple-prasat-beng.html | Koh Ker; double sanctuary (Monument D); date not given by sources |
+| 25 | Prasat Banteay Pi Choan | ប្រាសាទបន្ទាយពីរជាន់ | 25 Nov 2026 | 18 (sent in two parts; cover = group of laterite towers among trees, no scaffolding, polished; near-duplicate scaffold tower → zoomed on top; near-duplicate pediment → zoomed on right carving; greens reduced) | /temple-prasat-banteay-pi-choan.html | Koh Ker; 937 AD, Jayavarman IV, Brahma (Prajapatishvara) |
 
 ## Notes
 
@@ -218,4 +219,12 @@ Temples for AngkorLens Book 4: new temples 41–80 added to angkorlens.com (40 t
 - helloangkor HA12137 (Plae Beng, ផ្លែបេង): Monument D; IK 275, CISARK 856, MH 256; "another unusual site"; Parmentier 1939: double sanctuary, binary plan, only other example gopura II E of Pr. Khna; sandstone terrace, steps E & W; two altars with three divinities (mortises); whole complex faces W; gopura laterite + sandstone, double entry, ~50 m in front; two cruciform rooms, porticos 8 pillars, baluster windows, curved triangular gables; S wall start never completed; female statue half, lion remains.
 - NOT on page: date, king, dedication (no source gives them); statue details; inventory numbers. Only "Koh Ker = 10th-c. capital" general context.
 - Single main source (Parmentier via helloangkor); no conflicts found.
+
+### 25. Prasat Banteay Pi Choan (ប្រាសាទបន្ទាយពីរជាន់)
+- Location: owner's pin 13.776219, 104.5529413, Koh Ker.
+- Angkor Enterprise: 937 CE, late Jayavarman IV; Prajapatishvara/Brahma; opens toward Prasat Thom (not east); central tower + 8 brick buildings; Hayagriva lintel (rare); Yama on buffalo + Kubera reliefs, later seen at Banteay Srei & Vat Phou; inscriptions on works, construction, donations. (Chen page: equidistant from Prasat Thom.)
+- helloangkor HA11557: 937, Brahma Prajapatishvara; outer laterite wall ~105 m square, gopuras E & W; inner enclosure; central tower laterite; 8 brick towers in octagon facing outward; 2 libraries W; W gopura cruciform, baluster windows; inscriptions K.678–681, K.1300–1308 (K.680 Saka 859); oriented W; ~200 m SE of Rahal; IK 274, CISARK 268, MH 264; old name Dong Kuk.
+- intocambodia: name "the double ramparts".
+- CONFLICT: Hayagriva lintel location (AE: one of surrounding towers; helloangkor: south library W door) → page gives no location. Yama/Kubera "southern/northern" building unclear → no location on page.
+- NOT on page: NAPV 2023 restoration (blog only), Brahma statue size, inscription numbers.
 
