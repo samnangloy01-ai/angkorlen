@@ -16,6 +16,8 @@ Temples for AngkorLens Book 4: new temples 41–80 added to angkorlens.com (40 t
 | 10 | Prasat Reamker (Prasat Dang Tong) | ប្រាសាទរាមកេរ្តិ៍ | 24 Nov 2026 | 13 (cover = doorway under shelter, polished; door close; lintel wide + centre + left; colonnette; interior wall; carved pedestal (3 views); near-duplicate blurry pedestal → zoomed on scroll band; NAPV panel; greens reduced) | /temple-prasat-reamker.html | Koh Ker; before 921 (NAPV panel); Shiva; NAME CONFLICT noted. |
 | 11 | West Prasat Top | ប្រាសាទទាបលិច | 24 Nov 2026 | 7 (cover = central tower with tree, polished; all photos cropped/zoomed to remove blue tarp and crane at owner's request; wide group views; side views; southern sanctuary; greens reduced) | /temple-west-prasat-top.html | Post-Bayon Theravada temple; Yasovarman I inscription; Nara/APSARA restoration. |
 | 12 | Prasat Boeng Khnar (Prasat Khnar & Trapeang Khnar) | ប្រាសាទបឹងខ្នារ | 24 Nov 2026 | 24 (11 more photos added same day incl. linga in water basin + bedrock view; cover = ruined sandstone shrine in forest, polished; second shrine view; near-duplicate → zoomed on stones; carved bedrock: six deities, Shiva on Nandi & hermits, dancing Shiva, moss-covered figures; 4 info-panel photos NOT used, at owner's request) | /temple-prasat-boeng-khnar.html | History ONLY from NAPV panels (owner's request). |
+| 13 | Prasat Trapeang Russei (Kbal Chey · Monument K) | ប្រាសាទត្រពាំងឫស្សី | 25 Nov 2026 | 12 (cover = square sandstone sanctuary in forest, polished; gopura pillar views; wide gopura view + near-duplicate → zoomed on pillars; doorway with steel frame wide + close; near-duplicate → zoomed on baluster window; sanctuary near-duplicate → zoomed on doorway; sanctuary back + near-duplicate → zoomed on upper wall; laterite wall with supports; greens reduced) | /temple-prasat-trapeang-russei.html | Koh Ker; square sandstone sanctuary + cruciform laterite/sandstone gopura (Parmentier 1939); date/king not given by sources |
+| 14 | Laterite Quarry (Khvav) | ការដ្ឋានដាប់ថ្មបាយក្រៀម | 25 Nov 2026 | 14 (cover = straight-cut laterite pit walls, polished; wide quarry views; tall cut wall with blocks on top; person on right cropped out (2 photos); motorbike cropped out; near-duplicate wide view → zoomed on cut blocks; one photo with a standing person kept for scale; greens reduced) | /temple-laterite-quarry-khvav.html | No name/sign/history at site (owner); age unknown; description from photos only |
 
 ## Notes
 
@@ -110,3 +112,20 @@ Temples for AngkorLens Book 4: new temples 41–80 added to angkorlens.com (40 t
 - Location: owner's Google Maps pin 13.7666162, 104.5476318 (13°45'59.8"N 104°32'51.5"E).
 - History from on-site NAPV panels only (owner's request): main panel "Prasat Khnar and Trapeang Khnar (PKK21–PKK20)": 10th c. (921–928), Jayavarman IV, Hinduism; giant linga on pedestal 7 m (pedestal 3 m high, 7 m square; linga 4 m high, 4 m diameter), sandstone pieces; on mound south of Rahal; Trapeang Khnar east with carvings of Iso, Narayan, Navagraha, animals; rainwater → sacred water → Trapeang Khnar → Rahal; idea used at Kulen and Kbal Spean (11th c.). Small panels: Six Deities; Dancing Shiva (8 arms, five powers); Shiva on Nandi and hermits.
 - Name: owner calls it Boeng Khnar; panel says Prasat Khnar. Different from the existing "Khnar Temple" page (Chheb district).
+
+### 13. Prasat Trapeang Russei (ប្រាសាទត្រពាំងឫស្សី)
+- Location: owner's Google Maps pin 13.7910004, 104.5431696 (13°47'27.6"N 104°32'35.4"E), Koh Ker, near Prasat Reamker.
+- helloangkor HA12142 "Kbal Chey" (ក្បាលជ័យ): also Trapeang Russei/Rosei, Monument K, Prasat Kork Khmoach (signpost); MoCFA = Kbal Chey; IK 281, CISARK 861, MH 256 (MH 256 = whole Koh Ker listing) → numbers NOT on page.
+- Square sandstone sanctuary + larger cruciform gopura of laterite & sandstone, ~50 m from sanctuary door (Lajonquière 1902 p.371; Parmentier 1939): laterite walls, opens E & W, wide portico of sandstone pillars in two spans, N/S wings windows with five heavy balusters, sandstone course, very thick gables; door posts/balusters carved, rest unfinished. Only this site and Linga 4 retain gopura.
+- helloangkor also says the site "faces northeast" while Parmentier says the pavilion opens east and west → direction NOT on page.
+- DATE/KING: no source gives a date or king for this temple itself → page only gives Koh Ker capital period (928–944, Jayavarman IV & Harshavarman II, Wikipedia) and UNESCO 2023.
+- Khmer spelling of signpost name "Kork Khmoach" not confirmed for this site → only Latin spelling on page.
+- Metal frames/cables: from owner's photos only.
+- 25 Nov 2026 owner's decision: page now says built 928–944 under Jayavarman IV, faces northeast, and signpost name in Khmer = ប្រាសាទគោកខ្មោច.
+
+### 14. Laterite Quarry (Khvav) (ការដ្ឋានដាប់ថ្មបាយក្រៀម)
+- Location: owner's Google Maps pin 13.452746, 104.468564 (13°27'09.9"N 104°28'06.8"E), Khvav commune, Chi Kraeng, a little north of Spean Khvav.
+- Owner: no name, no sign, no information at the site.
+- No source found for this quarry. Uchida et al. 2020 (Heritage Science, East Royal Road bridges): ancient laterite quarries "have not yet been found"; laterite occurs in many areas along the East Royal Road.
+- Open Development Cambodia lists a modern LATERITE mining concession in Khvav commune, Chi Kraeng → site may be modern or old; page says age not known. NOT called ancient.
+- Laterite properties (soft when damp, hardens in air) = general knowledge; description of pits/blocks from owner's photos.
