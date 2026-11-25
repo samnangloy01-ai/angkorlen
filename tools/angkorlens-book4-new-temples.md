@@ -23,6 +23,7 @@ Temples for AngkorLens Book 4: new temples 41–80 added to angkorlens.com (40 t
 | 17 | Trapeang Lpeou Temple | ប្រាសាទត្រពាំងល្ពៅ | 25 Nov 2026 | 12 (cover = wide site view with propped doorway and brick base, polished; brick tower wall; doorway with lintel; two lintels wide + close; colonnette with props (pink lens blur at bottom cropped); colonnette close; inscribed door frame + near-duplicate → zoomed on inscription text; fallen colonnette in grass; greens reduced) | /temple-trapeang-lpeou-temple.html | 10th c., 944–968 Rajendravarman II (APSARA); restoration 2022–23 |
 | 18 | Krol Romeas | ក្រោលរមាស | 25 Nov 2026 | 7 (cover = mossy laterite wall in forest; wall behind big tree; full-height tree roots over wall; wide roots; sunlit wall; gap in wall; wall with trees; greens reduced lightly) | /temple-krol-romeas.html | Purpose uncertain (elephant kraal / bathing / hydraulic); no date given |
 | 19 | Prasat Prei (Prei Temple) | ប្រាសាទប្រី | 25 Nov 2026 | 19 (cover = tower with wooden support frame, polished; near-duplicate devata corner → zoomed on devata; greens reduced lightly) | /temple-prasat-prei.html | Late 12th–early 13th c., Jayavarman VII, Bayon style, Buddhist |
+| 20 | Prasat Krachap | ប្រាសាទក្រចាប់ | 25 Nov 2026 | 17 (cover = gopura with naga gables; OWNER REMOVED from photo by patch-fill with nearby laterite wall texture, red modern roof cropped; greens reduced; plastic bag / blurry head cropped from 2 photos) | /temple-prasat-krachap.html | Koh Ker; inscription 928 AD, Jayavarman IV donor |
 
 ## Notes
 
@@ -176,3 +177,11 @@ Temples for AngkorLens Book 4: new temples 41–80 added to angkorlens.com (40 t
 - theangkorguide (Dawn Rooney/Glaize text): "forest sanctuary"; late 12th–early 13th c.; Jayavarman VII; Buddhist; cleared H. Mauger 1934; single laterite wall mostly collapsed; laterite+sandstone gopura remains; sandstone sanctuary opening E, 4 upper tiers, restored vestibule; cruciform cella 2.90 m, 3 false doors; devatas, false windows with lowered blinds; pediments defaced; ruined library S; ox-drawn chariot moved to Bayon storeroom (NOT on page).
 - penang-traveltips says "a pair of laterite towers" → conflicts with sandstone sanctuary (Glaize) and owner's photos → NOT on page.
 - canby: Bayon style, Buddhist, near Neak Pean. nomads/helloangkor: Banteay Prei ~100 m further.
+
+### 20. Prasat Krachap (ប្រាសាទក្រចាប់)
+- Location: owner's pin 13.7822222, 104.5477778, Koh Ker.
+- UNESCO evaluation (whc doc 205732): second largest complex at Koh Ker after Prasat Thom; only temple with causeway to the Rahal.
+- helloangkor HA11558: originally 5 square brick towers on common terrace; Monument E; towers brick, gopuras laterite with sandstone pillars, tiled roofs gone; W gopura jambs/pillars with ~30 inscriptions; K.183 hundreds of lines.
+- Angkor Enterprise: NE corner of Rahal; quincunx, central taller; outer enclosure E/W pavilions vanished (perishable); 38 inscriptions ~1,000 lines, servants' names; one dated 928 CE, Jayavarman IV most eminent donor; deity Tribhuvanadeva (maybe Vishnu); 13 statues stolen.
+- NOT on page: deity name (uncertain "possibly Vishnu"); facing direction (Angkor Enterprise "faces west" while both E and W gopuras described) ; statue names/count (source unclear 3 vs 4); K numbers.
+- Cover: owner asked to remove himself from photo; done by patch-based fill.
