@@ -25,6 +25,7 @@ Temples for AngkorLens Book 4: new temples 41–80 added to angkorlens.com (40 t
 | 19 | Prasat Prei (Prei Temple) | ប្រាសាទប្រី | 25 Nov 2026 | 19 (cover = tower with wooden support frame, polished; near-duplicate devata corner → zoomed on devata; greens reduced lightly) | /temple-prasat-prei.html | Late 12th–early 13th c., Jayavarman VII, Bayon style, Buddhist |
 | 20 | Prasat Krachap | ប្រាសាទក្រចាប់ | 25 Nov 2026 | 17 (cover = gopura with naga gables; OWNER REMOVED from photo by patch-fill with nearby laterite wall texture, red modern roof cropped; greens reduced; plastic bag / blurry head cropped from 2 photos) | /temple-prasat-krachap.html | Koh Ker; inscription 928 AD, Jayavarman IV donor |
 | 21 | Prasat Chen | ប្រាសាទចិន | 25 Nov 2026 | 15 of 16 (cover = three towers under blue sky, polished; photo with a person in it (P1014895) left out; near-duplicate angle → zoomed on leaning tower; colonnette close-up zoomed; greens reduced) | /temple-prasat-chen.html | Koh Ker; Vishnu temple of the Trinity; 10th c. |
+| 22 | Prasat Khtum | ប្រាសាទក្ទម្ព | 25 Nov 2026 | 10 of 11 (cover = close view of tower with east door, polished; info-board photo used for facts only, NOT on page; near-duplicate doorway → zoomed on lintel & colonnettes; greens reduced) | /temple-prasat-khtum.html | Koh Ker; 10th c., Jayavarman IV, Shiva (NAPV board) |
 
 ## Notes
 
@@ -194,4 +195,11 @@ Temples for AngkorLens Book 4: new temples 41–80 added to angkorlens.com (40 t
 - helloangkor (chen-pr): 3 laterite towers on terrace, 2 brick libraries, E-oriented; sandstone bases finely carved; central ~7 m, side ~5 m; S tower lintel Garuda between entwined nagas; K.182 on E gopura I (Sanskrit + Khmer), K.1309, K.1310; laterite terrace ~100 m E; IK 271; name from monkey hair "taken for a Chinese style braid" (Parmentier 1939); returns: Duryodhana, Bhima, Balarama 2014, Hanuman 2015, Rama torso 2016 → National Museum.
 - NOT on page: tower sizes (single source); gopura material (helloangkor says brick gopuras, other sources silent); original name "Kry Pati" (intocambodia only); exact return years/names (single source → page says "several returned"); MoCFA text says two Banteay Pi Choan for Brahma and Vishnu → conflicts with UNESCO/Angkor Enterprise; page follows UNESCO/Angkor Enterprise.
 - Vali–Sugriva location: helloangkor notes an old photo showing it at W gopura, but Parmentier and Angkor Enterprise say E → page says E.
+
+### 22. Prasat Khtum (ប្រាសាទក្ទម្ព)
+- Location: owner's pin 13.767967, 104.55002, Koh Ker.
+- NAPV information board on site (©NAPV 2025, PKK18), owner's photo, used for facts only: 10th c.; Jayavarman IV; dedicated to Shiva; laterite on sandstone basement, square, facing east; SE of Rahal; east entrance lintel Indra on three-headed elephant Airavata.
+- helloangkor HA12136: square laterite temple on sandstone base, remains of terrace; opens only to E; sandstone doorframe with decorative columns; very decayed lintel of Indra on Airavata; Prasat Damrei several metres N; Monument C; IK 270, CISARK 855, MH 256.
+- Khmer spelling: owner/board ប្រាសាទក្ទម្ព; helloangkor writes ខ្ទុំ → page uses owner's spelling.
+- Sources agree; no conflicts. Steel cables / wooden props from owner's photos.
 
