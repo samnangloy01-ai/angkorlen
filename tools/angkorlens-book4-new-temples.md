@@ -14,6 +14,7 @@ Temples for AngkorLens Book 4: new temples 41–80 added to angkorlens.com (40 t
 | 8 | Prasat Chamreh (Prasat Op On) | ប្រាសាទចំរេះ | 24 Nov 2026 | 4 (cover = brick tower close, blue sky, polished; side view; near-duplicate → zoomed on upper tiers; tower through trees; greens reduced) | /temple-prasat-chamreh.html | Koh Ker brick tower; date debated (Jayavarman IV or soon after 941). |
 | 9 | Prasat Kravan (Kravan Temple) | ប្រាសាទក្រវ៉ាន់ | 24 Nov 2026 | 15 (cover = five towers with brick path, polished; angle with lions; rear view; central tower front; tower close; door; south-door lintel; two dvarapalas; eight-armed Vishnu wide + close; Vishnu on Garuda; north-tower interior wide; Lakshmi (CA brick visible); standing figure with devotees; greens reduced) | /temple-prasat-kravan.html | 921 AD brick temple with interior brick reliefs of Vishnu and Lakshmi. |
 | 10 | Prasat Reamker (Prasat Dang Tong) | ប្រាសាទរាមកេរ្តិ៍ | 24 Nov 2026 | 13 (cover = doorway under shelter, polished; door close; lintel wide + centre + left; colonnette; interior wall; carved pedestal (3 views); near-duplicate blurry pedestal → zoomed on scroll band; NAPV panel; greens reduced) | /temple-prasat-reamker.html | Koh Ker; before 921 (NAPV panel); Shiva; NAME CONFLICT noted. |
+| 11 | West Prasat Top | ប្រាសាទទាបលិច | 24 Nov 2026 | 7 (cover = central tower with tree, polished; all photos cropped/zoomed to remove blue tarp and crane at owner's request; wide group views; side views; southern sanctuary; greens reduced) | /temple-west-prasat-top.html | Post-Bayon Theravada temple; Yasovarman I inscription; Nara/APSARA restoration. |
 
 ## Notes
 
@@ -92,3 +93,14 @@ Temples for AngkorLens Book 4: new temples 41–80 added to angkorlens.com (40 t
 - IntoCambodia: Reamker is a SEPARATE temple ~80 m north of Dang Tung, only laterite wall + pedestal remain → NAME CONFLICT. Page says sources disagree; inventory numbers NOT on page (unclear which temple).
 - Lintel description (kala, small seated figure, garland) from owner's photos; central figure not identified.
 - Metal shelter and steel frames: from photos only.
+
+### 11. West Prasat Top (ប្រាសាទទាបលិច)
+- Location: owner's Google Maps pin 13.4392, 103.85179 (13°26'21.1"N 103°51'06.4"E).
+- Nara Nabunken leaflet: central + northern + southern sanctuaries, Buddhist terrace east, laterite enclosure + sema stones; one of last Angkor-period monuments; 14th-c. ritual goods, late-14th-c. ceramics; inscription related to Yasovarman I (late 9th c.); survey from 2002; ~40 stones fell May 2008; southern sanctuary 2012–Sep 2015; south stairs of central sanctuary found under southern sanctuary platform.
+- Nabunken report: name means "small temple in the west", not original; ~50 m south of road to West Gate; earth-touching Buddhas on pediments, standing Buddhas on north-sanctuary false doors.
+- APSARA 2024: Nara + APSARA; pink sandstone lintels/pillars; 10th c. origin, annexed 13th–17th c.
+- Canby: 9th–17th c., post-Bayon, Theravada. actionstour: late 13th c.
+- DISTANCE CONFLICT: Nabunken 500 m SW / Angkor Database 250 m SW / APSARA 700 m → page says only "southwest of the Bayon".
+- DATE CONFLICT: page gives range and says sources differ.
+- UCL paper says "Mangalartha or West Prasat Top ... 1295" — Mangalartha is EAST Prasat Top (Nabunken) → NOT used.
+- Khmer name ទាបលិច from Angkor Database ("Prasat Tep Lech, the short temple to the west").
