@@ -18,7 +18,8 @@ Temples for AngkorLens Book 4: new temples 41–80 added to angkorlens.com (40 t
 | 12 | Prasat Boeng Khnar (Prasat Khnar & Trapeang Khnar) | ប្រាសាទបឹងខ្នារ | 24 Nov 2026 | 24 (11 more photos added same day incl. linga in water basin + bedrock view; cover = ruined sandstone shrine in forest, polished; second shrine view; near-duplicate → zoomed on stones; carved bedrock: six deities, Shiva on Nandi & hermits, dancing Shiva, moss-covered figures; 4 info-panel photos NOT used, at owner's request) | /temple-prasat-boeng-khnar.html | History ONLY from NAPV panels (owner's request). |
 | 13 | Prasat Trapeang Russei (Kbal Chey · Monument K) | ប្រាសាទត្រពាំងឫស្សី | 25 Nov 2026 | 12 (cover = square sandstone sanctuary in forest, polished; gopura pillar views; wide gopura view + near-duplicate → zoomed on pillars; doorway with steel frame wide + close; near-duplicate → zoomed on baluster window; sanctuary near-duplicate → zoomed on doorway; sanctuary back + near-duplicate → zoomed on upper wall; laterite wall with supports; greens reduced) | /temple-prasat-trapeang-russei.html | Koh Ker; square sandstone sanctuary + cruciform laterite/sandstone gopura (Parmentier 1939); date/king not given by sources |
 | 14 | Laterite Quarry (Khvav) | ការដ្ឋានដាប់ថ្មបាយក្រៀម | 25 Nov 2026 | 14 (cover = straight-cut laterite pit walls, polished; wide quarry views; tall cut wall with blocks on top; person on right cropped out (2 photos); motorbike cropped out; near-duplicate wide view → zoomed on cut blocks; one photo with a standing person kept for scale; greens reduced) | /temple-laterite-quarry-khvav.html | No name/sign/history at site (owner); age unknown; description from photos only |
-| 15 | Nokor Bachey Temple (Wat Nokor) | ប្រាសាទនគរបាជ័យ | 25 Nov 2026 | 16 (cover = east gopura with sugar palms, polished, bottom trimmed; near-duplicate gopura → zoomed on doorway & lintel; red wheelbarrow cropped out; pediment close-up; central tower views; frangipani views; modern pagoda & stupa views; inscription close-up; greens reduced lightly) | /temple-nokor-bachey-temple.html | Jayavarman VII / Bayon-style dating vs Parmentier earlier start; NO GPS yet (owner did not send map link) |
+| 15 | Nokor Bachey Temple (Wat Nokor) | ប្រាសាទនគរបាជ័យ | 25 Nov 2026 | 16 (cover = east gopura with sugar palms, polished, bottom trimmed; near-duplicate gopura → zoomed on doorway & lintel; red wheelbarrow cropped out; pediment close-up; central tower views; frangipani views; modern pagoda & stupa views; inscription close-up; greens reduced lightly) | /temple-nokor-bachey-temple.html | Jayavarman VII / Bayon-style dating vs Parmentier earlier start; GPS from owner pin added 25 Nov |
+| 16 | Prasat Bei | ប្រាសាទបី | 25 Nov 2026 | 15 (cover = three towers on laterite platform, polished, sky trimmed; wide view; lintel views; near-duplicate door → zoomed on lintel (Indra on Airavata); sideways lintel photo rotated upright; colonnette views; near-duplicate colonnette → zoomed; pedestal inside central tower; corbelled vault looking up; ferns on laterite wall (greens reduced only lightly)) | /temple-prasat-bei.html | Early 10th c., Yasovarman I, Bakheng style; unfinished |
 
 ## Notes
 
@@ -132,7 +133,7 @@ Temples for AngkorLens Book 4: new temples 41–80 added to angkorlens.com (40 t
 - Laterite properties (soft when damp, hardens in air) = general knowledge; description of pits/blocks from owner's photos.
 
 ### 15. Nokor Bachey Temple / Wat Nokor (ប្រាសាទនគរបាជ័យ)
-- Location: ~2 km NW of Kampong Cham town on NR7, Kampong Siem district (Wikipedia). GPS NOT on page yet: waiting for owner's Google Maps pin.
+- Location: ~2 km NW of Kampong Cham town on NR7, Kampong Siem district (Wikipedia). GPS: owner's Google Maps pin 11.9999707, 105.4391395 (11°59'59.9"N 105°26'20.9"E), added 25 Nov 2026.
 - Wikipedia (Banteay Prey Nokor): sandstone + laterite; last years of Jayavarman VII; Bayon motifs, Buddhist pediment scenes; faces east 84.5°; outer laterite wall ~420×370 m; inner ~100×130 m; baray ~950×480 m, 350 m east; largest ancient complex in province; UNESCO Tentative List 1992, withdrawn 2022 (NOT on page).
 - WIKIPEDIA INTERNAL CONFLICT: infobox "11th c., Suryavarman II" vs body "Jayavarman VII" → page uses Jayavarman VII (body + most sources) and does NOT mention Suryavarman II.
 - helloangkor HA20690: Parmentier = begun earlier as Buddhist → Brahmanic → Buddhist; Stern = 12th c., between 1st and 2nd Bayon periods → page states the disagreement. Double galleried enclosure, gopuras, two libraries, cruciform central shrine with stupa roof; K.82 stele 1566 (Pali 24 lines + Khmer 13 lines); K.83 1872; stupa probably later.
@@ -140,3 +141,13 @@ Temples for AngkorLens Book 4: new temples 41–80 added to angkorlens.com (40 t
 - "Black sandstone" (Wikipedia) → NOT on page (contradicts the pinkish stone in photos).
 - Inscription in owner's photo: NOT identified as K.82 → caption only says inscriptions are kept inside.
 - 25 Nov 2026: owner sent new cover photo (GOPR1340: central tower between laterite walls with modern pagoda roof) → sf-nokorbachey-17.jpg, now first; old cover kept as photo 2.
+
+### 16. Prasat Bei (ប្រាសាទបី)
+- Location: owner's Google Maps pin 13.4262158, 103.8566124 (13°25'34.4"N 103°51'23.8"E); matches Wikipedia 13.42611, 103.85639.
+- APSARA: 10th c., Yasovarman I, Bakheng style, three brick towers on common laterite base, dedicated to Shiva, Vishnu, Brahma.
+- Wikipedia (Freeman & Jacques 2003): N–S row, facing east, laterite platform; central tower held a linga; flanking towers reach no higher than doorways; only central & south lintels carved, Indra on Airavata.
+- renown-travel: ~300 m west of South Gate, between Bakheng and the moat; north lintel only rough outline.
+- DEDICATION CONFLICT: APSARA = trinity (Shiva/Vishnu/Brahma) vs actionstour = Shiva only → page follows APSARA and says "according to APSARA".
+- REIGN END CONFLICT: 910 vs c. 915 → no reign dates on page.
+- Platform 24 × 9.6 m (penang-traveltips only, single source) → NOT on page.
+- Tool marks on inner door frames, corbelled vault: from owner's photos.
