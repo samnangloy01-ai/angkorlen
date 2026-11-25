@@ -27,6 +27,7 @@ Temples for AngkorLens Book 4: new temples 41–80 added to angkorlens.com (40 t
 | 21 | Prasat Chen | ប្រាសាទចិន | 25 Nov 2026 | 15 of 16 (cover = three towers under blue sky, polished; photo with a person in it (P1014895) left out; near-duplicate angle → zoomed on leaning tower; colonnette close-up zoomed; greens reduced) | /temple-prasat-chen.html | Koh Ker; Vishnu temple of the Trinity; 10th c. |
 | 22 | Prasat Khtum | ប្រាសាទក្ទម្ព | 25 Nov 2026 | 10 of 11 (cover = close view of tower with east door, polished; info-board photo used for facts only, NOT on page; near-duplicate doorway → zoomed on lintel & colonnettes; greens reduced) | /temple-prasat-khtum.html | Koh Ker; 10th c., Jayavarman IV, Shiva (NAPV board) |
 | 23 | Prasat Damrei Kandoeng | ប្រាសាទដំរីកណ្ដឹង | 25 Nov 2026 | 16 (cover = tower front with two elephants, polished; person at left edge cropped out of one photo; near-duplicate tower front → zoomed on tower; near-duplicate elephant → zoomed on head; greens reduced) | /temple-prasat-damrei-kandoeng.html | Koh Ker; 10th c., Jayavarman IV; stone elephants |
+| 24 | Prasat Beng | ប្រាសាទបេង | 25 Nov 2026 | 6 (cover = gopura with pillars, polished; greens reduced; no duplicates) | /temple-prasat-beng.html | Koh Ker; double sanctuary (Monument D); date not given by sources |
 
 ## Notes
 
@@ -211,4 +212,10 @@ Temples for AngkorLens Book 4: new temples 41–80 added to angkorlens.com (40 t
 - helloangkor HA11553: also Damrei Kandoeng; square brick temple, two brick libraries, laterite enclosure with gopura; elephants in situ with much detail; Khtum along entrance path; Lajonquière: ~1800 m S of SE corner of Rahal, oriented exactly; K.677 on W door of E gopura; IK 269, CISARK 264, MH 260.
 - intocambodia: 10th c., Jayavarman IV, Koh Ker style; name Damrei Chong Kandoeung because elephants have bells; sandstone base with stairs each side; octagonal colonnettes; lintel Indra on 3-headed Airavata; elephants ~2 m at corners facing outward.
 - NOT on page: dedication (intocambodia says Brahma, then Shiva linga → self-contradicting); number of lions ("eight") and elephants; base size 2.5 m / 12 m; rampart 60 x 55 m and "brick rampart" (helloangkor says laterite; owner's photo shows laterite → laterite used); K.677 content (half-brother claim); museum elephants (Lonely Planet text is about the OTHER Prasat Damrei at Preah Khan).
+
+### 24. Prasat Beng (ប្រាសាទបេង)
+- Location: owner's pin 13.7796342, 104.5488416, Koh Ker. On-site sign "ប្រាសាទ បេង / Prasat Beng" (Preah Vihear) visible in owner's photo.
+- helloangkor HA12137 (Plae Beng, ផ្លែបេង): Monument D; IK 275, CISARK 856, MH 256; "another unusual site"; Parmentier 1939: double sanctuary, binary plan, only other example gopura II E of Pr. Khna; sandstone terrace, steps E & W; two altars with three divinities (mortises); whole complex faces W; gopura laterite + sandstone, double entry, ~50 m in front; two cruciform rooms, porticos 8 pillars, baluster windows, curved triangular gables; S wall start never completed; female statue half, lion remains.
+- NOT on page: date, king, dedication (no source gives them); statue details; inventory numbers. Only "Koh Ker = 10th-c. capital" general context.
+- Single main source (Parmentier via helloangkor); no conflicts found.
 
