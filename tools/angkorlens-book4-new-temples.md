@@ -22,6 +22,7 @@ Temples for AngkorLens Book 4: new temples 41–80 added to angkorlens.com (40 t
 | 16 | Prasat Bei | ប្រាសាទបី | 25 Nov 2026 | 15 (cover = three towers on laterite platform, polished, sky trimmed; wide view; lintel views; near-duplicate door → zoomed on lintel (Indra on Airavata); sideways lintel photo rotated upright; colonnette views; near-duplicate colonnette → zoomed; pedestal inside central tower; corbelled vault looking up; ferns on laterite wall (greens reduced only lightly)) | /temple-prasat-bei.html | Early 10th c., Yasovarman I, Bakheng style; unfinished |
 | 17 | Trapeang Lpeou Temple | ប្រាសាទត្រពាំងល្ពៅ | 25 Nov 2026 | 12 (cover = wide site view with propped doorway and brick base, polished; brick tower wall; doorway with lintel; two lintels wide + close; colonnette with props (pink lens blur at bottom cropped); colonnette close; inscribed door frame + near-duplicate → zoomed on inscription text; fallen colonnette in grass; greens reduced) | /temple-trapeang-lpeou-temple.html | 10th c., 944–968 Rajendravarman II (APSARA); restoration 2022–23 |
 | 18 | Krol Romeas | ក្រោលរមាស | 25 Nov 2026 | 7 (cover = mossy laterite wall in forest; wall behind big tree; full-height tree roots over wall; wide roots; sunlit wall; gap in wall; wall with trees; greens reduced lightly) | /temple-krol-romeas.html | Purpose uncertain (elephant kraal / bathing / hydraulic); no date given |
+| 19 | Prasat Prei (Prei Temple) | ប្រាសាទប្រី | 25 Nov 2026 | 19 (cover = tower with wooden support frame, polished; near-duplicate devata corner → zoomed on devata; greens reduced lightly) | /temple-prasat-prei.html | Late 12th–early 13th c., Jayavarman VII, Bayon style, Buddhist |
 
 ## Notes
 
@@ -169,3 +170,9 @@ Temples for AngkorLens Book 4: new temples 41–80 added to angkorlens.com (40 t
 - lucasvarro: arena with thick laterite wall, between N gate of Angkor Thom and W entrance of Preah Khan; name = "park of the rhinoceros".
 - asiaforvisitors: elephant corral most likely; some say baray.
 - DATE/KING: no source → none on page. Size not given by sources → none on page.
+
+### 19. Prasat Prei (ប្រាសាទប្រី)
+- Location: owner's pin 13.4679592, 103.8772442; matches penang-traveltips 13.46771, 103.87714 (Grand Circuit Prasat Prei). NOT the other "Prasat Prei" = Chan Ta Uon (NW of Angkor Thom, helloangkor).
+- theangkorguide (Dawn Rooney/Glaize text): "forest sanctuary"; late 12th–early 13th c.; Jayavarman VII; Buddhist; cleared H. Mauger 1934; single laterite wall mostly collapsed; laterite+sandstone gopura remains; sandstone sanctuary opening E, 4 upper tiers, restored vestibule; cruciform cella 2.90 m, 3 false doors; devatas, false windows with lowered blinds; pediments defaced; ruined library S; ox-drawn chariot moved to Bayon storeroom (NOT on page).
+- penang-traveltips says "a pair of laterite towers" → conflicts with sandstone sanctuary (Glaize) and owner's photos → NOT on page.
+- canby: Bayon style, Buddhist, near Neak Pean. nomads/helloangkor: Banteay Prei ~100 m further.
