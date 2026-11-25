@@ -26,6 +26,7 @@ Temples for AngkorLens Book 4: new temples 41–80 added to angkorlens.com (40 t
 | 20 | Prasat Krachap | ប្រាសាទក្រចាប់ | 25 Nov 2026 | 17 (cover = gopura with naga gables; OWNER REMOVED from photo by patch-fill with nearby laterite wall texture, red modern roof cropped; greens reduced; plastic bag / blurry head cropped from 2 photos) | /temple-prasat-krachap.html | Koh Ker; inscription 928 AD, Jayavarman IV donor |
 | 21 | Prasat Chen | ប្រាសាទចិន | 25 Nov 2026 | 15 of 16 (cover = three towers under blue sky, polished; photo with a person in it (P1014895) left out; near-duplicate angle → zoomed on leaning tower; colonnette close-up zoomed; greens reduced) | /temple-prasat-chen.html | Koh Ker; Vishnu temple of the Trinity; 10th c. |
 | 22 | Prasat Khtum | ប្រាសាទក្ទម្ព | 25 Nov 2026 | 10 of 11 (cover = close view of tower with east door, polished; info-board photo used for facts only, NOT on page; near-duplicate doorway → zoomed on lintel & colonnettes; greens reduced) | /temple-prasat-khtum.html | Koh Ker; 10th c., Jayavarman IV, Shiva (NAPV board) |
+| 23 | Prasat Damrei Kandoeng | ប្រាសាទដំរីកណ្ដឹង | 25 Nov 2026 | 16 (cover = tower front with two elephants, polished; person at left edge cropped out of one photo; near-duplicate tower front → zoomed on tower; near-duplicate elephant → zoomed on head; greens reduced) | /temple-prasat-damrei-kandoeng.html | Koh Ker; 10th c., Jayavarman IV; stone elephants |
 
 ## Notes
 
@@ -202,4 +203,12 @@ Temples for AngkorLens Book 4: new temples 41–80 added to angkorlens.com (40 t
 - helloangkor HA12136: square laterite temple on sandstone base, remains of terrace; opens only to E; sandstone doorframe with decorative columns; very decayed lintel of Indra on Airavata; Prasat Damrei several metres N; Monument C; IK 270, CISARK 855, MH 256.
 - Khmer spelling: owner/board ប្រាសាទក្ទម្ព; helloangkor writes ខ្ទុំ → page uses owner's spelling.
 - Sources agree; no conflicts. Steel cables / wooden props from owner's photos.
+
+### 23. Prasat Damrei Kandoeng (ប្រាសាទដំរីកណ្ដឹង)
+- Location: owner's pin 13.7688441, 104.550038, Koh Ker. Different temple from existing page temple-prasat-damrei-temple.html (Preah Khan Kampong Svay).
+- Owner mentioned an info board, but NO board photo was in the upload → not used.
+- UNESCO evaluation (whc doc 205732): one of the marker temples.
+- helloangkor HA11553: also Damrei Kandoeng; square brick temple, two brick libraries, laterite enclosure with gopura; elephants in situ with much detail; Khtum along entrance path; Lajonquière: ~1800 m S of SE corner of Rahal, oriented exactly; K.677 on W door of E gopura; IK 269, CISARK 264, MH 260.
+- intocambodia: 10th c., Jayavarman IV, Koh Ker style; name Damrei Chong Kandoeung because elephants have bells; sandstone base with stairs each side; octagonal colonnettes; lintel Indra on 3-headed Airavata; elephants ~2 m at corners facing outward.
+- NOT on page: dedication (intocambodia says Brahma, then Shiva linga → self-contradicting); number of lions ("eight") and elephants; base size 2.5 m / 12 m; rampart 60 x 55 m and "brick rampart" (helloangkor says laterite; owner's photo shows laterite → laterite used); K.677 content (half-brother claim); museum elephants (Lonely Planet text is about the OTHER Prasat Damrei at Preah Khan).
 
