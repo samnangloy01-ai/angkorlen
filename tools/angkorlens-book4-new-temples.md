@@ -12,6 +12,7 @@ Temples for AngkorLens Book 4: new temples 41–80 added to angkorlens.com (40 t
 | 6 | Ta Kav Gate (West Gate of Angkor Thom) | ខ្លោងទ្វារតាកៅ | 24 Nov 2026 | 7 (cover = gate in golden sunset light, polished; golden face close-up; road with visitors and giants; headless giant with gate; restored face tower (wide + close); giant head silhouette over the moat at dusk; warm colours kept, greens reduced on daytime photos) | /temple-ta-kav-gate.html | West gate of Angkor Thom; restored by APSARA, completed Feb 2023. |
 | 7 | Spean Khvav (Ancient Bridge) | ស្ពានខ្វាវ | 24 Nov 2026 | 9 (cover = side view of arches over water, polished; second arch view; north side with fallen balustrade; near-duplicate → zoomed on piers and log; naga headpiece with red cloth (2 views); naga headpiece close; seated figure close-ups; greens reduced) | /temple-spean-khvav.html | Laterite bridge on the East Royal Road; 12th c. (Wikipedia list). |
 | 8 | Prasat Chamreh (Prasat Op On) | ប្រាសាទចំរេះ | 24 Nov 2026 | 4 (cover = brick tower close, blue sky, polished; side view; near-duplicate → zoomed on upper tiers; tower through trees; greens reduced) | /temple-prasat-chamreh.html | Koh Ker brick tower; date debated (Jayavarman IV or soon after 941). |
+| 9 | Prasat Kravan (Kravan Temple) | ប្រាសាទក្រវ៉ាន់ | 24 Nov 2026 | 15 (cover = five towers with brick path, polished; angle with lions; rear view; central tower front; tower close; door; south-door lintel; two dvarapalas; eight-armed Vishnu wide + close; Vishnu on Garuda; north-tower interior wide; Lakshmi (CA brick visible); standing figure with devotees; greens reduced) | /temple-prasat-kravan.html | 921 AD brick temple with interior brick reliefs of Vishnu and Lakshmi. |
 
 ## Notes
 
@@ -73,3 +74,12 @@ Temples for AngkorLens Book 4: new temples 41–80 added to angkorlens.com (40 t
 - kingjayavarmanvii blog: lintel damaged, two blocks; scholars suggest a few years after 941. IntoCambodia: reign of Jayavarman IV; also called "Leak Neang" → DATE CONFLICT noted on page; Leak Neang alias NOT used (confusing with Koh Ker's Prasat Leak Neang).
 - IntoCambodia says "100 m east of Prasat Lom Neang" vs Parmentier 300 m E of Banteay Pir Chan → only Parmentier used.
 - Owner's photos show side/back with false doors; lintel not photographed.
+
+### 9. Prasat Kravan (ប្រាសាទក្រវ៉ាន់)
+- Location: owner's Google Maps pin 13.41974, 103.8998229 (13°25'11.1"N 103°53'59.4"E). Matches Wikipedia (13.41972, 103.89972).
+- APSARA: Vishnu statue dedicated 12 Dec 921 by a court dignitary; moat, small causeway on west; vegetal binder; sandstone only for door frames, lintels, octagonal colonnettes; dvarapalas in niches; EFEO restoration early–mid 1960s.
+- Wikipedia: 921 doorjamb inscription; founders high officials under Harshavarman I OR Ishanavarman II (page says sources disagree); Vishnu on Garuda / Vamana step / eight-armed; Lakshmi in north tower; brick reliefs common in Cham, rare in Khmer; 1930s clearing (Marchal, Trouvé); 1962–66 Groslier, bricks marked "CA".
+- Bluffton (Sullivan): south-portal lintel Vishnu on Garuda with praying figures.
+- RESTORATION DATE CONFLICT: Lonely Planet "partially restored in 1968" vs Wikipedia 1962–66 / APSARA early-to-mid 60s → page says "in the 1960s".
+- Name meaning: Wikipedia "artabotrys odoratissimus" vs common "cardamom" → page EN says "cardamom temple"; KM text omits meaning.
+- "CA" brick visible in owner's Lakshmi-wall photo.
