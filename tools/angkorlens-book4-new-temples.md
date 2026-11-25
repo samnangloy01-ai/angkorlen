@@ -21,6 +21,7 @@ Temples for AngkorLens Book 4: new temples 41–80 added to angkorlens.com (40 t
 | 15 | Nokor Bachey Temple (Wat Nokor) | ប្រាសាទនគរបាជ័យ | 25 Nov 2026 | 16 (cover = east gopura with sugar palms, polished, bottom trimmed; near-duplicate gopura → zoomed on doorway & lintel; red wheelbarrow cropped out; pediment close-up; central tower views; frangipani views; modern pagoda & stupa views; inscription close-up; greens reduced lightly) | /temple-nokor-bachey-temple.html | Jayavarman VII / Bayon-style dating vs Parmentier earlier start; GPS from owner pin added 25 Nov |
 | 16 | Prasat Bei | ប្រាសាទបី | 25 Nov 2026 | 15 (cover = three towers on laterite platform, polished, sky trimmed; wide view; lintel views; near-duplicate door → zoomed on lintel (Indra on Airavata); sideways lintel photo rotated upright; colonnette views; near-duplicate colonnette → zoomed; pedestal inside central tower; corbelled vault looking up; ferns on laterite wall (greens reduced only lightly)) | /temple-prasat-bei.html | Early 10th c., Yasovarman I, Bakheng style; unfinished |
 | 17 | Trapeang Lpeou Temple | ប្រាសាទត្រពាំងល្ពៅ | 25 Nov 2026 | 12 (cover = wide site view with propped doorway and brick base, polished; brick tower wall; doorway with lintel; two lintels wide + close; colonnette with props (pink lens blur at bottom cropped); colonnette close; inscribed door frame + near-duplicate → zoomed on inscription text; fallen colonnette in grass; greens reduced) | /temple-trapeang-lpeou-temple.html | 10th c., 944–968 Rajendravarman II (APSARA); restoration 2022–23 |
+| 18 | Krol Romeas | ក្រោលរមាស | 25 Nov 2026 | 7 (cover = mossy laterite wall in forest; wall behind big tree; full-height tree roots over wall; wide roots; sunlit wall; gap in wall; wall with trees; greens reduced lightly) | /temple-krol-romeas.html | Purpose uncertain (elephant kraal / bathing / hydraulic); no date given |
 
 ## Notes
 
@@ -161,3 +162,10 @@ Temples for AngkorLens Book 4: new temples 41–80 added to angkorlens.com (40 t
 - 2024 restoration (helloangkor) not detailed → page only gives APSARA 2022–23 dates.
 - Inscribed door frame in owner's photo: NOT confirmed as K.690 → page says only that a south-tower door frame carries K.690 (source fact), photo caption not identified.
 - Lintel description from owner's photos; central figure not identified.
+
+### 18. Krol Romeas (ក្រោលរមាស)
+- Location: owner's pin 13.4581766, 103.8635082 → the site north of Angkor Thom (not the East Baray outlet of the same name, HA11694).
+- helloangkor HA12006: Nokor Krau village, Sangkat Nokor Thum; "stone circle"; purpose: elephant pen / bathing / hydraulic, only speculated; also Krol Damrei; IK 471.9, CISARK 723, MH 717, K.714 (1 line, unknown date) → numbers NOT on page.
+- lucasvarro: arena with thick laterite wall, between N gate of Angkor Thom and W entrance of Preah Khan; name = "park of the rhinoceros".
+- asiaforvisitors: elephant corral most likely; some say baray.
+- DATE/KING: no source → none on page. Size not given by sources → none on page.
