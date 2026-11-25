@@ -15,6 +15,7 @@ Temples for AngkorLens Book 4: new temples 41–80 added to angkorlens.com (40 t
 | 9 | Prasat Kravan (Kravan Temple) | ប្រាសាទក្រវ៉ាន់ | 24 Nov 2026 | 15 (cover = five towers with brick path, polished; angle with lions; rear view; central tower front; tower close; door; south-door lintel; two dvarapalas; eight-armed Vishnu wide + close; Vishnu on Garuda; north-tower interior wide; Lakshmi (CA brick visible); standing figure with devotees; greens reduced) | /temple-prasat-kravan.html | 921 AD brick temple with interior brick reliefs of Vishnu and Lakshmi. |
 | 10 | Prasat Reamker (Prasat Dang Tong) | ប្រាសាទរាមកេរ្តិ៍ | 24 Nov 2026 | 13 (cover = doorway under shelter, polished; door close; lintel wide + centre + left; colonnette; interior wall; carved pedestal (3 views); near-duplicate blurry pedestal → zoomed on scroll band; NAPV panel; greens reduced) | /temple-prasat-reamker.html | Koh Ker; before 921 (NAPV panel); Shiva; NAME CONFLICT noted. |
 | 11 | West Prasat Top | ប្រាសាទទាបលិច | 24 Nov 2026 | 7 (cover = central tower with tree, polished; all photos cropped/zoomed to remove blue tarp and crane at owner's request; wide group views; side views; southern sanctuary; greens reduced) | /temple-west-prasat-top.html | Post-Bayon Theravada temple; Yasovarman I inscription; Nara/APSARA restoration. |
+| 12 | Prasat Boeng Khnar (Prasat Khnar & Trapeang Khnar) | ប្រាសាទបឹងខ្នារ | 24 Nov 2026 | 24 (11 more photos added same day incl. linga in water basin + bedrock view; cover = ruined sandstone shrine in forest, polished; second shrine view; near-duplicate → zoomed on stones; carved bedrock: six deities, Shiva on Nandi & hermits, dancing Shiva, moss-covered figures; 4 info-panel photos NOT used, at owner's request) | /temple-prasat-boeng-khnar.html | History ONLY from NAPV panels (owner's request). |
 
 ## Notes
 
@@ -104,3 +105,8 @@ Temples for AngkorLens Book 4: new temples 41–80 added to angkorlens.com (40 t
 - DATE CONFLICT: page gives range and says sources differ.
 - UCL paper says "Mangalartha or West Prasat Top ... 1295" — Mangalartha is EAST Prasat Top (Nabunken) → NOT used.
 - Khmer name ទាបលិច from Angkor Database ("Prasat Tep Lech, the short temple to the west").
+
+### 12. Prasat Boeng Khnar (ប្រាសាទបឹងខ្នារ)
+- Location: owner's Google Maps pin 13.7666162, 104.5476318 (13°45'59.8"N 104°32'51.5"E).
+- History from on-site NAPV panels only (owner's request): main panel "Prasat Khnar and Trapeang Khnar (PKK21–PKK20)": 10th c. (921–928), Jayavarman IV, Hinduism; giant linga on pedestal 7 m (pedestal 3 m high, 7 m square; linga 4 m high, 4 m diameter), sandstone pieces; on mound south of Rahal; Trapeang Khnar east with carvings of Iso, Narayan, Navagraha, animals; rainwater → sacred water → Trapeang Khnar → Rahal; idea used at Kulen and Kbal Spean (11th c.). Small panels: Six Deities; Dancing Shiva (8 arms, five powers); Shiva on Nandi and hermits.
+- Name: owner calls it Boeng Khnar; panel says Prasat Khnar. Different from the existing "Khnar Temple" page (Chheb district).
