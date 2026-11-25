@@ -18,6 +18,7 @@ Temples for AngkorLens Book 4: new temples 41–80 added to angkorlens.com (40 t
 | 12 | Prasat Boeng Khnar (Prasat Khnar & Trapeang Khnar) | ប្រាសាទបឹងខ្នារ | 24 Nov 2026 | 24 (11 more photos added same day incl. linga in water basin + bedrock view; cover = ruined sandstone shrine in forest, polished; second shrine view; near-duplicate → zoomed on stones; carved bedrock: six deities, Shiva on Nandi & hermits, dancing Shiva, moss-covered figures; 4 info-panel photos NOT used, at owner's request) | /temple-prasat-boeng-khnar.html | History ONLY from NAPV panels (owner's request). |
 | 13 | Prasat Trapeang Russei (Kbal Chey · Monument K) | ប្រាសាទត្រពាំងឫស្សី | 25 Nov 2026 | 12 (cover = square sandstone sanctuary in forest, polished; gopura pillar views; wide gopura view + near-duplicate → zoomed on pillars; doorway with steel frame wide + close; near-duplicate → zoomed on baluster window; sanctuary near-duplicate → zoomed on doorway; sanctuary back + near-duplicate → zoomed on upper wall; laterite wall with supports; greens reduced) | /temple-prasat-trapeang-russei.html | Koh Ker; square sandstone sanctuary + cruciform laterite/sandstone gopura (Parmentier 1939); date/king not given by sources |
 | 14 | Laterite Quarry (Khvav) | ការដ្ឋានដាប់ថ្មបាយក្រៀម | 25 Nov 2026 | 14 (cover = straight-cut laterite pit walls, polished; wide quarry views; tall cut wall with blocks on top; person on right cropped out (2 photos); motorbike cropped out; near-duplicate wide view → zoomed on cut blocks; one photo with a standing person kept for scale; greens reduced) | /temple-laterite-quarry-khvav.html | No name/sign/history at site (owner); age unknown; description from photos only |
+| 15 | Nokor Bachey Temple (Wat Nokor) | ប្រាសាទនគរបាជ័យ | 25 Nov 2026 | 16 (cover = east gopura with sugar palms, polished, bottom trimmed; near-duplicate gopura → zoomed on doorway & lintel; red wheelbarrow cropped out; pediment close-up; central tower views; frangipani views; modern pagoda & stupa views; inscription close-up; greens reduced lightly) | /temple-nokor-bachey-temple.html | Jayavarman VII / Bayon-style dating vs Parmentier earlier start; NO GPS yet (owner did not send map link) |
 
 ## Notes
 
@@ -129,3 +130,12 @@ Temples for AngkorLens Book 4: new temples 41–80 added to angkorlens.com (40 t
 - No source found for this quarry. Uchida et al. 2020 (Heritage Science, East Royal Road bridges): ancient laterite quarries "have not yet been found"; laterite occurs in many areas along the East Royal Road.
 - Open Development Cambodia lists a modern LATERITE mining concession in Khvav commune, Chi Kraeng → site may be modern or old; page says age not known. NOT called ancient.
 - Laterite properties (soft when damp, hardens in air) = general knowledge; description of pits/blocks from owner's photos.
+
+### 15. Nokor Bachey Temple / Wat Nokor (ប្រាសាទនគរបាជ័យ)
+- Location: ~2 km NW of Kampong Cham town on NR7, Kampong Siem district (Wikipedia). GPS NOT on page yet: waiting for owner's Google Maps pin.
+- Wikipedia (Banteay Prey Nokor): sandstone + laterite; last years of Jayavarman VII; Bayon motifs, Buddhist pediment scenes; faces east 84.5°; outer laterite wall ~420×370 m; inner ~100×130 m; baray ~950×480 m, 350 m east; largest ancient complex in province; UNESCO Tentative List 1992, withdrawn 2022 (NOT on page).
+- WIKIPEDIA INTERNAL CONFLICT: infobox "11th c., Suryavarman II" vs body "Jayavarman VII" → page uses Jayavarman VII (body + most sources) and does NOT mention Suryavarman II.
+- helloangkor HA20690: Parmentier = begun earlier as Buddhist → Brahmanic → Buddhist; Stern = 12th c., between 1st and 2nd Bayon periods → page states the disagreement. Double galleried enclosure, gopuras, two libraries, cruciform central shrine with stupa roof; K.82 stele 1566 (Pali 24 lines + Khmer 13 lines); K.83 1872; stupa probably later.
+- Legend of the king who killed his father (Phnom Penh Post, Wikipedia) → NOT on page (legend).
+- "Black sandstone" (Wikipedia) → NOT on page (contradicts the pinkish stone in photos).
+- Inscription in owner's photo: NOT identified as K.82 → caption only says inscriptions are kept inside.
