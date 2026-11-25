@@ -118,3 +118,43 @@ s=re.sub(r'Explore \d+ Khmer',f'Explore {n} Khmer',s)
 s=re.sub(r'All temple guides \(\d+\)',f'All temple guides ({n})',s)
 s=re.sub(r'See all \d+ temple',f'See all {n} temple',s)
 open(f,'w').write(s); print('index.html updated, count =',n,'new temples =',len(d),'rows =',len(books))
+
+# ---- homepage search: index of ALL temple pages (English + Khmer), shown as a dropdown under the search box ----
+idx=[]
+thumbs={m.group(1):m.group(2) for m in re.finditer(r'<a class="c" href="/temple-([a-z0-9-]+)\.html"><img[^>]*?src="([^"]+)"',tp)}
+for p in sorted(glob.glob(R+'temple-*.html')):
+    slug=p.split('/temple-')[1][:-5]; t=open(p).read()
+    g=lambda rx:(re.search(rx,t,re.S).group(1) if re.search(rx,t,re.S) else '')
+    name=html.unescape(g(r'<h1>(.*?)</h1>')); km=html.unescape(g(r'<p class="km">(.*?)</p>')); sub=html.unescape(g(r'<p class="sub">(.*?)</p>'))
+    story=re.sub(r'\s+',' ',html.unescape(re.sub(r'<[^>]+>',' ',g(r'<section class="story">(.*?)</section>'))))[:260]
+    idx.append({'u':'/temple-'+slug+'.html','n':name,'k':km,'s':sub if sub!=name else '','t':thumbs.get(slug,''),'x':(slug.replace('-',' ')+' '+story).lower()})
+SJS=('<!--ALSEARCH--><style>#alSR{position:absolute;left:0;right:0;top:100%;margin-top:8px;background:#fff;border-radius:14px;box-shadow:0 18px 40px rgba(0,0,0,.25);'
+ 'text-align:left;max-height:420px;overflow:auto;z-index:60;display:none}#alSR a{display:flex;gap:12px;align-items:center;padding:9px 12px;color:#221F1C;text-decoration:none;border-bottom:1px solid #f1ece4}'
+ '#alSR a:hover,#alSR a.on{background:#FBF7F0}#alSR img{width:56px;height:42px;object-fit:cover;border-radius:8px;flex:none;background:#eee}#alSR b{display:block;font-size:15px}'
+ '#alSR i{display:block;font-style:normal;font-size:13px;color:#8A5A2B}#alSR small{display:block;font-size:12px;color:#8c8478}#alSR .none{padding:14px;color:#8c8478;font-size:14px}'
+ '#alSR .all{display:block;text-align:center;font-weight:600;color:#8A5A2B}</style>'
+ '<script>window.AL_SEARCH='+json.dumps(idx,ensure_ascii=False).replace('</','<\\/')+';'
+ '(function(){var inp=document.getElementById("searchInput");if(!inp)return;var box=inp.parentNode;box.style.position="relative";'
+ 'var r=document.createElement("div");r.id="alSR";box.appendChild(r);var cur=-1,list=[];'
+ 'function norm(s){return(s||"").toLowerCase().replace(/[\\u200b\\u200c\\u200d]/g,"").replace(/\\s+/g," ").trim()}'
+ 'function esc(s){return s.replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;","\\"":"&quot;"}[c]})}'
+ 'function score(e,q){var n=norm(e.n),k=norm(e.k),w=q.split(" "),s=0;for(var i=0;i<w.length;i++){var t=w[i];if(!t)continue;'
+ 'if(n.indexOf(t)==0||k.indexOf(t)==0)s+=5;else if(n.indexOf(t)>=0||k.indexOf(t)>=0)s+=3;else if(norm(e.s).indexOf(t)>=0)s+=2;else if(e.x.indexOf(t)>=0)s+=1;else return 0}return s}'
+ 'function show(){var q=norm(inp.value);cur=-1;if(q.length<1){r.style.display="none";return}'
+ 'list=AL_SEARCH.map(function(e){return[score(e,q),e]}).filter(function(a){return a[0]>0}).sort(function(a,b){return b[0]-a[0]}).map(function(a){return a[1]});'
+ 'var h=list.slice(0,8).map(function(e){return\'<a href="\'+e.u+\'">\'+(e.t?\'<img loading="lazy" src="\'+e.t+\'" alt="">\':"")+\'<span><b>\'+esc(e.n)+\'</b><i>\'+esc(e.k)+\'</i>\'+(e.s?\'<small>\'+esc(e.s)+\'</small>\':"")+\'</span></a>\'}).join("");'
+ 'if(!list.length)h=\'<div class="none">No temple found · រកមិនឃើញប្រាសាទ</div>\';'
+ 'h+=\'<a class="all" href="/temples.html">\'+(list.length>8?("See all "+list.length+" results · "):"")+\'All temples · ប្រាសាទទាំងអស់</a>\';r.innerHTML=h;r.style.display="block"}'
+ 'function mark(){var a=r.querySelectorAll("a");for(var i=0;i<a.length;i++)a[i].classList.toggle("on",i==cur)}'
+ 'inp.addEventListener("input",show);inp.addEventListener("focus",show);'
+ 'inp.addEventListener("keydown",function(ev){var a=r.querySelectorAll("a");if(ev.key=="ArrowDown"){cur=Math.min(cur+1,a.length-1);mark();ev.preventDefault()}'
+ 'else if(ev.key=="ArrowUp"){cur=Math.max(cur-1,0);mark();ev.preventDefault()}else if(ev.key=="Enter"){var t=a[cur>=0?cur:0];if(t&&list.length){location.href=t.href;ev.preventDefault()}}else if(ev.key=="Escape"){r.style.display="none"}});'
+ 'document.addEventListener("click",function(ev){if(!box.contains(ev.target))r.style.display="none"});'
+ 'var btn=box.querySelector("button");if(btn)btn.addEventListener("click",function(){show();if(list.length)location.href=list[0].u})})();</script><!--/ALSEARCH-->')
+s=open(f).read()
+if '<!--ALSEARCH-->' in s:
+    s=s[:s.index('<!--ALSEARCH-->')]+SJS+s[s.index('<!--/ALSEARCH-->')+16:]
+else:
+    s=s.replace('</body>',SJS+'\n</body>',1)
+s=s.replace('placeholder="Search temples, ruins, architecture..."','placeholder="Search a temple · ស្វែងរកប្រាសាទ (e.g. Kravan, ក្រវ៉ាន់, Koh Ker)"')
+open(f,'w').write(s); print('search index:',len(idx),'temples')
