@@ -139,3 +139,4 @@ Temples for AngkorLens Book 4: new temples 41–80 added to angkorlens.com (40 t
 - Legend of the king who killed his father (Phnom Penh Post, Wikipedia) → NOT on page (legend).
 - "Black sandstone" (Wikipedia) → NOT on page (contradicts the pinkish stone in photos).
 - Inscription in owner's photo: NOT identified as K.82 → caption only says inscriptions are kept inside.
+- 25 Nov 2026: owner sent new cover photo (GOPR1340: central tower between laterite walls with modern pagoda roof) → sf-nokorbachey-17.jpg, now first; old cover kept as photo 2.
