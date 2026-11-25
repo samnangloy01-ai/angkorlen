@@ -1,0 +1,488 @@
+[
+ {
+  "key": "goldengate",
+  "slug": "golden-gate-bridge",
+  "name": "The Golden Gate Bridge",
+  "km": "ស្ពានហ្គោលដិនហ្គេត",
+  "sub": "San Francisco · 1937",
+  "n": 17,
+  "facts": [
+   [
+    "Opened",
+    "1937"
+   ],
+   [
+    "From",
+    "San Francisco, California"
+   ],
+   [
+    "Color",
+    "\"International Orange\""
+   ],
+   [
+    "Length",
+    "About 1.7 miles (2.7 km)"
+   ],
+   [
+    "Towers",
+    "746 ft (227 m) high"
+   ]
+  ],
+  "d": [
+   "The Golden Gate Bridge crosses the narrow strait where San Francisco Bay meets the Pacific Ocean. When it opened in 1937 it was the longest suspension bridge in the world.",
+   "I walked around it to find different views: through cypress trees, behind flowers, from the rocky beach, and from Fort Point right under the southern end.",
+   "Its famous red-orange color, called International Orange, was chosen so the bridge stands out in the fog and matches the hills around it.",
+   "Then I crossed to the hills on the north side, the Marin Headlands. From up there you look down on the towers, the traffic and the long shadow of the bridge on the water, with the city behind.",
+   "On a foggy day I went down to the beach below the bridge. Big waves broke white on the black rocks, and the top of the towers disappeared into the cloud."
+  ],
+  "look": "The American flag flying at the Welcome Center viewpoint on the San Francisco side · the two tall towers · the long curving main cables · the steel arch over Fort Point · fog rolling in over the hills.",
+  "dk": [
+   "ស្ពាន Golden Gate ឆ្លងកាត់ច្រកសមុទ្រតូចចង្អៀត ដែលឈូងសមុទ្រ San Francisco ជួបនឹងមហាសមុទ្រប៉ាស៊ីហ្វិក។ ពេលបើកនៅឆ្នាំ ១៩៣៧ វាជាស្ពានព្យួរដែលវែងជាងគេបំផុតក្នុងពិភពលោក។",
+   "ខ្ញុំបានដើរជុំវិញស្ពាន ដើម្បីរកមុំថតផ្សេងៗ៖ តាមចន្លោះដើមស្រល់ ពីក្រោយផ្កា ពីឆ្នេរថ្ម និងពី Fort Point នៅក្រោមចុងខាងត្បូងនៃស្ពាន។",
+   "ពណ៌ក្រហមទឹកក្រូចដ៏ល្បីរបស់វា ហៅថា International Orange ត្រូវបានជ្រើសរើស ដើម្បីឲ្យស្ពានលេចធ្លោក្នុងអ័ព្ទ និងសមនឹងភ្នំជុំវិញ។",
+   "បន្ទាប់មក ខ្ញុំឆ្លងទៅភ្នំខាងជើង គឺ Marin Headlands។ ពីលើនោះ អាចមើលចុះឃើញប៉មស្ពាន ចរាចរណ៍ និងស្រមោលវែងរបស់ស្ពានលើទឹក ដោយមានទីក្រុងនៅខាងក្រោយ។",
+   "នៅថ្ងៃមានអ័ព្ទមួយ ខ្ញុំចុះទៅឆ្នេរនៅក្រោមស្ពាន។ រលកធំៗបោកបាក់ពណ៌សលើថ្មខ្មៅ ហើយកំពូលប៉មស្ពានបាត់ទៅក្នុងពពក។"
+  ],
+  "lk": "ទង់ជាតិអាមេរិកនៅកន្លែងមើលទេសភាព Welcome Center ខាង San Francisco · ប៉មខ្ពស់ទាំងពីរ · ខ្សែកាបធំៗកោងវែង · ធ្នូដែកពីលើ Fort Point · អ័ព្ទរសាត់មកលើភ្នំ។"
+ },
+ {
+  "key": "ferry",
+  "slug": "ferry-building",
+  "name": "Ferry Building & the Embarcadero",
+  "km": "អគារ Ferry Building និងមាត់សមុទ្រ",
+  "sub": "The Embarcadero · 1898",
+  "n": 4,
+  "facts": [
+   [
+    "Opened",
+    "1898"
+   ],
+   [
+    "From",
+    "The Embarcadero, San Francisco"
+   ]
+  ],
+  "d": [
+   "The Ferry Building, with its tall clock tower, stands at the end of Market Street on the bay. Before the bridges were built, most people arrived in San Francisco by ferry here.",
+   "Along the Embarcadero waterfront there are long rows of palm trees, tall office towers, and a giant steel sculpture of a woman standing in front of the clock tower."
+  ],
+  "look": "The clock tower framed by palm trees · the wire-mesh sculpture · the row of palms along the waterfront.",
+  "dk": [
+   "អគារ Ferry Building ដែលមានប៉មនាឡិកាខ្ពស់ ឈរនៅចុងផ្លូវ Market លើមាត់ឈូងសមុទ្រ។ មុនពេលមានស្ពាន មនុស្សភាគច្រើនមកដល់ San Francisco តាមទូកចម្លងនៅទីនេះ។",
+   "តាមបណ្ដោយមាត់សមុទ្រ Embarcadero មានជួរដើមដូងវែងៗ អគារការិយាល័យខ្ពស់ៗ និងរូបចម្លាក់ដែកធំមួយជារូបស្ត្រីឈរ នៅមុខប៉មនាឡិកា។"
+  ],
+  "lk": "ប៉មនាឡិកានៅចន្លោះដើមដូង · រូបចម្លាក់ធ្វើពីសំណាញ់ដែក · ជួរដើមដូងតាមមាត់សមុទ្រ។"
+ },
+ {
+  "key": "lombard",
+  "slug": "lombard-street",
+  "name": "Lombard Street",
+  "km": "ផ្លូវកោងៗ Lombard Street",
+  "sub": "Russian Hill",
+  "n": 8,
+  "facts": [
+   [
+    "Where",
+    "Russian Hill, San Francisco"
+   ],
+   [
+    "Known as",
+    "\"The crookedest street\""
+   ]
+  ],
+  "d": [
+   "Lombard Street is famous for one short block on Russian Hill where the road zig-zags down the steep hill in tight hairpin turns. The brick road is lined with gardens, and in summer the hydrangeas bloom pink, purple and blue.",
+   "Cars go down slowly, one way, while visitors walk the stairs on both sides. From the top you can see far across the city: Coit Tower on Telegraph Hill, the Bay Bridge, and the blue water of the bay."
+  ],
+  "look": "The red brick road and its tight curves · the big hydrangea bushes · Coit Tower on the hill in the distance · the white Bay Bridge tower across the water.",
+  "dk": [
+   "ផ្លូវ Lombard Street ល្បីដោយសារផ្លូវខ្លីមួយកំណាត់លើភ្នំ Russian Hill ដែលផ្លូវកោងចុះពីលើភ្នំចោតជាវេនចង្អៀតៗ។ ផ្លូវឥដ្ឋនេះមានសួនផ្កាតាមសងខាង ហើយនៅរដូវក្ដៅ ផ្កា hydrangea រីកពណ៌ផ្កាឈូក ស្វាយ និងខៀវ។",
+   "ឡានចុះយឺតៗ តែមួយទិស ចំណែកភ្ញៀវដើរតាមជណ្ដើរសងខាង។ ពីលើកំពូល អាចមើលឃើញឆ្ងាយទៅលើទីក្រុង៖ ប៉ម Coit Tower លើភ្នំ Telegraph Hill ស្ពាន Bay Bridge និងទឹកពណ៌ខៀវនៃឈូងសមុទ្រ។"
+  ],
+  "lk": "ផ្លូវឥដ្ឋក្រហម និងវេនកោងចង្អៀត · គុម្ពផ្កា hydrangea ធំៗ · ប៉ម Coit Tower លើភ្នំនៅឆ្ងាយ · ប៉មពណ៌សនៃស្ពាន Bay Bridge ឆ្លងទឹក។"
+ },
+ {
+  "key": "coit",
+  "slug": "coit-tower",
+  "name": "The view from Coit Tower",
+  "km": "ទិដ្ឋភាពពីលើប៉ម Coit Tower",
+  "sub": "Telegraph Hill · 1933",
+  "n": 8,
+  "facts": [
+   [
+    "Where",
+    "Top of Telegraph Hill, San Francisco"
+   ],
+   [
+    "Completed",
+    "1933"
+   ]
+  ],
+  "d": [
+   "Coit Tower is a tall, round white tower on top of Telegraph Hill. From the windows at the very top you can see the whole city and the bay all around you.",
+   "To the west, the Golden Gate Bridge stretches across to the green Marin hills, with Russian Hill and the Fisherman’s Wharf waterfront below. To the north, Alcatraz Island sits in the middle of the bay, with Angel Island behind it.",
+   "To the south, the towers of the Financial District stand close together: the pointed Transamerica Pyramid, the rounded Salesforce Tower, and the Bay Bridge reaching across the water past the Ferry Building clock tower."
+  ],
+  "look": "The Transamerica Pyramid · the Golden Gate Bridge far away with fog on the hills · Alcatraz Island · the Ferris wheel at Fisherman’s Wharf · the round parking circle at the foot of the tower, far below.",
+  "dk": [
+   "ប៉ម Coit Tower គឺជាប៉មមូលពណ៌សខ្ពស់មួយ នៅលើកំពូលភ្នំ Telegraph Hill។ ពីបង្អួចនៅកំពូលបំផុត អាចមើលឃើញទីក្រុងទាំងមូល និងឈូងសមុទ្រជុំវិញខ្លួន។",
+   "ទៅខាងលិច ស្ពាន Golden Gate លាតសន្ធឹងទៅភ្នំពណ៌បៃតង Marin ដោយមានភ្នំ Russian Hill និងមាត់សមុទ្រ Fisherman’s Wharf នៅខាងក្រោម។ ទៅខាងជើង កោះ Alcatraz ស្ថិតនៅកណ្ដាលឈូងសមុទ្រ ដោយមានកោះ Angel Island នៅពីក្រោយ។",
+   "ទៅខាងត្បូង អគារខ្ពស់ៗនៃតំបន់ហិរញ្ញវត្ថុឈរជិតៗគ្នា៖ Transamerica Pyramid ស្រួច Salesforce Tower រាងមូល និងស្ពាន Bay Bridge លាតសន្ធឹងលើទឹកកាត់ប៉មនាឡិកានៃអគារ Ferry Building។"
+  ],
+  "lk": "អគារ Transamerica Pyramid · ស្ពាន Golden Gate នៅឆ្ងាយ ជាមួយអ័ព្ទលើភ្នំ · កោះ Alcatraz · កង់ហ្វឺរីសនៅ Fisherman’s Wharf · រង្វង់ចំណតឡានមូលនៅជើងប៉ម នៅឆ្ងាយខាងក្រោម។"
+ },
+ {
+  "key": "painted",
+  "slug": "painted-ladies",
+  "name": "The Painted Ladies & Victorian houses",
+  "km": "ផ្ទះបុរាណ Victorian",
+  "sub": "Alamo Square",
+  "n": 23,
+  "facts": [
+   [
+    "Where",
+    "Alamo Square & nearby streets"
+   ],
+   [
+    "Style",
+    "Victorian houses, late 1800s"
+   ]
+  ],
+  "d": [
+   "The \"Painted Ladies\" are a famous row of colorful wooden Victorian houses facing Alamo Square park, with the downtown towers rising behind them. It is one of the most photographed views in San Francisco.",
+   "Nearby streets still have many grand old Victorian houses with pointed towers, carved details and bright paint.",
+   "From the top of the park, I framed the houses between the dark cypress trees. Behind the roofs you can see the gold-trimmed dome of City Hall and the downtown towers."
+  ],
+  "look": "The six pastel houses side by side · the green Alamo Square sign · the Transamerica Pyramid and Salesforce Tower rising behind the old roofs · the steep roofs and decorated gables · the round and pointed corner towers.",
+  "dk": [
+   "«Painted Ladies» គឺជាជួរផ្ទះឈើ Victorian ចម្រុះពណ៌ដ៏ល្បី ដែលបែរមុខទៅសួន Alamo Square ហើយមានអគារខ្ពស់ៗនៃកណ្ដាលក្រុងនៅខាងក្រោយ។ វាជាទិដ្ឋភាពមួយដែលគេថតច្រើនជាងគេនៅ San Francisco។",
+   "ផ្លូវក្បែរៗនោះ នៅមានផ្ទះ Victorian ចាស់ៗធំៗជាច្រើន ដែលមានប៉មស្រួច ក្បាច់ឆ្លាក់ និងលាបពណ៌ភ្លឺ។",
+   "ពីលើកំពូលសួន ខ្ញុំថតផ្ទះទាំងនោះនៅចន្លោះដើមស្រល់ពណ៌ខ្មៅ។ នៅពីក្រោយដំបូល អាចមើលឃើញដំបូលមូលមានលម្អពណ៌មាសរបស់សាលាក្រុង និងអគារខ្ពស់ៗកណ្ដាលក្រុង។"
+  ],
+  "lk": "ផ្ទះពណ៌ស្រាលទាំងប្រាំមួយនៅជាប់គ្នា · ស្លាកសញ្ញាពណ៌បៃតង Alamo Square · អគារ Transamerica Pyramid និង Salesforce Tower ឡើងខ្ពស់ពីក្រោយដំបូលចាស់ៗ · ដំបូលស្រួចៗ និងជញ្ជាំងហោជាងមានក្បាច់ · ប៉មជ្រុងរាងមូល និងរាងស្រួច។"
+ },
+ {
+  "key": "hills",
+  "slug": "city-views-from-the-hills",
+  "name": "City views from the hills",
+  "km": "ទិដ្ឋភាពទីក្រុងពីលើភ្នំ",
+  "sub": "Hilltop views",
+  "n": 6,
+  "facts": [
+   [
+    "Where",
+    "Hilltop parks near Buena Vista Park"
+   ],
+   [
+    "Best time",
+    "Clear, sunny mornings"
+   ]
+  ],
+  "d": [
+   "San Francisco is a city of hills. I climbed the rocky hilltop parks in the middle of the city to see the whole skyline at once, from the tall towers of downtown to the houses that cover every hill.",
+   "Wildflowers, old rocks and cypress trees make a beautiful frame for the city below. Some days the fog rolls in from the ocean and covers the far hills."
+  ],
+  "look": "Purple lupine flowers in front of the city · the red and brown rocks · the long straight streets running up and down the hills.",
+  "dk": [
+   "San Francisco ជាទីក្រុងដែលមានភ្នំច្រើន។ ខ្ញុំឡើងទៅសួនកំពូលភ្នំថ្មនៅកណ្ដាលទីក្រុង ដើម្បីមើលទេសភាពទីក្រុងទាំងមូលក្នុងពេលតែមួយ ចាប់ពីអគារខ្ពស់ៗកណ្ដាលក្រុង ដល់ផ្ទះដែលគ្របដណ្ដប់លើភ្នំគ្រប់កន្លែង។",
+   "ផ្កាព្រៃ ថ្មចាស់ៗ និងដើមស្រល់ ធ្វើជាស៊ុមដ៏ស្រស់ស្អាតសម្រាប់ទីក្រុងនៅខាងក្រោម។ ពេលខ្លះ អ័ព្ទរសាត់មកពីមហាសមុទ្រ ហើយគ្របលើភ្នំឆ្ងាយៗ។"
+  ],
+  "lk": "ផ្កា lupine ពណ៌ស្វាយនៅមុខទីក្រុង · ថ្មពណ៌ក្រហម និងត្នោត · ផ្លូវត្រង់វែងៗរត់ឡើងចុះតាមភ្នំ។"
+ },
+ {
+  "key": "chinatown",
+  "slug": "chinatown",
+  "name": "Chinatown: lanterns & murals",
+  "km": "សង្កាត់ចិន ចង្កៀងក្រហម និងគំនូរជញ្ជាំង",
+  "sub": "Grant Avenue",
+  "n": 9,
+  "facts": [
+   [
+    "Where",
+    "Grant Avenue and nearby streets, Chinatown"
+   ],
+   [
+    "Seen",
+    "Red lanterns, dragon street lamps, wall murals"
+   ]
+  ],
+  "d": [
+   "San Francisco’s Chinatown is one of the oldest Chinatowns in North America. Along Grant Avenue, hundreds of red lanterns hang over the street, and the green lamp posts are shaped like small pagodas with dragons and bells.",
+   "The buildings have curved roofs, painted balconies and signs in Chinese and English. Banners across the street announce community festivals and family-association gatherings.",
+   "On the walls of the side streets there are big, colorful murals painted by local artists: a calm Buddha, a dragon, a martial-arts hero, a goddess with a tiger and a peacock."
+  ],
+  "look": "The rows of lanterns going all the way up the hill · the pagoda-shaped lamps with little bells · the festival banners · the dragon, tiger and peacock in the murals.",
+  "dk": [
+   "សង្កាត់ចិននៅ San Francisco គឺជាសង្កាត់ចិនចាស់ជាងគេមួយនៅអាមេរិកខាងជើង។ តាមបណ្ដោយផ្លូវ Grant Avenue មានចង្កៀងក្រហមរាប់រយព្យួរពីលើផ្លូវ ហើយបង្គោលភ្លើងពណ៌បៃតងមានរាងដូចវត្តចិនតូចៗ ដែលមាននាគ និងកណ្ដឹង។",
+   "អគារនានាមានដំបូលកោង រានហាលលាបពណ៌ និងស្លាកសញ្ញាជាភាសាចិន និងអង់គ្លេស។ បដាដែលព្យួរកាត់ផ្លូវ ប្រកាសពីពិធីបុណ្យសហគមន៍ និងការជួបជុំរបស់សមាគមគ្រួសារ។",
+   "នៅលើជញ្ជាំងតាមផ្លូវតូចៗ មានគំនូរជញ្ជាំងធំៗចម្រុះពណ៌ ដែលគូរដោយសិល្បករក្នុងតំបន់៖ ព្រះពុទ្ធរូបស្ងប់ស្ងាត់ នាគ វីរបុរសក្បាច់គុន និងទេពធីតាជាមួយខ្លា និងក្ងោក។"
+  ],
+  "lk": "ជួរចង្កៀងឡើងរហូតដល់លើភ្នំ · ចង្កៀងរាងវត្តចិនមានកណ្ដឹងតូចៗ · បដាពិធីបុណ្យ · នាគ ខ្លា និងក្ងោកក្នុងគំនូរជញ្ជាំង។"
+ },
+ {
+  "key": "civic",
+  "slug": "city-hall",
+  "name": "San Francisco City Hall",
+  "km": "សាលាក្រុង San Francisco",
+  "sub": "Civic Center · 1915",
+  "n": 23,
+  "facts": [
+   [
+    "Opened",
+    "1915"
+   ],
+   [
+    "Where",
+    "Civic Center, San Francisco"
+   ],
+   [
+    "Architect",
+    "Arthur Brown Jr."
+   ],
+   [
+    "Style",
+    "Beaux-Arts (French classical)"
+   ]
+  ],
+  "d": [
+   "San Francisco City Hall was finished in 1915, after the great earthquake and fire of 1906 destroyed the old one. Its huge dome, trimmed in gold leaf, is one of the tallest domes in the United States, taller than the dome of the U.S. Capitol.",
+   "I walked all around it on a grey day and a sunny day: down the long path between rows of trimmed plane trees in Civic Center Plaza, low in the grass with little white daisies, and through the leaves of the trees on the side streets.",
+   "Behind City Hall there is a quiet green garden between two matching stone buildings, the War Memorial Opera House and the Veterans Building, with a dark stone memorial in the middle.",
+   "Inside, the rotunda is even more beautiful. Looking straight up, the dome is covered with rows of carved rosettes, with round stone medallions of figures in each corner, and a grand staircase leads up under a carved arch."
+  ],
+  "look": "The gold lines and decorations on the dark dome · the carved figures above the front columns · the gold balcony railings · the round rosette pattern inside the dome · the rows of plane trees leading to the doors.",
+  "dk": [
+   "សាលាក្រុង San Francisco សាងសង់រួចនៅឆ្នាំ ១៩១៥ ក្រោយពេលរញ្ជួយដី និងអគ្គិភ័យដ៏ធំនៅឆ្នាំ ១៩០៦ បានបំផ្លាញអគារចាស់។ ដំបូលមូលដ៏ធំរបស់វា ដែលលម្អដោយស្លឹកមាស ជាដំបូលមូលខ្ពស់ជាងគេមួយនៅសហរដ្ឋអាមេរិក ខ្ពស់ជាងដំបូលមូលនៃវិមានសភាអាមេរិក។",
+   "ខ្ញុំបានដើរជុំវិញវាទាំងថ្ងៃមេឃស្រទុំ និងថ្ងៃមានពន្លឺថ្ងៃ៖ តាមផ្លូវវែងនៅចន្លោះជួរដើមឈើដែលកាត់តម្រឹមនៅ Civic Center Plaza ទាបក្នុងស្មៅជាមួយផ្កាដេស៊ីពណ៌សតូចៗ និងតាមចន្លោះស្លឹកឈើតាមផ្លូវចំហៀង។",
+   "នៅពីក្រោយសាលាក្រុង មានសួនពណ៌បៃតងស្ងប់ស្ងាត់មួយ នៅចន្លោះអគារថ្មពីរដែលដូចគ្នា គឺ War Memorial Opera House និង Veterans Building ហើយមានវិមានរំលឹកថ្មពណ៌ខ្មៅនៅកណ្ដាល។",
+   "នៅខាងក្នុង អគារមូលកាន់តែស្រស់ស្អាតថែមទៀត។ ពេលងើបមើលត្រង់ឡើងលើ ដំបូលមូលគ្របដោយជួរក្បាច់ផ្កាឆ្លាក់ មានរូបចម្លាក់មូលនៅជ្រុងនីមួយៗ ហើយជណ្ដើរធំមួយឡើងទៅក្រោមធ្នូឆ្លាក់។"
+  ],
+  "lk": "ខ្សែ និងក្បាច់ពណ៌មាសលើដំបូលមូលពណ៌ខ្មៅ · រូបចម្លាក់ពីលើសសរខាងមុខ · បង្កាន់ដៃរានហាលពណ៌មាស · ក្បាច់ផ្កាមូលខាងក្នុងដំបូលមូល · ជួរដើមឈើនាំទៅទ្វារ។"
+ },
+ {
+  "key": "california",
+  "slug": "california-street-cable-cars",
+  "name": "California Street & the cable cars",
+  "km": "ផ្លូវ California និងរថភ្លើងខ្សែកាប",
+  "sub": "Nob Hill · cable cars",
+  "n": 3,
+  "facts": [
+   [
+    "Where",
+    "Nob Hill, at Powell and California Streets"
+   ],
+   [
+    "Seen",
+    "Cable car, Bay Bridge, Financial District"
+   ]
+  ],
+  "d": [
+   "From the top of Nob Hill, California Street drops straight down through the tall towers of the Financial District. At the very end, the blue tower of the Bay Bridge stands over the water.",
+   "The old wooden cable cars still climb these steep hills, pulled by a cable running under the street. Here a Powell & Mason car crosses California Street, full of riders, with the bridge far behind."
+  ],
+  "look": "The cable car slots in the road · the Bay Bridge tower framed between the buildings · the long straight street going down the hill.",
+  "dk": [
+   "ពីលើកំពូលភ្នំ Nob Hill ផ្លូវ California ចុះត្រង់ទៅក្រោម កាត់តាមអគារខ្ពស់ៗនៃតំបន់ហិរញ្ញវត្ថុ។ នៅចុងបំផុត ប៉មពណ៌ខៀវនៃស្ពាន Bay Bridge ឈរលើទឹក។",
+   "រថភ្លើងខ្សែកាបឈើចាស់ៗ នៅតែឡើងភ្នំចោតៗទាំងនេះ ដោយមានខ្សែកាបរត់នៅក្រោមផ្លូវទាញ។ នៅទីនេះ រថភ្លើង Powell & Mason មួយកំពុងឆ្លងផ្លូវ California ពេញដោយអ្នកដំណើរ ដោយមានស្ពាននៅឆ្ងាយពីក្រោយ។"
+  ],
+  "lk": "រន្ធខ្សែកាបនៅលើផ្លូវ · ប៉មស្ពាន Bay Bridge នៅចន្លោះអគារ · ផ្លូវត្រង់វែងចុះពីលើភ្នំ។"
+ },
+ {
+  "key": "grace",
+  "slug": "grace-cathedral",
+  "name": "Grace Cathedral",
+  "km": "វិហារ Grace Cathedral",
+  "sub": "Nob Hill",
+  "n": 4,
+  "facts": [
+   [
+    "Where",
+    "Nob Hill, at California and Taylor Streets"
+   ],
+   [
+    "Church",
+    "Episcopal cathedral"
+   ],
+   [
+    "Style",
+    "Gothic"
+   ]
+  ],
+  "d": [
+   "Grace Cathedral stands at the top of Nob Hill. It is built in the Gothic style of the great cathedrals of Europe, with two tall square bell towers and a big round rose window between them.",
+   "Along the side of the church, tall pointed windows of stained glass sit between heavy stone supports, and a dark, lacy spire with a cross rises above the roof."
+  ],
+  "look": "The round rose window, like a stone flower · the open arches at the top of the bell towers · the dark spire with its cross · the street signs for California and Taylor at the corner.",
+  "dk": [
+   "វិហារ Grace Cathedral ឈរនៅលើកំពូលភ្នំ Nob Hill។ វាត្រូវបានសាងសង់តាមរចនាបថ Gothic ដូចវិហារធំៗនៅអឺរ៉ុប មានប៉មកណ្ដឹងរាងការ៉េខ្ពស់ពីរ និងបង្អួចផ្កាកុលាបមូលធំមួយនៅចន្លោះ។",
+   "តាមបណ្ដោយចំហៀងវិហារ មានបង្អួចកញ្ចក់ពណ៌ស្រួចៗខ្ពស់ៗ នៅចន្លោះសសរទ្រថ្មធ្ងន់ៗ ហើយមានកំពូលស្រួចពណ៌ខ្មៅមានក្បាច់ដូចសំណាញ់ និងឈើឆ្កាងមួយ ឡើងពីលើដំបូល។"
+  ],
+  "lk": "បង្អួចផ្កាកុលាបមូល ដូចផ្កាថ្ម · ធ្នូចំហនៅកំពូលប៉មកណ្ដឹង · កំពូលស្រួចពណ៌ខ្មៅជាមួយឈើឆ្កាង · ស្លាកផ្លូវ California និង Taylor នៅកែងផ្លូវ។"
+ },
+ {
+  "key": "cityhall",
+  "slug": "pride-lights",
+  "name": "Pride lights in San Francisco",
+  "km": "ពិធីបុណ្យ Pride នៅ SF ពេលយប់",
+  "sub": "Pride · at night",
+  "n": 18,
+  "facts": [
+   [
+    "When",
+    "San Francisco Pride, at night"
+   ],
+   [
+    "Where",
+    "City Hall (Civic Center) and the Ferry Building on the Embarcadero"
+   ]
+  ],
+  "d": [
+   "For San Francisco Pride, the city lit up its landmarks in rainbow colors. City Hall, with one of the tallest domes in the United States, glowed pink, purple and gold, and beams of light shot straight up into the sky.",
+   "Down at the waterfront, huge rainbow laser beams stretched along Market Street toward the clock tower of the Ferry Building. Standing under them, the colors seemed to pour down from the sky over the crowds.",
+   "I tried different lenses and angles: close to the dome, far back with the street lamps, and right under the beams so the clock tower sits in the middle of the rainbow."
+  ],
+  "look": "The rainbow beams meeting at the Ferry Building tower · the clock face shining through the light · the colors changing from red to blue to purple · City Hall’s dome lit pink and gold.",
+  "dk": [
+   "សម្រាប់ពិធីបុណ្យ San Francisco Pride ទីក្រុងបានបំភ្លឺអគារសំខាន់ៗរបស់ខ្លួនជាពណ៌ឥន្ទធនូ។ សាលាក្រុង ដែលមានដំបូលមូលខ្ពស់ជាងគេមួយក្នុងសហរដ្ឋអាមេរិក ភ្លឺពណ៌ផ្កាឈូក ស្វាយ និងមាស ហើយមានពន្លឺបាញ់ត្រង់ឡើងទៅលើមេឃ។",
+   "នៅមាត់សមុទ្រ កាំរស្មីឡាស៊ែរពណ៌ឥន្ទធនូដ៏ធំៗ លាតសន្ធឹងតាមផ្លូវ Market ឆ្ពោះទៅប៉មនាឡិកានៃអគារ Ferry Building។ ពេលឈរនៅក្រោមវា ពណ៌ទាំងនោះហាក់ដូចជាហូរចុះពីលើមេឃមកលើហ្វូងមនុស្ស។",
+   "ខ្ញុំសាកល្បងកែវថត និងមុំថតផ្សេងៗ៖ ជិតដំបូលមូល ឆ្ងាយពីក្រោយជាមួយចង្កៀងផ្លូវ និងនៅក្រោមកាំរស្មីផ្ទាល់ ដើម្បីឲ្យប៉មនាឡិកានៅចំកណ្ដាលឥន្ទធនូ។"
+  ],
+  "lk": "កាំរស្មីឥន្ទធនូជួបគ្នានៅប៉ម Ferry Building · ផ្ទៃនាឡិកាភ្លឺក្នុងពន្លឺ · ពណ៌ប្ដូរពីក្រហម ទៅខៀវ ទៅស្វាយ · ដំបូលមូលនៃសាលាក្រុងភ្លឺពណ៌ផ្កាឈូក និងមាស។"
+ },
+ {
+  "key": "teagarden",
+  "slug": "japanese-tea-garden",
+  "name": "Japanese Tea Garden",
+  "km": "សួនតែជប៉ុន",
+  "sub": "Golden Gate Park · 1894",
+  "n": 7,
+  "facts": [
+   [
+    "Where",
+    "Golden Gate Park, San Francisco"
+   ],
+   [
+    "Opened",
+    "1894, for the California Midwinter International Exposition"
+   ],
+   [
+    "Known as",
+    "The oldest public Japanese garden in North America still open"
+   ]
+  ],
+  "d": [
+   "The Japanese Tea Garden began as a small village built for a world’s fair in 1894. Today it is a quiet garden of ponds, stone lanterns, little waterfalls and carefully shaped pine trees.",
+   "Two red buildings rise above the trees: a tall gate with a curved, grey-green roof and gold decorations, and a five-story pagoda with a long bronze spire on top.",
+   "I stood right below the pagoda and looked up. Every roof curves up at the corners, and a small bronze bell hangs from each one. In early autumn the maple leaves were just starting to turn orange and red."
+  ],
+  "look": "The five red roofs of the pagoda, each with little hanging bells · the rings of the spire against the blue sky · the gold patterns on the gate · the waterfall falling over the dark rocks.",
+  "dk": [
+   "សួនតែជប៉ុន ចាប់ផ្ដើមជាភូមិតូចមួយ ដែលសាងសង់សម្រាប់ពិព័រណ៍ពិភពលោកនៅឆ្នាំ ១៨៩៤។ សព្វថ្ងៃ វាជាសួនស្ងប់ស្ងាត់ មានស្រះ ចង្កៀងថ្ម ទឹកធ្លាក់តូចៗ និងដើមស្រល់ដែលកាត់តម្រឹមយ៉ាងល្អិតល្អន់។",
+   "អគារក្រហមពីរ ឡើងខ្ពស់ពីលើដើមឈើ៖ ខ្លោងទ្វារខ្ពស់មួយ មានដំបូលកោងពណ៌ប្រផេះបៃតង និងលម្អពណ៌មាស និងវត្តប៉មប្រាំជាន់មួយ ដែលមានកំពូលសំរិទ្ធវែងនៅពីលើ។",
+   "ខ្ញុំឈរនៅក្រោមវត្តប៉ម ហើយងើបមើលឡើងលើ។ ដំបូលនីមួយៗកោងឡើងនៅជ្រុង ហើយមានកណ្ដឹងសំរិទ្ធតូចមួយព្យួរពីជ្រុងនីមួយៗ។ នៅដើមរដូវស្លឹកឈើជ្រុះ ស្លឹកឈើ maple ទើបតែចាប់ផ្ដើមប្រែជាពណ៌ទឹកក្រូច និងក្រហម។"
+  ],
+  "lk": "ដំបូលក្រហមទាំងប្រាំនៃវត្តប៉ម មានកណ្ដឹងតូចៗព្យួរ · រង្វង់នៃកំពូលប៉មទល់នឹងមេឃពណ៌ខៀវ · ក្បាច់ពណ៌មាសលើខ្លោងទ្វារ · ទឹកធ្លាក់លើថ្មខ្មៅ។"
+ },
+ {
+  "key": "pavilion",
+  "slug": "stow-lake-chinese-pavilion",
+  "name": "Chinese Pavilion at Stow Lake",
+  "km": "ពន្លាចិន នៅបឹង Stow Lake",
+  "sub": "Golden Gate Park",
+  "n": 6,
+  "facts": [
+   [
+    "Where",
+    "Strawberry Hill island, Stow Lake, Golden Gate Park"
+   ],
+   [
+    "Style",
+    "Traditional Chinese pavilion"
+   ]
+  ],
+  "d": [
+   "On a small island in Stow Lake, in Golden Gate Park, stands a bright Chinese pavilion with a green tiled roof and red columns. It was a gift to San Francisco from its sister city, Taipei.",
+   "You cross a little stone bridge with carved railings to reach it. From the far shore, the pavilion seems to float between tall trees, palms and the green water."
+  ],
+  "look": "The upturned green roof with small animal figures on the ridges · the painted beams under the roof · the carved stone railings and bridge · the seagull on the lake.",
+  "dk": [
+   "នៅលើកោះតូចមួយក្នុងបឹង Stow Lake ក្នុងសួន Golden Gate Park មានពន្លាចិនមួយដ៏ភ្លឺស្វាង ដែលមានដំបូលក្បឿងពណ៌បៃតង និងសសរក្រហម។ វាជាអំណោយដល់ San Francisco ពីទីក្រុងបងប្អូនរបស់ខ្លួន គឺទីក្រុង Taipei។",
+   "ត្រូវឆ្លងស្ពានថ្មតូចមួយ ដែលមានបង្កាន់ដៃឆ្លាក់ ដើម្បីទៅដល់។ ពីច្រាំងម្ខាងទៀត ពន្លាហាក់ដូចជាអណ្ដែតនៅចន្លោះដើមឈើខ្ពស់ៗ ដើមដូង និងទឹកពណ៌បៃតង។"
+  ],
+  "lk": "ដំបូលពណ៌បៃតងកោងឡើង មានរូបសត្វតូចៗលើកំពូលដំបូល · ធ្នឹមលាបពណ៌នៅក្រោមដំបូល · បង្កាន់ដៃ និងស្ពានថ្មឆ្លាក់ · សត្វក្អែកសមុទ្រលើបឹង។"
+ },
+ {
+  "key": "bandshell",
+  "slug": "music-concourse-bandshell",
+  "name": "Music Concourse Bandshell",
+  "km": "ឆាកតន្ត្រី Golden Gate Park",
+  "sub": "Golden Gate Park · 1900",
+  "n": 7,
+  "facts": [
+   [
+    "Where",
+    "Music Concourse, Golden Gate Park"
+   ],
+   [
+    "Also called",
+    "Spreckels Temple of Music"
+   ],
+   [
+    "Gift of",
+    "Claus Spreckels (carved on the stone)"
+   ],
+   [
+    "Dedicated",
+    "September 1900 (carved on the stone)"
+   ]
+  ],
+  "d": [
+   "In the middle of Golden Gate Park stands a huge stone stage for open-air concerts. Its giant arch is carved like the inside of a dome, and long rows of columns stretch out on both sides like arms.",
+   "In front of it, rows of green wooden benches wait for the audience, shaded by trees with twisted branches. When I visited, big blue letters across the top read “LIFT EVERY VOICE.”",
+   "Walking along the colonnade, the columns throw long stripes of shadow across the floor, and the ceiling is covered with pink-veined marble."
+  ],
+  "look": "The carved figures on both sides of the great arch · the square panels inside the half-dome · the curly tops of the columns · the marble ceiling of the side colonnade.",
+  "dk": [
+   "នៅកណ្ដាលសួន Golden Gate Park មានឆាកថ្មដ៏ធំមួយសម្រាប់ការប្រគុំតន្ត្រីនៅទីវាល។ ធ្នូដ៏ធំរបស់វាត្រូវបានឆ្លាក់ដូចខាងក្នុងនៃដំបូលមូល ហើយជួរសសរវែងៗលាតសន្ធឹងទៅសងខាងដូចដៃ។",
+   "នៅខាងមុខ មានជួរកៅអីឈើពណ៌បៃតង រង់ចាំអ្នកទស្សនា ក្រោមម្លប់ដើមឈើដែលមានមែករួញៗ។ ពេលខ្ញុំទៅ មានអក្សរធំៗពណ៌ខៀវនៅផ្នែកខាងលើ សរសេរថា «LIFT EVERY VOICE»។",
+   "ពេលដើរតាមជួរសសរ សសរទាំងនោះបញ្ចេញស្រមោលជាឆ្នូតវែងៗលើកម្រាល ហើយពិដានគ្របដោយថ្មម៉ាបមានសរសៃពណ៌ផ្កាឈូក។"
+  ],
+  "lk": "រូបចម្លាក់នៅសងខាងធ្នូធំ · ផ្ទាំងការ៉េខាងក្នុងពាក់កណ្ដាលដំបូលមូល · ក្បាលសសររួញៗ · ពិដានថ្មម៉ាបនៃជួរសសរខាងចំហៀង។"
+ },
+ {
+  "key": "palace",
+  "slug": "palace-of-fine-arts",
+  "name": "Palace of Fine Arts",
+  "km": "វិមានវិចិត្រសិល្បៈ",
+  "sub": "Marina District · 1915",
+  "n": 8,
+  "facts": [
+   [
+    "Built",
+    "1915"
+   ],
+   [
+    "From",
+    "Marina District, San Francisco"
+   ],
+   [
+    "Architect",
+    "Bernard Maybeck"
+   ]
+  ],
+  "d": [
+   "The Palace of Fine Arts was built for the 1915 Panama-Pacific International Exposition, a world’s fair. Its great dome and rows of columns stand beside a quiet lagoon full of birds.",
+   "From across the water you see the whole rotunda with its long curved colonnades on both sides, and its reflection moving on the lagoon.",
+   "Walking right under the rotunda, you can look up into the dome: a ceiling of carved six-sided panels, held up by huge red columns and decorated stone urns.",
+   "It is a favorite place for wedding photos. On my visit, a couple in a white dress were posing under the great arch."
+  ],
+  "look": "The tall red columns · the carved scenes around the top of the rotunda · the honeycomb pattern inside the dome · the reflection in the lagoon.",
+  "dk": [
+   "វិមានវិចិត្រសិល្បៈ ត្រូវបានសាងសង់សម្រាប់ពិព័រណ៍អន្តរជាតិ Panama-Pacific ឆ្នាំ ១៩១៥ ដែលជាពិព័រណ៍ពិភពលោក។ ដំបូលមូលធំ និងជួរសសររបស់វា ឈរក្បែរបឹងស្ងប់ស្ងាត់មួយ ដែលមានសត្វស្លាបច្រើន។",
+   "ពីត្រើយម្ខាងនៃបឹង អាចមើលឃើញអគារមូលទាំងមូល ជាមួយជួរសសរកោងវែងនៅសងខាង និងស្រមោលរបស់វាដែលរំកិលលើទឹក។",
+   "ពេលដើរនៅក្រោមអគារមូល អាចងើបមើលឃើញខាងក្នុងដំបូល៖ ពិដានមានផ្ទាំងឆ្លាក់រាងប្រាំមួយជ្រុង ទ្រដោយសសរក្រហមធំៗ និងថូថ្មលម្អ។",
+   "វាជាកន្លែងពេញនិយមសម្រាប់ថតរូបមង្គលការ។ ពេលខ្ញុំទៅ មានគូស្វាមីភរិយាមួយគូ ពាក់សម្លៀកបំពាក់ពណ៌ស កំពុងថតរូបនៅក្រោមធ្នូធំ។"
+  ],
+  "lk": "សសរក្រហមខ្ពស់ៗ · រូបចម្លាក់ជុំវិញផ្នែកខាងលើនៃអគារមូល · ក្បាច់រាងសំបុកឃ្មុំខាងក្នុងដំបូល · ស្រមោលក្នុងបឹង។"
+ }
+]

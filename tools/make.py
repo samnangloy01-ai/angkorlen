@@ -155,7 +155,8 @@ document.getElementById('alCkOk').onclick=function(){{set('accepted')}};document
 <header><a href="/">AngkorLens</a></header><main><p class="crumb"><a href="/">Home</a> › Temple guides</p>
 <h1>Khmer Temple Guides</h1><p class="km">មគ្គុទ្ទេសក៍ប្រាសាទខ្មែរ</p><p class="sub">{len(keys)} temples photographed by Samnang Loy, each with history in English and Khmer.</p>
 <div class="list">{cards}</div></main><footer>© AngkorLens · Samnang Loy</footer></body></html>'''
+exec(open(S+'make_sf.py').read())
 for f,c in out.items(): open(R+f,'w').write(c)
-sm=['https://www.angkorlens.com/','https://www.angkorlens.com/temples.html','https://www.angkorlens.com/collection-explore.html','https://www.angkorlens.com/collection-favorite.html','https://www.angkorlens.com/privacy.html']+[f'https://www.angkorlens.com/temple-{k}.html' for k in keys]
+sm=['https://www.angkorlens.com/','https://www.angkorlens.com/temples.html','https://www.angkorlens.com/collection-explore.html','https://www.angkorlens.com/collection-favorite.html','https://www.angkorlens.com/privacy.html']+[f'https://www.angkorlens.com/temple-{k}.html' for k in keys]+SF_URLS
 open(R+'sitemap.xml','w').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+''.join(f'  <url><loc>{u}</loc><lastmod>{__import__('datetime').date.today().isoformat()}</lastmod></url>\n' for u in sm)+'</urlset>\n')
 print(len(out),'pages written')
