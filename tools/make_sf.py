@@ -45,6 +45,8 @@ hd='Photographs of San Francisco by Samnang Loy: Golden Gate Bridge, Painted Lad
 ld={"@context":"https://schema.org","@type":"CollectionPage","name":"San Francisco Through My Lens","description":hd,"url":SF_URLS[0],
     "hasPart":[{"@type":"TouristAttraction","name":p['name'],"url":f"https://www.angkorlens.com/san-francisco-{p['slug']}.html"} for p in SF]}
 out['san-francisco.html']=head('San Francisco Through My Lens – Photos of 15 Places | AngkorLens',hd,SF_URLS[0],img('sf-goldengate-1.jpg',1200)[0],ld)+f'''
+<style>main{{max-width:1500px}}.list{{grid-template-columns:repeat(4,1fr);gap:18px}}.c img{{height:auto;aspect-ratio:4/3}}.c b{{font-size:19px}}
+@media(max-width:900px){{.list{{grid-template-columns:repeat(2,1fr);gap:12px}}.c b{{font-size:16px}}}}</style>
 <p class="crumb"><a href="/">Home</a> › San Francisco</p>
 <h1>San Francisco Through My Lens</h1><p class="km">សាន់ហ្វ្រាន់ស៊ីស្កូ តាមកែវថតរបស់ខ្ញុំ</p>
 <p class="sub">{len(SF)} places in San Francisco, California, photographed by Samnang Loy. Tap a place to see its photos and story in English and Khmer.<br>ចុចលើកន្លែងណាមួយ ដើម្បីមើលរូបថត និងរឿងរ៉ាវជាភាសាអង់គ្លេស និងខ្មែរ។</p>
