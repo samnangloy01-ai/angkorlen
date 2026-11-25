@@ -13,6 +13,7 @@ Temples for AngkorLens Book 4: new temples 41–80 added to angkorlens.com (40 t
 | 7 | Spean Khvav (Ancient Bridge) | ស្ពានខ្វាវ | 24 Nov 2026 | 9 (cover = side view of arches over water, polished; second arch view; north side with fallen balustrade; near-duplicate → zoomed on piers and log; naga headpiece with red cloth (2 views); naga headpiece close; seated figure close-ups; greens reduced) | /temple-spean-khvav.html | Laterite bridge on the East Royal Road; 12th c. (Wikipedia list). |
 | 8 | Prasat Chamreh (Prasat Op On) | ប្រាសាទចំរេះ | 24 Nov 2026 | 4 (cover = brick tower close, blue sky, polished; side view; near-duplicate → zoomed on upper tiers; tower through trees; greens reduced) | /temple-prasat-chamreh.html | Koh Ker brick tower; date debated (Jayavarman IV or soon after 941). |
 | 9 | Prasat Kravan (Kravan Temple) | ប្រាសាទក្រវ៉ាន់ | 24 Nov 2026 | 15 (cover = five towers with brick path, polished; angle with lions; rear view; central tower front; tower close; door; south-door lintel; two dvarapalas; eight-armed Vishnu wide + close; Vishnu on Garuda; north-tower interior wide; Lakshmi (CA brick visible); standing figure with devotees; greens reduced) | /temple-prasat-kravan.html | 921 AD brick temple with interior brick reliefs of Vishnu and Lakshmi. |
+| 10 | Prasat Reamker (Prasat Dang Tong) | ប្រាសាទរាមកេរ្តិ៍ | 24 Nov 2026 | 13 (cover = doorway under shelter, polished; door close; lintel wide + centre + left; colonnette; interior wall; carved pedestal (3 views); near-duplicate blurry pedestal → zoomed on scroll band; NAPV panel; greens reduced) | /temple-prasat-reamker.html | Koh Ker; before 921 (NAPV panel); Shiva; NAME CONFLICT noted. |
 
 ## Notes
 
@@ -83,3 +84,11 @@ Temples for AngkorLens Book 4: new temples 41–80 added to angkorlens.com (40 t
 - RESTORATION DATE CONFLICT: Lonely Planet "partially restored in 1968" vs Wikipedia 1962–66 / APSARA early-to-mid 60s → page says "in the 1960s".
 - Name meaning: Wikipedia "artabotrys odoratissimus" vs common "cardamom" → page EN says "cardamom temple"; KM text omits meaning.
 - "CA" brick visible in owner's Lakshmi-wall photo.
+
+### 10. Prasat Reamker / Dang Tong (ប្រាសាទរាមកេរ្តិ៍ / ដងទង់)
+- Location: owner's Google Maps pin 13.789243, 104.535291 (13°47'21.3"N 104°32'07.0"E) — Google name "Prasat Reamker".
+- On-site NAPV panel (2025, owner's photo): "Prasat Dang Tong (PKK23)"; brick + laterite, faces east, before 921 CE, Jayavarman IV, Shiva; local people: Ardhanarishvara statue; built before move from Angkor to Koh Ker; reconstruction drawing with vaulted roof.
+- helloangkor HA11979 "Prasat Dang Tong (north)", "Prasat Reamker in some records", also Kok Khmaoch: elongated E–W brick prasat, corbelled roof (Parmentier 1939), north face bare without false door, lintel good condition (type III), octagonal colonnettes, mitred door frame, ornate pedestal, lion before steps; IK 281.10, CISARK 696, MH 690.
+- IntoCambodia: Reamker is a SEPARATE temple ~80 m north of Dang Tung, only laterite wall + pedestal remain → NAME CONFLICT. Page says sources disagree; inventory numbers NOT on page (unclear which temple).
+- Lintel description (kala, small seated figure, garland) from owner's photos; central figure not identified.
+- Metal shelter and steel frames: from photos only.
