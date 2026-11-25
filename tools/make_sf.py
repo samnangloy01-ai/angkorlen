@@ -54,8 +54,7 @@ out['san-francisco.html']=head('San Francisco Through My Lens – Photos of 15 P
 <a class="cta" href="/">← Back to AngkorLens</a></main><footer>© AngkorLens · Samnang Loy</footer></body></html>'''
 
 # ---- On the way to Reno (photo-card page, like the sftravel "Top 10" row) ----
-ROAD=[('reno-1.jpg','Reno · Nevada','The Reno Arch','ខ្លោងទ្វារ Reno','The famous sign over the street: “The Biggest Little City in the World.”'),
-('road-1.jpg','On the way','High desert hills','ភ្នំវាលខ្សាច់ខ្ពង់រាប','Brown hills, a green golf course, and snowy peaks peeking through the gap.'),
+ROAD=[('road-1.jpg','On the way','High desert hills','ភ្នំវាលខ្សាច់ខ្ពង់រាប','Brown hills, a green golf course, and snowy peaks peeking through the gap.'),
 ('road-2.jpg','On the way','Wetlands and a wide sky','វាលភក់ និងមេឃធំទូលាយ','Flat marsh with pools of water, yellow wildflowers and low hills far away.'),
 ('road-3.jpg','On the way','A winding mountain road','ផ្លូវភ្នំកោងៗ','Sagebrush slopes, a 35 mph sign and mountains under white clouds.'),
 ('road-4.jpg','On the way','Snow-capped mountains','ភ្នំគ្របដោយព្រិល','A long white ridge rising above the town, seen from the highway.'),
@@ -70,20 +69,41 @@ ROAD=[('reno-1.jpg','Reno · Nevada','The Reno Arch','ខ្លោងទ្វ�
 ('road-13.jpg','On the way','Golden hills by the freeway','ភ្នំពណ៌មាសក្បែរផ្លូវធំ','Dry golden grass and dark oak trees along the highway.'),
 ('road-14.jpg','On the way','Marsh and wind turbines','វាលភក់ និងម៉ាស៊ីនខ្យល់','Wide green wetlands, a strip of water and white wind turbines far away.'),
 ('road-15.jpg','On the way','Junction U.S. 50','ផ្លូវប្រសព្វ U.S. 50','A green highway sign, sagebrush and a line of snowy peaks.'),
-('road-16.jpg','On the way','Down into the valley','ចុះទៅជ្រលងភ្នំ','The freeway dropping toward layers of rolling hills and a glimpse of water.')]
-_o=['reno-1.jpg']+[f'road-{n}.jpg' for n in (10,16,13,11,12,2,14,7,1,3,8,4,5,6,9,15)]
+('road-16.jpg','On the way','Down into the valley','ចុះទៅជ្រលងភ្នំ','The freeway dropping toward layers of rolling hills and a glimpse of water.'),
+('road-17.jpg','On the way','Pine-covered hills','ភ្នំគ្របដោយដើមស្រល់','Dark green pines dotted over dry golden slopes.')]
+_o=[f'road-{n}.jpg' for n in (10,16,13,11,12,2,14,7,1,3,17,8,4,5,6,9,15)]
 ROAD=sorted(ROAD,key=lambda r:_o.index(r[0]))
+CITY=[('reno-1.jpg','The Reno Arch','ខ្លោងទ្វារ Reno','The famous sign over the street: “The Biggest Little City in the World.”'),
+('reno-city-1.jpg','Downtown at night','ទីក្រុងពេលយប់','Towers glowing green and red against the dark blue sky.'),
+('reno-city-2.jpg','The Truckee River','ទន្លេ Truckee','The river rushes under a bridge right through downtown.'),
+('reno-city-3.jpg','Riverwalk gardens','សួនតាមមាត់ទន្លេ','Stone terraces and black pyramid-roofed shelters along the water.'),
+('reno-city-4.jpg','A shelter by the river','រោងតូចមាត់ទន្លេ','Looking out from a riverside shelter toward the bridge.'),
+('reno-city-5.jpg','The glass whale','ត្រីបាឡែនកញ្ចក់','A giant whale sculpture made of colored glass panels, standing in the city plaza.'),
+('reno-city-6.jpg','Whale and little whale','ត្រីបាឡែនធំ និងតូច','Seen from below, a smaller whale swims under the big one.'),
+('reno-city-7.jpg','A giant mining machine','ម៉ាស៊ីនរ៉ែយក្ស','A huge old-style mining rig with wheels and lights, under a painted sky dome indoors.'),
+('reno-city-8.jpg','The sea-god fountain','ក្បាលទឹកព្រះសមុទ្រ','A sea god, mermen and sea monsters around an indoor fountain.'),
+('reno-city-9.jpg','The white dome','ដំបូលមូលពណ៌ស','A huge white dome on the rooftops under storm clouds.'),
+('reno-city-10.jpg','Eldorado at dusk','Eldorado ពេលព្រលប់','The Eldorado tower with its neon lines just turning on.'),
+('reno-city-11.jpg','Eldorado at night','Eldorado ពេលយប់','The whole tower outlined in red neon.'),
+('reno-city-12.jpg','The camera mural','គំនូរជញ្ជាំងអ្នកថតរូប','A rainbow mural of a photographer standing on a boombox, on The Virginian.'),
+('reno-city-13.jpg','A bird of metal','បក្សីលោហៈ','A bird sculpture made of curved metal strips, set into a stone wall.'),
+('reno-city-14.jpg','Morning over West Street','ពេលព្រឹកលើផ្លូវ West','Snowy peaks above a blue-and-white tower and the Bonanza Inn sign.'),
+('reno-city-15.jpg','Maple Street crossing','ផ្លូវប្រសព្វ Maple','Red lights, an I-80 West sign and an old taco shop sign.'),
+('reno-city-16.jpg','The freeway through town','ផ្លូវធំកាត់ទីក្រុង','Traffic winding between green neighborhoods below a snowy ridge.'),
+('reno-city-17.jpg','The whole valley','ជ្រលងភ្នំទាំងមូល','From a hillside, the city towers look small in the middle of the valley.')]
+def _card(f,lab,t,k,d): return f'<article class="rc"><figure class="ph"><img loading="lazy" decoding="async" draggable="false" src="{img(f,640)[0]}" alt="{html.escape(t)}, Reno, Nevada – photo by Samnang Loy"><span class="wm">© AngkorLens</span></figure><div class="rb"><small>{html.escape(lab)}</small><b>{html.escape(t)}</b><i>{html.escape(k)}</i><p>{html.escape(d)}</p></div></article>'
+cc=''.join(_card(f,'In Reno',t,k,d) for f,t,k,d in CITY)
 RURL='https://www.angkorlens.com/reno-lake-tahoe.html'; SF_URLS.append(RURL)
 rc=''.join(f'<article class="rc"><figure class="ph"><img loading="lazy" decoding="async" draggable="false" src="{img(f,640)[0]}" alt="{html.escape(t)} – on the way to Reno, photo by Samnang Loy"><span class="wm">© AngkorLens</span></figure><div class="rb"><small>{html.escape(lab)}</small><b>{html.escape(t)}</b><i>{html.escape(k)}</i><p>{html.escape(d)}</p></div></article>' for f,lab,t,k,d in ROAD)
-rd='Photos from the drive to Reno, Nevada by Samnang Loy: wetlands, rolling green hills, high desert, snow-capped mountains and the Reno Arch.'
-rld={"@context":"https://schema.org","@type":"ImageGallery","name":"On the way to Reno","description":rd,"url":RURL,"author":{"@type":"Person","name":"Samnang Loy"}}
-out['reno-lake-tahoe.html']=head('On the Way to Reno & Lake Tahoe – Photos | AngkorLens',rd,RURL,img('reno-1.jpg',1200)[0],rld).replace('<main>','<div class="band"><div class="bi"><p class="crumb"><a href="/">Home</a> › Reno &amp; Lake Tahoe</p><small>ON THE ROAD · តាមផ្លូវ</small><h1>On the way <em>to Reno</em></h1><p class="km2">តាមផ្លូវទៅ Reno រដ្ឋ Nevada</p><p class="bd">Photos from my drive to Reno, Nevada: green and golden hills, open wetlands, high desert and snow-capped mountains. Tap a photo to see it full size.<br>រូបថតតាមផ្លូវទៅ Reno៖ វាលភក់ ភ្នំបៃតង វាលខ្សាច់ និងភ្នំគ្របដោយព្រិល។</p></div></div><main class="rm">',1)+f'''
+rd='Photos of Reno, Nevada by Samnang Loy: the Reno Arch, the Truckee River, neon casinos, the glass whale and the drive there through hills and snowy mountains.'
+rld={"@context":"https://schema.org","@type":"ImageGallery","name":"Reno, Nevada & the road there","description":rd,"url":RURL,"author":{"@type":"Person","name":"Samnang Loy"}}
+out['reno-lake-tahoe.html']=head('Reno, Nevada – Photos of the City & the Road There | AngkorLens',rd,RURL,img('reno-1.jpg',1200)[0],rld).replace('<main>','<div class="band"><div class="bi"><p class="crumb"><a href="/">Home</a> › Reno &amp; Lake Tahoe</p><small>ON THE ROAD · តាមផ្លូវ</small><h1>Reno, Nevada <em>&amp; the road there</em></h1><p class="km2">ទីក្រុង Reno រដ្ឋ Nevada និងផ្លូវទៅដល់ទីនោះ</p><p class="bd">Photos from Reno, “The Biggest Little City in the World,” and from my drive there: the river, neon lights, public art, green and golden hills, open wetlands, high desert and snow-capped mountains. Tap a photo to see it full size.<br>រូបថតក្នុងទីក្រុង Reno និងតាមផ្លូវ៖ ទន្លេ ភ្លើងនីអុង សិល្បៈសាធារណៈ វាលភក់ ភ្នំបៃតង វាលខ្សាច់ និងភ្នំគ្របដោយព្រិល។</p></div></div><main class="rm">',1)+f'''
 <style>.band{{background:#B9532F;color:#fff;padding:34px 16px 120px}}.bi{{max-width:1500px;margin:0 auto}}.band .crumb a{{color:#FBE7C6}}.band small{{letter-spacing:.2em;font-weight:800;font-size:14px}}
 .band h1{{font-family:Georgia,serif;font-size:clamp(34px,6vw,64px);margin:6px 0 4px;color:#fff}}.band h1 em{{display:block;color:#FBE7C6;font-style:italic}}.km2{{color:#FBE7C6;font-size:20px;margin:0 0 10px}}.bd{{max-width:900px;font-size:17px;margin:0}}
-main.rm{{max-width:1500px;margin-top:-100px;padding-top:0}}.rg{{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}}.rc{{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 6px 22px rgba(0,0,0,.12)}}
+h2.rh{{font-family:Georgia,serif;margin:0 0 14px;padding:10px 16px;background:#fff;border-radius:12px;display:inline-block;box-shadow:0 4px 14px rgba(0,0,0,.08)}}main.rm{{max-width:1500px;margin-top:-100px;padding-top:0}}.rg{{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}}.rc{{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 6px 22px rgba(0,0,0,.12)}}
 .rc img{{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;background:#e8e0d2}}.rb{{padding:12px 16px 18px}}.rb small{{color:#6b625a;letter-spacing:.08em;text-transform:uppercase;font-size:12px;font-weight:700}}
 .rb b{{display:block;font-family:Georgia,serif;font-size:20px;margin:4px 0 0;color:#1f2a44}}.rb i{{display:block;font-style:normal;color:#7A5A1E;font-size:14px}}.rb p{{margin:6px 0 0;color:#4E4740;font-size:15px;line-height:1.5}}
 @media(max-width:900px){{.rg{{grid-template-columns:repeat(2,1fr);gap:12px}}.rb b{{font-size:16px}}.rb p{{font-size:13px}}}}</style>
-<div class="rg">{rc}</div>
-<p class="by" style="margin-top:18px">Photographs by Samnang Loy · AngkorLens. More Reno and Lake Tahoe photos coming soon.</p>
+<h2 class="rh">In Reno · ក្នុងទីក្រុង Reno</h2><div class="rg">{cc}</div><h2 class="rh" style="margin-top:40px">On the way · តាមផ្លូវ</h2><div class="rg">{rc}</div>
+<p class="by" style="margin-top:18px">Photographs by Samnang Loy · AngkorLens. Lake Tahoe photos coming soon.</p>
 <a class="cta" href="/">← Back to AngkorLens</a></main><footer>© AngkorLens · Samnang Loy</footer>'''+LB+'</body></html>'
