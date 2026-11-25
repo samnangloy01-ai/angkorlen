@@ -20,6 +20,7 @@ Temples for AngkorLens Book 4: new temples 41–80 added to angkorlens.com (40 t
 | 14 | Laterite Quarry (Khvav) | ការដ្ឋានដាប់ថ្មបាយក្រៀម | 25 Nov 2026 | 14 (cover = straight-cut laterite pit walls, polished; wide quarry views; tall cut wall with blocks on top; person on right cropped out (2 photos); motorbike cropped out; near-duplicate wide view → zoomed on cut blocks; one photo with a standing person kept for scale; greens reduced) | /temple-laterite-quarry-khvav.html | No name/sign/history at site (owner); age unknown; description from photos only |
 | 15 | Nokor Bachey Temple (Wat Nokor) | ប្រាសាទនគរបាជ័យ | 25 Nov 2026 | 16 (cover = east gopura with sugar palms, polished, bottom trimmed; near-duplicate gopura → zoomed on doorway & lintel; red wheelbarrow cropped out; pediment close-up; central tower views; frangipani views; modern pagoda & stupa views; inscription close-up; greens reduced lightly) | /temple-nokor-bachey-temple.html | Jayavarman VII / Bayon-style dating vs Parmentier earlier start; GPS from owner pin added 25 Nov |
 | 16 | Prasat Bei | ប្រាសាទបី | 25 Nov 2026 | 15 (cover = three towers on laterite platform, polished, sky trimmed; wide view; lintel views; near-duplicate door → zoomed on lintel (Indra on Airavata); sideways lintel photo rotated upright; colonnette views; near-duplicate colonnette → zoomed; pedestal inside central tower; corbelled vault looking up; ferns on laterite wall (greens reduced only lightly)) | /temple-prasat-bei.html | Early 10th c., Yasovarman I, Bakheng style; unfinished |
+| 17 | Trapeang Lpeou Temple | ប្រាសាទត្រពាំងល្ពៅ | 25 Nov 2026 | 12 (cover = wide site view with propped doorway and brick base, polished; brick tower wall; doorway with lintel; two lintels wide + close; colonnette with props (pink lens blur at bottom cropped); colonnette close; inscribed door frame + near-duplicate → zoomed on inscription text; fallen colonnette in grass; greens reduced) | /temple-trapeang-lpeou-temple.html | 10th c., 944–968 Rajendravarman II (APSARA); restoration 2022–23 |
 
 ## Notes
 
@@ -151,3 +152,12 @@ Temples for AngkorLens Book 4: new temples 41–80 added to angkorlens.com (40 t
 - REIGN END CONFLICT: 910 vs c. 915 → no reign dates on page.
 - Platform 24 × 9.6 m (penang-traveltips only, single source) → NOT on page.
 - Tool marks on inner door frames, corbelled vault: from owner's photos.
+
+### 17. Trapeang Lpeou Temple (ប្រាសាទត្រពាំងល្ពៅ)
+- Location: owner's Google Maps pin 13.4122359, 103.8208373 (13°24'44.0"N 103°49'15.0"E).
+- APSARA (9 Aug 2023): formerly Prasat Trapeang Peou; brick, three towers facing east; c. 944–968, Rajendravarman II; southern tower restored Nov 2022–Mar 2023; northern tower from Apr 2023 (~70% Aug 2023); central tower next; brick rooms SE maybe "hotrai".
+- helloangkor HA11728: Prey Chas village, Sangkat Toek Vil, Krong Siem Reap; also Kuk Trapeang Lopov, Neang Pow (ប្រាសាទនាងពៅ), Prasat Trapeang Repou (Lajonquière 1911); brick outer wall, moat, east basin, library no longer standing; K.690 on south temple door frames (Sanskrit + Khmer, 9th–10th c.); K.691 on library, Saka 924 (= 1002 CE).
+- K.691 date (1002 CE) is later than APSARA's 944–968 → K.691 NOT on page (later inscription on library, not a conflict for founding, but left off to avoid confusion).
+- 2024 restoration (helloangkor) not detailed → page only gives APSARA 2022–23 dates.
+- Inscribed door frame in owner's photo: NOT confirmed as K.690 → page says only that a south-tower door frame carries K.690 (source fact), photo caption not identified.
+- Lintel description from owner's photos; central figure not identified.
