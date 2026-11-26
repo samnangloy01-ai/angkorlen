@@ -15,9 +15,9 @@ Change ONLY what he asks. Don't invent facts. Mark anything uncertain. Cite sour
 ## Steps for each new temple
 1. Clone the repo: `git clone https://github.com/samnangloy01-ai/angkorlen`.
 2. Prepare the photos with Python PIL: apply `ImageOps.exif_transpose`, then save
-   `sf-{key}-{n}.jpg` (longest side 1600 px, quality 80) and `sf-{key}-{n}-t.jpg` (480 px, quality 74) in the repo root.
+   `sf-{key}-{n}.jpg` (longest side 1600–2000 px, quality 90) and `sf-{key}-{n}-t.jpg` (600 px, quality 85) in the repo root.
    - If photos look the same, crop one to a closer zoom.
-   - If a photo has too much colour, tone it down.
+   - NEVER change the colours (no colour, saturation, contrast or "green" edits). The owner sells these photos: they must look exactly like his originals. Only resize, rotate (exif) and crop.
    - Pick a good main view of the temple as the cover, image 1.
    - HEIC files can't be opened here, so ask him for JPG.
 3. Research the history. Write `h` in English and then Khmer, using `<br><br>` between paragraphs and `<strong>` for the heading line.
