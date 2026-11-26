@@ -113,7 +113,7 @@ for k in range(len(books)):
     open(R+collpage(k),'w').write(pg)
 f=R+'index.html'; s=open(f).read()
 i=s.index('<!--NEWROWS-->')+14; j=s.index('<!--/NEWROWS-->'); s=s[:i]+rows+s[j:]
-n=len(glob.glob(R+'temple-*.html'))
+n=len([p for p in glob.glob(R+'temple-*.html') if 'http-equiv="refresh"' not in open(p).read()])
 s=re.sub(r'Explore \d+ Khmer',f'Explore {n} Khmer',s)
 s=re.sub(r'All temple guides \(\d+\)',f'All temple guides ({n})',s)
 s=re.sub(r'See all \d+ temple',f'See all {n} temple',s)
@@ -124,6 +124,7 @@ idx=[]
 thumbs={m.group(1):m.group(2) for m in re.finditer(r'<a class="c" href="/temple-([a-z0-9-]+)\.html"><img[^>]*?src="([^"]+)"',tp)}
 for p in sorted(glob.glob(R+'temple-*.html')):
     slug=p.split('/temple-')[1][:-5]; t=open(p).read()
+    if 'http-equiv="refresh"' in t: continue
     g=lambda rx:(re.search(rx,t,re.S).group(1) if re.search(rx,t,re.S) else '')
     name=html.unescape(g(r'<h1>(.*?)</h1>')); km=html.unescape(g(r'<p class="km">(.*?)</p>')); sub=html.unescape(g(r'<p class="sub">(.*?)</p>'))
     story=re.sub(r'\s+',' ',html.unescape(re.sub(r'<[^>]+>',' ',g(r'<section class="story">(.*?)</section>'))))[:260]
