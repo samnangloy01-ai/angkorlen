@@ -258,9 +258,12 @@ Temples that already had a page on angkorlens.com before Book 4. The owner asked
 
 | # | Temple | Khmer | Added to book | Photos (on website) | Web page | History status |
 |---|--------|-------|---------------|---------------------|----------|----------------|
-| A1 | Prasat Toch | ប្រាសាទតូច | 26 Nov 2026 | 9 (IMG_0389 cover, IMG_0312 2, IMG_03890–03898 2) | /temple-prasat-toch.html | Website text says Preah Vihear province, "13th century"; no sources given → must be checked before printing |
+| A1 | Prasat Toch | ប្រាសាទតូច | 26 Nov 2026 | 9 (IMG_0389 cover, IMG_0312 2, IMG_03890–03898 2) | /temple-prasat-toch.html | Kantuot commune, Choam Khsant, Preah Vihear; SW of Preah Vihear temple; 13th c. (owner), probably Jayavarman VII hospital chapel (helloangkor, tentative) |
 
 ### A1. Prasat Toch (ប្រាសាទតូច)
-- Website page (unchanged): subtitle "13th Century - Prasat Toch"; text says a small monument in Preah Vihear province, along the ancient road network.
-- The website text is general and cites no source; no GPS on the page.
-- TO CHECK before the book: exact location (village/commune, GPS), date and king (the "13th century" date is not yet confirmed by a source), and which ancient road. Not to be confused with Trapeang Prasat Toch (Oddar Meanchey) or Prasat Toap Chey Toch, which have their own pages.
+- Location: owner's pin 14.3769626, 104.6616177 (14°22'37.1"N 104°39'41.8"E), Kô Muoy village, Kantuot commune, Choam Khsant district, Preah Vihear; on the plains about 2.3 km southwest of Preah Vihear temple.
+- Owner's fact: 13th century.
+- helloangkor HA15497 (Toch Temple, Ko Muoy Village; CISARK 5849): small, partially standing temple; laterite outer wall (~35 × 30 m, estimated) with entrance on the east, moat around, medium basin to the east; one shrine facing east + "library" in the SE corner; shrine forebody mostly standing (windows on each side and above the east door), main body collapsed; east lintel of sandstone never carved; library lintel shows relief sketching that was only begun; "could be" one of Jayavarman VII's hospital chapels (12th–13th c.), possibly built with re-used stones; 2022: two fragments of (bronze?) jars found, one with an inscription of the Jayavarman VII era.
+- For the book: 13th century (owner) agrees with helloangkor's 12th–13th c. / Jayavarman VII. Write "probably a hospital chapel" — the source itself is not sure.
+- Website page is NOT changed (owner's request). Its current text is general and has no sources or GPS.
+- Not to be confused with Trapeang Prasat Toch (Oddar Meanchey) or Prasat Toap Chey Toch, which have their own pages.
