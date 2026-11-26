@@ -9,11 +9,27 @@ PER_BOOK=40; FIRST_BOOK=3
 KM='០១២៣៤៥៦៧៨៩'
 def kmn(n): return ''.join(KM[int(c)] for c in str(n))
 d=json.load(open(T+'new_temples.json'))
+# Temple groups (tools/groups.json, built by tools/make_groups.py): the members of a group show as ONE card,
+# placed where the group's newest member would be. The book counts still count every temple.
+GROUPS=json.load(open(T+'groups.json')) if os.path.exists(T+'groups.json') else {}
+def href(e): return f'/group-{e["gslug"]}.html' if e.get('gslug') else f'/temple-{e["slug"]}.html'
+def badge(e): return (f'<span style="position:absolute;left:10px;top:10px;z-index:2;background:#221F1C;color:#fff;font-size:13px;font-weight:700;padding:5px 10px;border-radius:999px">'
+                      f'{e["gn"]} temples · ប្រាសាទ {kmn(e["gn"])}</span>') if e.get('gslug') else ''
+def collapse(lst):
+    seen=set(); out=[]
+    for e in lst:
+        g=e.get('group')
+        if g and g in GROUPS:
+            if g in seen: continue
+            seen.add(g); G=GROUPS[g]
+            out.append({'gslug':g,'gn':len([x for x in d if x.get('group')==g]),'slug':g,'name':G['name'],'km':G['km'],'sub':G['sub'],'h':G['h'],'i':[G['cover']]})
+        else: out.append(e)
+    return out
 def im(f,w): return 'https://wsrv.nl/?url='+quote('https://www.angkorlens.com/'+f,safe='')+'&w=%d&q=75&output=jpg'%w
 def loc(e):
     return e['sub'].split(' · ')[-1]
 PIN='<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>'
-def card(e): return f'<a class="alrow-c" href="/temple-{e["slug"]}.html"><span class="alrow-i"><img loading="lazy" decoding="async" src="{im(e["i"][0],600)}" alt="{html.escape(e["name"])}"></span><b>{html.escape(e["name"])}</b><i>{html.escape(e["km"])}</i><span class="alrow-p">{PIN}{html.escape(loc(e))}</span></a>'
+def card(e): return f'<a class="alrow-c" href="{href(e)}"><span class="alrow-i"><img loading="lazy" decoding="async" src="{im(e["i"][0],600)}" alt="{html.escape(e["name"])}">{badge(e)}</span><b>{html.escape(e["name"])}</b><i>{html.escape(e["km"])}</i><span class="alrow-p">{PIN}{html.escape(loc(e))}</span></a>'
 TITLES=['Explore our temple collection · ស្វែងរកបណ្តុំប្រាសាទរបស់យើង','My favorite temple collection · បណ្តុំប្រាសាទដែលខ្ញុំចូលចិត្ត']
 STYLE='''<style>
 .alrow-c b{margin-top:14px;font-weight:700;letter-spacing:-.01em;white-space:normal;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
@@ -33,7 +49,7 @@ def blurb(e):
     t=re.sub(r'^\([^)]*\)\s*','',t)  # drop a "(Other name)" left over from the heading
     m=re.match(r'(.{40,170}?[.!?])\s',t+' '); t=m.group(1) if m else t[:150].rsplit(' ',1)[0]+'…'
     return t
-def fcard(e): return (f'<a class="alfx-c" href="/temple-{e["slug"]}.html"><span class="alfx-i"><img loading="lazy" decoding="async" src="{im(e["i"][0],700)}" alt="{html.escape(e["name"])}"></span>'
+def fcard(e): return (f'<a class="alfx-c" href="{href(e)}"><span class="alfx-i"><img loading="lazy" decoding="async" src="{im(e["i"][0],700)}" alt="{html.escape(e["name"])}">{badge(e)}</span>'
     f'<b>{html.escape(e["name"])}</b><i>{html.escape(e["km"])}</i><span class="alrow-p">{PIN}{html.escape(loc(e))}</span><p>{html.escape(blurb(e))}</p></a>')
 FSTYLE='''<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 <style>
@@ -79,12 +95,12 @@ for k in range(len(books)-1,-1,-1):
                '<p class="ds">From hidden brick towers in the forest to bridges and gates of the Khmer Empire, these are the newest temples I have photographed and written about. Each one has its history in English and Khmer, photos and a GPS map.</p>'
                f'<a class="alfx-btn" href="/{cp}">See all ({n}) · មើលទាំងអស់</a></div>\n'
                ' <div class="alfx-r"><div class="alfx-a"><button type="button" class="r" aria-label="Next">→</button><button type="button" class="l" aria-label="Previous" disabled>←</button></div>\n'
-               '  <div class="alfx-s">'+''.join(fcard(e) for e in reversed(b))+'</div></div>\n</section></div>\n')
+               '  <div class="alfx-s">'+''.join(fcard(e) for e in collapse(reversed(b)))+'</div></div>\n</section></div>\n')
         continue
     rows+=(f'<div style="background:#fafafa;width:100%;padding:1px 0 30px"><section class="alrow" id="{sid}" aria-label="{html.escape(t.split(" · ")[0])}">\n'
            f' <div class="alrow-h"><h2>{html.escape(t)} ({n})</h2><a href="/{cp}">View all</a></div>\n'
            ' <div class="alrow-w">\n  <button type="button" class="alrow-b l" aria-label="Scroll left" disabled>‹</button>\n'
-           '  <div class="alrow-s">'+''.join(card(e) for e in reversed(b))+'</div>\n'
+           '  <div class="alrow-s">'+''.join(card(e) for e in collapse(reversed(b)))+'</div>\n'
            '  <button type="button" class="alrow-b r" aria-label="Scroll right">›</button>\n </div>\n</section></div>\n')
 rows+='''<script>
 document.querySelectorAll('.alrow-w').forEach(function(w){var s=w.querySelector('.alrow-s'),l=w.querySelector('.l'),r=w.querySelector('.r');

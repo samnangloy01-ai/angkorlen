@@ -5,6 +5,7 @@ Change ONLY what he asks. Don't invent facts. Mark anything uncertain. Cite sour
 
 ## Files here
 - `make.py` builds every `temple-*.html`, plus `temples.html` and `sitemap.xml`, in the repo root.
+- `make_groups.py` builds temple groups from `groups.json` (e.g. the Koh Ker Linga Group): one `group-{slug}.html` page with a small card per temple, and a "← group / next →" bar on each member page. Run it after `make.py`. A temple joins a group with `"group": "<group slug>"` in `new_temples.json`.
 - `update_home.py` rebuilds the homepage "New Temples · ប្រាសាទថ្មី" row in `index.html` (between `<!--NEWCARDS-->` and `<!--/NEWCARDS-->`) and updates the temple count.
 - `new_temples.json` lists the new temples, oldest first. Each entry has `slug`, `name`, `km` (Khmer name), `sub`, `h` (history HTML in English then Khmer) and `i` (image file names; the first is the cover).
 - `temples.json` and `extra.json` hold the original 79 temples plus Bakong and Banteay Srei. Don't edit them unless asked.
@@ -21,12 +22,12 @@ Change ONLY what he asks. Don't invent facts. Mark anything uncertain. Cite sour
    - HEIC files can't be opened here, so ask him for JPG.
 3. Research the history. Write `h` in English and then Khmer, using `<br><br>` between paragraphs and `<strong>` for the heading line.
 4. Append the entry to `tools/new_temples.json`.
-5. Run `python3 tools/make.py`, then `python3 tools/update_home.py`.
+5. Run `python3 tools/make.py`, then `python3 tools/make_groups.py`, then `python3 tools/update_home.py`. On the homepage a group shows as ONE card (with a "4 temples" badge); the counts still count every temple.
 6. Add a row and a notes section to `tools/angkorlens-book3-new-temples.md`.
 7. Upload the changed files to GitHub. The site is GitHub Pages and updates about 15 minutes after the commit.
    - Upload page: github.com/samnangloy01-ai/angkorlen/upload/main (use `/upload/main/tools` for the tools files).
    - Keep each batch under 10 MB.
-   - The files are: index.html, sitemap.xml, temples.html, temple-{slug}.html, the sf-{key}-* images, and tools/new_temples.json plus the Book 3 file.
+   - The files are: index.html, sitemap.xml, temples.html, temple-{slug}.html, group-{slug}.html (if a group changed), every other changed temple-*.html (their "More temples" links change), the sf-{key}-* images, and tools/new_temples.json plus the Book 3 file.
 8. Send him the Book 3 file and reply in Khmer with the sources.
 
 ## Rules
