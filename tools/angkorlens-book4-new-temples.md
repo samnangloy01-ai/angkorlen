@@ -251,3 +251,16 @@ Temples for AngkorLens Book 4: new temples 41–80 added to angkorlens.com (40 t
 - Wikipedia / National Geographic: same date and father; left largely unrestored with trees (like Ta Prohm).
 - CONFLICT: number of divinities in the stele (helloangkor 430 "other deities"; pbase 515) → not on page. Third-enclosure size given two ways on helloangkor → not on page. Origin of the central stupa (APSARA "Middle Period"; Frommer's "16th c., ashes of a later king") → page says only "Middle Period". Battle site only in helloangkor/Wikipedia → page says "Some sources say".
 - NOT on page: "Harvest Prayer Hall" use of the two-storey building (speculation); Yasovarman II / Tribhuvanadityavarman palace on the site (speculation); pearls/gold inventory.
+
+## Older website temples added to Book 4
+
+Temples that already had a page on angkorlens.com before Book 4. The owner asked to put them in Book 4; their web pages are NOT changed.
+
+| # | Temple | Khmer | Added to book | Photos (on website) | Web page | History status |
+|---|--------|-------|---------------|---------------------|----------|----------------|
+| A1 | Prasat Toch | ប្រាសាទតូច | 26 Nov 2026 | 9 (IMG_0389 cover, IMG_0312 2, IMG_03890–03898 2) | /temple-prasat-toch.html | Website text says Preah Vihear province, "13th century"; no sources given → must be checked before printing |
+
+### A1. Prasat Toch (ប្រាសាទតូច)
+- Website page (unchanged): subtitle "13th Century - Prasat Toch"; text says a small monument in Preah Vihear province, along the ancient road network.
+- The website text is general and cites no source; no GPS on the page.
+- TO CHECK before the book: exact location (village/commune, GPS), date and king (the "13th century" date is not yet confirmed by a source), and which ancient road. Not to be confused with Trapeang Prasat Toch (Oddar Meanchey) or Prasat Toap Chey Toch, which have their own pages.
