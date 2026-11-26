@@ -966,7 +966,13 @@ try{if(localStorage.getItem('angkorLensCookieConsent')==='accepted')alLoadGA();}
 <!-- ===== Explore cards + travel sign-up bar ===== -->
 <style>
 .alx{max-width:80rem;margin:28px auto 8px;padding:0 16px}
-.alx-row{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.alx-row{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;padding-bottom:2px}
+.alx-row::-webkit-scrollbar{display:none}
+.alx-row>.alx-card{flex:0 0 calc((100% - 54px)/4);scroll-snap-align:start}
+.alx-wrap{position:relative}
+.alx-nav{position:absolute;top:50%;transform:translateY(-50%);z-index:3;width:48px;height:48px;border-radius:50%;border:0;background:rgba(255,255,255,.92);color:#221F1C;font-size:22px;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.25)}
+.alx-nav:hover{background:#221F1C;color:#fff}.alx-prev{left:-10px}.alx-next{right:-10px}
+.alx-soon .alx-btn{background:rgba(255,255,255,.2)}
 .alx-card{position:relative;display:block;border-radius:18px;overflow:hidden;aspect-ratio:5/8;color:#fff;text-decoration:none;background:#221F1C}
 .alx-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .5s}
 .alx-card:hover img{transform:scale(1.05)}
@@ -993,15 +999,27 @@ try{if(localStorage.getItem('angkorLensCookieConsent')==='accepted')alLoadGA();}
 .alx-min .alx-no,.alx-min .alx-yes{display:none}.alx-min .alx-t h3:after{content:""}
 .alx-act .alx-tour{background:#fff;color:#221F1C;font-weight:700;padding:10px 20px;border-radius:999px;text-decoration:none;font-size:18px}
 .alx-act .alx-yes{background:#C9A55A;color:#221F1C;font-weight:700;padding:10px 20px;border-radius:999px}
-@media (max-width:900px){.alx-row{grid-template-columns:repeat(2,1fr)}.alx-card{aspect-ratio:3/4}}
+@media (max-width:900px){.alx-row>.alx-card{flex-basis:calc((100% - 18px)/2)}.alx-card{aspect-ratio:3/4}}
+@media (max-width:640px){.alx-nav{width:40px;height:40px;font-size:18px}.alx-prev{left:2px}.alx-next{right:2px}}
 @media (max-width:640px){.alx-act{flex-wrap:wrap;white-space:normal}.alx-travel{flex-direction:column;align-items:flex-start;padding:150px 20px 20px}.alx-stack{left:20px;top:-14px;bottom:auto;height:150px}.alx-act{gap:18px}.alx-name{font-size:24px}.alx-in{padding:20px 10px 22px}.alx-top{font-size:14px}.alx-btn{padding:8px 16px;font-size:14px}}
 </style>
 <section class="alx" aria-label="Explore AngkorLens">
-  <div class="alx-row">
+  <div class="alx-wrap">
+  <div class="alx-row" id="alxRow">
     <a class="alx-card" href="#templeGrid"><img src="al-feature-bayon.jpg" alt="Bayon temple faces, Angkor Thom" loading="lazy" decoding="async"><div class="alx-in"><span class="alx-top">Explore</span><span class="alx-name">Temples<span class="alx-km">ប្រាសាទ</span></span><span class="alx-btn">Explore</span></div></a>
     <a class="alx-card" href="#heritage"><img src="https://wsrv.nl/?url=https%3A%2F%2Fwww.angkorlens.com%2FIMG_0713.JPG&w=900&q=75&output=jpg" alt="" loading="lazy" decoding="async"><div class="alx-in"><span class="alx-top">Explore</span><span class="alx-name">Heritage<span class="alx-km">បេតិកភណ្ឌ</span></span><span class="alx-btn">Explore</span></div></a>
     <a class="alx-card" href="#khmer-art-sf"><img src="sf-vishnu-3.jpg" alt="Bronze Reclining Vishnu, Asian Art Museum San Francisco" loading="lazy" decoding="async" style="object-position:40% 50%"><div class="alx-in"><span class="alx-top">Museum</span><span class="alx-name">Khmer Art<span class="alx-km">សិល្បៈខ្មែរ</span></span><span class="alx-btn">Explore</span></div></a>
     <a class="alx-card" href="#books"><img src="al-feature-angkor-wat.jpg" alt="Angkor Wat temple, Siem Reap, Cambodia" loading="lazy" decoding="async"><div class="alx-in"><span class="alx-top">Read</span><span class="alx-name">Books<span class="alx-km">សៀវភៅ</span></span><span class="alx-btn">Explore</span></div></a>
+    <a class="alx-card" href="/reno-lake-tahoe.html"><img src="reno-1.jpg" alt="Reno Arch, Reno, Nevada" loading="lazy" decoding="async"><div class="alx-in"><span class="alx-top">Travel</span><span class="alx-name">Reno, Nevada<span class="alx-km">រីណូ រដ្ឋណេវ៉ាដា</span></span><span class="alx-btn">Explore</span></div></a>
+    <a class="alx-card" href="/san-francisco.html"><img src="sf-painted-1.jpg" alt="Painted Ladies, San Francisco" loading="lazy" decoding="async"><div class="alx-in"><span class="alx-top">Travel</span><span class="alx-name">San Francisco<span class="alx-km">សាន់ហ្វ្រាន់ស៊ីស្កូ</span></span><span class="alx-btn">Explore</span></div></a>
+    <a class="alx-card alx-soon" href="#" onclick="return false"><img src="europe-1.jpg" alt="Cologne Cathedral, Germany" loading="lazy" decoding="async"><div class="alx-in"><span class="alx-top">Travel</span><span class="alx-name">Europe<span class="alx-km">អឺរ៉ុប · 5 countries</span></span><span class="alx-btn">Coming soon</span></div></a>
+    <a class="alx-card" href="#reamkerMuralSection" onclick="if(typeof openTempleFromIndex==='function'){openTempleFromIndex('Reamker Mural at the Silver Palace');return false;}"><img src="https://wsrv.nl/?url=https%3A%2F%2Fwww.angkorlens.com%2FP1025848.jpg&w=900&q=75&output=jpg" alt="Reamker mural at the Silver Pagoda" loading="lazy" decoding="async"><div class="alx-in"><span class="alx-top">Heritage</span><span class="alx-name">Reamker Mural<span class="alx-km">គំនូររាមកេរ្តិ៍</span></span><span class="alx-btn">Explore</span></div></a>
+    <a class="alx-card" href="#khmer-life" onclick="if(typeof openTempleFromIndex==='function'){openTempleFromIndex('Traditional Khmer Wooden Stilt House');return false;}"><img src="https://wsrv.nl/?url=https%3A%2F%2Fwww.angkorlens.com%2F10335104.jpeg&w=900&q=75&output=jpg" alt="Traditional Khmer wooden stilt house" loading="lazy" decoding="async"><div class="alx-in"><span class="alx-top">Khmer Life</span><span class="alx-name">Stilt House<span class="alx-km">ផ្ទះឈើខ្មែរបុរាណ</span></span><span class="alx-btn">Explore</span></div></a>
+    <a class="alx-card" href="#khmer-life" onclick="if(typeof openTempleFromIndex==='function'){openTempleFromIndex('Transporting Harvested Crops in Rural Cambodia');return false;}"><img src="https://wsrv.nl/?url=https%3A%2F%2Fwww.angkorlens.com%2F103351.jpeg&w=900&q=75&output=jpg" alt="Transporting harvested crops in rural Cambodia" loading="lazy" decoding="async"><div class="alx-in"><span class="alx-top">Khmer Life</span><span class="alx-name">Harvested Crops<span class="alx-km">ការដឹកជញ្ជូនផលដំណាំ</span></span><span class="alx-btn">Explore</span></div></a>
+    <a class="alx-card" href="#khmer-life" onclick="if(typeof openHeritageIndexItem==='function'){openHeritageIndexItem({name:'Khmer People &amp; Traditional Life'});return false;}"><img src="https://wsrv.nl/?url=https%3A%2F%2Fwww.angkorlens.com%2F94114459.jpg&w=900&q=75&output=jpg" alt="Neak Ta ceremony" loading="lazy" decoding="async"><div class="alx-in"><span class="alx-top">Khmer Life</span><span class="alx-name">Neak Ta Ceremony<span class="alx-km">ឡើងអ្នកតា</span></span><span class="alx-btn">Explore</span></div></a>
+    <a class="alx-card" href="#khmer-life" onclick="if(typeof openHeritageIndexItem==='function'){openHeritageIndexItem({name:'Floating Village'});return false;}"><img src="https://wsrv.nl/?url=https%3A%2F%2Fwww.angkorlens.com%2FIMG_7411.jpg&w=900&q=75&output=jpg" alt="Floating village on the Tonle Sap" loading="lazy" decoding="async"><div class="alx-in"><span class="alx-top">Khmer Life</span><span class="alx-name">Floating Village<span class="alx-km">ភូមិបណ្តែតទឹក</span></span><span class="alx-btn">Explore</span></div></a>
+  </div>
+  <button type="button" class="alx-nav alx-prev" aria-label="Previous" onclick="var r=document.getElementById('alxRow');r.scrollBy({left:-r.clientWidth,behavior:'smooth'})">←</button><button type="button" class="alx-nav alx-next" aria-label="Next" onclick="var r=document.getElementById('alxRow');r.scrollBy({left:r.clientWidth,behavior:'smooth'})">→</button>
   </div>
   <div class="alx-travel" id="alxTravel">
     <div class="alx-stack" aria-hidden="true"><img src="al-feature-koh-ker.jpg" alt=""><img src="al-feature-ta-prohm.jpg" alt=""><img src="al-feature-angkor-wat.jpg" alt="Angkor Wat temple, Siem Reap, Cambodia"></div>
