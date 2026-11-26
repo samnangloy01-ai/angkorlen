@@ -30,6 +30,7 @@ Temples for AngkorLens Book 4: new temples 41–80 added to angkorlens.com (40 t
 | 24 | Prasat Beng | ប្រាសាទបេង | 25 Nov 2026 | 6 (cover = gopura with pillars, polished; greens reduced; no duplicates) | /temple-prasat-beng.html | Koh Ker; double sanctuary (Monument D); date not given by sources |
 | 25 | Prasat Banteay Pi Choan | ប្រាសាទបន្ទាយពីរជាន់ | 25 Nov 2026 | 18 (sent in two parts; cover = group of laterite towers among trees, no scaffolding, polished; near-duplicate scaffold tower → zoomed on top; near-duplicate pediment → zoomed on right carving; greens reduced) | /temple-prasat-banteay-pi-choan.html | Koh Ker; 937 AD, Jayavarman IV, Brahma (Prajapatishvara) |
 | 26 | Prasat Bak | ប្រាសាទបាក់ | 25 Nov 2026 | 6 (cover = wall + upright stone, polished; 4 near-same wide views → 2 zoomed (tower; stone+steps); greens reduced) | /temple-prasat-bak.html | Koh Ker; Ganesha temple |
+| 27 | Kok Po Temple | ប្រាសាទគោកពោធិ៍ | 25 Nov 2026 | 9 (cover = tower among trees, blue sky, polished; plastic bottle cropped out of colonnette photo; greens reduced) | /temple-kok-po-temple.html | Puok, Siem Reap; inscriptions 9th c.–1096 |
 
 ## Notes
 
@@ -235,4 +236,9 @@ Temples for AngkorLens Book 4: new temples 41–80 added to angkorlens.com (40 t
 - Angkor Enterprise: name reflects dilapidated state; laterite; Ganesha statue sculpted with its elaborate pedestal from single rock; "probably the only Khmer temple dedicated solely to Ganesha".
 - CONFLICT: distance (helloangkor ~2 km SW of Rahal; AE 2,500 m S of SW corner) → page says only "southwest of the Rahal".
 - NOT on page: Ganesha return / "largest Ganesha" (intocambodia citing Brouwer only); date/king (no source).
+
+### 27. Kok Po Temple (ប្រាសាទគោកពោធិ៍)
+- Location: owner's pin 13.4657808, 103.7755704, Kok Po village, Puok, Siem Reap.
+- helloangkor HA11775: 4 brick towers (A–D), 2 partly standing; open north (C opens west); large moat, north causeway; K.256 (2nd half 9th c., Vishnu invocation, lands by Jayavarman III); K.255 (978, donation by a woman, to Svetadvipa); K.814 (1096, Jayavarman VI); IK 597, CISARK 492, MH 487; restoration began 2024.
+- NOT on page: "pre-Angkorian" label (helloangkor says 9th c. predates Angkor — not standard); Kubera dedication (speculative); lintel to Guimet (single source); Svetadvipa name; Ak Yom comparison; K.814 Saka confusion on source page.
 
