@@ -26,10 +26,14 @@ def collapse(lst):
         else: out.append(e)
     return out
 def im(f,w): return 'https://wsrv.nl/?url='+quote('https://www.angkorlens.com/'+f,safe='')+'&w=%d&q=75&output=jpg'%w
+def imc(f,w,h): return 'https://wsrv.nl/?url='+quote('https://www.angkorlens.com/'+f,safe='')+f'&w={w}&h={h}&fit=cover&a=attention&sharp=1&q=85&output=jpg'
+def srcset(f,r,ws): return ', '.join(f'{imc(f,w,round(w*r))} {w}w' for w in ws)
+# Sharp card photos: each card asks for a photo already cut to the card shape (square / 4:3),
+# in 3 sizes, so phones and Retina screens get enough pixels and nothing is stretched.
 def loc(e):
     return e['sub'].split(' · ')[-1]
 PIN='<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>'
-def card(e): return f'<a class="alrow-c" href="{href(e)}"><span class="alrow-i"><img loading="lazy" decoding="async" src="{im(e["i"][0],600)}" alt="{html.escape(e["name"])}">{badge(e)}</span><b>{html.escape(e["name"])}</b><i>{html.escape(e["km"])}</i><span class="alrow-p">{PIN}{html.escape(loc(e))}</span></a>'
+def card(e): return f'<a class="alrow-c" href="{href(e)}"><span class="alrow-i"><img loading="lazy" decoding="async" src="{imc(e["i"][0],800,600)}" srcset="{srcset(e["i"][0],0.75,(480,800,1100))}" sizes="(max-width:860px) 78vw, 300px" alt="{html.escape(e["name"])}">{badge(e)}</span><b>{html.escape(e["name"])}</b><i>{html.escape(e["km"])}</i><span class="alrow-p">{PIN}{html.escape(loc(e))}</span></a>'
 TITLES=['Explore our temple collection · ស្វែងរកបណ្តុំប្រាសាទរបស់យើង','My favorite temple collection · បណ្តុំប្រាសាទដែលខ្ញុំចូលចិត្ត']
 STYLE='''<style>
 .alrow-c b{margin-top:14px;font-weight:700;letter-spacing:-.01em;white-space:normal;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
@@ -49,7 +53,7 @@ def blurb(e):
     t=re.sub(r'^\([^)]*\)\s*','',t)  # drop a "(Other name)" left over from the heading
     m=re.match(r'(.{40,170}?[.!?])\s',t+' '); t=m.group(1) if m else t[:150].rsplit(' ',1)[0]+'…'
     return t
-def fcard(e): return (f'<a class="alfx-c" href="{href(e)}"><span class="alfx-i"><img loading="lazy" decoding="async" src="{im(e["i"][0],700)}" alt="{html.escape(e["name"])}">{badge(e)}</span>'
+def fcard(e): return (f'<a class="alfx-c" href="{href(e)}"><span class="alfx-i"><img loading="lazy" decoding="async" src="{imc(e["i"][0],800,800)}" srcset="{srcset(e["i"][0],1,(480,800,1100))}" sizes="(max-width:860px) 78vw, 320px" alt="{html.escape(e["name"])}">{badge(e)}</span>'
     f'<b>{html.escape(e["name"])}</b><i>{html.escape(e["km"])}</i><span class="alrow-p">{PIN}{html.escape(loc(e))}</span><p>{html.escape(blurb(e))}</p></a>')
 FSTYLE='''<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 <style>
