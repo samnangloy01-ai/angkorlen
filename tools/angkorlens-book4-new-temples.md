@@ -29,6 +29,7 @@ Temples for AngkorLens Book 4: new temples 41–80 added to angkorlens.com (40 t
 | 23 | Prasat Damrei Kandoeng | ប្រាសាទដំរីកណ្ដឹង | 25 Nov 2026 | 16 (cover = tower front with two elephants, polished; person at left edge cropped out of one photo; near-duplicate tower front → zoomed on tower; near-duplicate elephant → zoomed on head; greens reduced) | /temple-prasat-damrei-kandoeng.html | Koh Ker; 10th c., Jayavarman IV; stone elephants |
 | 24 | Prasat Beng | ប្រាសាទបេង | 25 Nov 2026 | 6 (cover = gopura with pillars, polished; greens reduced; no duplicates) | /temple-prasat-beng.html | Koh Ker; double sanctuary (Monument D); date not given by sources |
 | 25 | Prasat Banteay Pi Choan | ប្រាសាទបន្ទាយពីរជាន់ | 25 Nov 2026 | 18 (sent in two parts; cover = group of laterite towers among trees, no scaffolding, polished; near-duplicate scaffold tower → zoomed on top; near-duplicate pediment → zoomed on right carving; greens reduced) | /temple-prasat-banteay-pi-choan.html | Koh Ker; 937 AD, Jayavarman IV, Brahma (Prajapatishvara) |
+| 26 | Prasat Bak | ប្រាសាទបាក់ | 25 Nov 2026 | 6 (cover = wall + upright stone, polished; 4 near-same wide views → 2 zoomed (tower; stone+steps); greens reduced) | /temple-prasat-bak.html | Koh Ker; Ganesha temple |
 
 ## Notes
 
@@ -227,4 +228,11 @@ Temples for AngkorLens Book 4: new temples 41–80 added to angkorlens.com (40 t
 - intocambodia: name "the double ramparts".
 - CONFLICT: Hayagriva lintel location (AE: one of surrounding towers; helloangkor: south library W door) → page gives no location. Yama/Kubera "southern/northern" building unclear → no location on page.
 - NOT on page: NAPV 2023 restoration (blog only), Brahma statue size, inscription numbers.
+
+### 26. Prasat Bak (ប្រាសាទបាក់)
+- Location: owner's pin 13.7619134, 104.5457268, Koh Ker.
+- helloangkor (bak-pr): small laterite temple, sandstone doorway, mostly collapsed; ornate pedestal for large Ganesha; Parmentier: bak = ruined, oriented clearly NE, opens NE.
+- Angkor Enterprise: name reflects dilapidated state; laterite; Ganesha statue sculpted with its elaborate pedestal from single rock; "probably the only Khmer temple dedicated solely to Ganesha".
+- CONFLICT: distance (helloangkor ~2 km SW of Rahal; AE 2,500 m S of SW corner) → page says only "southwest of the Rahal".
+- NOT on page: Ganesha return / "largest Ganesha" (intocambodia citing Brouwer only); date/king (no source).
 
