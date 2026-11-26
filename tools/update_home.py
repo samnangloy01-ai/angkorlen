@@ -26,7 +26,7 @@ def collapse(lst):
         else: out.append(e)
     return out
 def im(f,w): return 'https://wsrv.nl/?url='+quote('https://www.angkorlens.com/'+f,safe='')+'&w=%d&q=75&output=jpg'%w
-def imc(f,w,h): return 'https://wsrv.nl/?url='+quote('https://www.angkorlens.com/'+f,safe='')+f'&w={w}&h={h}&fit=cover&a=attention&sharp=1&q=85&output=jpg'
+def imc(f,w,h): return 'https://wsrv.nl/?url='+quote('https://www.angkorlens.com/'+f,safe='')+f'&w={w}&h={h}&fit=cover&a=centre&sharp=1&q=85&output=jpg'
 def srcset(f,r,ws): return ', '.join(f'{imc(f,w,round(w*r))} {w}w' for w in ws)
 # Sharp card photos: each card asks for a photo already cut to the card shape (square / 4:3),
 # in 3 sizes, so phones and Retina screens get enough pixels and nothing is stretched.
@@ -72,7 +72,6 @@ FSTYLE='''<link rel="preconnect" href="https://fonts.googleapis.com"><link href=
 .alfx-c{flex:0 0 min(320px,78vw);scroll-snap-align:start;text-decoration:none;color:#221F1C}
 .alfx-i{display:block;aspect-ratio:1/1;overflow:hidden;background:#e8e0d2;position:relative}
 .alfx-i img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s}
-.alfx-i:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,170,120,.10),rgba(140,60,40,.12))}
 .alfx-c:first-child .alfx-i{transform:rotate(-3deg);margin:8px 6px 4px}
 .alfx-c:hover .alfx-i img{transform:scale(1.04)}
 .alfx-c b{display:block;font-size:26px;font-weight:900;line-height:1.15;margin-top:18px;letter-spacing:-.01em}
